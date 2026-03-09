@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung - My Book Tutor</title>
+    <meta name="description" content="Datenschutzerklärung für die My Book Tutor App gemäß DSGVO">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Lucide Icons -->
+    <script type="module">
+        import { icons } from 'https://cdn.jsdelivr.net/npm/lucide@latest/+esm';
+        
+        // Initialize icons after DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const iconElements = document.querySelectorAll('[data-lucide]');
+            iconElements.forEach(el => {
+                const iconName = el.getAttribute('data-lucide');
+                if (icons[iconName]) {
+                    el.innerHTML = icons[iconName].toSvg({
+                        width: el.getAttribute('width') || '24',
+                        height: el.getAttribute('height') || '24',
+                        class: el.getAttribute('class') || ''
+                    });
+                }
+            });
+        });
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #4f46e5;
+            --primary-hover: #4338ca;
+            --text-color: #1e293b;
+            --muted-color: #64748b;
+            --border-color: #e2e8f0;
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+        }
+
+        .dark-mode {
+            --primary-color: #818cf8;
+            --primary-hover: #60a5fa;
+            --text-color: #e2e8f0;
+            --muted-color: #94a3b8;
+            --border-color: #334155;
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .prose-legal {
+            max-width: none;
+        }
+
+        .prose-legal h1 {
+            font-size: 1.875rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .prose-legal h2 {
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            color: var(--text-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 0.5rem;
+        }
+
+        .prose-legal h3 {
+            font-size: 1.125rem;
+            font-weight: 600;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--text-color);
+        }
+
+        .prose-legal p {
+            margin-bottom: 1rem;
+            color: var(--text-color);
+        }
+
+        .prose-legal ul, .prose-legal ol {
+            margin-bottom: 1rem;
+            padding-left: 1.5rem;
+        }
+
+        .prose-legal li {
+            margin-bottom: 0.5rem;
+        }
+
+        .prose-legal a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .prose-legal a:hover {
+            text-decoration: underline;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn:hover {
+            background-color: var(--primary-hover);
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(79, 70, 229, 0.3);
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-color);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--bg-color);
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .language-switcher {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 9999px;
+            padding: 0.25rem;
+            display: inline-flex;
+            gap: 0.25rem;
+        }
+
+        .language-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            background: transparent;
+            border-radius: 9999px;
+            cursor: pointer;
+            font-weight: 600;
+            color: var(--muted-color);
+            transition: all 0.2s;
+        }
+
+        .language-btn.active {
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .language-btn:hover:not(.active) {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .highlight-box {
+            background-color: rgba(79, 70, 229, 0.1);
+            border-left: 4px solid var(--primary-color);
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0 0.5rem 0.5rem 0;
+        }
+
+        @media (max-width: 640px) {
+            .prose-legal h1 {
+                font-size: 1.5rem;
+            }
+            
+            .prose-legal h2 {
+                font-size: 1.125rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white shadow-lg">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="flex items-center gap-3">
+                    <div class="bg-white/20 p-2 rounded-lg">
+                        <i data-lucide="shield-check" width="24" height="24"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold">My Book Tutor</h1>
+                        <p class="text-sm opacity-90">Datenschutzerklärung & Rechtliche Informationen</p>
+                    </div>
+                </div>
+                
+                <!-- Language Switcher -->
+                <div class="language-switcher">
+                    <button class="language-btn active" id="lang-de">
+                        🇩🇪 Deutsch
+                    </button>
+                    <button class="language-btn" id="lang-en">
+                        🇬🇧 English
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <div class="max-w-4xl mx-auto">
+            <!-- Navigation -->
+            <nav class="mb-8">
+                <div class="footer-links">
+                    <a href="#privacy" class="btn-secondary btn-sm px-4 py-2 rounded-lg text-sm hover:bg-indigo-50 hover:text-indigo-600 transition-colors">
+                        📋 Datenschutzerklärung
+                    </a>
+                    <a href="#terms" class="btn-secondary btn-sm px-4 py-2 rounded-lg text-sm hover:bg-indigo-50 hover:text-indigo-600 transition-colors">
+                        📄 Nutzungsbedingungen
+                    </a>
+                    <a href="#impressum" class="btn-secondary btn-sm px-4 py-2 rounded-lg text-sm hover:bg-indigo-50 hover:text-indigo-600 transition-colors">
+                        🏢 Impressum
+                    </a>
+                </div>
+            </nav>
+
+            <!-- Privacy Policy -->
+            <section id="privacy" class="card p-6 mb-8">
+                <div class="prose-legal">
+                    <h1>📋 Datenschutzerklärung</h1>
+                    <h3>1. Verantwortlicher</h3>
+                    <p>Verantwortlicher im Sinne der DSGVO ist der Betreiber dieser App (siehe Impressum). Der Entwickler legt die Zwecke und Mittel der Verarbeitung personenbezogener Daten fest und ist somit „Verantwortlicher" (Controller).</p>
+
+                    <h2>2. Privacy by Design — Lokale Datenverarbeitung</h2>
+                    <p>Diese App wurde nach dem Grundsatz <strong>Privacy by Design</strong> entwickelt:</p>
+                    <ul id="privacy-design-list">
+                        <li>Es werden <strong>keine personenbezogenen Daten</strong> auf Entwickler-Servern gespeichert.</li>
+                        <li>Ihr <strong>API-Key</strong> wird ausschließlich verschlüsselt im Local Storage Ihres Geräts gespeichert und niemals an Dritte übermittelt.</li>
+                        <li>Hochgeladene <strong>PDF-Dokumente</strong> verbleiben lokal in Ihrem Browser (IndexedDB) und werden nicht an Server übertragen.</li>
+                        <li><strong>Chat-Verläufe</strong> und Einstellungen werden nur lokal auf Ihrem Gerät gespeichert.</li>
+                    </ul>
+
+                    <h2>3. Datenflüsse über OpenRouter</h2>
+                    <p id="privacy-openrouter-intro">Wenn Sie KI-Funktionen nutzen, werden Textauszüge aus Ihrem PDF sowie Ihre Fragen über die <strong>OpenRouter API</strong> (openrouter.ai) an KI-Modelle weitergeleitet. Dabei gilt:</p>
+                    <ul id="privacy-openrouter-list">
+                        <li>Die Übermittlung erfolgt direkt von Ihrem Browser an OpenRouter — ohne Umweg über unsere Server.</li>
+                        <li>OpenRouter fungiert als Auftragsverarbeiter. Es gelten die <a href="https://openrouter.ai/privacy" target="_blank" rel="noopener noreferrer">Datenschutzrichtlinien von OpenRouter</a>.</li>
+                        <li>Ihr API-Key authentifiziert Sie direkt bei OpenRouter.</li>
+                    </ul>
+
+                    <h2>4. Ihre Rechte</h2>
+                    <p id="privacy-rights">Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Da alle Daten lokal gespeichert werden, können Sie diese jederzeit durch Löschen der Browser-Daten vollständig entfernen.</p>
+
+                    <h2>5. Ihre OpenRouter-Datenschutzeinstellungen</h2>
+                    <p id="privacy-settings-link">Sie sind selbst dafür verantwortlich, Ihre Datenschutzeinstellungen bei OpenRouter korrekt zu konfigurieren. Besuchen Sie dazu: <a href="https://openrouter.ai/settings/privacy" target="_blank" rel="noopener noreferrer">openrouter.ai/settings/privacy</a></p>
+                    <p id="privacy-zdr-check">Prüfen Sie insbesondere, ob Training auf Ihre Eingaben (bezahlt/kostenlos), Veröffentlichung Ihrer Prompts und Ein-/Ausgabe-Logging aktiviert sind. Für maximalen Schutz aktivieren Sie <strong>„Nur ZDR-Endpunkte" (Zero Data Retention)</strong> und deaktivieren Sie alle Trainings- und Logging-Optionen.</p>
+
+                    <div class="highlight-box">
+                        <p class="font-semibold mb-2">💡 Wichtiger Hinweis:</p>
+                        <p>Diese App ist ausschließlich für rechtmäßig erlangte Materialien bestimmt. KI-generierte Inhalte können fehlerhaft sein — bitte stets manuell überprüfen.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Terms of Use -->
+            <section id="terms" class="card p-6 mb-8">
+                <div class="prose-legal">
+                    <h1>📄 Nutzungsbedingungen</h1>
+                    <h3>1. KI-Warnhinweis — Haftungsausschluss</h3>
+                    <p><strong>⚠️ KI-generierte Inhalte können fehlerhaft sein.</strong> KI-Modelle können „halluzinieren" und falsche Informationen erzeugen. Gerichte (z. B. LG Kiel 2024) haben bestätigt, dass Betreiber für ungeprüfte KI-Falschaussagen haften können.</p>
+                    <ul>
+                        <li>Alle KI-generierten Antworten, Zusammenfassungen, Übungen und Quizzes dienen ausschließlich als <strong>Lernhilfe</strong>.</li>
+                        <li>Eine <strong>manuelle Überprüfung</strong> der Inhalte ist zwingend erforderlich.</li>
+                        <li>Die App ersetzt keine professionelle Beratung oder offizielle Lehrmaterialien.</li>
+                    </ul>
+
+                    <h2>2. Produkthaftung</h2>
+                    <p>Nach der neuen EU-Produkthaftungsrichtlinie wird Software als Produkt eingestuft. Der Entwickler haftet nicht für Schäden, die durch unkritische Übernahme KI-generierter Inhalte entstehen.</p>
+
+                    <h2>3. Urheberrecht & Privatkopie</h2>
+                    <p>My Book Tutor ist ein Werkzeug zur interaktiven Nutzung von PDF-Dokumenten:</p>
+                    <ul id="terms-copyright-list">
+                        <li>Die App ist <strong>ausschließlich für rechtmäßig erlangte Vorlagen</strong> bestimmt.</li>
+                        <li>Beim Scannen von Büchern kann in Deutschland <strong>§ 53 UrhG (Privatkopie)</strong> greifen, sofern keine kommerziellen Zwecke verfolgt werden.</li>
+                        <li>Der Nutzer ist allein verantwortlich für die Einhaltung des Urheberrechts.</li>
+                    </ul>
+
+                    <h2>4. Störerhaftung</h2>
+                    <p>My Book Tutor fungiert lediglich als technisches Werkzeug. Als Anbieter haften wir primär auf Unterlassung, wenn nach konkreten Hinweisen auf Rechtsverletzungen nicht zügig reagiert wird. Bitte melden Sie Verstöße umgehend.</p>
+                </div>
+            </section>
+
+            <!-- Impressum -->
+            <section id="impressum" class="card p-6 mb-8">
+                <div class="prose-legal">
+                    <h1>🏢 Impressum</h1>
+                    <h3>Angaben gemäß § 5 TMG:</h3>
+                    <p id="impressum-info"><strong>Falko Guderian</strong><br>
+                    <br>
+                    Germany</p>
+
+                    <h2>Kontakt</h2>
+                    <p>E-Mail: mail.to.falko@gmx.de</p>
+
+                    <h2>Haftung für Inhalte</h2>
+                    <p>Die Inhalte dieser App wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der KI-generierten Inhalte können wir jedoch keine Gewähr übernehmen. KI-generierte Inhalte stellen spezifisch keine gesicherten Fakten dar und müssen stets manuell überprüft werden.</p>
+
+                    <h2>Haftung für Links</h2>
+                    <p>Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.</p>
+
+                    <h2>Urheberrecht</h2>
+                    <p>Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 dark:bg-gray-800 py-6 mt-12">
+        <div class="container mx-auto px-4 text-center text-sm text-gray-600 dark:text-gray-400">
+            <p id="copyright-text">&copy; 2024 My Book Tutor. Alle Rechte vorbehalten.</p>
+            <p class="mt-2">Diese Datenschutzerklärung ist Teil der App-Infrastruktur und unterliegt den geltenden Datenschutzgesetzen.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Internationalization System
+        const i18n = {
+            // Add new languages here
+            de: {
+                // Header
+                title: "My Book Tutor - Datenschutzerklärung",
+                header: "My Book Tutor",
+                subheader: "Datenschutzerklärung & Rechtliche Informationen",
+                
+                // Navigation
+                privacy: "📋 Datenschutzerklärung",
+                terms: "📄 Nutzungsbedingungen",
+                impressum: "🏢 Impressum",
+                
+                // Privacy Policy
+                privacyTitle: "📋 Datenschutzerklärung",
+                privacySection1: "1. Verantwortlicher",
+                privacySection2: "2. Privacy by Design — Lokale Datenverarbeitung",
+                privacySection3: "3. Datenflüsse über OpenRouter",
+                privacySection4: "4. Ihre Rechte",
+                privacySection5: "5. Ihre OpenRouter-Datenschutzeinstellungen",
+                privacyDesignText: "Diese App wurde nach dem Grundsatz <strong>Privacy by Design</strong> entwickelt:",
+                privacyOpenRouterText: "Wenn Sie KI-Funktionen nutzen, werden Textauszüge aus Ihrem PDF sowie Ihre Fragen über die <strong>OpenRouter API</strong> (openrouter.ai) an KI-Modelle weitergeleitet. Dabei gilt:",
+                privacyRightsText: "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Da alle Daten lokal gespeichert werden, können Sie diese jederzeit durch Löschen der Browser-Daten vollständig entfernen.",
+                privacySettingsText: "Sie sind selbst dafür verantwortlich, Ihre Datenschutzeinstellungen bei OpenRouter korrekt zu konfigurieren. Besuchen Sie dazu: <a href=\"https://openrouter.ai/settings/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">openrouter.ai/settings/privacy</a>",
+                privacyCheckText: "Prüfen Sie insbesondere, ob Training auf Ihre Eingaben (bezahlt/kostenlos), Veröffentlichung Ihrer Prompts und Ein-/Ausgabe-Logging aktiviert sind. Für maximalen Schutz aktivieren Sie <strong>„Nur ZDR-Endpunkte\" (Zero Data Retention)</strong> und deaktivieren Sie alle Trainings- und Logging-Optionen.",
+                privacyP1: "Verantwortlicher im Sinne der DSGVO ist der Betreiber dieser App (siehe Impressum). Der Entwickler legt die Zwecke und Mittel der Verarbeitung personenbezogener Daten fest und ist somit „Verantwortlicher\" (Controller).",
+                privacyUl: [
+                    "Es werden <strong>keine personenbezogenen Daten</strong> auf Entwickler-Servern gespeichert.",
+                    "Ihr <strong>API-Key</strong> wird ausschließlich verschlüsselt im Local Storage Ihres Geräts gespeichert und niemals an Dritte übermittelt.",
+                    "Hochgeladene <strong>PDF-Dokumente</strong> verbleiben lokal in Ihrem Browser (IndexedDB) und werden nicht an Server übertragen.",
+                    "<strong>Chat-Verläufe</strong> und Einstellungen werden nur lokal auf Ihrem Gerät gespeichert."
+                ],
+                privacyP2: "Wenn Sie KI-Funktionen nutzen, werden Textauszüge aus Ihrem PDF sowie Ihre Fragen über die OpenRouter API (openrouter.ai) an KI-Modelle weitergeleitet. Dabei gilt:",
+                privacyP3: "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Da alle Daten lokal gespeichert werden, können Sie diese jederzeit durch Löschen der Browser-Daten vollständig entfernen.",
+                privacyP4: "Sie sind selbst dafür verantwortlich, Ihre Datenschutzeinstellungen bei OpenRouter korrekt zu konfigurieren. Besuchen Sie dazu: openrouter.ai/settings/privacy",
+                privacyP5: "Prüfen Sie insbesondere, ob Training auf Ihre Eingaben (bezahlt/kostenlos), Veröffentlichung Ihrer Prompts und Ein-/Ausgabe-Logging aktiviert sind. Für maximalen Schutz aktivieren Sie „Nur ZDR-Endpunkte\" (Zero Data Retention) und deaktivieren Sie alle Trainings- und Logging-Optionen.",
+                privacyOpenRouterList: [
+                    "Die Übermittlung erfolgt direkt von Ihrem Browser an OpenRouter — ohne Umweg über unsere Server.",
+                    "OpenRouter fungiert als Auftragsverarbeiter. Es gelten die <a href=\"https://openrouter.ai/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Datenschutzrichtlinien von OpenRouter</a>.",
+                    "Ihr API-Key authentifiziert Sie direkt bei OpenRouter."
+                ],
+                
+                // Terms of Use
+                termsTitle: "📄 Nutzungsbedingungen",
+                termsSection1: "1. KI-Warnhinweis — Haftungsausschluss",
+                termsSection2: "2. Produkthaftung",
+                termsSection3: "3. Urheberrecht & Privatkopie",
+                termsSection4: "4. Störerhaftung",
+                termsP1: "⚠️ KI-generierte Inhalte können fehlerhaft sein. KI-Modelle können „halluzinieren\" und falsche Informationen erzeugen. Gerichte (z. B. LG Kiel 2024) haben bestätigt, dass Betreiber für ungeprüfte KI-Falschaussagen haften können.",
+                termsWarningText: "⚠️ KI-generierte Inhalte können fehlerhaft sein. KI-Modelle können „halluzinieren\" und falsche Informationen erzeugen. Gerichte (z. B. LG Kiel 2024) haben bestätigt, dass Betreiber für ungeprüfte KI-Falschaussagen haften können.",
+                termsUl: [
+                    "Alle KI-generierten Antworten, Zusammenfassungen, Übungen und Quizzes dienen ausschließlich als <strong>Lernhilfe</strong>.",
+                    "Eine <strong>manuelle Überprüfung</strong> der Inhalte ist zwingend erforderlich.",
+                    "Die App ersetzt keine professionelle Beratung oder offizielle Lehrmaterialien."
+                ],
+                termsP2: "Nach der neuen EU-Produkthaftungsrichtlinie wird Software als Produkt eingestuft. Der Entwickler haftet nicht für Schäden, die durch unkritische Übernahme KI-generierter Inhalte entstehen.",
+                termsProductText: "Nach der neuen EU-Produkthaftungsrichtlinie wird Software als Produkt eingestuft. Der Entwickler haftet nicht für Schäden, die durch unkritische Übernahme KI-generierter Inhalte entstehen.",
+                termsP3: "My Book Tutor ist ein Werkzeug zur interaktiven Nutzung von PDF-Dokumenten:",
+                termsCopyrightText: "My Book Tutor ist ein Werkzeug zur interaktiven Nutzung von PDF-Dokumenten:",
+                termsP4: "My Book Tutor fungiert lediglich als technisches Werkzeug. Als Anbieter haften wir primär auf Unterlassung, wenn nach konkreten Hinweisen auf Rechtsverletzungen nicht zügig reagiert wird. Bitte melden Sie Verstöße umgehend.",
+                termsIntermediaryText: "My Book Tutor fungiert lediglich als technisches Werkzeug. Als Anbieter haften wir primär auf Unterlassung, wenn nach konkreten Hinweisen auf Rechtsverletzungen nicht zügig reagiert wird. Bitte melden Sie Verstöße umgehend.",
+                
+                // Impressum
+                impressumTitle: "🏢 Impressum",
+                impressumSection1: "Angaben gemäß § 5 TMG:",
+                impressumSection2: "Kontakt",
+                impressumSection3: "Haftung für Inhalte",
+                impressumSection4: "Haftung für Links",
+                impressumSection5: "Urheberrecht",
+                impressumInfoHtml: "<strong>Falko Guderian</strong><br>Ludwig-Renn-Allee 17<br>01217 Dresden<br>Germany",
+                impressumContactText: "E-Mail: mail.to.falko@gmx.de",
+                impressumContentText: "Die Inhalte dieser App wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der KI-generierten Inhalte können wir jedoch keine Gewähr übernehmen. KI-generierte Inhalte stellen spezifisch keine gesicherten Fakten dar und müssen stets manuell überprüft werden.",
+                impressumLinksText: "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
+                impressumCopyrightText: "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.",
+                impressumP1: "Falko Guderian\nLudwig-Renn-Allee 17<br>01217 Dresden\nGermany",
+                impressumP2: "E-Mail: mail.to.falko@gmx.de",
+                impressumP3: "Die Inhalte dieser App wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der KI-generierten Inhalte können wir jedoch keine Gewähr übernehmen. KI-generierte Inhalte stellen spezifisch keine gesicherten Fakten dar und müssen stets manuell überprüft werden.",
+                impressumP4: "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber der Seiten verantwortlich.",
+                impressumP5: "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.",
+                
+                // Common
+                disclaimerTitle: "💡 Wichtiger Hinweis:",
+                disclaimerText: "Diese App ist ausschließlich für rechtmäßig erlangte Materialien bestimmt. KI-generierte Inhalte können fehlerhaft sein — bitte stets manuell überprüfen.",
+                footerCopyright: `© ${new Date().getFullYear()} My Book Tutor. Alle Rechte vorbehalten.`,
+                footerNote: "Diese Datenschutzerklärung ist Teil der App-Infrastruktur und unterliegt den geltenden Datenschutzgesetzen."
+            },
+            en: {
+                // Header
+                title: "My Book Tutor - Privacy Policy",
+                header: "My Book Tutor",
+                subheader: "Privacy Policy & Legal Information",
+                
+                // Navigation
+                privacy: "📋 Privacy Policy",
+                terms: "📄 Terms of Use",
+                impressum: "🏢 Legal Notice",
+                
+                // Privacy Policy
+                privacyTitle: "📋 Privacy Policy",
+                privacySection1: "1. Data Controller",
+                privacySection2: "2. Privacy by Design — Local Data Processing",
+                privacySection3: "3. Data Flows via OpenRouter",
+                privacySection4: "4. Your Rights",
+                privacySection5: "5. Your OpenRouter Privacy Settings",
+                privacyDesignText: "This app was developed according to the <strong>Privacy by Design</strong> principle:",
+                privacyOpenRouterText: "When you use AI functions, text excerpts from your PDF and your questions are forwarded via the <strong>OpenRouter API</strong> (openrouter.ai) to AI models. This means:",
+                privacyRightsText: "You have the right to information, correction, deletion, restriction of processing, data portability and objection. Since all data is stored locally, you can completely remove it at any time by deleting your browser data.",
+                privacySettingsText: "You are responsible for correctly configuring your privacy settings at OpenRouter. Visit: <a href=\"https://openrouter.ai/settings/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">openrouter.ai/settings/privacy</a>",
+                privacyCheckText: "In particular, check whether training on your inputs (paid/free), publication of your prompts, and input/output logging are enabled. For maximum protection, activate <strong>\"Only ZDR Endpoints\" (Zero Data Retention)</strong> and disable all training and logging options.",
+                privacyP1: "The data controller according to GDPR is the operator of this app (see Legal Notice). The developer determines the purposes and means of processing personal data and is therefore the \"Controller\".",
+                privacyUl: [
+                    "<strong>No personal data</strong> is stored on developer servers.",
+                    "Your <strong>API key</strong> is stored exclusively encrypted in your device's Local Storage and never transmitted to third parties.",
+                    "Uploaded <strong>PDF documents</strong> remain locally in your browser (IndexedDB) and are not transmitted to servers.",
+                    "<strong>Chat history</strong> and settings are only stored locally on your device."
+                ],
+                privacyP2: "When you use AI functions, text excerpts from your PDF and your questions are forwarded via the OpenRouter API (openrouter.ai) to AI models. This means:",
+                privacyP3: "You have the right to information, correction, deletion, restriction of processing, data portability and objection. Since all data is stored locally, you can completely remove it at any time by deleting your browser data.",
+                privacyP4: "You are responsible for correctly configuring your privacy settings at OpenRouter. Visit: openrouter.ai/settings/privacy",
+                privacyP5: "In particular, check whether training on your inputs (paid/free), publication of your prompts, and input/output logging are enabled. For maximum protection, activate \"Only ZDR Endpoints\" (Zero Data Retention) and disable all training and logging options.",
+                
+                // Terms of Use
+                termsTitle: "📄 Terms of Use",
+                termsSection1: "1. AI Disclaimer — Liability Exclusion",
+                termsSection2: "2. Product Liability",
+                termsSection3: "3. Copyright & Private Copy",
+                termsSection4: "4. Intermediary Liability",
+                termsWarningText: "⚠️ AI-generated content may be inaccurate. AI models can \"hallucinate\" and produce false information. Courts (e.g., LG Kiel 2024) have confirmed that operators can be liable for unchecked AI false statements.",
+                termsProductText: "According to the new EU Product Liability Directive, software is classified as a product. The developer is not liable for damages caused by uncritical adoption of AI-generated content.",
+                termsCopyrightText: "My Book Tutor is a tool for interactive use of PDF documents:",
+                termsIntermediaryText: "My Book Tutor functions merely as a technical tool. As a provider, we are primarily liable for omission if we do not react promptly to concrete indications of legal violations. Please report violations immediately.",
+                termsP1: "⚠️ AI-generated content may be inaccurate. AI models can \"hallucinate\" and produce false information. Courts (e.g., LG Kiel 2024) have confirmed that operators can be liable for unchecked AI false statements.",
+                termsUl: [
+                    "All AI-generated answers, summaries, exercises and quizzes serve exclusively as <strong>learning aids</strong>.",
+                    "A <strong>manual verification</strong> of the content is mandatory.",
+                    "The app does not replace professional advice or official teaching materials."
+                ],
+                termsP2: "According to the new EU Product Liability Directive, software is classified as a product. The developer is not liable for damages caused by uncritical adoption of AI-generated content.",
+                termsP3: "My Book Tutor is a tool for interactive use of PDF documents:",
+                termsP4: "My Book Tutor functions merely as a technical tool. As a provider, we are primarily liable for omission if we do not react promptly to concrete indications of legal violations. Please report violations immediately.",
+                
+                // Impressum
+                impressumTitle: "🏢 Legal Notice",
+                impressumSection1: "Information according to § 5 TMG:",
+                impressumSection2: "Contact",
+                impressumSection3: "Liability for Content",
+                impressumSection4: "Liability for Links",
+                impressumSection5: "Copyright",
+                impressumInfoHtml: "<strong>Falko Guderian</strong><br>Ludwig-Renn-Allee 17<br>01217 Dresden<br>Germany",
+                impressumContactText: "Email: mail.to.falko@gmx.de",
+                impressumContentText: "The content of this app has been created with the greatest care. However, we cannot guarantee the accuracy, completeness and timeliness of the AI-generated content. AI-generated content does not constitute verified facts and must always be manually verified.",
+                impressumLinksText: "Our offer contains links to external websites of third parties, over whose content we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages.",
+                impressumCopyrightText: "The content and works on these pages created by the site operators are subject to German copyright law. The reproduction, editing, distribution and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator.",
+                impressumP1: "Falko Guderian\nLudwig-Renn-Allee 17<br>01217 Dresden\Germany",
+                impressumP2: "Email: mail.to.falko@gmx.de",
+                impressumP3: "The content of this app has been created with the greatest care. However, we cannot guarantee the accuracy, completeness and timeliness of the AI-generated content. AI-generated content does not constitute verified facts and must always be manually verified.",
+                impressumP4: "Our offer contains links to external websites of third parties, over whose content we have no influence. Therefore, we cannot assume any liability for these external contents. The respective provider or operator of the pages is always responsible for the content of the linked pages.",
+                impressumP5: "The content and works on these pages created by the site operators are subject to German copyright law. The reproduction, editing, distribution and any kind of exploitation outside the limits of copyright require the written consent of the respective author or creator.",
+                
+                // Common
+                disclaimerTitle: "💡 Important Notice:",
+                disclaimerText: "This app is intended exclusively for lawfully obtained materials. AI-generated content may contain errors — please always verify manually.",
+                footerCopyright: `© ${new Date().getFullYear()} My Book Tutor. All rights reserved.`,
+                footerNote: "This privacy policy is part of the app infrastructure and is subject to applicable data protection laws."
+            }
+        };
+
+        // Language switching system
+        const LanguageManager = {
+            currentLang: 'de',
+            
+            init() {
+                this.currentLang = localStorage.getItem('legalLang') || 'de';
+                this.switchLanguage(this.currentLang);
+                this.setupEventListeners();
+            },
+            
+            setupEventListeners() {
+                document.getElementById('lang-de').addEventListener('click', () => this.switchLanguage('de'));
+                document.getElementById('lang-en').addEventListener('click', () => this.switchLanguage('en'));
+            },
+            
+            switchLanguage(lang) {
+                if (!i18n[lang]) {
+                    console.warn(`Language ${lang} not found`);
+                    return;
+                }
+                
+                this.currentLang = lang;
+                localStorage.setItem('legalLang', lang);
+                document.documentElement.lang = lang;
+                document.title = i18n[lang].title;
+                
+                // Update active buttons
+                document.getElementById('lang-de').classList.toggle('active', lang === 'de');
+                document.getElementById('lang-en').classList.toggle('active', lang === 'en');
+                document.getElementById('lang-de').classList.toggle('text-gray-600', lang !== 'de');
+                document.getElementById('lang-en').classList.toggle('text-gray-600', lang !== 'en');
+                
+                // Update all content
+                this.updateContent();
+            },
+            
+            updateContent() {
+                const t = i18n[this.currentLang];
+                
+                // Update header
+                document.querySelector('h1').textContent = t.header;
+                document.querySelector('p[class*="opacity-90"]').textContent = t.subheader;
+                
+                // Update navigation
+                document.querySelector('a[href="#privacy"]').textContent = t.privacy;
+                document.querySelector('a[href="#terms"]').textContent = t.terms;
+                document.querySelector('a[href="#impressum"]').textContent = t.impressum;
+                
+                // Update sections
+                document.querySelector('#privacy h1').textContent = t.privacyTitle;
+                document.querySelector('#terms h1').textContent = t.termsTitle;
+                document.querySelector('#impressum h1').textContent = t.impressumTitle;
+                
+                // Update privacy policy content
+                this.updateSection('#privacy', [
+                    { selector: 'h3', text: t.privacySection1 },
+                    { selector: 'h2:nth-of-type(1)', text: t.privacySection2 },
+                    { selector: 'h2:nth-of-type(2)', text: t.privacySection3 },
+                    { selector: 'h2:nth-of-type(3)', text: t.privacySection4 },
+                    { selector: 'h2:nth-of-type(4)', text: t.privacySection5 },
+                    { selector: 'p', text: t.privacyP1 },
+                    { selector: '#privacy-design-list', html: this.createList(t.privacyUl) },
+                    { selector: '#privacy-openrouter-intro', html: t.privacyOpenRouterText },
+                    { selector: '#privacy-openrouter-list', html: this.createList(t.privacyOpenRouterList || [
+                        "The transmission takes place directly from your browser to OpenRouter — without detour via our servers.",
+                        "OpenRouter acts as a processor. The <a href=\"https://openrouter.ai/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">OpenRouter privacy policy</a> applies.",
+                        "Your API key authenticates you directly with OpenRouter."
+                    ]) },
+                    { selector: '#privacy-rights', text: t.privacyP3 },
+                    { selector: '#privacy-settings-link', html: t.privacySettingsText },
+                    { selector: '#privacy-zdr-check', html: t.privacyCheckText },
+                ]);
+                
+                // Update terms of use content
+                this.updateSection('#terms', [
+                    { selector: 'h3', text: t.termsSection1 },
+                    { selector: 'h2:nth-of-type(1)', text: t.termsSection2 },
+                    { selector: 'h2:nth-of-type(2)', text: t.termsSection3 },
+                    { selector: 'h2:nth-of-type(3)', text: t.termsSection4 },
+                    { selector: 'p', html: t.termsWarningText },
+                    { selector: 'ul', html: this.createList(t.termsUl) },
+                    { selector: 'p:nth-of-type(2)', html: t.termsProductText },
+                    { selector: 'p:nth-of-type(3)', html: t.termsCopyrightText },
+                    { selector: '#terms-copyright-list', html: this.createList(t.termsUl) },
+                    { selector: 'p:nth-of-type(4)', html: t.termsIntermediaryText },
+                ]);
+                
+                // Update impressum content
+                this.updateSection('#impressum', [
+                    { selector: 'h3', text: t.impressumSection1 },
+                    { selector: 'h2:nth-of-type(1)', text: t.impressumSection2 },
+                    { selector: 'h2:nth-of-type(2)', text: t.impressumSection3 },
+                    { selector: 'h2:nth-of-type(3)', text: t.impressumSection4 },
+                    { selector: 'h2:nth-of-type(4)', text: t.impressumSection5 },
+                    { selector: '#impressum-info', html: t.impressumInfoHtml },
+                    { selector: 'p:nth-of-type(2)', html: t.impressumContactText },
+                    { selector: 'p:nth-of-type(3)', html: t.impressumContentText },
+                    { selector: 'p:nth-of-type(4)', html: t.impressumLinksText },
+                    { selector: 'p:nth-of-type(5)', html: t.impressumCopyrightText }
+                ]);
+                
+                // Update disclaimer
+                document.querySelector('.highlight-box .font-semibold').textContent = t.disclaimerTitle;
+                document.querySelector('.highlight-box p:last-child').textContent = t.disclaimerText;
+            },
+            
+            updateSection(sectionId, updates) {
+                const section = document.querySelector(sectionId);
+                updates.forEach(update => {
+                    const element = section.querySelector(update.selector);
+                    if (element) {
+                        if (update.html) {
+                            element.innerHTML = update.html;
+                        } else {
+                            element.textContent = update.text;
+                        }
+                    }
+                });
+            },
+            
+            createList(items) {
+                return `<li>${items.join('</li><li>')}</li>`;
+            }
+        };
+
+        // Initialize language manager
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set current year in copyright
+            const currentYear = new Date().getFullYear();
+            const copyrightText = document.getElementById('copyright-text');
+            if (copyrightText) {
+                copyrightText.textContent = `© ${currentYear} My Book Tutor. Alle Rechte vorbehalten.`;
+            }
+            
+            // Initialize language manager
+            LanguageManager.init();
+        });
+
+        // Also add footer translation to updateContent
+        const _origUpdateContent = LanguageManager.updateContent.bind(LanguageManager);
+        LanguageManager.updateContent = function() {
+            _origUpdateContent();
+            const t = i18n[this.currentLang];
+            const copyrightEl = document.getElementById('copyright-text');
+            if (copyrightEl && t.footerCopyright) copyrightEl.textContent = t.footerCopyright;
+            const footerNoteEl = document.querySelector('footer p.mt-2');
+            if (footerNoteEl && t.footerNote) footerNoteEl.textContent = t.footerNote;
+        };
+    </script>
+</body>
+</html>
