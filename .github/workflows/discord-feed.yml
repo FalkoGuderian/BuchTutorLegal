@@ -28,7 +28,18 @@ jobs:
           git add discord-messages.json
           if git diff --staged --quiet; then
             echo "No feed changes — skipping commit"
-          else
-            git commit -m "chore: sync discord feed"
-            git push
+            exit 0
           fi
+          git commit -m "chore: sync discord feed"
+          # Retry push with rebase to handle concurrent runs
+          for i in 1 2 3 4 5; do
+            if git push; then
+              echo "Push succeeded on attempt $i"
+              exit 0
+            fi
+            echo "Push failed on attempt $i — pulling with rebase"
+            git pull --rebase origin main || true
+            sleep $((i * 2))
+          done
+          echo "Push failed after 5 attempts"
+          exit 1
