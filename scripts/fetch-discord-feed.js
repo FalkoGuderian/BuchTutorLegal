@@ -16,7 +16,7 @@ const TOKEN = process.env.DISCORD_BOT_TOKEN;
 const CHANNEL_ID = process.env.DISCORD_SHARING_CHANNEL_ID;
 const OUT_DIR = path.join(__dirname, '..', 'dist-feed');
 const OUT_FILE = path.join(OUT_DIR, 'discord-messages.json');
-const MAX_CONTENT_LENGTH = 280;
+const MAX_CONTENT_LENGTH = 120;
 
 if (!TOKEN || !CHANNEL_ID) {
   console.error('Missing DISCORD_BOT_TOKEN or DISCORD_SHARING_CHANNEL_ID');
