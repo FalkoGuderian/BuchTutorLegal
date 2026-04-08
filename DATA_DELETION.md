@@ -1,10 +1,10 @@
 # Data Deletion Instructions / Anleitung zum Löschen von Daten
 
-## Prof. Bookworm / Prof. Buchwurm
+## DocWorm
 
 ### English
 
-Prof. Bookworm stores all user data **locally on your device only**. No data is stored on our servers.
+DocWorm stores all user data **locally on your device only**. No data is stored on our servers.
 
 **Data stored locally:**
 - Chat messages with the AI tutor
@@ -15,7 +15,7 @@ Prof. Bookworm stores all user data **locally on your device only**. No data is 
 **How to delete your data:**
 
 1. **Delete individual chats/notes/plans:** Use the delete buttons within the app to remove specific items.
-2. **Delete all app data:** Go to your device Settings → Apps → Prof. Bookworm → Storage → Clear Data.
+2. **Delete all app data:** Go to your device Settings → Apps → DocWorm → Storage → Clear Data.
 3. **Uninstall the app:** Removing the app deletes all locally stored data.
 
 **External services:**
@@ -27,7 +27,7 @@ No additional data is retained by us after deletion.
 
 ### Deutsch
 
-Prof. Buchwurm speichert alle Nutzerdaten **ausschließlich lokal auf Ihrem Gerät**. Es werden keine Daten auf unseren Servern gespeichert.
+DocWorm speichert alle Nutzerdaten **ausschließlich lokal auf Ihrem Gerät**. Es werden keine Daten auf unseren Servern gespeichert.
 
 **Lokal gespeicherte Daten:**
 - Chat-Nachrichten mit dem KI-Tutor
@@ -38,7 +38,7 @@ Prof. Buchwurm speichert alle Nutzerdaten **ausschließlich lokal auf Ihrem Ger�
 **So löschen Sie Ihre Daten:**
 
 1. **Einzelne Chats/Notizen/Pläne löschen:** Verwenden Sie die Löschen-Buttons in der App, um bestimmte Einträge zu entfernen.
-2. **Alle App-Daten löschen:** Gehen Sie zu Geräte-Einstellungen → Apps → Prof. Buchwurm → Speicher → Daten löschen.
+2. **Alle App-Daten löschen:** Gehen Sie zu Geräte-Einstellungen → Apps → DocWorm → Speicher → Daten löschen.
 3. **App deinstallieren:** Durch das Entfernen der App werden alle lokal gespeicherten Daten gelöscht.
 
 **Externe Dienste:**
