@@ -1,0 +1,34 @@
+name: Discord Feed Sync
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Fetch Discord messages
+        run: node scripts/fetch-discord-feed.js
+        env:
+          DISCORD_BOT_TOKEN: ${{ secrets.DISCORD_BOT_TOKEN }}
+          DISCORD_SHARING_CHANNEL_ID: ${{ secrets.DISCORD_SHARING_CHANNEL_ID }}
+      - name: Publish feed to repo root
+        run: |
+          cp dist-feed/discord-messages.json discord-messages.json
+          git config user.name "docworm-bot"
+          git config user.email "bot@docworm.app"
+          git add discord-messages.json
+          if git diff --staged --quiet; then
+            echo "No feed changes — skipping commit"
+          else
+            git commit -m "chore: sync discord feed"
+            git push
+          fi
