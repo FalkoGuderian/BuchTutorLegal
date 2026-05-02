@@ -268,6 +268,7 @@
                         <li>Es werden <strong>keine personenbezogenen Daten</strong> auf Entwickler-Servern gespeichert.</li>
                         <li>Ihr <strong>API-Key</strong> wird ausschließlich verschlüsselt im Local Storage Ihres Geräts gespeichert und niemals an Dritte übermittelt.</li>
                         <li>Hochgeladene <strong>PDF-Dokumente</strong> verbleiben lokal in Ihrem Browser (IndexedDB) und werden nicht an Server übertragen.</li>
+                        <li>Über <strong>Kamera</strong> oder aus der <strong>Galerie</strong> hinzugefügte Bilder verbleiben lokal auf Ihrem Gerät und werden nur dann an OpenRouter übermittelt, wenn Sie sie aktiv an die KI senden.</li>
                         <li><strong>Chat-Verläufe</strong> und Einstellungen werden nur lokal auf Ihrem Gerät gespeichert.</li>
                     </ul>
 
@@ -278,6 +279,7 @@
                         <li>OpenRouter fungiert als Auftragsverarbeiter. Es gelten die <a href="https://openrouter.ai/privacy" target="_blank" rel="noopener noreferrer">Datenschutzrichtlinien von OpenRouter</a>.</li>
                         <li>Ihr API-Key authentifiziert Sie direkt bei OpenRouter.</li>
                     </ul>
+                    <p id="privacy-from-url-text">Wenn Sie die Funktion <strong>„Aus URL"</strong> nutzen, lädt Ihr Browser den Inhalt direkt vom angegebenen Server. Der jeweilige Server sieht dabei Ihre IP-Adresse und ggf. Cookies. Es gelten die Datenschutzrichtlinien des aufgerufenen Drittanbieters. DocWorm hat darauf keinen Einfluss.</p>
 
                     <h2>4. Ihre Rechte</h2>
                     <p id="privacy-rights">Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Da alle Daten lokal gespeichert werden, können Sie diese jederzeit durch Löschen der Browser-Daten vollständig entfernen.</p>
@@ -400,8 +402,10 @@
                     "Es werden <strong>keine personenbezogenen Daten</strong> auf Entwickler-Servern gespeichert.",
                     "Ihr <strong>API-Key</strong> wird ausschließlich verschlüsselt im Local Storage Ihres Geräts gespeichert und niemals an Dritte übermittelt.",
                     "Hochgeladene <strong>PDF-Dokumente</strong> verbleiben lokal in Ihrem Browser (IndexedDB) und werden nicht an Server übertragen.",
+                    "Über <strong>Kamera</strong> oder aus der <strong>Galerie</strong> hinzugefügte Bilder verbleiben lokal auf Ihrem Gerät und werden nur dann an OpenRouter übermittelt, wenn Sie sie aktiv an die KI senden.",
                     "<strong>Chat-Verläufe</strong> und Einstellungen werden nur lokal auf Ihrem Gerät gespeichert."
                 ],
+                privacyFromUrlText: "Wenn Sie die Funktion <strong>„Aus URL\"</strong> nutzen, lädt Ihr Browser den Inhalt direkt vom angegebenen Server. Der jeweilige Server sieht dabei Ihre IP-Adresse und ggf. Cookies. Es gelten die Datenschutzrichtlinien des aufgerufenen Drittanbieters. DocWorm hat darauf keinen Einfluss.",
                 privacyP2: "Wenn Sie KI-Funktionen nutzen, werden Textauszüge aus Ihrem PDF sowie Ihre Fragen über die OpenRouter API (openrouter.ai) an KI-Modelle weitergeleitet. Dabei gilt:",
                 privacyP3: "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Da alle Daten lokal gespeichert werden, können Sie diese jederzeit durch Löschen der Browser-Daten vollständig entfernen.",
                 privacyP4: "Sie sind selbst dafür verantwortlich, Ihre Datenschutzeinstellungen bei OpenRouter korrekt zu konfigurieren. Besuchen Sie dazu: openrouter.ai/settings/privacy",
@@ -495,8 +499,10 @@
                     "<strong>No personal data</strong> is stored on developer servers.",
                     "Your <strong>API key</strong> is stored exclusively encrypted in your device's Local Storage and never transmitted to third parties.",
                     "Uploaded <strong>PDF documents</strong> remain locally in your browser (IndexedDB) and are not transmitted to servers.",
+                    "Images added via <strong>camera</strong> or from the <strong>gallery</strong> remain locally on your device and are only transmitted to OpenRouter if you actively send them to the AI.",
                     "<strong>Chat history</strong> and settings are only stored locally on your device."
                 ],
+                privacyFromUrlText: "When you use the <strong>\"From URL\"</strong> feature, your browser loads the content directly from the specified server. That server sees your IP address and any cookies. The privacy policy of the third party applies. DocWorm has no control over this.",
                 privacyP2: "When you use AI functions, text excerpts from your PDF and your questions are forwarded via the OpenRouter API (openrouter.ai) to AI models. This means:",
                 privacyP3: "You have the right to information, correction, deletion, restriction of processing, data portability and objection. Since all data is stored locally, you can completely remove it at any time by deleting your browser data.",
                 privacyP4: "You are responsible for correctly configuring your privacy settings at OpenRouter. Visit: openrouter.ai/settings/privacy",
@@ -627,6 +633,7 @@
                         "OpenRouter acts as a processor. The <a href=\"https://openrouter.ai/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">OpenRouter privacy policy</a> applies.",
                         "Your API key authenticates you directly with OpenRouter."
                     ]) },
+                    { selector: '#privacy-from-url-text', html: t.privacyFromUrlText },
                     { selector: '#privacy-rights', text: t.privacyP3 },
                     { selector: '#privacy-settings-link', html: t.privacySettingsText },
                     { selector: '#privacy-zdr-check', html: t.privacyCheckText },
