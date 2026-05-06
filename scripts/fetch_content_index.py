@@ -31,6 +31,74 @@ TIMEOUT = 20
 
 
 # ---------------------------------------------------------------------------
+# DocWorm-Kategorien (decken die UI-Chips in app.html ab)
+# ---------------------------------------------------------------------------
+
+CAT_MATH      = "cat_math_science"
+CAT_CS        = "cat_cs_tech"
+CAT_BUSINESS  = "cat_business"
+CAT_LANG      = "cat_languages"
+CAT_HEALTH    = "cat_health"
+CAT_HUM       = "cat_humanities"
+CAT_ARTS      = "cat_arts"
+CAT_EDU       = "cat_education"
+
+# domain (intern) → DocWorm-Kategorie
+DOMAIN_TO_CAT = {
+    "mathematics":      CAT_MATH,
+    "science":          CAT_MATH,
+    "physics":          CAT_MATH,
+    "biology":          CAT_HEALTH,    # Anatomie/Physiologie eher Gesundheit
+    "computer-science": CAT_CS,
+    "business":         CAT_BUSINESS,
+    "economics":        CAT_BUSINESS,
+    "social-sciences":  CAT_HUM,
+    "humanities":       CAT_HUM,
+    "study-skills":     CAT_EDU,
+}
+
+# Title-Heuristik fuer domain="general" oder unbekannte domains
+# Patterns sind absichtlich substring-tolerant (kein \b am Wortende), damit z. B.
+# "macro" in "Macroeconomics" matcht und Lokalisierungen (calculo, fizyka) greifen.
+TITLE_PATTERNS = [
+    # Mathe/Naturwiss (EN + ES + PL + DE)
+    (r"(?i)\b(calculus|c[áa]lculo|prealgebra|precalculus|prec[áa]lculo|algebra|trigonometry|geometry|statistics|estad[íi]stica|statistik|analysis|analisis|wahrscheinlich)", CAT_MATH),
+    (r"(?i)\b(contemporary mathematics|mathematics|matem[áa]tica|matematik|mathematik)",                                                                                  CAT_MATH),
+    (r"(?i)\b(physics|f[íi]sica|fizyka|physik|chemistry|qu[íi]mica|chemie|astronomy|geology|microbiology)",                                                              CAT_MATH),
+    (r"(?i)\b(biology|biologia)",                                                                                                                                          CAT_MATH),
+    # Gesundheit
+    (r"(?i)\b(anatomy|physiology|nursing|nurses|nutrition|nutricion|zywienie|żywienie|psychiatric|mental health|population health|pharmacology|behavioral neuroscience|lifespan)", CAT_HEALTH),
+    # CS/Tech
+    (r"(?i)\b(python|programming|programmierung|computer science|informatik|data structures|algorithms|principles of data science|information systems|additive manufacturing|latex|elektrotechnik)", CAT_CS),
+    # Business/Wirtschaft
+    (r"(?i)\b(economics|economia|ekonomia|microeconomic|macroeconomic|mikroekonomia|makroekonomia|micro|macro|management|accounting|finance|marketing|business law|business ethics|entrepreneurship|organizational behavior|intellectual property|introduction to business)", CAT_BUSINESS),
+    # Humanities/Gesellschaft
+    (r"(?i)\b(history|history?a|government|sociology|psychology|psychologia|philosophy|political|anthropology|life,? liberty)", CAT_HUM),
+    # Sprachen/Literatur
+    (r"(?i)\b(english|writing|literature|composition|rhetoric|workplace)",                                                      CAT_LANG),
+    # Padagogik
+    (r"(?i)\b(college success|preparing for college|study skills|learning|education|teaching)",                                CAT_EDU),
+]
+
+
+def derive_category(domain: str, title: str, tags) -> str:
+    """Bilde (domain, title, tags) deterministisch auf eine DocWorm-Kategorie ab."""
+    cat = DOMAIN_TO_CAT.get((domain or "").lower())
+    if cat:
+        return cat
+    t = (title or "").lower()
+    for pat, c in TITLE_PATTERNS:
+        if re.search(pat, t):
+            return c
+    # Tag-Heuristik (z. B. arXiv-categories als Backup)
+    tag_str = " ".join(tags or []).lower()
+    for pat, c in TITLE_PATTERNS:
+        if re.search(pat, tag_str):
+            return c
+    return CAT_EDU
+
+
+# ---------------------------------------------------------------------------
 # OpenStax (CMS-API, kein Key noetig, CC-BY-4.0)
 # ---------------------------------------------------------------------------
 
@@ -128,6 +196,7 @@ def fetch_openstax() -> list[dict]:
             "title":    title,
             "source":   "openstax",
             "domain":   domain,
+            "category": derive_category(domain, title, subject_names),
             "tags":     subject_names,
             "language": "en",
             "webUrl":   f"https://openstax.org/details/books/{slug}",
@@ -148,6 +217,7 @@ def _openstax_from_fallback() -> list[dict]:
             "title":    title,
             "source":   "openstax",
             "domain":   domain,
+            "category": derive_category(domain, title, tags),
             "tags":     tags,
             "language": "en",
             "webUrl":   f"https://openstax.org/details/books/{slug}",
@@ -204,6 +274,7 @@ def fetch_arxiv(max_per_category: int = 15) -> list[dict]:
                 "title":    title,
                 "source":   "arxiv",
                 "domain":   domain,
+                "category": derive_category(domain, title, tags + [cat]),
                 "tags":     tags + [cat],
                 "language": "en",
                 "webUrl":   f"https://arxiv.org/abs/{arxiv_id}",
@@ -269,6 +340,7 @@ def fetch_wikibooks_de() -> list[dict]:
                 "title":    page.get("title", title),
                 "source":   "wikibooks-de",
                 "domain":   "general",
+                "category": derive_category("general", page.get("title", title), ["deutsch"]),
                 "tags":     ["deutsch"],
                 "language": "de",
                 "webUrl":   f"https://de.wikibooks.org/wiki/{slug}",
