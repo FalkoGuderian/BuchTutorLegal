@@ -61,23 +61,26 @@ DOMAIN_TO_CAT = {
 # Patterns sind absichtlich substring-tolerant (kein \b am Wortende), damit z. B.
 # "macro" in "Macroeconomics" matcht und Lokalisierungen (calculo, fizyka) greifen.
 TITLE_PATTERNS = [
-    # Mathe/Naturwiss (EN + ES + PL + DE)
-    (r"(?i)\b(calculus|c[áa]lculo|prealgebra|precalculus|prec[áa]lculo|algebra|trigonometry|geometry|statistics|estad[íi]stica|statistik|analysis|analisis|wahrscheinlich)", CAT_MATH),
-    (r"(?i)\b(contemporary mathematics|mathematics|matem[áa]tica|matematik|mathematik)",                                                                                  CAT_MATH),
-    (r"(?i)\b(physics|f[íi]sica|fizyka|physik|chemistry|qu[íi]mica|chemie|astronomy|geology|microbiology)",                                                              CAT_MATH),
-    (r"(?i)\b(biology|biologia)",                                                                                                                                          CAT_MATH),
-    # Gesundheit
-    (r"(?i)\b(anatomy|physiology|nursing|nurses|nutrition|nutricion|zywienie|żywienie|psychiatric|mental health|population health|pharmacology|behavioral neuroscience|lifespan|sensory)", CAT_HEALTH),
-    # CS/Tech
-    (r"(?i)\b(python|programming|programmierung|computer science|informatik|data structures|algorithms|principles of data science|information systems|additive manufacturing|latex|elektrotechnik)", CAT_CS),
-    # Business/Wirtschaft
-    (r"(?i)\b(economics|economia|ekonomia|microeconomic|macroeconomic|mikroekonomia|makroekonomia|micro|macro|management|accounting|finance|marketing|business law|business ethics|entrepreneurship|organizational behavior|intellectual property|introduction to business)", CAT_BUSINESS),
-    # Humanities/Gesellschaft
-    (r"(?i)\b(history|history?a|government|sociology|psychology|psychologia|philosophy|political|anthropology|life,? liberty)", CAT_HUM),
-    # Sprachen/Literatur
-    (r"(?i)\b(english|writing|literature|composition|rhetoric|workplace)",                                                      CAT_LANG),
-    # Padagogik
-    (r"(?i)\b(college success|preparing for college|study skills|learning|education|teaching)",                                CAT_EDU),
+    # === Mathematik (Stems, kein \b am Ende wegen Komposita) ===
+    (r"(?i)(calcul|c[áa]lcul|prealgebra|precalcul|trigonometr|geometr|statist|stochast|wahrscheinlich|mengenlehr|zahlentheor|topolog|maßtheor|funktionentheor|tensorrechn|vektoranal|vektoralgebr|differentialr|integralr|numerisch|planimetr|mathemat|matem[áa]t|matematik|mathe |mathe:|serlo)", CAT_MATH),
+    (r"(?i)(algebra|lineare algebra|analysis)", CAT_MATH),
+    # === Physik & Naturwiss ===
+    (r"(?i)(physik|physic|f[íi]sic|fizyk|thermodynam|kinematik|dynamik|mechanik|relativit|quantenmechan|schwingung|elektrostat|elektrodynam|strahlung|akustik|himmelsgesetze|interstellar|raumfahrt|nmr.spektr|photogrammetr|meteorolog|atmosph|astrono|astrophot|geolog|mikrobiol|ökolog|biometr|botanik|zoolog|chemie|chemi|qu[íi]mic|atommodell|molekül|nuklear|bautechn|bauelemente|werkstoffkunde|transmissionline|ingenieur|maschinenbau|schienenfahrzeug|eisenbahntechn|motoren.*technisch|schaltung|opti[ck]|spektroskop|röntgen)", CAT_MATH),
+    (r"(?i)(biolog|biolog)", CAT_MATH),
+    # === Gesundheit & Medizin ===
+    (r"(?i)(anatom|physiolog|nursing|nurses|ernährung|nutrition|nutrici|zywien|psychiatr|mental health|population health|pharmakol|pharmacolog|neural|sensory|medizin|augenheil|ophthalmol|dermatol|chirurg|histolog|hno-heilkunde|radiolog|sonograph|differentialdiagn|neurolog|pädiatr|schilddrüse|halswirbel|naturheil|suizidproph|lichtmikroskop|lunge|leber|niere)", CAT_HEALTH),
+    # === Informatik & Technik ===
+    (r"(?i)(python|programm|informatik|computer|datenbank|sql|netzwerk|linux|latex|elektrotechn|digitale.schalt|digitale.signal|mikrocontroll|mikrorechnert|betriebssystem|kryptolog|datenkompres|arduino|blender|vhdl|vba|gtk|gambas|pascal|fortran|freebasic|quickbasic|svg|ncurses|php|ruby on rails|javascript|html|css|c\+\+|\.net\b|gimp|inkscape|awk|haskell|swift|groovy|signal|interrupts|computerhardware|computerbasiert|informationstechnisch|webdesign|websiteentwickl|ip-telefon|mqtt|webgl|x3dom|streaming|bildbearbeitung|kdenlive|openoffice|mediawiki|additive manufactur|rfid|amateurfunk|datensicherung|datenschutz|disk.forensik|privacy.handbuch|kryptograph|algorithmen|autoit|automat|bauelemen|fpga|wireless|mikroelektron)", CAT_CS),
+    # === Wirtschaft & Recht ===
+    (r"(?i)(wirtschaft|econom|bwl |mikroökonom|makroökonom|management|accounting|rechnungswesen|controlling|supply.chain|marketing|betriebswirt|finanz|vertrieb|europarecht|zivilrecht|strafrecht|öffentliches recht|sachenrecht|hamburgisch|ordnungswidrigkeiten|un-kaufrecht|zwangsvollstreckung|regress|zivilprozess|strafprozess|tenorierung|internationaler e-commerce|rechtswiss|karl marx.*kritik|propaganda|non-profit|transaktionssystem|geldanlage|internes rechnungswesen|unternehmens)", CAT_BUSINESS),
+    # === Geisteswissenschaften ===
+    (r"(?i)(geschicht|histor|soziolog|psycholog|philosoph|politikwiss|political|anthropolog|religionswiss|religionskritik|islam|buddhis|hinduismus|christentum|quäkertum|protestant|orthodoxe.*kirch|freikirchen|heidegger|gödel|studienführer|einbürger|bürgerwissen|demokratie|staatsbürger|volksinitiat|bürgerrat|julius döpfner|marxkritik|enzyklopädie.*irrtüm)", CAT_HUM),
+    # === Sprachen & Literatur ===
+    (r"(?i)(grammatik|grammar|wörterbuch|lexikon|deutsch als fremd|englisch|english|französ|spanisch|latein|griechi|akkadisch|armenisch|arabisch|japanisch|koreanisch|chinesisch|russisch|türkisch|polnisch|tschechisch|niederländ|schwedisch|dänisch|norweg|finnisch|slowenisch|kroatisch|rumänisch|ungaris|litauisch|portugies|katalanisch|hebräisch|isländisch|färöisch|esperanto|quechua|kiswahili|nepali|sylhetisch|tetum|tschuwaschi|mittelhochdt|devanagari|kyrillisch|ido |sprachspiel|lerne thai|wie man eine sprache|literarisches schreiben|literatur|beowulf|wörterbuch|fruchtbringendes|stolpersteine.*sprache|computerbasierte.*übersetz)", CAT_LANG),
+    # === Pädagogik & Bildung ===
+    (r"(?i)(pädagog|didaktik|lehr-lern|learning|education|teaching|schulbuch|college success|study skills|wikijunior|wikipedia in der schule|wikipedia.lehrbuch|erwachsenenbildung|klassengröße|wie man eine sprache lernt|organisationale|unternehmerische|innovatives wissensmanagement|moderne didaktik|leitfaden für glam|recherche.portal|handbuch open science|digitale lehr|open culture)", CAT_EDU),
+    # === Kunst & Kreatives ===
+    (r"(?i)(musik|music|gitarre|klavier|gesang|schlagzeug|liederbuch|drumrecording|bouzouki|tonstudio|homestudio|architektur|kunstgeschichte|fotografie|grafik|design|ästhetik|wie schreibe ich ein drehbuch|buchbinden|tipps.*mal|praxisorient.*mal|do it yourself)", CAT_ARTS),
 ]
 
 
@@ -399,43 +402,25 @@ def _commons_url(title: str) -> str | None:
 
 WIKIBOOKS_DE_API = "https://de.wikibooks.org/w/api.php"
 
-# Regex-Filter: akademisch / bildungsrelevant — matcht Titel-Substring
-_DE_RELEVANT = re.compile(
-    r"(?i)("
-    # Naturwiss
-    r"physik|chem|biolog|astro|geolog|meteorolog|botanik|zoolog|genetik|mikrobiol|patholog|"
-    r"biochem|mykol|mikrobiom|"
-    # Mathematik
-    r"mathe|algebra|analysis|statistik|geometr|topolog|tensorr|funktionen|vektorr|"
-    r"wahrscheinlich|mengenlehre|zahlentheor|"
-    # Elektro / Technik
-    r"elektro|mechani|thermodynamik|kinematik|dynamik|relativit|quanten|strahlung|schwingung|"
-    r"optik|akustik|motor|maschin|"
-    # Informatik / Programmierung
-    r"informatik|programmier|python|java|c\+\+|pascal|gambas|algorithmen|datenbank|sql|"
-    r"netzwerk|linux|latex|html|css|javascript|arduino|software|hardware|edv|gtk|vba|blender|"
-    # Medizin / Gesundheit
-    r"medizin|gesundh|anatomie|physiolog|neurolog|psychiatr|pharmakol|ernährung|"
-    r"psycholog|medizinisch|"
-    # Geisteswiss
-    r"geschicht|philosophi|ethik|erkenntnistheor|logik|soziolog|politikwiss|rechtswiss|jur|"
-    r"wirtschaft|betriebswirt|volkswirt|materialwirt|"
-    # Sprachen / Literatur
-    r"japanisch|tschechisch|arabisch|russisch|chinesisch|türkisch|spanisch|französisch|"
-    r"italienisch|latein|altgriechisch|akkadisch|armenisch|grammatik|wörterbuch|lexikon|"
-    # Kunst / Musik / Architektur
-    r"musik|gitarre|architektur|kunst|literatur|"
-    # Pädagogik / Bildung
-    r"pädagog|wikijunior|schulbuch|einbürger|sozialleist|wikipedia-lehr"
-    r")"
-)
-
-# Explizit ausschließen (Hobbys, Esoterik, Sport, Reise die durch Filter rutschen)
+# Explizit ausschließen — Hobbys, Esoterik, Sport ohne Lehrwert, regionale Reiseführer
+# _DE_RELEVANT wurde entfernt: alle Bücher aus Kategorie:Buch werden eingeschlossen,
+# solange _DE_SKIP nicht greift. "Kochbuch" in technischen Titeln (Heimrouter-Kochbuch)
+# ist ein bekanntes Fehl-Match; diese Bücher landen im Index (cat_cs) — akzeptabel.
 _DE_SKIP = re.compile(
-    r"(?i)(rezept|kochen|kochbuch|reisebericht|fahrrad|motorrad|angeln|stricken|"
-    r"häkeln|esoterik|klartraum|bewusstsein|mahjong|poker|schach|fußball|"
-    r"basketball|fitness|yoga|abnehm|akrobatik|kampfkunst|aikido|"
-    r"american football|gedicht|auswendig|reimen)"
+    r"(?i)("
+    r"\bkochbuch\b(?!.*(heimrouter|server|google|sheets|linux|bash|shell))|"  # nur echte Kochbücher
+    r"\brezept\b(?!.*procmail)|"  # "Rezepte" als Kochwort, nicht IT-Rezepte
+    r"reisebericht|fahrrad fahren|fahrradtechnik|kettenschaltung|motorrad durch|"
+    r"angeln|stricken|häkeln|esoterik|klartraum|bewusstseinserweiterung|"
+    r"mahjong|poker|fußball|basketball|akrobatik|kampfkunst|aikido|"
+    r"american football|dreadlocks|barfußwandern|wellenreiten|tauchen in|"
+    r"segelflug|radwandern|wanderführer|radsport|rudern|klettern|inlineskaten|"
+    r"tanzen: salsa|bogenschießen|pilzanbau|seife herstellen|campingplatzrätsel|"
+    r"wicca|tarot|theosophisch|reinkarnation|schamanisch|bdsm|shibari|"
+    r"yogasutra|suizidproph|"  # suizidprophylaxe wird erlaubt (Medizin)!
+    r"dresdner missions|die herren von|elbsorbisch|das mirakel|das neumarktareal|"
+    r"shibari|selbr3"
+    r")"
 )
 
 def _fetch_de_book_titles() -> list[str]:
@@ -461,7 +446,7 @@ def _fetch_de_book_titles() -> list[str]:
                     t = m.get("title", "")
                     if "/" in t or ":" in t:
                         continue
-                    if _DE_RELEVANT.search(t) and not _DE_SKIP.search(t):
+                    if not _DE_SKIP.search(t):
                         all_titles.append(t)
                 if "continue" not in d:
                     break
