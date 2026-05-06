@@ -67,7 +67,7 @@ TITLE_PATTERNS = [
     (r"(?i)\b(physics|f[íi]sica|fizyka|physik|chemistry|qu[íi]mica|chemie|astronomy|geology|microbiology)",                                                              CAT_MATH),
     (r"(?i)\b(biology|biologia)",                                                                                                                                          CAT_MATH),
     # Gesundheit
-    (r"(?i)\b(anatomy|physiology|nursing|nurses|nutrition|nutricion|zywienie|żywienie|psychiatric|mental health|population health|pharmacology|behavioral neuroscience|lifespan)", CAT_HEALTH),
+    (r"(?i)\b(anatomy|physiology|nursing|nurses|nutrition|nutricion|zywienie|żywienie|psychiatric|mental health|population health|pharmacology|behavioral neuroscience|lifespan|sensory)", CAT_HEALTH),
     # CS/Tech
     (r"(?i)\b(python|programming|programmierung|computer science|informatik|data structures|algorithms|principles of data science|information systems|additive manufacturing|latex|elektrotechnik)", CAT_CS),
     # Business/Wirtschaft
@@ -90,8 +90,9 @@ def derive_category(domain: str, title: str, tags) -> str:
     for pat, c in TITLE_PATTERNS:
         if re.search(pat, t):
             return c
-    # Tag-Heuristik (z. B. arXiv-categories als Backup)
-    tag_str = " ".join(tags or []).lower()
+    # Tag-Heuristik — Sprach-Tags ("english"/"deutsch") ignorieren
+    _lang_tags = {"english", "deutsch", "de", "en"}
+    tag_str = " ".join(t for t in (tags or []) if t.lower() not in _lang_tags).lower()
     for pat, c in TITLE_PATTERNS:
         if re.search(pat, tag_str):
             return c
@@ -556,7 +557,7 @@ _EN_RELEVANT = re.compile(
     r"(?i)("
     # Naturwiss
     r"physics|chemistry|biochemistry|biology|botany|anatomy|physiology|astronomy|geology|"
-    r"ecology|microbiology|neuroscience|genetics|parasit|radiation|acoustics|electro|"
+    r"ecology|microbiology|neuroscience|genetics|parasit|radiation|acoustics|electro|sensory|"
     # Mathematik
     r"calculus|algebra|statistics|geometry|topology|linear|numerical|mathematical|"
     r"probability|discrete math|"
