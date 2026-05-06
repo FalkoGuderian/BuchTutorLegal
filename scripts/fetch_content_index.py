@@ -306,53 +306,125 @@ WIKIBOOKS_DE_TITLES = [
     "Astronomie",
 ]
 
-WIKIBOOKS_API = "https://de.wikibooks.org/w/api.php"
+WIKIBOOKS_DE_API = "https://de.wikibooks.org/w/api.php"
+
+
+def _wikibooks_de_entry(title: str, abstract: str = "") -> dict:
+    slug = title.replace(" ", "_")
+    return {
+        "id":       f"wikibooks-de-{slug.lower().replace('_', '-')}",
+        "title":    title,
+        "source":   "wikibooks-de",
+        "domain":   "general",
+        "category": derive_category("general", title, ["deutsch"]),
+        "tags":     ["deutsch"],
+        "language": "de",
+        "webUrl":   f"https://de.wikibooks.org/wiki/{slug}",
+        "pdfUrl":   f"https://de.wikibooks.org/api/rest_v1/page/pdf/{slug}",
+        "abstract": abstract,
+        "license":  "CC-BY-SA-3.0",
+        "updated":  TODAY,
+    }
 
 
 def fetch_wikibooks_de() -> list[dict]:
-    entries = []
+    abstracts: dict[str, str] = {}
     for title in WIKIBOOKS_DE_TITLES:
         params = {
             "action":      "query",
             "titles":      title,
-            "prop":        "info|extracts",
+            "prop":        "extracts",
             "exintro":     True,
             "explaintext": True,
             "format":      "json",
         }
         try:
-            r = requests.get(WIKIBOOKS_API, params=params, headers=HEADERS, timeout=TIMEOUT)
+            r = requests.get(WIKIBOOKS_DE_API, params=params, headers=HEADERS, timeout=TIMEOUT)
             r.raise_for_status()
-            pages = r.json().get("query", {}).get("pages", {})
-        except Exception as e:
-            print(f"[wikibooks-de:{title}] Fehler: {e}")
-            continue
+            for page in r.json().get("query", {}).get("pages", {}).values():
+                abstracts[title] = (page.get("extract") or "")[:200]
+        except Exception:
+            pass
         finally:
-            time.sleep(1)  # Wikibooks rate-limit respektieren
+            time.sleep(1)
 
-        for page_id, page in pages.items():
-            if page_id == "-1":
-                continue
-            slug     = page.get("title", title).replace(" ", "_")
-            abstract = (page.get("extract") or "")[:200]
-            page_title = page.get("title", title)
-            encoded    = page_title.replace(" ", "_")
-            entries.append({
-                "id":       f"wikibooks-de-{slug.lower().replace('_', '-')}",
-                "title":    page_title,
-                "source":   "wikibooks-de",
-                "domain":   "general",
-                "category": derive_category("general", page_title, ["deutsch"]),
-                "tags":     ["deutsch"],
-                "language": "de",
-                "webUrl":   f"https://de.wikibooks.org/wiki/{slug}",
-                "pdfUrl":   f"https://de.wikibooks.org/api/rest_v1/page/pdf/{encoded}",
-                "abstract": abstract,
-                "license":  "CC-BY-SA-3.0",
-                "updated":  TODAY,
-            })
+    entries = [_wikibooks_de_entry(t, abstracts.get(t, "")) for t in WIKIBOOKS_DE_TITLES]
+    print(f"[wikibooks-de] {len(entries):3d} Buecher ({len(abstracts)} mit Abstract)")
+    return entries
 
-    print(f"[wikibooks-de] {len(entries):3d} Buecher")
+
+# ---------------------------------------------------------------------------
+# Wikibooks Englisch (MediaWiki API, CC-BY-SA-3.0)
+# ---------------------------------------------------------------------------
+
+WIKIBOOKS_EN_TITLES = [
+    "Calculus",
+    "Linear Algebra",
+    "Algebra",
+    "Statistics",
+    "Physics Study Guide",
+    "Chemistry",
+    "Biology",
+    "Astronomy",
+    "Electronics",
+    "Python Programming",
+    "Computer Programming",
+    "LaTeX",
+    "Introduction to Philosophy",
+    "Economics",
+    "Human Physiology",
+    "Psychology",
+    "Sociology",
+    "History of Western Civilization",
+    "English Grammar",
+]
+
+WIKIBOOKS_EN_API = "https://en.wikibooks.org/w/api.php"
+
+
+def _wikibooks_en_entry(title: str, abstract: str = "") -> dict:
+    slug = title.replace(" ", "_")
+    return {
+        "id":       f"wikibooks-en-{slug.lower().replace('_', '-')}",
+        "title":    title,
+        "source":   "wikibooks-en",
+        "domain":   "general",
+        "category": derive_category("general", title, ["english"]),
+        "tags":     ["english"],
+        "language": "en",
+        "webUrl":   f"https://en.wikibooks.org/wiki/{slug}",
+        "pdfUrl":   f"https://en.wikibooks.org/api/rest_v1/page/pdf/{slug}",
+        "abstract": abstract,
+        "license":  "CC-BY-SA-3.0",
+        "updated":  TODAY,
+    }
+
+
+def fetch_wikibooks_en() -> list[dict]:
+    # URLs sind deterministisch — API nur fuer Abstract (optional).
+    # Bei 429 wird der Eintrag trotzdem ohne Abstract angelegt.
+    abstracts: dict[str, str] = {}
+    for title in WIKIBOOKS_EN_TITLES:
+        params = {
+            "action":      "query",
+            "titles":      title,
+            "prop":        "extracts",
+            "exintro":     True,
+            "explaintext": True,
+            "format":      "json",
+        }
+        try:
+            r = requests.get(WIKIBOOKS_EN_API, params=params, headers=HEADERS, timeout=TIMEOUT)
+            r.raise_for_status()
+            for page in r.json().get("query", {}).get("pages", {}).values():
+                abstracts[title] = (page.get("extract") or "")[:200]
+        except Exception:
+            pass  # Abstract bleibt leer, Eintrag kommt trotzdem
+        finally:
+            time.sleep(2)
+
+    entries = [_wikibooks_en_entry(t, abstracts.get(t, "")) for t in WIKIBOOKS_EN_TITLES]
+    print(f"[wikibooks-en] {len(entries):3d} Buecher ({len(abstracts)} mit Abstract)")
     return entries
 
 
@@ -376,6 +448,8 @@ def main() -> None:
     index.extend(fetch_openstax())
     index.extend(fetch_arxiv(max_per_category=15))
     index.extend(fetch_wikibooks_de())
+    time.sleep(5)  # Pause zwischen DE und EN um Rate-Limit zu vermeiden
+    index.extend(fetch_wikibooks_en())
     index = deduplicate(index)
 
     OUT.write_text(json.dumps(index, indent=2, ensure_ascii=False), encoding="utf-8")
