@@ -335,16 +335,18 @@ def fetch_wikibooks_de() -> list[dict]:
                 continue
             slug     = page.get("title", title).replace(" ", "_")
             abstract = (page.get("extract") or "")[:200]
+            page_title = page.get("title", title)
+            encoded    = page_title.replace(" ", "_")
             entries.append({
                 "id":       f"wikibooks-de-{slug.lower().replace('_', '-')}",
-                "title":    page.get("title", title),
+                "title":    page_title,
                 "source":   "wikibooks-de",
                 "domain":   "general",
-                "category": derive_category("general", page.get("title", title), ["deutsch"]),
+                "category": derive_category("general", page_title, ["deutsch"]),
                 "tags":     ["deutsch"],
                 "language": "de",
                 "webUrl":   f"https://de.wikibooks.org/wiki/{slug}",
-                "pdfUrl":   None,
+                "pdfUrl":   f"https://de.wikibooks.org/api/rest_v1/page/pdf/{encoded}",
                 "abstract": abstract,
                 "license":  "CC-BY-SA-3.0",
                 "updated":  TODAY,
