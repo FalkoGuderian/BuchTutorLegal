@@ -303,39 +303,194 @@ def fetch_arxiv(max_per_category: int = 15) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
+# Wikimedia Commons: direkte PDF-Download-URLs (vollstaendige Buchversionen)
+# ---------------------------------------------------------------------------
+
+COMMONS_API = "https://commons.wikimedia.org/w/api.php"
+_commons_pdf_map: dict[str, str] = {}    # normalized_title → upload.wikimedia.org URL
+_commons_en_titles: list[tuple[str,str]] = []  # (raw_title, url) für EN-Entries
+_commons_de_titles: list[tuple[str,str]] = []  # (raw_title, url) für DE-Entries
+
+
+def _norm(title: str) -> str:
+    """Vereinfachter Vergleichsschluessel: lowercase, nur Buchstaben."""
+    t = title.lower()
+    # Umlaut-Rueckschreibung (CamelCase-PDFs: ue→ü etc.)
+    for src, dst in [("ue","ü"),("oe","ö"),("ae","ä"),("ss","ß")]:
+        t = t.replace(src, dst)
+    return re.sub(r"[^a-zäöüß]", "", t)
+
+
+def load_commons_pdfs() -> None:
+    """Laedt alle PDF-Dateinamen aus Commons + deren Download-URLs einmalig."""
+    if _commons_pdf_map:
+        return  # bereits geladen
+
+    for cat in ["German_Wikibooks_PDF", "English_Wikibooks_PDF"]:
+        all_files: list[str] = []
+        cont: dict = {}
+        while True:
+            params = {"action":"query","list":"categorymembers","cmtitle":f"Category:{cat}",
+                      "cmlimit":500,"cmtype":"file","format":"json",**cont}
+            try:
+                r = requests.get(COMMONS_API, params=params, headers=HEADERS, timeout=TIMEOUT)
+                r.raise_for_status()
+                d = r.json()
+            except Exception as e:
+                print(f"[commons:{cat}] {e}")
+                break
+            all_files.extend(m["title"] for m in d.get("query",{}).get("categorymembers",[]))
+            if "continue" not in d:
+                break
+            cont = d["continue"]
+            time.sleep(0.3)
+
+        if not all_files:
+            continue
+
+        is_en = cat.startswith("English")
+        before = len(_commons_pdf_map)
+
+        # Batch-Abfrage der Download-URLs (50 pro Request)
+        for i in range(0, len(all_files), 50):
+            batch = all_files[i:i+50]
+            try:
+                r = requests.get(COMMONS_API, params={
+                    "action":"query","titles":"|".join(batch),
+                    "prop":"imageinfo","iiprop":"url","format":"json"
+                }, headers=HEADERS, timeout=TIMEOUT)
+                r.raise_for_status()
+                for page in r.json().get("query",{}).get("pages",{}).values():
+                    fname = page.get("title","").replace("File:","").replace(".pdf","")
+                    fname = re.sub(r"\s*\d+\.\d+\s*$","",fname)  # Versionsnummern entfernen
+                    url   = (page.get("imageinfo") or [{}])[0].get("url","")
+                    if url:
+                        url = url.split("?")[0]  # utm-Params entfernen
+                        _commons_pdf_map[_norm(fname)] = url
+                        raw_title = fname.replace("_"," ").strip()
+                        if is_en:
+                            _commons_en_titles.append((raw_title, url))
+                        else:
+                            _commons_de_titles.append((raw_title, url))
+            except Exception as e:
+                print(f"[commons] imageinfo-Fehler: {e}")
+            time.sleep(0.3)
+
+        added = len(_commons_pdf_map) - before
+        print(f"[commons:{cat}] {added} URLs geladen")
+
+
+def _commons_url(title: str) -> str | None:
+    """Gibt die Commons-PDF-URL fuer einen Wikibooks-Titel zurueck, falls vorhanden."""
+    key = _norm(title)
+    if key in _commons_pdf_map:
+        return _commons_pdf_map[key]
+    # Toleranz: Titel ist Praefix des Dateinamens (z. B. "Mathematik" matcht "MathematikBuch")
+    for k, v in _commons_pdf_map.items():
+        if k.startswith(key) and len(k) - len(key) < 10:
+            return v
+    return None
+
+
+# ---------------------------------------------------------------------------
 # Wikibooks Deutsch (MediaWiki API, CC-BY-SA-3.0)
 # ---------------------------------------------------------------------------
 
-WIKIBOOKS_DE_TITLES = [
-    "Mathematik",
-    "Physik",
-    "Chemie",
-    "Biologie",
-    "Informatik",
-    "Programmierung in Python",
-    "LaTeX",
-    "Statistik",
-    "Lineare Algebra",
-    "Analysis",
-    "Elektrotechnik",
-    "Astronomie",
-]
-
 WIKIBOOKS_DE_API = "https://de.wikibooks.org/w/api.php"
+
+# Regex-Filter: akademisch / bildungsrelevant — matcht Titel-Substring
+_DE_RELEVANT = re.compile(
+    r"(?i)("
+    # Naturwiss
+    r"physik|chem|biolog|astro|geolog|meteorolog|botanik|zoolog|genetik|mikrobiol|patholog|"
+    r"biochem|mykol|mikrobiom|"
+    # Mathematik
+    r"mathe|algebra|analysis|statistik|geometr|topolog|tensorr|funktionen|vektorr|"
+    r"wahrscheinlich|mengenlehre|zahlentheor|"
+    # Elektro / Technik
+    r"elektro|mechani|thermodynamik|kinematik|dynamik|relativit|quanten|strahlung|schwingung|"
+    r"optik|akustik|motor|maschin|"
+    # Informatik / Programmierung
+    r"informatik|programmier|python|java|c\+\+|pascal|gambas|algorithmen|datenbank|sql|"
+    r"netzwerk|linux|latex|html|css|javascript|arduino|software|hardware|edv|gtk|vba|blender|"
+    # Medizin / Gesundheit
+    r"medizin|gesundh|anatomie|physiolog|neurolog|psychiatr|pharmakol|ernährung|"
+    r"psycholog|medizinisch|"
+    # Geisteswiss
+    r"geschicht|philosophi|ethik|erkenntnistheor|logik|soziolog|politikwiss|rechtswiss|jur|"
+    r"wirtschaft|betriebswirt|volkswirt|materialwirt|"
+    # Sprachen / Literatur
+    r"japanisch|tschechisch|arabisch|russisch|chinesisch|türkisch|spanisch|französisch|"
+    r"italienisch|latein|altgriechisch|akkadisch|armenisch|grammatik|wörterbuch|lexikon|"
+    # Kunst / Musik / Architektur
+    r"musik|gitarre|architektur|kunst|literatur|"
+    # Pädagogik / Bildung
+    r"pädagog|wikijunior|schulbuch|einbürger|sozialleist|wikipedia-lehr"
+    r")"
+)
+
+# Explizit ausschließen (Hobbys, Esoterik, Sport, Reise die durch Filter rutschen)
+_DE_SKIP = re.compile(
+    r"(?i)(rezept|kochen|kochbuch|reisebericht|fahrrad|motorrad|angeln|stricken|"
+    r"häkeln|esoterik|klartraum|bewusstsein|mahjong|poker|schach|fußball|"
+    r"basketball|fitness|yoga|abnehm|akrobatik|kampfkunst|aikido|"
+    r"american football|gedicht|auswendig|reimen)"
+)
+
+def _fetch_de_book_titles() -> list[str]:
+    """Lädt alle Bücher aus Kategorie:Buch (mit Retry) und filtert nach akademischer Relevanz."""
+    all_titles: list[str] = []
+    cont: dict = {}
+    for attempt in range(3):
+        if attempt > 0:
+            wait = 15 * attempt
+            print(f"[wikibooks-de] Retry {attempt} nach {wait}s ...")
+            time.sleep(wait)
+        try:
+            while True:
+                params = {
+                    "action": "query", "list": "categorymembers",
+                    "cmtitle": "Kategorie:Buch", "cmlimit": 500,
+                    "cmnamespace": 0, "format": "json", **cont
+                }
+                r = requests.get(WIKIBOOKS_DE_API, params=params, headers=HEADERS, timeout=TIMEOUT)
+                r.raise_for_status()
+                d = r.json()
+                for m in d.get("query", {}).get("categorymembers", []):
+                    t = m.get("title", "")
+                    if "/" in t or ":" in t:
+                        continue
+                    if _DE_RELEVANT.search(t) and not _DE_SKIP.search(t):
+                        all_titles.append(t)
+                if "continue" not in d:
+                    break
+                cont = d["continue"]
+                time.sleep(0.3)
+            break  # Erfolg
+        except Exception as e:
+            print(f"[wikibooks-de] Kategorie-Abruf Fehler: {e}")
+            all_titles = []
+            cont = {}
+
+    return sorted(set(all_titles))
 
 
 def _wikibooks_de_entry(title: str, abstract: str = "") -> dict:
-    slug = title.replace(" ", "_")
+    from urllib.parse import quote
+    slug     = title.replace(" ", "_")
+    slug_enc = quote(slug, safe="/-_.")
+    slug_id  = re.sub(r'[^a-z0-9-]', '-', slug.lower()).strip('-')
+    pdf_url  = _commons_url(title) or f"https://de.wikibooks.org/api/rest_v1/page/pdf/{slug_enc}"
     return {
-        "id":       f"wikibooks-de-{slug.lower().replace('_', '-')}",
+        "id":       f"wikibooks-de-{slug_id}",
         "title":    title,
         "source":   "wikibooks-de",
         "domain":   "general",
         "category": derive_category("general", title, ["deutsch"]),
         "tags":     ["deutsch"],
         "language": "de",
-        "webUrl":   f"https://de.wikibooks.org/wiki/{slug}",
-        "pdfUrl":   f"https://de.wikibooks.org/api/rest_v1/page/pdf/{slug}",
+        "webUrl":   f"https://de.wikibooks.org/wiki/{slug_enc}",
+        "pdfUrl":   pdf_url,
         "abstract": abstract,
         "license":  "CC-BY-SA-3.0",
         "updated":  TODAY,
@@ -343,18 +498,42 @@ def _wikibooks_de_entry(title: str, abstract: str = "") -> dict:
 
 
 def fetch_wikibooks_de() -> list[dict]:
+    titles = _fetch_de_book_titles()
+    # Fallback: Commons-DE-Titel nutzen wenn Kategorie-API versagt
+    if not titles and _commons_de_titles:
+        print("[wikibooks-de] Fallback auf Commons-DE-Titel")
+        filtered = [(t, u) for t, u in _commons_de_titles if not _DE_SKIP.search(t)]
+        entries = []
+        for title, commons_url in filtered:
+            from urllib.parse import quote
+            slug     = title.replace(" ", "_")
+            slug_enc = quote(slug, safe="/-_.")
+            slug_id  = re.sub(r'[^a-z0-9-]', '-', slug.lower()).strip('-')
+            entries.append({
+                "id":       f"wikibooks-de-{slug_id}",
+                "title":    title,
+                "source":   "wikibooks-de",
+                "domain":   "general",
+                "category": derive_category("general", title, ["deutsch"]),
+                "tags":     ["deutsch"],
+                "language": "de",
+                "webUrl":   f"https://de.wikibooks.org/wiki/{slug_enc}",
+                "pdfUrl":   commons_url,
+                "abstract": "",
+                "license":  "CC-BY-SA-3.0",
+                "updated":  TODAY,
+            })
+        print(f"[wikibooks-de] {len(entries):3d} Buecher (via Commons, kein extra API-Call)")
+        return entries
+
+    # Abstracts nur fuer die ersten 20 um Rate-Limit zu schonen
     abstracts: dict[str, str] = {}
-    for title in WIKIBOOKS_DE_TITLES:
-        params = {
-            "action":      "query",
-            "titles":      title,
-            "prop":        "extracts",
-            "exintro":     True,
-            "explaintext": True,
-            "format":      "json",
-        }
+    for title in titles[:20]:
         try:
-            r = requests.get(WIKIBOOKS_DE_API, params=params, headers=HEADERS, timeout=TIMEOUT)
+            r = requests.get(WIKIBOOKS_DE_API, params={
+                "action": "query", "titles": title, "prop": "extracts",
+                "exintro": True, "explaintext": True, "format": "json",
+            }, headers=HEADERS, timeout=TIMEOUT)
             r.raise_for_status()
             for page in r.json().get("query", {}).get("pages", {}).values():
                 abstracts[title] = (page.get("extract") or "")[:200]
@@ -362,8 +541,7 @@ def fetch_wikibooks_de() -> list[dict]:
             pass
         finally:
             time.sleep(1)
-
-    entries = [_wikibooks_de_entry(t, abstracts.get(t, "")) for t in WIKIBOOKS_DE_TITLES]
+    entries = [_wikibooks_de_entry(t, abstracts.get(t, "")) for t in titles]
     print(f"[wikibooks-de] {len(entries):3d} Buecher ({len(abstracts)} mit Abstract)")
     return entries
 
@@ -372,43 +550,91 @@ def fetch_wikibooks_de() -> list[dict]:
 # Wikibooks Englisch (MediaWiki API, CC-BY-SA-3.0)
 # ---------------------------------------------------------------------------
 
-WIKIBOOKS_EN_TITLES = [
-    "Calculus",
-    "Linear Algebra",
-    "Algebra",
-    "Statistics",
-    "Physics Study Guide",
-    "Chemistry",
-    "Biology",
-    "Astronomy",
-    "Electronics",
-    "Python Programming",
-    "Computer Programming",
-    "LaTeX",
-    "Introduction to Philosophy",
-    "Economics",
-    "Human Physiology",
-    "Psychology",
-    "Sociology",
-    "History of Western Civilization",
-    "English Grammar",
-]
-
 WIKIBOOKS_EN_API = "https://en.wikibooks.org/w/api.php"
+
+_EN_RELEVANT = re.compile(
+    r"(?i)("
+    # Naturwiss
+    r"physics|chemistry|biochemistry|biology|botany|anatomy|physiology|astronomy|geology|"
+    r"ecology|microbiology|neuroscience|genetics|parasit|radiation|acoustics|electro|"
+    # Mathematik
+    r"calculus|algebra|statistics|geometry|topology|linear|numerical|mathematical|"
+    r"probability|discrete math|"
+    # Informatik
+    r"programming|python|java|c\+\+|algorithm|database|sql|network|linux|computer|"
+    r"artificial|machine learning|neural|data|haskell|javascript|perl|ruby|r program|"
+    r"assembly|operating system|software|hardware|security|blender|"
+    # Wirtschaft / Recht
+    r"economics|microeconomic|macroeconomic|business|accounting|finance|marketing|"
+    r"management|transport|e-commerce|legal|law|"
+    # Medizin / Gesundheit
+    r"medical|medicine|health|nursing|pharmacolog|"
+    # Geisteswiss
+    r"history|philosophy|psychology|sociology|anthropolog|political|european|"
+    r"cognitive|behavioral|"
+    # Sprachen / Schreiben
+    r"grammar|writing|language|latin|greek|arabic|japanese|french|spanish|german|"
+    r"chinese|russian|"
+    # Pädagogik
+    r"education|pedagog|teaching|"
+    # Sonstiges Akademisch
+    r"introduction to|fundamentals|principles of|guide to|textbook"
+    r")"
+)
+
+_EN_SKIP = re.compile(
+    r"(?i)(cooking|recipe|chess|poker|game guide|walkthrough|ace attorney|"
+    r"hockey|sport|guitar|knitting|crochet|travel|tourism|"
+    r"national hockey|roller coaster|adventure)"
+)
+
+
+def _fetch_en_book_titles() -> list[str]:
+    """Lädt alle EN-Bücher aus Category:Books_with_PDF_version."""
+    all_titles: list[str] = []
+    cont: dict = {}
+    while True:
+        params = {
+            "action": "query", "list": "categorymembers",
+            "cmtitle": "Category:Books_with_PDF_version", "cmlimit": 500,
+            "cmnamespace": 0, "format": "json", **cont
+        }
+        try:
+            r = requests.get(WIKIBOOKS_EN_API, params=params, headers=HEADERS, timeout=TIMEOUT)
+            r.raise_for_status()
+            d = r.json()
+        except Exception as e:
+            print(f"[wikibooks-en] Kategorie-Abruf Fehler: {e}")
+            break
+        for m in d.get("query", {}).get("categorymembers", []):
+            t = m.get("title", "")
+            if "/" in t or ":" in t:
+                continue
+            if not _EN_SKIP.search(t):  # EN: nur offensichtlich unpassende ausschließen
+                all_titles.append(t)
+        if "continue" not in d:
+            break
+        cont = d["continue"]
+        time.sleep(0.2)
+    return sorted(set(all_titles))
 
 
 def _wikibooks_en_entry(title: str, abstract: str = "") -> dict:
-    slug = title.replace(" ", "_")
+    from urllib.parse import quote
+    slug     = title.replace(" ", "_")
+    slug_enc = quote(slug, safe="/-_.")
+    slug_id  = re.sub(r'[^a-z0-9-]', '-', slug.lower()).strip('-')
+    pdf_url  = _commons_url(title) or f"https://en.wikibooks.org/api/rest_v1/page/pdf/{slug_enc}"
     return {
-        "id":       f"wikibooks-en-{slug.lower().replace('_', '-')}",
+        "id":       f"wikibooks-en-{slug_id}",
         "title":    title,
         "source":   "wikibooks-en",
         "domain":   "general",
         "category": derive_category("general", title, ["english"]),
         "tags":     ["english"],
         "language": "en",
-        "webUrl":   f"https://en.wikibooks.org/wiki/{slug}",
-        "pdfUrl":   f"https://en.wikibooks.org/api/rest_v1/page/pdf/{slug}",
+        "webUrl":   f"https://en.wikibooks.org/wiki/{slug_enc}",
+        "pdfUrl":   pdf_url,
         "abstract": abstract,
         "license":  "CC-BY-SA-3.0",
         "updated":  TODAY,
@@ -416,10 +642,37 @@ def _wikibooks_en_entry(title: str, abstract: str = "") -> dict:
 
 
 def fetch_wikibooks_en() -> list[dict]:
-    # URLs sind deterministisch — API nur fuer Abstract (optional).
-    # Bei 429 wird der Eintrag trotzdem ohne Abstract angelegt.
+    # Primärquelle: Commons-EN-PDFs (kein extra API-Call, vermeidet 429)
+    # Fallback: Wikibooks-EN-Kategorie falls Commons leer
+    if _commons_en_titles:
+        filtered = [(t, u) for t, u in _commons_en_titles if not _EN_SKIP.search(t)]
+        entries = []
+        for title, commons_url in filtered:
+            from urllib.parse import quote
+            slug     = title.replace(" ", "_")
+            slug_enc = quote(slug, safe="/-_.")
+            slug_id  = re.sub(r'[^a-z0-9-]', '-', slug.lower()).strip('-')
+            entries.append({
+                "id":       f"wikibooks-en-{slug_id}",
+                "title":    title,
+                "source":   "wikibooks-en",
+                "domain":   "general",
+                "category": derive_category("general", title, ["english"]),
+                "tags":     ["english"],
+                "language": "en",
+                "webUrl":   f"https://en.wikibooks.org/wiki/{slug_enc}",
+                "pdfUrl":   commons_url,
+                "abstract": "",
+                "license":  "CC-BY-SA-3.0",
+                "updated":  TODAY,
+            })
+        print(f"[wikibooks-en] {len(entries):3d} Buecher (via Commons, kein extra API-Call)")
+        return entries
+
+    # Fallback: Wikibooks-EN-Kategorie-API
+    titles = _fetch_en_book_titles()
     abstracts: dict[str, str] = {}
-    for title in WIKIBOOKS_EN_TITLES:
+    for title in titles[:20]:
         params = {
             "action":      "query",
             "titles":      title,
@@ -438,7 +691,7 @@ def fetch_wikibooks_en() -> list[dict]:
         finally:
             time.sleep(2)
 
-    entries = [_wikibooks_en_entry(t, abstracts.get(t, "")) for t in WIKIBOOKS_EN_TITLES]
+    entries = [_wikibooks_en_entry(t, abstracts.get(t, "")) for t in titles]
     print(f"[wikibooks-en] {len(entries):3d} Buecher ({len(abstracts)} mit Abstract)")
     return entries
 
@@ -462,8 +715,10 @@ def main() -> None:
     index: list[dict] = []
     index.extend(fetch_openstax())
     index.extend(fetch_arxiv(max_per_category=15))
+    load_commons_pdfs()   # direkte PDF-URLs aus Wikimedia Commons laden
+    time.sleep(3)
     index.extend(fetch_wikibooks_de())
-    time.sleep(5)  # Pause zwischen DE und EN um Rate-Limit zu vermeiden
+    time.sleep(10)  # Pause zwischen DE und EN um Rate-Limit zu vermeiden
     index.extend(fetch_wikibooks_en())
     index = deduplicate(index)
 
