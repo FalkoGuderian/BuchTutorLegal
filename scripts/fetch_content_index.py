@@ -569,39 +569,43 @@ _EN_RELEVANT = re.compile(
 )
 
 _EN_SKIP = re.compile(
-    r"(?i)(cooking|recipe|chess|poker|game guide|walkthrough|ace attorney|"
-    r"hockey|sport|guitar|knitting|crochet|travel|tourism|"
-    r"national hockey|roller coaster|adventure)"
+    r"(?i)(cooking|recipe|\bcooker\b|poker|game guide|walkthrough|ace attorney|"
+    r"national hockey league|roller coaster|knitting|crochet|"
+    r"solitaire|baccarat|rummy|bridge game|blackjack|craps|"
+    r"cheerleading|surfing guide|dog training|cat care|"
+    r"history of.*hockey|history of.*nhl)"
 )
 
 
 def _fetch_en_book_titles() -> list[str]:
-    """Lädt alle EN-Bücher aus Category:Books_with_PDF_version."""
+    """Lädt alle EN-Bücher aus Category:Alphabetical/A-Z (mit Retry bei 429)."""
+    import string
     all_titles: list[str] = []
-    cont: dict = {}
-    while True:
-        params = {
-            "action": "query", "list": "categorymembers",
-            "cmtitle": "Category:Books_with_PDF_version", "cmlimit": 500,
-            "cmnamespace": 0, "format": "json", **cont
-        }
-        try:
-            r = requests.get(WIKIBOOKS_EN_API, params=params, headers=HEADERS, timeout=TIMEOUT)
-            r.raise_for_status()
-            d = r.json()
-        except Exception as e:
-            print(f"[wikibooks-en] Kategorie-Abruf Fehler: {e}")
-            break
-        for m in d.get("query", {}).get("categorymembers", []):
-            t = m.get("title", "")
-            if "/" in t or ":" in t:
-                continue
-            if not _EN_SKIP.search(t):  # EN: nur offensichtlich unpassende ausschließen
-                all_titles.append(t)
-        if "continue" not in d:
-            break
-        cont = d["continue"]
-        time.sleep(0.2)
+    letters = list(string.ascii_uppercase) + [str(i) for i in range(10)]
+    for letter in letters:
+        cat = f"Category:Alphabetical/{letter}"
+        for attempt in range(3):
+            try:
+                r = requests.get(WIKIBOOKS_EN_API, params={
+                    "action": "query", "list": "categorymembers",
+                    "cmtitle": cat, "cmlimit": 500, "cmnamespace": 0, "format": "json"
+                }, headers=HEADERS, timeout=TIMEOUT)
+                r.raise_for_status()
+                for m in r.json().get("query", {}).get("categorymembers", []):
+                    t = m.get("title", "")
+                    if "/" in t or ":" in t:
+                        continue
+                    if not _EN_SKIP.search(t):
+                        all_titles.append(t)
+                break  # Erfolg
+            except Exception as e:
+                if attempt < 2:
+                    wait = 20 * (attempt + 1)
+                    print(f"[wikibooks-en] {letter}: Retry nach {wait}s ({e})")
+                    time.sleep(wait)
+                else:
+                    print(f"[wikibooks-en] {letter}: übersprungen ({e})")
+        time.sleep(0.5)
     return sorted(set(all_titles))
 
 
@@ -628,57 +632,14 @@ def _wikibooks_en_entry(title: str, abstract: str = "") -> dict:
 
 
 def fetch_wikibooks_en() -> list[dict]:
-    # Primärquelle: Commons-EN-PDFs (kein extra API-Call, vermeidet 429)
-    # Fallback: Wikibooks-EN-Kategorie falls Commons leer
-    if _commons_en_titles:
-        filtered = [(t, u) for t, u in _commons_en_titles if not _EN_SKIP.search(t)]
-        entries = []
-        for title, commons_url in filtered:
-            from urllib.parse import quote
-            slug     = title.replace(" ", "_")
-            slug_enc = quote(slug, safe="/-_.")
-            slug_id  = re.sub(r'[^a-z0-9-]', '-', slug.lower()).strip('-')
-            entries.append({
-                "id":       f"wikibooks-en-{slug_id}",
-                "title":    title,
-                "source":   "wikibooks-en",
-                "domain":   "general",
-                "category": derive_category("general", title, ["english"]),
-                "tags":     ["english"],
-                "language": "en",
-                "webUrl":   f"https://en.wikibooks.org/wiki/{slug_enc}",
-                "pdfUrl":   commons_url,
-                "abstract": "",
-                "license":  "CC-BY-SA-3.0",
-                "updated":  TODAY,
-            })
-        print(f"[wikibooks-en] {len(entries):3d} Buecher (via Commons, kein extra API-Call)")
-        return entries
-
-    # Fallback: Wikibooks-EN-Kategorie-API
+    """Lädt alle EN-Bücher aus Category:Alphabetical/A-Z, Commons-PDF priorisiert."""
     titles = _fetch_en_book_titles()
-    abstracts: dict[str, str] = {}
-    for title in titles[:20]:
-        params = {
-            "action":      "query",
-            "titles":      title,
-            "prop":        "extracts",
-            "exintro":     True,
-            "explaintext": True,
-            "format":      "json",
-        }
-        try:
-            r = requests.get(WIKIBOOKS_EN_API, params=params, headers=HEADERS, timeout=TIMEOUT)
-            r.raise_for_status()
-            for page in r.json().get("query", {}).get("pages", {}).values():
-                abstracts[title] = (page.get("extract") or "")[:200]
-        except Exception:
-            pass  # Abstract bleibt leer, Eintrag kommt trotzdem
-        finally:
-            time.sleep(2)
-
-    entries = [_wikibooks_en_entry(t, abstracts.get(t, "")) for t in titles]
-    print(f"[wikibooks-en] {len(entries):3d} Buecher ({len(abstracts)} mit Abstract)")
+    if not titles and _commons_en_titles:
+        print("[wikibooks-en] Fallback auf Commons-EN-Titel")
+        titles = [t for t, _ in _commons_en_titles if not _EN_SKIP.search(t)]
+    entries = [_wikibooks_en_entry(t) for t in titles]
+    commons_count = sum(1 for e in entries if "upload.wikimedia.org" in (e.get("pdfUrl") or ""))
+    print(f"[wikibooks-en] {len(entries):3d} Buecher ({commons_count} via Commons-PDF)")
     return entries
 
 
