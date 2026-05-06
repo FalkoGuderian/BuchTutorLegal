@@ -139,6 +139,19 @@ OPENSTAX_FALLBACK = [
 ]
 
 
+# Bücher ohne PDF und ohne Mehrwert gegenüber einer neueren Edition überspringen.
+# college-physics-courseware  → nur interaktives Produkt, kein PDF
+# life-liberty-and-pursuit-happiness → OpenStax bietet kein PDF an
+# marketing-podstawy / zywienie → polnische Editionen, kein API-Zugang
+# introduction-sociology → leitet auf 3e weiter, die bereits im Index ist
+OPENSTAX_SKIP_SLUGS = {
+    "college-physics-courseware",
+    "life-liberty-and-pursuit-happiness",
+    "marketing-podstawy",
+    "zywienie",
+    "introduction-sociology",
+}
+
 def fetch_openstax() -> list[dict]:
     # Mehrere bekannte Endpoints versuchen
     api_candidates = [
@@ -169,6 +182,8 @@ def fetch_openstax() -> list[dict]:
         meta = book.get("meta", {}) or {}
         slug = meta.get("slug") or book.get("slug") or ""
         if not slug:
+            continue
+        if slug in OPENSTAX_SKIP_SLUGS:
             continue
 
         title = book.get("title") or book.get("book_title") or slug
