@@ -1,8 +1,6 @@
 name: Update Content Index
 
 on:
-  schedule:
-    - cron: '0 4 * * 1'   # Montags 4 Uhr UTC — rebuild compact app index
   workflow_dispatch:
     inputs:
       full_rebuild:
