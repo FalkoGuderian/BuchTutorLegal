@@ -21,19 +21,40 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Build content index
-        run: python scripts/fetch_content_index.py
+      - name: Build compact app index from existing content-index.json
+        run: |
+          python - <<'EOF'
+          import json, re
+          from pathlib import Path
+
+          FULL   = Path("content-index.json")
+          OUTPUT = Path("content-index-app.json")
+          KEEP   = {"title", "source", "category", "language", "pdfUrl", "webUrl", "year"}
+
+          data = json.loads(FULL.read_text(encoding="utf-8"))
+          stripped = []
+          for e in data:
+              entry = {k: v for k, v in e.items() if k in KEEP}
+              if "year" in entry and not entry.get("year"):
+                  del entry["year"]
+              stripped.append(entry)
+          OUTPUT.write_text(
+              json.dumps(stripped, ensure_ascii=False, separators=(",", ":")),
+              encoding="utf-8"
+          )
+          print(f"Built {len(stripped)} entries -> {OUTPUT.stat().st_size/1024/1024:.1f} MB")
+          EOF
 
       - name: Commit and push
         run: |
           git config user.name "docworm-bot"
           git config user.email "bot@docworm.app"
-          git add content-index.json
+          git add content-index-app.json
           if git diff --staged --quiet; then
             echo "Keine Aenderungen — kein Commit"
             exit 0
           fi
-          git commit -m "chore: update content index"
+          git commit -m "chore: rebuild content-index-app.json"
           for i in 1 2 3 4 5; do
             if git push; then
               echo "Push erfolgreich (Versuch $i)"
