@@ -11,6 +11,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 300   # 5h limit (DOAB ~2-3h for all offsets)
+
     steps:
       - uses: actions/checkout@v4
 
@@ -21,40 +23,19 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Build compact app index from existing content-index.json
-        run: |
-          python - <<'EOF'
-          import json, re
-          from pathlib import Path
-
-          FULL   = Path("content-index.json")
-          OUTPUT = Path("content-index-app.json")
-          KEEP   = {"title", "source", "category", "language", "pdfUrl", "webUrl", "year"}
-
-          data = json.loads(FULL.read_text(encoding="utf-8"))
-          stripped = []
-          for e in data:
-              entry = {k: v for k, v in e.items() if k in KEEP}
-              if "year" in entry and not entry.get("year"):
-                  del entry["year"]
-              stripped.append(entry)
-          OUTPUT.write_text(
-              json.dumps(stripped, ensure_ascii=False, separators=(",", ":")),
-              encoding="utf-8"
-          )
-          print(f"Built {len(stripped)} entries -> {OUTPUT.stat().st_size/1024/1024:.1f} MB")
-          EOF
+      - name: Fetch all sources + build compact index
+        run: python scripts/fetch_all.py
 
       - name: Commit and push
         run: |
           git config user.name "docworm-bot"
           git config user.email "bot@docworm.app"
-          git add content-index-app.json
+          git add content-index.json content-index-app.json
           if git diff --staged --quiet; then
             echo "Keine Aenderungen — kein Commit"
             exit 0
           fi
-          git commit -m "chore: rebuild content-index-app.json"
+          git commit -m "chore: weekly content index update ($(date -u +%Y-%m-%d))"
           for i in 1 2 3 4 5; do
             if git push; then
               echo "Push erfolgreich (Versuch $i)"
