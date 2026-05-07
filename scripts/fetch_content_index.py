@@ -210,6 +210,10 @@ def fetch_openstax() -> list[dict]:
             or book.get("high_resolution_pdf_url")
         )
 
+        # CMS liefert ISO-Datum unter meta.first_published_at, z.B. "2025-02-18T..."
+        published_at = meta.get("first_published_at") or book.get("created") or ""
+        year = published_at[:4] if published_at[:4].isdigit() else ""
+
         entries.append({
             "id":       f"openstax-{slug}",
             "title":    title,
@@ -218,6 +222,7 @@ def fetch_openstax() -> list[dict]:
             "category": derive_category(domain, title, subject_names),
             "tags":     subject_names,
             "language": "en",
+            "year":     year,
             "webUrl":   f"https://openstax.org/details/books/{slug}",
             "pdfUrl":   pdf_url,
             "license":  "CC-BY-4.0",
@@ -281,13 +286,18 @@ def fetch_arxiv(max_per_category: int = 15) -> list[dict]:
             print(f"[arxiv:{cat}] Fehler: {e}")
             continue
 
-        ids    = re.findall(r"<id>http://arxiv\.org/abs/([^<]+)</id>", r.text)
-        titles = re.findall(r"<title>([^<]+)</title>", r.text)[1:]  # [0] ist Feed-Titel
+        # Atom-Feed: <id>, <title>, <published> einzeln per Regex.
+        # Reihenfolge im Feed ist konsistent (entry-blockweise), darum zip möglich.
+        ids       = re.findall(r"<id>http://arxiv\.org/abs/([^<]+)</id>", r.text)
+        titles    = re.findall(r"<title>([^<]+)</title>", r.text)[1:]  # [0] ist Feed-Titel
+        publisheds = re.findall(r"<published>([^<]+)</published>", r.text)
 
-        for arxiv_id, title in zip(ids, titles):
+        for idx, (arxiv_id, title) in enumerate(zip(ids, titles)):
             arxiv_id = arxiv_id.strip()
             title    = title.strip().replace("\n", " ")
             safe_id  = arxiv_id.replace("/", "-")
+            published = publisheds[idx] if idx < len(publisheds) else ""
+            year = published[:4] if published[:4].isdigit() else ""
             entries.append({
                 "id":       f"arxiv-{safe_id}",
                 "title":    title,
@@ -296,6 +306,7 @@ def fetch_arxiv(max_per_category: int = 15) -> list[dict]:
                 "category": derive_category(domain, title, tags + [cat]),
                 "tags":     tags + [cat],
                 "language": "en",
+                "year":     year,
                 "webUrl":   f"https://arxiv.org/abs/{arxiv_id}",
                 "pdfUrl":   f"https://arxiv.org/pdf/{arxiv_id}",
                 "license":  "arXiv non-exclusive",
