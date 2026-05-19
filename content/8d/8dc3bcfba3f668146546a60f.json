@@ -1,0 +1,542 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Programmieren-Aufbau: Java, Ruby, Pascal, Assembler - Lektion 5: GNU-Pascal",
+    "pdfName": "GNU-Pascal",
+    "createdAt": 1778790248763,
+    "exportedAt": "2026-05-14T20:24:08.764Z",
+    "meta": {
+      "courseId": "course-de-programmieren-aufbau",
+      "lessonIndex": 4,
+      "courseTitle": "Programmieren-Aufbau: Java, Ruby, Pascal, Assembler",
+      "lessonObjective": "Klassische Skriptsprache und strukturierter Klassiker.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-gnu-pascal",
+            "title": "GNU-Pascal",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/GNU-Pascal"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_f9d30c78a238",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "4-5",
+          "chapterTitle": "Einstieg in GNU-Pascal",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "6-19",
+          "chapterTitle": "Variablen, Datentypen und Operatoren",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "20-29",
+          "chapterTitle": "Kontrollstrukturen und Schleifen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "30-37",
+          "chapterTitle": "Eigene Datentypen und Records",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "38-53",
+          "chapterTitle": "Zeiger, Schemata und Routinen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "54-59",
+          "chapterTitle": "Standard-Units und Programmparameter",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "60-68",
+          "chapterTitle": "Units und Dateiverwaltung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "69-73",
+          "chapterTitle": "Internationalisierung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "74-79",
+          "chapterTitle": "Anbindung von C-Bibliotheken",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "80-85",
+          "chapterTitle": "Anhang: Systemdetails und Lizenzen",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778790248763,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der grundlegenden Konzepte von GNU-Pascal basierend auf den bereitgestellten Unterlagen:\n\n### Zusammenfassung: Einführung in GNU-Pascal\n\nGNU-Pascal ist ein leistungsfähiger, plattformunabhängiger Compiler, der sich an Einsteiger richtet und durch eine beispielorientierte Struktur die Grundpfeiler der strukturierten Programmierung vermittelt.\n\n#### 1. Grundstruktur eines Programms (S. 4–5)\n*   **Syntax:** Ein Programm beginnt mit dem Schlüsselwort `program` und wird durch `begin` und `end.` umschlossen.\n*   **Ein-/Ausgabe:** Die Routine `WriteLn` gibt Text aus (mit Zeilenvorschub), `ReadLn` ermöglicht die Eingabe von Daten durch den Benutzer.\n*   **Kommentare:** Können durch `{ ... }`, `(* ... *)` oder `//` (einzeilig) eingefügt werden.\n*   **Kompilierung:** Der Befehl `gpc quelltext.pas -o programmname` übersetzt den Quellcode in eine ausführbare Datei.\n\n#### 2. Variablen und Datentypen (S. 6–12)\n*   **Deklaration:** Variablen werden im `var`-Block definiert und erfordern eine Typzuweisung. Eine Initialisierung kann direkt bei der Deklaration erfolgen (z. B. `Value` oder `=`).\n*   **Zahlen:** Es wird zwischen ganzen Zahlen (`Integer`, `Cardinal`) und Fließkommazahlen (`Real`, `Double`) unterschieden. Für Berechnungen mit Ganzzahlen stehen Spezialoperatoren wie `Div` (Ganzzahldivision) und `Mod` (Restwert) bereit.\n*   **Strings & Chars:** Zeichenketten werden mit einer festen Kapazität deklariert. Umwandlungen von Zahlen in Texte (und umgekehrt) erfolgen mittels Funktionen wie `Val`. \n*   **Boolean:** Unterstützt die logischen Zustände `True` und `False` sowie Standard-Logikoperatoren (`and`, `or`, `not`, `xor`).\n\n#### 3. Komplexe Strukturen (S. 13–17)\n*   **Aufzählungstypen:** Dienen der Festlegung definierter Wertemengen (z. B. `(Rot, Gelb, Blau)`).\n*   **Unterbereichstypen:** Schränken Wertebereiche ein (z. B. `0..9`).\n*   **Arrays:** Ermöglichen die Speicherung gleichartiger Werte unter einem Index. Sie unterstützen mehrdimensionale Strukturen, wie sie beispielsweise für Spiele-Spielfelder benötigt werden.\n*   **Mengen (Sets):** Fassen Elemente eines Typs zusammen und erlauben mathematische Mengenoperationen wie Vereinigung (`+`) oder Durchschnitt (`*`).\n\n#### 4. Programmierstandards (S. 6)\n*   Die **GNU-Pascal-Coding-Standards (GPCS)** empfehlen eine klare Formatierung zur Erhöhung der Wartbarkeit und Lesbarkeit des Quellcodes, insbesondere um die Zusammenarbeit in Projekten zu erleichtern.\n\n**Kernphilosophie:** GNU-Pascal ist Freie Software, die sowohl für Lehrzwecke als auch für die systemübergreifende Softwareentwicklung (inklusive Cross-Kompilierung) eingesetzt werden kann (S. 3).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778790248763,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-programmieren-aufbau_4\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 5: GNU-Pascal - Präsentation</span><span class=\"pm-chat-count\">10 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Einstieg in GNU-Pascal</div><ul class=\"pm-chat-slide-bullets\"><li>Grundlagen der Programmstruktur und Kompilierung</li><li>Übersetzung mit gpc und Ausführung in der Shell</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778790248764,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der grundlegenden Arbeitsweise mit GNU-Pascal basierend auf den Seiten 4 und 5:\n\nGrundlagen der Programmentwicklung\nEin Pascal-Programm wird als Textdatei (z.B. endend auf .pas) geschrieben. Die Übersetzung in eine ausführbare Datei erfolgt über den GNU-Pascal Compiler mit dem Befehl gpc quelltext.pas -o programmname. Die Ausführung des Programms im Terminal geschieht anschließend durch die Eingabe von ./programmname (S. 4, 5).\n\nStruktur eines Programms\nJedes Programm beginnt mit dem Schlüsselwort program gefolgt vom Programmnamen. Der ausführbare Code befindet sich innerhalb eines begin-end-Blocks. Am Ende des Programms steht zwingend ein Punkt (S. 4). Kommentare können in geschweiften Klammern { }, durch Doppel-Slashes // (einzeilig) oder durch (* *) markiert werden (S. 4).\n\nEin- und Ausgabe\nZur Textausgabe werden die Befehle Write (ohne Zeilenvorschub) und WriteLn (mit Zeilenvorschub) verwendet. Apostrophe innerhalb von Textausgaben müssen durch zwei aufeinanderfolgende Apostrophe dargestellt werden (S. 4, 5). Anweisungen innerhalb des begin-end-Blocks werden durch Semikolons voneinander getrennt (S. 5).\n\nVariablen und Benutzereingaben\nDaten werden in Variablen gespeichert, die vor dem begin-Block unter dem Schlüsselwort var deklariert werden (z. B. Name: String (10)). Der Befehl ReadLn ermöglicht das Einlesen von Benutzereingaben bis zum Drücken der ENTER-Taste. In einer WriteLn-Anweisung lassen sich durch Kommas getrennte Zeichenketten und Variablen kombinieren, um eine zusammengesetzte Ausgabe zu erzeugen (S. 5).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790248773,
+      "channel": "plan_pipe_f9d30c78a238",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine zusammenfassende Übersicht zu den Grundlagen von GNU-Pascal basierend auf den Seiten 6 bis 17:\n\nSchreibweise und Konventionen\nFür eine gute Wartbarkeit des Quellcodes sollten die GNU-Pascal-Coding-Standards (GPCS) eingehalten werden. Variablen (Bezeichner) müssen mit Buchstaben beginnen, dürfen Ziffern und Unterstriche enthalten und sollten aussagekräftig sein. Es wird empfohlen, Bezeichner in CamelCase-Schreibweise (mit großem Anfangsbuchstaben) zu verfassen (S. 6-7).\n\nVariablen und Datentypen\nVariablen werden im Bereich `var` deklariert und können direkt bei der Deklaration initialisiert werden. Wertzuweisungen erfolgen über `:=` (S. 6).\n\nGanzzahlige Typen: Diese werden in vorzeichenbehaftete und vorzeichenlose Typen unterteilt (z. B. `Integer` vs. `Cardinal`). Die Division von Ganzzahlen erfolgt über `Div` (Ganzzahl-Ergebnis) und `Mod` (Rest), da der normale Schrägstrich Fließkommatypen vorbehalten ist (S. 7-8).\n\nFließkommatypen: Diese dienen zur Darstellung von Zahlen mit Nachkommastellen (z. B. `Real`, `Double`). Die Formatierung bei der Ausgabe steuert über Doppelpunkte die Gesamtzahl der Stellen und die Anzahl der Nachkommastellen (z. B. `Zahl:0:2`) (S. 8-9).\n\nZeichenketten und Zeichen: Strings besitzen eine Kapazität (maximale Länge). Die Prozedur `WriteStr` erlaubt eine formatierte Aneinanderreihung von Zeichen. Mittels `Val` können Zeichenketten in Zahlen umgewandelt werden. Der Typ `Char` speichert einzelne Zeichen, wobei `Ord` den numerischen Code und `Chr` das Zeichen zum Code liefert (S. 10-12).\n\nLogische Werte: Der Typ `Boolean` (`True`/`False`) resultiert oft aus Vergleichen, wie etwa $3 < 4$. Logische Verknüpfungen folgen den Regeln für `not`, `and`, `or` und `xor` (S. 12-13).\n\nAufzählungstypen und Unterbereiche\nAufzählungstypen legen eine exakte Menge an Werten fest, wobei `Succ` den Nachfolger und `Pred` den Vorgänger bestimmt. Unterbereichstypen schränken den Wertebereich eines Basistyps ein (z. B. `0..9`) (S. 13-14).\n\nStrukturierte Datentypen\nArrays dienen zur Speicherung gleichartiger Werte unter einem Index. Sie können mehrdimensional sein (z. B. für Spielfelder). Ein String selbst kann wie ein Array von Zeichen behandelt werden, wobei der Zugriff auf das erste Zeichen über `Wort[1]` erfolgt (S. 14-16).\n\nMengen: Diese fassen Elemente gleichen Typs zusammen. Sie werden in eckigen Klammern definiert und erlauben die Zusammenfassung von Basistypen wie Zeichen oder Unterbereichen. Die Funktion `Card` ermittelt die Anzahl der enthaltenen Elemente (S. 16-17).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790248774,
+      "channel": "plan_pipe_f9d30c78a238",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 19
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Dieser Abschnitt behandelt die grundlegenden Kontrollstrukturen in der Programmierung, welche den linearen Programmfluss durch Bedingungen und Wiederholungen flexibel gestalten (S. 20).\n\nDie behandelten Konzepte lassen sich wie folgt gliedern:\n\nEntscheidungsstrukturen (Verzweigungen)\nDie if-Anweisung reagiert auf Bedingungen, die als wahr oder falsch (Boolsch) ausgewertet werden. Bei komplexeren Bedingungen werden die logischen Operatoren and und or verwendet (S. 20). Die Priorität der Operatoren entspricht dabei der mathematischen Regel Punkt- vor Strichrechnung (S. 21). Zur eleganten Strukturierung stehen die else-Verzweigung (S. 21) sowie für Mehrfachverzweigungen die case-Anweisung zur Verfügung (S. 23). Case-Anweisungen erlauben eine klare Zuordnung von Werten oder Wertebereichen zu Anweisungsblöcken (S. 23).\n\nWiederholungsstrukturen (Schleifen)\nSchleifen dienen der effizienten Ausführung von sich wiederholendem Code:\n- for-Schleifen eignen sich für eine im Vorfeld bekannte Anzahl an Durchläufen (S. 24).\n- while-Schleifen sind abweisende Schleifen, bei denen die Bedingung bereits vor dem ersten Durchlauf geprüft wird (S. 26).\n- repeat...until-Schleifen sind nicht-abweisend, was bedeutet, dass der Schleifenkörper mindestens einmal durchlaufen wird, da die Prüfung erst am Ende erfolgt (S. 27).\n\nSteuerungsbefehle\nInnerhalb von Schleifen kann der Programmfluss durch spezielle Befehle beeinflusst werden:\n- Break beendet die Schleife vorzeitig (S. 25).\n- Continue überspringt den Rest des aktuellen Schleifendurchlaufs und kehrt zum Schleifenkopf zurück (S. 26).\n\nHilfreiche Prozeduren\nDie im Text beschriebenen Prozeduren Inc und Dec dienen der bequemen Inkrementierung (Erhöhung um 1) bzw. Dekrementierung (Verringerung um 1) von Variablen (S. 27).\n\nMathematische Grundlagen\nFür komplexere logische Verknüpfungen gelten die Morganschen Regeln, die als Formel ausgedrückt werden können:\n$\\text{not} (\\text{A} \\text{ and } \\text{B}) = \\text{not } \\text{A} \\text{ or } \\text{not } \\text{B}$ (S. 20).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790248775,
+      "channel": "plan_pipe_f9d30c78a238",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 20,
+        "end": 29
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine zusammenfassende Übersicht über den Abschnitt \"Typen im Eigenbau\" (S. 30–37):\n\n**Eigene Typdefinitionen**\nIn Pascal können auf Basis grundlegender Datentypen eigene Typen erstellt werden. Diese werden im `type`-Bereich definiert. Es ist konventionsgemäß, selbstdefinierten Typnamen ein \"T\" voranzustellen (z.B. `TMeinString`). Bei der Anordnung im Quelltext sollte die Reihenfolge `const`, `type`, `var` eingehalten werden (S. 30). Zudem ist es möglich, eigene ganzzahlige Typen zu definieren, wobei die Funktionen `Low` und `High` zur Ermittlung der Wertebereiche genutzt werden können (S. 31).\n\n**Records**\nEin `record` fasst verschiedene Datentypen zu einer Einheit zusammen. Auf einzelne Felder wird über die Punkt-Schreibweise zugegriffen (z. B. `Person.Stadt`). Records können bereits bei der Variablendeklaration initialisiert werden, wobei geschachtelte Klammern bei komplexen Strukturen (wie Records in Records) verwendet werden (S. 32–33). Auch das Speichern von Records in Arrays ist möglich (S. 34).\n\n**Abkürzungen und Struktur**\nDas Schlüsselwort `with` ermöglicht eine abkürzende Schreibweise für den Zugriff auf Record-Felder, wodurch das wiederholte Nennen des Variablennamens entfällt. `with`-Blöcke können verschachtelt werden (S. 35).\n\n**Variante Records**\nVariante Records dienen der speichereffizienten Definition von Typen, die gemeinsame Eigenschaften teilen, aber in ihrer Ausprägung variieren. Durch die Verwendung von `case Typ: TObjektTyp of` können spezifische Felder definiert werden, die nur bei bestimmten Zuständen des `Typ`-Feldes gültig sind. Dies reduziert den Speicherplatzbedarf im Vergleich zu einem einfachen Zusammenfassen aller möglichen Felder auf das notwendige Minimum (S. 36–37). Die Größe eines Records lässt sich mit `SizeOf` ermitteln (S. 36).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790248776,
+      "channel": "plan_pipe_f9d30c78a238",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 30,
+        "end": 37
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung der bereitgestellten Abschnitte:\n\n**Zeiger und dynamische Speicherverwaltung (S. 38-40)**\nZeiger dienen als Verweise auf Speicherstellen. Ein Zeigertyp wird durch ein vorangestelltes Dach (^) definiert. Mit der Prozedur `New` wird Speicher dynamisch reserviert und mit `Dispose` wieder freigegeben. Der Wert an der Zeigeradresse kann durch Dereferenzierung (Dach nachgestellt) angesprochen werden. Ein Spezialfall ist `nil` als Zeiger auf \"nichts\". Als komplexe Anwendung wird der \"Stapel\" eingeführt, eine rekursive Datenstruktur, bei der neue Elemente oben hinzugefügt werden.\n\n**Schemata (S. 40-42)**\nSchemata ermöglichen eine dynamische Speicherverwaltung, bei der die Anzahl der Elemente erst zur Laufzeit feststeht. Sie nutzen sogenannte Diskriminanten, um Grenzen von Arrays festzulegen. Schemata können mit Zeigern kombiniert werden, um den Arbeitsspeicher effizienter zu nutzen.\n\n**Routinen: Prozeduren und Funktionen (S. 43-46, S. 49)**\nRoutinen gliedern Quelltext in wiederverwendbare Einheiten. \nProzeduren sind eigenständige Anweisungsfolgen. Funktionen hingegen geben immer einen Rückgabewert zurück und sind integraler Bestandteil von Ausdrücken. Routinen können lokale Variablen deklarieren, die nur innerhalb ihres Blocks gültig sind. Zur Laufzeitverlängerung lokaler Variablen dienen \"statische\" Deklarationen. Wenn Routinen gegenseitige Abhängigkeiten aufweisen, ermöglicht die `forward`-Deklaration das Vorab-Deklarieren des Prozedurkopfes (S. 46-47).\n\n**Parameterübergabe: Call by Reference (S. 47-48)**\nStandardmäßig werden bei Routinen Kopien der Argumente übergeben. Durch das Schlüsselwort `var` in der Parameterliste wird ein \"Call by Reference\" erzwungen. Dies bewirkt, dass die Routine direkt auf dem Original der übergebenen Variablen arbeitet und somit Änderungen dauerhaft speichert, was beispielsweise zum Tausch von Werten genutzt werden kann.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790248777,
+      "channel": "plan_pipe_f9d30c78a238",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 38,
+        "end": 53
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Seiten [S.54-59]:\n\n**Units (Module)**\nUnits dienen der Modularisierung von Quelltexten, um Konstanten, Typen und Routinen wiederverwendbar zu gruppieren. Sie werden mit der Anweisung `uses` eingebunden. Für den GNU-Pascal Compiler (GPC) wird zum Bauen der Programme die Option `--automake` empfohlen (S.54).\n\n**Die Standardunit GPC**\nDiese Unit enthält nützliche Routinen für verschiedene Aufgaben:\n- Datum und Zeit: Funktionen wie `GetDayOfWeek`, `IsLeapYear` und `GetDayOfYear` erleichtern die Arbeit mit Zeitdaten. `GetTimeStamp` liefert aktuelle Informationen zu Tag, Monat und Jahr (S.54-55).\n- Kommandozeilenoptionen: Mittels `GetOptLong` können Programme Parameter verarbeiten. Optionen werden in einem Array vom Typ `OptionType` definiert (z.B. kurz `-d` für `date` oder `-l` für `leapyear`). Dies erlaubt die einheitliche Auswertung langer und kurzer Kommandozeilenparameter (S.56-57).\n\n**Die Standardunit CRT**\nDie Unit CRT unterstützt die Gestaltung von Textmodus-Anwendungen:\n- Textausgabe und Gestaltung: Mit `TextColor` und `TextBackground` werden Farben gesetzt, während `Window` definierte Bereiche auf dem Bildschirm abgrenzt. `ClrScr` löscht diese, und `GotoXY` positioniert den Cursor (S.58-59).\n- Interaktion: Mit `Sound`, `Delay` und `NoSound` können Töne erzeugt werden (Hinweis: nicht unter X11 verfügbar). `ReadKey` dient als Eingabemethode für Tastendrücke (S.58-59).\n\n**Erstellung eigener Units**\nEigene Units strukturieren den Code thematisch. Sie bestehen zwingend aus einem `interface`-Bereich, der nach außen sichtbar ist, und einem `implementation`-Bereich. Letzterem sind alle Deklarationen des `interface`-Bereichs bekannt, wobei die Dateinamen der Units kleingeschrieben werden müssen (S.59).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790248778,
+      "channel": "plan_pipe_f9d30c78a238",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 54,
+        "end": 59
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine Zusammenfassung der Seiten 60 bis 68 zum Thema Units und Dateiverarbeitung in GNU-Pascal:\n\nUnits (S. 60-61)\nUnits dienen der modularen Programmstrukturierung. Sie bestehen aus einem interface-Teil zur Deklaration exportierter Elemente und einem implementation-Teil für die Logik. Initialisierungsroutinen (to begin do) und Deinitialisierungsroutinen (to end do) ermöglichen es, Code automatisch vor bzw. nach dem Hauptprogramm auszuführen.\n\nDateiverarbeitung (S. 62-68)\nDateien werden über Assign einer Variablen zugewiesen und mit Routinen wie Reset (lesen), Rewrite (schreiben) oder Append (anhängen) geöffnet.\n\nEs wird zwischen verschiedenen Dateitypen unterschieden:\n- Textdateien (Text): Dienen der Speicherung von Textzeilen.\n- Allgemeine Dateien (File): Erlauben den binären Zugriff, wobei mittels $\\text{SizeOf}(Typ)$ die Blockgröße definiert wird. Das Lesen und Schreiben erfolgt blockweise über BlockRead und BlockWrite.\n- Typisierte Dateien (File of Typ): Ermöglichen die einfache Speicherung und den Zugriff auf Daten eines einheitlichen Typs mittels Read und Write.\n\nProgrammparameter (S. 65)\nProgramme können Dateien direkt als Parameter im Kopf deklarieren (z. B. program Name(Input)). Dies erlaubt den Einsatz als Filter, wobei die Daten über die Standardeingabe verarbeitet werden können.\n\nAdressdatenbank als Beispiel (S. 67-68)\nDas Beispiel demonstriert die Kapselung komplexer Datensätze mittels record-Typen in einer typisierten Datei. Hierbei wird der aktuelle Datenbestand durch die Verwendung von Append beim Programmstart erweitert, ohne bestehende Informationen zu überschreiben.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790248779,
+      "channel": "plan_pipe_f9d30c78a238",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 60,
+        "end": 68
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Internationalisierung von Programmen ermöglicht deren weltweite Nutzung durch Anpassung der sprachlichen Ausgabe. Basierend auf GNU-Gettext lässt sich dieser Prozess in folgende Schritte unterteilen (S. 69):\n\nVorbereitung des Quellcodes\nDer Quelltext muss für die Lokalisierung angepasst werden. Dazu werden die Einheiten für die Sprachverarbeitung (Locale) definiert, das Text-Domain-Verzeichnis festgelegt und die auszugebenden Zeichenketten mit der Funktion GetText markiert (S. 69). Funktionen wie SetLocale und BindTextDomain ermöglichen den Zugriff auf die entsprechenden Kataloge (S. 70).\n\nErstellung der Kataloge\nMit dem Hilfsprogramm pas2po werden aus dem Quelltext Vorlagendateien (.po) generiert, die alle zu übersetzenden Textstellen enthalten. Nach der manuellen Übersetzung der msgstr-Einträge wird die Datei mittels msgfmt in ein binäres Format (.mo) umgewandelt (S. 70, 71). Diese Datei wird anschließend in das systemspezifische Verzeichnis, beispielsweise /usr/share/locale/de/LC_MESSAGES/, kopiert (S. 71).\n\nUmgang mit Argumentreihenfolgen\nDa die Satzstruktur in verschiedenen Sprachen variiert, können Argumente mit der Funktion FormatString dynamisch angeordnet werden (S. 72). Dabei werden Platzhalter wie $@1a$ oder $@2a$ verwendet, die in der .po-Datei flexibel vertauscht werden können, um die korrekte grammatikalische Reihenfolge der Zielsprache zu gewährleisten (S. 72, 73).\n\nZusammenfassend erlaubt dieses Verfahren eine Trennung von Programmlogik und sprachspezifischen Textinhalten, wobei die Entscheidung über die ausgegebene Sprache erst zur Laufzeit durch das Betriebssystem getroffen wird (S. 71).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790248780,
+      "channel": "plan_pipe_f9d30c78a238",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 69,
+        "end": 73
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Dieser Textabschnitt beschreibt das Verfahren, um C-Funktionen und Bibliotheken in GNU-Pascal-Programme einzubinden.\n\nGrundlagen der Einbindung\nC-Funktionen können in Pascal-Programmen als external deklariert werden. Durch das Attribut name wird der Pascal-Prozedur ein Synonym für den internen C-Funktionsnamen zugewiesen (S. 74). Bei einer größeren Anzahl von Routinen ist es effizienter, diese in Pascal-Units auszulagern und den C-Quelltext mittels {$L dateiname.c} direkt einzubinden (S. 75).\n\nDaten- und Typkonvertierung\nBeim Datenaustausch zwischen C und Pascal existieren spezifische Entsprechungen: So entspricht ein C-Typ wie char * in Pascal dem CString, während einfache Ganzzahltypen wie int auf CInteger abgebildet werden (S. 75). Für Records gelten die Definitionen der C-Strukturen, während für Konstanten und Funktionsparameter Wrapper-Methoden empfohlen werden (S. 75, 76).\n\nWrapper-Technik\nWrapper-Funktionen dienen dazu, die Pascal-Schnittstelle von der eigentlichen C-Implementierung zu entkoppeln. Dies ermöglicht Änderungen am Original-C-Code, ohne die Pascal-Unit anpassen zu müssen. Die explizite Angabe external name '...' stellt dabei die Verknüpfung zum Wrapper her (S. 76, 77).\n\nSpezialfälle und Bibliotheken\nBei der Anbindung komplexer Bibliotheken wie GTK müssen Besonderheiten beachtet werden:\n- Parameterübergaben: Da Pascal andere Mechanismen für Programmparameter verwendet, nutzt GNU-Pascal für die C-Funktion main die Variablen CParamCount und CParameters (S. 77).\n- Konstanten: Da sich Aufzählungstypen in C zwischen Versionen ändern können, sollten diese als externe Variablen mit dem Attribut const als Wrapper-Konstanten eingebunden werden (S. 77, 78).\n- Implementation: Komplexe Initialisierungen können im implementation-Teil einer Unit durch lokale Wrapper-Prozeduren verborgen werden, um dem Anwender eine einfache Schnittstelle zu bieten (S. 78).\n\nDie Übersetzung komplexer Projekte erfolgt über den GNU-Pascal-Compiler (gpc) unter Verwendung der Option --automake und ggf. zusätzlicher Konfigurationswerkzeuge wie pkg-config (S. 75, 79).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790248781,
+      "channel": "plan_pipe_f9d30c78a238",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 74,
+        "end": 79
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der bereitgestellten Dokumente (S. 80-84):\n\nAnhang A: Systemspezifische Details zu GNU-Pascal (S. 80)\n\nBei der Arbeit mit GNU-Pascal sind einige Besonderheiten zu beachten:\n- Programmdateien: Manche Systeme erfordern für ausführbare Dateien Endungen wie .com oder .exe (Beispiel: gpc erstes.pas -o erstes.exe). Andere Systeme verwalten dies über Dateirechte.\n- Locale-Verzeichnisse: Der Pfad für Locale-Informationen variiert je nach Betriebssystem:\n  - Linux/UNIX: /usr/share/locale/ oder /usr/local/share/locale/\n  - MacOS-X: /usr/share/locale/ oder /sw/share/locale/\n  - DJGPP: Der Pfad kann programmatisch über $Path := GetEnv('$DJDIR') + '/share/locale'; ermittelt werden.\n- Ressourcen: Das Dokument verweist auf die offiziellen Webseiten von GNU-Pascal, dem GNU-Projekt sowie Wikibooks.\n\nAnhang B: Die GNU Free Documentation License (GNU FDL) (S. 81-84)\n\nDieser Abschnitt enthält den rechtlichen Rahmen der Lizenz (Version 1.2, November 2002), die für die Dokumentation gilt. Die Kernaussagen umfassen:\n\n- Zweck der Lizenz: Sicherstellung der Freiheit, Dokumentationen zu kopieren und weiterzuverbreiten (kommerziell oder nicht-kommerziell), bei gleichzeitigem Schutz des Urheberrechts für Autoren.\n- Transparenz: Ein transparentes Format ist maschinenlesbar und für jedermann leicht editierbar, im Gegensatz zu proprietären, nicht ohne Weiteres veränderbaren Formaten.\n- Vervielfältigung: Es ist erlaubt, das Dokument unverändert zu kopieren, sofern die Lizenzbestimmungen und Urhebervermerke beibehalten werden. Ab einer Auflage von mehr als 100 Exemplaren müssen bestimmte Deckblatt-Texte enthalten sein.\n- Modifikation: Geänderte Versionen müssen ebenfalls unter der GNU FDL stehen. Dabei sind spezifische Auflagen zu erfüllen, etwa die namentliche Nennung der neuen Autoren, die Bewahrung der Historie und die unveränderte Übernahme vorgegebener Abschnitte.\n- Kombination und Sammlung: Die Lizenz erlaubt das Zusammenführen mehrerer Dokumente unter Einhaltung strenger Vorgaben zu den Abschnitten.\n- Übersetzung: Übersetzungen gelten als Modifikationen. Im Falle von Widersprüchen zwischen einer Übersetzung und dem englischen Originaltext der Lizenz hat das Original Vorrang.\n- Beendigung: Jegliche missbräuchliche Verwendung oder Verbreitung führt zur automatischen Beendigung der durch diese Lizenz gewährten Rechte.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790248782,
+      "channel": "plan_pipe_f9d30c78a238",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 80,
+        "end": 85
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778790248863,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Was bewirkt die Option '-o' beim Aufruf des GNU-Pascal-Compilers?",
+            "options": [
+              "Sie optimiert den Quellcode für eine schnellere Ausführung.",
+              "Sie legt den Namen der resultierenden ausführbaren Datei fest.",
+              "Sie aktiviert die Anzeige von Warnungen und Fehlermeldungen.",
+              "Sie zwingt den Compiler, die Datei als 'object file' statt als Programm zu kompilieren."
+            ],
+            "correctIndex": 1,
+            "explanation": "Die Option '-o' wird verwendet, um den Namen der ausführbaren Datei zu definieren, die aus dem Quellcode erzeugt werden soll."
+          },
+          {
+            "question": "Warum sollte man beim Rechnen mit ganzen Zahlen in Pascal lieber 'Div' anstelle von '/' verwenden?",
+            "options": [
+              "Weil 'Div' bei großen Zahlen performanter ist als '/'.",
+              "Weil '/' bei ganzen Zahlen zu einer Fehlermeldung führen würde.",
+              "Weil '/' das Ergebnis als Fließkommazahl liefert, während 'Div' eine Ganzzahldivision ohne Rest durchführt.",
+              "Weil 'Div' automatisch auf- oder abrundet, anstatt die Kommastellen abzuschneiden."
+            ],
+            "correctIndex": 2,
+            "explanation": "Der '/' Operator erzeugt bei GNU-Pascal ein Fließkommeergebnis. Um eine Ganzzahldivision durchzuführen, die zum Typ Integer passt, muss der Div-Operator genutzt werden."
+          },
+          {
+            "question": "Welche Regel gilt für Variablendeklarationen in GNU-Pascal?",
+            "options": [
+              "Variablen sind nach der Deklaration automatisch mit Null oder leeren Zeichenketten initialisiert.",
+              "Variablen haben nach ihrer Deklaration keinen definierten Wert, da sie ein Abbild des aktuellen Speicherinhalts darstellen.",
+              "Alle Variablen müssen zwingend bereits bei der Deklaration einen Wert zugewiesen bekommen.",
+              "Variablen müssen immer in Kleinbuchstaben benannt werden, um vom Compiler erkannt zu werden."
+            ],
+            "correctIndex": 1,
+            "explanation": "Variablen haben nach ihrer Deklaration einen zufälligen Wert aus dem Speicher, daher sollte man sich nicht auf eine automatische Initialisierung mit Null verlassen."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen den Funktionen 'Round' und 'Trunc' bei der Umwandlung von Fließkommazahlen?",
+            "options": [
+              "'Round' rundet kaufmännisch, während 'Trunc' immer zur nächsthöheren Zahl aufrundet.",
+              "'Round' wandelt in Integer um, 'Trunc' wandelt in eine Zeichenkette um.",
+              "'Trunc' entfernt die Nachkommastellen (rundet ab), während 'Round' bei einem Abstand von <= 0.5 aufrundet.",
+              "Es gibt keinen Unterschied; beide Funktionen arbeiten identisch."
+            ],
+            "correctIndex": 2,
+            "explanation": "Trunc schneidet die Nachkommastellen einfach ab, während Round mathematisch rundet (auf oder ab, je nach Wert der Nachkommastellen)."
+          },
+          {
+            "question": "Was ist bei der Verwendung von 'WriteLn' für die Formatierung von Fließkommazahlen zu beachten?",
+            "options": [
+              "Man gibt nach der Variablen die erste Zahl für die Gesamtbreite und die zweite Zahl für die Nachkommastellen an.",
+              "Eine Formatierung bei Fließkommazahlen ist in Pascal nicht möglich.",
+              "Die erste Zahl gibt die Anzahl der Nachkommastellen an, die zweite die Gesamtlänge.",
+              "Man muss die Variable explizit mit der Funktion 'Format' umwandeln, bevor man sie ausgibt."
+            ],
+            "correctIndex": 0,
+            "explanation": "Die Syntax 'Variable : Gesamtbreite : Nachkommastellen' wird in WriteLn verwendet; eine 0 bei der Gesamtbreite lässt die Zahl automatisch auf ihre benötigte Länge wachsen."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778790248864,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Wie wird ein Kommentar in GNU-Pascal über mehrere Zeilen hinweg eingeleitet und beendet?",
+            "back": "Die Einleitung erfolgt mit einer geschweiften Klammer '{' und die Beendigung mit einer geschlossenen geschweiften Klammer '}'."
+          },
+          {
+            "front": "Welches Schlüsselwort leitet in GNU-Pascal den Beginn des ausführbaren Programmcodes ein?",
+            "back": "Das Schlüsselwort 'begin' leitet den Programmblock ein, gefolgt von 'end.' am Programmende."
+          },
+          {
+            "front": "Wie unterscheidet sich die 'Write'-Anweisung von 'WriteLn'?",
+            "back": "Die 'Write'-Anweisung gibt Text aus, ohne einen Zeilenvorschub zu erzeugen. 'WriteLn' führt nach der Ausgabe einen Zeilenvorschub durch."
+          },
+          {
+            "front": "Wie werden in GNU-Pascal Variablen deklariert?",
+            "back": "Variablen werden innerhalb eines mit 'var' eingeleiteten Bereichs deklariert, wobei der Name und der Typ durch einen Doppelpunkt getrennt werden."
+          },
+          {
+            "front": "Was ist der Unterschied zwischen den Operatoren 'Div' und 'Mod' bei Ganzzahlen?",
+            "back": "'Div' führt eine Ganzzahldivision durch (Ganzzahlanteil des Ergebnisses), während 'Mod' den Divisionsrest (Modulo) liefert."
+          },
+          {
+            "front": "Wie erfolgt eine Wertzuweisung an eine Variable in GNU-Pascal?",
+            "back": "Wertzuweisungen erfolgen mit dem Operator ':='."
+          },
+          {
+            "front": "Welcher Datentyp sollte primär für ganze Zahlen verwendet werden, wenn keine speziellen Gründe dagegen sprechen?",
+            "back": "Es sollte bevorzugt 'Cardinal' (vorzeichenlos) oder 'Integer' (vorzeichenbehaftet) verwendet werden."
+          },
+          {
+            "front": "Wie kann man bei der Ausgabe von Fließkommazahlen die Anzahl der Nachkommastellen formatieren?",
+            "back": "Durch die Angabe von Doppelpunkten hinter der Variable bei der Ausgabe: 'Variable : Gesamtlänge : Nachkommastellen'. (Beispiel: 0:2 für zwei Nachkommastellen)."
+          },
+          {
+            "front": "Was bewirken die Funktionen 'Round' und 'Trunc' bei der Umwandlung zu einer Ganzzahl?",
+            "back": "'Round' rundet kaufmännisch auf die nächste ganze Zahl, während 'Trunc' die Nachkommastellen einfach abschneidet (rundet immer ab)."
+          },
+          {
+            "front": "Welche Funktion wird in GNU-Pascal verwendet, um einen String zu formatieren und aus verschiedenen Teilen zusammenzusetzen?",
+            "back": "Die Prozedur 'WriteStr' erlaubt es, Texte beim Zusammenfügen gezielt zu formatieren."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-programmieren-aufbau_4",
+      "slides": [
+        {
+          "title": "Einstieg in GNU-Pascal",
+          "bullets": [
+            "Grundlagen der Programmstruktur und Kompilierung",
+            "Übersetzung mit gpc und Ausführung in der Shell"
+          ],
+          "notes": "Willkommen zur Einführung in GNU-Pascal. Wir lernen, wie man Quelltexte in ausführbare Programme verwandelt.",
+          "page_range": "4-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Erste Schritte: Ein- und Ausgabe",
+          "bullets": [
+            "Verwendung von WriteLn und ReadLn",
+            "Variablendeklaration im var-Block",
+            "Datentyp String für Zeichenketten",
+            "Interaktion zwischen Programm und Benutzer"
+          ],
+          "notes": "Wir betrachten die Kommunikation zwischen Anwender und Maschine mittels grundlegender Ein- und Ausgabebefehle.",
+          "page_range": "5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Variablen und Datentypen",
+          "bullets": [
+            "Kodierungs-Standards für bessere Wartbarkeit",
+            "Variablendeklaration und Initialisierung mittels :=",
+            "Ganzzahltypen wie Integer und Cardinal",
+            "Fließkommazahlen für präzise Berechnungen"
+          ],
+          "notes": "Sauberer Code beginnt bei der Benennung. Wir schauen uns zudem an, wie man Zahlen und Fließkommawerte korrekt verarbeitet.",
+          "page_range": "6-9",
+          "image_prompt": ""
+        },
+        {
+          "title": "Kontrollstrukturen und Verzweigungen",
+          "bullets": [
+            "Lineare Befehlsfolge vs. dynamischer Programmfluss",
+            "If-then-else für bedingte Logik",
+            "Zusammengesetzte Bedingungen mit and und or",
+            "Verschachtelte Abfragen für komplexe Entscheidungen"
+          ],
+          "notes": "Programme müssen auf Eingaben reagieren. Hier lernen wir, wie man den Programmablauf clever steuert.",
+          "page_range": "20-23",
+          "image_prompt": ""
+        },
+        {
+          "title": "Eigene Datentypen und Records",
+          "bullets": [
+            "Definition eigener Typen im type-Block",
+            "Records fassen unterschiedliche Datentypen sinnvoll zusammen",
+            "Punkt-Schreibweise für gezielten Feldzugriff",
+            "With-Anweisung als bequeme Abkürzung"
+          ],
+          "notes": "Eigene Strukturen helfen, Daten übersichtlich zu bündeln und den Programmcode intuitiver zu gestalten.",
+          "page_range": "30-35",
+          "image_prompt": ""
+        },
+        {
+          "title": "Zeiger und Speicherverwaltung",
+          "bullets": [
+            "Dynamische Speicherverwaltung mit Zeigern",
+            "New zur Speicherreservierung und Dispose zur Freigabe",
+            "Dereferenzierung mittels Dach-Operator",
+            "Rekursive Datenstrukturen wie Stapel (Stacks)"
+          ],
+          "notes": "Zeiger öffnen die Tür zur flexiblen Speicherverwaltung, indem wir direkt auf Speicheradressen verweisen.",
+          "page_range": "38-40",
+          "image_prompt": ""
+        },
+        {
+          "title": "Modularisierung und Standard-Units",
+          "bullets": [
+            "Einbindung von Standard-Units mit uses",
+            "Automatisierung mit --automake",
+            "Datum- und Zeitfunktionen der GPC-Unit",
+            "Verarbeitung von Kommandozeilenparametern"
+          ],
+          "notes": "Modularität spart Arbeit. Wir lernen, wie vorhandene Bibliotheken genutzt werden, um das eigene Programm zu erweitern.",
+          "page_range": "54-57",
+          "image_prompt": ""
+        },
+        {
+          "title": "Units und Dateiverwaltung",
+          "bullets": [
+            "Eigene Module durch unit-Struktur",
+            "Interface- und Implementation-Teile trennen Logik",
+            "Textdateien lesen und schreiben",
+            "Standard-Fehlerkanal StdErr nutzen"
+          ],
+          "notes": "Vom Modul zur persistenten Datei: Hier erfahren wir, wie Programme Daten dauerhaft speichern und ihre Funktionalität kapseln.",
+          "page_range": "60-63",
+          "image_prompt": ""
+        },
+        {
+          "title": "Internationalisierung mit Gettext",
+          "bullets": [
+            "Internationalisierung via GNU-Gettext",
+            "Sprachkataloge erstellen und übersetzen",
+            "Locale für sprachabhängige Ausgaben",
+            "pas2po und msgfmt zur Katalogerstellung"
+          ],
+          "notes": "Damit das Programm weltweit verstanden wird, nutzen wir Gettext zur einfachen Lokalisierung der Ausgaben.",
+          "page_range": "69-71",
+          "image_prompt": ""
+        },
+        {
+          "title": "Anbindung von C-Bibliotheken",
+          "bullets": [
+            "Pascal nutzt C-Bibliotheken über external",
+            "Kapselung von Routinen in Units",
+            "Datenstrukturen zwischen Sprachen abgleichen",
+            "Wrapper zur Vereinfachung nutzen"
+          ],
+          "notes": "Pascal ist teamfähig. Wir erfahren, wie man bestehende C-Bibliotheken direkt im eigenen Programm einbindet.",
+          "page_range": "74-77",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 5: GNU-Pascal - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778790248763,
+      "pdfName": "GNU-Pascal"
+    }
+  ],
+  "sourceHash": "c7353887ecd3b555"
+}

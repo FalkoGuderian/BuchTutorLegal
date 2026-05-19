@@ -1,0 +1,476 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Klassische Mechanik und Optik - Lektion 1 — Kinematik",
+    "pdfName": "Kinematik",
+    "createdAt": 1778499779852,
+    "exportedAt": "2026-05-11T11:42:59.853Z",
+    "meta": {
+      "courseId": "course-de-mechanik-und-optik",
+      "lessonIndex": 0,
+      "courseTitle": "Klassische Mechanik und Optik",
+      "lessonObjective": "Bewegung beschreiben.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-kinematik",
+            "title": "Kinematik",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Kinematik"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_b43902f47977",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Einleitung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-5",
+          "chapterTitle": "Bahngeschwindigkeit und Bahnbeschleunigung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-9",
+          "chapterTitle": "Geschwindigkeit und Beschleunigung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "9-13",
+          "chapterTitle": "Rotationsbewegungen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "13-19",
+          "chapterTitle": "Bewegungsgleichungen in einem Polarkoordinatensystem",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "19-25",
+          "chapterTitle": "Beispiele",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "25-27",
+          "chapterTitle": "Autoren",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "27-31",
+          "chapterTitle": "Abbildungsverzeichnis",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "31-35",
+          "chapterTitle": "Licenses",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778499779852,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist die prägnante Zusammenfassung der grundlegenden Konzepte der Kinematik basierend auf dem Dokument:\n\n### Zusammenfassung: Kinematik und Bewegungsbeschreibung\n\nDie Kinematik befasst sich mit der mathematischen Beschreibung von Bewegungen von Körpern. Da es sich dabei um gerichtete Größen handelt, bildet die Vektoranalysis das zentrale Werkzeug.\n\n#### 1. Grundlegende Bewegungsgrößen\n*   **Verschiebung ($\\Delta\\mathbf{s}$):** Die einfachste vektorielle Größe, die den Gesetzen der Vektoraddition folgt (S. 3).\n*   **Bahngeschwindigkeit ($v$):** Der Grenzwert des Quotienten aus zurückgelegter Wegstrecke $\\Delta s$ und Zeitintervall $\\Delta t$ für $\\Delta t \\to 0$. Es gilt: $v = \\frac{ds}{dt}$ (S. 5).\n*   **Bahnbeschleunigung ($a$):** Die zeitliche Ableitung der Bahngeschwindigkeit: $a = \\frac{dv}{dt} = \\dot{v} = \\ddot{s}$ (S. 6).\n\n#### 2. Vektorielle Beschreibung der Bewegung\nBei Bewegung im Raum wird der Ort durch den Ortsvektor $\\mathbf{r}(t)$ definiert:\n*   **Geschwindigkeit ($\\mathbf{v}$):** Erste zeitliche Ableitung des Ortsvektors: $\\mathbf{v} = \\frac{d\\mathbf{r}}{dt} = \\dot{\\mathbf{r}}$ (S. 8).\n*   **Beschleunigung ($\\mathbf{a}$):** Zweite zeitliche Ableitung des Ortsvektors: $\\mathbf{a} = \\frac{d\\mathbf{v}}{dt} = \\ddot{\\mathbf{r}}$ (S. 9).\n*   **Zerlegung der Beschleunigung:** Die Beschleunigung kann in eine **Tangentialbeschleunigung** (verändert den Betrag der Geschwindigkeit) und eine **Normalbeschleunigung** (verändert die Richtung, also die Krümmung der Bahn) zerlegt werden: $\\mathbf{a} = \\ddot{s} \\cdot \\mathbf{t} + \\frac{v^2}{\\rho} \\cdot \\mathbf{n}$ (S. 10–11).\n\n#### 3. Rotationsbewegungen\n*   Die Bewegung erfolgt auf einer Kreisbahn. Wesentliche Größen sind die **Winkelgeschwindigkeit** ($\\omega = \\frac{d\\phi}{dt}$) und die **Winkelbeschleunigung** ($\\alpha = \\frac{d\\omega}{dt}$) (S. 12–13).\n*   Bei der gleichförmigen Kreisbewegung ist die Beschleunigung ausschließlich auf den Mittelpunkt gerichtet (**Zentripetalbeschleunigung**: $a = \\omega^2 r$) (S. 13).\n*   Wichtig: Die Winkelgeschwindigkeit ist keine Vektorgröße im klassischen Sinne, da sie sich nicht vektoriell addieren lässt (S. 15).\n\n#### 4. Polarkoordinaten\nAlternativ zur kartesischen Darstellung wird bei ebenen Bewegungen häufig das Polarkoordinatensystem ($r, \\phi$) genutzt (S. 15). Die Beschleunigungskomponenten in diesem System lauten:\n*   Radialbeschleunigung: $a_r = \\ddot{r} - r\\dot{\\phi}^2$ (S. 21).\n*   Transversalbeschleunigung: $a_\\phi = 2\\dot{r}\\dot{\\phi} + r\\ddot{\\phi}$ (S. 21).\n\nDiese Konzepte ermöglichen es beispielsweise, die Keplerschen Gesetze der Planetenbewegung mathematisch herzuleiten und zu zeigen, dass die gravitative Beschleunigung umgekehrt proportional zum Quadrat der Entfernung ist (S. 21–24).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778499779852,
+      "channel": "general",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 35
+      }
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-mechanik-und-optik_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 1 — Kinematik - Präsentation</span><span class=\"pm-chat-count\">6 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lektion 1: Einführung in die Kinematik</div><ul class=\"pm-chat-slide-bullets\"><li>Grundlagen der Bewegungsbeschreibung von Körpern</li><li>Vektoren als zentrales mathematisches Werkzeug</li><li>Einführung in Verschiebung, Geschwindigkeit und Beschleunigung</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778499779954,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung der vorliegenden Informationen zum Dokument:\n\n**Zusammenfassung: Dokumentation und rechtlicher Rahmen der Kinematik-Publikation**\n\nDas vorliegende Dokument basiert auf Inhalten der deutsch- und englischsprachigen Wikibooks- sowie Wikipedia-Projekte. Der Text behandelt die grundlegenden rechtlichen und technischen Spezifikationen der Publikation mit Stand vom 23. Mai 2025.\n\n**Rechtliche Grundlagen und Lizensierung**\nSeit dem 28. April 2012 unterliegen die genutzten Inhalte der Creative Commons Attribution-ShareAlike 3.0 Unported Lizenz. Falls es sich bei diesem Dokument um ein abgeleitetes Werk handelt, muss dieses unter einer identischen, ähnlichen oder kompatiblen Lizenz veröffentlicht werden. Zusätzlich zum CC-Modell sind im Dokument Hinweise zu den Lizenzen GPL, LGPL und GFDL enthalten, da Teile des Inhalts diesen Bestimmungen unterliegen können.\n\n**Technische Erzeugung und Verfügbarkeit**\nDas Dokument wurde mit der Satzsoftware LaTeX erstellt. Ein wesentlicher Aspekt des Dokuments ist die Bereitstellung des Quellcodes, der als passwortgeschützte oder komprimierte Datei (source.7z.txt) angehängt wurde. Die Extraktion der Quelldateien kann über spezifische Werkzeuge wie pdfdetach oder pdftk erfolgen. Nach der Extraktion ist eine Umbenennung in source.7z erforderlich, um den Inhalt mittels 7-Zip zu dekomprimieren. Der zugrunde liegende Generator für den LaTeX-Quellcode wurde von Dirk Hünniger entwickelt und ist als Open-Source-Programm frei verfügbar.\n\n**Adressierte Zusatzinformationen**\nDas Dokument umfasst ergänzend ein Verzeichnis der Mitwirkenden (ab Seite 25), ein Abbildungsverzeichnis inklusive der jeweiligen Bildlizenzen (ab Seite 27) sowie einen Abschnitt zu den Lizenzen (ab Seite 31).\n\nFür die Darstellung physikalischer Zusammenhänge im Bereich der Kinematik wird im Rahmen wissenschaftlicher Arbeiten üblicherweise das Zeit-Weg-Gesetz genutzt, welches für eine gleichförmige Bewegung folgendermaßen definiert ist:\n\n$s(t) = v \\cdot t + s_0$\n\nHierbei beschreibt $s$ den Ort zum Zeitpunkt $t$, $v$ die Geschwindigkeit und $s_0$ die Startposition bei $t=0$. Die Berücksichtigung der korrekten Notation ist essenziell, wobei beispielsweise die Beschleunigung als $\\text{Ä}nderung$ der Geschwindigkeit definiert werden kann:\n\n$a = \\frac{\\Delta v}{\\Delta t}$",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778499779862,
+      "channel": "plan_pipe_b43902f47977",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Abschnitte über Kinematik, Bahngeschwindigkeit und Bahnbeschleunigung (S. 2–5):\n\n**Grundlagen der Kinematik**\nDie Kinematik beschreibt die Bewegung von Körpern mittels physikalischer Größen wie Verschiebung, Geschwindigkeit und Beschleunigung. Da es sich hierbei meist um gerichtete Größen handelt, ist die Vektoranalysis das primäre mathematische Hilfsmittel. Die Verschiebung $\\Delta s$ ist ein Vektor, da sie den Regeln der Vektoraddition folgt. Insbesondere bei zusammengesetzten Bewegungen (z. B. ein Reisender in einem fahrenden Zug) werden diese mathematisch als Summe der Einzelverschiebungen betrachtet.\n\n**Bahngeschwindigkeit**\nIm physikalischen Kontext muss scharf zwischen der Bahngeschwindigkeit und einer rein wegabhängigen Skalargröße unterschieden werden. Die mittlere Bahngeschwindigkeit $v_m$ ergibt sich als Quotient aus der zurückgelegten Bogenlänge $\\Delta s$ und dem Zeitintervall $\\Delta t$:\n\n$v_m = \\frac{\\Delta s}{\\Delta t}$\n\nWird das Zeitintervall $\\Delta t$ gegen null betrachtet, erhält man den Grenzwert der Bahngeschwindigkeit zu einem bestimmten Zeitpunkt:\n\n$v = \\lim_{\\Delta t \\to 0} \\frac{\\Delta s}{\\Delta t} = \\frac{ds}{dt}$\n\nDiese Definition stellt sicher, dass auch bei ungleichförmigen Bewegungen eine präzise Aussage über die Momentangeschwindigkeit an einem Punkt $P$ getroffen werden kann. Dabei ist zu beachten, dass $s$ die tatsächliche Bogenlänge (Wegstrecke) darstellt und nicht die vektorielle Verschiebung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778499779863,
+      "channel": "plan_pipe_b43902f47977",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts zur vektoriellen Beschreibung von Bewegung:\n\n**Grundlagen der vektoriellen Bewegung**\n\nDie Bewegung eines Massenpunktes im Raum wird durch einen zeitabhängigen Ortsvektor $\\vec{r}(t) = x(t)\\vec{i} + y(t)\\vec{j} + z(t)\\vec{k}$ beschrieben. Der Übergang von einem Punkt P zu einem Punkt Q im Zeitintervall $\\Delta t$ führt zur vektoriellen Verschiebung $\\Delta \\vec{r}$.\n\n**Geschwindigkeit als Vektor**\n\nDie Geschwindigkeit $\\vec{v}(t)$ ist der Grenzvektor der mittleren Geschwindigkeit für $\\Delta t \\to 0$. Sie entspricht der ersten Ableitung des Ortsvektors nach der Zeit:\n$\\vec{v}(t) = \\frac{d\\vec{r}}{dt} = \\dot{\\vec{r}}$.\nDie Komponenten des Geschwindigkeitsvektors sind die skalaren Bahngeschwindigkeiten entlang der Koordinatenachsen ($v_x, v_y, v_z$). Der Vektor $\\vec{v}$ liegt dabei immer in Richtung der Tangente an die Bahnkurve.\n\n**Beschleunigung als Vektor**\n\nDie Beschleunigung $\\vec{a}(t)$ ist die zeitliche Ableitung des Geschwindigkeitsvektors bzw. die zweite Ableitung des Ortsvektors:\n$\\vec{a}(t) = \\frac{d\\vec{v}}{dt} = \\dot{\\vec{v}} = \\ddot{\\vec{r}}$.\nIn Komponentenform entspricht dies der zweiten Ableitung der Raumkoordinaten nach der Zeit.\n\n**Zusammenhang durch Integration**\n\nSind Beschleunigungsfunktionen gegeben, können durch Integration die Geschwindigkeits- und Ortsfunktionen bestimmt werden, sofern Anfangsbedingungen ($\\vec{v}_0, \\vec{r}_0$) bekannt sind. Dies zeigt das Beispiel des freien Falls, bei dem die Erdbeschleunigung $g$ die Änderung des Geschwindigkeits- und Ortsvektors bestimmt.\n\n**Zerlegung der Beschleunigung**\n\nWährend der Geschwindigkeitsvektor stets tangential zur Bahn gerichtet ist, kann der Beschleunigungsvektor beliebig im Raum stehen. Zur Analyse wird die Beschleunigung in zwei Komponenten zerlegt:\n- Tangentialbeschleunigung: Verändert den Betrag der Geschwindigkeit.\n- Normalbeschleunigung: Verändert die Richtung des Geschwindigkeitsvektors.\n\nFür diese Betrachtung wird die Bogenlänge $s$ als Pfadparameter eingeführt.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778499779864,
+      "channel": "plan_pipe_b43902f47977",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 9
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Abschnitte zur Beschleunigung und zu Rotationsbewegungen:\n\nDie Beschleunigung ist definiert als die zeitliche Ableitung des Geschwindigkeitsvektors: $\\vec{a}(t) = \\frac{d\\vec{v}}{dt} = \\ddot{\\vec{r}}$. Sie lässt sich in kartesischen Komponenten oder zerlegt in ein begleitendes Koordinatensystem (Tangential- und Normalrichtung) ausdrücken.\n\nDie Zerlegung der Beschleunigung in tangentiale und normale Komponenten lautet:\n$\\vec{a} = \\frac{d^2s}{dt^2} \\vec{t} + \\frac{v^2}{\\rho} \\vec{n}$\n\nHierbei steht $\\frac{d^2s}{dt^2}$ für die Tangentialbeschleunigung, welche den Betrag der Geschwindigkeit ändert. Der Term $\\frac{v^2}{\\rho}$ beschreibt die Normalbeschleunigung (Zentripetalbeschleunigung), welche die Richtung der Geschwindigkeit ändert, wobei $\\rho$ den Krümmungsradius der Bahnkurve darstellt.\n\nBei Rotationsbewegungen auf einer Kreisbahn erfolgt die Beschreibung über den Ortsvektor $\\vec{r} = (r \\cos \\phi) \\vec{i} + (r \\sin \\phi) \\vec{j}$. Die zentralen Größen sind hier die Winkelgeschwindigkeit $\\omega = \\frac{d\\phi}{dt}$ sowie die Winkelbeschleunigung $\\alpha = \\frac{d\\omega}{dt}$.\n\nFür eine gleichförmige Kreisbewegung mit konstanter Winkelgeschwindigkeit gilt:\n1. Die Bahngeschwindigkeit beträgt $v = r \\omega$.\n2. Der Geschwindigkeitsvektor steht senkrecht auf dem Ortsvektor ($\\vec{v} \\perp \\vec{r}$).\n3. Die Beschleunigung ist als Zentripetalbeschleunigung direkt auf den Mittelpunkt gerichtet: $\\vec{a} = -\\omega^2 \\vec{r}$ beziehungsweise $a = \\omega^2 r = \\frac{v^2}{r}$.\n\nZusammenfassend lässt sich festhalten, dass jede beschleunigte Bewegung durch tangentiale (\\text{Ä}nderung des Tempos) und normale (\\text{Ä}nderung der Richtung) Anteile charakterisiert ist, wobei bei der Kreisbahn die Beschleunigung ausschließlich radial nach innen wirkt.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778499779865,
+      "channel": "plan_pipe_b43902f47977",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 9,
+        "end": 13
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine zusammenfassende Übersicht der physikalischen Grundlagen für Rotationsbewegungen und Polarkoordinaten basierend auf den bereitgestellten Inhalten:\n\n**1. Rotationsbewegung und Kreisbewegung**\n\nDie Kinematik der Kreisbewegung beschreibt den Zustand eines Objektes mittels des Drehwinkels $\\phi$, der Winkelgeschwindigkeit $\\omega$ und der Winkelbeschleunigung $\\alpha$. Es gilt der Zusammenhang:\n$\\alpha = \\frac{d\\omega}{dt} = \\frac{d^2\\phi}{dt^2}$.\n\nBei der gleichförmigen Kreisbewegung (konstante $\\omega$) berechnet sich der Drehwinkel zu $\\phi(t) = \\omega t$ (für $\\phi(0)=0$). Die Beschleunigung ist in diesem Fall rein radial auf das Zentrum gerichtet und wird als Zentripetalbeschleunigung bezeichnet:\n$a = \\omega^2 r = \\frac{v^2}{r}$.\n\nBei der gleichmäßig beschleunigten Kreisbewegung (konstante $\\alpha$) ergeben sich der Drehwinkel $\\phi(t) = \\frac{\\alpha}{2} t^2$ und die Winkelgeschwindigkeit $\\omega(t) = \\alpha t$. Hier existieren sowohl eine Radialkomponente $a_{rad} = r \\omega^2$ als auch eine Tangentialkomponente $a_{tan} = r \\alpha$ der Beschleunigung.\n\n**2. Der Status der Winkelgeschwindigkeit als Vektor**\n\nDie Winkelgeschwindigkeit lässt sich zwar formal als Vektor $\\vec{\\omega}$ in Richtung der Drehachse darstellen, erfüllt jedoch nicht die Kriterien eines Vektors im mathematischen Sinne, da sich Winkelgeschwindigkeiten um verschiedene Achsen nicht beliebig durch einfache Vektoraddition korrekt überlagern lassen. Ein nützlicher Einsatzbereich für diese Darstellung ist lediglich die Berechnung von Geschwindigkeiten bei isolierten oder ergänzenden Drehbewegungen.\n\n**3. Bewegungsgleichungen in Polarkoordinaten**\n\nDie Lage eines Punktes in der Ebene kann alternativ zu kartesischen Koordinaten (x, y) durch Polarkoordinaten (r, $\\phi$) beschrieben werden. Die Transformationsgleichungen lauten:\n$x = r \\cos \\phi$ und $y = r \\sin \\phi$.\n\nDie Geschwindigkeit eines Massenpunktes wird in Polarkoordinaten in eine radiale und eine transversale Komponente zerlegt:\n- Radialgeschwindigkeit: $v_r = \\dot{r} = \\frac{dr}{dt}$\n- Transversalgeschwindigkeit: $v_{\\phi} = r \\dot{\\phi} = r \\frac{d\\phi}{dt}$\n\nDer Zusammenhang zwischen den Geschwindigkeitskomponenten in kartesischen und Polarkoordinaten ergibt sich durch Projektion:\n$v_x = v_r \\cos \\phi - v_{\\phi} \\sin \\phi$\n$v_y = v_r \\sin \\phi + v_{\\phi} \\cos \\phi$\n\nDiese Zerlegung ermöglicht eine intuitive Darstellung von Bewegungen, bei denen sich der Radiusabstand $r$ zeitlich ändert, oder bei denen die Bewegung in einem rotierenden Bezugssystem betrachtet wird. Bitte beachten Sie bei Formeln mit Umlauten die Schreibweise z. B. $\\text{Geschwindigkeit}_{\\text{radial}}$.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778499779866,
+      "channel": "plan_pipe_b43902f47977",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 13,
+        "end": 19
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung behandelt die Bewegungsgleichungen in Polarkoordinaten sowie deren Anwendung am Beispiel der Planetenbewegung.\n\nGrundlagen der Kinematik in Polarkoordinaten\nBei einer Bewegung in der Ebene hängen die radialen und transversalen Komponenten der Beschleunigung von der Rotation des Koordinatensystems ab. Die Zerlegung der Beschleunigung $a$ in eine radiale Komponente $a_r$ und eine transversale Komponente $a_{\\phi}$ ergibt sich zu:\n$a_r = \\frac{d^2 r}{dt^2} - r \\left( \\frac{d\\phi}{dt} \\right)^2$\n$a_{\\phi} = 2 \\frac{dr}{dt} \\frac{d\\phi}{dt} + r \\frac{d^2 \\phi}{dt^2}$\n\nAnwendung: Planetenbewegung\nDie Analyse der Planetenbewegung erfolgt auf Grundlage der Keplerschen Gesetze:\n\n1. Flächensatz: Das zweite Keplersche Gesetz besagt, dass der Ortsvektor in gleichen Zeiten gleiche Flächen überstreicht. Mathematisch lässt sich dies als $r^2 \\frac{d\\phi}{dt} = C$ ausdrücken. Differenziert man diesen Ausdruck, zeigt sich, dass die transversale Beschleunigung $a_{\\phi}$ verschwindet. Die gesamte Beschleunigung eines Planeten ist somit rein radial und auf die Sonne gerichtet.\n\n2. Herleitung des Gravitationsgesetzes: Durch Einsetzen der Polargleichung einer Ellipse ($r = \\frac{p}{1 - e \\cos \\phi}$) in die Formel für die Radialbeschleunigung $a_r$ sowie die Nutzung des Flächensatzes erhält man $a_r = -\\frac{C^2}{p} \\cdot \\frac{1}{r^2}$. Dies belegt, dass die Anziehungskraft mit dem Quadrat der Entfernung abnimmt.\n\n3. Drittes Keplersches Gesetz: Die Beziehung $\\frac{a^3}{T^2} = K$ zeigt, dass die Proportionalitätskonstante $K$ zwischen allen Planeten eines Systems identisch ist. Durch Betrachtung einer Kreisbahn lässt sich dies zu $a = \\frac{K}{r^2}$ verallgemeinern, was bestätigt, dass die Radialbeschleunigung im gesamten Sonnensystem dem Quadrat des Abstands umgekehrt proportional ist.\n\nZusammenfassend lässt sich festhalten, dass die Wahl des Polarkoordinatensystems die mathematische Beschreibung von Zentralbewegungen erheblich vereinfacht, da sich die physikalischen Gesetze der Planetenbewegung direkt aus den kinematischen Komponenten herleiten lassen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778499779867,
+      "channel": "plan_pipe_b43902f47977",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 19,
+        "end": 25
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung der physikalischen Herleitung zur Radialbeschleunigung:\n\n**Kern der Herleitung**\n\nDer vorliegende Abschnitt befasst sich mit der mathematischen Herleitung des Abstandsgesetzes für die Radialbeschleunigung bei einer Kreisbewegung, wie sie beispielsweise für Planeten um die Sonne gilt.\n\n**Die wesentlichen Schritte**\n\n1. Ausgangspunkt ist das dritte Keplersche Gesetz, welches das Verhältnis von Radius und Umlaufzeit beschreibt:\n$R^3 / T^2 = K$\n\n2. Unter Verwendung der Umlaufzeit $T = (2 \\pi R) / v$ wird die Gleichung umgeformt, woraus der Ausdruck $R \\cdot v^2 = K$ resultiert.\n\n3. Da bei einer gleichförmigen Kreisbewegung die Zentripetalbeschleunigung durch $v^2 = a \\cdot R$ definiert ist, lässt sich der Ausdruck weiter vereinfachen.\n\n4. Durch Einsetzen ergibt sich das finale Gesetz für die Radialbeschleunigung:\n$a = K / R^2$\n\n**Physikalische Schlussfolgerung**\n\nDas Resultat zeigt, dass die Radialbeschleunigung ($a$) umgekehrt proportional zum Quadrat der Entfernung ($R$) vom Zentralkörper ist. Dies stellt einen entscheidenden Schritt zum Verständnis der Gravitation dar, da die Konstante $K$ direkt mit der Gravitationskonstanten und der Masse des Zentralkörpers verknüpft ist. Die Herleitung verdeutlicht somit den Zusammenhang zwischen beobachteten Planetenbahnen und den wirkenden Beschleunigungskräften.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778499779868,
+      "channel": "plan_pipe_b43902f47977",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 25,
+        "end": 27
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die zusammenfassende Übersicht der bereitgestellten Textabschnitte (Seiten 27–31):\n\n**Inhaltliche Zusammenfassung**\n\nDie vorliegenden Abschnitte dokumentieren die administrativen und rechtlichen Rahmenbedingungen eines Wikibooks-Projekts. Sie lassen sich in drei Kernbereiche unterteilen:\n\n*   **Mitwirkende:** Es wird eine detaillierte Auflistung der Autoren aufgeführt, die an dem Projekt mitgewirkt haben. Die Liste enthält die Benutzernamen, deren individuelle Anzahl an Bearbeitungen sowie die entsprechenden Verlinkungen zu den Benutzerseiten. Siegfried Petry sticht dabei als Autor mit den meisten Beiträgen hervor.\n\n*   **Lizensierung:** Ein wesentlicher Teil der Dokumentation umfasst die rechtlichen Grundlagen für die verwendeten Inhalte und Abbildungen. Es werden diverse Standardlizenzen aufgeführt, darunter Creative Commons (in verschiedenen Ausprägungen wie CC-BY-SA 4.0 oder CC-BY-1.0), die Gnu Free Documentation License (GFDL) sowie spezifische Regelungen wie die General Public License (GPL) oder Rechte an Euro-Münzdesigns. Zudem wird darauf hingewiesen, dass gemeinfreie Werke (Public Domain) keine Namensnennung erfordern.\n\n*   **Bildnachweis:** Abschließend findet sich eine Aufstellung der verwendeten Abbildungen, zugeordnet zu ihren jeweiligen Urhebern und den geltenden Lizenzbedingungen. Diese Tabelle dient der Transparenz und der korrekten Zitierweise im Sinne der Urheberrechtsbestimmungen.\n\nZusammenfassend dienen diese Seiten der Sicherstellung der Transparenz hinsichtlich der Autorenschaft und der rechtssicheren Nachnutzung der in dem Wikibook enthaltenen Materialien.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778499779869,
+      "channel": "plan_pipe_b43902f47977",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 27,
+        "end": 31
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Abschnitte (Abschnitt 2 bis 2.1 der GNU General Public License, Version 3):\n\n**Ziel der GNU GPL v3**\nDie Lizenz fungiert als \\\"Copyleft\\\"-Instrument, um die Freiheit von Software dauerhaft zu sichern. Das zentrale Ziel ist es, den Nutzern stets die vier Grundfreiheiten zu garantieren: das Programm auszuführen, es zu untersuchen, zu verändern und zu verbreiten. Dabei bezieht sich \\\"frei\\\" nicht auf den Preis, sondern auf die Freiheit des Anwenders.\n\n**Verantwortung bei Weitergabe**\nWer Software unter dieser Lizenz weitergibt (ob kostenlos oder gegen Gebühr), muss sicherstellen, dass die Empfänger dieselben Freiheiten erhalten. Dazu gehört insbesondere der Zugang zum Quellcode. Entwickler markieren ihre Software als \\\"frei\\\", indem sie das Urheberrecht beanspruchen und diese Lizenzbedingungen beifügen.\n\n**Kernregelungen für Nutzer und Entwickler**\n*   **Quellcode:** Der Quellcode ist die bevorzugte Form für Modifikationen. Bei der Weitergabe von Binärdateien (Objektcode) muss ein Weg zum Erhalt des Quellcodes angeboten werden (z. B. physisches Medium oder Netzwerkzugriff).\n*   **Modifikationen:** Wer ein Werk verändert, muss dies deutlich als Solches kennzeichnen, ein Datum angeben und das resultierende Gesamtwerk erneut unter die GPL v3 stellen.\n*   **Technologische Schutzmaßnahmen:** Die Lizenz untersagt es, die GPL-Rechte durch technologische Schutzmaßnahmen (z. B. Kopierschutz oder Anti-Circumvention-Gesetze) einzuschränken.\n*   **Hardware und \\\"User Products\\\":** Wenn Software in Produkten für Endverbraucher eingesetzt wird, muss der Hersteller zudem die notwendigen Informationen zur Installation modifizierter Softwareversionen bereitstellen.\n*   **Garantieausschluss:** Zum Schutz der Entwickler und Autoren schließt die Lizenz jegliche Gewährleistung aus.\n\n**Zusatzbedingungen**\nDie Lizenz erlaubt ergänzende Bedingungen, solange diese nicht den Kern der GPL untergraben (z. B. Haftungsausschlüsse oder Namensnennungen). Solche Zusätze können den Schutz der Anwender nicht aufheben.\n\n**Rechtliche Absicherung gegen Patente**\nDie GPL stellt sicher, dass Softwarepatente nicht dazu verwendet werden können, die durch die Lizenz gewährten Freiheiten auszuhebeln oder die Software faktisch proprietär zu machen.\n\nZusammenfassend definiert die Lizenz einen rechtlichen Rahmen, der sicherstellt, dass Software ein Gemeinschaftsgut bleibt, indem Änderungen transparent gemacht werden müssen und der Zugriff auf den Quellcode für alle Nutzer verpflichtend bleibt.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778499779870,
+      "channel": "plan_pipe_b43902f47977",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 31,
+        "end": 35
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778499779952,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Warum ist die Verschiebung Δs in der Kinematik als Vektor definiert?",
+            "options": [
+              "Weil sie den Gesetzen der Vektoraddition folgt.",
+              "Weil die Zeitdifferenz Δt immer eine gerichtete Größe ist.",
+              "Weil nur Vektoren in einem kartesischen System gemessen werden können.",
+              "Weil sie die Länge des tatsächlich zurückgelegten Weges angibt."
+            ],
+            "correctIndex": 0,
+            "explanation": "Die Verschiebung ist ein Vektor, da die Kombination zweier aufeinanderfolgender oder gleichzeitiger Verschiebungen durch die Vektorsumme ausgedrückt werden kann, was ein grundlegendes Merkmal von Vektoren ist."
+          },
+          {
+            "question": "Was unterscheidet die Bahnbeschleunigung von der Veränderung des Betrags der Bahngeschwindigkeit?",
+            "options": [
+              "Die Bahnbeschleunigung ist immer der zweite Ableitungsoperator der Zeit, während die Geschwindigkeit nur ein Integral ist.",
+              "Die Bahnbeschleunigung hat eine Tangentialkomponente (Ändern des Betrags) und eine Normalkomponente (Ändern der Richtung).",
+              "Die Bahnbeschleunigung ist ein Skalar, die Geschwindigkeit ein Vektor.",
+              "Sie sind identisch, da die Bahnbeschleunigung nur die Geschwindigkeit ändert."
+            ],
+            "correctIndex": 1,
+            "explanation": "Der Beschleunigungsvektor setzt sich aus der Tangentialbeschleunigung (betragsmäßige Änderung der Geschwindigkeit) und der Normalbeschleunigung (Richungsänderung aufgrund der Bahnkrümmung) zusammen."
+          },
+          {
+            "question": "Ein Körper bewegt sich auf einer Kreisbahn. Was passiert mit seinem Geschwindigkeits- und Beschleunigungsvektor bei einer gleichförmigen Kreisbewegung?",
+            "options": [
+              "Die Geschwindigkeit ist konstant, aber die Beschleunigung ändert sich stetig.",
+              "Beide Vektoren bleiben in ihrer Richtung konstant.",
+              "Sowohl Geschwindigkeit als auch Beschleunigung sind in ihrem Betrag und ihrer Richtung gleich Null.",
+              "Die Geschwindigkeit ändert sich ständig in ihrer Richtung, und der Beschleunigungsvektor ist stets zum Kreismittelpunkt gerichtet."
+            ],
+            "correctIndex": 3,
+            "explanation": "Bei einer gleichförmigen Kreisbewegung ist der Betrag der Geschwindigkeit zwar konstant, aber die Richtung ändert sich ständig, was eine Zentripetalbeschleunigung (Normalbeschleunigung) erfordert, die zum Mittelpunkt zeigt."
+          },
+          {
+            "question": "Welche Aussage zur 'Winkelgeschwindigkeit' als Vektorgröße ist laut Text korrekt?",
+            "options": [
+              "Sie ist kein echter Vektor im mathematischen Sinne, da man sie bei mehreren gleichzeitigen Rotationen nicht einfach vektoriell addieren darf.",
+              "Sie ist ein echter Vektor, da man ihre Komponenten in x-, y- und z-Richtung addieren kann.",
+              "Sie ist mathematisch ein Vektor, da sie die Eigenschaften der Vektoraddition erfüllt.",
+              "Die Einführung als Vektor ist immer sinnvoll, um die Drehachse anzugeben."
+            ],
+            "correctIndex": 0,
+            "explanation": "Obwohl die Winkelgeschwindigkeit oft als Vektor dargestellt wird (um die Achse zu beschreiben), erfüllt sie nicht die Eigenschaft der Vektoraddition bei mehreren gleichzeitigen Rotationen um verschiedene Achsen."
+          },
+          {
+            "question": "Wenn der Ortsvektor eines Massenpunktes r(t) gegeben ist, wie erhält man daraus die Beschleunigungsfunktion?",
+            "options": [
+              "Durch die Integration der Ortsfunktion.",
+              "Durch die zweite Ableitung nach der Zeit (d²r/dt²).",
+              "Durch die einfache Ableitung (dr/dt).",
+              "Durch die Multiplikation des Ortsvektors mit der Winkelgeschwindigkeit."
+            ],
+            "correctIndex": 1,
+            "explanation": "Die Geschwindigkeit ist die erste Ableitung des Ortes nach der Zeit (dr/dt), und die Beschleunigung ist die Ableitung der Geschwindigkeit nach der Zeit, also die zweite Ableitung des Ortes (d²r/dt²)."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778499779953,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist der Gegenstand der Kinematik?",
+            "back": "Die Beschreibung der Bewegung von Körpern (Verschiebung, Geschwindigkeit, Beschleunigung, gleichförmige/beschleunigte Bewegung) auf geraden oder gekrümmten Bahnen."
+          },
+          {
+            "front": "Wie ist die mittlere Bahngeschwindigkeit v_m definiert?",
+            "back": "v_m = Δs / Δt, wobei Δs die zurückgelegte Bogenlänge (Wegstrecke) und Δt das Zeitintervall ist."
+          },
+          {
+            "front": "Wie definiert man die (instantan) Bahngeschwindigkeit v?",
+            "back": "v = lim (Δt → 0) Δs/Δt = ds/dt. Sie ist die erste Ableitung der Wegfunktion s nach der Zeit t."
+          },
+          {
+            "front": "Wie sind Bahngeschwindigkeit v(t) und Bahnbeschleunigung a(t) mathematisch verknüpft?",
+            "back": "Die Bahnbeschleunigung a(t) ist die erste Ableitung der Geschwindigkeit v(t) nach der Zeit (a = dv/dt) oder die zweite Ableitung der Wegfunktion s(t) (a = d²s/dt² = ¨s)."
+          },
+          {
+            "front": "Was beschreibt der Ortsvektor r(t) in der Kinematik?",
+            "back": "Er beschreibt die Position eines Punktes im Raum als Funktion der Zeit t. Seine erste Ableitung nach der Zeit ist der Geschwindigkeitsvektor v, seine zweite Ableitung der Beschleunigungsvektor a."
+          },
+          {
+            "front": "Welche Komponenten hat der Beschleunigungsvektor bei einer Kurvenbewegung?",
+            "back": "Die Tangentialbeschleunigung (verändert den Betrag der Geschwindigkeit) und die Normalbeschleunigung (verändert die Richtung der Geschwindigkeit)."
+          },
+          {
+            "front": "Wie lauten die Beträge der Tangential- und Normalbeschleunigung?",
+            "back": "Tangentialbeschleunigung a_tan = dv/dt und Normalbeschleunigung a_nor = v² / ρ, wobei ρ der Krümmungsradius ist."
+          },
+          {
+            "front": "Was ist die Winkelgeschwindigkeit ω bei einer Kreisbewegung?",
+            "back": "Die zeitliche Änderung des Drehwinkels φ: ω = dφ/dt."
+          },
+          {
+            "front": "Was gilt für die Zentripetalbeschleunigung einer gleichförmigen Kreisbewegung?",
+            "back": "Sie ist auf den Mittelpunkt der Kreisbahn gerichtet und hat den Betrag a = ω² * r = v² / r."
+          },
+          {
+            "front": "Warum ist die Winkelgeschwindigkeit ω keine Vektorgröße im klassischen Sinne?",
+            "back": "Obwohl sie oft als Vektor dargestellt wird, erfüllt sie nicht die Bedingung der Vektoraddition. Die Kombination von zwei gleichzeitigen Rotationen um verschiedene Achsen lässt sich nicht durch eine einfache Vektorsumme der beiden Winkelgeschwindigkeiten beschreiben."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-mechanik-und-optik_0",
+      "slides": [
+        {
+          "title": "Lektion 1: Einführung in die Kinematik",
+          "bullets": [
+            "Grundlagen der Bewegungsbeschreibung von Körpern",
+            "Vektoren als zentrales mathematisches Werkzeug",
+            "Einführung in Verschiebung, Geschwindigkeit und Beschleunigung"
+          ],
+          "notes": "Willkommen zur Kinematik. Wir untersuchen, wie sich Körper bewegen und wie wir diese Vorgänge mathematisch mit Vektoren erfassen.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Bahngeschwindigkeit und Beschleunigung",
+          "bullets": [
+            "Bahngeschwindigkeit als zeitlicher Grenzwert (S. 3-4)",
+            "Vektorieller Charakter von Geschwindigkeit und Beschleunigung",
+            "Ableitung: Weg zu Geschwindigkeit und Beschleunigung",
+            "Integration zur Bestimmung der Bewegungsgleichung"
+          ],
+          "notes": "Physikalisch unterscheiden wir Bahngeschwindigkeit von der Verschiebung; letztere ist ein Vektor. Wir nutzen die Analysis, um diese Werte präzise zu bestimmen.",
+          "page_range": "2-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Geschwindigkeit und Beschleunigung im Raum",
+          "bullets": [
+            "Ortsvektor beschreibt Kurven im Raum",
+            "Geschwindigkeitsvektor als erste Ableitung der Ortsfunktion",
+            "Beschleunigungsvektor als zweite Ableitung des Ortsvektors",
+            "Zerlegung in Tangential- und Normalbeschleunigung"
+          ],
+          "notes": "Bewegt sich ein Punkt im Raum, hilft uns die Vektoranalysis. Die Beschleunigung lässt sich dabei in eine tangentiale und eine normale Komponente zerlegen.",
+          "page_range": "5-9",
+          "image_prompt": ""
+        },
+        {
+          "title": "Rotationsbewegungen",
+          "bullets": [
+            "Kreisbahn definiert durch Winkelgeschwindigkeit und -beschleunigung",
+            "Zentripetalbeschleunigung bei gleichförmiger Kreisbewegung",
+            "Winkelgeschwindigkeit ist kein Vektor im klassischen Sinne"
+          ],
+          "notes": "Bei Kreisbewegungen nutzen wir Winkelgrößen. Vorsicht ist geboten: Ein 'Drehvektor' ist zwar nützlich, aber mathematisch keine echte Vektorgröße.",
+          "page_range": "9-13",
+          "image_prompt": ""
+        },
+        {
+          "title": "Polarkoordinatensystem",
+          "bullets": [
+            "Zerlegung in radiale und transversale Komponenten",
+            "Räumliche Orientierung ändert sich zeitlich",
+            "Transformationsgleichungen verbinden kartesische mit Polarkoordinaten"
+          ],
+          "notes": "Manchmal sind kartesische Koordinaten umständlich. In Polarkoordinaten zerlegen wir Bewegungen in Radial- und Transversalanteile, was komplexer in der Ableitung ist.",
+          "page_range": "13-19",
+          "image_prompt": ""
+        },
+        {
+          "title": "Anwendungsbeispiele",
+          "bullets": [
+            "Analyse der gleichförmigen Kreisbewegung",
+            "Herleitung von Keplers Gesetzen",
+            "Abstandsgesetz und Radialbeschleunigung illustriert"
+          ],
+          "notes": "Zum Abschluss sehen wir, wie diese Theorie praktische Anwendung findet, etwa bei der Ableitung physikalischer Gesetze der Planetenbewegung.",
+          "page_range": "19-25",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 1 — Kinematik - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778499779852,
+      "pdfName": "Kinematik"
+    }
+  ],
+  "sourceHash": "0e190053f8dcc974"
+}

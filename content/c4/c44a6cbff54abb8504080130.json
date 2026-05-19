@@ -1,0 +1,369 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Algorithms Applications - Lesson 1 — Bio-Inspired Computational Algorithms and Their Applications",
+    "pdfName": "Bio-Inspired Computational Algorithms and Their Applications",
+    "createdAt": 1778577339691,
+    "exportedAt": "2026-05-12T09:15:39.691Z",
+    "meta": {
+      "courseId": "course-en-gen-algorithms-applications",
+      "lessonIndex": 0,
+      "courseTitle": "Algorithms Applications",
+      "lessonObjective": "Selection on \"algorithms applications\"",
+      "licensing": {
+        "effective_license": "unknown",
+        "sources": [
+          {
+            "content_id": "doab-bio-inspired-computational-algorithms-and-their-applications",
+            "title": "Bio-Inspired Computational Algorithms and Their Applications",
+            "source": "doab",
+            "license": "unknown",
+            "license_url": "",
+            "url": "https://directory.doabooks.org/handle/20.500.12854/65712"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_ed2651bfcffb",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-8",
+          "chapterTitle": "Front Matter",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "9-120",
+          "chapterTitle": "Part 1: Recent Development of Genetic Algorithm",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "121-332",
+          "chapterTitle": "Part 2: New Applications of Genetic Algorithm",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "333-382",
+          "chapterTitle": "Part 3: Artificial Immune Systems and Swarm Intelligence",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "383-438",
+          "chapterTitle": "Part 4: Hybrid Bio-Inspired Computational Algorithms",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778577339691,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: The Successive Zooming Genetic Algorithm (SZGA)\n\nThe Successive Zooming Genetic Algorithm (SZGA) is a specialized optimization technique designed to overcome the common limitations of standard Genetic Algorithms, such as slow convergence and difficulty in identifying exact optimal solutions.\n\n#### Key Concepts and Mechanisms\n*   **The Zooming Philosophy:** Unlike standard algorithms that search a fixed domain, SZGA dynamically reduces the search space around the best-found candidate (the elitist point). By repeatedly \"zooming in\" on this smaller region, the algorithm significantly increases the resolution and accuracy of the optimal solution.\n*   **Performance Metrics:** The reliability and accuracy of SZGA are governed by three primary parameters:\n    *   **$\\alpha$ (Zooming Factor):** Controls the scale of space reduction.\n    *   **$N_{ZOOM}$ (Number of Zooms):** Determines how many times the search domain is refined.\n    *   **$N_{SP}$ (Number of Sub-iterations):** Refers to the population size used during each zooming window.\n*   **Reliability Equation:** SZGA includes a mathematical framework to predict the probability that a found solution is indeed the global optimum, based on these parameters and the problem dimension ($N_{VAR}$).\n\n#### Optimization of the Algorithm Itself\n*   **Parameter Tuning:** The chapter emphasizes that these parameters should be optimized before solving the actual application problem. By minimizing a custom objective function—which balances reliability, accuracy, and computational load—the SZGA can be calibrated to achieve targets such as 99.9999% reliability and $10^{-6}$ accuracy.\n*   **Scalability:** As the number of design variables increases, the required computational load grows significantly. The text provides reference data (Table 1) to assist researchers in selecting appropriate parameter values for specific problem complexities.\n\n#### Implementation\n*   **Programming Logic:** The algorithm utilizes a \"pre-zoning\" approach that adjusts the initial search boundary after the first generation, ensuring the search is centered on the most promising region. It is designed to be highly compatible with existing programming languages (like FORTRAN) and can be adapted to various global search meta-heuristics beyond simple GAs.\n\n***\n*Source: \"The Successive Zooming Genetic Algorithm and Its Applications,\" by Young-Doo Kwon and Dae-Suep Lee [S.19, S.20, S.21, S.22, S.23].*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577339691,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-gen-algorithms-applications_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 1 — Bio-Inspired Computational Algorithms and Their Applications - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Bio-Inspired Computational Algorithms</div><ul class=\"pm-chat-slide-bullets\"><li>Explores biology-derived metaphors for solving complex, real-world computational problems.</li><li>Includes Genetic Algorithms, Artificial Immune Systems, and Swarm Intelligence frameworks (p. 13).</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778577339692,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as the front matter and bibliographic information for the book *Bio-Inspired Computational Algorithms and Their Applications*, edited by Shangce Gao and published by IntechOpen in 2012 [S.1, S.4].\n\n**Key Information Summary**\n\n*   **Content and Scope:** The book is a compilation of scholarly work focused on bio-inspired computational algorithms, featuring contributions from a diverse group of international researchers and scientists [S.4].\n*   **Editor Profile:** The editor, Shangce Gao, holds a PhD in Intellectual Information Systems and Innovative Life Science from the University of Toyama. He is an award-winning researcher specializing in intelligent computing and brain cognition, currently affiliated with Tongji University [S.7].\n*   **Copyright and Licensing:** The book as a whole is protected under copyright held by IntechOpen. However, individual chapters are released under the Creative Commons Attribution 3.0 Unported License, allowing for commercial use and distribution provided proper attribution is given to the original authors [S.4].\n*   **Publisher Information:** IntechOpen is a publisher of open-access books, claiming an extensive international footprint with over 3,500 books, 115 million downloads, and contributions from authors across 151 countries [S.5].\n*   **Publication Details:** The work was first published in Croatia in 2012, with the eBook version published in 2019. It is identified by ISBN 978-953-51-0214-4 (printed) and ISBN 978-953-51-5638-3 (eBook) [S.4].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577339701,
+      "channel": "plan_pipe_ed2651bfcffb",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 8
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section of the text focuses on the advancements and applications of Genetic Algorithms (GAs) and related bio-inspired computational techniques.\n\n**Key Concepts and Developments**\nThe text highlights various improvements to standard genetic algorithms, including:\n*   The Successive Zooming Genetic Algorithm (SZGA): This approach improves convergence by iteratively reducing the search space around a candidate optimum. It utilizes a reliability equation to assess the accuracy and likelihood of having found the global optimum.\n*   Reliability Calculation: The reliability $R$ of the SZGA solution is governed by the relation:\n$R = 1 - [1 - (\\alpha/2)^{N_{ZOOM}}]^{(N_{SP}/N_{VAR})}$\n(p. 20)\n*   Algorithmic Mechanisms: Other developments include \"forced inheritance\" and \"regeneration\" mechanisms, \"network operator\" methods for searching mathematical equations, and splicing/decomposable binary encoding to enhance problem representation.\n\n**Areas of Application**\nThe text details a wide range of practical applications for these algorithms, including:\n*   Engineering and Technology: Design of power system controllers, induction motor PWM optimization, and evolvable hardware.\n*   Data Science and Analytics: Clustering of documentary collections, linear modeling of time series, and mining frequent itemsets over data streams.\n*   Scientific and Advanced Systems: Astronomy for the search of parameters, image fusion (visual and thermal), and speech recognition systems using FLDR.\n*   Optimization: Portfolio selection, plant location problems, and scheduling problems for parallel machines.\n\n**Hybridization and Future Trends**\nA significant portion of the work emphasizes that hybridizing bio-inspired algorithms—combining GAs with artificial immune systems, culture algorithms, or particle swarm optimization—typically yields superior performance compared to pure, individual algorithms. These hybrid models are increasingly vital for solving complex, multi-objective constrained problems (pp. 13-15).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577339702,
+      "channel": "plan_pipe_ed2651bfcffb",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 9,
+        "end": 120
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section, spanning pages 121–332, focuses on the diverse applications of Genetic Algorithms (GA) across various fields. The chapters provide an in-depth look at how these algorithms are tuned and implemented to address complex real-world challenges.\n\nKey areas of application include:\n\nData Management and Business: Researchers discuss using GAs to group documentary collections (p. 123), optimize portfolio selection (p. 139), and mine frequent itemsets within data streams (p. 291).\n\nEngineering and Control Systems: Applications in this domain cover the optimal design of power system controllers using Breeder Genetic Algorithms (p. 303) and the application of pulse-width modulation (PWM) for induction motors in synchronous machines (p. 317).\n\nSignal and Image Processing: Techniques are presented for fusing visual and thermal images (p. 187) and improving feature generation in restricted-vocabulary speech recognition systems (p. 235).\n\nModeling and Forecasting: Chapters explore the automated linear modeling of time series (p. 213) and the use of GAs to identify optimal parameters and solutions in areas such as astronomy (p. 161).\n\nMarket Dynamics: One study specifically analyzes the performance of various GA techniques applied to online auctions (p. 263).\n\nIn summary, this part of the book illustrates the versatility of GAs as problem-solving tools, emphasizing their ability to be tailored to specific operational requirements, from mechanical design to financial decision-making.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577339703,
+      "channel": "plan_pipe_ed2651bfcffb",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 121,
+        "end": 332
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Part 3 of the book, covering pages 333 through 382, focuses on Artificial Immune Systems (AIS) and Swarm Intelligence. The section highlights the following key developments:\n\n1. Artificial Immune Systems and Dynamic Fitness: Chapter 17 explores the application of AIS to the change detection problem, specifically analyzing how these systems interact with dynamic fitness landscapes to identify environmental shifts.\n\n2. Modeling Immune Systems: Chapter 18 shifts toward biological modeling, providing a framework for understanding the mechanisms of the innate immune system through computational approaches.\n\n3. Particle Swarm Optimization (PSO): Chapter 19 discusses the application of a stochastically perturbed Particle Swarm Optimization technique. This method is specifically utilized to solve complex scheduling problems involving identical parallel machines, demonstrating how stochastic variations can enhance search performance in optimization tasks. \n\nThese chapters represent the intersection of biological metaphor and practical computational problem-solving, emphasizing the robustness of swarm and immune-based intelligence in addressing optimization and modeling requirements.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577339704,
+      "channel": "plan_pipe_ed2651bfcffb",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 333,
+        "end": 382
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Part 4 of the book, covering pages 383–438, focuses on Hybrid Bio-Inspired Computational Algorithms, which combine multiple methodologies to enhance problem-solving capabilities.\n\nKey sections include:\n\nChapter 20: Performance Study of Cultural Algorithms\nThis chapter investigates Cultural Algorithms that integrate Genetic Algorithms (GA) using both single and multi-population structures. The research evaluates the performance of these hybrid models specifically applied to the Multidimensional Knapsack Problem (MKP).\n\nChapter 21: Benders’ Master Problem for Capacitated Plant Location\nThis chapter explores the synthesis of a Genetic Algorithm with the Benders’ decomposition method. The study demonstrates how a GA can be effectively utilized to solve the Master Problem within the context of the Capacitated Plant Location Problem.\n\nSummary of Core Concepts\nThe chapters in this section illustrate that hybridization—the integration of evolutionary strategies with other analytical or decomposition frameworks—often outperforms individual algorithms. By combining the global search strengths of bio-inspired methods with structured optimization techniques, these models provide robust solutions for complex, multi-constrained industrial and logistical challenges.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577339705,
+      "channel": "plan_pipe_ed2651bfcffb",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 383,
+        "end": 438
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778577339791,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "What is the primary motivation for researchers to develop hybrid bio-inspired algorithms, such as those combining Genetic Algorithms with other techniques?",
+            "options": [
+              "To increase the complexity of the computational models",
+              "To overcome the limitations of pure algorithms, which are often inferior in performance",
+              "To eliminate the need for stochastic factors in search strategies",
+              "To reduce the reliance on biological metaphors"
+            ],
+            "correctIndex": 1,
+            "explanation": "The preface states that hybridization is recognized as an essential aspect of high-performing algorithms because pure algorithms are typically inferior to hybrid models."
+          },
+          {
+            "question": "Based on the description of the Successive Zooming Genetic Algorithm (SZGA), how does it improve upon standard genetic algorithms?",
+            "options": [
+              "By eliminating the crossover operator to reduce computational overhead",
+              "By focusing strictly on gradient-based local searches without any random search components",
+              "By iteratively narrowing the search domain to accelerate convergence toward an exact optimum",
+              "By replacing the fitness-based selection mechanism with a deterministic search"
+            ],
+            "correctIndex": 2,
+            "explanation": "The text explains that the SZGA zooms the search domain over a specified number of steps to enhance convergence rates and identify solutions more precisely."
+          },
+          {
+            "question": "Why might gradient-based optimization techniques struggle when applied to problems characterized by 'jumps' or multiple optima?",
+            "options": [
+              "They are computationally too expensive compared to random techniques",
+              "They may converge prematurely to local optima or fail to converge near discontinuities",
+              "They require the objective function to be stochastic rather than smooth",
+              "They are unable to handle constraints in single-optimum problems"
+            ],
+            "correctIndex": 1,
+            "explanation": "Chapter 1 notes that while gradient techniques work well for smooth functions, they often fail by converging to local optima or diverging in the presence of jumps or multiple optima."
+          },
+          {
+            "question": "In the context of the mentioned research, what is considered a significant advantage of using meta-heuristics like Genetic Algorithms over full random methods like Monte Carlo?",
+            "options": [
+              "Genetic Algorithms have a significantly faster convergence rate",
+              "Genetic Algorithms guarantee the discovery of the absolute global optimum",
+              "Full random methods are limited to only one dimension",
+              "Genetic Algorithms do not require fitness evaluations"
+            ],
+            "correctIndex": 0,
+            "explanation": "The text contrasts full random methods, which are described as having very slow convergence, with Genetic Algorithms, which generally provide a better balance for global searching with relatively fast convergence."
+          },
+          {
+            "question": "According to the preface, what is the fundamental purpose behind using bio-inspired computational algorithms in problem-solving?",
+            "options": [
+              "To replicate biological organisms in software",
+              "To replace existing mathematical theories with biological observations",
+              "To extract useful metaphors from natural biological systems to solve complex problems",
+              "To ensure that only evolutionary approaches are used in industrial engineering"
+            ],
+            "correctIndex": 2,
+            "explanation": "The preface explicitly states that the purpose of these algorithms is to extract useful metaphors from natural biological systems to create effective solutions for complex problems."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778577339792,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary objective of bio-inspired computational algorithms?",
+            "back": "To extract useful metaphors from natural biological systems to create effective computational solutions to complex problems in a wide range of domain areas."
+          },
+          {
+            "front": "Name the three most notable developments in bio-inspired computational algorithms mentioned in the text.",
+            "back": "Genetic Algorithm (GA), Artificial Immune System (AIS), and Swarm Intelligence (SI)."
+          },
+          {
+            "front": "According to the text, what is the main advantage of the Successive Zooming Genetic Algorithm (SZGA)?",
+            "back": "It zooms the search domain for a specified number of steps to obtain the optimal solution and aims to accelerate the convergent speed of the algorithm."
+          },
+          {
+            "front": "What are the core components that provide Genetic Algorithms with their global search ability?",
+            "back": "Crossover and mutation operators."
+          },
+          {
+            "front": "How does the text compare gradient-based optimization techniques to random searching methods like Genetic Algorithms?",
+            "back": "Gradient techniques work well for smooth, well-behaved functions but struggle with multi-optima and sharp gradients. Random searching methods, such as GAs, offer superior global search ability."
+          },
+          {
+            "front": "What is the function of the 'network operator' method in the context described in the book?",
+            "back": "It is a data structure used by a genetic algorithm to search for the structure of an appropriate mathematical expression and its parameters."
+          },
+          {
+            "front": "Why is 'hybridization' considered an essential aspect of high-performing algorithms?",
+            "back": "Pure algorithms are generally considered inferior to hybridizations, which combine different meta-heuristics to improve speed and local/global search capacity."
+          },
+          {
+            "front": "In the context of the book, what benefit does the 'forced inheritance mechanism' provide to a genetic algorithm?",
+            "back": "It is used for optimizing trajectory generation in closed chain mechanisms when combined with parameter relaxation."
+          },
+          {
+            "front": "What is the purpose of the 'negative selection scheme' in Artificial Immune Systems?",
+            "back": "It mimics the self/non-self discrimination of the natural immune system to solve the change detection problem in dynamic fitness landscapes."
+          },
+          {
+            "front": "How does 'Micro-GA' differ from a simple Genetic Algorithm?",
+            "back": "Micro-GA uses a smaller pool size and does not need to adopt mutation; instead, it introduces completely new individuals into the mating pool."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-gen-algorithms-applications_0",
+      "slides": [
+        {
+          "title": "Bio-Inspired Computational Algorithms",
+          "bullets": [
+            "Explores biology-derived metaphors for solving complex, real-world computational problems.",
+            "Includes Genetic Algorithms, Artificial Immune Systems, and Swarm Intelligence frameworks (p. 13)."
+          ],
+          "notes": "This lecture introduces bio-inspired computing, covering how natural systems inspire effective algorithmic solutions to diverse modern challenges.",
+          "page_range": "13",
+          "image_prompt": ""
+        },
+        {
+          "title": "Recent Developments in Genetic Algorithms",
+          "bullets": [
+            "Focuses on modern evolutions of the genetic algorithm paradigm.",
+            "Covers technical improvements like successive zooming and new data structures (p. 9)."
+          ],
+          "notes": "We examine how genetic algorithms are being refined to accelerate convergence and handle complex mathematical modeling more efficiently.",
+          "page_range": "9",
+          "image_prompt": ""
+        },
+        {
+          "title": "New Applications of Genetic Algorithms",
+          "bullets": [
+            "Demonstrates GA utility across diverse fields like astronomy and engineering.",
+            "Applied to data mining, image fusion, and power system optimization (p. 10)."
+          ],
+          "notes": "From portfolio selection to speech recognition, genetic algorithms prove their versatility in solving practical, domain-specific problems.",
+          "page_range": "10",
+          "image_prompt": ""
+        },
+        {
+          "title": "Artificial Immune Systems and Swarm Intelligence",
+          "bullets": [
+            "Investigates adaptive mechanisms modeled after biological immune principles.",
+            "Explores stochastic particle swarm optimization for complex scheduling tasks (p. 10-11)."
+          ],
+          "notes": "These approaches utilize collective intelligence and immune-system metaphors to tackle dynamic search spaces and machine scheduling constraints.",
+          "page_range": "10-11",
+          "image_prompt": ""
+        },
+        {
+          "title": "Hybrid Bio-Inspired Computational Algorithms",
+          "bullets": [
+            "Integrates multiple bio-inspired techniques for enhanced problem-solving capabilities.",
+            "Combines genetic algorithms with cultural frameworks to solve plant location problems (p. 11)."
+          ],
+          "notes": "By hybridizing different algorithmic strategies, researchers continue to push the boundaries of computational efficiency in complex logistics and optimization.",
+          "page_range": "11",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 1 — Bio-Inspired Computational Algorithms and Their Applications - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778577339691,
+      "pdfName": "Bio-Inspired Computational Algorithms and Their Applications"
+    }
+  ],
+  "sourceHash": "e0d69ce0bd9f410d"
+}

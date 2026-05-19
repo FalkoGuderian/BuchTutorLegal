@@ -1,0 +1,507 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Programmieren-Aufbau — Java, Ruby, Pascal, Assembler - Lektion 6 — Assembler",
+    "pdfName": "Assembler",
+    "createdAt": 1778576625008,
+    "exportedAt": "2026-05-12T09:03:45.008Z",
+    "meta": {
+      "courseId": "course-de-programmieren-aufbau",
+      "lessonIndex": 5,
+      "courseTitle": "Programmieren-Aufbau — Java, Ruby, Pascal, Assembler",
+      "lessonObjective": "Maschinen-nahe Programmierung und numerische Codes.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-assembler",
+            "title": "Assembler",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Assembler"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_f0fc91822e82",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "7-8",
+          "chapterTitle": "Einleitung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "9-16",
+          "chapterTitle": "Grundlagen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "17-21",
+          "chapterTitle": "Zweierkomplement und Zahlensysteme",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "22-26",
+          "chapterTitle": "Der Prozessor: Architektur und Register",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "27-30",
+          "chapterTitle": "Interrupts und Speicheradressierung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "31-40",
+          "chapterTitle": "Assembler-Programmierung: Grundlagen und Hello World",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "41-54",
+          "chapterTitle": "Arithmetische Operationen und logische Befehle",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "55-70",
+          "chapterTitle": "Sprungbefehle, Schleifen und Unterprogramme",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "71-84",
+          "chapterTitle": "Stringbefehle und Befehlsreferenzen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "85-115",
+          "chapterTitle": "Befehlsliste und Anhang",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576625008,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Grundlagen zur Assembler-Programmierung auf Basis des vorliegenden Dokuments:\n\n### Zusammenfassung: Einführung in die Assembler-Programmierung\n\n#### 1. Was ist Assembler?\n*   **Maschinensprache:** Der Prozessor versteht ausschließlich binäre Befehle (0en und 1en), welche in hexadezimaler Form dargestellt kompakter lesbar sind (S. 7). Da dieser Code für Menschen extrem schwer zu verarbeiten ist, wurden **Mnemonics** (Abkürzungen wie `MOV`, `ADD`, `CLI`) eingeführt (S. 8).\n*   **Assembler-Programm:** Ein spezielles Übersetzungsprogramm wandelt den (für den Menschen verständlichen) Quellcode in die vom Prozessor ausführbare Maschinensprache um (S. 5, S. 8).\n\n#### 2. Zahlensysteme und Hardware-Nähe\n*   **Stellenwertsysteme:** Während das Dezimalsystem (Basis 10) für Menschen üblich ist, arbeiten Computer aufgrund ihrer binären Schaltungstechnik (Transistoren) mit dem **Dualsystem** (Basis 2), wobei die kleinste Einheit ein **Bit** ist (S. 14).\n*   **Speichereinheiten:** 8 Bit ergeben ein Byte. Zur präzisen Angabe von Datenmengen (z. B. 2¹⁰ = 1024 Byte) werden heute standardisierte Binärpräfixe wie **KiB, MiB oder GiB** verwendet (S. 16).\n*   **Negative Zahlen:** Da das Dualsystem keine direkten Vorzeichen (+/-) kennt, werden negative Zahlen mittels des **Zweierkomplements** dargestellt (S. 17). Dies ermöglicht es dem Prozessor, Subtraktionen durch einfache Addition durchzuführen (S. 18).\n\n#### 3. Anwendung und Motivation\n*   **Hardware-Verständnis:** Die Arbeit mit Assembler fördert das Verständnis für Prozessorregister, Speicherverwaltung und Interrupts (S. 6, S. 10).\n*   **Performance:** Assembler ist besonders relevant für **Treiber**, **Echtzeitsysteme** und die **Optimierung kritischer Programmabschnitte**, um die Ausführungsgeschwindigkeit massiv zu steigern (S. 10).\n*   **Einschränkung:** Assembler-Code ist in der Regel an eine spezifische Prozessorfamilie gebunden und daher weniger portabel als höhere Programmiersprachen wie Java oder C (S. 10).\n\n**Hinweis für den Lernenden:** Da Assembler keine Konzepte wie Schleifen oder komplexe Kontrollstrukturen abstrahiert, setzt der Kurs solide Vorkenntnisse in anderen Programmiersprachen voraus (S. 7).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778576625008,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-programmieren-aufbau_5\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 6 — Assembler - Präsentation</span><span class=\"pm-chat-count\">7 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lektion 6: Grundlagen Assembler</div><ul class=\"pm-chat-slide-bullets\"><li>Einführung in maschinennahe Programmierung</li><li>Übersicht zu Binär- und Hexadezimalsystemen</li><li>Grundlagen der Prozessorkommunikation</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778576625009,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des bereitgestellten Abschnitts (S.7-8):\n\nDie Grundlage der Prozessorkommunikation bildet die Maschinensprache, welche ausschließlich aus Binärzahlen besteht. Da diese für Menschen extrem komplex, fehleranfällig und schwer zu lesen ist, erfolgt die Darstellung praktischerweise meist in hexadezimaler Form (S.7).\n\nUm die Programmierung zu erleichtern, werden Abkürzungen eingeführt, die sogenannten Mnemonics. Diese orientieren sich meist an englischen Fachbegriffen, wie zum Beispiel $mov$ für $move$ oder $sub$ für $subtract$ (S.8).\n\nEin spezialisiertes Übersetzungsprogramm, der Assembler, fungiert als Vermittler: Er wandelt diese für Menschen lesbaren Mnemonics in den vom Prozessor verstandenen Binärcode um (S.7-8).\n\nZusätzlich erlauben moderne Assembler-Programme den Einsatz von symbolischen Bezeichnungen, Kommentaren und Organisationsanweisungen, um die Strukturierung und Lesbarkeit des Quellcodes für den Programmierer maßgeblich zu verbessern (S.8).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576625018,
+      "channel": "plan_pipe_f0fc91822e82",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 7,
+        "end": 8
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine zusammenfassende Übersicht der grundlegenden Konzepte aus den Seiten 9 bis 16:\n\n**Einführung in die Assemblerprogrammierung**\nAssembler ist eine prozessornahe Programmiersprache (2. Generation), deren Befehlssatz spezifisch für eine Prozessorfamilie ist (S. 10). Obwohl Hochsprachen wie Java oder C++ dominieren, ist Assembler bei hardwarenahen Aufgaben unverzichtbar. Typische Einsatzgebiete sind die Treiberentwicklung, die Optimierung zeitkritischer Programmteile (Leistungssteigerung um den Faktor 10 bis 100) sowie Echtzeitsysteme (S. 10). Das Erlernen von Assembler fördert zudem das tiefe Verständnis der Hardware-Funktionsweise (S. 10). Die Programmierung erfordert Grundkenntnisse in anderen Programmiersprachen sowie im Umgang mit Betriebssystemen (S. 11).\n\n**Struktur eines Assemblerprogramms**\nEin Assemblerprogramm wird mittels eines Assemblers in Maschinensprache übersetzt (S. 9). Der Quelltext besteht aus Anweisungen wie `ORG` (legt die Speicheradresse fest) sowie Sprungmarken (wie `STRT` oder `STEP2`) und symbolischen Bezeichnungen für Adressen, die der Programmierer frei wählen kann (S. 9).\n\n**Zahlensysteme und Grundlagen**\nModerne Datenverarbeitung basiert auf dem Stellenwertsystem. Dabei wird eine Zahl $X$ durch die Summe der Produkte aus Ziffer $z_{i}$ und Basis $b$ hoch ihrer Position $i$ berechnet:\n$X := \\sum_{i = -n}^{m} z_{i} \\cdot b^{i}$ (S. 13).\n\nDa Computer auf Transistoren mit zwei Zuständen (sperrend/durchgeschaltet) basieren, ist das binäre Dualsystem (Basis 2) essenziell (S. 14). Eine Ziffer im Dualsystem wird als Bit bezeichnet. Das niederwertigste Bit heißt „least significant bit“ (lsb), das höchstwertigste „most significant bit“ (msb) (S. 15).\n\n**Umrechnung und Maßeinheiten**\nDie Umrechnung von Dezimalzahlen in Dualzahlen erfolgt meist über die Restwertmethode: Die Zahl wird so lange durch 2 geteilt, bis der Wert 0 erreicht ist; die Reste ergeben in umgekehrter Reihenfolge die Dualzahl (S. 16).\n\nFür Speichergrößen werden Binärpräfixe der IEC verwendet, um die Verwechslung mit dem Dezimalsystem zu vermeiden (S. 16):\n- 1 KiB = $2^{10}$ Byte = 1024 Byte \n- 1 MiB = $2^{20}$ Byte\n- 1 GiB = $2^{30}$ Byte\n- 1 TiB = $2^{40}$ Byte",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576625019,
+      "channel": "plan_pipe_f0fc91822e82",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 9,
+        "end": 16
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts von S. 17 bis S. 21:\n\n**Negative Zahlen und das Zweierkomplement**\nDa das Most Significant Bit (MSB) als Vorzeichenbit zu Rechenfehlern und einer doppelten Null führt, nutzt man das Zweierkomplement. Dies wird gebildet, indem man alle Bits der positiven Zahl invertiert (Einerkomplement) und anschließend 1 addiert (S. 17, S. 18). Dies ermöglicht die Subtraktion durch Addition, birgt jedoch bei Überschreitung des darstellbaren Wertebereichs die Gefahr eines Überlaufs (Overflow) (S. 18).\n\n**Oktalsystem**\nMit der Basis $2^3 = 8$ ist dieses System kompakter als das Dualsystem. Da eine Oktalziffer genau drei Bits ersetzt, ist es jedoch für 8-Bit-Bytes weniger effizient, da ein Byte nicht nahtlos durch Oktalziffern abgebildet werden kann (S. 18, S. 19).\n\n**Hexadezimalsystem (Sedezimalsystem)**\nMit der Basis $2^4 = 16$ bildet das Hexadezimalsystem eine ideale Ergänzung zur Byte-Struktur. Jede Hexadezimalziffer (0-9 und A-F) ersetzt exakt 4 Bit. Ein Bytewert lässt sich somit präzise durch zwei Hexadezimalziffern darstellen. Diese werden durch Präfixe wie $0x$ oder das Suffix $h$ gekennzeichnet (S. 19, S. 20). Die Umrechnung vom Dualsystem erfolgt effizient über die Bildung von Viererblöcken (S. 20, S. 21).\n\n**Zeichenkodierung (ASCII)**\nDa Computer nur Zahlen verarbeiten, werden Zeichen durch Kodierungen wie den ASCII-Zeichensatz (7-Bit-Basis) abgebildet. Der ASCII-Code ordnet Groß- und Kleinbuchstaben in zusammenhängenden Bereichen an, was die Programmierung erleichtert, aber bei der lexikalischen Sortierung aufgrund der unterschiedlichen Wertebereiche für Groß- und Kleinschreibung Anpassungen erfordert (S. 21).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576625020,
+      "channel": "plan_pipe_f0fc91822e82",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 17,
+        "end": 21
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Abschnitte:\n\n**Zeichencodierung (S.22)**\nDie Entwicklung verlief vom ursprünglichen 7-Bit-ASCII-Standard über den erweiterten 8-Bit-ASCII-Code (IBM) bis hin zu länderspezifischen Code Pages. Da diese 256 Zeichen umfassenden Systeme Probleme bei der Darstellung komplexer Schriftsysteme (z. B. Japanisch oder Chinesisch durch DBCS) oder bei der korrekten Übertragung von Umlauten verursachten, wurde schließlich Unicode als einheitlicher 16-Bit-Standard eingeführt, der 65536 Zeichen unterstützt.\n\n**Von-Neumann-Architektur (S.23-24)**\nModerne Universalrechner basieren auf diesem Konzept, das durch folgende Hauptkomponenten gekennzeichnet ist:\n- Zentraleinheit (CPU mit Steuer- und Rechenwerk)\n- Gemeinsamer Speicher für Daten und Programmcode\n- Ein-/Ausgabeeinheiten\n- Ein gemeinsamer Systembus\nDer Hauptvorteil liegt in der deterministischen, sequenziellen Programmausführung. Als Nachteil gilt der sogenannte „Von-Neumannsche-Flaschenhals“, da der gemeinsame Bus die Verarbeitungsgeschwindigkeit limitiert. Aktuelle Prozessoren umgehen diesen durch Parallelisierung und den Einsatz von Caches.\n\n**Entwicklung der 80x86-Prozessorfamilie (S.24-26)**\nEin zentrales Merkmal der Intel-Architektur ist die Abwärtskompatibilität:\n- 8086/8088: Startpunkt als 16-Bit-CPU; 8088 als kostengünstige Variante mit 8-Bit-Datenbus.\n- 80186/80188: Verbesserte Befehlssätze, jedoch aufgrund von Inkompatibilitäten selten im PC-Bereich genutzt.\n- 80286: Einführung des „Protected Mode“, der Speicherschutz und Multitasking ermöglichte.\n- 80386: Erste 32-Bit-CPU mit flachem Adressraum (4 GB) und virtuellem 8086-Modus.\n- 80486: Integration von Cache und mathematischem Coprozessor zur Leistungssteigerung.\n- 80586/Pentium: Einführung der superskalaren Ausführung (parallele Befehlsabarbeitung) und MMX-Erweiterungen (SIMD).\n- x86-64: Skalierung der Register und Busse auf 64 Bit bei Beibehaltung der alten 32-Bit-Modi.\n\n**Register der 8086/8088-CPU (S.26)**\nDie CPU nutzt 14 interne 16-Bit-Register für den schnellen Datenzugriff, da diese performanter als Cache oder Hauptspeicher agieren. Man unterscheidet zwischen:\n- Datenregistern (für Operanden)\n- Adressregistern (für Adressarithmetik)\n- Stackregister (zur Verwaltung des Stapelspeichers)\n- Spezialregistern (für interne Prozessoraufgaben)",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576625021,
+      "channel": "plan_pipe_f0fc91822e82",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 22,
+        "end": 26
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Abschnitte auf den Seiten 27 bis 30:\n\nRegister der 8086/8088-CPU\nDie CPU verfügt über verschiedene Registergruppen (S. 27). Die Datenregister (AX, BX, CX, DX) dienen als allgemeine Register für Rechenoperationen, Zählungen oder Speicheradressierungen, wobei jeweils auf die oberen (AH) oder unteren (AL) 8 Bit separat zugegriffen werden kann. Segmentregister (CS, DS, ES, SS) sind fest für die Adressbildung im Real Mode reserviert (S. 27-28). Stackregister (SP, BP) verwalten den LIFO-Stack, während Indexregister (SI, DI) bei String-Operationen helfen (S. 28).\n\nSpezialregister und Flags\nDas IP-Register (Instruction Pointer) hält die Adresse des nächsten Befehls. Änderungen am IP sind nur indirekt über Sprungbefehle möglich (S. 28). Das Flag-Register dient der Kommunikation zwischen Programm und Prozessor. Einzelne Bits (Flags, z. B. Carry, Zero, Sign) zeigen den Status von Operationen an, etwa ob ein Ergebnis den 16-Bit-Bereich überschreitet (S. 28-29).\n\nBearbeitung von Maschinenprogrammen\nDie Programmausführung erfolgt in einem Zyklus aus Fetch- (Holen/Dekodieren) und Ausführungsphase (S. 29). Zur Effizienzsteigerung nutzt die CPU zwei Einheiten: Die Bus Interface Unit (BIU) und die Execution Unit (EU). Diese arbeiten parallel, wobei die BIU Befehle bereits in einen Prefetch Buffer vorlädt (S. 30).\n\nSystembus\nDer Systembus besteht aus drei Teilkomponenten (S. 30):\n1. Datenbus (bidirektional): Überträgt Daten und Programme zwischen den Komponenten.\n2. Adressbus (unidirektional): Überträgt Adressen vom Prozessor zum Arbeitsspeicher. Die Breite des Busses (bei der 8086/8088 20 Bit) entscheidet über die Speicherkapazität. Bei 20 Bit sind das $2^{20} = 1 \\text{ MB}$ adressierbarer Speicher.\n3. Kontroll- bzw. Steuerbus: Organisiert den Zugriff auf Adress- und Datenbus, um Kollisionen zu vermeiden.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576625022,
+      "channel": "plan_pipe_f0fc91822e82",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 27,
+        "end": 30
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des bereitgestellten Textabschnitts (S.31–32):\n\n**Interrupts (S.31)**\nUm auf Ereignisse (z. B. Tastendruck, Druckerstatus) zu reagieren, nutzt die CPU zwei Methoden:\n1. Polling: Die CPU fragt permanent den Status eines Gerätes ab, was jedoch ineffizient und rechenintensiv ist.\n2. Interrupts: Das Gerät sendet eine Nachricht an den Prozessor, welcher das aktuelle Programm unterbricht, den Interrupt verarbeitet und anschließend fortfährt.\n\nMan unterscheidet zwischen Hardware-Interrupts (asynchron, durch Geräte ausgelöst) und Software-Interrupts (synchron, durch Programmcode ausgelöst). Mit dem Befehl $cli$ kann das Interruptflag gelöscht werden, um Interrupts zu unterbinden; mit $sti$ wird es wieder aktiviert. Die CPU besitzt zwei Eingänge: INTR für Standardanfragen und NMI für kritische Ereignisse, die nicht unterdrückbar sind.\n\n**Adressierung im Real Mode (S.31–32)**\nDer Adressbus dient der CPU zur Kommunikation mit dem Arbeitsspeicher. Die 8086/88-CPU verfügt über 20 Adressleitungen, womit theoretisch $2^{20} = 1 \\text{ MByte}$ adressierbar sind (S.31). Da die internen Register der CPU jedoch nur eine Breite von 16 Bit aufweisen, können sie direkt nur $2^{16} = 65.536 \\text{ Byte}$ adressieren (S.31). \n\nUm den gesamten 1-MByte-Bereich anzusprechen, nutzt die CPU ein Segmentierungs-Verfahren, bei dem zwei 16-Bit-Register kombiniert werden: ein Register steuert die ersten 16 Bit bei, während das zweite die restlichen 4 Bit liefert (S.32). Die logische Adresse aus den Registern entspricht dabei der physikalischen Adresse im Arbeitsspeicher (S.32).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576625023,
+      "channel": "plan_pipe_f0fc91822e82",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 31,
+        "end": 40
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Der Abschnitt „Rechnen mit dem Assembler“ (S. 41-54) behandelt die arithmetischen und logischen Fähigkeiten der x86-Architektur. Hier sind die Kernaussagen zusammengefasst:\n\nGrundlegende Arithmetik\nDie Addition wird durch den Befehl ADD realisiert, während ADC (Add with carry) die Addition unter Einbeziehung des Übertrags ermöglicht (S. 41, 74). Die Subtraktion erfolgt mittels SUB, wobei SBB (Subtraction with borrow) den Übertrag subtrahiert (S. 45, 83). Zur einfachen Inkrementierung oder Dekrementierung von Werten dienen die Befehle INC und DEC (S. 46, 76, 77).\n\nSpezielle Rechenoperationen\nDie Multiplikation und Division werden unterschieden zwischen vorzeichenlosen Operationen (MUL, DIV) und solchen, die Vorzeichen berücksichtigen (IMUL) (S. 47, 48, 76, 77, 79). Das Zweierkomplement zur Darstellung negativer Zahlen kann mit dem Befehl NEG gebildet werden (S. 46, 79). Zudem kann das Carry-Flag explizit über Befehle wie STC (setzen) oder CLC (löschen) beeinflusst werden (S. 46, 75, 82).\n\nLogik, Schieben und Rotieren\nLogische Operationen umfassen AND, OR, XOR und NOT, welche auf Bit-Ebene arbeiten (S. 49, 75, 80, 84). Ergänzend dazu ermöglichen Schiebebefehle (SHL, SHR) und Rotationsbefehle die Manipulation einzelner Bits innerhalb eines Registers (S. 50-53, 81, 82).\n\nZusammengefasst bietet der Assembler einen direkten Zugriff auf die mathematischen Funktionen des Prozessors, wobei der Programmierer Flags wie das Carry-Flag aktiv verwalten muss, um komplexe Operationen präzise durchzuführen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576625024,
+      "channel": "plan_pipe_f0fc91822e82",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 41,
+        "end": 54
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Dieser Abschnitt des Dokuments behandelt die Steuerung des Programmflusses sowie Mechanismen zur Programmstrukturierung. Hier sind die Kernaussagen zusammengefasst:\n\nSprünge und Schleifen\nDer Programmablauf kann durch zwei Arten von Sprungbefehlen beeinflusst werden. Bei unbedingten Sprüngen wird die Ausführung an einer fest vorgegebenen Adresse fortgesetzt (S. 55). Bedingte Sprünge hingegen führen den Sprung nur aus, wenn bestimmte Bedingungen erfüllt sind, die typischerweise durch vorangegangene Flags im Prozessor definiert werden (S. 57). Zur Realisierung von Wiederholungen dienen spezielle Schleifenbefehle (S. 60).\n\nStack und Unterprogramme\nFür die Implementierung von Unterprogrammen ist der Stack von zentraler Bedeutung (S. 63). Er dient als Zwischenspeicher für Rücksprungadressen und Daten. Ein Unterprogramm wird aufgerufen, um modulare Programmteile auszuführen, und muss nach Beendigung den Programmfluss an den Ursprung zurückgeben (S. 65). Das Dokument illustriert hierfür verschiedene Aufruftechniken und Methoden der Parameterübergabe (S. 66).\n\nDie logische Grundlage für den Prozess der Datenverarbeitung bei Berechnungen im Stack lässt sich als Stapelprinzip beschreiben. Die Verwaltung der Speicheradressen beim Zugriff auf den Stack erfolgt dabei durch den Prozessor automatisch durch die Anpassung des Stack-Pointers.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576625025,
+      "channel": "plan_pipe_f0fc91822e82",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 55,
+        "end": 70
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der Befehlsübersicht und der Stringverarbeitung (S. 71-84):\n\nDie behandelten Abschnitte unterteilen sich in die spezialisierten Stringbefehle sowie eine umfassende Befehlsreferenz für den x86-Prozessor.\n\nStringverarbeitung (S. 71)\nFür die effiziente Verarbeitung von Zeichenketten stehen spezielle Befehle der Maschinensprache zur Verfügung. Diese ermöglichen es, Operationen nicht nur auf einzelne Bytes oder Wörter anzuwenden, sondern diese automatisiert über ganze Datenbereiche im Speicher auszuführen.\n\nBefehlsreferenz (S. 73-84)\nDie Referenz listet zentrale Befehle für die Programmierung auf, wobei die Funktionalität in verschiedene Kategorien unterteilt werden kann:\n\nArithmetische Operationen (S. 74, 76, 77, 79, 81, 83)\n- Grundlegende Berechnungen werden durch Befehle wie ADD (Addition), SUB (Subtraktion) und die Varianten mit Übertrag (ADC - Add with carry) bzw. Borg (SBB - Subtract with borrow) durchgeführt.\n- Für die Index-Verwaltung stehen INC (Increment) und DEC (Decrement) zur Verfügung.\n- Die Multiplikation und Division wird durch MUL (unsigned) sowie IMUL (signed) und DIV abgedeckt.\n- Zur Bildung des Zweierkomplements wird NEG verwendet.\n\nLogische Operationen und Bit-Manipulationen (S. 75, 80, 81, 82, 84)\n- Logische Verknüpfungen erfolgen über AND, OR, XOR und NOT.\n- Zur Verschiebung von Bitmustern dienen die Schiebebefehle SHL (Shift Left) und SHR (Shift Right).\n\nFlag-Manipulation (S. 75, 76, 82, 83)\nBestimmte Befehle erlauben den direkten Zugriff auf Prozessor-Flags, wie etwa CLC/STC (Clear/Set Carry Flag) oder CLI/STI (Clear/Set Interrupt Flag). Diese sind essenziell für die Steuerung der Prozessorlogik.\n\nKontrollfluss und Datentransfer (S. 78, 79, 80, 83)\n- MOV wird für die Datenübertragung zwischen Registern oder Speicherplätzen genutzt, während XCHG Werte zwischen zwei Zielen austauscht.\n- INT dient dem Aufruf von Software-Interrupts, während IRET die Rückkehr von einer Interrupt-Routine einleitet.\n- NOP führt keine Operation aus und wird oft für Timing-Verzögerungen oder Platzhalter verwendet.\n\nDiese Befehlssätze bilden die Grundlage, um komplexe logische Abläufe in Maschinensprache abzubilden, wobei mathematische Operationen oft durch $\\text{Flags}$ (wie das Carry-Flag) beeinflusst oder gesteuert werden können.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576625026,
+      "channel": "plan_pipe_f0fc91822e82",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 71,
+        "end": 84
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung der Seiten [S.85] bis [S.115]:\n\nDie Abschnitte [S.85] bis [S.102] konzentrieren sich auf den praktischen Teil der Assembler-Programmierung.\n\nBefehlsliste:\nDer Bereich [S.85-98] enthält eine umfassende Auflistung und Kurzbeschreibung der verfügbaren Befehle, die für die x86-Programmierung relevant sind. Dies dient als Nachschlagewerk für den Befehlssatz.\n\nLiteratur und Weblinks:\nAuf den Seiten [S.99-102] werden ergänzende Ressourcen aufgeführt. Dies umfasst sowohl weiterführende Literatur als auch Weblinks, die dem Anwender helfen sollen, tiefer in die Materie der Assembler-Programmierung einzusteigen.\n\nAutoren und Verzeichnisse:\nDie Seite [S.103] listet die Mitwirkenden an dem Dokument auf. Auf [S.105] befindet sich das Abbildungsverzeichnis, welches die verwendeten Grafiken und deren Quellen dokumentiert.\n\nLizenzen:\nDie Seiten [S.109-115] widmen sich der rechtlichen Einordnung des Werkes. Es werden die Bedingungen der GNU General Public License (GPL), der GNU Free Documentation License (GFDL) sowie der GNU Lesser General Public License (LGPL) dargelegt. Diese Lizenzen stellen sicher, dass das Material unter bestimmten Bedingungen frei genutzt, verändert und verbreitet werden darf.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576625027,
+      "channel": "plan_pipe_f0fc91822e82",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 85,
+        "end": 115
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576625108,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Warum ist die Programmierung direkt in Maschinensprache (Binärcode) unpraktisch?",
+            "options": [
+              "Weil Prozessoren den Maschinencode aufgrund von Abwärtskompatibilität nicht mehr verstehen.",
+              "Da die Befehlsfolgen unübersichtlich, fehleranfällig und schwer zu unterscheiden von Daten sind.",
+              "Weil moderne Betriebssysteme das direkte Ausführen von Binärdateien blockieren.",
+              "Weil der Speicherplatz für Binärcode auf modernen Festplatten nicht ausreicht."
+            ],
+            "correctIndex": 1,
+            "explanation": "Maschinencode besteht aus langen Ketten von Nullen und Einsen, bei denen kein optischer Unterschied zwischen Datencode und Programmcode besteht, was das manuelle Design extrem schwierig macht."
+          },
+          {
+            "question": "Was ist die Hauptfunktion eines Assemblers?",
+            "options": [
+              "Die Umwandlung von symbolischen Mnemonics in binäre Maschinenbefehle.",
+              "Die automatische Optimierung von Programmcode in höhere Programmiersprachen wie Java.",
+              "Das Management von Hardware-Ressourcen wie Speicherverwaltung und Scheduling.",
+              "Das direkte Ausführen von Hochsprachen auf unterschiedlichen Prozessorfamilien."
+            ],
+            "correctIndex": 0,
+            "explanation": "Ein Assembler dient als Übersetzungsprogramm, das die für Menschen lesbaren Mnemonics (wie MOV oder ADD) in die vom Prozessor ausführbaren binären oder hexadezimalen Maschinenbefehle überführt."
+          },
+          {
+            "question": "Warum wird Assemblersprache trotz der Existenz von Hochsprachen weiterhin für spezifische Aufgaben eingesetzt?",
+            "options": [
+              "Weil Hochsprachen grundsätzlich nicht in der Lage sind, auf Hardware zuzugreifen.",
+              "Weil Assemblercode automatisch auf jeder Prozessorarchitektur ohne Änderungen läuft.",
+              "Um kritische Programmteile zeitoptimiert auszuführen oder hardwarenahe Funktionen wie Treiber zu realisieren.",
+              "Da Assemblercode die einzige Möglichkeit ist, Betriebssysteme wie Linux zu kompilieren."
+            ],
+            "correctIndex": 2,
+            "explanation": "Assembler wird genutzt, um zeitkritische Programmteile signifikant zu beschleunigen oder Hardware-Treiber zu schreiben, bei denen ein absolut direkter Zugriff auf Prozessor und Hardware nötig ist."
+          },
+          {
+            "question": "Welche Aussage zur Portierbarkeit von Assembler-Programmen ist korrekt?",
+            "options": [
+              "Assembler-Programme sind aufgrund ihrer Hardware-Nähe hochgradig portabel zwischen verschiedenen Prozessor-Familien.",
+              "Assembler ist eine Sprache der dritten Generation und daher unabhängig von der Architektur.",
+              "Assemblersprachen sind an eine spezifische Prozessorfamilie gebunden; bei einem Wechsel der Familie muss oft umgelernt werden.",
+              "Assembler-Programme können ohne Neuassemblierung auf jedem Smartphone ausgeführt werden."
+            ],
+            "correctIndex": 2,
+            "explanation": "Ein wesentlicher Nachteil von Assembler ist, dass er eng an die Architektur einer Prozessorfamilie gebunden ist. Ein Programm für x86-Prozessoren läuft nicht direkt auf anderen Architekturen."
+          },
+          {
+            "question": "Was versteht man in der Assembler-Programmierung unter 'Mnemonics'?",
+            "options": [
+              "Eine Technik zur Speicherverwaltung im Real Mode.",
+              "Kurze, leicht zu merkende Abkürzungen für die binären Befehlsfolgen der Maschinensprache.",
+              "Die hexadezimale Darstellung der Speicheradressen.",
+              "Spezielle Variablen, die ausschließlich für logische Operationen genutzt werden."
+            ],
+            "correctIndex": 1,
+            "explanation": "Mnemonics sind Kürzel wie 'MOV' für Move oder 'SUB' für Subtract, die es dem Programmierer erleichtern, die komplexen Maschinenbefehle zu identifizieren und zu verarbeiten."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778576625109,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist eine Maschinensprache?",
+            "back": "Die Sprache, die ein Prozessor direkt versteht; sie besteht ausschließlich aus binären Folgen (0en und 1en)."
+          },
+          {
+            "front": "Was ist ein Assembler (Programm)?",
+            "back": "Ein Übersetzungsprogramm, das mnemonische Abkürzungen (Assemblercode) in Maschinencode (Einsen und Nullen) umwandelt."
+          },
+          {
+            "front": "Was sind Mnemonics?",
+            "back": "Kurze, leicht zu merkende Abkürzungen für Maschinenbefehle (z.B. 'MOV' für 'move', 'SUB' für 'subtract')."
+          },
+          {
+            "front": "Warum wird in der Informatik oft die hexadezimale Darstellung anstelle der binären genutzt?",
+            "back": "Binärcode ist zu unübersichtlich und fehleranfällig. Hexadezimale Zahlen sind wesentlich kompakter und somit leichter lesbar."
+          },
+          {
+            "front": "Was sind Register?",
+            "back": "Sehr schnelle, kleine Speicherplätze, die direkt im Prozessorkern eingebaut sind."
+          },
+          {
+            "front": "Nenne zwei Gründe, warum heutige Software teilweise in Assembler geschrieben wird.",
+            "back": "1. Performance-Optimierung kritischer Programmteile (Geschwindigkeit). 2. Direkte Hardware-Steuerung (Treiber, eingebettete Systeme)."
+          },
+          {
+            "front": "Gehört Assembler zur ersten, zweiten oder dritten Generation der Programmiersprachen?",
+            "back": "Zur zweiten Generation."
+          },
+          {
+            "front": "Wozu dient die ORG-Anweisung in einem Assembler-Programm?",
+            "back": "Sie legt fest, ab welcher Speicheradresse das Programm während der Ausführung im Arbeitsspeicher platziert werden soll."
+          },
+          {
+            "front": "Welches Assemblerprogramm wird in dem Wikibooks-Lehrbuch empfohlen?",
+            "back": "NASM (Netwide Assembler)."
+          },
+          {
+            "front": "Ist ein Betriebssystem (wie Linux) vollständig in Assembler geschrieben?",
+            "back": "Nein, es ist weitgehend in einer Hochsprache (wie C) geschrieben, um Portabilität zu gewährleisten. Assembler wird nur für hardwarenahe Kernbereiche und Treiber genutzt."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-programmieren-aufbau_5",
+      "slides": [
+        {
+          "title": "Lektion 6: Grundlagen Assembler",
+          "bullets": [
+            "Einführung in maschinennahe Programmierung",
+            "Übersicht zu Binär- und Hexadezimalsystemen",
+            "Grundlagen der Prozessorkommunikation"
+          ],
+          "notes": "Diese Lektion behandelt die Grundlagen der unteren Sprachebenen und zeigt auf, wie der Computer Befehle auf Prozessorebene interpretiert und verarbeitet.",
+          "page_range": "7-8",
+          "image_prompt": ""
+        },
+        {
+          "title": "Vom Maschinencode zum Mnemonic",
+          "bullets": [
+            "Maschinensprache besteht aus binären Befehlsfolgen",
+            "Mnemonics bieten lesbare Abkürzungen (z. B. MOV)",
+            "Assembler-Programme übersetzen Mnemonics in Maschinencode (S. 8)",
+            "Zusätzliche Funktionen: Symbole und Kommentare erleichtern Übersicht"
+          ],
+          "notes": "Da rohe Binär- oder Hex-Daten schwer zu lesen sind, nutzen wir Assembler als Abstraktionsschicht, die uns verständliche Kürzel zur Programmierung anbietet.",
+          "page_range": "7-9",
+          "image_prompt": ""
+        },
+        {
+          "title": "Warum noch Assembler programmieren?",
+          "bullets": [
+            "Entwicklung hardwarenaher Treiber",
+            "Optimierung kritischer Programmteile für höhere Geschwindigkeit",
+            "Direktes Verständnis der Hardware-Funktionsweise",
+            "Industrielle Steuerungen mit Echtzeit-Anforderungen"
+          ],
+          "notes": "Obwohl Hochsprachen den Alltag dominieren, ist Assembler bei Spezialanforderungen durch Leistungsvorteile und Hardwarenähe unverzichtbar.",
+          "page_range": "10",
+          "image_prompt": ""
+        },
+        {
+          "title": "Rechnen mit negativen Zahlen",
+          "bullets": [
+            "Das MSB zeigt bei direkter Notation Probleme",
+            "Zweierkomplement ermöglicht korrekte Addition negativer Werte",
+            "Berechnung: Einerkomplement bilden plus eins addieren (S. 18)",
+            "Wichtig für die Vermeidung von Rechenfehlern und Overflows"
+          ],
+          "notes": "Eine der größten Fehlerquellen ist der Umgang mit vorzeichenbehafteten Zahlen; eine präzise Kenntnis des Zweierkomplements ist daher essenziell für Assembler-Programmierer.",
+          "page_range": "17-18",
+          "image_prompt": ""
+        },
+        {
+          "title": "Die Von-Neumann-Architektur",
+          "bullets": [
+            "CPU, Speicher und I/O über Systembus verbunden",
+            "Programmcode und Daten teilen sich dieselben Speicherbereiche",
+            "Deterministisches Verhalten durch strikte Sequentialität",
+            "Flaschenhals: Bus-Geschwindigkeit bremst moderne CPUs"
+          ],
+          "notes": "Dieses grundlegende Architekturmodell definiert, wie Befehle sequenziell aus dem Arbeitsspeicher gelesen und verarbeitet werden.",
+          "page_range": "23-24",
+          "image_prompt": ""
+        },
+        {
+          "title": "Register der 8086/8088-Architektur",
+          "bullets": [
+            "Allgemeine Register: AX, BX, CX, DX (unterteilbar in High/Low)",
+            "Segmentregister (CS, DS, ES, SS) für Adressierung",
+            "Stack- und Indexregister für Datenmanagement (S. 28)",
+            "Flag-Register für Prozessorzustände (Zero, Carry, Overflow)"
+          ],
+          "notes": "Register sind die schnellsten Speicherplätze direkt im Prozessorkern; jede Operation greift primär auf diese zu.",
+          "page_range": "27-29",
+          "image_prompt": ""
+        },
+        {
+          "title": "Interrupts und Adressierung",
+          "bullets": [
+            "Polling vs. Interrupts: Effizienzsteigerung durch hardwareseitige Signale",
+            "Hardware-Interrupts (asynchron) vs. Software-Interrupts (synchron)",
+            "Segmentierung im Real Mode für 1-MB-Adressraum (S. 32)",
+            "CLI und STI zur Steuerung der Interrupt-Maskierung"
+          ],
+          "notes": "Interrupts erlauben dem Prozessor, auf externe Ereignisse zu reagieren, ohne ständig den Systemzustand abfragen zu müssen.",
+          "page_range": "27-32",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 6 — Assembler - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576625008,
+      "pdfName": "Assembler"
+    }
+  ],
+  "sourceHash": "0dc62203a7fc3f5d"
+}

@@ -1,0 +1,506 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Excel und VBA: Tabellen automatisieren - Lektion 1: Excel VBA",
+    "pdfName": "Excel VBA",
+    "createdAt": 1778790895533,
+    "exportedAt": "2026-05-14T20:34:55.534Z",
+    "meta": {
+      "courseId": "course-de-excel-vba",
+      "lessonIndex": 0,
+      "courseTitle": "Excel und VBA: Tabellen automatisieren",
+      "lessonObjective": "VBA-Editor, Variablen, Schleifen, UserForms.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-excel-vba",
+            "title": "Excel VBA",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Excel_VBA"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_0a59c7c66b23",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "12-17",
+          "chapterTitle": "Namenskonventionen und Variablentypen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "18-25",
+          "chapterTitle": "Visual-Basic-Editor und Prozeduren",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "26-35",
+          "chapterTitle": "Einsatz von Funktionen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "36-43",
+          "chapterTitle": "Prozeduraufrufe",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "44-59",
+          "chapterTitle": "Variablengültigkeit und ByRef/ByVal",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "60-83",
+          "chapterTitle": "Selektion, Schleifen und Wenn-Abfragen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "96-109",
+          "chapterTitle": "Klassenmodule und Code-Optimierung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "112-123",
+          "chapterTitle": "Menü- und Symbolleisten",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "124-141",
+          "chapterTitle": "Löschroutinen und XL4-Makros",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "142-179",
+          "chapterTitle": "Textimport, Sortierung und Rechtschreibprüfung",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778790895533,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung für deine erste Lektion zu den Grundlagen von Excel VBA, basierend auf dem bereitgestellten Dokument:\n\n### Lektion 1: Grundlagen und Werkzeuge von Excel VBA\n\n#### 1. Der Visual-Basic-Editor (VBE)\n*   **Zugang:** Öffne den Editor mit der Tastenkombination `Alt+F11` (S. 18).\n*   **Einstellungen:** Unter `Extras / Optionen` solltest du die \"Automatische Syntaxüberprüfung\" deaktivieren, aber zwingend \"Variablendeklaration erforderlich\" aktivieren (S. 18).\n*   **Elemente:** Wichtige Bausteine für deine Projekte sind **Standardmodule** (für allgemeine Prozeduren), **UserForms** (für Dialoge) und **Klassenmodule** (für Ereignisprogrammierung, z. B. `Worksheet_Change`) (S. 19).\n*   **Objektkatalog:** Mit `F2` erhältst du eine Übersicht aller verfügbaren Klassen und Elemente (S. 19).\n\n#### 2. Namenskonventionen\nUm Teamarbeit und die spätere Fehlersuche zu erleichtern, empfiehlt sich ein einheitlicher Standard:\n*   **Aufbau:** `[Präfix]Art[Benennung]` (z. B. `wksKunden`) (S. 12).\n*   **Präfixe:** Kennzeichnen die Gültigkeit einer Variable (z. B. `m` für Modul-Ebene, `g` für global) (S. 13).\n*   **Art:** Gibt den Datentyp oder Objekttyp an (z. B. `int` für Integer, `wks` für Worksheet, `frm` für UserForm) (S. 13–14).\n\n#### 3. Variablentypen\n*   VBA stellt verschiedene Typen bereit (z. B. `String`, `Integer`, `Date`, `Boolean`, `Double`). \n*   **Variant:** Kann verschiedene Typen aufnehmen, sollte aber bewusst eingesetzt werden (S. 14, 84).\n*   **Deklaration:** Es wird empfohlen, jede Variable explizit via `Dim` zu deklarieren (S. 14, 83).\n\n#### 4. Prozeduren (Subs vs. Functions)\n*   **Sub (Unterprogramm):** Führt Aktionen aus, gibt aber keinen Wert zurück (S. 16).\n*   **Function:** Gibt einen Wert zurück. Sie können auch direkt als Formel in Excel-Tabellen verwendet werden (S. 16, 23).\n*   **Parameter:** Bei der Übergabe unterscheidet man zwischen `ByVal` (übergibt nur den Wert) und `ByRef` (übergibt eine Referenz auf die Variable, sodass der Originalwert geändert werden kann) (S. 15, 47).\n\n#### 5. Kontrollstrukturen (Schleifen und Abfragen)\n*   **Schleifen:** VBA unterstützt `For`-, `Do`-, `For Each`- und `While`-Schleifen, um Wiederholungen effizient zu steuern (S. 61–64).\n*   **Wenn-Abfragen:** Zur Verzweigung dienen `If...Then...Else`-Strukturen sowie die `Select Case`-Anweisung für übersichtlichere Mehrfachverzweigungen (S. 67–68).\n\n**Tipp für die Praxis:** Vermeide nach Möglichkeit das `Selektieren` oder `Aktivieren` von Objekten (z. B. `Select`, `Activate`). Ein direkter Zugriff (Referenzierung) auf die Objekte macht den Code deutlich schneller und stabiler (S. 53, 56, 98).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778790895533,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-excel-vba_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 1: Excel VBA - Präsentation</span><span class=\"pm-chat-count\">7 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Einführung in Excel VBA</div><ul class=\"pm-chat-slide-bullets\"><li>Grundlagen der Automatisierung: Editor, Variablen &amp; Prozeduren</li><li>Strukturierte Programmierung für effiziente Excel-Lösungen</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778790895534,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Namenskonventionen in VBA basierend auf den bereitgestellten Unterlagen:\n\n**Grundlagen der Namensgebung (S. 12-13)**\nEine einheitliche Namensgebung verbessert die Lesbarkeit und Wartbarkeit des Codes, insbesondere in Teams. Ein Name setzt sich optimalerweise aus drei Teilen zusammen: $[Präfix]Art[Benennung]$. Während die Art zwingend erforderlich ist, sind Präfix und Benennung optional. Präfix und Art werden klein geschrieben, das erste Zeichen der Benennung sowie jedes weitere Wort innerhalb der Benennung groß. Umlaute und das ß sind zu vermeiden (S. 13).\n\n**Aufbau der Bezeichner (S. 13-15)**\n- Präfix: Kennzeichnet die Gültigkeit. Lokale Variablen in Subs/Functions haben kein Präfix, statische Variablen erhalten ein s, modulweite Variablen (Dim/Private) ein m und globale Variablen ein g (S. 13).\n- Art: Kennzeichnet den Typ der Komponente. Beispiele: wks für Arbeitsblätter, frm für UserForms, cls für Klassenmodule. Variablen erhalten eine spezifische Abkürzung (z.B. bln für Boolean, int für Integer, str für String). Bei Objektlisten wird der Art ein s hinzugefügt (S. 14).\n- MS-Forms-Elemente: Eigene Kürzel wie txt für TextBox, cmd für CommandButton oder lbl für Label sind definiert (S. 14).\n- Konstanten: Diese werden mit dem Kürzel con gekennzeichnet (S. 14).\n- Benutzerdefinierte Typen (Type): Werden mit dem Präfix t gekennzeichnet; die Benennung erfolgt komplett in Großbuchstaben mit Unterstrichen als Trenner (S. 15).\n\n**Prozeduren, Funktionen und Kommentare (S. 15-16)**\n- Sprungmarken: Sollten vermieden werden, mit Ausnahme der Fehlerbehandlung (Standard: ErrorHandler) (S. 15).\n- Prozeduren und Funktionen: Es gibt keine strengen Regeln außer bei Ereignissen. Empfohlen werden beschreibende Namen (Verb/Gegenstand) mit einer Länge von maximal 20 Zeichen. Jedes Wort beginnt mit einem Großbuchstaben (S. 15).\n- Kommentare: Eine gründliche Kommentierung ist unerlässlich. Sie sollte Angaben zum Autor, Erstellungs- und Änderungsdatum enthalten, um die langfristige Wartbarkeit sicherzustellen (S. 15-16).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790895543,
+      "channel": "plan_pipe_0a59c7c66b23",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 12,
+        "end": 17
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Dokumente (S. 18–24):\n\n**1. Der Visual-Basic-Editor**\n*   **Zugriff:** Der Editor wird mit Alt+F11 aufgerufen (S. 18).\n*   **Einstellungen:** Unter Extras / Optionen sollten insbesondere die Variablendeklaration als obligatorisch definiert und der Unterbrechungsmodus auf \"Bei nicht verarbeiteten Fehlern\" eingestellt werden (S. 18).\n*   **Elemente:** Programmcode wird in UserForms (Dialoge), Standardmodulen (für allgemeine Prozeduren) oder Klassenmodulen (für Ereignisse) gespeichert (S. 19).\n*   **Objektkatalog:** Mit F2 lassen sich Bibliotheksklassen einsehen; F1 liefert die zugehörige Hilfe (S. 19).\n\n**2. Prozeduren (Funktionen und Sub-Unterprogramme)**\n*   **Deklaration:** Prozeduren können als Public (überall zugänglich), Private (nur modulintern) oder Static (lokale Variablen bleiben erhalten) definiert werden (S. 22).\n*   **Parameter:** Argumente können optional sein sowie per Wert ($ByVal$) oder Referenz ($ByRef$) übergeben werden. Das Schlüsselwort $ParamArray$ erlaubt eine variable Anzahl an Argumenten (S. 22-23).\n*   **Funktionen (Function):** Werden verwendet, um Werte zurückzugeben. Sie können sowohl aus anderem Code als auch direkt im Excel-Tabellenblatt aufgerufen werden, wobei sie im Tabellenblatt keine Blattwechsel-Aktionen ausführen dürfen (S. 23).\n*   **Unterprogramme (Sub):** Dienen dazu, Abläufe ohne direkten Rückgabewert zu steuern. Ein Aufruf über das Tabellenblatt ist nicht möglich (S. 23-24).\n\n**3. Entscheidungshilfe**\nVerwenden Sie Funktionen grundsätzlich dann, wenn ein Ergebnis als Formel in ein Tabellenblatt integriert werden soll oder wenn innerhalb eines Subs ein Rückgabewert angefordert wird. In allen anderen Fällen sind Subs die bevorzugte Wahl (S. 24).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790895544,
+      "channel": "plan_pipe_0a59c7c66b23",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 18,
+        "end": 25
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Programmierung in Excel/VBA umfasst drei Funktionsgruppen: Excel-Funktionen, VBA-Funktionen und benutzerdefinierte Funktionen (UDF) (S. 26).\n\n**Einsatz von Excel-Funktionen**\n* In VBA eingebundene Excel-Funktionen sollten über `WorksheetFunction` (mit automatischer Argumentenliste) oder `Application` (bei zu erwartenden Fehlerwerten) aufgerufen werden (S. 27).\n* In Tabellenblättern können Funktionalitäten über `.Formula` (englische Schreibweise), `.FormulaLocal` (deutsche Schreibweise) oder `.FormulaArray` gesteuert werden (S. 28-29).\n* Funktionen können keine Zellen formatieren; dafür ist eine `Sub` erforderlich (S. 26).\n\n**Einsatz von VBA-Funktionen**\n* VBA-Funktionen sind flexibel, wobei bei der Nutzung auf Abwärtskompatibilität geachtet werden sollte, da die Palette der Funktionen stetig erweitert wird (S. 29-30).\n\n**Benutzerdefinierte Funktionen (UDF)**\n* Diese werden für wiederkehrende Berechnungen genutzt. Bei der Verwendung im Arbeitsblatt sollte die korrekte Verankerung statt über `ActiveCell` über `Application.Caller` erfolgen (S. 30, 32-33).\n* Die Anweisung `Application.Volatile` erzwingt eine Neuberechnung bei jeder Zelleingabe, sollte jedoch aufgrund möglicher Performance-Einbußen sparsam eingesetzt werden (S. 33).\n* Bei der Übergabe von Zellbereichen (Range-Objekte) bietet es sich an, diese mittels Schleifen (z. B. `For Each`) zu durchlaufen. Zur Validierung von Eingabebereichen können Methoden wie `Intersect` verwendet werden (S. 33-35).\n* Soll eine UDF im Fehlerfall einen Fehlerwert (z.B. #BEZUG) im Arbeitsblatt ausgeben, muss der Rückgabetyp der Funktion als `Variant` definiert sein (S. 35).\n\n**Wichtige Hinweise**\n* Funktionen können keine Formatierungen ändern oder Selektionen vornehmen (S. 26, 31).\n* Gleichlautende Funktionen in Excel und VBA können unterschiedliche Ergebnisse liefern (Beispiel: `Trim`) (S. 26).\n* Mathematische Operationen wie die Summenbildung verdeutlichen die Flexibilität bei der Verarbeitung von Zellinhalten: $Summe = \\sum_{i=1}^{n} \\text{Zelle}_i$ (S. 27).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790895545,
+      "channel": "plan_pipe_0a59c7c66b23",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 26,
+        "end": 35
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Dieser Abschnitt behandelt die verschiedenen Methoden zum Aufruf von Prozeduren in VBA unter Berücksichtigung unterschiedlicher Kontexte. Hier sind die wesentlichen Aspekte zusammengefasst:\n\n**Grundlegende Syntax für lokale Aufrufe**\nProzeduren in derselben Arbeitsmappe sollten idealerweise mit dem Befehl Call aufgerufen werden (S. 36). Obwohl das Schlüsselwort Call optional ist, empfiehlt sich dessen Verwendung zur besseren Code-Übersichtlichkeit. Eine Ausnahme bildet der Einsatz variabler Makronamen, bei denen auf Call verzichtet werden muss (S. 36).\n\n**Aufrufe in Klassenmodulen und anderen Arbeitsmappen**\nBefindet sich eine Prozedur innerhalb eines Klassenmoduls, muss beim Aufruf aus einem anderen Modul explizit die Klasse vorangestellt werden (z. B. Call Tabelle1.Unterprogramm). Für den Aufruf von Makros in anderen Arbeitsmappen wird der Befehl Run verwendet (S. 36). Hierbei sind Dateinamen in Apostrophe zu setzen, sofern sie Leerzeichen enthalten (S. 36). Funktionen, die als Private deklariert wurden, können nicht von extern aufgerufen werden (S. 36).\n\n**Methoden für andere Anwendungen**\nVBA ermöglicht den Aufruf von Makros in anderen Office-Anwendungen wie Word oder Access (S. 40, 41):\n1. Es ist eine Instanz der jeweiligen Anwendung über CreateObject zu bilden (z. B. Word.Application oder Access.Application).\n2. Das entsprechende Dokument bzw. die Datenbank muss geöffnet werden.\n3. Der Aufruf erfolgt über die .Run-Methode innerhalb des Objekts, bevor die Anwendung wieder geschlossen wird.\n\n**Besondere Konstellationen**\n- Parameterübergabe: Über die Run-Funktion ist es möglich, Makros oder Funktionen in anderen Arbeitsmappen inklusive Parametern aufzurufen, wobei der Rückgabewert der Funktion direkt verarbeitet werden kann (S. 39).\n- Variable Makronamen: Wenn der Name einer Prozedur erst zur Laufzeit feststeht (z. B. bestimmt durch einen Schaltflächennamen), kann der String direkt an die Run-Anweisung übergeben werden (S. 42).\n\n**Technische Hinweise**\nBeim Aufruf externer Dateien sollte stets geprüft werden, ob die Datei existiert bzw. bereits geladen ist, um Fehler zu vermeiden (S. 38, 40). Die Verwendung von Fehlerroutinen (z. B. On Error Resume Next) hilft dabei, den Programmfluss bei nicht gefundenen Dateien oder Arbeitsmappen abzufangen (S. 38, 39).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790895546,
+      "channel": "plan_pipe_0a59c7c66b23",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 36,
+        "end": 43
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der Abschnitte zu Gültigkeit und Parameterübergabe:\n\n**1. Gültigkeit von Variablen und Konstanten (S. 44-53)**\n\n*   **Gültigkeitsbereiche:**\n    *   Prozedurebene: Variable ist nur innerhalb der spezifischen Prozedur verfügbar. Dies ist die empfohlene, sauberste Methode (S. 44).\n    *   Modulebene: Deklaration im Modulkopf; die Variable ist in allen Prozeduren dieses Moduls gültig (S. 44).\n    *   Public-Ebene: Deklaration als *Public* im Kopf eines Standardmoduls macht die Variable in der gesamten Arbeitsmappe nutzbar (sofern das Modul nicht als *Private* markiert ist). Von ihrer Verwendung wird aufgrund mangelnder Nachvollziehbarkeit bei Wertänderungen jedoch abgeraten (S. 44).\n*   **Besondere Variablentypen:**\n    *   Statische Variablen: Diese behalten ihren Wert auch nach Beendigung einer Prozedur bei neuen Aufrufen bei (S. 46).\n*   **Konstanten:**\n    *   Können ebenfalls auf Prozedur- oder Public-Ebene deklariert werden. Eine direkte Zuweisung variabler Werte an Konstanten ist nicht möglich, kann aber über Hilfsfunktionen (*Evaluate*) umgangen werden (S. 51-52).\n\n**2. Parameterübergabe mit ByRef und ByVal (S. 54-58)**\n\nDie Art der Übergabe bestimmt, ob ein Unterprogramm das Original oder lediglich eine Kopie eines Wertes bearbeitet. Wenn kein Schlüsselwort definiert ist, ist VBA voreingestellt auf *ByRef* (S. 54).\n\n*   **ByVal (Call by Value):** Es wird eine Kopie des Parameters übergeben. Änderungen innerhalb des Unterprogramms wirken sich nicht auf die Variable des aufrufenden Programms aus (S. 54).\n*   **ByRef (Call by Reference):** Es wird ein Verweis auf die Speicheradresse übergeben. Änderungen an der Variable im Unterprogramm beeinflussen direkt den Wert im aufrufenden Programm (S. 54).\n*   **Ausnahme bei Objekten:** Objektvariablen behalten auch bei einer *ByRef*-Übergabe beim Neusetzen (mit *Set*) ihren ursprünglichen Wert in der aufrufenden Prozedur bei (S. 54, 57-58).\n\n**Mathematische Darstellung:**\nDie im Dokument verwendeten Berechnungen basieren auf einfachen geometrischen Formeln, z.B. für das Volumen: \n$V = \\text{länge} \\times \\text{breite} \\times \\text{höhe}$ (S. 48) oder die Oberfläche eines Quaders: \n$A = 2 \\times (\\text{länge} \\cdot \\text{breite} + \\text{länge} \\cdot \\text{höhe} + \\text{breite} \\cdot \\text{höhe})$ (S. 55).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790895547,
+      "channel": "plan_pipe_0a59c7c66b23",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 44,
+        "end": 59
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der Abschnitte zu den Themen VBA-Programmierung, Schleifen und Verzweigungen (S. 60–77):\n\n**Selektieren und Aktivieren (S. 60–65)**\n\nIn der VBA-Programmierung ist das Selektieren von Objekten (z. B. Cells, Range, Sheets) mittels `.Select` oder `.Activate` in der Regel zu vermeiden. Stattdessen sollten Objekte direkt referenziert werden.\n\nGründe gegen das Selektieren:\n- Unübersichtlicher Code durch ständige Verwendung von Selection.\n- Höhere Fehleranfälligkeit und schlechtere Performance des Programms.\n- Unruhiger Programmablauf durch flackernde Bildschirmausgaben.\n- Überflüssiger Codeaufbau (häufig durch den Makrorecorder initiiert).\n\nAusnahmen: Eine Selektion ist nur selten sinnvoll, etwa bei der Fixierung von Fenstern oder zur Reduzierung von Schreibarbeit bei komplexen Operationen zwischen mehreren Tabellenblättern.\n\n**Schleifen (S. 68–72)**\n\nSchleifen dienen der Wiederholung von Anweisungen und lassen sich in verschiedene Typen unterteilen:\n\n- For-Schleifen: Ideal, wenn die Anzahl der Durchläufe bekannt ist oder über eine Zählvariable gesteuert wird. Diese können auch verschachtelt verwendet werden.\n- Do-Schleifen: Wiederholen Anweisungen basierend auf Bedingungen. Es gibt die Do-While-Schleife (läuft, solange Bedingung wahr) und die Do-Until-Schleife (läuft, bis Bedingung wahr). Ein Abbruch ist jederzeit mittels `Exit Do` möglich.\n- For-Each-Schleifen: Werden genutzt, um alle Objekte innerhalb einer Sammlung (z. B. alle Tabellenblätter einer Arbeitsmappe) nacheinander zu bearbeiten.\n- While-Wend-Schleifen: Eine alternative Schleifenstruktur, die jedoch syntaktisch anders als die Do-Schleifen-Gruppe zu beenden ist.\n\n**Wenn-Abfragen und Verzweigungen (S. 74–77)**\n\nZur Steuerung des Programmflusses basierend auf Bedingungen dienen verschiedene Abfragestrukturen:\n\n- If...Then...Else: Dient der einfachen oder mehrfachen Verzweigung. Bei vielen Bedingungen ist `ElseIf` einzusetzen.\n- Select-Case-Struktur: Zu bevorzugen bei mehr als zwei Bedingungen, da sie übersichtlicher ist. Der häufigste Fall sollte für eine bessere Laufzeit an den Anfang gestellt werden.\n- Inline-Verzweigungen: Die Funktion $IIf(\\text{Bedingung, Wahr, Falsch})$ erlaubt kompakte Abfragen. Hierbei ist jedoch zu beachten, dass stets alle Teile des Ausdrucks ausgeführt werden, was bei Divisionen zu Fehlern führen kann, wenn $$Divisor = 0$$. Abschließend dient $Choose()$ als kompaktes Pendant zur $Select Case$ Struktur.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790895548,
+      "channel": "plan_pipe_0a59c7c66b23",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 60,
+        "end": 83
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der Abschnitte zu Klassenmodulen und zur Code-Optimierung in VBA:\n\n**1. Klassenmodule (S. 96-101)**\nModule dienen als Container für Code und Variablen. Neben Standardmodulen ermöglichen Klassenmodule die Verwaltung von Objekten mit Eigenschaften, Methoden und Ereignissen (S. 96).\n\n*   Ereignissteuerung: Vordefinierte Excel-Klassen (z. B. Workbook, Worksheet, CommandButton, Label) können durch das Keyword `WithEvents` erweitert werden, um Ereignisse global oder für Gruppen von Objekten (z. B. eine Serie von Buttons oder Labels) zu verwalten (S. 97-100).\n*   Benutzerdefinierte Klassen: Es lassen sich eigene Klassentypen erstellen, um Datenstrukturen elegant zu kapseln und beispielsweise Plausibilitätsprüfungen (Property Let) direkt in der Klasse zu implementieren, anstatt die Logik in Standardmodulen zu verteilen (S. 98–99).\n\n**2. Code-Optimierung (S. 104-108)**\nUm die Ausführungsgeschwindigkeit von VBA-Programmen zu maximieren, sollten folgende Prinzipien beachtet werden:\n\n*   Objektreferenzierung: Es empfiehlt sich, direkte Objektzuweisungen anstelle von allgemeinen Datentypen zu nutzen und selektive Befehle wie `.Select` oder `.Activate` zu vermeiden. Stets präzise Pfade angeben (S. 104-105).\n*   Datentypen: Die Verwendung von `Long` ist häufig performanter als `Integer`, da moderne Prozessoren auf 32-Bit optimiert sind (S. 106).\n*   Struktur: Die Nutzung von `With`-Rahmen verbessert die Übersichtlichkeit und reduziert die Rechenzeit (S. 106).\n*   Effiziente Berechnungen: \n    *   Excel-Funktionen sind eigenen VBA-Schleifen meist überlegen (S. 107).\n    *   Der direkte Zugriff auf Zellbereiche via Array ($a = \\text{Range(\"A1:H800\").value}$) ist deutlich schneller als der zeilenweise Zugriff auf einzelne Zellen (S. 107–108).\n    *   Für Matrixberechnungen können Excel-Array-Formeln über VBA schneller Ergebnisse liefern als der manuelle Vergleich von Zellen (S. 108).\n\n**3. Zusammenfassende Faustregeln (S. 104-107)**\n*   Konstanten statt Variablen verwenden.\n*   Keine eckigen Klammern (z. B. $[b3]$) für Zellzugriffe nutzen; stattdessen `Range` oder `Cells` verwenden.\n*   Formeln in Zellbereichen effizienter ersetzen durch den Ausdruck `.Formula = .Value`.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790895549,
+      "channel": "plan_pipe_0a59c7c66b23",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 96,
+        "end": 109
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts über Menü- und Symbolleisten (CommandBars):\n\nDie Verwaltung von Menü- und Symbolleisten erfolgt in Excel über das Objektmodell der sogenannten CommandBars (S. 112). Um Anwender von Programmierrückständen zu befreien, sollten diese Elemente idealerweise beim Öffnen einer Arbeitsmappe erstellt und beim Schließen wieder gelöscht werden (S. 112).\n\nDie Erstellung und Konfiguration:\nÜber die Add-Methode der CommandBars-Auflistung lassen sich neue Leisten hinzufügen. Dabei wird empfohlen, explizit `Application.CommandBars` zu verwenden, um Kollisionen mit anderen Anwendungen zu vermeiden (S. 112). Wichtige Parameter für die Erstellung sind:\n- Name: Die eindeutige Bezeichnung der Leiste (S. 112).\n- Position: Definiert die Platzierung (z.B. links, rechts, oben, unten, schwebend oder als Kontextmenü via msoBarPopUp, S. 112-113).\n- MenuBar: Entscheidet darüber, ob es sich um eine Menüleiste (TRUE) oder Symbolleiste (FALSE) handelt (S. 113).\n- Temporary: Legt fest, ob das Objekt beim Schließen von Excel automatisch gelöscht wird (S. 113).\n\nVerwaltung und Automatisierung:\nDas Dokument beschreibt verschiedene Ansätze zur Manipulation, etwa das Ein- und Ausblenden bestehender Menüleisten oder die Erstellung komplexer eigener Strukturen wie eines dynamischen Jahreskalenders (S. 113-117). Bei der Implementierung solch spezieller Features wie einer Kalender-Symbolleiste kommen häufig Hilfsprozeduren (z.B. zur Gruppenbildung) und Ereignissteuerungen (Worksheet_Activate/Deactivate) zum Einsatz (S. 116, 120).\n\nBesonderheiten bei Konfigurationsdateien:\nDie Einstellungen der CommandBars werden in `.xlb`-Dateien gespeichert. Zur Ermittlung dieser Dateipfade und deren Änderungsdaten kann ab Excel-Version 9.0 das `Scripting.FileSystemObject` genutzt werden (S. 120-121). Hierfür ist zwingend ein Verweis auf die \"Microsoft Scripting Runtime\"-Bibliothek im VBA-Editor erforderlich (S. 120).\n\nHinweise zum Quellcode:\nWenn Prozeduren in Klassenmodulen erstellt werden, ist das Voranstellen von `Application` zwingend für die korrekte Adressierung erforderlich (S. 112). Zur Fehlervermeidung bei der automatisierten Löschung von Leisten wird der Einsatz von Fehlerroutinen (`On Error GoTo`) empfohlen, falls das zu löschende Element nicht existiert (S. 115, 117).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790895550,
+      "channel": "plan_pipe_0a59c7c66b23",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 112,
+        "end": 123
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Seiten 124 bis 140 behandeln zwei wesentliche Themengebiete der Excel-Programmierung: das automatisierte Leeren/Löschen von Zellen sowie die Verwendung von XL4-Makros innerhalb von VBA.\n\nLeeren und Löschen von Zellen\n- Dateieigenschaften: VBA kann integrierte sowie benutzerdefinierte Dateieigenschaften lesen und in Tabellen übertragen oder aus diesen in neue Arbeitsmappen schreiben (S. 124-126).\n- Zellmanipulation: Es existieren diverse Prozeduren, um gezielt Zellinhalte zu löschen (z.B. Fehler-Zellen, gelb markierte Zellen) oder ganze Zeilen basierend auf Inhalten (Leerzellen) effizient zu entfernen (S. 128-130).\n\nXL4-Makros in VBA\n- Performance und Funktionalität: Der Einsatz von XL4-Makros (über `ExecuteExcel4Macro`) bietet Performance-Vorteile bei der Druckprogrammierung (PageSetup) und ermöglicht Funktionen, die in modernem VBA teils fehlen (z.B. Auslesen von Werten aus geschlossenen Arbeitsmappen) (S. 132).\n- Zugriff auf geschlossene Dateien: XL4-Makros erlauben den Zugriff auf Zellwerte, Summen, SVERWEISE oder Tabellenbereiche in Dateien, die nicht geöffnet sind (S. 132-135).\n- Spezielle Anwendungen:\n-- Globale Variablen: Über `SET.NAME` können benannte Konstanten oder Formeln definiert werden, die über die gesamte Excel-Sitzung gültig sind und nicht direkt gelöscht oder angezeigt werden können (S. 135-137).\n-- Druckeinstellungen: Das Auslesen von Seitenanzahlen und Seitenumbrüchen sowie das Setzen von Druckeigenschaften ist mittels XL4-Makros schneller und effizienter umsetzbar (S. 137-139).\n-- Sonstiges: Die Makros erlauben zudem das Blockieren von Schließvorgängen (abwärtskompatibel zu älteren Versionen) und das bedingte Löschen von Zeilen unter Nutzung von Datenbankfunktionen wie $$DATA.DELETE()$$ (S. 139-140).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790895551,
+      "channel": "plan_pipe_0a59c7c66b23",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 124,
+        "end": 141
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Abschnitte (S. 142–157):\n\n**Textimport (S. 142–145)**\nExcel nutzt für den Import von Texten die Funktion Line Input. Dabei sind die Zeilenendzeichen entscheidend: Windows verwendet CR+LF, Mac nutzt CR und Unix LF. Excel erkennt standardmäßig CR+LF sowie CR als Zeilenumbruch; einfache LF-Zeichen oder andere Symbole werden nicht korrekt interpretiert, was zu Pufferproblemen führt. Das Dokument bietet VBA-Routinen für verschiedene Anwendungsfälle:\n- Anzeige importierter Daten in Message-Boxen (S. 142–143).\n- Konvertierung von Textdateien in HTML-Tabellen (S. 143).\n- Import zur Darstellung in Arbeitsblättern (S. 143–144).\n- Übernahme von Daten in UserForm-Elemente (S. 144–145).\nDie erforderliche benutzerdefinierte Funktion SplitString ermöglicht das Aufteilen von Zeichenfolgen unabhängig von der Standard-VBA-Funktion (S. 145).\n\n**Sortierroutinen (S. 146–155)**\nDer Kern der Sortierfunktionalität basiert auf einem schnellen QuickSort-Algorithmus (S. 146). Dieses Verfahren wird für diverse Aufgaben genutzt:\n- Dateimanagement: Auswahl von Ordnern (S. 147), Einlesen von Dateinamen in Arrays (S. 147–148) und Sortierung nach Namen (S. 148) oder Zeitstempel (S. 148–149).\n- Tabellen- und Arbeitsblattverwaltung: Sortierung von Tabellenblättern (S. 149), Einsatz benutzerdefinierter Sortierfolgen (S. 149), Sortierung von Datumsangaben (S. 150) sowie komplexe Kriterien wie die Priorisierung von \\text{ä} und \\text{sch} (S. 150).\n- Spezialtechniken: Sortierung trotz ausgeblendeter Zeilen (S. 151), Matrixsortierung (S. 152–153) sowie die Sortierung innerhalb einzelner Strings mittels festgelegter Längen (S. 153–154).\n\n**Schleifen in VBA (S. 156–157)**\nSchleifen dienen der effizienten Wiederholung von Programmanweisungen und reduzieren den Codeumfang signifikant. Es wird zwischen zwei Grundtypen unterschieden: \n- Zählschleifen: Die Anzahl der Durchläufe ist vorab durch Konstanten oder Variablen festgelegt.\n- Prüfschleifen: Die Ausführung ist an die Erfüllung einer bestimmten Bedingung (wahr oder falsch) geknüpft.\nDie For-To-Next-Schleife wird als primäres Beispiel für Zählschleifen angeführt, wobei bei Bedarf auch Schrittweiten jenseits des Standardwerts von 1 definiert werden können (S. 157).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790895552,
+      "channel": "plan_pipe_0a59c7c66b23",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 142,
+        "end": 179
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778790895633,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Welcher Teil eines Variablennamens nach dem vorgeschlagenen Standard ist zwingend erforderlich?",
+            "options": [
+              "Der Datentyp",
+              "Die Art",
+              "Das Präfix",
+              "Die Benennung"
+            ],
+            "correctIndex": 1,
+            "explanation": "Laut Abschnitt 1.2 ist die 'Art' der einzige nicht optionale Bestandteil eines Namens, während das Präfix und die Benennung als optional gekennzeichnet sind."
+          },
+          {
+            "question": "Warum wird das Selektieren (z. B. .Select oder .Activate) in VBA laut den Lerninhalten kritisch betrachtet?",
+            "options": [
+              "Weil es die Ausführungsgeschwindigkeit verlangsamt und unnötige Bildschirmaktualisierungen verursacht.",
+              "Weil es zu Fehlern bei der Zuweisung von Variablentypen führt.",
+              "Weil es den Arbeitsspeicher des Computers überlastet.",
+              "Weil Excel die Arbeit mit .Select-Befehlen in neueren Versionen nicht mehr unterstützt."
+            ],
+            "correctIndex": 0,
+            "explanation": "In Abschnitt 8.5 und 15.4 wird verdeutlicht, dass Selektieren vermieden werden sollte, unter anderem aus Performancegründen und weil es in der professionellen Programmierung als schlechter Stil gilt."
+          },
+          {
+            "question": "Ein Programmierer deklariert eine Variable außerhalb von Subs oder Funktionen mit der 'Private'-Anweisung. Welches Präfix sollte diese Variable laut Konvention erhalten?",
+            "options": [
+              "m",
+              "st",
+              "p",
+              "g"
+            ],
+            "correctIndex": 0,
+            "explanation": "Laut Abschnitt 1.2 erhalten Variablen, die im Deklarationsteil eines Moduls mit 'Dim' oder 'Private' deklariert wurden, das Präfix 'm'."
+          },
+          {
+            "question": "Wenn ein VBA-Entwickler eine 'For-Each'-Schleife verwendet, was ist der Hauptvorteil gegenüber einer einfachen 'For'-Schleife?",
+            "options": [
+              "Sie ist zwingend erforderlich, um Arrays zu füllen.",
+              "Sie verhindert, dass der Benutzer das Programm vorzeitig abbricht.",
+              "Sie ist die einzige Schleifenart, die mit 'If'-Abfragen kombiniert werden kann.",
+              "Sie ermöglicht das Iterieren über eine Sammlung von Objekten, ohne den Index explizit angeben zu müssen."
+            ],
+            "correctIndex": 3,
+            "explanation": "Die 'For-Each'-Schleife (Abschnitt 9.3) dient primär dazu, alle Elemente einer Collection (Auflistung) zu durchlaufen, ohne auf einen Zählerindex angewiesen zu sein."
+          },
+          {
+            "question": "Warum sollten laut Kapitel 1.2 keine Umlaute in Variablennamen verwendet werden?",
+            "options": [
+              "Weil VBA intern nur mit den ersten 127 ASCII-Zeichen arbeitet.",
+              "Weil Umlaute den Arbeitsspeicher für die Variable verdoppeln.",
+              "Um die Kompatibilität des Codes international sicherzustellen.",
+              "Weil Umlaute von den verwendeten Compilern grundsätzlich verboten sind."
+            ],
+            "correctIndex": 2,
+            "explanation": "Kapitel 1.2 besagt explizit: 'Im Sinne der Internationalisierung des VBA-Codes sind generell in den Namen keine Umlaute oder das ß einzusetzen.'"
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778790895634,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Wie ist ein Variablenname laut Konvention aufgebaut?",
+            "back": "[Präfix]Art[Benennung]"
+          },
+          {
+            "front": "Wie werden Präfix, Art und Benennung in der Namenskonvention kleingeschrieben bzw. großgeschrieben?",
+            "back": "Präfix und Art bestehen aus Kleinbuchstaben, die Benennung beginnt mit einem Großbuchstaben (und jeder weitere Wortanfang ebenfalls)."
+          },
+          {
+            "front": "Was bezeichnet das Präfix bei einer Variablen?",
+            "back": "Das Präfix gibt die Art und die Gültigkeit (Scope) der Variablen an."
+          },
+          {
+            "front": "Welches Präfix erhalten Variablen, die global außerhalb von Subs oder Funktionen deklariert wurden?",
+            "back": "Das Präfix 'g' (z. B. gdblGesamtSumme)."
+          },
+          {
+            "front": "Was ist der Hauptunterschied zwischen einer 'Sub' und einer 'Function' in VBA?",
+            "back": "Ein Sub kann Aufgaben ausführen, während eine Function zusätzlich einen Wert zurückgeben kann."
+          },
+          {
+            "front": "Was bewirkt die 'ByVal'-Übergabe bei Parametern?",
+            "back": "Der Wert der Variable wird übergeben (Kopie). Änderungen innerhalb der aufgerufenen Prozedur wirken sich nicht auf die ursprüngliche Variable aus."
+          },
+          {
+            "front": "Was bewirkt die 'ByRef'-Übergabe bei Parametern?",
+            "back": "Es wird eine Referenz auf die Variable übergeben. Änderungen innerhalb der aufgerufenen Prozedur wirken sich direkt auf die ursprüngliche Variable aus."
+          },
+          {
+            "front": "Warum sollte man in VBA das 'Selektieren' (.Select / .Activate) vermeiden?",
+            "back": "Es macht den Code langsamer, instabiler und ist meist unnötig, da Objekte direkt (ohne Fokus) angesprochen werden können."
+          },
+          {
+            "front": "Welche Schleifenarten stehen in VBA zur Verfügung?",
+            "back": "For-Schleifen, Do-Schleifen, For-Each-Schleifen und While-Schleifen."
+          },
+          {
+            "front": "Welche Verzweigungsmöglichkeiten bietet VBA?",
+            "back": "If...Then, If...Then...Else, If...Then...ElseIf...Else, Select-Case sowie die Inline-Funktionen IIf() und Choose()."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-excel-vba_0",
+      "slides": [
+        {
+          "title": "Einführung in Excel VBA",
+          "bullets": [
+            "Grundlagen der Automatisierung: Editor, Variablen & Prozeduren",
+            "Strukturierte Programmierung für effiziente Excel-Lösungen"
+          ],
+          "notes": "Willkommen zu Lektion 1. Heute schauen wir uns die Basis für solide VBA-Programmierung in Excel an.",
+          "page_range": "12-25",
+          "image_prompt": ""
+        },
+        {
+          "title": "Namenskonventionen & Variablen",
+          "bullets": [
+            "Einsatz sprechender Namen mit Präfix, Art und Benennung",
+            "Vermeidung von Umlauten zur internationalen Kompatibilität",
+            "Deklaration als Public, Private oder Static zur Gültigkeitsregelung",
+            "Variablentypen (z.B. Integer, String, Boolean) gezielt wählen"
+          ],
+          "notes": "Einheitliche Namen sind kein Luxus, sondern bei Teamprojekten eine Grundvoraussetzung für sauberen Code.",
+          "page_range": "12-17",
+          "image_prompt": ""
+        },
+        {
+          "title": "Der VBA-Editor (VBE)",
+          "bullets": [
+            "Zentrales Tool zum Schreiben und Debuggen mit Alt+F11",
+            "Wichtige Einstellung: Variablendeklaration zwingend erforderlich",
+            "Organisation des Codes in Module und Klassenmodule",
+            "Nutzen Sie den Objektkatalog (F2) für schnelle Klassenübersichten"
+          ],
+          "notes": "Der VBE ist Ihre Werkbank. Die wichtigste Voreinstellung ist die Pflicht zur Variablendeklaration, um Flüchtigkeitsfehler sofort abzufangen.",
+          "page_range": "18-19",
+          "image_prompt": ""
+        },
+        {
+          "title": "Prozeduren: Sub vs. Funktion",
+          "bullets": [
+            "Sub führt Aktionen aus, Function liefert Werte zurück",
+            "Parameterübergabe erfolgt wahlweise als ByVal oder ByRef",
+            "UDFs können direkt aus dem Arbeitsblatt aufgerufen werden",
+            "Call-Anweisung zur strukturierten Prozedur-Steuerung"
+          ],
+          "notes": "Unterscheiden Sie sauber zwischen Aktionen (Subs) und Berechnungen (Functions), um Ihren Code wartbar zu halten.",
+          "page_range": "22-25",
+          "image_prompt": ""
+        },
+        {
+          "title": "Daten & Objekt-Verarbeitung",
+          "bullets": [
+            "Vermeiden Sie .Select und .Activate für bessere Performance",
+            "Nutzen Sie direkte Referenzierung auf Zellen und Tabellen",
+            "VBA-Funktionen als Werkzeuge zur Datenmanipulation",
+            "Verwendung von WorksheetFunction für Excel-native Berechnungen"
+          ],
+          "notes": "Die Unsitte des Selektierens macht Code langsam und fehleranfällig. Direkter Zugriff ist der professionelle Weg.",
+          "page_range": "26-29, 60-63",
+          "image_prompt": ""
+        },
+        {
+          "title": "Klassenmodule & Ereignisse",
+          "bullets": [
+            "Klassen als Container für Daten und logische Routinen",
+            "WithEvents zur Steuerung allgemeingültiger Ereignisse",
+            "Ereignissteuerung für Gruppen von Steuerelementen",
+            "Plattformunabhängige Logik durch eigene Klassenkonzepte"
+          ],
+          "notes": "Klassenmodule öffnen die Tür zur objektorientierten Programmierung. Sie erlauben es, Ereignisse zentral für mehrere Schaltflächen zu steuern.",
+          "page_range": "96-100",
+          "image_prompt": ""
+        },
+        {
+          "title": "Benutzeroberflächen & Import",
+          "bullets": [
+            "UserForms zum Erstellen maßgeschneiderter Dialoge",
+            "Textdatenimport mittels Line Input und Split-Funktionen",
+            "Dynamische Datenübernahme in Formular-Steuerelemente",
+            "Sauberer Abbau von Ressourcen bei Schließung"
+          ],
+          "notes": "Von der Datenaufbereitung bis zum User-Dialog: Damit machen Sie Ihre Excel-Tools zu echten Applikationen.",
+          "page_range": "137, 142-145",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 1: Excel VBA - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778790895533,
+      "pdfName": "Excel VBA"
+    }
+  ],
+  "sourceHash": "76091053f45e0b02"
+}

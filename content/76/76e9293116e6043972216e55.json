@@ -1,0 +1,440 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Arduino und Maker-Elektronik - Lektion 3: Platinen selbst herstellen",
+    "pdfName": "Platinen selber herstellen",
+    "createdAt": 1778787241504,
+    "exportedAt": "2026-05-14T19:34:01.504Z",
+    "meta": {
+      "courseId": "course-de-cs-maker-arduino-spezial",
+      "lessonIndex": 2,
+      "courseTitle": "Arduino und Maker-Elektronik",
+      "lessonObjective": "Schaltplan, Ätzen, Löten.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-platinen-selber-herstellen",
+            "title": "Platinen selber herstellen",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Platinen_selber_herstellen"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_5694d5c68ad2",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Grundlagen und Basismaterialien",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-5",
+          "chapterTitle": "Verdrahtungsmethoden und Vorbereitung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "6-7",
+          "chapterTitle": "Belichtungsvorlagen erstellen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "8-9",
+          "chapterTitle": "Platine belichten und entwickeln",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "10-10",
+          "chapterTitle": "Direkt-Toner-Verfahren",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "11-13",
+          "chapterTitle": "Ätzmittel und Ätzgeräte",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "14-15",
+          "chapterTitle": "Bohren und Konturfräsen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "16-18",
+          "chapterTitle": "Verzinnen und Weiterführende Software",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778787241504,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung bietet dir einen strukturierten Überblick über die Herstellung von Platinen für deine Elektronikprojekte:\n\n### 1. Grundlagen und Entscheidungshilfe\n*   **Wann lohnt es sich?** Die Selbstherstellung ist zeit- und kostenintensiv (Erstinvestition in Equipment). Sie ist besonders sinnvoll für häufige Projekte oder Kleinserien (S. 1).\n*   **Basismaterial:** Das gängigste Material ist **FR-4** (Epoxid-Glasfasergewebe), gefolgt von FR-1/FR-2. Kupferauflagen betragen meist 35µm („1 oz copper“) (S. 1).\n*   **Sicherheit:** Glasfaserstäube beim Zuschneiden sind gesundheitsschädlich (Maske tragen!). Arbeitet man mit Ätzchemikalien, sind Augenschutz und Handschuhe zwingend erforderlich (S. 3-4).\n\n### 2. Design und Maskenerstellung\n*   **Layout:** Software wie KiCad, FreePCB oder Eagle (Light-Version) erleichtern den Entwurf (S. 5).\n*   **Masken:**\n    *   **Fotopositiv-Verfahren:** Die Maske (Positiv) wird auf die beschichtete Platine projiziert und mit UV-Licht belichtet (S. 4).\n    *   **Direkt-Toner-Verfahren:** Toner wird mittels Laserdrucker auf Transferfolie/Papier gedruckt und durch Hitze (Bügeleisen/Laminiergerät) direkt auf die unbeschichtete Platine übertragen (S. 4, 7).\n*   **Druck-Hinweise:** Das Layout muss seitenrichtig gedruckt werden (Unterseite spiegeln, falls erforderlich). Höchste Druckqualität und Kontrast sind für das Ergebnis entscheidend (S. 6).\n\n### 3. Belichtung und Ätzprozess\n*   **Belichtung:** Das \"Fotopositiv-Verfahren\" benötigt UV-nahes Licht (400–450nm) und einen möglichst engen Kontakt zwischen Maske und Fotolackschicht (S. 4, 7).\n*   **Belichtungsreihe:** Zur Ermittlung der optimalen Belichtungsdauer wird eine Testreihe mit logarithmisch gestuften Zeiten empfohlen (S. 8).\n*   **Ätzen & Umwelt:** Verbrauchte Chemikalien (insb. Kupfer-Ionen) dürfen keinesfalls in den Ausguss, sondern müssen als Sondermüll bei Annahmestellen entsorgt werden (S. 4).\n\n### 4. Alternative Methoden (ohne Ätzen)\n*   **Handverdrahtung:** Lochraster- oder Punktrasterplatinen erlauben den Schaltungsaufbau ohne Ätzen (S. 2).\n*   **Techniken:**\n    *   **Fliegende Verdrahtung:** Drahtbrücken von Pin zu Pin (S. 2).\n    *   **Wire Wrap:** Draht wird stramm um quadratische Pins gewickelt (Kaltverschweißung) (S. 3).\n    *   **Fädeln:** Dünner isolierter Draht wird von Pin zu Pin geführt und verlötet (S. 3).\n\n### Tipp für die Praxis\n*   Verwende **Masseflächen** im Layout, um den Verbrauch von Ätzchemikalien zu minimieren und die elektrische Qualität der Schaltung zu verbessern (S. 4).\n*   Vor dem Ätzen sollte die Platine gebohrt werden, um Bauteile und Durchkontaktierungen korrekt zu platzieren (S. 4).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778787241504,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-cs-maker-arduino-spezial_2\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 3: Platinen selbst herstellen - Präsentation</span><span class=\"pm-chat-count\">5 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lektion 3: Platinen selbst herstellen</div><ul class=\"pm-chat-slide-bullets\"><li>Vom Schaltplan zum professionellen Aufbau.</li><li>Lernen Sie Ätzen, Löten und Bohren.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778787241505,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Die Lektüre gibt einen Überblick über die Herstellung und die verschiedenen Arten von Platinen für den Elektronikbereich. Hier sind die Kernaussagen zusammengefasst:\n\nDie Entscheidung zur Eigenherstellung von Platinen\nDer Prozess der Platinenätzung ist zeitaufwendig und erfordert eine entsprechende Ausrüstung (säurefeste Schalen, UV-Belichtung, Platinenbohrmaschine etc.). Eine Eigenherstellung lohnt sich in der Regel nur für Anwender, die bereits über das notwendige Equipment verfügen und regelmäßig Schaltungen entwerfen, etwa in Ingenieurbüros für Kleinserien (S. 1).\n\nBasismaterialien (FR-Typen)\nPlatinen basieren meist auf verschiedenen Verbundmaterialien, die durch die Kennzeichnung FR (flame retardant) klassifiziert werden. Das am weitesten verbreitete Material ist FR-4 (Epoxid-Kunstharz mit Glasfasergewebe), das aufgrund der Anforderungen beim bleifreien Löten zunehmend durch FR-5 ersetzt wird (S. 1). Die Standard-Kupferauflage beträgt in der Regel 35 $\\mu\\text{m}$ (entspricht 1 oz), seltener 70 $\\mu\\text{m}$ (2 oz) (S. 1). Als Maß für die Temperaturbeständigkeit dient die Glasübergangstemperatur ($T_g$) (S. 1).\n\nArten der Handverdrahtung\nFür den Aufbau von Schaltungen ohne Ätzprozess stehen verschiedene Lochrasterplatinen zur Verfügung (S. 2):\n\nLochrasterplatinen: Besitzen ein regelmäßiges Bohrungsraster von 2,54 mm ($100 \\text{ mil}$). Sie verfügen über keine Kupferauflage (S. 2).\n\nPunktrasterplatinen: Jede Bohrung ist mit einer runden oder viereckigen Kupferfläche versehen, die einseitig oder beidseitig vorhanden sein kann (S. 2).\n\nStreifenleiterplatinen: Bohrungen sind mittels Kupferstreifen verbunden, die parallel zur Längsseite verlaufen. Verbindungen müssen teilweise durch das Durchtrennen von Leitern unterbrochen werden (S. 2).\n\nHF-Platinen: Diese nutzen spezielle HF-Materialien und verfügen einseitig über ein Punktraster sowie auf der anderen Seite über eine durchgehende Kupferfläche zur Abschirmung (S. 2).\n\nZusätzlich zur Nutzung von Platinen gibt es Methoden wie die freie oder fliegende Verdrahtung, bei der Bauteile direkt miteinander verlötet werden (S. 2).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778787241514,
+      "channel": "plan_pipe_5694d5c68ad2",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die prägnante Zusammenfassung der bereitgestellten Dokumentation:\n\n**Verdrahtungs- und Montagetechniken (S. 3)**\nFür den Aufbau von Schaltungen auf Platinen stehen verschiedene Methoden zur Verfügung:\n- Silberdraht: Einsatz für manuelle Verdrahtung und Brücken; Draht muss zur Geradführung vorgereckt werden.\n- Streifenleiter-Technik: Nutzung von Streifenleiterplatinen mit durchtrennten Leiterbahnen.\n- Wire wrap: Stabiles Wickeln von Draht um quadratische Pins zur Kaltverschweißung.\n- Fädeln: Einsatz von dünnem, isoliertem Draht, dessen Polyurethan-Isolation erst beim Löten verdampft.\n\n**Bearbeitung und Sicherheit (S. 3-4)**\nDas Zuschneiden von Platinenmaterialien (Epoxid, Hartpapier, Pertinax) erfordert geeignetes Werkzeug wie Sägen oder Ritzer. Beim Umgang mit Chemikalien sind zwingend Schutzmaßnahmen wie Augenschutz und Handschuhe zu treffen. Verbrauchte Chemikalien (Ätzmittel) dürfen niemals im häuslichen Abfluss entsorgt werden, da sie die Umwelt und Kläranlagen schädigen; sie müssen als Sondermüll bei Schadstoffannahmestellen abgegeben werden.\n\n**Maskierungsverfahren zur Platinenherstellung (S. 4)**\nUm Leiterbahnen gegen Ätzmittel zu schützen, werden Masken erstellt:\n- Ätzresistente Stifte: Manuelles Zeichnen für Einzelstücke.\n- Fotografische Verfahren: Nutzung von Fotolack (Positiv-/Negativ-Verfahren), bei dem die Maske durch UV-Belichtung auf die Platine übertragen wird.\n- Direkt-Toner-Verfahren: Übertragung einer mit Laserdrucker gedruckten Maske mittels Wärme (Aufbügeln) auf die Platine.\n\n**Layout-Design und Belichtung (S. 5)**\nModerne Layout-Erstellung erfolgt meist am Computer (z. B. mit KiCad, EAGLE oder FreePCB). Beim Entwurf sollte auf eine Minimierung von Drahtbrücken geachtet werden. Für selbstgeätzte Platinen sind großzügigere Abmessungen bei Vias und Pads ratsam. Bei der Belichtung muss die Schichtseite der Vorlage direkt auf der Platine liegen, um Lichtbeugung und somit Unterstrahlungen zu vermeiden. Die Strombelastbarkeit der Leiterbahnen hängt von der Breite und der Übertemperatur ab, wobei für eine Standard-Kupferschicht von $35\\mu\\text{m}$ entsprechende Diagramme als Grundlage dienen (S. 5).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778787241515,
+      "channel": "plan_pipe_5694d5c68ad2",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der bereitgestellten Informationen zur Platinenherstellung:\n\n**Erstellung der Belichtungsvorlage**\nDie Vorlage bildet die Maske für das spätere Ätzen. Bei der Verwendung von Laser- oder Tintenstrahldruckern ist das Spiegeln der Vorlage entscheidend, damit die bedruckte Seite direkt auf der Fotoschicht aufliegt und Unterstrahlungen minimiert werden (S. 6). Zur Steigerung der Lichtdichte können spezielle Toner, „Tonerverdichter“ oder das Transparentmachen des Papiers mit Öl beitragen (S. 6). Höchste Druckqualität ist essenziell. Alternativ bieten professionelle Filmbelichter (Photoplotter) mit 2400 dpi eine deutlich höhere Kantenschärfe und Kontrastqualität (S. 6).\n\n**Manuelle Vorlagenerstellung**\nAlternativ zur Computernutzung kann die Vorlage manuell erstellt werden:\n- Direktes Zeichnen mit ätzfesten Stiften (z.B. Edding oder spezielle Ätzstifte) auf die Kupferbeschichtung (S. 6).\n- Tuschezeichnungen auf Transparentpapier mittels Schablonen (S. 6).\n- Klebetechnik mit schwarzen Symbolen und Bändern auf formstabiler Klarsichtfolie (S. 7).\n\n**Direkt-Toner-Verfahren**\nBeim Direkt-Toner-Verfahren wird der Toner direkt als Ätzresist auf die Platine übertragen. Hierzu eignen sich Transferfolien oder glatte Papiere (z.B. Werbematerialien wie Kataloge). Eine Korrekturmöglichkeit besteht kaum; Fehler müssen durch Reinigung und einen neuen Druck behoben werden (S. 7).\n\n**Belichtungsprozess**\nFür das fotopositiv arbeitende Material wird eine Lichtquelle im UV-A/blau-violetten Bereich ($400-450\\text{nm}$) benötigt (S. 7).\n- Lichtquellen: UV-Leuchtstoffröhren (Farbe 05, 08, 09), Gesichtsbräuner oder UV-LEDs. Klassische Halogen-Baustrahler sind aufgrund von UV-Filtern und Hitzeentwicklung meist ungeeignet (S. 7).\n- Qualitätskontrolle: Ein enger Kontakt zwischen Maske und Fotoschicht ist zwingend, oft durch eine Glasplatte (Quarz- oder Plexiglas) sichergestellt (S. 7).\n- Sicherheit: Bei offenen Systemen ist ein geeigneter Augenschutz gegen UV-Strahlung unerlässlich (S. 7).\n- Präzision: Die optimale Belichtungszeit sollte über eine Belichtungsreihe ermittelt werden; bei doppelseitigen Platinen hilft das vorherige Bohren von Ausrichtungslöchern (S. 7).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778787241516,
+      "channel": "plan_pipe_5694d5c68ad2",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 7
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Textes (S. 8-9):\n\n**Belichtungsreihe zur Bestimmung der Belichtungszeit**\nUm die optimale Belichtungszeit für fotobeschichtete Leiterplatten zu ermitteln, ist eine logarithmische Zeitreihe sinnvoll, da sich Belichtungsintensität und Schwärzung reziprok verhalten. Ein linearer Zeitabstand ist ungeeignet, da die effektive Wirkungszunahme bei konstanten Intervallen abnimmt (S. 8). Empfohlen wird eine Steigerung um den Faktor 2 (1, 2, 4, 8... Sekunden) für die Zeitstufen. Bei feineren Abstufungen kann der Faktor $1{,}414$ bzw. $1{,}189$ angewendet werden (S. 8).\n\n**Vorgehensweise bei der Belichtung**\n1. Ein kurzer Platinenstreifen wird schrittweise mit einer lichtundurchlässigen Pappe abgedeckt.\n2. Es wird mit der kürzesten Zeit begonnen. Nach jeder weiteren Belichtungszeit (z. B. 32s, 64s, 128s) wird ein Segment abgedeckt und die Gesamtbelichtungszeit der verbleibenden Abschnitte erhöht (S. 8-9).\n3. UV-Leuchtstofflampen müssen vorab mindestens drei Minuten vorgeheizt werden (S. 9).\n\n**Entwicklungsprozess**\nFür die Entwicklung wird Positiv-Entwickler oder Ätznatron (NaOH) verwendet. Bei Ätznatron liegt die Dosierung bei 7 bis 15 Gramm pro Liter Wasser (20-25 °C). Da NaOH stark hygroskopisch ist, muss es luftdicht verschlossen gelagert werden. Der Entwickler sollte frisch angesetzt werden, da er mit Luftsauerstoff reagiert und schnell an Wirkung verliert. Das Leiterbahnbild sollte nach maximal zwei Minuten sichtbar sein (S. 9).\n\n**Direkt-Toner-Verfahren**\nAlternativ zur Fotobeschichtung kann Toner direkt auf die Platine übertragen werden. Hierbei wird der Toner durch Wärme und mechanischen Druck (Bügeleisen oder Laminiergerät) auf die zuvor gereinigte und entfettete Kupferoberfläche transferiert. Anschließend wird das Papierträger-Material in Wasser eingeweicht und vorsichtig entfernt (S. 9).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778787241517,
+      "channel": "plan_pipe_5694d5c68ad2",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 8,
+        "end": 9
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des bereitgestellten Textes zur Platinenherstellung mittels Toner-Transfer-Verfahren und verschiedenen Ätzmitteln:\n\n**Toner-Transfer-Verfahren**\n\nFür feines Routing (< 16mil) empfiehlt sich ein modifiziertes Laminiergerät (200°C, Sicherheitsüberbrückung der Thermosicherung nur unter Aufsicht auf feuerfestem Untergrund). Für grobes Routing (> 50mil) reicht ein Standardlaminierdurchlauf gefolgt von der Nachbearbeitung mit einem Bügeleisen bei 120°C. Das Papier (z. B. Reichelt-Katalog) wird im handwarmen Zustand mit Badreiniger benetzt, abgerubbelt und die Platine anschließend gründlich getrocknet, um durch Papierreste verursachte Kurzschlüsse zu vermeiden. Fehlerhafte Stellen können mit Aceton entfernt und das Layout erneut übertragen werden. Nach dem Ätzen wird der Toner mit Aceton entfernt und die Platine ggf. mit Lotpaste verzinnt.\n\n**Ätzmittel im Vergleich**\n\nEisen(III)-chlorid:\nDas Mittel ist sehr ergiebig und beständig, aber undurchsichtig, was den Ätzfortschritt schwer kontrollierbar macht. Es verursacht hartnäckige Rostflecken. Die optimale Ätztemperatur liegt zwischen Raumtemperatur und 40°C. Bei Bedarf kann ein Defizit der Schaumbildung in Ätzanlagen durch die Zugabe von ca. 20ml Bier korrigiert werden.\n\nNatriumpersulfat:\nDiese Lösung ist durchsichtig und ermöglicht somit eine bessere Prozesskontrolle. Sie ist jedoch weniger ergiebig als Eisen(III)-chlorid. Die optimale Arbeitstemperatur liegt bei 40°C; ab 50°C verliert das Ätzmittel durch Sauerstoffausgasung seine Wirkung. Da es zu Gasbildung kommt, müssen Aufbewahrungsgefäße belüftet sein. Natriumpersulfat wirkt gesundheitsschädlich, allergieauslösend und brandfördernd.\n\nAmmoniumpersulfat:\nAufgrund der hohen Giftigkeit und Kristallbildung wird von der Verwendung für Einsteiger abgeraten.\n\nDie allgemeine Ätzdauer beträgt bei einer Kupferdicke von 35 \\mu m je nach Temperatur und Sättigung der Lösung zwischen wenigen Minuten und einer Stunde.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778787241518,
+      "channel": "plan_pipe_5694d5c68ad2",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 10,
+        "end": 10
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der Abschnitte S. 11–13:\n\n**Ätzmittel und Sicherheit**\n*   Bei der Verwendung von Kupfer-II-Chlorid ist äußerste Vorsicht geboten: Der Ansatz erfordert genaueste Dosierung, da sonst gefährliche Aerosole freigesetzt werden, die Metalle im Raum angreifen (S. 11).\n*   Die Lagerung darf niemals in fest verschlossenen Behältern erfolgen, da die Lösung permanent ausgast und somit Berstgefahr besteht (S. 11).\n*   Alle verbrauchten Ätzlösungen sind aufgrund ihres Kupfergehalts hochgiftig; sie dürfen keinesfalls in die Kanalisation gelangen und müssen bei Schadstoffsammelstellen entsorgt werden (S. 11).\n*   Eine verbesserte Ätzwirkung wird durch konstante Durchlüftung der Lösung (bei 40–50 °C) erreicht (S. 11).\n\n**Anlagentypen für das Ätzen**\n*   Sprühätzanlagen: Ermöglichen die besten Ergebnisse bei kleinsten Strukturen, da stets frisches Ätzmittel an die Oberfläche gelangt und Schlamm bzw. Gasblasen entfernt werden (S. 11).\n*   Schaumätzanlagen: Nutzen einen Schaumteppich für den Ätzprozess; ein Selbstbau aus Hart-PVC und Acryl ist möglich (S. 11–12).\n*   Küvettenätzanlagen: Kosteneffiziente und platzsparende Lösung, die üblicherweise mit Aquariumheizungen und Luftpumpen ausgestattet wird (S. 12).\n*   Schalenätzanlagen: Die einfachste Methode. Durch periodisches Rütteln oder motorisches Bewegen wird die Ätzgütung verbessert. Bei Eisen(III)-chlorid empfiehlt es sich, die Platine mit der Kupferseite nach unten zu legen (S. 12).\n\n**Bohren der Platinen**\n*   Für präzise Bohrungen ist eine Ständerbohrmaschine erforderlich (S. 13).\n*   Während für Pertinax-Material HSS-Bohrer ausreichen, sind für glasfaserverstärktes Material (FR4) Hartmetallbohrer wegen ihrer Standzeit und Härte zwingend zu empfehlen, wobei hier ein Verkanten vermieden werden muss (S. 13).\n*   Die Bohrerdrehzahl sollte mindestens $$6000\\text{ U/min}$$ betragen (S. 13).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778787241519,
+      "channel": "plan_pipe_5694d5c68ad2",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 11,
+        "end": 13
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Informationen (S. 14-15):\n\n**Kontur- und Isolationsfräsen von Platinen**\n\nDas Fräsen von Platinen ist eine Alternative zum Ätzen, wird jedoch aufgrund der Anschaffungskosten für Anlagen eher selten von Hobbyisten genutzt. Beim Prozess wird überflüssiges Kupfer entfernt, wobei drei Methoden unterschieden werden: das vollständige Entfernen des Kupfers, das Entfernen der Leiterbahnkonturen oder das Erzeugen von sogenannten Voronoi-Pfaden (S. 14).\n\n**Prozessablauf und technische Aspekte**\nDas Layout erfolgt analog zum Ätzverfahren. Während die Leiterbahnbreite flexibel ist, limitiert der Fräserdurchmesser den minimalen Leiterbahnabstand. Die Umsetzung in Maschinenbefehle erfolgt über Konverter (z. B. Eagle-Plugins oder externe Software wie GCAM oder pcb2gcode), die Gerber- oder Excellon-Daten in GCode umwandeln. Beim Fräsen selbst werden bevorzugt Bohrnutenfräser eingesetzt, da Fräsungen auch mitten in der Platine beginnen können (S. 14-15).\n\n**Nachbearbeitung und Oberflächenschutz**\nNach dem Bohren und Fräsen muss der Fotoresist-Lack mit Spiritus oder Aceton entfernt werden. Um Korrosion zu verhindern, sollte das Kupfer geschützt werden. Dies kann durch die verbliebene Lackschicht oder durch eine Zinnschicht erfolgen (S. 15).\n\n**Verzinnungsmethoden für den Heimgebrauch**\n1. Chemisches Verzinnen: Ein Bad in speziellen Lösungen erzeugt eine sehr dünne, glatte Zinnschicht, die jedoch langfristig nicht stabil ist (S. 15).\n2. Heißverzinnen: Hierbei wird „Fitting-Lot“ (eine mit Zinn angereicherte Flussmittelpaste) dünn aufgetragen und mit einem Heißluftfön erhitzt. Wichtig ist ein sparsamer Auftrag, um Kurzschlüsse durch Zinnbrücken zwischen den Leiterbahnen zu vermeiden. Rückstände lassen sich anschließend einfach mit Wasser abwaschen (S. 15).\n\nHinweis: Die Standzeit der Fräser ist bei Epoxydharzmaterial gering, was die Kosten für das Verfahren erhöht (S. 15).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778787241520,
+      "channel": "plan_pipe_5694d5c68ad2",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 14,
+        "end": 15
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Der vorliegende Abschnitt auf Seite 16 beschreibt zwei Software-Werkzeuge für das mechanische Ätzen von Leiterplatten (PCB):\n\nVisolate dient der Erstellung von Voronoi-Werkzeugpfaden für das mechanische Ätzen von Leiterplatten und kann über SourceForge bezogen werden (S. 16).\n\nFlatCAM ist ein weiteres Programm, das dazu genutzt wird, G-Code-Fräsdateien zu generieren (S. 16).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778787241521,
+      "channel": "plan_pipe_5694d5c68ad2",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 16,
+        "end": 18
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778787241604,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Warum ist es beim Fotopositiv-Verfahren entscheidend, dass die bedruckte Seite der Belichtungsvorlage direkt auf der lichtempfindlichen Schicht der Platine aufliegt?",
+            "options": [
+              "Um den Kontrast durch die Dicke der Folie zu erhöhen.",
+              "Um Unterstrahlungen und Beugungseffekte des UV-Lichts an den Kanten zu minimieren.",
+              "Um die chemische Reaktion des Lacks mit dem Toner zu katalysieren.",
+              "Um ein spiegelverkehrtes Drucken des Layouts zu vermeiden."
+            ],
+            "correctIndex": 1,
+            "explanation": "Wenn sich das Trägermaterial (Folie/Papier) zwischen Maske und Schicht befindet, wird das UV-Licht an den Kanten gebeugt. Das führt zu 'Unterstrahlung', wodurch Leiterbahnen ungewollt dünner werden."
+          },
+          {
+            "question": "Welche Vorkehrung ist beim Layout-Design für selbstgeätzte Platinen besonders sinnvoll, um die manuelle Bearbeitung zu erleichtern?",
+            "options": [
+              "Verwendung der kleinstmöglichen Vias und Bohrungen, um Material zu sparen.",
+              "Vermeidung von Masseflächen, um den Ätzmittelverbrauch zu senken.",
+              "Verwendung größerer Vias und Pads gegenüber den Standardeinstellungen.",
+              "Verwendung des Fotonegativ-Verfahrens anstelle des Fotopositiv-Verfahrens."
+            ],
+            "correctIndex": 2,
+            "explanation": "Da das manuelle Bohren eine gewisse Ungenauigkeit aufweist, sind vergrößerte Pads und Vias robuster und erleichtern das Platzieren des Bohrers deutlich."
+          },
+          {
+            "question": "Warum sollten verbrauchte Ätzmittel keinesfalls über das Waschbecken entsorgt werden?",
+            "options": [
+              "Da die Säuren die Abwasserrohre auflösen würden.",
+              "Da die Kupfer-Ionen keimtötend wirken und die biologische Klärstufe einer Kläranlage schädigen können.",
+              "Da sie mit den Bakterien im Wasser zu einem explosiven Gasgemisch reagieren.",
+              "Da das Kupfer in den Klärschlamm gelangt und diesen für die Landwirtschaft unbrauchbar macht."
+            ],
+            "correctIndex": 1,
+            "explanation": "Kupfer-Ionen im Ätzmittel töten die Bakterien ab, die für die Abwasserreinigung in Kläranlagen essenziell sind, wodurch die Anlage funktionsunfähig werden kann."
+          },
+          {
+            "question": "Beim Fotopositiv-Verfahren wird der Lack durch UV-Licht belichtet. Was geschieht dabei?",
+            "options": [
+              "Die Moleküle vernetzen und werden extrem widerstandsfähig gegen Ätzmittel.",
+              "Der Lack wird an den belichteten Stellen gehärtet, sodass er später den Kupferschutz bildet.",
+              "Verbindungen im Lack werden aufgebrochen, wodurch er an den belichteten Stellen vom Entwickler abwaschbar wird.",
+              "Die Farbe des Lacks ändert sich, damit man die Maske besser kontrollieren kann."
+            ],
+            "correctIndex": 2,
+            "explanation": "Beim Positiv-Verfahren macht das Licht den Lack löslich. Daher bleibt nach dem Entwickeln nur dort Lack stehen, wo vorher die Maske (die Leiterbahnen) das Licht abgehalten hat."
+          },
+          {
+            "question": "Was ist ein technischer Nachteil beim 'Direkt-Toner-Verfahren' mit modernen Laserdruckern?",
+            "options": [
+              "Moderne Drucker bringen oft zu viel Toner auf, was das Ätzbild unscharf macht.",
+              "Der Toner moderner Drucker ist nicht säurefest und löst sich beim Ätzen sofort auf.",
+              "Moderne Drucker übertragen den Toner nur auf Papier, nicht auf Transferfolien.",
+              "Moderne Geräte tragen weniger Toner auf, wodurch für den Transfer auf die Platine oft zu wenig Material zur Verfügung steht."
+            ],
+            "correctIndex": 3,
+            "explanation": "Die heute geringere Toner-Auftragsmenge macht es schwieriger, eine ausreichend dichte Maske auf die Platine zu übertragen."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778787241605,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist die Tg (Glass Transition Temperature) bei Platinenmaterial?",
+            "back": "Die Temperatur, ab der das Basismaterial weich wird. Die Betriebstemperatur des Materials liegt unterhalb dieses Wertes."
+          },
+          {
+            "front": "Was bedeutet die Abkürzung 'FR' bei Platinenmaterialien?",
+            "back": "FR steht für 'flame retardant' (flammenhemmend)."
+          },
+          {
+            "front": "Was zeichnet FR-4 Platinenmaterial aus?",
+            "back": "Es besteht aus mit Epoxid-Kunstharz getränktem Glasfasergewebe und ist das heute am weitesten verbreitete Material."
+          },
+          {
+            "front": "Was bedeutet die Einheit '1 oz copper' bei Platinen?",
+            "back": "Dies bezeichnet eine Kupferauflage von 35 µm Dicke. Der Name leitet sich davon ab, dass ein Quadratfuß Kupferfolie eine Unze (28,35 g) wiegt."
+          },
+          {
+            "front": "Was ist der Unterschied zwischen Loch- und Punktrasterplatinen?",
+            "back": "Lochrasterplatinen haben nur Bohrungen ohne Kupferauflage. Bei Punktrasterplatinen ist um jede Bohrung eine Kupferfläche angeordnet."
+          },
+          {
+            "front": "Welches Verfahren nutzt 'härtende' chemische Eigenschaften bei UV-Belichtung?",
+            "back": "Das Fotonegativ-Verfahren, bei dem die belichteten Stellen aushärten und die nicht belichteten Stellen abgewaschen werden."
+          },
+          {
+            "front": "Warum müssen beim Fotopositiv-Verfahren die Leiterbahnen auf der Vorlage spiegelverkehrt sein?",
+            "back": "Damit die bedruckte Seite der Folie direkt auf der lichtempfindlichen Schicht der Platine aufliegt und Unterstrahlungen durch Lichtbrechung im Trägermaterial vermieden werden."
+          },
+          {
+            "front": "Wieso dürfen verbrauchte Ätzmittel niemals im Wasch- oder Spülbecken entsorgt werden?",
+            "back": "Die enthaltenen Kupfer-Ionen sind keimtötend und können die Bakterien in der Kläranlage abtöten, was diese funktionsunfähig macht."
+          },
+          {
+            "front": "Was ist der Vorteil von Masseflächen beim Ätzen von Platinen?",
+            "back": "Sie reduzieren den Verbrauch von Entwickler- und Ätzmittel, da weniger Kupfer weggeätzt werden muss, und sie haben zudem elektrische Vorteile."
+          },
+          {
+            "front": "Was passiert bei der Wire-Wrap-Technik?",
+            "back": "Draht wird unter hohem Anpressdruck stramm um quadratische Pins gewickelt, wodurch eine Kaltverschweißung zwischen Draht und Pin entsteht."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-cs-maker-arduino-spezial_2",
+      "slides": [
+        {
+          "title": "Lektion 3: Platinen selbst herstellen",
+          "bullets": [
+            "Vom Schaltplan zum professionellen Aufbau.",
+            "Lernen Sie Ätzen, Löten und Bohren."
+          ],
+          "notes": "In dieser Einheit betrachten wir den kompletten Prozess der eigenen Platinenfertigung – von den Grundlagen bis zur fertigen Schaltung.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Grundlagen und Basis",
+          "bullets": [
+            "Materialwahl: FR-4 ist heute Standard.",
+            "Kupferauflagen meist 35µm (1 oz).",
+            "Vorbereitung: Zuschneiden und Kanten glätten.",
+            "Sicherheit: Schutzbrille und Handschuhe tragen."
+          ],
+          "notes": "Bevor wir starten, ist die Wahl des Basismaterials entscheidend. Sicherheit steht beim Umgang mit den Materialien an oberster Stelle.",
+          "page_range": "1-3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Layout und Belichtung",
+          "bullets": [
+            "Ausgabe: Laser-/Tintenstrahldrucker auf Folie.",
+            "Spiegelung beachten: Lötseite korrekt übertragen.",
+            "Transparenz optimieren (z.B. durch Öl).",
+            "Belichtungsreihe für optimale Ergebnisse bestimmen."
+          ],
+          "notes": "Ein präzises Layout ist die Voraussetzung für eine gute Platine. Mit einer systematischen Belichtungsreihe lässt sich die perfekte Zeit ermitteln.",
+          "page_range": "6-9",
+          "image_prompt": ""
+        },
+        {
+          "title": "Ätzen und Chemie",
+          "bullets": [
+            "Ätzmittel: Eisen(III)-chlorid oder Natriumpersulfat.",
+            "Anwendung: Küvetten oder Schaumätzgeräte.",
+            "Umwelt: Chemikalien niemals in den Abfluss.",
+            "Entsorgung via Schadstoffsammelstellen vornehmen."
+          ],
+          "notes": "Nach dem Entwickeln folgt das Ätzen. Hierbei ist der fachgerechte Umgang mit Chemikalien und deren Entsorgung essenziell für die Umwelt.",
+          "page_range": "4, 10-12",
+          "image_prompt": ""
+        },
+        {
+          "title": "Bohren und Fertigstellung",
+          "bullets": [
+            "Mechanik: Bohrständer für saubere Löcher.",
+            "Alternative: Konturfräsen als mechanisches Verfahren.",
+            "Oberflächenschutz: Verzinnen gegen Oxidation.",
+            "Heißverzinnen (Fitting-Lot) als einfache Methode."
+          ],
+          "notes": "Zum Abschluss wird gebohrt und verzinnt. Ein guter Schutz der Kupferoberfläche sorgt dafür, dass Ihre Arbeit lange erhalten bleibt.",
+          "page_range": "14-16",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 3: Platinen selbst herstellen - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778787241504,
+      "pdfName": "Platinen selber herstellen"
+    }
+  ],
+  "sourceHash": "7a2695c4bca54038"
+}

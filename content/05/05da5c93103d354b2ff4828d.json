@@ -1,0 +1,509 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Web Fullstack — JavaScript, PHP, Databases - Lesson 3 — PHP and MySQL Programming",
+    "pdfName": "PHP and MySQL Programming",
+    "createdAt": 1778576762904,
+    "exportedAt": "2026-05-12T09:06:02.905Z",
+    "meta": {
+      "courseId": "course-en-web-fullstack",
+      "lessonIndex": 2,
+      "courseTitle": "Web Fullstack — JavaScript, PHP, Databases",
+      "lessonObjective": "Server-side scripting plus database integration.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-php-and-mysql-programming",
+            "title": "PHP and MySQL Programming",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/PHP_and_MySQL_Programming"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_c4d13a39bd66",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-5",
+          "chapterTitle": "Introduction to PHP and Syntax Overview",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "6-8",
+          "chapterTitle": "Operators, Arrays, and Control Structures",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "9-10",
+          "chapterTitle": "Functions, Classes, and File Handling",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "11-12",
+          "chapterTitle": "Database Connectivity and Error Handling",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "13-14",
+          "chapterTitle": "Session Handling",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "14-16",
+          "chapterTitle": "Command Line and Form Handling",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "17-18",
+          "chapterTitle": "Introduction to MySQL and Databases",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "18-21",
+          "chapterTitle": "Table Management and Queries",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "22-26",
+          "chapterTitle": "Common Functions and XML",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576762904,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Lesson 3: PHP and MySQL Programming Summary\n\nThis lesson outlines the fundamentals of integrating PHP as a server-side scripting language with MySQL for database-driven web development.\n\n#### 1. PHP Fundamentals\n*   **Syntax & Structure:** PHP code is embedded within HTML using `<?php [code] ?>` tags. Statements must end with a semicolon (p. 4).\n*   **Variables:** Denoted by the `$` prefix; they do not require explicit type declaration as PHP handles dynamic type conversion automatically (p. 5).\n*   **Control Flow:** Supports standard conditional logic (`if...else`, `switch`) and iteration structures (`for`, `foreach`, `while`, `do...while`) (p. 7-8).\n*   **Functions & Classes:** PHP supports modular programming through functions and object-oriented programming via classes and constructors (p. 9).\n\n#### 2. Data Persistence\n*   **File Handling:** PHP interacts with the file system using `fopen()`, `fputs()` (write), and `fgets()` (read) to manage data outside of a database (p. 10-11).\n*   **Session Management:** Since PHP is \"stateless,\" `session_start()` is used to maintain user state across multiple pages. Data is stored and retrieved via the `$_SESSION[]` array (p. 13). \n    *   *Note:* Sessions must be started before any output is sent to the browser.\n*   **Form Handling:** Input from HTML forms is captured using the `$_GET` or `$_POST` superglobal arrays. It is recommended to use `POST` for sensitive data like passwords to avoid exposing information in the URL (p. 16).\n\n#### 3. MySQL Database Integration\n*   **Connection:** Use `mysql_connect()` to establish a link to the server and `mysql_select_db()` to target a specific database (p. 11).\n*   **Query Execution:** The `mysql_query()` function is used to execute SQL commands. `SELECT` queries return a result set, which can be retrieved row-by-row using `mysql_fetch_row()` (p. 11-12).\n*   **Database Schema:** MySQL uses a relational structure where data is organized into tables consisting of rows and columns (p. 17). \n*   **Best Practices:** Always close database connections with `mysql_close()` to free resources, and utilize `mysql_error()` for debugging (p. 12).\n\n#### 4. Advanced Concepts\n*   **Command Line Interface (CLI):** PHP is not limited to web browsers; it can be used for administrative scripts and GUI applications via the PHP-CLI, reading input from the standard input stream (`php://stdin`) (p. 14-15).\n*   **XML:** The language includes robust support for parsing and manipulating XML documents, making it versatile for data exchange (p. 3).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576762904,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-web-fullstack_2\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 3 — PHP and MySQL Programming - Presentation</span><span class=\"pm-chat-count\">9 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lesson 3: PHP and MySQL Programming</div><ul class=\"pm-chat-slide-bullets\"><li>Introduction to server-side scripting with PHP.</li><li>Integration and database management using MySQL.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778576762905,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Here is a summary of the provided text (Sections [S.1]–[S.5]):\n\n### Overview of PHP\nPHP, originally standing for \"Personal Home Page,\" is now officially known as the recursive acronym \"PHP: Hypertext Preprocessor.\" It is a server-side language where code is processed by the server, and the resulting HTML is sent to the user's browser. Beyond web development, PHP is used for command-line tools and, since version 5, supports Object-Oriented programming [S.3].\n\n### Syntax and Foundations\n*   **Tags:** PHP code is embedded in HTML using the <?php [code] ?> tag structure [S.4].\n*   **Comments:** The language supports single-line comments using // or #, and multi-line comments using /* ... */ [S.4].\n*   **Variables:** \n    *   Variables are denoted by a $ prefix and do not require explicit type declarations [S.5].\n    *   PHP supports dynamic variables (e.g., $$c creates a variable whose name is the value of $c) [S.5].\n    *   Variables are automatically handled and converted by PHP based on context (e.g., used as a string or an integer) [S.5].\n*   **Booleans and Equality:** \n    *   Booleans can be true/1 or false/0.\n    *   There is a distinction between \"equal\" ($==$), where values match regardless of type, and \"identical\" ($===$), where both the value and the type must be the same [S.5].\n\n### Program Structure\nThe language supports standard programming constructs, including:\n*   Arithmetic, assignment, and comparison operators [S.2].\n*   Concatenation [S.2].\n*   Decision and loop statements, such as if/else, switch, for, foreach, while, and do-while [S.2].\n*   Support for functions and classes [S.2].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576762914,
+      "channel": "plan_pipe_c4d13a39bd66",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Based on the provided text, here is a summary of PHP operators, data structures, and control flow statements:\n\n### Operators\n*   **Arithmetic:** Supports standard operations including addition ($+$), subtraction ($-$), multiplication ($*$), division ($/$), modulus ($\\%$), as well as increment ($++$) and decrement ($--$) (p. 6).\n*   **Assignment:** Uses the $=$ operator to assign values to variables (p. 6).\n*   **Comparison:** Includes equality ($==$), identity ($===$), inequality ($!=$), non-identity ($!==$), and magnitude comparisons ($<, >, <=, >=$) to evaluate relationships between values (p. 6).\n*   **Concatenation:** The dot operator ($.$) is used to combine two strings (p. 7).\n\n### Data Structures\n*   **Arrays:** PHP supports both numerically indexed arrays (e.g., $array(1, 2)$ accessed via integer keys) and associative arrays (e.g., $array(\"key\" => \"value\")$ accessed via string keys) (p. 7).\n\n### Decision and Loop Statements\n*   **Decision Making:**\n    *   **If ... Else:** Evaluates logical conditions to determine code execution (p. 7).\n    *   **Switch:** Executes different code blocks based on matching a variable against multiple constant values (p. 7-8).\n*   **Loops:**\n    *   **For:** Executes code a specific number of times based on an initializer, condition, and incrementer (p. 8).\n    *   **Foreach:** Iterates through every element within an array (p. 8).\n    *   **While:** Executes code repeatedly as long as a specified condition remains true (p. 8).\n    *   **Do ... While:** Similar to a while loop, but guarantees that the code block executes at least once before checking the condition (p. 8).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576762915,
+      "channel": "plan_pipe_c4d13a39bd66",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 8
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This overview covers fundamental PHP concepts including functions, object-oriented programming, and file handling based on sections [S.9] and [S.10].\n\n### Functions and Classes\n* **Functions:** Defined using the `function` keyword, these encapsulate logic and can return values. For example:\n  $$ \\text{function square\\_number}(\\$n) \\{ \\text{return } \\$n * \\$n; \\} $$\n* **Classes:** Used to create objects. A class contains properties and methods. In modern PHP, constructors are defined using the `__construct` method to initialize objects.\n\n### File Handling\nThe process of interacting with files is consistent across read and write operations:\n\n1. **Opening Files:** Use the `fopen($filename, $mode)` function, which returns a file handler. \n2. **Writing Data:** Use `fputs($file_handler, $data)` to input strings into the file.\n3. **Reading Data:** Use `fgets($file_handler)` to retrieve content from the file.\n4. **Closing Files:** Always use `fclose($file_handler)` to release the file once operations are complete.\n\n### File Inclusion\nPHP allows developers to embed code from one file into another using the `include()` function. This is particularly useful for modularizing code by importing external files like `objects.php` directly into the execution flow.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576762916,
+      "channel": "plan_pipe_c4d13a39bd66",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 9,
+        "end": 10
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers file handling and database interaction using PHP. The key points are summarized below:\n\n**File Operations**\nData can be read from files using functions like $fgets()$ to retrieve specific lines or $fread()$ along with $filesize()$ to capture the entire content of a file. After processing, files should be closed using $fclose()$ [S.11].\n\n**Database Connectivity**\nInteraction with a MySQL database requires opening a connection with $mysql_connect()$, followed by selecting a specific database using $mysql_select_db()$ [S.11]. Queries are executed via the $mysql_query()$ function. While queries like $INSERT$ do not return data, $SELECT$ queries provide a result set that requires further processing [S.11].\n\n**Data Retrieval and Manipulation**\nTo retrieve data from a $SELECT$ query, the $mysql_fetch_row()$ function is recommended. It allows developers to loop through the result set row by row, storing each row into a one-dimensional array. This data can then be printed directly or organized into separate arrays for further manipulation [S.12].\n\n**Closing Connections and Error Handling**\nAlthough not always mandatory, it is best practice to close database connections using $mysql_close()$ when finished or when switching to a different database [S.12]. If issues arise during database operations, error messages can be accessed via the $mysql_error()$ function, which is particularly useful for debugging purposes [S.12].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576762917,
+      "channel": "plan_pipe_c4d13a39bd66",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 11,
+        "end": 12
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This text covers two primary topics in PHP: session management and command-line interface (CLI) development.\n\n**Session Handling**\nBecause HTML and PHP are stateless, sessions are used to persist data across multiple pages. Data is stored on the web server and associated with the browser via a unique Session ID.\n* Implementation: A session must be initialized using `session_start()` at the very top of each page, with no preceding spaces or output (p. 13).\n* Data Management: Session variables are stored and retrieved using the global `$_SESSION` array (p. 13).\n* Destruction: To end a session, such as logging a user out, one must call `session_start()` followed by `session_destroy()` (p. 14).\n\n**Command Line Programming**\nModern PHP extends beyond web servers to include GUI and command-line applications.\n* Setup: Users must install the PHP-CLI package. On Linux, this is typically handled via `apt-get` (p. 14).\n* Configuration: For Linux execution, scripts must include a shebang line (`#!/bin/php`) at the start and have their permissions modified using `chmod +x` to become executable. This requirement does not apply to Windows environments (p. 14).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576762918,
+      "channel": "plan_pipe_c4d13a39bd66",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 13,
+        "end": 14
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers session management, command-line interface (CLI) programming, and web-based form handling in PHP.\n\n**Session Management**\nTo log a user out of an application, use the $session\\_destroy()$ function. It is mandatory to call $session\\_start()$ prior to destroying a session because the function specifically targets the currently active session (p. 14).\n\n**PHP Command Line Programming**\nModern PHP extends beyond web servers to include CLI and GUI applications.\n* Setup: Linux users install the PHP-CLI package, while Windows includes it by default.\n* Configuration: On Linux, ensure the file begins with $#!/bin/php$ and is marked as executable using the $chmod$ command (p. 14).\n* Input/Output: Keyboard input is retrieved by opening the file stream $php://stdin$. For formatted output in the CLI, use the newline control character $\\n$ instead of HTML tags, as HTML tags will be treated as plain text (p. 15).\n\n**Form Handling**\nPHP processes HTML form data using the $_GET[]$ and $_POST[]$ superglobal arrays based on the method attribute defined in the form (p. 15-16).\n* GET: Appends form data to the URL. It is generally not recommended for sensitive information like passwords.\n* POST: Transmits data invisibly via server variables, making it the standard choice for authentication and secure input.\n* Implementation: The $name$ attribute assigned to input fields in HTML serves as the key for accessing the corresponding data within the PHP arrays (p. 16).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576762919,
+      "channel": "plan_pipe_c4d13a39bd66",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 14,
+        "end": 16
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary provides an overview of MySQL based on sections [S.17] and [S.18].\n\n### Overview of MySQL\nMySQL is a popular, open-source, relational database management system. It is designed to be multi-threaded and multi-user, making it suitable for both mission-critical production environments and embedded software. It is managed by MySQL AB, and its name is derived from the creator’s daughter, My [S.17].\n\n### Licensing\nMySQL operates under a Dual Licensing model [S.17]:\n*   **GPL (General Public License):** Allows free use under the terms of the open-source license.\n*   **Commercial License:** Required if users wish to distribute MySQL with non-open-source software, require professional warranty support, or wish to contribute to the software's development.\n\n### Database Architecture\nData in MySQL is organized into a hierarchical structure:\n1.  **Databases:** Serve as the top-level container.\n2.  **Tables:** Reside within databases, composed of rows (records) and columns (attributes).\n\n### Essential SQL Commands\nTo interact with the database, the following core queries are used:\n\n*   **Create a Database:** `CREATE DATABASE database_name;` [S.18]\n*   **Select an Active Database:** `USE database_name;` [S.18]\n*   **Create a Table:** This involves defining the table structure, including field names, data types, and default values [S.18]:\n    `CREATE TABLE table_name (field1 type NOT NULL default 'value', ...);`\n\nA standard retrieval of all data from a table is performed using the command `SELECT * FROM table_name;` [S.18].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576762920,
+      "channel": "plan_pipe_c4d13a39bd66",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 17,
+        "end": 18
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the core operations for managing databases and tables in MySQL based on the provided text (pp. 18-21).\n\nDatabase and Table Management\nTo begin, you must create a database using $CREATE DATABASE \\text{`database\\_name`};$ and select it as the active workspace with $USE \\text{`database\\_name`};$. Tables are created within these databases containing defined fields. You can verify existing tables with $SHOW TABLES;$, examine their structure via $SHOW CREATE TABLE \\text{`table\\_name`};$, or view a detailed list of fields using $DESCRIBE \\text{`table\\_name`};$.\n\nData Manipulation\nThe primary operations for managing records within tables include:\n\nSELECT: Retrieves specific data using $SELECT \\text{fields} FROM \\text{table\\_name} [WHERE \\text{condition} ORDER BY \\text{field} LIMIT \\text{number}];$.\nINSERT: Adds new rows using $INSERT INTO \\text{table\\_name} (\\text{fields}) VALUES (\\text{values});$.\nDELETE: Removes specific rows based on conditions using $DELETE FROM \\text{table\\_name} [WHERE \\text{condition}];$.\n\nStructural Modifications and Removal\nThe $ALTER$ command provides extensive options to modify table structures, such as adding or dropping columns, adding indexes, or renaming tables. To remove data while keeping the table structure intact, use $TRUNCATE$. To permanently delete a table or database, use the $DROP$ command.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576762921,
+      "channel": "plan_pipe_c4d13a39bd66",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 18,
+        "end": 21
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section from the provided text details how to parse XML documents using PHP. Here is a summary of the key concepts and procedures:\n\n**Core XML Parsing Steps**\n\n1. Initialization: Create an XML parser using the `xml_parser_create()` function. You may specify an encoding, such as UTF-8 or ISO-8859-1 (p. 23).\n2. Handler Configuration:\n   - Use `xml_set_element_handler()` to define which functions should trigger when the parser encounters start and end tags (p. 23).\n   - Use `xml_set_character_data_handler()` to define a function to process the text content found between tags (p. 23, 24).\n3. Parsing Process: The `xml_parse()` function is used to process the actual data. This is typically done by reading file content into a variable or streaming the data (p. 24).\n4. Conclusion: Once parsing is complete, use `xml_parser_free()` to release the memory allocated to the parser (p. 24).\n\n**Mechanism and Logic**\n\nThe parser operates as an event-driven engine. When the parser scans an XML document, it triggers the user-defined handler functions whenever it encounters specific structures, such as a start tag, an end tag, or character data (p. 25). \n\n**Best Practices**\n\n- Always ensure the parser is cleaned up using `xml_parser_free()` to maintain optimal performance (p. 24).\n- The RSS reader example demonstrates how to maintain state during parsing (e.g., using a boolean `$insideitem` flag) to effectively filter and display relevant data points like titles, descriptions, and links (p. 25-26).\n- When processing large files, it is efficient to use a loop with `fread` to pass data chunks to `xml_parse()` until the end of the file is reached (p. 26).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576762922,
+      "channel": "plan_pipe_c4d13a39bd66",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 22,
+        "end": 26
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576763004,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why is PHP considered a 'preprocessor' rather than just a 'processor'?",
+            "options": [
+              "It converts PHP code into HTML before sending it to the web browser.",
+              "It runs entirely on the client's machine to speed up page loading.",
+              "It compiles PHP code into machine language before the server starts.",
+              "It is only used for command-line scripting and not for web pages."
+            ],
+            "correctIndex": 0,
+            "explanation": "PHP is a server-side script where the webserver processes the PHP file to generate HTML, which is then sent to the client browser."
+          },
+          {
+            "question": "What is the primary technical difference between the '==' and '===' operators in PHP?",
+            "options": [
+              "No difference; they both test for equality.",
+              "'==' checks for value equality, while '===' checks for both value and type identity.",
+              "'===' is faster to execute but less accurate than '=='.",
+              "'==' requires strings to be compared, while '===' handles integers."
+            ],
+            "correctIndex": 1,
+            "explanation": "The '==' operator compares values while ignoring types (e.g., false == 0 is true), whereas '===' requires both value and type to be the same."
+          },
+          {
+            "question": "If you need to ensure a block of code executes at least once, even if the condition is false from the start, which loop should you use?",
+            "options": [
+              "For loop",
+              "While loop",
+              "Foreach loop",
+              "Do ... while loop"
+            ],
+            "correctIndex": 3,
+            "explanation": "A 'do ... while' loop always executes its block at least once before checking the condition at the end."
+          },
+          {
+            "question": "When working with session state in PHP, what is a mandatory requirement regarding 'session_start()'?",
+            "options": [
+              "It must be placed at the very end of the script to ensure security.",
+              "It must be called before any output (like HTML or text) is sent to the browser.",
+              "It must be initialized inside every database connection function.",
+              "It must only be called if the user is logged out."
+            ],
+            "correctIndex": 1,
+            "explanation": "Session start must occur before any output is sent because it sends HTTP headers, and any prior output would trigger an error."
+          },
+          {
+            "question": "In the context of database connectivity, what is the purpose of the mysql_fetch_row() function?",
+            "options": [
+              "To open a connection to the server.",
+              "To execute the SQL query string against the database.",
+              "To retrieve data from a SELECT query by returning current row results into an array.",
+              "To terminate the database connection and prevent memory leaks."
+            ],
+            "correctIndex": 2,
+            "explanation": "mysql_fetch_row() is used to iterate through the result set of a query one row at a time, storing the row data into an array."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778576763005,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What does PHP stand for?",
+            "back": "PHP: Hypertext Preprocessor (a recursive acronym)."
+          },
+          {
+            "front": "What is the PHP tag used to enclose PHP code?",
+            "back": "<?php [code] ?>"
+          },
+          {
+            "front": "What is the primary difference between 'equal' (==) and 'identical' (===) operators in PHP?",
+            "back": "Equal (==) checks for value equality regardless of type. Identical (===) checks that both value and data type are the same."
+          },
+          {
+            "front": "What character is used to denote variables in PHP?",
+            "back": "The $ prefix."
+          },
+          {
+            "front": "What operator is used for string concatenation in PHP?",
+            "back": "The dot (.) operator."
+          },
+          {
+            "front": "What function is used to include the contents of one PHP file into another?",
+            "back": "include()"
+          },
+          {
+            "front": "Which function is used to establish a connection to a MySQL database?",
+            "back": "mysql_connect()"
+          },
+          {
+            "front": "How do you retrieve data from a database result set into an array row-by-row?",
+            "back": "Using the mysql_fetch_row() function within a loop."
+          },
+          {
+            "front": "Why is session_start() necessary when using session variables?",
+            "back": "PHP and HTML are 'stateless'; session_start() enables the persistence of data across multiple pages by creating or resuming a session."
+          },
+          {
+            "front": "What is the purpose of the mysql_error() function?",
+            "back": "It stores and returns error messages generated by the most recent database query, useful for debugging."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-web-fullstack_2",
+      "slides": [
+        {
+          "title": "Lesson 3: PHP and MySQL Programming",
+          "bullets": [
+            "Introduction to server-side scripting with PHP.",
+            "Integration and database management using MySQL."
+          ],
+          "notes": "In this lesson, we explore PHP as a server-side preprocessor and its powerful synergy with MySQL for dynamic applications.",
+          "page_range": "1-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "PHP Fundamentals and Syntax",
+          "bullets": [
+            "PHP code is embedded via <?php tags.",
+            "Comments: //, #, and /* */.",
+            "Variables denoted by $ prefix; no explicit type required.",
+            "Supports dynamic variables and type conversion."
+          ],
+          "notes": "PHP files are processed by the server to produce HTML. Variables are flexible and do not require pre-declaration.",
+          "page_range": "4-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Operators and Control Structures",
+          "bullets": [
+            "Arithmetic, assignment, and comparison operators.",
+            "Concatenate strings using the '.' operator.",
+            "Arrays support numeric and associative indexing.",
+            "Logic flows with if, switch, for, foreach, and while loops."
+          ],
+          "notes": "PHP's control structures allow for complex logic, while operators and arrays handle data manipulation efficiently.",
+          "page_range": "6-8",
+          "image_prompt": ""
+        },
+        {
+          "title": "Functions, Classes, and File Handling",
+          "bullets": [
+            "Functions and Object-Oriented classes (PHP 5+).",
+            "Use fopen() and fclose() for file streams.",
+            "Include files using the include() function.",
+            "fputs() and fgets() for writing and reading data."
+          ],
+          "notes": "PHP supports functional and object-oriented paradigms. File handling allows persisting data between executions.",
+          "page_range": "9-10",
+          "image_prompt": ""
+        },
+        {
+          "title": "Database Connectivity with MySQL",
+          "bullets": [
+            "Connect using mysql_connect() and select a database.",
+            "Use mysql_query() for SQL commands like SELECT or INSERT.",
+            "Retrieve result data using mysql_fetch_row().",
+            "Handle errors and debug via mysql_error()."
+          ],
+          "notes": "Interacting with databases is essential for large-scale applications; we use handlers to manage queries and connection states.",
+          "page_range": "11-12",
+          "image_prompt": ""
+        },
+        {
+          "title": "Session Handling",
+          "bullets": [
+            "PHP is stateless; sessions maintain user data across pages.",
+            "session_start() initiates or resumes a session.",
+            "Stored in persistent files via the $_SESSION[] array.",
+            "Use session_destroy() to end sessions."
+          ],
+          "notes": "Sessions solve the stateless nature of web protocols by tracking visitors uniquely through session IDs.",
+          "page_range": "13-14",
+          "image_prompt": ""
+        },
+        {
+          "title": "Command Line and Form Handling",
+          "bullets": [
+            "CLI allows scripting and GUI app development.",
+            "stdin and stdout enable command-line user interaction.",
+            "Forms use $_GET or $_POST to transfer data.",
+            "Use POST for sensitive data like authentication fields."
+          ],
+          "notes": "Beyond web servers, PHP runs as a CLI tool. Web forms provide the primary input interface for dynamic content.",
+          "page_range": "14-16",
+          "image_prompt": ""
+        },
+        {
+          "title": "MySQL Database and Table Management",
+          "bullets": [
+            "Relational structure: Database > Table > Row.",
+            "Create databases/tables with standard SQL code.",
+            "Use SHOW TABLES and DESCRIBE to inspect schemas.",
+            "Operations: SELECT, INSERT, DELETE, and ALTER."
+          ],
+          "notes": "Structure defines data integrity. Master these SQL commands to define and manage your data relationships effectively.",
+          "page_range": "17-21",
+          "image_prompt": ""
+        },
+        {
+          "title": "Working with XML",
+          "bullets": [
+            "XML is standard for document interoperability.",
+            "Create parsers with xml_parser_create().",
+            "Define element and character handlers for parsing.",
+            "Connect PHP to real-time data like RSS feeds."
+          ],
+          "notes": "PHP functions for XML parsing allow you to ingest and transform standardized data formats into your applications.",
+          "page_range": "22-26",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 3 — PHP and MySQL Programming - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576762904,
+      "pdfName": "PHP and MySQL Programming"
+    }
+  ],
+  "sourceHash": "15a0c4f1d91bb931"
+}

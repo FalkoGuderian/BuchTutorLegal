@@ -1,0 +1,346 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Tour of Programming Languages: From C to Haskell - Lesson 8: Clojure Programming",
+    "pdfName": "Clojure Programming",
+    "createdAt": 1778790610656,
+    "exportedAt": "2026-05-14T20:30:10.657Z",
+    "meta": {
+      "courseId": "course-en-programming-languages-tour",
+      "lessonIndex": 7,
+      "courseTitle": "Tour of Programming Languages: From C to Haskell",
+      "lessonObjective": "Haskell, F#, Clojure, Scala.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-clojure-programming",
+            "title": "Clojure Programming",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Clojure_Programming"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_b0f59d1aa9c6",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-1",
+          "chapterTitle": "Clojure Programming Introduction",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-2",
+          "chapterTitle": "Concepts and Beginner's Guide",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-3",
+          "chapterTitle": "Creating an Applet and Code Examples",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-4",
+          "chapterTitle": "Clojure Resources and Frameworks",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778790610656,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Lesson Summary: Clojure Programming\n\nClojure is a dynamic, functional programming language designed for the Java Virtual Machine (JVM). It is part of a broader ecosystem that includes various implementations across different platforms, such as ClojureScript (JavaScript), ClojureCLR (.NET), and others [S.1].\n\n#### Key Characteristics & Resources\n*   **Core Concepts:** Clojure emphasizes functional programming principles, concurrency, and specific approaches to state and \"mutability\" [S.2].\n*   **Learning Ecosystem:** Beginners have access to a variety of interactive tools, including:\n    *   **Interactive Environments:** *labrepl* and the *Talking to machines* online REPL [S.2].\n    *   **Practice-based Learning:** *4clojure* (for problem-solving) and *clojure-koans* (for syntax and built-in functions) [S.2].\n    *   **Educational Literature:** Books such as *Brave Clojure*, *The Joy of Clojure*, and *Clojure in Action* [S.2, S.3].\n\n#### Practical Applications\nClojure is versatile, with robust support for real-world programming tasks:\n*   **Web Programming:** The ecosystem provides libraries for common tasks, such as **Ring** (standard interface for web servers), **Compojure** (routing/controller logic), and **Hiccup** or **Enlive** (HTML generation/templating) [S.3, S.4].\n*   **Extended Functionality:** The language supports graphics processing (OpenGL), email handling, JDBC database connectivity, and GUI creation [S.2, S.3].\n*   **Portability:** Many examples exist that demonstrate porting algorithms and applications from other languages (like *Practical Common Lisp*) into Clojure [S.4].\n\n#### Governance & Community\n*   **Official Documentation:** The authoritative source for the language is [clojure.org](http://clojure.org) [S.1].\n*   **Community Contribution:** Users are encouraged to share their own Clojure code; however, contributors should use the dedicated Clojure discussion group for any modifications or derivations of the core language source code to comply with licensing requirements [S.1].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790610656,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-programming-languages-tour_7\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 8: Clojure Programming - Presentation</span><span class=\"pm-chat-count\">4 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Introduction to Clojure</div><ul class=\"pm-chat-slide-bullets\"><li>Dynamic language for the JVM</li><li>Cross-platform implementations: Script, CLR, Python, C</li><li>Focuses on community resources and documentation</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778790610657,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This section serves as an introduction to the Clojure programming language and its community resources. Here are the key points:\n\n**Purpose and Scope**\n* The documentation aims to assist Clojure users regardless of their programming background.\n* It is a supplement to official documentation rather than a replacement.\n* Users are encouraged to share original code snippets, but must not replicate official Clojure source code due to licensing constraints.\n\n**Clojure Implementations**\nClojure is available across several platforms through various implementations:\n* Clojure: The original Java-based implementation for the JVM.\n* ClojureScript: Compiles to JavaScript.\n* ClojureCLR: Designed for the .NET framework.\n* Other variants: Includes implementations for Python (clojure-py), Scheme (clojure-scheme), and C (ClojureC).\n\n**Getting Started**\n* The text provides guidance on obtaining and installing the language.\n* It offers setup instructions for popular text editors, specifically Emacs and Vim.\n* Further learning resources are available via the official Clojure website and the project's Confluence Wiki.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790610666,
+      "channel": "plan_pipe_b0f59d1aa9c6",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 1
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section serves as a comprehensive resource guide for beginners interested in learning the Clojure programming language. The key topics and resources are summarized below:\n\n**Core Learning Resources**\nThe guide highlights several foundational texts, including the Brief Beginner's Guide for an overview of Clojure's functional programming and concurrency concepts, and Brave Clojure for feature exploration. Other entry points include By Example, which uses practical demonstrations, and the \"Learning Clojure\" book.\n\n**Interactive Learning Tools**\nTo gain hands-on experience, the text recommends:\n- labrepl: An interactive environment for exploration.\n- 4clojure: A series of web-based programming exercises without installation requirements.\n- clojure-koans: A repository designed to teach basic syntax and built-in functions.\n- Talking to machines: A beginner-friendly resource for ClojureScript featuring an online REPL.\n\n**Practical Application and Examples**\nThe documentation provides a \"cookbook\" style section containing varied technical examples. These include interacting with Java (JDBC, invoking methods by string name), GUI development, handling lazy sequences (such as the Fibonacci sequence), and integration with external software like Excel. Users are also encouraged to check the curated \"External Articles\" section for deep dives into specific topics.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790610667,
+      "channel": "plan_pipe_b0f59d1aa9c6",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section provides a curated collection of Clojure resources, examples, and libraries, serving as a cookbook for developers. The content is structured into three primary domains:\n\n**1. Graphics and Image Processing**\nClojure can be utilized for various visual and computational tasks, including:\n* Context Free Art clones.\n* Image processing via ImageJ/Fiji.\n* 3D rendering using OpenGL via JOGL.\n* Data visualization, such as generating sparklines or interacting with Google Charts.\n\n**2. Web Programming**\nThe document outlines a typical web development stack, categorized by usage:\n* Server Interfaces: Ring provides the standard interface for web server communication, session management, and file uploads.\n* Frameworks: Libraries like Compojure and the historical Noir framework manage routing and controller logic.\n* Templating/HTML: Enlive (xpath-style selectors) and Hiccup (rendering HTML) are highlighted for structure and rendering.\n\n**3. Educational Resources**\nDevelopers are directed to:\n* Community-driven cookbooks and API examples.\n* Foundational texts such as \"The Joy of Clojure\" and \"Clojure in Action.\"\n* Mailing lists for technical support and discussion on topics like email automation or specific framework implementations.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790610668,
+      "channel": "plan_pipe_b0f59d1aa9c6",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document provides a collection of resources for Clojure development, categorized by utility. Below is a structured summary of the key areas covered:\n\n**Web Development Frameworks and Routing**\nThe text identifies several frameworks for building web applications in Clojure, including Luminus, Compojure, Noir, Moustache, Conjure, and funkyweb.\n\n**HTML Generation and Templating**\nFor dynamic web design, the document highlights specific libraries used to generate HTML, such as:\n* Hiccup\n* Fleet\n* Enlive\n\n**Specialized Libraries**\nThe section also notes supplementary tools for specific tasks, including Sandbar for session management and Compojure-Rest for RESTful API development.\n\n**Educational Resources and Examples**\nThe document serves as a repository for learning Clojure through practical implementation, featuring:\n* Translations and ports of examples from *Practical Common Lisp*.\n* Technical guides on socket programming and destructuring binding.\n* Implementation examples, such as an embedded REPL, generating the digits of $\\pi$, creating a quine, and developing a Clojure-based Pong game.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790610669,
+      "channel": "plan_pipe_b0f59d1aa9c6",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778790610756,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Which of the following is true regarding the design and usage of the documented Clojure resource?",
+            "options": [
+              "Users are encouraged to copy and paste documentation directly from the official Clojure site into the wiki.",
+              "The wiki acts as a complete replacement for the official documentation found at clojure.org.",
+              "The wiki maintains a license that is incompatible with the Clojure source code, meaning users should not post modifications of the source there.",
+              "Users should post all their custom-written Clojure code to the official Clojure discussion group instead of the wiki."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text explicitly mentions that the wiki's license is incompatible with the Clojure license, so it restricts posting derivations or modifications of the source code, asking for those to be sent to the discussion group instead."
+          },
+          {
+            "question": "What is the primary characteristic that differentiates 'ClojureScript' from other implementations like 'ClojureCLR' or 'clojure-py'?",
+            "options": [
+              "It is the original implementation designed for the JVM.",
+              "It compiles to JavaScript to enable Clojure development in different environments.",
+              "It is specifically designed for the Microsoft .NET framework.",
+              "It is a Python-based implementation of the language."
+            ],
+            "correctIndex": 1,
+            "explanation": "The content defines ClojureScript as the implementation that compiles to JavaScript, whereas ClojureCLR is for .NET and clojure-py is Python-based."
+          },
+          {
+            "question": "If a developer wants to learn Clojure syntax through a series of small, interactive, web-based programming problems, which tool would they likely use?",
+            "options": [
+              "4clojure",
+              "labrepl",
+              "Hiccup",
+              "Ring"
+            ],
+            "correctIndex": 0,
+            "explanation": "The text describes 4clojure as a series of small programming problems, web-based, which do not require an installation to use."
+          },
+          {
+            "question": "In the context of web development in Clojure, what is the role of the 'Ring' library?",
+            "options": [
+              "It serves as a controller-logic framework for defining routing.",
+              "It handles HTML templating using xpath-style selectors.",
+              "It provides a standard interface between web servers and Clojure applications.",
+              "It is used for generating dynamic HTML pages directly from Clojure code."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text identifies Ring as providing a standard interface to talk to web servers and handle shared features like sessions and file uploads."
+          },
+          {
+            "question": "Which of the following describes the 'cookbook' examples mentioned in the text compared to the 'Concepts' section?",
+            "options": [
+              "The cookbook section focuses on teaching language basics like state and functional programming.",
+              "The cookbook provides practical applications and examples, such as JDBC usage or GUI development, using the Clojure API.",
+              "The cookbook is designed to be the primary guide for installing development tools like Emacs.",
+              "The cookbook contains the official documentation that replaces clojure.org reference material."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text categorizes 'Concepts' as covering theory (datatypes, mutability, functional programming) and the 'Cookbook' as containing practical examples using the API, such as JDBC, GUI, and socket programming."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778790610757,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the original implementation of the Clojure programming language?",
+            "back": "Java-based implementation (running on the JVM)."
+          },
+          {
+            "front": "Which Clojure implementation compiles to JavaScript?",
+            "back": "ClojureScript."
+          },
+          {
+            "front": "Which Clojure implementation targets Microsoft's .NET framework?",
+            "back": "ClojureCLR."
+          },
+          {
+            "front": "What is '4clojure'?",
+            "back": "A website that presents a series of small, browser-based programming problems to help users learn Clojure."
+          },
+          {
+            "front": "What is the purpose of 'clojure-koans'?",
+            "back": "A project used for beginners to learn basic Clojure syntax and built-in functions."
+          },
+          {
+            "front": "What is the primary function of the 'Ring' library in web development?",
+            "back": "It provides a standard interface to talk to web servers and handles tasks like sessions and file uploads."
+          },
+          {
+            "front": "Name two Clojure libraries used for HTML generation/templating.",
+            "back": "Hiccup and Enlive."
+          },
+          {
+            "front": "Which library provides a high-level interface for routing and controller logic in Clojure web applications?",
+            "back": "Compojure (or Luminus, which is noted as a web framework)."
+          },
+          {
+            "front": "Where should you post excerpts, patches, or modifications of the Clojure source code?",
+            "back": "The Clojure discussion group (https://groups.google.com/group/clojure)."
+          },
+          {
+            "front": "What is 'labrepl'?",
+            "back": "An interactive environment designed for learning Clojure."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-programming-languages-tour_7",
+      "slides": [
+        {
+          "title": "Introduction to Clojure",
+          "bullets": [
+            "Dynamic language for the JVM",
+            "Cross-platform implementations: Script, CLR, Python, C",
+            "Focuses on community resources and documentation",
+            "Requires adherence to specific licensing guidelines"
+          ],
+          "notes": "Clojure is a versatile language designed for the Java Virtual Machine. This lesson explores its ecosystem, implementations, and how to get started effectively.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Learning Resources",
+          "bullets": [
+            "Concepts: functional programming, state, and concurrency",
+            "Interactive tools: 4clojure, labrepl, and clojure-koans",
+            "Guided learning: Brave Clojure and Learning Clojure",
+            "Cookbook approach: JDBC to socket-based REPL tasks"
+          ],
+          "notes": "Multiple pathways exist for mastering Clojure, ranging from theory-heavy books and concept guides to highly interactive, hands-on platforms for immediate practice.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Building with Clojure",
+          "bullets": [
+            "Broad API support for diverse tasks",
+            "Graphics, image processing, and OpenGL integration",
+            "Robust web frameworks: Compojure, Ring, and Enlive",
+            "Practical cookbook examples for real-world projects"
+          ],
+          "notes": "Clojure transforms into a powerful development tool through its rich library stack, enabling developers to build everything from web applications to specialized graphics tools.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Frameworks and Advanced Topics",
+          "bullets": [
+            "Comprehensive ecosystem of web routers and HTML generators",
+            "Leveraging existing knowledge via Lisp ports",
+            "Interactive production techniques like embedded REPLs",
+            "Extensive documentation and community-driven references"
+          ],
+          "notes": "The Clojure ecosystem is defined by its modular design, allowing developers to extend functionality through mature libraries and ports of functional programming classics.",
+          "page_range": "4",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 8: Clojure Programming - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778790610656,
+      "pdfName": "Clojure Programming"
+    }
+  ],
+  "sourceHash": "ceb41245f6cd852c"
+}

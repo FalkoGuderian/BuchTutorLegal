@@ -1,0 +1,484 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Programmieren-Grundlagen: von Strukturierung bis Java - Lektion 2: C-Programmierung",
+    "pdfName": "CProgrammierung",
+    "createdAt": 1778786337508,
+    "exportedAt": "2026-05-14T19:18:57.509Z",
+    "meta": {
+      "courseId": "course-de-programmieren-grundlagen",
+      "lessonIndex": 1,
+      "courseTitle": "Programmieren-Grundlagen: von Strukturierung bis Java",
+      "lessonObjective": "Pointer, Speicher, Standard-Library.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-cprogrammierung",
+            "title": "CProgrammierung",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/CProgrammierung"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_f7fce3337f05",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-10",
+          "chapterTitle": "Grundlagen der C-Programmierung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "11-22",
+          "chapterTitle": "Variablen und Datentypen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "23-26",
+          "chapterTitle": "Strukturierte Speicherklassen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "27-34",
+          "chapterTitle": "Ein- und Ausgabe",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "35-46",
+          "chapterTitle": "Operatoren",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "47-74",
+          "chapterTitle": "Kontrollstrukturen und Funktionen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "75-116",
+          "chapterTitle": "Zeiger, Arrays und Strings",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "117-130",
+          "chapterTitle": "Komplexe Datentypen und Speicherverwaltung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "131-146",
+          "chapterTitle": "Listen, Dateien und Rekursion",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "147-256",
+          "chapterTitle": "Programmierstil, Sicherheit und Referenzen",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778786337508,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Zusammenfassung: Grundlagen der C-Programmierung\n\nBasierend auf den bereitgestellten Unterlagen (insbesondere S. 3–5) sind dies die Kernkonzepte für den Einstieg in die C-Programmierung:\n\n#### 1. Struktur eines C-Programms\n*   **Grundaufbau:** Jedes Programm benötigt eine `main`-Funktion als Einstiegspunkt (S. 11).\n*   **Präprozessor:** Mit `#include` werden Bibliotheken (z. B. `stdio.h` für Ein-/Ausgabe) eingebunden, bevor der eigentliche Kompiliervorgang beginnt (S. 10, 11).\n*   **Blöcke:** Code-Bereiche werden durch geschweifte Klammern `{}` strukturiert (S. 11).\n*   **Syntax:** C ist \"case sensitive\" (Groß-/Kleinschreibung wird beachtet) und Anweisungen werden mit einem Semikolon `;` abgeschlossen (S. 11, 12).\n\n#### 2. Der Kompilierungsprozess\n*   Ein Programm durchläuft drei Instanzen:\n    1.  **Präprozessor:** Verarbeitet Makroanweisungen (S. 9).\n    2.  **Compiler:** Übersetzt Quelltext in Maschinensprache (Objektdatei) (S. 9, 10).\n    3.  **Linker:** Verbindet Programmmodule und Bibliotheken zur ausführbaren Datei (S. 10).\n\n#### 3. Wichtige Konzepte für das weitere Studium\nDie Lerneinheit legt das Fundament für fortgeschrittene Themen, die im Dokument wie folgt gelistet sind:\n*   **Variablen & Typen:** Deklaration, Definition und Initialisierung von Ganz- und Fließkommazahlen (S. 3).\n*   **Ein-/Ausgabe:** Nutzung von Funktionen wie `printf` (Ausgabe) und `scanf` (Eingabe) (S. 3, 11).\n*   **Operatoren:** Standard-Rechenoperationen inkl. Modulo (%) sowie logische und Bit-Operatoren (S. 3, 12).\n*   **Speicher & Zeiger (Pointer):** Ein zentrales Thema in C; das Dokument behandelt sowohl die manuelle Speicherverwaltung (S. 5) als auch den direkten Zugriff mittels Zeigern (S. 4, 75ff).\n*   **Standard-Bibliothek:** Da C einen kleinen Sprachkern hat, ist die Einbindung von Bibliotheken zwingend notwendig, um Funktionen für Dateihandling, Mathematik oder String-Verarbeitung zu nutzen (S. 4).\n\n**Hinweis für das Studium:** Da C eine komplexe und fehleranfällige Sprache ist, wird empfohlen, den Fokus auf das Verständnis der Speicherverwaltung und den disziplinierten Programmierstil zu legen (S. 7). Nutzen Sie die `main`-Funktion als festen Ankerpunkt für Ihre ersten Quellcodes.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778786337508,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-programmieren-grundlagen_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 2: C-Programmierung - Präsentation</span><span class=\"pm-chat-count\">5 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Einführung in die C-Programmierung</div><ul class=\"pm-chat-slide-bullets\"><li>Grundlagen der Syntax und Compiler-Struktur</li><li>Einstieg in Variablen und Standard-Bibliotheken</li><li>Erste Schritte: Hello World und Berechnungen</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778786337509,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Bereichs S. 1-10:\n\n**Einleitung und Projektgrundlagen**\nDas Dokument dient als Einführung in die Programmiersprache C für Anfänger. Es basiert auf dem Wikibooks-Prinzip, was bedeutet, dass der Inhalt gemeinschaftlich erstellt wurde und Änderungen unterliegen kann (S. 2, S. 7). Der Quellcode zur Erstellung dieses PDF-Dokuments ist im Anhang enthalten (S. 2).\n\n**Historischer Hintergrund**\nDie Entwicklung von C begann in den frühen 1970er Jahren in den Bell Labs als Reaktion auf die Nachteile der Assembler-Programmierung, insbesondere im Kontext des Betriebssystems UNIX. C entwickelte sich aus der Vorgängersprache B und zeichnete sich durch eine strikte Typisierung aus (S. 8).\n\n**Bedeutung und Standards**\nC gilt heute als komplexe und fehleranfällige Sprache, da sie aufgrund ihrer Ursprünge auf Sicherheitsmechanismen verzichtet, die in moderneren Sprachen Fehlermeldungen erleichtern würden (S. 7). Dennoch ist sie elementar, da große Teile von Betriebssystemkernen (z. B. Linux, Windows) in C verfasst sind (S. 8). Wesentliche Standards sind:\n- K&R-Standard (1978): Der ursprüngliche Quasi-Standard.\n- ANSI-C/C89 (1988): Erste formale Standardisierung.\n- C99: Eine spätere Überarbeitung, die jedoch uneinheitlich von Compiler-Herstellern unterstützt wird (S. 8-9).\n\n**Inhaltlicher Überblick und Leitfaden**\nDas Lehrbuch deckt ein breites Spektrum ab, beginnend bei den Grundlagen (Hello World, Rechnen in C, Kommentare) über Variablen, Datentypen und Kontrollstrukturen bis hin zu komplexeren Konzepten wie Zeigern, Arrays, Speicherverwaltung und dem Präprozessor. Anfängern wird empfohlen, bei Verständnisproblemen Kapitel zu wiederholen und sich nicht entmutigen zu lassen, da C eine hohe Einarbeitungsdisziplin erfordert (S. 3-4, S. 7). Ein spezieller Fokus liegt zudem auf dem richtigen Programmierstil und Sicherheitsaspekten (S. 5).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778786337518,
+      "channel": "plan_pipe_f7fce3337f05",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 10
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine Zusammenfassung der Grundlagen der C-Programmierung basierend auf den Seiten 11 bis 20:\n\nStruktur eines C-Programms\nEin C-Programm beginnt mit Präprozessor-Anweisungen wie #include, um Bibliotheken (z. B. stdio.h) einzubinden (S. 11). Das Herzstück ist die Funktion main(), der Einstiegspunkt nach dem Programmstart (S. 11). Programmblöcke werden durch geschweifte Klammern definiert (S. 11). C ist \"case sensitive\", unterscheidet also strikt zwischen Groß- und Kleinschreibung (S. 11).\n\nRechnen in C\nC nutzt für Berechnungen Standard-Operatoren (+, -, *, /) sowie den Modulo-Operator (%), welcher den Rest einer Division ermittelt (S. 12, S. 13). Es gelten die üblichen Vorrangregeln (Punkt-vor-Strich), die durch Klammern beeinflusst werden können (S. 12). Bei undefiniertem Verhalten, wie einer Division durch Null, ist das Resultat nicht vorhersagbar, weshalb dies strikt zu vermeiden ist (S. 13).\n\nKommentierung\nKommentare dienen der Übersichtlichkeit und werden vom Compiler ignoriert. Sie werden entweder durch /* ... */ über mehrere Zeilen oder (in neueren Standards) durch // für eine einzelne Zeile eingeleitet (S. 13, S. 14).\n\nVariablen und Datentypen\nVariablen fungieren als benannte Speicherstellen, deren Inhalt änderbar ist (S. 16). Vor der Verwendung muss eine Variable definiert werden, wobei Name und Datentyp festgelegt werden, damit der Compiler Speicher reservieren kann (S. 17).\n- Deklaration: Bekanntgabe des Namens und Typs (S. 18).\n- Definition: Reservierung von Speicherplatz (S. 18).\n- Initialisierung: Zuweisung eines ersten Wertes (S. 18).\n\nBei der Namensgebung müssen Regeln beachtet werden: Sie müssen mit einem Buchstaben oder Unterstrich beginnen, keine Umlaute enthalten und dürfen keine Schlüsselwörter (wie int) sein (S. 19).\n\nGanzzahl-Typen\nGanzzahlen werden durch Typen wie char, short, int oder long abgebildet (S. 20). Durch das Schlüsselwort unsigned kann festgelegt werden, dass eine Variable nur nicht-negative Werte speichern darf, wodurch sich der nutzbare Wertebereich verschiebt (S. 20).\n\nMathematische Formeln im Text:\nDie Oberfläche eines Quaders berechnet sich gemäß: \n$A = 2 \\cdot (a \\cdot b + a \\cdot c + b \\cdot c)$ (S. 16)",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778786337519,
+      "channel": "plan_pipe_f7fce3337f05",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 11,
+        "end": 22
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Inhalts (S. 23–26):\n\n**Escape-Sequenzen und Fließkommazahlen**\nFür nicht darstellbare Zeichen (z. B. Tabulator oder Zeilenvorschub) nutzt C spezielle Escape-Sequenzen wie `\\n` oder `\\t`. Bei Fließkommatypen (`float`, `double`, `long double`) sind alle Zahlen vorzeichenbehaftet. Wichtig ist die Verwendung des Dezimalpunktes anstelle eines Kommas (S. 23).\n\n**Speicherbedarf**\nDer Operator `sizeof` dient zur Ermittlung der Speichergröße eines Typs oder einer Variable in Byte. Da `sizeof` ein Operator ist, muss keine Headerdatei eingebunden werden. Die Größe ist systemabhängig, wobei für `char` immer 1 Byte festgelegt ist (S. 23–24).\n\n**Konstanten**\nSymbolische Konstanten können auf zwei Arten definiert werden:\n1. Präprozessor-Anweisung `#define`: Hierbei findet ein einfaches Suchen-und-Ersetzen statt. Dies ist fehleranfällig bei Formeln (z. B. Makro-Erweiterung ohne Klammern bei $2+3*2+3$). Daher sollten Ausdrücke in Makros sicher geklammert werden: `#define quadrat(x) ((x)*(x))` (S. 24–25).\n2. Schlüsselwort `const`: Dies ist der modernere Weg, da der Typ der Konstante dem Compiler bekannt ist (bessere Optimierung). Einer `const`-Variablen muss direkt bei der Deklaration ein Wert zugewiesen werden; nachträgliche Änderungen werden vom Compiler unterbunden (S. 25–26).\n\n**Gültigkeit von Variablen**\nVariablen sind nur innerhalb des Anweisungsblocks gültig, in dem sie deklariert wurden (S. 26). Seit dem C99-Standard können Variablen direkt vor ihrer ersten Verwendung innerhalb eines Blocks vereinbart werden, statt zwingend am Blockanfang stehen zu müssen. Variablen, die beispielsweise im Kopf einer `for`-Schleife deklariert werden, sind außerhalb des Schleifenblocks nicht mehr verfügbar (S. 26).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778786337520,
+      "channel": "plan_pipe_f7fce3337f05",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 23,
+        "end": 26
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Inhalts basierend auf der bereitgestellten Dokumentation:\n\n**Überdeckung von Variablen (S. 27)**\n\nDie Kernaussage dieses Abschnitts ist das Prinzip der Variablenüberdeckung innerhalb von geschachtelten Blöcken in C:\n\n- Definition: Wenn eine Variable in einem inneren Block denselben Namen trägt wie eine Variable in einem umgebenden Block, überdeckt die innere Variable die äußere (S. 27).\n- Gültigkeit: Die äußere Variable ist innerhalb des inneren Blocks nicht direkt zugänglich, solange die gleichnamige innere Variable existiert (S. 27).\n- Ende der Überdeckung: Sobald der innere Block verlassen wird und damit der Gültigkeitsbereich der inneren Variable endet, ist die äußere Variable wieder sichtbar und behält ihren ursprünglichen Wert (S. 27).\n\nBeispiel-Logik: Innerhalb eines Blocks zugewiesene Werte (z. B. $v = 2$) für eine neu definierte Variable beeinflussen nicht die Variable des umgebenden Blocks ($v = 1$), die nach Verlassen des inneren Bereichs wieder ihren ursprünglichen Zustand einnimmt (S. 27).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778786337521,
+      "channel": "plan_pipe_f7fce3337f05",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 27,
+        "end": 34
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Seiten 35 bis 46 des Dokuments behandeln das Thema Operatoren in der Programmiersprache C. Hier ist die strukturierte Zusammenfassung:\n\n**Grundbegriffe und Rangfolge**\nOperatoren bilden die Basis für Berechnungen und logische Verknüpfungen. Entscheidend für die Programmierung ist die Rangfolge (Präzedenz) und die Assoziativität der Operatoren, welche festlegen, in welcher Reihenfolge Ausdrücke innerhalb einer Anweisung ausgewertet werden (S. 35, 37).\n\n**Inkrement- und Dekrement-Operatoren**\nZur schnellen Erhöhung oder Verringerung von Werten bietet C die Inkrement- ($++$) und Dekrement-Operatoren ($--$). Diese können sowohl präfix (vor der Variable) als auch postfix (nach der Variable) angewendet werden, was Auswirkungen auf den Zeitpunkt der Wertänderung im Ausdruck hat (S. 36).\n\n**Spezielle Operatoren**\n- Shift-Operatoren: Diese erlauben das bitweise Verschieben von Werten (S. 39).\n- Bedingungsoperator: Er stellt eine kompakte Alternative zur if-else-Struktur dar (S. 45).\n\n**Logische Verknüpfungen**\nDie logischen Operatoren ermöglichen die Verknüpfung von Bedingungen, um den Programmablauf zu steuern. Dabei geht es um die Auswertung von logischen Wahrheitswerten sowie um die Verknüpfung komplexerer Bedingungen (S. 40, 42).\n\n**Zusammenfassung der Struktur**\nDas Kapitel vermittelt, dass Operatoren nicht nur für arithmetische Zwecke (wie Berechnungen) dienen, sondern essenziell für die Steuerung der Programmlogik sind. Eine präzise Kenntnis der Operatorenreihenfolge ist notwendig, um Seiteneffekte in Berechnungen zu vermeiden (S. 35-46).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778786337522,
+      "channel": "plan_pipe_f7fce3337f05",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 35,
+        "end": 46
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Abschnitte auf den Seiten 47 bis 74, die sich mit Kontrollstrukturen und Funktionen in der Programmiersprache C beschäftigen:\n\nKontrollstrukturen (S. 47-62)\nDie Programmsteuerung in C basiert auf zwei wesentlichen Säulen: Bedingungen und Schleifen. Bedingungen dienen dazu, den Programmablauf in Abhängigkeit von logischen Ausdrücken zu verzweigen (S. 47). Schleifen erlauben hingegen die wiederholte Ausführung von Codeblöcken. Ergänzt wird dies durch zusätzliche Anweisungen zur Steuerung des Kontrollflusses (S. 61).\n\nFunktionen (S. 63-74)\nFunktionen bilden die Grundlage für die Strukturierung von Programmen (S. 63).\n\nFunktionsdefinition und Aufrufe: Jede Funktion muss definiert werden, wobei vorab Deklarationen mittels Prototypen sinnvoll sind, um dem Compiler die benötigten Informationen vor dem eigentlichen Aufruf bereitzustellen (S. 66).\n\nBesondere Funktionsarten: Sogenannte Inline-Funktionen dienen dazu, die Performance bei häufigen Funktionsaufrufen zu optimieren (S. 68).\n\nVariablenverwaltung: Die Sichtbarkeit und Lebensdauer von Variablen wird durch ihre Definition innerhalb oder außerhalb von Funktionen bestimmt. Hierbei wird zwischen globalen und lokalen Variablen unterschieden, was direkte Auswirkungen auf den Speicher und den Zugriffsbereich hat (S. 68).\n\nProgrammbeendigung: Über die Funktion exit() kann ein Programm gezielt beendet werden (S. 71).\n\nEigene Module: Um die Übersichtlichkeit bei komplexen Projekten zu wahren, ermöglicht C die Erstellung eigener Header-Dateien (S. 73).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778786337523,
+      "channel": "plan_pipe_f7fce3337f05",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 47,
+        "end": 74
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Bereichs von Seite 75 bis 116:\n\n**Zeiger (Kapitel 9, S. 75-82)**\nZeiger sind Variablen, die Speicheradressen enthalten. Sie ermöglichen den direkten Zugriff auf Speicherbereiche und werden unter anderem für die Zeigerarithmetik, die Übergabe von Funktionsadressen und den direkten Zugriff auf Daten genutzt. Die Konzepte \\text{Call-by-Value} und die Verwendung von \\text{void}-Zeigern sind zentrale Bestandteile für die Speicherverwaltung.\n\n**Arrays (Kapitel 10, S. 83-102)**\nArrays sind Datenstrukturen zur Speicherung zusammengehöriger Elemente desselben Typs. Sie können ein- oder mehrdimensional sein. Ein wesentlicher Aspekt ist die Initialisierung, die sowohl vollständig als auch teilweise erfolgen kann. Der Zusammenhang zwischen Arrays und Zeigern ist eng, da bei der Übergabe eines Arrays an eine Funktion oft Zeigerarithmetik zur Adressierung der Elemente genutzt wird. Zeichenketten werden in C als Arrays vom Typ \\text{char} behandelt.\n\n**Strings und Zeichenkettenfunktionen (Kapitel 11, S. 103-116)**\nDieser Abschnitt behandelt die Manipulation von Zeichenketten. Da C keine nativen String-Typen besitzt, werden Funktionen aus Bibliotheken zur Bearbeitung eingesetzt, wobei auf Sicherheitsrisiken geachtet werden muss. Wichtig ist die Iteration durch Zeichenketten, um beispielsweise bestimmte Zeichen gezielt zu ersetzen. Zudem wird die Bibliothek \\text{ctype.h} zur Klassifizierung und Umwandlung einzelner Zeichen eingeführt.\n\nZusammenfassend bilden Zeiger das Fundament für die effiziente Adressierung von Arrays und die Manipulation von Zeichenketten, wobei die korrekte Handhabung des Speichers und die Wahl der richtigen Bibliotheksfunktionen entscheidend für die Programmierung in C sind.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778786337524,
+      "channel": "plan_pipe_f7fce3337f05",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 75,
+        "end": 116
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Bereichs von Seite 117 bis 130:\n\nIn diesem Abschnitt werden fortgeschrittene Konzepte der C Programmierung behandelt:\n\nKomplexe Datentypen\nDas Kapitel 12 führt neue Möglichkeiten der Datenstrukturierung ein. Strukturen erlauben die Zusammenfassung verschiedener Datentypen unter einem Namen (S. 117). Unions bieten die Möglichkeit, verschiedene Datentypen im selben Speicherbereich abzulegen, wobei jeweils nur eines der Elemente aktiv sein kann (S. 119). Aufzählungen dienen dazu, Variablen auf einen definierten Satz von Werten festzulegen (S. 121), und es wird auf die Deklaration von Variablen in diesem Kontext eingegangen (S. 122).\n\nTypumwandlung\nKapitel 13 erläutert die Konvertierung zwischen Datentypen. Dies geschieht implizit durch den Compiler oder explizit durch den Programmierer (S. 125). Dabei werden die Auswirkungen der Umwandlung auf die gespeicherten Werte analysiert (S. 126). Die mathematische Beziehung kann hierbei als $Wert_{\\text{neu}} = f(Wert_{\\text{alt}})$ betrachtet werden.\n\nSpeicherverwaltung\nKapitel 14 widmet sich der Speicherzuweisung. Hierbei wird zwischen dem Ort bzw. der Art der Speicherreservierung (Speicherklasse) (S. 127) und dem zeitlichen Aspekt der Reservierung (wann dieser Speicher zur Verfügung steht) differenziert (S. 128).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778786337525,
+      "channel": "plan_pipe_f7fce3337f05",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 117,
+        "end": 130
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Abschnitte auf den Seiten 131 bis 146:\n\n**Verkettete Listen (S. 131)**\nDas Kapitel einführend behandelt die einfach verkettete Liste. Hierbei werden Datenelemente dynamisch miteinander verknüpft, wobei jedes Element auf das nächste verweist.\n\n**Fehlerbehandlung (S. 133)**\nDieser Abschnitt widmet sich den Mechanismen zur Identifikation und Reaktion auf Programmfehler, die während der Laufzeit auftreten können.\n\n**Präprozessor (S. 135)**\nBevor die eigentliche Kompilierung stattfindet, verarbeitet der Präprozessor spezielle Direktiven. Diese ermöglichen unter anderem das Einbinden von Dateien, Makro-Definitionen und bedingte Kompilierungen.\n\n**Dateien und Streams (S. 139-144)**\nDie Kommunikation zwischen dem Programm und externen Datenquellen erfolgt über Streams oder den direkten Zugriff auf Dateien. Es wird erläutert, wie Programme Datenströme öffnen, lesen, schreiben und wieder schließen.\n\n**Rekursion (S. 145-146)**\nEine Funktion gilt als rekursiv, wenn sie sich innerhalb ihres eigenen Rumpfes selbst aufruft. Zentrale Themen sind hier:\n- Die Anwendung der Rekursion zur Problemlösung.\n- Methoden zur Beseitigung der Rekursion (Umwandlung in iterative Prozesse).\n- Praxisbeispiele, um die Arbeitsweise dieser Technik zu verdeutlichen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778786337526,
+      "channel": "plan_pipe_f7fce3337f05",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 131,
+        "end": 146
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Abschnitte auf den Seiten 147 bis 256 des bereitgestellten Dokuments:\n\nProgrammierstil (S. 147)\nDer Abschnitt betont die Bedeutung von gutem Code-Design. Kommentare sollten sinnvoll eingesetzt werden, während die Verwendung von globalen Variablen und sogenannten `goto`-Anweisungen aufgrund ihrer Anfälligkeit für Fehler kritisch betrachtet wird.\n\nDanksagungen und Urheberrecht (S. 237–256)\nAuf diesen Seiten wird die formale Basis des Buches behandelt. Das Kapitel über Mitwirkende findet sich auf S. 237. Informationen zur Lizenzierung der Abbildungen sind auf S. 245 aufgeführt. Der Anhang dokumentiert die verwendeten Lizenzen (GPL, LGPL, GFDL) ab S. 249 und erläutert die rechtlichen Rahmenbedingungen für die Nutzung sowie die Distribution des Inhalts.\n\nHinsichtlich der praktischen Anwendung von Code-Optimierung im weiteren Sinne gilt in der Programmierung oft das Prinzip der Effizienz, etwa bei mathematischen Berechnungen, die sich wie folgt darstellen lassen:\n$E_{ \\text{tatsächlich}} = m \\cdot c^{\\text{2}}$",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778786337527,
+      "channel": "plan_pipe_f7fce3337f05",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 147,
+        "end": 256
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778786337608,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Was war ein wesentlicher Beweggrund für die Entwicklung der Sprache C in den Bell Labs?",
+            "options": [
+              "Die Notwendigkeit einer Sprache, die unabhängig von einer spezifischen Hardware-Architektur ist.",
+              "Die Vorgabe, eine rein objektorientierte Sprache für moderne PCs zu schaffen.",
+              "Der Wunsch, ein Betriebssystem in einer einfacheren Sprache als Assembler zu schreiben.",
+              "Die Ablösung von Fortran, weil diese Sprache zu schnell für die damaligen Rechner war."
+            ],
+            "correctIndex": 2,
+            "explanation": "C wurde entwickelt, um das Betriebssystem Unix effizienter und wartbarer zu programmieren, da die Programmierung in Assembler zu fehleranfällig und aufwendig war."
+          },
+          {
+            "question": "Warum ist es beim Programmieren in C wichtig, den Speicherbedarf zu verstehen und zu kontrollieren?",
+            "options": [
+              "Weil der Compiler in C keine Fehler erkennt, wenn man auf ungültige Speicherbereiche zugreift.",
+              "Weil der Speicher bei C-Programmen immer auf der Festplatte statt im RAM reserviert wird.",
+              "Weil Hardware-nahe Programmierung (wie in C) oft keine automatische Speicherverwaltung besitzt und Fehler schwerwiegend sein können.",
+              "Weil C-Programme automatisch jeden benutzten Speicherbereich nach Ende der Funktion wieder freigeben."
+            ],
+            "correctIndex": 2,
+            "explanation": "C bietet direkte Kontrolle über den Speicher, was einerseits für Geschwindigkeit sorgt, andererseits aber Eigenverantwortung bezüglich der Speicherverwaltung erfordert, um instabiles Verhalten zu vermeiden."
+          },
+          {
+            "question": "Welche Eigenschaft zeichnet Pointer in C besonders aus?",
+            "options": [
+              "Sie erlauben die direkte Manipulation und Adressierung von Speicherstellen.",
+              "Sie verhindern automatisch, dass auf nicht initialisierten Speicher zugegriffen wird.",
+              "Sie können nur auf Variablen zeigen, die innerhalb derselben Funktion definiert wurden.",
+              "Sie speichern immer die Daten selbst, anstatt auf sie zu verweisen."
+            ],
+            "correctIndex": 0,
+            "explanation": "Pointer sind Variablen, die Speicheradressen enthalten. Dies ermöglicht es C, direkt auf Speicher zuzugreifen und diesen zu adressieren, was ein mächtiges, aber auch fehleranfälliges Werkzeug ist."
+          },
+          {
+            "question": "Was passiert bei einer 'Call by Value'-Übergabe einer Variable an eine Funktion in C?",
+            "options": [
+              "Die Funktion erhält die Adresse der ursprünglichen Variable und kann deren Wert direkt ändern.",
+              "Der Wert der Variable wird kopiert, sodass die Funktion nur mit dieser Kopie arbeitet.",
+              "Die Funktion arbeitet direkt auf dem Speicherbereich des Aufrufers ohne Kopie.",
+              "Der Wert der Variable wird gelöscht, um Platz im Speicher für die Funktion zu schaffen."
+            ],
+            "correctIndex": 1,
+            "explanation": "Bei 'Call by Value' wird der Wert der Variable (eine Kopie) übergeben. Änderungen innerhalb der Funktion haben daher keinen Effekt auf die ursprüngliche Variable im aufrufenden Programmteil."
+          },
+          {
+            "question": "Warum sollte man laut Kapitel 21 'Magic Numbers' im Code vermeiden?",
+            "options": [
+              "Weil sie die Wartbarkeit und Lesbarkeit des Codes verschlechtern, da sie keinen Kontext bieten.",
+              "Weil der Prozessor Schwierigkeiten hat, feste Zahlenwerte zu verarbeiten.",
+              "Weil sie den Speicherbedarf eines Programms unnötig erhöhen.",
+              "Weil sie vom Compiler als Fehler gewertet werden und die Kompilierung abbrechen."
+            ],
+            "correctIndex": 0,
+            "explanation": "Magic Numbers sind hartkodierte Werte ohne erkennbare Bedeutung. Ersetzt man diese durch benannte Konstanten, wird der Code verständlicher und leichter zu warten."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778786337609,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist ein Pointer (Zeiger) in C?",
+            "back": "Ein Pointer ist eine Variable, die nicht einen direkten Wert (wie eine Zahl), sondern die Speicheradresse einer anderen Variable enthält."
+          },
+          {
+            "front": "Welches Konzept wird im Englischen 'Call by Value' genannt?",
+            "back": "Bei 'Call by Value' wird einer Funktion lediglich eine Kopie des Wertes einer Variable übergeben, nicht die Variable selbst. Änderungen an der Kopie innerhalb der Funktion haben keinen Einfluss auf das Original."
+          },
+          {
+            "front": "Was ist der Zweck der Bibliothek ctype.h?",
+            "back": "Die Bibliothek ctype.h enthält Funktionen zur Klassifizierung und Umwandlung von einzelnen Zeichen (z. B. Prüfen, ob ein Zeichen ein Buchstabe oder eine Ziffer ist)."
+          },
+          {
+            "front": "Was bedeutet 'statisch' (static) in Bezug auf Variablen?",
+            "back": "Eine als static deklarierte Variable behält ihren Wert über die gesamte Laufzeit des Programms bei, auch wenn die Funktion verlassen wurde, in der sie definiert ist."
+          },
+          {
+            "front": "Wofür eignet sich die Funktion 'printf'?",
+            "back": "printf dient der formatierten Ausgabe von Text und Daten auf den Standard-Ausgabekanal (meist die Konsole)."
+          },
+          {
+            "front": "Was ist der Unterschied zwischen Deklaration und Definition einer Variable?",
+            "back": "Deklaration kündigt den Namen und Typ einer Variable an. Die Definition reserviert zusätzlich den benötigten Speicherplatz dafür."
+          },
+          {
+            "front": "Was bewirkt der 'void'-Zeiger in C?",
+            "back": "Ein void-Zeiger (void*) ist ein allgemeiner Zeiger, der auf eine beliebige Speicheradresse zeigen kann, ohne dass der Datentyp des Inhalts festgelegt ist."
+          },
+          {
+            "front": "Was versteht man unter 'Zeigerarithmetik'?",
+            "back": "Zeigerarithmetik erlaubt es, mathematische Operationen (wie Addition/Subtraktion) direkt auf Adressen anzuwenden, um im Speicher vor- oder zurückzuspringen."
+          },
+          {
+            "front": "Warum ist der Umgang mit Strings in C fehleranfällig?",
+            "back": "Strings in C sind lediglich Arrays von Zeichen, die durch ein spezielles Zeichen ('\\0' - Nullterminierung) beendet werden. Manuelle Manipulationen bergen Gefahren wie Pufferüberläufe."
+          },
+          {
+            "front": "Was ist der Präprozessor in der C-Programmierung?",
+            "back": "Der Präprozessor ist eine Instanz vor der eigentlichen Kompilierung, die Anweisungen (Direktiven beginnend mit #) im Quelltext verarbeitet, wie etwa das Einbinden von Dateien oder Textersetzungen."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-programmieren-grundlagen_1",
+      "slides": [
+        {
+          "title": "Einführung in die C-Programmierung",
+          "bullets": [
+            "Grundlagen der Syntax und Compiler-Struktur",
+            "Einstieg in Variablen und Standard-Bibliotheken",
+            "Erste Schritte: Hello World und Berechnungen",
+            "Struktur eines C-Programms (S. 11)"
+          ],
+          "notes": "Willkommen zu unserer Lektion über C. Wir betrachten heute die Grundbausteine einer Sprache, die Hardwarenähe und Effizienz verbindet.",
+          "page_range": "1-11",
+          "image_prompt": ""
+        },
+        {
+          "title": "Rechnen und Operatoren",
+          "bullets": [
+            "Punkt-vor-Strich-Rechnung in C",
+            "Wichtige Operatoren: +, -, *, /, % (S. 12-13)",
+            "Unterschied zwischen Modulo und Division",
+            "Sicherer Umgang mit Operatoren und Klammern"
+          ],
+          "notes": "Rechenoperationen folgen in C strengen mathematischen Regeln. Besonders der Modulo-Operator ist für die Restwertberechnung unverzichtbar.",
+          "page_range": "12-13",
+          "image_prompt": ""
+        },
+        {
+          "title": "Variablen und Speicher",
+          "bullets": [
+            "Gleitkommatypen: float, double, long double (S. 18)",
+            "Speicherbedarf mit dem sizeof-Operator prüfen (S. 18-24)",
+            "Portabilität durch sizeof-Verwendung sicherstellen",
+            "sizeof ist ein Operator, keine Funktion"
+          ],
+          "notes": "Wie viel Platz eine Variable beansprucht, liegt oft an der Plattform. Mit sizeof ermitteln wir dies direkt zur Laufzeit.",
+          "page_range": "18-24",
+          "image_prompt": ""
+        },
+        {
+          "title": "Konstanten in C",
+          "bullets": [
+            "Symbolische Konstanten mit #define",
+            "Gefahren durch einfache Textersetzung (S. 25)",
+            "Einsatz von Klammern als Schutzmaßnahme",
+            "Alternative Definition mit dem const-Schlüsselwort"
+          ],
+          "notes": "Konstanten verhindern Fehler. Beim #define-Präprozessor sollte man jedoch vorsichtig bei komplexen Ausdrücken sein.",
+          "page_range": "24-25",
+          "image_prompt": ""
+        },
+        {
+          "title": "Gültigkeit und Sichtbarkeit",
+          "bullets": [
+            "Variablen existieren innerhalb von Blöcken",
+            "Überdeckung bei geschachtelten Blöcken (S. 27)",
+            "Innere Variablen verdrängen äußere Namensgleichheit",
+            "Nach Blockende wird der Speicher frei"
+          ],
+          "notes": "Wussten Sie, dass Variablen in inneren Blöcken die Sicht auf äußere Variablen verdecken können? Das ist essenziell für das Verständnis der Lebensdauer.",
+          "page_range": "27",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 2: C-Programmierung - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778786337508,
+      "pdfName": "CProgrammierung"
+    }
+  ],
+  "sourceHash": "a52d9758a46b41d6"
+}

@@ -1,0 +1,347 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Tour of Programming Languages: From C to Haskell - Lesson 14: D Programming",
+    "pdfName": "D Programming",
+    "createdAt": 1778790661735,
+    "exportedAt": "2026-05-14T20:31:01.735Z",
+    "meta": {
+      "courseId": "course-en-programming-languages-tour",
+      "lessonIndex": 13,
+      "courseTitle": "Tour of Programming Languages: From C to Haskell",
+      "lessonObjective": "Ada, D, Eiffel, Fortran 2003.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-d-programming",
+            "title": "D Programming",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/D_Programming"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_7ef57168ec39",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Introduction and Features of the D Programming Language",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-3",
+          "chapterTitle": "Compiling and Development Setup",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-5",
+          "chapterTitle": "Resources, Reference, and Compilation Tools",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778790661735,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: D Programming Language\n\nD is a high-performance, statically-typed, multi-paradigm language designed to be a practical successor to C++. It maintains the low-level capabilities of C++ while offering higher-level abstractions to improve programmer productivity and maintainability in large-scale projects [S.1].\n\n#### Key Characteristics\n*   **Paradigms:** Supports imperative, object-oriented, and template metaprogramming, as well as generics and design by contract [S.1].\n*   **Performance:** Compiles directly into native code with excellent support for compiler optimization [S.1, S.2].\n*   **Low-Level Access:** Unlike Java or C#, D features an integrated inline assembler for hardware-level programming (e.g., device drivers) and supports C-style memory management and ABI interaction [S.2].\n*   **Memory Management:** Primarily uses automatic garbage collection, though it allows for manual memory management and disabling the garbage collector for performance-critical components [S.2].\n\n#### Notable Features\n*   **Language Enhancements:** Includes first-class arrays (and slicing), closures, nested functions, inner classes, and true modules [S.2].\n*   **Modern Syntax:** Replaces C++ multiple inheritance with single inheritance combined with interfaces and mixins [S.2].\n*   **Integrated Tooling:** Comes equipped with a documentation generator (Ddoc) and robust support for unit testing [S.2].\n\n#### Ecosystem and Implementation\n*   **Compilers:** Primary implementations include the Digital Mars D compiler (DMD), the GNU D Compiler (GDC), and the LLVM D Compiler (LDC) [S.2, S.5].\n*   **Standard Libraries:** The two primary runtime libraries are **Phobos** (the standard D library) and **Tango** [S.3, S.5].\n*   **GUI Libraries:** D supports various GUI bindings, including DFL, gtkD, wxD, and QtD, facilitating application development across multiple platforms (Windows, Linux, Macintosh, and xBSD) [S.5].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790661735,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-programming-languages-tour_13\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 14: D Programming - Presentation</span><span class=\"pm-chat-count\">6 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lesson 14: D Programming</div><ul class=\"pm-chat-slide-bullets\"><li>Introduction to the D programming language.</li><li>A modern, high-performance successor to C++.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778790661736,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "The D programming language is a high-performance, statically-typed, multi-paradigm language designed as a successor to C++. It aims to balance the low-level capabilities required for systems programming with higher-level abstractions to facilitate large-scale project development [S.1].\n\n### Key Characteristics\n* Programming Philosophy: D focuses on practical, maintainable code rather than enforcing a specific \"religion\" or overriding philosophy. It is neither a scripting nor an interpreted language, compiling instead to native machine code [S.1, S.2].\n* Language Features: D supports imperative, object-oriented, and template metaprogramming, as well as features such as design by contract, unit testing, first-class arrays, closures, and nested functions [S.1, S.2].\n* Memory Management: While D primarily uses automatic garbage collection, it offers flexibility by allowing for explicit memory management via `malloc` and `free`, or by disabling garbage collection entirely when granular control is required [S.2].\n* Interoperability: D provides strong support for C-style ABI, allowing direct interaction with C libraries and established codebases. It is also designed to interface directly with OS APIs and hardware, supported by an integrated inline assembler [S.1, S.2].\n* Development Tools: The language includes features like the Ddoc documentation generator. The reference implementation, the Digital Mars D compiler (dmd), can be installed by setting up the necessary binaries and paths in a directory without special characters or spaces [S.2].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790661745,
+      "channel": "plan_pipe_7ef57168ec39",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "To set up and compile D programs on Windows, follow these summarized instructions:\n\n### Environment Configuration\nCreate a batch file named `dmd_vars.bat` and place it in a directory included in your system $PATH$. This file should set the necessary environment variables for the compiler:\n*   Set $PATH$ to include the directories for local tools and D compiler binaries.\n*   Set $LIB$ to include the library paths for both the compiler and the system.\n\n### Compilation Process\nBefore compiling your code, execute `dmd_vars.bat` in your Command Window. To compile a program, use the command:\n`dmd <filename>.d -of<output_name>.exe`\n\n### Code Examples\nDepending on the library being used, the \"Hello, World\" program differs:\n\n1. Using the Tango library:\n   `import tango.io.Console; void main() { Cout(\"Hello, World\").newline; }`\n\n2. Using the Phobos library:\n   `import std.stdio; void main() { writefln(\"Hello, World\"); }`\n\nThis method ensures the D compiler functions correctly even when other development tools (like alternative linkers or make utilities) are installed on the same system.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790661746,
+      "channel": "plan_pipe_7ef57168ec39",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as an introductory guide and reference for the D programming language. The key topics and resources provided are outlined below:\n\nCore Language Features\nThe language encompasses a wide breadth of technical concepts, including lexical structures, modules, types, memory management (garbage collection), and advanced features such as templates, mixins, and contract programming. It also supports operator overloading, inline assembly, and interfaces for C compatibility (p. 4, 5).\n\nDevelopment Tools and Compilers\nSeveral compilers are available for building D applications, most notably the Digital Mars D compiler (DMD), the GNU D Compiler (GDC), and the LLVM D Compiler (LDC) (p. 4, 5).\n\nSoftware Ecosystem and Libraries\nDevelopers have access to two primary runtime libraries: Phobos and Tango. Furthermore, there is extensive support for cross-platform GUI development through various wrappers and ports, including DFL, gtkD, wxD, DWT, and QtD (p. 5).\n\nDocumentation and Platform Support\nThe document highlights that D is designed for versatility across multiple operating systems, including Windows, Linux, Macintosh, and xBSD. Official documentation and further learning resources are centralized through the official D website and the Wiki4D community portal (p. 4, 5).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790661747,
+      "channel": "plan_pipe_7ef57168ec39",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778790661835,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Which of the following best describes the programming model and design philosophy of D?",
+            "options": [
+              "A scriptable, interpreted language designed specifically for web development.",
+              "A high-level language that excludes low-level features to enforce safe memory practices.",
+              "A statically-typed, multi-paradigm language that emphasizes high performance and native compilation.",
+              "A successor to C++ that primarily focuses on replacing manual memory management with a strict VM-based runtime."
+            ],
+            "correctIndex": 2,
+            "explanation": "D is a statically-typed, multi-paradigm language designed to be a high-performance system programming language that compiles to native code, not an interpreted or scriptable language."
+          },
+          {
+            "question": "How does D's approach to low-level hardware access differ from high-level application languages like Java or C#?",
+            "options": [
+              "D includes an integrated inline assembler for machine-specific code.",
+              "D requires all low-level hardware interactions to be written in C.",
+              "D relies on Virtual Machine bytecode to interface with hardware drivers.",
+              "D prevents direct memory access to ensure system stability."
+            ],
+            "correctIndex": 0,
+            "explanation": "The text notes that an integrated inline assembler is a key differentiation between D and languages like Java or C#, allowing programmers to execute machine-specific code alongside standard D."
+          },
+          {
+            "question": "What is the status of memory management in the D programming language?",
+            "options": [
+              "It is restricted solely to the garbage collector to prevent memory leaks.",
+              "It allows for garbage collection, but provides options to bypass it for specific objects or the entire program.",
+              "It relies exclusively on manual memory management, similar to C.",
+              "It requires a VM to track object reachability at all times."
+            ],
+            "correctIndex": 1,
+            "explanation": "While D uses garbage collection, it provides flexibility by allowing developers to finalize objects manually, use new/delete, interface with C's malloc/free, or disable the collector entirely."
+          },
+          {
+            "question": "If a developer wants to share code between D and an existing C library, how is this handled?",
+            "options": [
+              "The developer must rewrite the C library into native D code.",
+              "The developer must use a custom translation bridge that recompiles C into a D-compatible format.",
+              "D supports C's ABI, allowing direct access to and usage of C types and libraries.",
+              "D only supports interactions with C libraries that are encapsulated in a COM interface."
+            ],
+            "correctIndex": 2,
+            "explanation": "D supports C's Application Binary Interface (ABI) and its fundamental types, enabling native communication with existing C code and libraries."
+          },
+          {
+            "question": "How does D handle the complexity of inheritance compared to C++?",
+            "options": [
+              "It removes all forms of inheritance in favor of pure interface-based polymorphism.",
+              "It retains full multiple inheritance to maintain compatibility with C++ patterns.",
+              "It replaces C++ multiple inheritance with a system of single inheritance combined with interfaces and mixins.",
+              "It implements a strict hierarchy that prohibits the use of interfaces."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text states that D simplifies C++'s multiple inheritance by utilizing single inheritance, interfaces, and mixins."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778790661836,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary design goal of the D programming language?",
+            "back": "To be a higher-level successor to C++ while retaining the ability to write high-performance code and interface directly with OS APIs and hardware."
+          },
+          {
+            "front": "Is D a scripting or interpreted language?",
+            "back": "No. D is a compiled language that produces efficient native code."
+          },
+          {
+            "front": "What are some of D's notable features regarding memory management?",
+            "back": "D primarily uses automatic garbage collection, but it also supports explicit memory management via 'new'/'delete' or C's 'malloc'/'free', and allows disabling GC for specific objects or the entire program."
+          },
+          {
+            "front": "How does D handle multiple inheritance compared to C++?",
+            "back": "D replaces C++ multiple inheritance with single inheritance combined with the use of interfaces and mixins."
+          },
+          {
+            "front": "What is the purpose of the inline assembler in D?",
+            "back": "It allows programmers to enter machine-specific assembly code alongside standard D code to access low-level processor features for tasks like OS development or device drivers."
+          },
+          {
+            "front": "What is Ddoc?",
+            "back": "A built-in documentation generator for the D programming language."
+          },
+          {
+            "front": "Which two standard libraries are mentioned for D?",
+            "back": "Phobos (the standard D runtime library) and Tango."
+          },
+          {
+            "front": "What is the main compiler command to compile a D program using the Digital Mars D compiler (DMD)?",
+            "back": "dmd [filename].d"
+          },
+          {
+            "front": "How does D interact with C code?",
+            "back": "D supports the C ABI and all C fundamental and derived types, allowing direct access to existing C code and libraries."
+          },
+          {
+            "front": "What are three of the major D compilers mentioned?",
+            "back": "DMD (Digital Mars D compiler), GDC (GNU D Compiler), and LDC (LLVM D Compiler)."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-programming-languages-tour_13",
+      "slides": [
+        {
+          "title": "Lesson 14: D Programming",
+          "bullets": [
+            "Introduction to the D programming language.",
+            "A modern, high-performance successor to C++."
+          ],
+          "notes": "This lesson introduces D as a powerful, general-purpose language designed for efficiency and developer productivity.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Design Philosophy",
+          "bullets": [
+            "General-purpose systems and applications language.",
+            "Higher level than C++ but retains hardware control.",
+            "Multi-paradigm: imperative, object-oriented, and generic.",
+            "Practical for teams creating large-scale projects."
+          ],
+          "notes": "D balances high-level abstractions with the low-level performance capabilities required for modern systems programming.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Key Language Features",
+          "bullets": [
+            "Includes design by contract and unit testing.",
+            "Supports garbage collection and manual memory management.",
+            "Features closures, nested functions, and inner classes.",
+            "Modern reengineered template syntax functionality."
+          ],
+          "notes": "D offers distinctive features like native design by contract support and flexible memory management options.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "System Integration",
+          "bullets": [
+            "Direct interface with system APIs and hardware.",
+            "Integrated inline assembler for low-level coding.",
+            "Seamless interaction with C libraries and ABI.",
+            "Built-in Ddoc documentation generator."
+          ],
+          "notes": "D provides strong interoperability with C, allowing developers to reuse existing libraries while writing safe, modern code.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Development Environment",
+          "bullets": [
+            "Install Digital Mars D compiler (DMD).",
+            "Configure paths for dmd.exe and link.exe.",
+            "Use batch files to manage environment variables.",
+            "Compile using the 'dmd' command-line interface."
+          ],
+          "notes": "Setting up the D environment involves configuring paths correctly to ensure the compiler and linker are accessible.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Compiling and Libraries",
+          "bullets": [
+            "Phobos is the standard D library.",
+            "Tango serves as an alternate runtime library.",
+            "Multiple compiler options: DMD, GDC, and LDC.",
+            "Rapid turnaround from source to native code."
+          ],
+          "notes": "Developers can choose between Phobos or Tango libraries, and utilize different compilers to target various platforms.",
+          "page_range": "4-5",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 14: D Programming - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778790661735,
+      "pdfName": "D Programming"
+    }
+  ],
+  "sourceHash": "e8dafad86a5f87d4"
+}

@@ -1,0 +1,243 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Real Analysis Foundations - Lesson 4 — Functions Defined by Improper Integrals",
+    "pdfName": "Functions Defined by Improper Integrals (Trench)",
+    "createdAt": 1778572847602,
+    "exportedAt": "2026-05-12T08:00:47.603Z",
+    "meta": {
+      "courseId": "course-en-real-analysis-foundations",
+      "lessonIndex": 3,
+      "courseTitle": "Real Analysis Foundations",
+      "lessonObjective": "Functions Defined by Improper Integrals"
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_579646e34b6b",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Functions Defined by Improper Integrals",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778572847602,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Based on the provided text, here is a concise summary regarding the study of functions defined by improper integrals:\n\n### Summary: Functions Defined by Improper Integrals\nThis module serves as a supplementary resource to William F. Trench’s *Introduction to Real Analysis*. It focuses on the theoretical treatment of functions that are defined through improper integrals, a critical topic in real analysis that extends the concept of integration to intervals that are infinite or where the integrand may be unbounded.\n\n**Key Structural Points:**\n*   **Academic Scope:** The material provides foundational content for understanding how functions derived from improper integrals behave analytically [S.1].\n*   **Course Integration:** This lesson is intended to be used as part of a comparative study of real analysis, alongside texts by Sloughter and Lafferriere [S.1].\n*   **Licensing:** The content is provided under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License, courtesy of the UC Davis ChemWiki [S.1, S.2].\n\n***\n\n*Note: As the provided document serves as a title/front-matter page for a larger work, it establishes the scope and source of the material rather than detailing the mathematical proofs or theorems themselves.*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572847602,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-real-analysis-foundations_3\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 4 — Functions Defined by Improper Integrals - Presentation</span><span class=\"pm-chat-count\">2 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Functions Defined by Improper Integrals</div><ul class=\"pm-chat-slide-bullets\"><li>Understanding integrals with infinite domains or singular integrands.</li><li>Exploring real analysis theory extending beyond standard integration.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778572847603,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as a supplement to the textbook *Introduction to Real Analysis* by Trench, focusing on the study of functions defined by improper integrals.\n\n**Key Content Overview**\n\n*   **Scope:** The material provides supplementary information designed to assist students of real analysis in mastering the concepts surrounding improper integrals and the functions derived from them [S.1].\n*   **Licensing:** The content is provided under a Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License, as hosted by the UC Davis ChemWiki [S.1, S.2].\n*   **Structure:** The document is organized into a front matter section, the primary content chapters, and back matter [S.1, S.2].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572847612,
+      "channel": "plan_pipe_579646e34b6b",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778572847702,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "When considering the function defined by the integral F(x) = ∫[a, ∞) f(x, t) dt, what is the primary purpose of requiring uniform convergence on intervals of x?",
+            "options": [
+              "To ensure the resulting function F(x) is finite for all x",
+              "To allow the exchange of the limit (or derivative) with the integral sign",
+              "To guarantee that the integrand f(x, t) is a polynomial",
+              "To force the integral to converge to zero as x approaches infinity"
+            ],
+            "correctIndex": 1,
+            "explanation": "Uniform convergence is a critical property that provides the justification for moving limit operations—such as differentiation or taking limits—inside the integral sign."
+          },
+          {
+            "question": "If a function F(x) is defined by an improper integral ∫[a, ∞) f(x, t) dt, why is local uniform convergence on an interval often preferred over pointwise convergence?",
+            "options": [
+              "Pointwise convergence only guarantees continuity if the integral is finite",
+              "Local uniform convergence implies the continuity of the integral function F(x)",
+              "Pointwise convergence cannot exist for improper integrals",
+              "Local uniform convergence is required for the integral to be computable"
+            ],
+            "correctIndex": 1,
+            "explanation": "While pointwise convergence defines the function, local uniform convergence is the standard criterion that ensures the resulting function F(x) inherits the continuity properties of the integrand."
+          },
+          {
+            "question": "In the context of the Leibniz Rule applied to functions defined by improper integrals, what condition must be satisfied to differentiate under the integral sign?",
+            "options": [
+              "The integrand must be independent of t",
+              "The partial derivative of the integrand with respect to x must be continuous and lead to a uniformly convergent integral",
+              "The integral must be convergent at exactly one point x",
+              "The integral of the partial derivative must be equal to zero"
+            ],
+            "correctIndex": 1,
+            "explanation": "Validating the differentiation of an integral defined by an improper integral requires the partial derivative of the integrand to be well-behaved and ensure that the resulting integral converges uniformly."
+          },
+          {
+            "question": "Suppose F(x) = ∫[0, ∞) e^(-xt) dt for x > 0. Why does uniform convergence 'fail' as x approaches 0 from the right?",
+            "options": [
+              "Because the integral diverges at x = 0",
+              "Because the integrand becomes zero everywhere",
+              "Because the rate of convergence of the integral depends on the value of x",
+              "Because the integrand is not differentiable at x = 0"
+            ],
+            "correctIndex": 2,
+            "explanation": "Uniform convergence over an interval [a, b] requires the 'tail' of the integral to be bounded independently of x. As x approaches 0, the 'tail' decays more slowly, causing the convergence to become non-uniform."
+          },
+          {
+            "question": "Which of the following scenarios describes a situation where an improper integral F(x) would NOT necessarily represent a continuous function?",
+            "options": [
+              "The integral converges uniformly on every compact sub-interval",
+              "The integral converges pointwise, but the convergence is not uniform in any neighborhood of a point x0",
+              "The integrand f(x, t) is continuous in both x and t",
+              "The integral exists for all x in the domain"
+            ],
+            "correctIndex": 1,
+            "explanation": "Continuity of the integral function relies heavily on uniform convergence. If convergence is only pointwise, it is possible for the resulting function to develop jump discontinuities."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778572847703,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary subject of Lesson 4 in Trench's analysis materials?",
+            "back": "Functions defined by improper integrals."
+          },
+          {
+            "front": "How are these functions typically defined in the context of real analysis?",
+            "back": "They are defined as integrals where the domain of integration is infinite or the integrand has a singularity."
+          },
+          {
+            "front": "What is the purpose of this text supplement?",
+            "back": "To provide supplemental material for the author's Introduction to Real Analysis text."
+          },
+          {
+            "front": "Under what license is the content provided in this document?",
+            "back": "Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License."
+          },
+          {
+            "front": "How is the content structure organized in the document provided?",
+            "back": "It includes Front Matter, Chapters, and Back Matter."
+          },
+          {
+            "front": "What does an 'improper integral' usually involve regarding its limits?",
+            "back": "One or both limits of integration approaching infinity, or the function becoming unbounded within the interval."
+          },
+          {
+            "front": "In the context of the UC Davis ChemWiki citation, what is the primary role of this document?",
+            "back": "It acts as a supplementary educational resource for advanced calculus or real analysis."
+          },
+          {
+            "front": "True or False: The content addresses techniques for evaluating functions defined by improper integrals.",
+            "back": "True."
+          },
+          {
+            "front": "What field of study does this document belong to?",
+            "back": "Real Analysis."
+          },
+          {
+            "front": "Who is the author referenced for the primary introduction to real analysis?",
+            "back": "Trench."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-real-analysis-foundations_3",
+      "slides": [
+        {
+          "title": "Functions Defined by Improper Integrals",
+          "bullets": [
+            "Understanding integrals with infinite domains or singular integrands.",
+            "Exploring real analysis theory extending beyond standard integration."
+          ],
+          "notes": "Welcome to our lesson on functions defined by improper integrals, a key extension of real analysis theory.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Course Overview and Resources",
+          "bullets": [
+            "Supplement based on Trench's Introduction to Real Analysis (p. 1).",
+            "Content covers foundational chapters on improper integration (p. 1).",
+            "Licensed under Creative Commons Attribution-Noncommercial-Share Alike (p. 1-2)."
+          ],
+          "notes": "This material serves as a specialized supplement, provided under an open-access license for academic study.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 4 — Functions Defined by Improper Integrals - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778572847602,
+      "pdfName": "Functions Defined by Improper Integrals (Trench)"
+    }
+  ],
+  "sourceHash": "0899dad8f40a6b37"
+}

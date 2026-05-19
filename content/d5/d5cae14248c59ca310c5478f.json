@@ -1,0 +1,440 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Mathematik-Aufbau — Komplexe Zahlen, Funktionentheorie, Lineare Algebra - Lektion 2 — Einführung in die Funktionentheorie",
+    "pdfName": "Einführung in die Funktionentheorie",
+    "createdAt": 1778513570371,
+    "exportedAt": "2026-05-11T15:32:50.372Z",
+    "meta": {
+      "courseId": "course-de-mathematik-aufbau",
+      "lessonIndex": 1,
+      "courseTitle": "Mathematik-Aufbau — Komplexe Zahlen, Funktionentheorie, Lineare Algebra",
+      "lessonObjective": "Holomorphe Funktionen, Cauchy-Integral.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-einf-hrung-in-die-funktionentheorie",
+            "title": "Einführung in die Funktionentheorie",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_die_Funktionentheorie"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_a1b8090e2f4c",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Einführung in die Funktionentheorie",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-10",
+          "chapterTitle": "Folgen und Reihen mit komplexen Gliedern",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "11-22",
+          "chapterTitle": "Funktionen einer komplexen Veränderlichen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "23-34",
+          "chapterTitle": "Differentialrechnung von Funktionen einer komplexen Variablen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "35-38",
+          "chapterTitle": "Konforme Abbildung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "39-40",
+          "chapterTitle": "Autoren",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "41-44",
+          "chapterTitle": "Abbildungsverzeichnis",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "45-49",
+          "chapterTitle": "Licenses",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778513570371,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Aspekte aus dem bereitgestellten Dokument, die sich auf das Verständnis von Funktionen einer komplexen Veränderlichen konzentrieren (Kapitel 2):\n\n### Zusammenfassung: Funktionen einer komplexen Veränderlichen\n\n#### 1. Definition und Grundlagen (S. 11, S. 13)\n*   **Funktionsbegriff:** Eine Funktion $w = f(z)$ ordnet jeder komplexen Zahl $z$ (Definitionsbereich $D$) genau ein $w$ (Wertebereich $W$) zu.\n*   **Zerlegung:** Mit $z = x + iy$ lässt sich die Funktion als $f(z) = u(x, y) + iv(x, y)$ schreiben, wobei $u$ und $v$ reelle Funktionen von zwei reellen Variablen sind. Eine direkte räumliche Veranschaulichung wie bei reellen Funktionen ist aufgrund der vier beteiligten Variablen ($x, y, u, v$) nicht möglich.\n\n#### 2. Stetigkeit und Grenzwert (S. 13, S. 16)\n*   **Grenzwert:** Die Definition erfolgt analog zur reellen Analysis mittels $\\varepsilon$-$\\delta$-Umgebungen. Ein Grenzwert existiert nur, wenn die Funktion bei Annäherung an $\\zeta$ über **jeden beliebigen Weg** denselben Wert $\\omega$ annimmt.\n*   **Stetigkeit:** Eine Funktion heißt stetig an der Stelle $\\zeta$, wenn $\\lim_{z \\to \\zeta} f(z) = f(\\zeta)$ gilt.\n\n#### 3. Potenzreihen und analytische Funktionen (S. 15, S. 17)\n*   **Analytische Funktionen:** Funktionen, die im Innern ihres Konvergenzkreises durch eine Potenzreihe dargestellt werden können, nennt man analytisch.\n*   **Eigenschaften:** Sie sind innerhalb dieses Kreises stetig und differenzierbar.\n\n#### 4. Polynomfunktionen (S. 18–20)\n*   **Fundamentalsatz der Algebra:** Jedes Polynom vom Grad $n \\ge 1$ besitzt mindestens eine komplexe Nullstelle.\n*   **Linearfaktorzerlegung:** Jedes Polynom vom Grad $n$ kann in $n$ Linearfaktoren zerlegt werden, was bedeutet, dass es genau $n$ Nullstellen (mit Vielfachheit) besitzt.\n*   **Spezialfall reelle Polynome:** Treten komplexe Nullstellen auf, so erscheinen diese bei reellen Koeffizienten immer paarweise konjugiert komplex.\n\n#### 5. Transzendente Funktionen (S. 20–22)\n*   **Exponentialfunktion:** Diese wird über die Potenzreihe $\\sum_{n=0}^{\\infty} \\frac{z^n}{n!}$ definiert.\n*   **Eigenschaften:**\n    *   Sie erweitert den reellen Fall konsistent.\n    *   Es gilt das Additionstheorem $e^{z_1} \\cdot e^{z_2} = e^{z_1+z_2}$.\n    *   **Periodizität:** Die Funktion ist periodisch mit der Periode $2\\pi i$ (da $e^{2\\pi i} = 1$).\n    *   Zusammenhang zur Trigonometrie: $e^{i\\varphi} = \\cos \\varphi + i \\sin \\varphi$.\n\n***\n\n*Hinweis zum Lernziel:* Das in deiner Anfrage genannte Thema \"Cauchy-Integral\" ist im vorliegenden Dokumentenauszug (S. 1–22) noch nicht explizit enthalten. Das Dokument behandelt in Kapitel 3 (ab S. 23) jedoch die Differenzierbarkeit und die Cauchy-Riemannschen Differentialgleichungen, welche die theoretische Basis für holomorphe Funktionen bilden.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778513570371,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-mathematik-aufbau_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 2 — Einführung in die Funktionentheorie - Präsentation</span><span class=\"pm-chat-count\">5 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Einführung in die Funktionentheorie</div><ul class=\"pm-chat-slide-bullets\"><li>Erweiterung der Analysis auf komplexe Zahlen.</li><li>Grundlage für moderne mathematische Konsistenz.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778513570372,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Informationen aus (S. 1) und (S. 2):\n\n### Inhaltliche Übersicht\nDas Dokument ist eine Einführung in die Funktionentheorie von Siegfried Petry, welche über das deutsche Wikibooks-Projekt zur Verfügung gestellt wird (S. 1).\n\n### Rechtliche Rahmenbedingungen\nDie Inhalte unterliegen der Creative Commons Attribution-ShareAlike 3.0 Unported Lizenz (S. 2). Sollte es sich um ein abgeleitetes Werk handeln, muss dieses unter einer kompatiblen Lizenz veröffentlicht werden. Zudem finden sich im Dokument Verweise auf weitere Lizenzen wie GPL, LGPL und GFDL, da das Werk oder Teile davon unter diesen Bedingungen lizenziert sein können (S. 2).\n\n### Technische Details und Erstellung\nDas PDF wurde mithilfe der Software LaTeX erstellt (S. 2). Den Nutzern wird die Möglichkeit geboten, den LaTeX-Quellcode aus der Datei zu extrahieren. Dies kann über Werkzeuge wie $pdfdetach$ oder $pdftk$ erfolgen, wobei die Datei anschließend in $source.7z$ umbenannt werden muss (S. 2). Der für die Erstellung der LaTeX-Quelle verantwortliche Prozess wurde von Dirk Hünniger entwickelt (S. 2).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513570381,
+      "channel": "plan_pipe_a1b8090e2f4c",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der grundlegenden Konzepte zu Folgen und Reihen mit komplexen Gliedern (S. 3–10):\n\nGrundlagen\nDie Einführung komplexer Zahlen erweitert viele Konzepte der Analysis. Während das Rechnen mit komplexen Zahlen weitgehend analog zu den reellen Zahlen funktioniert, gelten zwei wichtige Ausnahmen: Potenzen mit irrationalen Exponenten unterliegen anderen Regeln, und die Kleiner/Größer-als-Relation ist nur auf die Beträge $|z_n|$ anwendbar (S. 5). Die Erweiterung erlaubt den Fundamentalsatz der Algebra sowie das ausnahmslose Wurzelziehen (S. 6).\n\nUnendliche Zahlenfolgen\nEine Folge $(z_n)$ ordnet jeder natürlichen Zahl eine komplexe Zahl zu. Eine Folge ist beschränkt, falls es ein $S > 0$ gibt, sodass $|z_n| \\leq S$ für alle $n$ gilt (S. 6).\n\nNullfolgen und Konvergenz\nEine Nullfolge ist dadurch definiert, dass für jedes $\\epsilon > 0$ ein $n_0$ existiert, sodass für alle $n \\geq n_0$ der Betrag $|z_n| < \\epsilon$ ist (S. 7). Eine allgemeine Folge $(z_n)$ konvergiert gegen einen Grenzwert $\\zeta$, wenn die Differenzfolge $(z_n - \\zeta)$ eine Nullfolge ist (S. 8).\n\nWichtige Konvergenzkriterien\n1. Die Konvergenz ist eindeutig (S. 9).\n2. Konvergente Folgen sind immer beschränkt (S. 9).\n3. Rechenoperationen (Addition, Subtraktion, Multiplikation, Division) sind gliedweise auf die Grenzwerte $\\zeta$ und $\\zeta'$ anwendbar, sofern die Grenzwerte existieren (S. 9).\n4. Eine komplexe Folge $(z_n) = (x_n + i y_n)$ konvergiert genau dann, wenn sowohl die Folge der Realteile $(x_n)$ als auch die Folge der Imaginärteile $(y_n)$ konvergieren (S. 10).\n5. Das Cauchy-Kriterium besagt, dass eine Folge genau dann konvergiert, wenn für jedes $\\epsilon > 0$ ein $n_0$ existiert, sodass $|z_{n'} - z_n| < \\epsilon$ für alle $n, n' \\geq n_0$ erfüllt ist (S. 10).\n\nUnendliche Reihen\nEine unendliche Reihe $\\sum_{n=1}^{\\infty} z_n$ stellt eine Summe unendlich vieler komplexer Summanden dar. Da diese nicht direkt berechnet werden kann, wird sie über die Folge ihrer Teilsummen definiert (S. 10).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513570382,
+      "channel": "plan_pipe_a1b8090e2f4c",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 10
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine zusammenfassende Übersicht der Abschnitte S. 11 bis S. 22:\n\n**1. Unendliche Reihen mit komplexen Gliedern (S. 11-12)**\nEine komplexe Reihe $\\sum_{n=1}^{\\infty} z_n$ konvergiert genau dann, wenn sowohl die Reihe der Realteile $\\sum_{n=1}^{\\infty} \\Re(z_n)$ als auch die Reihe der Imaginärteile $\\sum_{n=1}^{\\infty} \\Im(z_n)$ konvergieren. Für komplexe Potenzreihen der Form $\\sum_{n=0}^{\\infty} a_n(z-z_0)^n$ existiert ein Konvergenzkreis mit Radius $r$, innerhalb dessen die Reihe absolut konvergiert.\n\n**2. Funktionen einer komplexen Veränderlichen (S. 13-17)**\nEine Funktion $f(z) = u(x,y) + i v(x,y)$ bildet eine komplexe Zahl auf eine andere ab. Die Konzepte Grenzwert und Stetigkeit sind analog zur reellen Analysis definiert: Eine Funktion ist in $z = \\zeta$ stetig, wenn der Grenzwert bei Annäherung an $\\zeta$ dem Funktionswert $f(\\zeta)$ entspricht. Potenzreihen definieren innerhalb ihres Konvergenzkreises analytische Funktionen, die in diesem Bereich stetig und differenzierbar sind.\n\n**3. Polynomfunktionen (S. 18-20)**\nJedes Polynom vom Grad $n \\ge 1$ besitzt nach dem Fundamentalsatz der Algebra mindestens eine komplexe Nullstelle. Folglich lässt sich jedes Polynom in $n$ Linearfaktoren zerlegen: $p(z) = a_n(z-\\zeta_1)^{\\nu_1} \\dots (z-\\zeta_k)^{\\nu_k}$. Bei reellen Polynomen treten nicht-reelle Nullstellen stets als konjugiert komplexe Paare auf, wodurch eine Zerlegung in reelle Linear- oder quadratische Faktoren möglich ist.\n\n**4. Transzendente Funktionen (S. 20-22)**\nDie Exponentialfunktion $e^z$ wird über die Potenzreihe $\\sum_{n=0}^{\\infty} \\frac{z^n}{n!}$ definiert, womit die Eulersche Identität $e^{i\\varphi} = \\cos \\varphi + i \\sin \\varphi$ folgt. Die Funktion ist periodisch mit der Periode $2\\pi i$. Analog werden die trigonometrischen Funktionen $\\cos z$ und $\\sin z$ über ihre aus dem Reellen bekannten Potenzreihen auf den komplexen Bereich erweitert. Die Exponentialfunktion erfüllt dabei die Bedingung $|e^z| = e^{\\Re(z)}$.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513570383,
+      "channel": "plan_pipe_a1b8090e2f4c",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 11,
+        "end": 22
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der Abschnitte S.23 bis S.34:\n\n**Transzendente Funktionen im Komplexen (S.23-24)**\nDie trigonometrischen Funktionen Sinus und Kosinus werden für komplexe Zahlen $z$ über Eulersche Formeln definiert, beispielsweise $sin(z) = \\frac{1}{2i}(e^{iz} - e^{-iz})$ (S.23). Ihre Additionstheoreme und die Identität $sin^2(z) + cos^2(z) = 1$ bleiben erhalten. Für komplexe Argumente ergeben sich Zusammenhänge mit Hyperbelfunktionen, etwa $sin(x+iy) = sin(x)cosh(y) + i cos(x)sinh(y)$ (S.24). Ebenso werden die Hyperbelfunktionen $sinh(z)$ und $cosh(z)$ über Exponentialfunktionen definiert und durch stetig konvergente Potenzreihen dargestellt (S.24).\n\n**Differenzierbarkeit und Cauchy-Riemann-Gleichungen (S.25-30)**\nEine Funktion $f(z)$ ist an einer Stelle $z_0$ differenzierbar, wenn der Grenzwert des Differenzenquotienten existiert (S.25). Dies ist nicht bei jeder Funktion der Fall, wie das Beispiel $f(z) = |z|^2$ zeigt, welches nur im Nullpunkt differenzierbar ist (S.27). Damit eine Funktion $f(z) = u(x,y) + iv(x,y)$ im komplexen Sinne differenzierbar ist, müssen die Cauchy-Riemann-Differentialgleichungen erfüllt sein: $u_x = v_y$ und $u_y = -v_x$ (S.30).\n\n**Laplacesche Differentialgleichung (S.30-32)**\nJede im komplexen Gebiet differenzierbare Funktion ist dort beliebig oft differenzierbar (S.30-31). Daraus folgt, dass die Komponentenfunktionen $u$ und $v$ die Laplacesche Differentialgleichung erfüllen: $\\Delta u = \\frac{\\partial^2 u}{\\partial x^2} + \\frac{\\partial^2 u}{\\partial y^2} = 0$ (S.31-32). Solche Funktionen werden als regulär oder analytisch bezeichnet.\n\n**Differentiationsregeln (S.32-34)**\nFür Potenzfunktionen $f(z) = z^n$ gelten die bekannten Ableitungsregeln der reellen Analysis ($f'(z) = nz^{n-1}$), da der Grenzwert wegunabhängig ist (S.32). Potenzreihen können innerhalb ihres Konvergenzbereichs gliedweise differenziert werden (S.33). Auch für die Exponentialfunktion, die trigonometrischen und die hyperbolischen Funktionen übernehmen die Ableitungen ihre bekannte Form, wie etwa $\\frac{d}{dz} e^z = e^z$ oder $\\frac{d}{dz} sin(z) = cos(z)$ (S.34). Schließlich können bei Vorliegen einer eindeutigen Umkehrfunktion $w = f(z)$ auch inverse Funktionen betrachtet werden (S.34).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513570384,
+      "channel": "plan_pipe_a1b8090e2f4c",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 23,
+        "end": 34
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine Zusammenfassung der behandelten Themen aus den Seiten 35 bis 38:\n\n**Differentiationsregeln und Umkehrfunktionen (S. 35)**\nEin wesentliches Ergebnis der komplexen Analysis ist die Ableitungsregel für Umkehrfunktionen. Wenn eine Funktion $w = f(z)$ an einer Stelle $z$ differenzierbar ist, dann ist ihre Umkehrfunktion $g(w)$ an der entsprechenden Stelle ebenfalls differenzierbar, sofern $f'(z) \\neq 0$ gilt. Es gilt der Zusammenhang:\n$$\\frac{dg}{dw} = \\frac{1}{f'(z)}$$\nDies wird exemplarisch für die natürliche Logarithmusfunktion demonstriert, wobei sich durch die Anwendung der Umkehrregel für $w = e^z$ die Ableitung $\\frac{d(\\ln^* z)}{dz} = \\frac{1}{z}$ ergibt.\n\n**Grundlagen der konformen Abbildung (S. 37-38)**\nEine analytische Funktion $w = f(z) = u(x, y) + i v(x, y)$ kann als geometrische Abbildung betrachtet werden. Dabei wird eine Kurve $K$ in der $z$-Ebene auf eine Bildkurve $K'$ in der $w$-Ebene abgebildet.\n\nDie Steigung der Tangente an die Kurve $K$ in einem Punkt ist durch $\\tan \\tau = g'(\\zeta)$ gegeben. Die Steigung der Bildkurve $K'$ lässt sich durch die partiellen Ableitungen von $u$ und $v$ sowie die Steigung der ursprünglichen Kurve ausdrücken. Unter Verwendung der Cauchy-Riemannschen Differentialgleichungen wird hergeleitet:\n$$\\tan \\omega = \\frac{-\\left(\\frac{u_y}{u_x}\\right)_\\zeta + \\tan \\tau}{1 + \\left(\\frac{u_y}{u_x}\\right)_\\zeta \\tan \\tau}$$\nDie Existenz des Grenzwertes für die Steigung der Bildkurve stellt sicher, dass geometrische Eigenschaften wie Tangentenrichtungen unter analytischen Funktionen (mit $f'(z) \\neq 0$) in definierter Weise übertragen werden.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513570385,
+      "channel": "plan_pipe_a1b8090e2f4c",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 35,
+        "end": 38
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Abschnitte auf den Seiten 39 und 40:\n\nDie hier behandelten Abschnitte erläutern die mathematischen Grundlagen und Eigenschaften konformer Abbildungen durch analytische Funktionen.\n\nDie Kernpunkte sind:\n\n1. Winkeltreue: Eine reguläre Funktion $w = f(z)$ bildet zwei Kurven aus der $Z$-Ebene in die $W$-Ebene ab, wobei die Winkel zwischen den Tangenten der Kurven in der Bild- und Urbildebene identisch bleiben. Dies wird durch die Beziehung $\\Delta \\omega = \\Delta \\tau$ verdeutlicht (S. 39-40).\n\n2. Definition der konformen Abbildung: Eine Abbildung wird als konform bezeichnet, da sie sowohl winkeltreu als auch „im Kleinen“ maßstabstreu ist. Bei einer hinreichend kleinen Strecke $\\Delta z$ nähert sich die Abbildung eines Dreiecks einem ähnlichen Dreieck an, wodurch die Seitenverhältnisse erhalten bleiben (S. 40).\n\n3. Abbildungsmassstab: Für sehr kleine Bereiche gilt der Zusammenhang $\\Delta w \\approx f'(\\zeta) \\Delta z$. Daraus ergibt sich der lokale Abbildungsmassstab der Funktion als der Betrag der Ableitung:\n$|\\frac{\\Delta w}{\\Delta z}| \\approx |f'(\\zeta)|$ (S. 40).\n\nZusammenfassend lässt sich festhalten, dass reguläre Funktionen eine winkeltreue und bei hinreichend kleiner Betrachtung maßstabstreue Abbildung erzeugen, was den Kernbegriff der konformen Abbildung definiert (S. 40).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513570386,
+      "channel": "plan_pipe_a1b8090e2f4c",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 39,
+        "end": 40
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine Zusammenfassung der Informationen aus den Seiten 41 bis 44:\n\nAuf Seite 41 werden die Autoren des Werks sowie ihre jeweilige Anzahl an Bearbeitungen aufgeführt. Zu den genannten Personen gehören Dirk Huenniger, Juetho, MichaelFrey, Reseka, Shelmton und Siegfried Petry, wobei Shelmton mit 52 Edits die höchste Aktivität aufweist. Zudem sind die persönlichen Benutzerseiten der Autoren verlinkt.\n\nDie Seiten 43 und 44 enthalten ein ausführliches Abbildungsverzeichnis, das die verschiedenen genutzten Lizenzen erläutert. Dabei werden unterschiedliche rechtliche Rahmenbedingungen abgedeckt:\n\n- Freie Dokumentations- und Inhaltslizenzen: Dies umfasst diverse Versionen der Creative Commons Lizenzen (cc-by-sa sowie cc-by) sowie die Gnu Free Documentation License (GFDL).\n- Software- und Kunstlizenzen: Aufgeführt sind die GNU General Public License (GPL), die GNU Lesser General Public License (LGPL), die Lizenz Freie Kunst (LFK) sowie die Eclipse Public License (EPL).\n- Spezielle Rechtsstatus: Neben dem Public Domain Status (PD) werden urheberrechtsfreie Nutzungen (CFR) sowie spezielle Regelungen für die Abbildung von Euro-Münzen (EURO) und die Namensnennung (ATTR) definiert.\n\nAbschließend wird darauf hingewiesen, dass Kopien der GPL, LGPL und GFDL im Kapitel 6 zu finden sind und Bilder im Public Domain ohne Urheberangabe verwendet werden dürfen (S. 44).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513570387,
+      "channel": "plan_pipe_a1b8090e2f4c",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 41,
+        "end": 44
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine zusammenfassende Übersicht basierend auf den bereitgestellten Seiten:\n\n**Abbildungsverzeichnis (S. 45)**\nDas Dokument enthält ein Verzeichnis mit fünf Abbildungen. Die Urheberschaft der Abbildungen verteilt sich auf Dirk Huenniger, Michael Frey, Siegfried Petry sowie Daniel B.\n\n**GNU General Public License (GPL) Version 3 (S. 47)**\nDer Text legt die Bedingungen der GNU GPL Version 3 vom 29. Juni 2007 dar. Die Kernaspekte lauten:\n\n- Zielsetzung: Die Lizenz soll die Freiheit der Nutzer garantieren, Software zu teilen, zu verändern und diese Versionen als freie Software zu erhalten. Hierbei steht die Freiheit der Nutzung im Vordergrund, nicht der Preis.\n- Rechte der Nutzer: Anwender haben das Recht, Kopien zu verbreiten (auch kostenpflichtig), den Quellcode zu erhalten, die Software zu verändern und veränderte Versionen zu erstellen.\n- Pflichten bei Weitergabe: Wer Software unter der GPL verbreitet oder modifiziert, muss den Empfängern dieselben Freiheiten einräumen und den Zugriff auf den Quellcode gewährleisten.\n- Schutzmaßnahmen: Entwickler kennzeichnen ihre Arbeit durch einen Urheberrechtsvermerk und den Verweis auf die GPL. Zudem wird klargestellt, dass für die Software keine Gewährleistung besteht, um die Entwickler zu schützen.\n- Verhinderung von Einschränkungen: Die Lizenz untersagt technische Maßnahmen, die Anwendern die Installation modifizierter Software auf Geräten verwehren. Zudem enthält sie Bestimmungen, um zu verhindern, dass Softwarepatente die Freiheit des Programms einschränken oder es in ein proprietäres Modell überführen (S. 47).\n\n**Definitionen (S. 47)**\nIm Abschnitt zu den Geschäftsbedingungen werden zentrale Begriffe definiert:\n- Das Programm umfasst jedes urheberrechtlich geschützte Werk unter dieser Lizenz.\n- Modifikation bezeichnet jede Form der Anpassung, die über eine exakte Kopie hinausgeht.\n- Verbreitung (Propagation) umfasst jegliche Handlung, die ohne Erlaubnis eine Urheberrechtsverletzung darstellen würde, wobei die rein private Ausführung oder Änderung ausgenommen ist.\n- Weitergabe (Conveying) bezeichnet die Form der Verbreitung, die anderen Parteien den Erhalt von Kopien ermöglicht. Eine reine Interaktion über ein Computernetzwerk ohne Kopienübermittlung gilt nicht als Weitergabe (S. 47).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513570388,
+      "channel": "plan_pipe_a1b8090e2f4c",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 45,
+        "end": 49
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778513570471,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Was zeichnet eine Nullfolge im Kontext komplexer Zahlen aus?",
+            "options": [
+              "Ihre Glieder sind alle gleich null.",
+              "Sie ist das Produkt aus einer komplexen Zahl und ihrer konjugiert komplexen Zahl.",
+              "Der Betrag ihrer Glieder nähert sich beliebig genau der Null an.",
+              "Sie besteht nur aus rein imaginären Zahlen."
+            ],
+            "correctIndex": 2,
+            "explanation": "Eine Folge ist eine Nullfolge, wenn ihre Glieder nach einer bestimmten Nummer n_0 beliebig nahe an der Null liegen, was formal durch den Betrag |z_n| < ε definiert ist."
+          },
+          {
+            "question": "Wann ist eine unendliche Reihe mit komplexen Gliedern konvergent?",
+            "options": [
+              "Wenn die Reihe ihrer Beträge konvergent ist.",
+              "Wenn die Folge ihrer Glieder eine Nullfolge ist.",
+              "Wenn der Konvergenzradius größer als 1 ist.",
+              "Wenn sowohl die Reihe der Realteile als auch die Reihe der Imaginärteile konvergent sind."
+            ],
+            "correctIndex": 3,
+            "explanation": "Da eine komplexe Zahl in Real- und Imaginärteil zerlegt werden kann, konvergiert die Gesamtreihe nur dann, wenn die Teilreihen der reellen und imaginären Komponenten jeweils für sich konvergieren."
+          },
+          {
+            "question": "Was beschreibt der Konvergenzradius einer komplexen Potenzreihe?",
+            "options": [
+              "Den Radius eines Kreises um den Mittelpunkt z_0, innerhalb dessen die Reihe absolut konvergiert.",
+              "Den Abstand vom Ursprung zum entferntesten Konvergenzpunkt.",
+              "Die Differenz zwischen dem größten und kleinsten Konvergenzpunkt.",
+              "Die maximale Anzahl an Koeffizienten, für die die Reihe konvergiert."
+            ],
+            "correctIndex": 0,
+            "explanation": "Der Konvergenzradius r definiert einen Kreis um den Mittelpunkt z_0. Innerhalb dieses Kreises (|z - z_0| < r) konvergiert die Potenzreihe absolut, außerhalb divergiert sie."
+          },
+          {
+            "question": "Wie kann man eine Funktion f(z) = u(x,y) + i*v(x,y) im Vergleich zu reellen Funktionen am besten verstehen?",
+            "options": [
+              "Sie ist nur für reelle Eingabewerte (z = x) definiert.",
+              "Sie hat immer zwei Realteile und keinen Imaginärteil.",
+              "Sie entspricht einer reellen Funktion mit einer Variable.",
+              "Sie verknüpft Punkte aus der komplexen Zahlenebene (XY) mit Punkten in einer zweiten Ebene (UV)."
+            ],
+            "correctIndex": 3,
+            "explanation": "Da z = x + iy und w = u + iv, bilden Funktionen einer komplexen Variablen Abbildungen zwischen zwei komplexen Ebenen, wobei die Funktion durch zwei reelle Funktionen für u und v gegeben ist."
+          },
+          {
+            "question": "Was gilt für die Konvergenz einer komplexen Zahlenfolge (z_n) mit z_n = x_n + i*y_n?",
+            "options": [
+              "Sie konvergiert immer, weil komplexe Zahlen beschränkt sind.",
+              "Sie konvergiert nur, wenn z_n rein imaginär ist.",
+              "Sie konvergiert nur, wenn z_n rein reell ist.",
+              "Sie konvergiert genau dann, wenn sowohl (x_n) als auch (y_n) konvergieren."
+            ],
+            "correctIndex": 3,
+            "explanation": "Die Konvergenz der komplexen Folge ist äquivalent zur simultanen Konvergenz ihrer reellen Komponenten (Real- und Imaginärteil)."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778513570472,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist eine Nullfolge in der komplexen Analysis?",
+            "back": "Eine Zahlenfolge (z_n) heißt Nullfolge, wenn für jede positive Zahl ε eine Zahl n_0 existiert, sodass für alle n ≥ n_0 der Betrag |z_n| < ε ist."
+          },
+          {
+            "front": "Wann ist eine Folge (z_n) beschränkt?",
+            "back": "Wenn es eine positive Zahl S gibt, sodass für alle Folgenglieder gilt: |z_n| ≤ S."
+          },
+          {
+            "front": "Was ist der Grenzwert einer komplexen Folge (z_n) = (x_n + i*y_n)?",
+            "back": "Eine komplexe Folge konvergiert genau dann, wenn sowohl die Folge ihrer Realteile (x_n) als auch die Folge ihrer Imaginärteile (y_n) konvergieren. Der Grenzwert ist lim(z_n) = lim(x_n) + i * lim(y_n)."
+          },
+          {
+            "front": "Wann heißt eine komplexe Reihe absolut konvergent?",
+            "back": "Eine Reihe komplexer Zahlen heißt absolut konvergent, wenn die Reihe konvergiert, deren Glieder gleich den Beträgen |z_n| der ursprünglichen Glieder sind."
+          },
+          {
+            "front": "Wie ist eine komplexe Potenzreihe definiert?",
+            "back": "Es handelt sich um eine Reihe der Form ∑ a_n * (z - z_0)^n, wobei a_n, z und z_0 beliebige komplexe Zahlen sind und z_0 der Mittelpunkt ist."
+          },
+          {
+            "front": "Was beschreibt der Konvergenzradius r einer Potenzreihe?",
+            "back": "Die Reihe konvergiert absolut für alle z mit |z - z_0| < r (innerhalb des Kreises) und divergiert für alle z mit |z - z_0| > r (außerhalb des Kreises)."
+          },
+          {
+            "front": "Gilt der Fundamentalsatz der Algebra im Komplexen?",
+            "back": "Ja, der Fundamentalsatz der Algebra hat im Komplexen unbeschränkte Gültigkeit, und Wurzelziehen ist ausnahmslos möglich."
+          },
+          {
+            "front": "Wie verhält sich die Kleiner/Größer-Relation bei komplexen Zahlen?",
+            "back": "Die Ordnungsrelationen (<, >) können nur auf die Beträge r_n = |z_n| der komplexen Zahlen angewendet werden, nicht auf die komplexen Zahlen selbst."
+          },
+          {
+            "front": "Wie zerlegt man eine Funktion einer komplexen Veränderlichen f(z)?",
+            "back": "Mit z = x + iy lässt sich die Funktion als f(z) = u(x, y) + i * v(x, y) darstellen, wobei u der Realteil und v der Imaginärteil der Funktion ist."
+          },
+          {
+            "front": "Was passiert bei einer Umordnung einer konvergenten komplexen Zahlenfolge?",
+            "back": "Jede durch Umordnung einer konvergenten Zahlenfolge entstandene Folge ist ebenfalls konvergent und besitzt denselben Grenzwert."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-mathematik-aufbau_1",
+      "slides": [
+        {
+          "title": "Einführung in die Funktionentheorie",
+          "bullets": [
+            "Erweiterung der Analysis auf komplexe Zahlen.",
+            "Grundlage für moderne mathematische Konsistenz."
+          ],
+          "notes": "Wir betrachten heute, wie die Erweiterung des Zahlensystems die Analysis präziser und leistungsfähiger macht.",
+          "page_range": "1-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Folgen und unendliche Reihen",
+          "bullets": [
+            "Grundlage: Komplexe Zahlenfolgen und Konvergenz.",
+            "Reihen konvergieren, wenn Real- und Imaginärteil konvergieren.",
+            "Komplexe Potenzreihen definieren Funktionen in der Zahlenebene.",
+            "Konvergenzradius bestimmt den Definitionsbereich der Funktion."
+          ],
+          "notes": "Der Konvergenzbegriff ist der Anker, um komplexe Reihen mathematisch exakt zu definieren.",
+          "page_range": "6-12",
+          "image_prompt": ""
+        },
+        {
+          "title": "Funktionen einer komplexen Variablen",
+          "bullets": [
+            "Funktion f(z): Zuordnung von zwei komplexen Werten.",
+            "Zerlegung in Real- (u) und Imaginärteil (v).",
+            "Transzendente Funktionen analog zum Reellen definiert.",
+            "Eulersche Formeln verbinden e, sin und cos."
+          ],
+          "notes": "Hier sehen wir, wie sich bekannte reelle Funktionen natürlich in das Komplexe übertragen lassen.",
+          "page_range": "13-24",
+          "image_prompt": ""
+        },
+        {
+          "title": "Differentialrechnung",
+          "bullets": [
+            "Differenzierbarkeit erfordert Grenzwert des Differenzenquotienten.",
+            "Ableitung muss unabhängig vom Anfahrtsweg existieren.",
+            "Cauchy-Riemannsche Differentialgleichungen als notwendige Bedingung.",
+            "Analytische Funktionen sind differenzierbar."
+          ],
+          "notes": "Die Differenzierbarkeit ist deutlich restriktiver als im reellen Fall, was uns zu den Cauchy-Riemann-Gleichungen führt.",
+          "page_range": "25-30",
+          "image_prompt": ""
+        },
+        {
+          "title": "Konforme Abbildung",
+          "bullets": [
+            "Analytische Funktionen erlauben winkeltreue Abbildungen.",
+            "Geometrische Ähnlichkeit im Kleinen bleibt erhalten.",
+            "Skalierung erfolgt über den Betrag der Ableitung.",
+            "Konforme Abbildung durch reguläre Funktionsverläufe."
+          ],
+          "notes": "Wir schließen damit ab, wie komplexe Funktionen geometrische Strukturen in der Ebene präzise transformieren.",
+          "page_range": "35-40",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 2 — Einführung in die Funktionentheorie - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778513570371,
+      "pdfName": "Einführung in die Funktionentheorie"
+    }
+  ],
+  "sourceHash": "bc862e2cfc8016f8"
+}

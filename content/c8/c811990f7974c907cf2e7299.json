@@ -1,0 +1,321 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Astronomie und Raumfahrt: von Berechnung bis Mondrennen - Lektion 2: Mehrkörperproblem",
+    "pdfName": "Das Mehrkörperproblem in der Astronomie",
+    "createdAt": 1778786992062,
+    "exportedAt": "2026-05-14T19:29:52.062Z",
+    "meta": {
+      "courseId": "course-de-astronomie-raumfahrt",
+      "lessonIndex": 1,
+      "courseTitle": "Astronomie und Raumfahrt: von Berechnung bis Mondrennen",
+      "lessonObjective": "Gravitative Wechselwirkungen, numerische Lösungen.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-das-mehrk-rperproblem-in-der-astronomie",
+            "title": "Das Mehrkörperproblem in der Astronomie",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Das_Mehrk%C3%B6rperproblem_in_der_Astronomie"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_ecb4d21b0e63",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-3",
+          "chapterTitle": "Einleitung und physikalische Grundlagen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Algorithmen zur Mehrkörpersimulation",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-5",
+          "chapterTitle": "Praktische Beispiele: Planetensysteme bis kosmische Strukturen",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778786992062,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Basierend auf dem vorliegenden Dokument folgt eine strukturierte Zusammenfassung zur Thematik des Mehrkörperproblems:\n\n### Zusammenfassung: Das Mehrkörperproblem in der Astronomie\n\n**1. Zentrale Problemstellung**\nDie Hauptaufgabe besteht darin, die Bewegungen von Himmelskörpern unter dem wechselseitigen Einfluss der Gravitation vorherzusagen. Da eine analytische Lösung für Mehrkörpersysteme meist nicht möglich ist, stützen sich Simulationen auf die Annahme, dass die wirkende Kraft über extrem kurze Zeitintervalle als konstant betrachtet werden kann. Durch die iterative Neuberechnung der Kräfte werden Schritt für Schritt neue Positionen und Geschwindigkeiten ermittelt (S. 3).\n\n**2. Numerische Lösungsverfahren**\nZur Umsetzung dieser Simulationen werden verschiedene Algorithmen eingesetzt:\n*   **Grundkonzepte:** Verwendung von Größen wie Geschwindigkeit, Beschleunigung, Kraft, Energie und ergänzend dem „Ruck“ (Änderung der Beschleunigung pro Zeit) (S. 3).\n*   **Algorithmen:** Es kommen Verfahren wie das Euler-Verfahren, Leapfrog, Runge-Kutta und Prädiktor-Korrektor-Methoden zum Einsatz (S. 1).\n*   **Herausforderungen:** \n    *   **Rechenaufwand:** Da die Kraftberechnung für alle Paare eines Ensembles den Aufwand quadratisch ansteigen lässt, werden für große Systeme (Galaxien/Kosmos) hierarchische Algorithmen genutzt, die weit entfernte Objekte zu Schwerpunkten zusammenfassen (S. 4).\n    *   **Enge Begegnungen:** Um extrem hohe Kräfte bei der Annäherung punktförmiger Massen zu vermeiden, kommen spezielle Verfahren zur Glättung der Anziehungskraft zum Einsatz (S. 3, S. 4).\n\n**3. Didaktischer Aufbau des Buches**\n*   **Zielgruppe:** Schüler ab der 10. Klasse sowie interessierte Laien und Studenten (S. 2).\n*   **Darstellung:** Die Kernaussagen sind ohne höhere Mathematik verständlich. Vertiefende physikalische und mathematische Hintergründe sind durch blaue Kästen gekennzeichnet, die Kenntnisse in Algebra sowie Integral- und Differentialrechnung voraussetzen (S. 3).\n*   **Praxisbezug:** Die Simulationen reichen von einfachen Modellen (Planetensystem, Sternhaufen), die auf einem Laptop ausführbar sind, bis hin zu komplexen kosmischen Strukturen, deren Rechenaufwand über die Kapazität privater Rechner hinausgeht (S. 4).\n\n*Hinweis: Das Dokument enthält keine Informationen zur Geschichte der bemannten Raumfahrt, dem Kalten Krieg oder interstellaren Visionen.*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778786992062,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-astronomie-raumfahrt_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 2: Mehrkörperproblem - Präsentation</span><span class=\"pm-chat-count\">4 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Einführung in das Mehrkörperproblem</div><ul class=\"pm-chat-slide-bullets\"><li>Gravitative Wechselwirkungen zwischen vielen Himmelskörpern prägen das Universum.</li><li>Das Ziel ist die Vorhersage von Bewegungen durch Computersimulationen.</li><li>Grundlagen: Mechanik, Geschwindigkeit, Beschleunigung, Kraft und Energie.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778786992063,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die zusammenfassende Übersicht des Wikibooks „Das Mehrkörperproblem in der Astronomie“:\n\n### Zielsetzung und Zielgruppe\nDas Buch richtet sich an Schüler (ab Klasse 10), Studenten sowie astronomisch interessierte Laien mit Grundkenntnissen der Mechanik (S. 2). Ziel ist es, den Leser zur Durchführung eigener, realitätsnaher Computersimulationen von Mehrkörpersystemen zu befähigen und Einblicke in astronomische Forschungsergebnisse zu geben (S. 2). Das Projekt befindet sich in der Abschlussphase und ist als Lehrbuch konzipiert (S. 2).\n\n### Inhaltlicher Aufbau\nDas Werk gliedert sich in verschiedene Fachbereiche der Astronomie und Informatik:\n* Grundlagen: Von physikalischen Basisgrößen wie Geschwindigkeit, Beschleunigung und Kraft bis hin zur Bedeutung des Rucks (Änderung der Beschleunigung über die Zeit) (S. 1, S. 3).\n* Simulationstechniken: Der Fokus liegt auf der iterativen Berechnung von Positionen und Geschwindigkeiten, basierend auf der Annahme, dass Kräfte über kurze Zeiträume als konstant betrachtet werden können (S. 3). Es werden diverse Algorithmen behandelt, darunter Euler-, Leapfrog-, Runge-Kutta- und Prädiktor-Korrektor-Verfahren (S. 1).\n* Spezialthemen: Behandlung von Problemen wie extrem hohen Kräften bei nahen Begegnungen von Massenpunkten („Glättung der Anziehungskraft“) (S. 1, S. 3) sowie die Skalierung von Simulationen für kleine Planetensysteme bis hin zu großräumigen Kosmosstrukturen (S. 3).\n\n### Didaktisches Konzept\n* Der Haupttext verfolgt einen anschaulichen Ansatz ohne höhere Mathematik, um die Kernaussagen zugänglich zu halten (S. 3).\n* Vertiefende Abschnitte, die durch blaue Kästen markiert sind, bieten mathematische Herleitungen (z. B. mittels Differentialrechnung) für Fortgeschrittene und Studenten (S. 3).\n* Für Programmierer werden zusätzliche Abschnitte zu C-Routinen bereitgestellt, um die praktische Umsetzung der Mehrkörpersimulationen zu unterstützen (S. 3).\n\n### Zusammenfassung der physikalischen Kernidee\nDie Simulation stützt sich auf eine schrittweise Vorhersage der Dynamik eines Systems. Aus der aktuellen Konstellation werden mittels Gravitationsgesetz die Kräfte bestimmt, um daraus den Folgezustand zu prognostizieren (S. 3). Mathematisch relevant ist dabei der Ruck, der die zeitliche Änderung der Beschleunigung definiert und dessen genaue Bestimmung oft die Differentialrechnung erfordert:\n\n$Ruck = \\frac{d\\vec{a}}{dt}$",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778786992072,
+      "channel": "plan_pipe_ecb4d21b0e63",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Dieses Dokument beschreibt das Konzept eines Fachbuchs, das sich mit der Computersimulation von astronomischen Mehrkörpersystemen befasst. Es richtet sich gleichermaßen an Interessierte ohne Vorkenntnisse sowie an Studenten und Fortgeschrittene.\n\n**Zielsetzung und Zielgruppe**\nDas Buch verlagert den Fokus von der rein beobachtenden Astronomie hin zu computergestützten Simulationen von Systemen, die aus vielen Einzelmassen bestehen (S. 3). Der Haupttext ist allgemein verständlich gehalten. Vertiefende Abschnitte, die Algebra sowie Integral- und Differentialrechnung voraussetzen, sind für fortgeschrittene Leser als blaue Kästen gekennzeichnet und können bei Bedarf übersprungen werden (S. 3). Zusätzlich werden C-Routinen zur praktischen Implementierung bereitgestellt (S. 3).\n\n**Inhaltlicher Aufbau**\nDas Werk ist in theoretische Grundlagen und einen Praxisteil gegliedert:\n\n1. Grundlagen (Kapitel 1–2): Es erfolgt eine Einführung in die Vielfalt astronomischer Mehrkörpersysteme. Die physikalischen Grundgrößen (Geschwindigkeit, Kraft, Energie) werden um den Begriff des Rucks erweitert, wobei die Herleitung der entsprechenden Formel für den gravitativen Ruck zwischen zwei Massen mittles Differentialrechnung erfolgt (S. 3).\n\n2. Simulationstechniken (Kapitel 3–5): Die Grundidee besteht darin, über sehr kleine Zeitintervalle konstante Kräfte anzunehmen, um Positionen und Geschwindigkeiten fortlaufend zu berechnen (S. 3). Themen wie das Verhindern unrealistisch hoher Kräfte bei Annäherung von Massen als Punktmassen sowie Methoden zur Reduktion des quadratisch steigenden Rechenaufwands werden diskutiert (S. 3, 4).\n\n3. Praxis (Folgekapitel): Die Simulationen behandeln das Planetensystem, Sternhaufen, Galaxien und kosmische Großstrukturen (S. 4). Während viele Modelle auf handelsüblichen Laptops nachvollzogen werden können, erfordern komplexe Simulationen (z. B. Galaxienkollisionen oder die Frühgeschichte des Universums) eine höhere Rechenkapazität sowie fundierte mathematische Kenntnisse (S. 4).\n\n**Wichtige methodische Hinweise**\nDie mathematische Komplexität variiert stark: Viele Verfahren kommen ohne höhere Mathematik aus, während spezifische Modellierungen, etwa zum gestörten Kepler-Problem oder zur Kosmologie, fortgeschrittene analytische Methoden erfordern (S. 3, 4). Abschließend enthält das Buch eine Zusammenfassung essenzieller C-Prozeduren für den Programmcode (S. 4).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778786992073,
+      "channel": "plan_pipe_ecb4d21b0e63",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung der bereitgestellten Abschnitte:\n\nDer Text befasst sich mit den Herausforderungen und Methoden der Mehrkörpersimulation in der Astronomie sowie deren praktischer Umsetzung (S. 4).\n\n**Algorithmische Herausforderungen**\nDer Rechenaufwand bei Mehrkörpersimulationen steigt quadratisch zur Anzahl der Körper, da jedes Paar einzeln betrachtet werden muss. Zur Reduzierung der Last können entferntere Körper zu Gruppenschwerpunkten zusammengefasst werden. Während einige Algorithmen kaum Mathematik erfordern, gibt es für den effizienten Rechenweg auch Ansätze, die fortgeschrittene Kenntnisse voraussetzen (S. 4).\n\n**Praktische Anwendungsbeispiele**\nDie Simulationen lassen sich größtenteils auf handelsüblichen Laptops nachvollziehen, wobei sich die mathematischen Anforderungen je nach Thema unterscheiden:\n\n- Planetensysteme: Fokus auf Störungen; erfordert überwiegend keine höhere Mathematik, mit Ausnahme des gestörten Kepler-Problems am Ende (S. 4).\n- Sternhaufen: Die mathematische Komplexität ergibt sich vor allem aus den zufälligen Anfangsbedingungen. Grundkenntnisse der Thermodynamik sind hilfreich, Integral- und Differentialrechnung jedoch nicht zwingend notwendig (S. 4).\n- Galaxien: Die Festlegung der Anfangsbedingungen ist anspruchsvoll, die Mathematik bleibt jedoch ohne höhere Infinitesimalrechnung aus. Zur Simulation isolierter Galaxien auf Laptops werden vereinfachte Modelle genutzt; Galaxienkollisionen übersteigen die Laptop-Kapazität (S. 4).\n- Kosmische Großstrukturen: Hier sind substantielle Kenntnisse der Integral- und Differentialrechnung sowie ein detailliertes Verständnis der Entwicklung des Universums erforderlich. Die Simulation der Entstehung von Großstrukturen ist auf einem Laptop nicht durchführbar (S. 4).\n\n**Abschluss**\nDas letzte Kapitel des Buches bietet eine Zusammenfassung essenzieller C-Prozeduren, die in den Simulationsschritten wiederkehrend zur Anwendung kommen (S. 4). Die Quelle der Informationen ist ein Wikibook-Eintrag (S. 5).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778786992074,
+      "channel": "plan_pipe_ecb4d21b0e63",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778786992162,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Was ist die grundlegende methodische Annahme bei der numerischen Simulation des Mehrkörperproblems?",
+            "options": [
+              "Kräfte werden als über sehr kurze Zeitintervalle konstant betrachtet, um daraus neue Positionen abzuleiten.",
+              "Die Bahnen aller Himmelskörper werden als perfekte Ellipsen vorausgesetzt, die sich nur minimal stören.",
+              "Das System wird als ein kontinuierliches Fluid betrachtet, bei dem individuelle Punkte keine Rolle spielen.",
+              "Alle Gravitationskräfte werden als statische Felder behandelt, die sich nicht mit der Zeit verändern."
+            ],
+            "correctIndex": 0,
+            "explanation": "Die Simulation läuft schrittweise ab: Über kurze Zeiträume wird die Kraft als konstant angenommen, um die Bewegung zu prognostizieren, woraufhin die Kräfte für den nächsten Zeitschritt neu berechnet werden."
+          },
+          {
+            "question": "Warum ist bei der Simulation von Mehrkörpersystemen eine 'Glättung' oder Anpassung der Anziehungskraft erforderlich?",
+            "options": [
+              "Um den Rechenaufwand bei sehr vielen Objekten linear statt quadratisch zu gestalten.",
+              "Da die berechnete Gravitationskraft bei zwei sich sehr nahe kommenden Punkten physikalisch unrealistisch große Werte annimmt.",
+              "Weil die Ausdehnung der Himmelskörper ohne Glättung die Lichtgeschwindigkeit überschreiten würde.",
+              "Um den Fehler auszugleichen, der entsteht, wenn man die allgemeine Relativitätstheorie vernachlässigt."
+            ],
+            "correctIndex": 1,
+            "explanation": "Da Himmelskörper im Modell oft als punktförmig betrachtet werden, können sie sich in Simulationen beliebig nahe kommen, was zu extrem hohen, in der Realität nicht auftretenden Kräften führt."
+          },
+          {
+            "question": "Warum steigt der Rechenaufwand in einer Standard-Mehrkörpersimulation quadratisch mit der Anzahl der Teilchen an?",
+            "options": [
+              "Weil man für jedes Teilchen zusätzlich den 'Ruck' berechnen muss, der komplexer als die Kraft ist.",
+              "Weil die Energieerhaltung bei jedem Zeitschritt eine quadratische Korrekturmatrix erfordert.",
+              "Weil die Gravitationskraft jedes Körpers auf jeden anderen Körper im Ensemble berechnet werden muss.",
+              "Weil die Zeitauflösung bei vielen Körpern exponentiell verfeinert werden muss."
+            ],
+            "correctIndex": 2,
+            "explanation": "Wenn man jedes Paar von Individuen betrachten muss, ergibt sich bei N Objekten eine Anzahl von Kombinationen, die nach der Formel N*(N-1)/2 wächst, also in der Größenordnung von N^2."
+          },
+          {
+            "question": "Was unterscheidet hierarchische Algorithmen von einfachen Simulationsverfahren?",
+            "options": [
+              "Sie ersetzen die Newtonsche Gravitation durch eine rein statistische Mittelwertberechnung.",
+              "Sie berechnen nur die Bewegungen der zwei größten Massen und ignorieren den Rest.",
+              "Sie gruppieren weit entfernte Körper zu Schwerpunkten, um die Anzahl der Einzelberechnungen zu reduzieren.",
+              "Sie stützen sich ausschließlich auf höhere Mathematik und verzichten gänzlich auf die numerische Integration."
+            ],
+            "correctIndex": 2,
+            "explanation": "Durch die Zusammenfassung entfernter Teilchen zu Gruppenschwerpunkten kann der quadratische Rechenaufwand massiv gesenkt werden, bei Inkaufnahme kleinerer Ungenauigkeiten."
+          },
+          {
+            "question": "Welche Rolle spielt der 'Ruck' in der numerischen Simulation von Mehrkörpersystemen?",
+            "options": [
+              "Er ist eine Hilfsgröße zur Änderung der Beschleunigung und für bestimmte Aspekte der Simulation unentbehrlich.",
+              "Er dient ausschließlich der Korrektur von Messfehlern durch Teleskope.",
+              "Er ist ein rein theoretisches Konzept, das in der Praxis der Computersimulation keine Anwendung findet.",
+              "Er wird verwendet, um die thermische Energie der Sterne im System direkt zu berechnen."
+            ],
+            "correctIndex": 0,
+            "explanation": "Der Ruck (Änderung der Beschleunigung mit der Zeit) wird explizit als wichtige Größe für die Behandlung bestimmter Aspekte des Mehrkörperproblems genannt."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778786992163,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist die Grundidee der numerischen Lösung für das Mehrkörperproblem?",
+            "back": "Die Annahme, dass über einen sehr kurzen Zeitraum die einwirkenden Kräfte als konstant betrachtet werden können, um neue Positionen und Geschwindigkeiten zu berechnen."
+          },
+          {
+            "front": "Was bezeichnet man in der Astronomie als 'Ruck'?",
+            "back": "Der Ruck ist die zeitliche Änderung der Beschleunigung, welche für bestimmte Aspekte des Mehrkörperproblems unentbehrlich ist."
+          },
+          {
+            "front": "Warum ist der Rechenaufwand bei einer naiven Simulation eines Mehrkörpersystems problematisch?",
+            "back": "Der Aufwand steigt quadratisch mit der Anzahl der Körper, da alle möglichen Paare von Individuen zur Kräfteberechnung betrachtet werden müssen."
+          },
+          {
+            "front": "Wie lässt sich der Rechenaufwand bei großen Mehrkörpersystemen reduzieren?",
+            "back": "Indem nur nahe Nachbarn einzeln berücksichtigt werden, während weiter entfernte Massenpunkte zu Gruppenschwerpunkten zusammengefasst werden."
+          },
+          {
+            "front": "Welches Problem tritt auf, wenn Himmelskörper in Simulationen als masselose Punkte behandelt werden?",
+            "back": "Sie können sich beliebig nahe kommen, was zu unrealistisch hohen Kräften führt, wie sie in der Natur nicht vorkommen."
+          },
+          {
+            "front": "Welche Mathematikkentnisse sind für das Verständnis des Haupttextes des Buches erforderlich?",
+            "back": "Kenntnisse der Mechanik (Geschwindigkeit, Beschleunigung, Kraft, Arbeit) auf Abiturniveau; höhere Mathematik (Integral-/Differentialrechnung) ist für den Haupttext nicht nötig."
+          },
+          {
+            "front": "Wofür sind die blau markierten Kästen im Buch gedacht?",
+            "back": "Sie dienen der Vertiefung physikalischer oder mathematischer Zusammenhänge für Studenten und Fortgeschrittene und erfordern Kenntnisse der Analysis."
+          },
+          {
+            "front": "Was ist der Unterschied in der Simulation zwischen Sternhaufen und Galaxien in Bezug auf die Anfangsbedingungen?",
+            "back": "Bei Sternhaufen werden Anfangsbedingungen zufällig nach bestimmten Gesetzmäßigkeiten festgelegt; bei Galaxien ist die Festlegung der Anfangsbedingungen deutlich komplexer."
+          },
+          {
+            "front": "Warum ist die Simulation kosmischer Großstrukturen besonders anspruchsvoll?",
+            "back": "Sie erfordert eine detaillierte Diskussion der Frühgeschichte und Ausdehnung des Universums und übersteigt wegen des hohen Rechenaufwands die Kapazität eines Laptops."
+          },
+          {
+            "front": "Was ist für das Verständnis von Sternhaufen-Simulationen in der Astronomie besonders hilfreich?",
+            "back": "Grundkenntnisse der Thermodynamik, da das Verhalten eines Sternhaufens oft mit dem eines Gases verglichen wird."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-astronomie-raumfahrt_1",
+      "slides": [
+        {
+          "title": "Einführung in das Mehrkörperproblem",
+          "bullets": [
+            "Gravitative Wechselwirkungen zwischen vielen Himmelskörpern prägen das Universum.",
+            "Das Ziel ist die Vorhersage von Bewegungen durch Computersimulationen.",
+            "Grundlagen: Mechanik, Geschwindigkeit, Beschleunigung, Kraft und Energie."
+          ],
+          "notes": "Wir betrachten, wie astrophysikalische Systeme von Sternhaufen bis Galaxien modelliert werden, um ihre dynamische Entwicklung zu verstehen.",
+          "page_range": "1-3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Physikalische Grundlagen der Simulation",
+          "bullets": [
+            "Konstante Kräfte über kurze Zeitintervalle für Positions- und Geschwindigkeitsprognosen.",
+            "Einführung des Rucks als zeitliche Änderung der Beschleunigung.",
+            "Iterative Berechnung durch wiederholte Prognose-Schritte."
+          ],
+          "notes": "Der Kern jeder Simulation ist die Zerlegung kontinuierlicher Bewegungen in kleine, näherungsweise konstante Zeitintervalle.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Algorithmen und Rechenaufwand",
+          "bullets": [
+            "Der Rechenaufwand steigt bei exakter Betrachtung aller Paare quadratisch an.",
+            "Optimierung durch Gruppierung weit entfernter Massen zu Schwerpunkten.",
+            "Behandlung kritischer, extrem naher Begegnungen der Körper (S. 3)."
+          ],
+          "notes": "Um komplexe Systeme effizient zu simulieren, nutzen wir Algorithmen, die den massiven Rechenaufwand durch Vereinfachung entfernter Interaktionen reduzieren.",
+          "page_range": "3-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Praktische Fallbeispiele",
+          "bullets": [
+            "Planetensysteme: Analyse von Störungen und Bahnelementen.",
+            "Sternhaufen: Vergleich mit Gasen (Thermodynamik) und zufällige Anfangsbedingungen.",
+            "Galaxien und Kosmos erfordern zunehmend komplexe, vereinfachte Modellansätze."
+          ],
+          "notes": "Von einfachen Planetenbahnen bis zu den Strukturen des Kosmos skalieren unsere Simulationen, wobei die nötige Rechenleistung stark variiert.",
+          "page_range": "4",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 2: Mehrkörperproblem - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778786992062,
+      "pdfName": "Das Mehrkörperproblem in der Astronomie"
+    }
+  ],
+  "sourceHash": "d6394b637e1e41ed"
+}

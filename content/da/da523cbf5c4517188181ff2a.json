@@ -1,0 +1,255 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Tour of Programming Languages — From C to Haskell - Lesson 2 — Introduction to Programming Languages",
+    "pdfName": "Introduction to Programming Languages",
+    "createdAt": 1778576715154,
+    "exportedAt": "2026-05-12T09:05:15.155Z",
+    "meta": {
+      "courseId": "course-en-programming-languages-tour",
+      "lessonIndex": 1,
+      "courseTitle": "Tour of Programming Languages — From C to Haskell",
+      "lessonObjective": "Paradigms, type systems, runtime models.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-introduction-to-programming-languages",
+            "title": "Introduction to Programming Languages",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Introduction_to_Programming_Languages"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_aae0c3bd0c8c",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Syntax, Grammars, and Functional Programming",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Memory, Objects, and Logic Programming",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576715154,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Based on the provided text, here is a concise summary of the topics covered in the Introduction to Programming Languages:\n\n### **Course Summary**\n\nThis curriculum provides a comprehensive overview of programming language theory, categorized into four primary domains:\n\n**1. Language Theory and Syntax**\n*   **Grammars & Parsing:** Covers formal grammars, ambiguity, precedence, and associativity.\n*   **Translation:** Explores syntax-directed interpretation, translation, and type checking.\n*   **Execution Models:** Distinguishes between compiled and interpreted programs and examines execution environments.\n\n**2. Type Systems**\n*   **Classification:** Explores primitive vs. constructed types, static vs. dynamic typing, and nominal vs. structural equivalence.\n*   **Polymorphism:** Defines various forms, including Ad-Hoc (overloading/coercion), Universal (parametric/subtype), and Type Inference.\n*   **Safety:** Discusses safe vs. unsafe typing disciplines and the role of type annotations.\n\n**3. Functional and Imperative Paradigms**\n*   **Functional Concepts:** Focuses on the Lambda Calculus, pattern matching, closures, partial application, and higher-order functions, with specific applications in Haskell.\n*   **Imperative Concepts:** Covers memory management (static, stack, and heap), garbage collection, and imperative programming techniques (using Python as an example).\n*   **Data Structures:** Explores Algebraic Data Types and functional data structures.\n\n**4. Runtime and Logic Models**\n*   **Memory & Scope:** Examines storage types, scoping rules (blocks/namespaces), and cost models.\n*   **Advanced Logic:** Introduces Logic Programming, including unification, exhaustive search, and cost modeling in Prolog.\n*   **Object-Oriented Programming (OOP):** Details core OOP features, exceptions, and parameter passing.\n\n***\n\n**Source References:**\n*   **Paradigms and Syntax:** [S.1]\n*   **Type Systems and Functional Programming:** [S.2]\n*   **Memory, Imperative Logic, and OOP:** [S.3]\n*   **Semantics:** [S.4]",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576715154,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-programming-languages-tour_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 2 — Introduction to Programming Languages - Presentation</span><span class=\"pm-chat-count\">0 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\"></div></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778576715155,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document provides a comprehensive overview of fundamental concepts in computer science related to programming language theory and design. The content is structured into several core thematic areas:\n\n**Language Syntax and Grammars**\nThe text covers the formal structures governing programming languages, including the study of grammars, parsing techniques, and the handling of ambiguity, precedence, and associativity. It further explores syntax-directed methods for interpretation, translation, and type checking [S.1].\n\n**Execution Models and Typing Disciplines**\nThe materials distinguish between compiled and interpreted execution environments and examine the concepts of binding. A significant portion is dedicated to typing disciplines, encompassing primitive and constructed types, type equivalence, and the practical distinctions between static vs. dynamic typing and nominal vs. structural typing. The text also details various forms of polymorphism, specifically ad-hoc, universal, parametric, and subtype polymorphism [S.1, S.2].\n\n**Functional Programming and Language Semantics**\nThe curriculum delves into functional programming paradigms, with a focus on Haskell, pattern matching, algebraic data types, and functional data structures. It addresses advanced functional concepts such as closures, partial application, and higher-order functions. Additionally, the text explains the mechanics of scope, including block-level scoping, namespaces, and the theoretical foundations provided by the lambda calculus [S.1, S.2].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576715164,
+      "channel": "plan_pipe_aae0c3bd0c8c",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines the core concepts in the study of programming languages, covering memory management, paradigms, and execution logic across sections [S.3] and [S.4].\n\n**Memory Management and Data Structures**\nThe text details various storage mechanisms, including static memory, stacks, heaps, and the role of garbage collection. It explores the implementation of memory allocation in imperative languages like Python, alongside fundamental data structures such as lists and arrays.\n\n**Programming Paradigms**\nThe document covers several major programming paradigms and their associated features:\n* Object-Oriented Programming (OOP): Examines core principles, such as object orientation and language-specific features.\n* Logic Programming: Introduces the logic programming paradigm, emphasizing unification, simple predicates, and the inherent power of exhaustive search.\n* Functional Concepts: Discusses parameter matching, evaluation strategies, and tail call optimization.\n\n**Language Semantics and Interpretation**\nThe text connects theoretical concepts to practical implementation, focusing on:\n* Parameter passing and exception handling.\n* The construction of interpreters, specifically referencing an interpreter for ML.\n* Mathematical applications within Prolog and the broader \"Quest for Meaning\" regarding language semantics.\n\n**Abstract Concepts**\nThe study concludes by addressing abstract data types and the development of cost models to evaluate the efficiency of programming language constructs [S.3, S.4].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576715165,
+      "channel": "plan_pipe_aae0c3bd0c8c",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576715254,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "If a language uses structural typing, what determines whether two types are equivalent?",
+            "options": [
+              "The explicit name or declaration given to the types.",
+              "The specific structure and members contained within the types.",
+              "Whether the types were defined in the same namespace.",
+              "The order in which the types were defined in the source code."
+            ],
+            "correctIndex": 1,
+            "explanation": "Structural typing determines type equivalence based on the actual composition (structure) of the types, rather than their explicit names (which is nominal typing)."
+          },
+          {
+            "question": "What is the primary difference between ad-hoc polymorphism and parametric polymorphism?",
+            "options": [
+              "Ad-hoc polymorphism works for any type, while parametric polymorphism only works for specific ones.",
+              "Ad-hoc polymorphism requires manual memory management, unlike parametric polymorphism.",
+              "Ad-hoc polymorphism allows functions to behave differently based on specific types, while parametric polymorphism uses the same logic for all types.",
+              "Ad-hoc polymorphism is resolved at runtime, whereas parametric polymorphism must be resolved at compile time."
+            ],
+            "correctIndex": 2,
+            "explanation": "Ad-hoc polymorphism (like overloading) allows a function to support a specific set of types with distinct implementations, whereas parametric polymorphism enables a single implementation to operate generically over any type."
+          },
+          {
+            "question": "In the context of language runtimes, why is 'tail call optimization' particularly important for functional programming patterns?",
+            "options": [
+              "It allows functional programs to use the heap instead of the stack for all variables.",
+              "It prevents stack overflows when implementing recursion as a primary control flow mechanism.",
+              "It automatically converts interpreted code into machine-executable compiled instructions.",
+              "It allows for the dynamic binding of variables in deeply nested lexical scopes."
+            ],
+            "correctIndex": 1,
+            "explanation": "Since functional programming relies heavily on recursion rather than iterative loops, tail call optimization is essential to keep recursion stack-space invariant, preventing stack overflows."
+          },
+          {
+            "question": "What distinguishes statically typed languages from dynamically typed languages regarding type checking?",
+            "options": [
+              "Statically typed languages perform checks at compile time, while dynamically typed languages check types at runtime.",
+              "Statically typed languages allow for type inference, whereas dynamic languages require explicit annotations.",
+              "Statically typed languages forbid polymorphic behavior, while dynamic languages mandate it.",
+              "Statically typed languages use the heap for memory, while dynamic languages use the stack."
+            ],
+            "correctIndex": 0,
+            "explanation": "The fundamental distinction is timing: static typing validates types during the compilation phase, while dynamic typing defers this validation until the program is executing."
+          },
+          {
+            "question": "Which mechanism best describes the ability of an object-oriented language to treat an object as an instance of its parent class?",
+            "options": [
+              "Ad-hoc polymorphism",
+              "Type inference",
+              "Subtype polymorphism",
+              "Partial application"
+            ],
+            "correctIndex": 2,
+            "explanation": "Subtype polymorphism (or inclusion polymorphism), which is central to object-oriented programming, allows code to work with a base class type while accepting objects of its derived subclasses."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778576715255,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What are the three main type equivalence strategies mentioned?",
+            "back": "Nominal typing, structural typing, and duck typing (though the text specifically contrasts nominal vs. structural)."
+          },
+          {
+            "front": "What defines the difference between static and dynamic typing?",
+            "back": "Static typing performs type checking at compile-time, while dynamic typing performs type checking at runtime."
+          },
+          {
+            "front": "What is the difference between ad-hoc and universal polymorphism?",
+            "back": "Ad-hoc polymorphism allows functions to be applied to different types via overloading/coercion; universal polymorphism allows functions to work uniformly over a range of types (parametric or subtype)."
+          },
+          {
+            "front": "What is a closure in programming?",
+            "back": "A function object that captures the lexical environment (variables) in which it was created, even when executed outside that scope."
+          },
+          {
+            "front": "Define the Stack vs. Heap memory models.",
+            "back": "The stack stores local variables and handles function call management (LIFO), while the heap is used for dynamic memory allocation with a longer lifetime."
+          },
+          {
+            "front": "What is tail call optimization?",
+            "back": "A compiler optimization where a function call made at the very end of a function is replaced with a jump, preventing stack overflow during recursion."
+          },
+          {
+            "front": "What is the difference between nominal and structural typing?",
+            "back": "Nominal typing determines equivalence by explicit declarations/names; structural typing determines equivalence based on the underlying structure or members."
+          },
+          {
+            "front": "Define parameter passing evaluation strategies.",
+            "back": "Common strategies include pass-by-value (copies data) and pass-by-reference (passes memory address)."
+          },
+          {
+            "front": "What is an Algebraic Data Type (ADT)?",
+            "back": "A composite type formed by combining other types, usually using sum types (unions) and product types (records/tuples)."
+          },
+          {
+            "front": "What does garbage collection perform?",
+            "back": "It is an automatic memory management process that identifies and reclaims heap-allocated memory that is no longer reachable by the program."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-programming-languages-tour_1",
+      "slides": [],
+      "config": {
+        "title": "Lesson 2 — Introduction to Programming Languages - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576715154,
+      "pdfName": "Introduction to Programming Languages"
+    }
+  ],
+  "sourceHash": "cc9ce4f68baf8b55"
+}

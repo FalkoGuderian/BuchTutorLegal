@@ -1,0 +1,344 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Applied Cryptography and Disk Encryption - Lesson 1 — Cryptography (foundations)",
+    "pdfName": "Cryptography",
+    "createdAt": 1778572714431,
+    "exportedAt": "2026-05-12T07:58:34.432Z",
+    "meta": {
+      "courseId": "course-en-cryptography-applied",
+      "lessonIndex": 0,
+      "courseTitle": "Applied Cryptography and Disk Encryption",
+      "lessonObjective": "Symmetric, asymmetric, hashes.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-cryptography",
+            "title": "Cryptography",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Cryptography"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_2442d2f88f26",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Introduction and Fundamental Concepts",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-3",
+          "chapterTitle": "Cryptanalysis and Attacks",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Using Cryptosystems: Algorithms and Protocols",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-5",
+          "chapterTitle": "Cryptography, Society, and Future Directions",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778572714431,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "This summary outlines the foundational pillars of cryptography as presented in the provided text, focusing on the core mechanisms required for secure systems.\n\n### **Core Cryptographic Mechanisms**\n\n#### **1. Symmetric Key Ciphers**\nSymmetric cryptography relies on using the same key for both encryption and decryption. This method is efficient for large-scale data protection, such as **full-disk encryption** ([S.4]). Historical examples include the Enigma Machine, while modern standards include DES and AES ([S.3, S.4]).\n\n#### **2. Asymmetric Key Ciphers (Public-Key Cryptography)**\nUnlike symmetric ciphers, these systems use a pair of keys: a public key for encryption and a private key for decryption. This architecture is vital for secure communication and key distribution. Key algorithms include:\n*   **RSA and ElGamal:** Foundation for secure data exchange.\n*   **Elliptic Curve Cryptography:** A highly efficient contemporary standard ([S.4]).\n\n#### **3. Hashes (Cryptographic Hash Functions)**\nHashes are one-way functions that convert data into a fixed-length string, useful for verifying integrity and storing passwords securely ([S.1]). Common algorithms include:\n*   **Legacy/Specific:** MD5, SHA-1, RIPEMD-160, and Tiger ([S.4]).\n*   **Modern Standards:** SHA-2 and SHA-3 ([S.4]).\n*   **Message Authentication Codes (MAC):** Often referred to as \"keyed\" hash functions, used to verify both the integrity and authenticity of a message ([S.4]).\n\n---\n\n### **Foundational Concepts for Application**\nTo apply these to your course goals (e.g., hardened Linux or secure messaging), consider these critical principles from the text:\n\n*   **Key Management:** The security of any system depends on how keys are distributed and authenticated (e.g., the \"web of trust\") ([S.2]).\n*   **Protocol Integration:** Successful security implementations rely on established protocols like **SSL/SSH** for transport security and **Kerberos** for authentication ([S.4]).\n*   **Design Philosophy:** \n    *   **Open Algorithms:** Security should rely on the secrecy of the key, not the secrecy of the algorithm; open peer-review is crucial ([S.2]).\n    *   **Defense in Depth:** Cryptography is only one part of computer security; it must be supported by secure implementation and rigorous auditing ([S.2]).\n*   **Cryptanalysis Awareness:** When designing systems, one must \"think like a cryptanalyst\" to anticipate side-channel attacks, statistical leaking, and potential implementation flaws ([S.2, S.3]).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572714431,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-cryptography-applied_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 1 — Cryptography (foundations) - Presentation</span><span class=\"pm-chat-count\">4 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lesson 1: Foundations of Cryptography</div><ul class=\"pm-chat-slide-bullets\"><li>Obfuscation as a tool for digital security.</li><li>Exploring symmetric, asymmetric, and hash paradigms.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778572714432,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This text provides an outline for a comprehensive study of cryptography, covering historical foundations, design principles, and methods of cryptanalysis.\n\n**Part I: Foundation and Concepts**\nThe introductory section defines cryptography as the practice of obfuscating data. It progresses from the history of classical and contemporary ciphers to essential technical components. Key topics include symmetric and asymmetric key systems, random number generation, hashing, and the management of keys and authentication (p. 1-2).\n\n**Part II: System Design**\nThis section focuses on the philosophy and methodology of creating secure systems. Significant emphasis is placed on the importance of open algorithms, thorough peer review, and the realization that security involves more than just encryption. It acknowledges that systems currently considered secure are not necessarily unbreakable (p. 2).\n\n**Part III: Cryptanalysis**\nThe final section examines how to defeat cryptographic systems. It categorizes weaknesses such as poor randomness, statistical leakage, and implementation errors. It also outlines specific attack vectors used against encryption and hash algorithms, including:\n* Systematic approaches like Brute-Force and Dictionary attacks (p. 2).\n* Statistical techniques such as Frequency Analysis and the Index of Coincidence (p. 2).\n* Advanced mathematical methods like Linear and Differential Cryptanalysis, as well as the Birthday and Joux attacks on hash functions (p. 2).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572714441,
+      "channel": "plan_pipe_2442d2f88f26",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text outlines a comprehensive curriculum on cryptography, structured into key domains ranging from system design to cryptanalysis and practical application.\n\n**Part II: Designing Cryptosystems**\nThe design philosophy emphasizes that security relies on open algorithms subjected to peer review rather than \"security through obscurity.\" Engineers are encouraged to think like cryptanalysts, viewing computer security as a holistic discipline that extends beyond basic encryption. An essential principle is that a system currently considered \"unbroken\" is not inherently \"unbreakable\" (p. 2).\n\n**Part III: Cryptanalysis**\nThis section categorizes the methods by which systems are compromised:\n- Structural Weaknesses: These involve issues such as insufficient key length, poor randomness, statistical leakage, and implementation errors (p. 2).\n- Attack Vectors: Common techniques range from brute-force and dictionary attacks to sophisticated methods like linear cryptanalysis, differential cryptanalysis, and man-in-the-middle attacks (p. 2).\n- Hash Vulnerabilities: Systems are susceptible to collisions, the birthday attack, and Joux attacks (p. 2).\n- Historical Context: Cryptanalysis also involves understanding the failures of legacy systems, such as the Vigenère and Enigma ciphers, and leveraging techniques like time-memory trade-offs via rainbow tables (p. 2, 3).\n\n**Part IV: Using Cryptosystems**\nCryptography is applied through various mechanisms and specific ciphers:\n- Functional Applications: Includes digital signatures (e.g., DSA), database security, e-voting, DRM, and biometric authentication (p. 3).\n- Classical Ciphers: The curriculum covers historical techniques including the Caesar, Atbash, Playfair, and Vigenère ciphers, alongside fractionation methods (p. 3).\n- Contemporary Ciphers: Modern or specialized implementations include the Data Encryption Standard (DES), One-Time Pads, and the Solitaire cipher (p. 3).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572714442,
+      "channel": "plan_pipe_2442d2f88f26",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the materials provided in sections [S.3] and [S.4], outlining the evolution, application, and mathematical foundations of cryptography.\n\n### Historical and Contemporary Systems\nThe evolution of cryptography spans from classical methods to modern standards:\n* Classical Ciphers: Systems such as the Caesar, Vigenère, Playfair, and Beale ciphers, as well as mechanical devices like the Scytale and the Enigma machine, represent early attempts at securing information through substitution, transposition, or polyalphabetic methods (p. [S.3]).\n* Contemporary Symmetric and Asymmetric Ciphers: Modern security relies on computational complexity. Symmetric algorithms include DES, Advanced Encryption Standard (AES), and One-Time Pads. Asymmetric systems, which utilize public key infrastructure, include RSA, ElGamal, and Elliptic Curve cryptography (p. [S.3], [S.4]).\n* Hash Functions: Tools for message integrity and authentication, ranging from MD5 and SHA-1/2 to the modern SHA-3 and RIPEMD-160, often used alongside MACs (p. [S.4]).\n\n### Cryptosystems and Application\nCryptography is integrated into various digital infrastructures to ensure trust and privacy:\n* Security Protocols: Implementation of authentication (Kerberos) and key exchange protocols (Diffie-Hellman) facilitates secure communication channels like SSL and SSH (p. [S.4]).\n* Modern Applications: Cryptography is applied to digital signatures (e.g., DSA), database protection, E-Cash, E-Voting, Digital Rights Management (DRM), biometrics, and anonymity tools (p. [S.3]).\n\n### Societal and Theoretical Context\n* Cryptography and Society: The field is heavily influenced by government regulations, legal frameworks, and the evolving expectations of everyday users regarding data privacy (p. [S.4]).\n* Mathematical Foundation: The security of these systems relies on advanced mathematics, specifically Number Theory, Group Theory, and Computational Complexity (p. [S.4]).\n* Challenges: Strategies like Time Memory Trade-Offs (rainbow tables) illustrate the constant evolution of cryptographic attacks (p. [S.3]). Future developments may shift toward faster, parallel linear computers (p. [S.4]).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572714443,
+      "channel": "plan_pipe_2442d2f88f26",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as an outline for a comprehensive guide on cryptography, covering both technical principles and societal impacts.\n\n**Key Subject Areas**\n\nThe content is structured into several core domains:\n\n1. Encryption and Ciphers: The curriculum covers symmetric standards like the Advanced Encryption Standard (AES) [S.4] and full-disk encryption [S.4]. Asymmetric (public-key) cryptography is explored through various algorithms, including RSA, ElGamal, Elliptic Curve, and Blum-Goldwasser [S.4].\n\n2. Hashes and Authentication: The text details various hashing algorithms, such as MD5, SHA-1, SHA-2, SHA-3, RIPEMD-160, and Tiger, as well as message authentication codes (MACs) [S.4]. It also addresses authentication protocols like Kerberos and key exchange mechanisms such as Diffie-Hellman [S.4].\n\n3. Specialized Cryptographic Concepts: Advanced topics include commitment schemes, zero-knowledge proofs, and cryptanalysis techniques such as linear and differential cryptanalysis [S.5]. The text also notes the importance of prime numbers and initialization vectors [S.5].\n\n4. Practical Implementation and Society: The material discusses secure communication protocols like SSL and SSH, along with the societal implications of cryptography, including government regulations and user expectations [S.4]. Guidance on using OpenSSL to generate keypairs is also included [S.4].\n\n5. Mathematical Foundations: An appendix provides the necessary theoretical background, focusing on number theory, group theory, and computational complexity [S.4].\n\n**Development and Resources**\n\nThe document suggests that many topics can be imported from Wikipedia to expand the text [S.5]. It highlights that several additional subjects, such as transposition ciphers, frequency analysis, and brute-force search, are potential sources for integration [S.5].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572714444,
+      "channel": "plan_pipe_2442d2f88f26",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778572714531,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "If you are designing a system that requires two parties to communicate securely without having previously shared a secret key, which type of cipher is essential?",
+            "options": [
+              "Symmetric Key Cipher",
+              "Asymmetric Key Cipher",
+              "Substitution Cipher",
+              "Transposition Cipher"
+            ],
+            "correctIndex": 1,
+            "explanation": "Asymmetric ciphers (public-key cryptography) allow for secure communication and key exchange between parties who have not pre-shared a secret, unlike symmetric ciphers which require a shared secret key."
+          },
+          {
+            "question": "A hash function is used to verify the integrity of a message. What is the primary characteristic required of a good cryptographic hash?",
+            "options": [
+              "It must be easily reversible to recover the original message.",
+              "It must use a secret key so only the sender can compute it.",
+              "It must be computationally infeasible to find two different inputs that produce the same output.",
+              "It should produce a unique hash for every possible input length regardless of collisions."
+            ],
+            "correctIndex": 2,
+            "explanation": "A core security property of cryptographic hash functions is collision resistance, meaning it is computationally infeasible to find two distinct inputs with the same hash output."
+          },
+          {
+            "question": "Why is the use of 'Open Algorithms and the Value of Peer-Review' considered a fundamental principle in modern cryptography?",
+            "options": [
+              "It ensures that hackers cannot find the source code, making the system harder to attack.",
+              "Security through obscurity is the most effective way to prevent brute-force attacks.",
+              "Publicly vetted algorithms have been subjected to cryptanalysis by experts, helping to identify and fix flaws.",
+              "Open algorithms automatically increase the length of the keys, improving proportional secrecy."
+            ],
+            "correctIndex": 2,
+            "explanation": "Transparency and peer-review allow the global cryptographic community to test algorithms for weaknesses; relying on secret algorithms (security through obscurity) is generally considered insecure."
+          },
+          {
+            "question": "Which of the following scenarios best represents a vulnerability due to a 'Side Channel'?",
+            "options": [
+              "An attacker successfully guesses a password by trying every combination in a dictionary.",
+              "An attacker observes the power consumption and timing variations of a device while it performs cryptographic operations.",
+              "Two different documents result in the same hash, allowing an attacker to spoof a file.",
+              "The key used to encrypt the data is too short, allowing for a successful brute-force attack."
+            ],
+            "correctIndex": 1,
+            "explanation": "Side channels involve observing external information (power, timing, electromagnetic leaks) generated by a physical implementation of a cryptosystem rather than attacking the underlying mathematics."
+          },
+          {
+            "question": "In the context of 'Proportionality of Secrecy', which factor most directly limits the effectiveness of a brute-force attack?",
+            "options": [
+              "The complexity of the algorithm used, regardless of the implementation.",
+              "The length of the key and the quality of the random source.",
+              "The number of people who have reviewed the algorithm.",
+              "Whether the system uses a digital signature or an e-cash protocol."
+            ],
+            "correctIndex": 1,
+            "explanation": "Proportionality of secrecy dictates that the difficulty of an attack should correlate with the secrecy it protects. Brute-force resistance is primarily determined by key length (the search space) and the high entropy (quality) of the random number generator."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778572714532,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the fundamental goal of cryptography?",
+            "back": "To obfuscate data so it remains unintelligible to unintended recipients."
+          },
+          {
+            "front": "What characterizes symmetric key ciphers?",
+            "back": "The same secret key is used for both the encryption and decryption processes."
+          },
+          {
+            "front": "How do asymmetric key ciphers differ from symmetric ones?",
+            "back": "They use a pair of keys: a public key for encryption and a private key for decryption."
+          },
+          {
+            "front": "What is the primary function of a cryptographic hash function?",
+            "back": "To produce a fixed-size 'fingerprint' of an input; it is generally designed to be one-way (irreversible)."
+          },
+          {
+            "front": "What is a 'collision' in the context of hash algorithms?",
+            "back": "A situation where two different inputs produce the exact same hash output."
+          },
+          {
+            "front": "What is the 'Birthday Attack'?",
+            "back": "A type of cryptographic attack that exploits the mathematics of probability to find collisions in hash functions more efficiently than brute force."
+          },
+          {
+            "front": "What is a 'rainbow table' used for?",
+            "back": "It is a precomputed table used to reverse cryptographic hash functions, effectively trading memory space for faster computation time."
+          },
+          {
+            "front": "Why is 'open algorithm' peer-review considered a security best practice?",
+            "back": "Because public scrutiny allows experts to find and fix flaws rather than relying on 'security through obscurity'."
+          },
+          {
+            "front": "What is a digital signature?",
+            "back": "A cryptographic mechanism used to verify the authenticity and integrity of a digital message or document."
+          },
+          {
+            "front": "What is the purpose of a Message Authentication Code (MAC)?",
+            "back": "It is a keyed cryptographic hash function used to verify both the data integrity and the authenticity of a message."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-cryptography-applied_0",
+      "slides": [
+        {
+          "title": "Lesson 1: Foundations of Cryptography",
+          "bullets": [
+            "Obfuscation as a tool for digital security.",
+            "Exploring symmetric, asymmetric, and hash paradigms."
+          ],
+          "notes": "Welcome to our introduction to cryptography, where we study the art of protecting data from unintended recipients.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Symmetric and Asymmetric Systems",
+          "bullets": [
+            "Symmetric: Same key used for encryption and decryption.",
+            "Asymmetric: Pairs of keys (public/private) for secure communication.",
+            "Examples include RSA, ElGamal, and Elliptic Curve cryptography (p. 4).",
+            "Symmetric standards like DES and AES ensure efficient bulk data protection (p. 3-4)."
+          ],
+          "notes": "We distinguish between symmetric ciphers, which rely on a shared secret, and asymmetric ciphers, which utilize key pairs to solve distribution issues.",
+          "page_range": "3-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Understanding Hash Functions",
+          "bullets": [
+            "Hashes create unique data fingerprints (digests).",
+            "Common algorithms include MD5, SHA-1, and modern SHA-3 (p. 4).",
+            "Keyed hashes function as Message Authentication Codes (MACs) (p. 4).",
+            "Crucial for data integrity and secure password storage."
+          ],
+          "notes": "Hash functions are essential for verifying data integrity, creating unique signatures that represent larger files in a compact form.",
+          "page_range": "4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Principles for Secure Systems",
+          "bullets": [
+            "Adopt open algorithms subject to expert peer-review.",
+            "Recognize that 'unbroken' does not imply the system is 'unbreakable'.",
+            "Effective design must account for side-channel leakage.",
+            "Mathematical rigor forms the bedrock of modern cryptographic strength (p. 4-5)."
+          ],
+          "notes": "Security is not just about the math; it is about transparency, peer review, and acknowledging that all systems have potential implementation flaws.",
+          "page_range": "2, 4-5",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 1 — Cryptography (foundations) - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778572714431,
+      "pdfName": "Cryptography"
+    }
+  ],
+  "sourceHash": "3b9d3236bb914909"
+}

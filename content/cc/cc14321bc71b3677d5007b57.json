@@ -1,0 +1,482 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Robotics and Embedded Engineering - Lesson 4 — Engineering Statics: Open and Interactive",
+    "pdfName": "Engineering Statics: Open and Interactive",
+    "createdAt": 1778576800499,
+    "exportedAt": "2026-05-12T09:06:40.500Z",
+    "meta": {
+      "courseId": "course-en-robotics-embedded",
+      "lessonIndex": 3,
+      "courseTitle": "Robotics and Embedded Engineering",
+      "lessonObjective": "Statics and dynamics for robotic structures.",
+      "licensing": {
+        "effective_license": "unknown",
+        "sources": [
+          {
+            "content_id": "otl-engineering-statics-open-and-interactive",
+            "title": "Engineering Statics: Open and Interactive",
+            "source": "otl",
+            "license": "unknown",
+            "license_url": "",
+            "url": "https://open.umn.edu/opentextbooks/textbooks/engineering-statics-open-and-interactive"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_61dd1984d8b8",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "13-17",
+          "chapterTitle": "Introduction to Statics",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "18-76",
+          "chapterTitle": "Forces and Other Vectors",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "77-121",
+          "chapterTitle": "Equilibrium of Particles",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "122-173",
+          "chapterTitle": "Moments and Static Equivalence",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "174-200",
+          "chapterTitle": "Rigid Body Equilibrium",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "201-234",
+          "chapterTitle": "Equilibrium of Structures",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "235-297",
+          "chapterTitle": "Centroids and Centers of Gravity",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "298-344",
+          "chapterTitle": "Internal Forces",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "345-384",
+          "chapterTitle": "Friction",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "385-456",
+          "chapterTitle": "Moments of Inertia and Appendices",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576800499,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Based on the provided text, the following is a summary of the fundamental concepts relevant to the study of Engineering Statics, which serves as a necessary foundation for analyzing robotic structures and mechanical systems.\n\n### **Overview of Engineering Statics**\nStatics is the branch of engineering mechanics that applies Newtonian physics to design and analyze structures that are in **equilibrium**—meaning they are either stationary or moving at a constant velocity with no net acceleration ($\\Sigma F = 0$ and $\\Sigma M = 0$).\n\n### **Key Principles (Newton’s Laws of Motion)**\n*   **1st Law (Law of Inertia):** An object maintains its current state of motion (at rest or constant velocity/angular velocity) unless acted upon by an external force or moment.\n*   **2nd Law ($F=ma$ and $M=I\\alpha$):** Defines the relationship between motion and force/torque. In Statics, since acceleration ($a$) and angular acceleration ($\\alpha$) are zero, the net force and net moment acting on a body must always be zero.\n*   **3rd Law (Action-Reaction):** Every force interaction involves an equal and opposite reaction force. This is critical for robotic design when analyzing the interactions between different members of a mechanism.\n\n### **Problem Solving Techniques**\n*   **Free-Body Diagrams (FBD):** The essential tool for all statics problems. An FBD isolates a specific body or system, identifying all external forces and moments acting on it while excluding forces the body exerts on its environment. \n*   **Systematic Modeling:** Statics problems are typically solved by:\n    1.  Defining the system and identifying forces.\n    2.  Creating an FBD.\n    3.  Applying the equations of equilibrium ($\\Sigma F = 0; \\Sigma M = 0$).\n\n### **Unit Systems**\nEngineers must maintain consistency in units to ensure calculations are accurate.\n*   **SI System:** Uses Newtons ($N$) for force, kilograms ($kg$) for mass, and meters ($m$) for length.\n*   **British Gravitational/English Engineering Systems:** Uses pounds-force ($lbf$) and slugs or pounds-mass ($lbm$). \n*   **Note:** In statics, it is vital to distinguish between mass (the amount of matter) and weight (the force exerted by gravity on that mass).\n\n### **Relevance to Robotics**\nThe principles derived here provide the groundwork for determining internal loads (e.g., in robotic joints or limbs), friction considerations (for actuators and contact points), and the use of centers of gravity and moments of inertia (necessary for calculating torque requirements in motion control). \n\n*(Reference: [S.13]–[S.21])*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576800499,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-robotics-embedded_3\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 4 — Engineering Statics: Open and Interactive - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Engineering Statics: Foundations</div><ul class=\"pm-chat-slide-bullets\"><li>Gateway to engineering mechanics and Newtonian physics.</li><li>Focuses on equilibrium of static systems and structures.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778576800500,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Engineering Statics is defined as the application of Newtonian physics to analyze structures and objects in equilibrium. It serves as a foundational discipline for further engineering studies, such as Dynamics and Mechanics of Solids. The primary focus of statics is the study of particles and rigid bodies that are stationary or in equilibrium (p. 1).\n\nKey concepts from the provided text include:\n\nNewton’s Laws of Motion\nThe text outlines two types of motion: translation, where a body changes position without changing orientation, and rotation, where a body spins about a fixed axis (p. 3).\n\nNewton's First Law\nOften called the \"law of inertia,\" this law states that an object remains at rest or in uniform motion unless acted upon by an external force. This principle applies to both linear motion (forces) and angular motion (moments/torques) (p. 4).\n\nNewton's Second Law\nThis law relates force, mass, and acceleration ($F = ma$). In the context of statics, bodies are not accelerating, meaning $a = 0$. Consequently, the equations of equilibrium for translation and rotation are simplified to:\n\n$$\\sum F = 0$$\n\n$$\\sum M = I \\alpha$$\n\nHere, $\\sum F$ is the sum of all forces, $\\sum M$ is the net moment, $I$ is the mass moment of inertia, and $\\alpha$ is the angular acceleration (p. 5).\n\nProblem Solving\nStatics relies on the creation of free-body diagrams and the application of equilibrium equations. Developing these skills is essential for analyzing internal forces, centroids, friction, and moments, providing the necessary foundation for a successful engineering career (p. 2-5).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576800509,
+      "channel": "plan_pipe_61dd1984d8b8",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 13,
+        "end": 17
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Based on the provided text (pp. [S.18]–[S.28]), here is a structured summary of the core principles of Statics:\n\n**Core Principles and Newton’s Laws**\nStatics focuses on objects that are not accelerating ($a = 0$), implying that the net moment on such objects is zero:\n$$\\sum M = 0$$\nNewton’s Third Law dictates that for every action, there is an equal and opposite reaction. To manage these pairs in complex systems, engineers use free-body diagrams to isolate a system and identify only relevant forces acting upon it.\n\n**Unit Systems and Conversions**\nEngineering quantities require both a numeric value and a unit. Statics primarily utilizes three systems:\n1. SI: Uses kilograms (mass) and newtons (force).\n2. British Gravitational: Uses slugs (mass) and pounds-force (lbf).\n3. English Engineering: Uses pounds-mass ($lbm$) and pounds-force (lbf).\n\nA constant point of confusion arises from the relationship between weight and mass. In Statics, all \"pounds\" are considered forces. The relationship is governed by:\n$$W = mg$$\nFor SI, $g = 9.81 \\, m/s^2$. In U.S. Customary units, $g = 32.2 \\, ft/s^2$. If given an object's weight, the mass can be derived using these constants.\n\n**Classification of Forces**\nForces are categorized by how they interact with an object:\n- Point (Concentrated) Forces: Act at a single point (e.g., a rope pull).\n- Distributed Forces: Spread over an area or volume (e.g., water pressure).\n- Body Forces: Act over a volume, the most common being weight.\n- Loads: Forces an object must support.\n- Reaction Forces: Forces that constrain an object to maintain equilibrium.\n- Internal Forces: Resist external loads to maintain internal structural integrity.\n\n**Problem Solving Strategy**\nEffective problem solving involves more than just memorizing formulas; it requires a systematic approach:\n1. Understand the terminology and physical context of the problem.\n2. Develop a plan before attempting mathematical calculations.\n3. Utilize free-body diagrams to isolate the system.\n4. Ensure unit consistency across all equations and calculations.\n5. Verify the reasonableness of the final answer based on physical intuition.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576800510,
+      "channel": "plan_pipe_61dd1984d8b8",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 18,
+        "end": 76
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers the equilibrium of particles and the principles of moments in engineering statics.\n\n[S.77] Particle Equilibrium\nEquilibrium defines the state where an object is at rest or moving at a constant velocity. For a particle, this implies that the sum of all forces acting upon it must equal zero. In vector form, this is expressed as $$\\sum \\vec{F} = 0$$.\n\n[S.78-79] One-Dimensional Equilibrium\nIn a 1D system, the condition simplifies to the sum of forces along a single axis (e.g., the x-axis) equaling zero: $$\\sum F_x = 0$$.\n\n[S.90-111] Two-Dimensional and Three-Dimensional Equilibrium\nIn 2D systems, forces are resolved into x and y components, requiring two independent equations: \n$$\\sum F_x = 0$$\n$$\\sum F_y = 0$$\nIn 3D systems, forces are resolved into x, y, and z components, requiring three independent scalar equations:\n$$\\sum F_x = 0$$\n$$\\sum F_y = 0$$\n$$\\sum F_z = 0$$\n\n[S.122-123] Moments of Force\nA moment measures the tendency of a force to rotate a body about a specific point or axis. The moment of a force $$\\vec{F}$$ about a point is computed using the cross product of the position vector $$\\vec{r}$$ and the force vector: $$\\vec{M} = \\vec{r} \\times \\vec{F}$$.\n\n[S.132-133] Varignon’s Theorem\nVarignon's Theorem states that the moment of a force about a point is equal to the sum of the moments of the force’s components about the same point. This is a critical tool for simplifying complex force systems.\n\n[S.157-163] Couples and Static Equivalence\nA couple is defined as two parallel forces of equal magnitude acting in opposite directions, creating a pure turning effect without translational force. Systems of forces and moments can be transformed into a statically equivalent system—usually a single force and a single moment acting at a specific point—simplifying the analysis of rigid bodies.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576800511,
+      "channel": "plan_pipe_61dd1984d8b8",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 77,
+        "end": 121
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Section 4 (pp. 122-173) covers the principles of moments and static equivalence in engineering systems.\n\n**Key Concepts:**\n\n- Moment of Force: The rotational effect of a force about a specific point, defined mathematically as the cross product of the position vector and the force vector, represented as $M = r \\times F$ (p. 123).\n- Scalar Addition of Moments: Moments acting in the same plane can be added as algebraic scalars to determine the resultant rotational effect (p. 129).\n- Varignon’s Theorem: This principle allows the total moment of a system of forces about a point to be calculated as the sum of the moments of the individual forces about that same point (p. 132).\n- 3D Moments: Extends the concept of the moment of force to three-dimensional Cartesian space, commonly solved using the determinant of a matrix (p. 144).\n- Couples: A pair of equal, opposite, and non-collinear forces that produce a pure rotational effect (torque) without moving the center of mass or creating a net linear force (p. 157).\n- Equivalent Transformations: Methods for moving a force to a new location on a rigid body by adding a corresponding couple, ensuring the external effects remain unchanged (p. 159).\n- Statically Equivalent Systems: Two systems of forces are considered equivalent if they produce the same resultant force and the same resultant moment about a given point (p. 163).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576800512,
+      "channel": "plan_pipe_61dd1984d8b8",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 122,
+        "end": 173
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section (pp. 174-200) covers Rigid Body Equilibrium, focusing on the principles required to analyze structures that are not simply points in space.\n\n**Degrees of Freedom and Equilibrium Principles**\nThe analysis begins with the concept of degrees of freedom (p. 174), which defines the possible ways a body can move. To ensure a body remains in static equilibrium, one must apply Free-Body Diagrams (p. 175) to isolate the body and identify all external forces and moments acting upon it. The fundamental requirement for equilibrium is that the sum of all forces and the sum of all moments about any point must equal zero:\n\n$$\\sum \\vec{F} = 0$$\n$$\\sum \\vec{M} = 0$$\n\n**Two-Dimensional and Three-Dimensional Analysis**\nIn two-dimensional problems (p. 183), these vector equations generally resolve into three scalar equations: the sum of forces in the x-direction, the sum of forces in the y-direction, and the sum of moments about any point in the plane. In three-dimensional scenarios (p. 190), the system extends to six scalar equations, accounting for force components and moments about the x, y, and z axes.\n\n**Stability and Determinacy**\nA critical part of the analysis involves assessing the static determinacy and stability of a system (p. 194). A structure is statically determinate if the unknown reactions can be calculated using only the equations of equilibrium. If there are more unknowns than available equations, the system is statically indeterminate. Rigid body equilibrium examples provided in the text (p. 196) demonstrate how these constraints are applied to real-world engineering problems to solve for unknown support reactions.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576800513,
+      "channel": "plan_pipe_61dd1984d8b8",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 174,
+        "end": 200
+      }
+    },
+    {
+      "role": "bot",
+      "content": "As the provided document text ends at the beginning of section 6.1 on page [201] and does not contain content spanning up to page 234, the following summary is based on the provided material up to page 201.\n\n### Overview of Engineering Statics\nEngineering Statics: Open and Interactive is an open-source, peer-reviewed textbook designed for foundational university-level engineering mechanics courses. It serves as a prerequisite for subsequent studies in dynamics and materials science.\n\n### Core Objectives and Content\nThe textbook focuses on developing the analytical skills necessary to solve static equilibrium problems for rigid bodies. Key conceptual areas include:\n* Vector mathematics and operations including dot and cross products.\n* Force systems and the calculation of moments.\n* Equilibrium analysis for both particles and rigid bodies.\n* Determination of internal loads and geometric properties such as area moments of inertia.\n\n### Pedagogical Features\n* Interactivity: The book utilizes embedded GeoGebra diagrams and Numbas-based randomized exercises to facilitate better visualization and practical application of theory.\n* Accessibility: The resource is available in an interactive web format or as a searchable, static PDF.\n* Open Source: Licensed under CC BY-NC-SA 4.0, the content is free to modify, distribute, and remix, provided proper attribution is maintained.\n\n### Institutional Support and Development\nThe project is a collaborative effort involving educators from various public and private academic institutions. It provides a platform for instructors to integrate homework and exam sets into Virtual Learning Environments (VLE) via Numbas integration. Financial and institutional support has been provided by the Colorado Department of Higher Education, Colorado State University, and other academic contributors.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576800514,
+      "channel": "plan_pipe_61dd1984d8b8",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 201,
+        "end": 234
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Based on the provided document, pages 235 through 297 are not included. The provided excerpts conclude at Section 6.1 on page 201. Therefore, it is impossible to summarize the content for that page range. \n\nHowever, based on the Table of Contents provided in the document ([S.viii]–[S.ix]), here is a summary of the scope covered up to the end of the current text:\n\nThe textbook *Engineering Statics: Open and Interactive* is an open-source resource designed for university-level Engineering Mechanics: Statics courses. It covers the following key areas:\n\nVectors and Forces\nThe text establishes fundamental mathematical tools, including vector addition, dot products, and cross products ([S.viii]). It teaches the application of coordinate systems in both 2D and 3D space to resolve forces.\n\nParticle Equilibrium\nThis section explores the conditions required for a particle to remain in static equilibrium, applying principles in 1D, 2D, and 3D configurations ([S.viii]).\n\nMoments and Static Equivalence\nThe text introduces the concept of the moment of a force, Varignon’s Theorem, and the analysis of couples. It explains how to simplify force systems into statically equivalent systems ([S.ix]).\n\nRigid Body Equilibrium\nThis chapter focuses on free-body diagrams and the equations of equilibrium for rigid bodies, considering degrees of freedom, stability, and determinacy in 2D and 3D planes ([S.ix]).\n\nStructure and Pedagogy\nThe book emphasizes visualization through interactive diagrams, GeoGebra elements, and randomized exercises via Numbas. It is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International license ([S.iv]–[S.v]).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576800515,
+      "channel": "plan_pipe_61dd1984d8b8",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 235,
+        "end": 297
+      }
+    },
+    {
+      "role": "bot",
+      "content": "I am unable to provide a summary for pages 298–344. The document provided only contains information up to page 201 (the end of the contents/beginning of Chapter 6). Please provide the remaining text if you would like me to summarize those specific sections.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576800516,
+      "channel": "plan_pipe_61dd1984d8b8",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 298,
+        "end": 344
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided document covers the front matter and the table of contents for the textbook *Engineering Statics: Open and Interactive*. Please note that the document provided only contains pages 1 through 10 (as indicated by the internal pagination), and does not extend to the requested range of pages 345–384. Based on the available information, here is a summary of the textbook's scope and purpose:\n\n### Overview of Engineering Statics: Open and Interactive\nThis textbook serves as an open-source resource for university-level Engineering Mechanics: Statics. It is designed to provide students with the foundational knowledge required for subsequent studies in dynamics and materials science.\n\n### Key Content Areas\nThe textbook is structured to guide students from basic principles to complex equilibrium analysis:\n*   **Foundation:** Introduction to Newton’s laws of motion, units, and fundamental problem-solving techniques (p. 3, 7, 15).\n*   **Vector Analysis:** Comprehensive study of 2D and 3D coordinate systems, including dot products and cross products (p. 22, 29, 58, 68).\n*   **Equilibrium:** Analysis of particles and rigid bodies under static conditions, including the application of Free-Body Diagrams (p. 77, 175).\n*   **Advanced Concepts:** Analysis of moments, couple systems, and the equilibrium of complex structures (p. 123, 157, 201).\n\n### Pedagogical Tools and Accessibility\n*   **Interactive Learning:** The text integrates GeoGebra and Numbas technology to provide dynamic diagrams and randomized assessment exercises.\n*   **Open Access:** The material is licensed under Creative Commons (CC BY-NC-SA 4.0). It is available for free at https://engineeringstatics.org in both interactive html and searchable PDF formats (p. v).\n*   **Community and Support:** Feedback loops and a Google Group are maintained to facilitate collaboration between authors, instructors, and students to improve the textbook content (p. iv).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576800517,
+      "channel": "plan_pipe_61dd1984d8b8",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 345,
+        "end": 384
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided document does not contain pages 385 through 456. The text concludes after the chapter list on page ix, and the chapter material provided in the excerpt ends at section 6.1, which concludes on page 201. Because the requested page range is outside the scope of the provided document, I cannot provide a summary for that section.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576800518,
+      "channel": "plan_pipe_61dd1984d8b8",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 385,
+        "end": 456
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576800599,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Engineering Statics focuses on the equilibrium of rigid bodies. Based on this, which subsequent course relies most heavily on the ability to compute internal loads and moments of inertia learned in this text?",
+            "options": [
+              "Calculus II",
+              "Mechanics of Materials",
+              "Computer Programming",
+              "General Chemistry"
+            ],
+            "correctIndex": 1,
+            "explanation": "The text explicitly states that topics like resolving internal loads and computing area moments of inertia are included as stepping stones for later courses like Mechanics of Materials (also known as Mechanics of Solids)."
+          },
+          {
+            "question": "A body changes position without changing its orientation in space. How does the text define this type of motion?",
+            "options": [
+              "Rigid body equilibrium",
+              "Rotation",
+              "Translation",
+              "Static equivalence"
+            ],
+            "correctIndex": 2,
+            "explanation": "The text defines translation as motion where a body changes position without changing its orientation in space, as opposed to rotation where a body spins about an axis."
+          },
+          {
+            "question": "Why does the text emphasize that statics is fundamentally useful for robotic structures?",
+            "options": [
+              "Because robots only operate in static environments.",
+              "Because statics provides the tools to solve equilibrium problems for rigid bodies involved in design.",
+              "Because statics eliminates the need to study dynamics for all mechanical systems.",
+              "Because internal forces are always zero in robotic linkages."
+            ],
+            "correctIndex": 1,
+            "explanation": "At its core, Engineering Statics provides the tools to solve static equilibrium problems for rigid bodies, which is essential for designing and analyzing the components of systems like robotic structures."
+          },
+          {
+            "question": "If you are using the 'Engineering Statics: Open and Interactive' textbook for a course, what is the primary requirement for modifying and sharing the content under the CC BY-NC-SA license?",
+            "options": [
+              "You must provide monetary compensation to the authors.",
+              "You must exclusively use the PDF version.",
+              "You must attribute the work to the original authors.",
+              "You must get permission from the Colorado Department of Higher Education."
+            ],
+            "correctIndex": 2,
+            "explanation": "The license allows you to modify the text as you like, as long as you attribute the parts of the book you use to the authors and ensure your use is not primarily intended for commercial advantage."
+          },
+          {
+            "question": "When analyzing the motion of a body, why is it convenient to distinguish between translation and rotation?",
+            "options": [
+              "Because they can be separated and analyzed individually using independent equations.",
+              "Because rotation only occurs when objects are not in equilibrium.",
+              "Because translation is a form of Newton's third law, while rotation is a form of Newton's second law.",
+              "Because the book only covers rotation in later chapters."
+            ],
+            "correctIndex": 0,
+            "explanation": "The text notes: 'Conveniently, we can separate translation and rotation and analyze them individually using independent equations.'"
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778576800600,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is Engineering Statics: Open and Interactive?",
+            "back": "A free, open-source textbook for Engineering Mechanics: Statics, designed to teach vectors, forces, moments, static equilibrium, and shapes."
+          },
+          {
+            "front": "What are the two fundamental types of motion defined in engineering mechanics?",
+            "back": "Translation (body changes position without changing orientation) and Rotation (body spins about an axis fixed in space)."
+          },
+          {
+            "front": "What is the primary technical focus of the field of statics?",
+            "back": "The study of particles and rigid bodies that are in equilibrium (usually stationary)."
+          },
+          {
+            "front": "What license governs the 'Engineering Statics: Open and Interactive' textbook?",
+            "back": "Creative Commons Attribution-Non Commercial-Share Alike 4.0 International License (BY-NC-SA)."
+          },
+          {
+            "front": "What software is recommended for the randomized end-of-chapter exercises in the text?",
+            "back": "Numbas (for assessment) and GeoGebra (for dynamic diagrams)."
+          },
+          {
+            "front": "Which three mechanics courses follow the foundational study of Statics?",
+            "back": "Dynamics, Mechanics of Materials (or Mechanics of Solids), and Fluid Mechanics."
+          },
+          {
+            "front": "Define a free-body diagram (FBD) context in terms of equilibrium problems.",
+            "back": "A pictorial representation of a body isolated from its surroundings, showing all forces and moments acting on it, used alongside equilibrium equations."
+          },
+          {
+            "front": "What are the three main components of solving an engineering statics problem as illustrated in the text?",
+            "back": "1. Picture and problem statement, 2. Free-body diagram (FBD), 3. Equations of equilibrium."
+          },
+          {
+            "front": "What does the 'Parallel Axis Theorem' apply to in this textbook?",
+            "back": "Calculating moments of inertia for shapes."
+          },
+          {
+            "front": "What are the primary goals of the authors in creating this specific textbook?",
+            "back": "To provide a free, open resource filled with dynamic, interactive diagrams to encourage visualization and engineering intuition."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-robotics-embedded_3",
+      "slides": [
+        {
+          "title": "Engineering Statics: Foundations",
+          "bullets": [
+            "Gateway to engineering mechanics and Newtonian physics.",
+            "Focuses on equilibrium of static systems and structures."
+          ],
+          "notes": "Welcome to Engineering Statics, where we bridge physical theory with practical structural design. This course equips you with the analytical skills needed for advanced robotics and mechanical engineering.",
+          "page_range": "13",
+          "image_prompt": ""
+        },
+        {
+          "title": "Understanding Statics",
+          "bullets": [
+            "Statics: Analysis of particles and bodies in equilibrium.",
+            "Fundamental skills: Problem solving and mathematical modeling.",
+            "Core topics include equilibrium, internal forces, and friction.",
+            "Includes force systems, moments, and centroids (p. 14)."
+          ],
+          "notes": "Statics is about balance. By mastering these concepts, you can predict how structures will behave under force before they are ever built.",
+          "page_range": "13-14",
+          "image_prompt": ""
+        },
+        {
+          "title": "Newton's Laws of Motion",
+          "bullets": [
+            "Categorized into translation and rotation analysis.",
+            "First Law: Objects maintain velocity unless unbalanced forces act.",
+            "Rotational motion follows similar principles using moments (p. 16).",
+            "Statics restricts objects to zero acceleration (p. 18)."
+          ],
+          "notes": "Newton's laws are the bedrock of mechanics. Whether an object is translating or rotating, we define its state using these universal rules.",
+          "page_range": "15-18",
+          "image_prompt": ""
+        },
+        {
+          "title": "Action, Reaction, and Equilibrium",
+          "bullets": [
+            "Third Law: Every action has equal, opposite reactions.",
+            "Free-body diagrams isolate systems to identify interaction forces.",
+            "Ignore forces exerted by the body on surroundings (p. 18).",
+            "Crucial for analyzing interconnected components and structures (p. 18-19)."
+          ],
+          "notes": "The free-body diagram is your most essential tool. It allows us to isolate a specific object, revealing exactly which external forces dictate its equilibrium status.",
+          "page_range": "18-19",
+          "image_prompt": ""
+        },
+        {
+          "title": "Unit Systems in Engineering",
+          "bullets": [
+            "Base units: Mass, length, and time define all others.",
+            "SI System: Standard units using Newtons and kilograms.",
+            "Imperial units: Distinguishes between pound-force and pound-mass (p. 20).",
+            "Always include units in your engineering calculations."
+          ],
+          "notes": "Consistency is critical. Mixing up pound-force and pound-mass is a common pitfall, so always track your units to ensure your final results are physically accurate.",
+          "page_range": "19-21",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 4 — Engineering Statics: Open and Interactive - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576800499,
+      "pdfName": "Engineering Statics: Open and Interactive"
+    }
+  ],
+  "sourceHash": "4541f513e814426f"
+}

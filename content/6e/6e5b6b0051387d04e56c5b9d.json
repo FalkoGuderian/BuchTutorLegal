@@ -1,0 +1,344 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Robotics and Embedded Engineering - Lesson 3 — Engineering Mechanics",
+    "pdfName": "Engineering Mechanics",
+    "createdAt": 1778576778380,
+    "exportedAt": "2026-05-12T09:06:18.381Z",
+    "meta": {
+      "courseId": "course-en-robotics-embedded",
+      "lessonIndex": 2,
+      "courseTitle": "Robotics and Embedded Engineering",
+      "lessonObjective": "Statics and dynamics for robotic structures.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-engineering-mechanics",
+            "title": "Engineering Mechanics",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Engineering_Mechanics"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_2aa3f611aad6",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-1",
+          "chapterTitle": "Introduction to Engineering Mechanics and Physics",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-2",
+          "chapterTitle": "Statics and Free Body Diagrams",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Structural Analysis: Trusses, Chains, and Cables",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-5",
+          "chapterTitle": "Dynamics: Kinematics and Kinetics",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576778380,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "To assist with your lesson on **Engineering Mechanics for Robotic Structures**, here is a concise summary based on the provided material:\n\n### **Engineering Mechanics: Foundations for Robotics**\nEngineering mechanics applies physics principles to solve real-world problems. For robotics, understanding these mechanics is essential for designing structures that can effectively sense and interact with their environment.\n\n#### **1. Statics: The Study of Bodies at Rest**\n*   **Definition:** Statics deals with systems where acceleration is zero (objects at rest or moving at a constant velocity).\n*   **Core Principle:** The sum of all forces acting on a body must equal zero.\n*   **Key Tool:** Engineers use **Free Body Diagrams (FBDs)** to visualize and resolve these forces into vector components, which are then solved using linear algebra.\n*   **Application in Robotics:** Essential for analyzing structural integrity, ensuring joints and members remain stable under loads.\n\n#### **2. Dynamics: The Study of Bodies in Motion**\nDynamics focuses on objects with non-zero acceleration and is divided into two areas:\n*   **Kinematics:** Describes motion (displacement, velocity, acceleration) without considering the forces involved.\n*   **Kinetics:** Analyzes the relationship between the forces/moments acting on a body and its resulting mass and acceleration.\n*   **Application in Robotics:** Critical for programming robot motion paths, calculating motor requirements, and understanding how a robot’s movement is influenced by its hardware.\n\n#### **3. Structural Components**\n*   **Trusses:** Composed of two-force members that carry only axial loads. These are analyzed using the **Method of Sections** or the **Method of Joints**.\n*   **Chains and Cables:** Used for flexible structural elements. Their shape is determined by the loading distribution (e.g., a uniform load results in a parabolic shape).\n\n### **Summary Table: Mechanics for Robotic Design**\n\n| Branch | Focus | Key Concept |\n| :--- | :--- | :--- |\n| **Statics** | Static equilibrium | Sum of forces = 0 |\n| **Kinematics** | Geometry of motion | Velocity, acceleration, displacement |\n| **Kinetics** | Forces causing motion | Force, mass, acceleration ($F=ma$) |\n\n***\n\n*Reference Sections: [S.1], [S.2], [S.3], [S.4], [S.5]*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576778380,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-robotics-embedded_2\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 3 — Engineering Mechanics - Presentation</span><span class=\"pm-chat-count\">4 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Engineering Mechanics: Statics and Dynamics</div><ul class=\"pm-chat-slide-bullets\"><li>Fundamentals of mechanics in engineering design.</li><li>Understanding physics for real-world robotic structures.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778576778381,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This section outlines the role of classical physics within engineering, specifically focusing on Engineering Mechanics.\n\n**Engineering Mechanics and Physics**\nEngineering Mechanics applies mechanical principles to real-world engineering challenges. It serves as the fundamental branch of physics that supports other areas like Thermodynamics and Electricity. Mechanics is divided into:\n1. Statics: The study of bodies at rest, considered the most essential component with the highest practical application in engineering.\n2. Dynamics: Comprised of Kinematics and Kinetics.\n\n**Classical vs. Modern Physics**\nClassical physics primarily encompasses theories established before the 1900s, focusing on macroscopic phenomena—typically objects larger than atoms and molecules. Conversely, modern physics, which emerged in the 20th and 21st centuries, addresses microscopic and abstract states, including quantum physics and the theory of relativity. While classical physics is the bedrock of engineering, modern theories currently lack fundamental applications in the engineering field.\n\n**Educational Objective**\nThe primary goal of studying Engineering Mechanics is to enable students to identify and solve real-world problems through an inductive understanding of theoretical principles, supported by key techniques and practical sample problems.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576778390,
+      "channel": "plan_pipe_2aa3f611aad6",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 1
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section introduces the fundamental principles of statics within the context of engineering mechanics. The key points are summarized below:\n\n**Prerequisites and Scope**\nThe material assumes a background in high school physics and basic calculus. The study of statics focuses on objects where the acceleration is zero ($a = 0$), meaning the body is either at rest or moving at a constant velocity.\n\n**The Static Constraint**\nFor an object to remain in a state of statics, the net force acting upon it must be zero:\n$$\\sum F = 0$$\n\n**Methodology**\nEngineers utilize a \"free body diagram\" to visualize all forces acting on an object. To solve these problems:\n1. Break down the forces into vector components based on a chosen coordinate system.\n2. Sum the forces acting parallel to each basis vector.\n3. Set these sums to zero to satisfy the static condition.\n4. Solve the resulting system of equations using standard algebraic techniques.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576778391,
+      "channel": "plan_pipe_2aa3f611aad6",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the principles of trusses, cables, and the distinction between statics and dynamics.\n\n**1. Truss Structures**\nA truss is defined as a system of two-force members that carry only axial loads, with no shear forces or moments. Key characteristics include:\n* Members are connected via pinned joints, meaning reaction forces are limited to points at the ends.\n* External forces are applied only at these joint points.\n* Analysis is performed using two primary techniques:\n    * Method of sections: Making an imaginary cut and applying global equilibrium equations.\n    * Method of joints: Isolating individual joints to determine forces sequentially across the structure [S.3].\n\n**2. Chains and Cables**\nCables support continuous loads due to their own weight or external forces. For a cable with load $w$ per unit distance and tension $T$, the relationship involving the angle $\\theta$ is governed by:\n$$\\frac{dT}{dx} \\cos \\theta - T \\sin \\theta \\frac{d\\theta}{dx} = 0$$\n$$\\frac{d}{dx}(T \\sin \\theta) = w$$\nWhen the load $w$ is constant, the resulting cable shape describes a parabola. If loading is defined by the rope's length $s$, the relationship becomes:\n$$\\frac{d^2y}{dx^2} = \\frac{w(s)}{T_h}$$\nwhere $T_h$ represents the horizontal component of tension [S.3, S.4].\n\n**3. Statics vs. Dynamics**\n* Statics concerns stationary objects in equilibrium [S.4].\n* Dynamics involves bodies with non-zero acceleration and is categorized into two fields:\n    * Kinematics: The study of displacement, velocity, and acceleration without considering the underlying forces [S.4].\n    * Kinetics: The study of motion with explicit consideration of the forces and moments that cause it [S.4].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576778392,
+      "channel": "plan_pipe_2aa3f611aad6",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers the mathematical modeling of cables and provides an overview of the fundamental principles of dynamics in engineering mechanics.\n\n**Cables and Structural Modeling**\n\nThe document outlines the derivation of differential equations for cables under loading. When load is constant relative to horizontal position, the equation represents a parabola [S.4]. For scenarios where loading is distributed along the length of the cable, the relationship is defined by:\n\n$$ \\frac{d^2y}{dx^2} = w_0 \\sqrt{1 + (\\frac{dy}{dx})^2} $$\n\n**Dynamics in Mechanics**\n\nDynamics is defined as the study of bodies in motion, specifically those characterized by non-zero acceleration. It is categorized into two primary branches:\n\n1. Kinematics: The study of displacement, velocity, and acceleration without consideration of the forces that produce the motion [S.4, S.5].\n2. Kinetics: The branch that analyzes the relationship between the forces and moments acting on a body and its resulting mass and acceleration [S.4, S.5].\n\n**Common Notations**\n\nThe text establishes standard symbols for mechanical analysis, including displacement ($s, x, y$), velocity ($v, v_f, v_i$), acceleration ($a, g$), and time ($t$) [S.5].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576778393,
+      "channel": "plan_pipe_2aa3f611aad6",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576778480,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why is statics considered the 'most important' branch of engineering mechanics in this text?",
+            "options": [
+              "Because it is the only branch that utilizes calculus.",
+              "Because it provides the fundamental base for other branches and has the highest frequency of application in engineering.",
+              "Because it is the only branch capable of solving problems involving quantum physics.",
+              "Because it focuses exclusively on the study of objects with non-zero acceleration."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text explicitly states that statics is not only the base for the other branches of mechanics but also has the highest engineering application."
+          },
+          {
+            "question": "An engineer is analyzing a structural steel frame to ensure it remains perfectly stationary. Which of the following conditions must be true for this static analysis?",
+            "options": [
+              "The sum of the forces acting on the body must be zero.",
+              "The body must be experiencing a constant acceleration.",
+              "The forces should be ignored to simplify the free body diagram.",
+              "The system must be classified as a kinetic system."
+            ],
+            "correctIndex": 0,
+            "explanation": "Statics deals with bodies at rest or moving at a constant velocity (zero acceleration); consequently, the sum of all forces (and therefore the total force) must be zero."
+          },
+          {
+            "question": "What distinguishes a 'truss' from other structural elements in mechanics?",
+            "options": [
+              "It is defined as a system of members that carry moments at the joints.",
+              "It only consists of cables that carry load based on their weight.",
+              "It is a system composed entirely of two-force members that only carry axial loads.",
+              "External forces on a truss can act anywhere along the length of the members."
+            ],
+            "correctIndex": 2,
+            "explanation": "A truss is defined as a system of two-force members with pinned ends, meaning they carry no shear forces or moments, only axial loads, with external forces applied only at the joints."
+          },
+          {
+            "question": "How does the study of kinetics differ from the study of kinematics?",
+            "options": [
+              "Kinematics accounts for forces, while kinetics ignores them.",
+              "Kinetics focuses on the forces and moments that cause motion, while kinematics describes motion without regard to forces.",
+              "Kinematics is used for stationary bodies, while kinetics is used for moving bodies.",
+              "Kinetics deals only with displacement and time, while kinematics deals with mass and acceleration."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text defines kinematics as the study of motion (displacement, velocity, acceleration) without concern for forces, while kinetics combines these motion parameters with the forces that cause them."
+          },
+          {
+            "question": "If you are calculating the shape of a cable hanging under a constant load per unit distance, why does the resulting equation represent a parabola?",
+            "options": [
+              "Because the tension in the cable is zero across the entire length.",
+              "Because the load is acting at a singular point rather than across the length.",
+              "Because the differential equation derived from the forces results in a constant load scenario.",
+              "Because cables are considered to be three-force members in static equilibrium."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text demonstrates that for a cable with a constant load acting per unit distance, the differential equation relating tension and geometry simplifies to the equation of a parabola."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778576778481,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is Engineering Mechanics?",
+            "back": "The application of mechanics principles to solve problems involving common engineering elements and real-world scenarios."
+          },
+          {
+            "front": "What are the two primary sub-branches of Dynamics?",
+            "back": "Kinematics (movement without forces) and Kinetics (movement considering forces, mass, and acceleration)."
+          },
+          {
+            "front": "What defines a state of 'Statics'?",
+            "back": "A body is in static equilibrium when its acceleration is zero, occurring when the body is at rest or moving with constant velocity (Net force = 0)."
+          },
+          {
+            "front": "What is a Free Body Diagram (FBD)?",
+            "back": "A visual tool used by engineers to identify and illustrate all forces acting upon a body at rest."
+          },
+          {
+            "front": "How is a truss defined in engineering mechanics?",
+            "back": "A system composed entirely of two-force members that only carry axial loads, with pinned ends that do not carry moments."
+          },
+          {
+            "front": "What are the two common methods for solving truss problems?",
+            "back": "The method of sections (cutting through members) and the method of joints (isolating and analyzing individual joints)."
+          },
+          {
+            "front": "What is the primary difference between Classical and Modern physics?",
+            "back": "Classical physics deals with macroscopic phenomena (laws of motion before the 1900s), while modern physics deals with microscopic/abstract states (quantum and relativity theories)."
+          },
+          {
+            "front": "What shape does a cable assume under a constant uniform load?",
+            "back": "A parabola."
+          },
+          {
+            "front": "What is the distinction between Kinematics and Kinetics?",
+            "back": "Kinematics describes motion (displacement, velocity, acceleration) without concern for forces; Kinetics relates the forces and moments acting on a body to its resulting motion."
+          },
+          {
+            "front": "Which branch of mechanics is considered the most fundamental and has the highest engineering application?",
+            "back": "Statics."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-robotics-embedded_2",
+      "slides": [
+        {
+          "title": "Engineering Mechanics: Statics and Dynamics",
+          "bullets": [
+            "Fundamentals of mechanics in engineering design.",
+            "Understanding physics for real-world robotic structures."
+          ],
+          "notes": "Welcome to our lesson on Engineering Mechanics, where we explore the physical principles governing how robotic structures behave, whether at rest or in motion.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Introduction to Statics",
+          "bullets": [
+            "Statics: Study of bodies at rest.",
+            "Acceleration is zero; constant velocity applies.",
+            "Sum of all forces must equal zero.",
+            "Free body diagrams visualize forces."
+          ],
+          "notes": "Statics is our foundation, focusing on systems where all forces are in balance. We use free body diagrams to isolate and solve for equilibrium.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Structural Analysis",
+          "bullets": [
+            "Trusses: Systems of two-force axial members.",
+            "Method of joints or method of sections.",
+            "Cables carry loads along defined curves.",
+            "Linear algebra solves resulting force equations."
+          ],
+          "notes": "By modeling structures as trusses or cables, we can determine the internal stresses and reactions required to maintain structural integrity.",
+          "page_range": "3-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Dynamics: Foundations",
+          "bullets": [
+            "Dynamics deals with non-zero acceleration.",
+            "Kinematics: Describing motion without force.",
+            "Kinetics: Connecting forces to mass and acceleration.",
+            "Essential for active robotic movement."
+          ],
+          "notes": "When we transition to dynamics, we account for movement. We divide this into kinematics, the geometry of motion, and kinetics, the study of the forces causing that motion.",
+          "page_range": "4-5",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 3 — Engineering Mechanics - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576778380,
+      "pdfName": "Engineering Mechanics"
+    }
+  ],
+  "sourceHash": "fd1aa15a1ac8742c"
+}

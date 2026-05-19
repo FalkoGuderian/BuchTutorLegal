@@ -1,0 +1,368 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Netzwerktechnik — Einführung - Lektion 4 — IoT und MQTT",
+    "pdfName": "MQTT-Broker einrichten",
+    "createdAt": 1778572266171,
+    "exportedAt": "2026-05-12T07:51:06.172Z",
+    "meta": {
+      "courseId": "course-de-cs-netzwerke-einfuehrung",
+      "lessonIndex": 3,
+      "courseTitle": "Netzwerktechnik — Einführung",
+      "lessonObjective": "Message-Broker für IoT-Netzwerke.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-mqtt-broker-einrichten",
+            "title": "MQTT-Broker einrichten",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/MQTT-Broker_einrichten"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_bef38efc4fca",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Einleitung und Grundlagen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-3",
+          "chapterTitle": "Topic-Struktur und Wildcards",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-4",
+          "chapterTitle": "Quality of Service und Implementationen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-6",
+          "chapterTitle": "Konfiguration und Einsatzszenarien",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778572266171,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung zum Thema MQTT-Broker basierend auf dem bereitgestellten Dokument:\n\n### Zusammenfassung: Einführung in MQTT-Broker\n\nDas MQTT-Protokoll dient der Übertragung von Telemetriedaten und Steuerbefehlen in privaten (Smart Home) sowie industriellen Netzwerken (S. 2). Ein MQTT-Broker fungiert hierbei als zentrale vermittelnde Instanz.\n\n#### 1. Funktionsweise und Nachrichtenstruktur\n*   **Architektur:** Geräte kommunizieren über einen Broker mittels eines **Publish/Subscribe-Modells**. Daten werden unter einem **Topic** (hierarchische Baumstruktur, getrennt durch `/`) veröffentlicht und von abonnierten Clients empfangen (S. 2).\n*   **Platzhalter (Wildcards):** Mittels `#` können ganze Hierarchie-Ebenen abonniert werden, während `+` als Platzhalter für einen einzelnen Ebenen-Namen innerhalb eines Topics dient (S. 3).\n*   **Payload:** Der Inhalt einer Nachricht (Payload) ist nicht fest definiert; gängige Formate sind JSON oder XML (S. 3).\n\n#### 2. Konfiguration und Steuerung\n*   **Identifizierung:** Jeder Client benötigt eine eindeutige **Client-ID** sowie optional einen Benutzernamen zur Authentifizierung und Rechteverwaltung (S. 3, S. 5).\n*   **Quality of Service (QoS):** Es sind drei Stufen definiert, um die Übertragungssicherheit zu regeln (S. 3):\n    *   **QoS 0:** Maximal einmal (keine Bestätigung, keine Garantie).\n    *   **QoS 1:** Mindestens einmal (Bestätigung erforderlich, sonst Wiederholung).\n    *   **QoS 2:** Genau einmal (exakte Zustellung durch Pufferung bei Verbindungsabbruch) (S. 4).\n\n#### 3. Implementierung und Sicherheit\n*   **Referenzimplementierung:** Der Broker **Mosquitto** gilt aufgrund seiner weiten Verbreitung und Verfügbarkeit (auch auf Routern wie OpenWRT) quasi als Standard (S. 4).\n*   **Sicherheitsaspekte:** \n    *   Die Absicherung erfolgt unter anderem durch Benutzerverwaltung (S. 5) sowie durch **TLS-Verschlüsselung**, um Daten in unsicheren Netzwerken geschützt zu übertragen (S. 6). \n    *   Zusätzlich können TLS-Zertifikate für eine zweiseitige Authentifizierung (PKI) genutzt werden (S. 6). \n*   **Erweiterte Szenarien:** Systeme können mittels mehrerer Broker (z. B. durch Firewalls getrennt) oder durch redundante Broker-Setups skaliert und ausfallsicher gestaltet werden (S. 6).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778572266171,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-cs-netzwerke-einfuehrung_3\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 4 — IoT und MQTT - Präsentation</span><span class=\"pm-chat-count\">6 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Einführung in MQTT-Broker</div><ul class=\"pm-chat-slide-bullets\"><li>Zentrales Transportsystem für IoT-Daten und Smart-Home-Kommunikation</li><li>Ermöglicht Datenaustausch zwischen Sensoren und Aktoren</li><li>Fokus auf sichere Konfiguration für Privatanwender</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778572266172,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des vorliegenden Textes:\n\n**Projektübersicht und Zielsetzung**\nDas Dokument dient als Lehrbuch für die Einrichtung und Härtung von MQTT-Brokern. Das Projekt wurde am 01.01.2021 von ademant initiiert und richtet sich primär an Privatanwender, die MQTT für Anwendungen wie Smart Home nutzen möchten (S. 1). Es wird betont, dass die beschriebenen Sicherheitsmaßnahmen für den geschäftlichen Bereich nicht ausreichend sind (S. 1).\n\n**Grundlagen und Funktionsweise von MQTT**\nMQTT fungiert als Transportsystem für Telemetriedaten und Anweisungen. Das System basiert auf einer Broker-Architektur, bei der die Daten zentral verwaltet werden (S. 2). Ein Gerät sendet Daten unter einem bestimmten Pfad an den Broker, was als \"Publish\" bezeichnet wird. Andere Geräte können diese Informationen unter demselben Pfad abrufen, was als \"Subscribe\" bekannt ist (S. 2).\n\n**Strukturierung der Daten**\nDie Organisation der Informationen erfolgt über sogenannte Topics, die in einer baumartigen Struktur angelegt sind. Diese verwenden den Schrägstrich (/) als Trennzeichen, um logische Hierarchien zu bilden (z. B. zur Trennung von Status- und Messwerten verschiedener Geräte wie Stromsteckern oder Thermostaten) (S. 2).\n\n**Anwendungsbereiche**\n* Privater Bereich: Einsatz in der Heimautomation zur Steuerung von Sensoren und Aktoren (S. 2).\n* Industrieller Bereich: Anbindung von Aggregaten zur Datenübertragung (S. 2).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572266181,
+      "channel": "plan_pipe_bef38efc4fca",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts S.3:\n\n**MQTT-Grundlagen: Steuerung und Kommunikation**\n\nDie MQTT-Kommunikation basiert auf einem Broker, bei dem Clients Topics abonnieren oder veröffentlichen können. Für die Payload (Inhalt) sind keine festen Formate vorgegeben; gängig sind Einzelwerte, JSON oder XML.\n\n**Wildcards zur Topic-Auswahl**\nUm mehrere Topics effizient zu adressieren, stehen zwei Platzhalter zur Verfügung, die jedoch nur für Lesezugriffe (Abonnements) und nicht für Schreibbefehle (Publishing) einsetzbar sind: \n- Das Zeichen '#' dient als Platzhalter für eine gesamte Hierarchie-Ebene.\n- Das Zeichen '+' ersetzt eine einzelne Ebene innerhalb eines Topics.\nDas Schalten von Geräten muss immer explizit für jedes Topic einzeln erfolgen.\n\n**Zugriffsrechte und Identifizierung**\nJeder Client benötigt zur Anmeldung eine eindeutige Client-ID und optional einen Nutzernamen. Diese dienen zur Authentifizierung, zur Zugriffssteuerung auf bestimmte Topics sowie zur Implementierung der Quality of Service (QoS) Level.\n\n**Quality of Service (QoS)**\nQoS regelt die Zuverlässigkeit der Datenübertragung. Der gezeigte Level 0 (\"at most once\") garantiert, dass eine Nachricht maximal einmal übertragen wird, wobei bei Verbindungsabbrüchen Verluste möglich sind. Höhere Level (1 und 2) nutzen die Client-ID für eine stabilere Zustellung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572266182,
+      "channel": "plan_pipe_bef38efc4fca",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts S.4 bezüglich der MQTT-Quality-of-Service-Level (QoS) und der Implementierung:\n\n**Die QoS-Level von MQTT**\n\n* QoS-Level 0 (At most once): Daten werden ohne Bestätigung gesendet. Bei Verbindungsabbruch gehen zwischenzeitlich angefallene Daten verloren.\n* QoS-Level 1 (At least once): Die Nachricht wird wiederholt gesendet, bis eine Empfangsbestätigung der Gegenstelle vorliegt. Dies kann zu Duplikaten führen, verhindert jedoch Nachrichtenverluste bei instabilen Verbindungen.\n* QoS-Level 2 (Exactly once): Durch den Einsatz eines Ausgangspuffers stellt der Broker sicher, dass jede Nachricht exakt einmal ankommt. Bei einem Verbindungsabbruch werden die Nachrichten im Puffer zwischengespeichert und nach Wiederverbindung geordnet übertragen.\n\n**MQTT-Implementierung**\n\nMosquitto gilt als Referenzimplementierung für MQTT, da es weit verbreitet und auf einer Vielzahl von Architekturen (z. B. OpenWRT) nutzbar ist. Eine Übersicht weiterer verfügbarer Programme findet sich in der englischsprachigen Wikipedia.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572266183,
+      "channel": "plan_pipe_bef38efc4fca",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine zusammenfassende Übersicht zur Einrichtung und Konfiguration eines MQTT-Brokers basierend auf den bereitgestellten Informationen:\n\nGrundlagen und Basiskonfiguration\nDie Standardkonfiguration eines Mosquitto-Brokers auf unixoiden Systemen ist weitgehend abgeschlossen (S. 5). Ein Broker kann auf verschiedenen Ports lauschen, wobei der gesamte Topic-Baum für alle Ports zugänglich ist (S. 5). Für den Einsatz mehrerer Broker auf einem Rechner mit getrennten Topics ist ein höherer Konfigurationsaufwand erforderlich (S. 5).\n\nSicherheit und Zugriffskontrolle\nZur Absicherung des Systems können Nutzer für die Authentifizierung und Rechteverwaltung eingerichtet werden (S. 5). Um Daten in unsicheren Netzwerken geschützt zu übertragen, wird TLS-Verschlüsselung eingesetzt (S. 6). Optional ermöglichen TLS-Zertifikate eine restriktivere Zugriffskontrolle und den Aufbau einer Public Key Infrastructure (PKI), um die Nachteile einer klassischen Nutzername/Passwort-Kombination zu umgehen (S. 6).\n\nNetzwerkarchitektur und Redundanz\nDas Dokument skizziert Szenarien, in denen mehrere Broker miteinander verbunden werden, etwa bei der Trennung durch Netzwerksegmente und Firewalls (S. 6). Zur Erhöhung der Ausfallsicherheit können Clients so konfiguriert werden, dass sie bei einem Verbindungsausfall eines Brokers automatisch auf einen alternativen Broker ausweichen (S. 6).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572266184,
+      "channel": "plan_pipe_bef38efc4fca",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778572266271,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Welche Eigenschaft besitzen MQTT-Wildcards in Bezug auf die Nachrichtenübermittlung?",
+            "options": [
+              "Sie können sowohl zum Veröffentlichen (Publish) als auch zum Abonnieren (Subscribe) von Topics verwendet werden.",
+              "Das '#'-Zeichen kann genutzt werden, um gezielt einzelne Unterebenen innerhalb des Topic-Baums zu überspringen.",
+              "Wildcards sind ausschließlich für den lesenden Zugriff (Abonnieren) zulässig, nicht zum Setzen von Werten.",
+              "Wildcards verringern die Komplexität der Datenstruktur, indem sie automatisch die Payload-Formate der Topics vereinheitlichen."
+            ],
+            "correctIndex": 2,
+            "explanation": "Wildcards dienen laut Text dazu, abonnierte Topics zu filtern. Da ein Nachrichten-Publikation einen konkreten Pfad benötigt, ist das Setzen von Topics mittels Wildcards nicht möglich."
+          },
+          {
+            "question": "Ein Sensor sendet Temperaturdaten via MQTT. Es ist kritisch, dass die Daten bei einem Verbindungsabbruch nicht verloren gehen. Welches QoS-Level ist hierfür mindestens erforderlich?",
+            "options": [
+              "QoS 0, da es der Standard ist und die höchste Übertragungsgeschwindigkeit bietet.",
+              "QoS 1, da hier der Erhalt einer Quittierung sicherstellt, dass die Nachricht den Broker erreicht hat.",
+              "QoS 2, da dies das einzige Level ist, das Daten auch bei aktiver Verbindung ohne Quittierung speichert.",
+              "Keines der Levels, da MQTT ohne dedizierte Datenbank keine Datenspeicherung bei Verbindungsabbrüchen garantiert."
+            ],
+            "correctIndex": 1,
+            "explanation": "QoS 1 (at least once) erfordert eine Empfangsbestätigung. Bleibt diese aus, wird die Nachricht wiederholt gesendet, was die Wahrscheinlichkeit des Datenverlusts minimiert."
+          },
+          {
+            "question": "Welche Rolle spielt die Client-ID bei der Kommunikation mit einem MQTT-Broker?",
+            "options": [
+              "Sie ersetzt den Benutzernamen und das Passwort zur Verschlüsselung der TLS-Verbindung.",
+              "Sie dient als eindeutige Kennung zur Steuerung des Zugriffs und zur Verwaltung des Ausgangspuffers bei QoS-Level 2.",
+              "Sie wird vom Broker automatisch generiert, um alle ankommenden Daten in einer Datenbank zu sortieren.",
+              "Sie bestimmt, welches Topic-Format der Client empfangen darf (z.B. JSON oder XML)."
+            ],
+            "correctIndex": 1,
+            "explanation": "Die Client-ID ist für den Broker notwendig, um bei QoS 2 Nachrichten im Ausgangspuffer client-spezifisch zu halten, falls dieser kurzzeitig die Verbindung verliert."
+          },
+          {
+            "question": "Warum ist die Verwendung von TLS-Zertifikaten (PKI) im Vergleich zur einfachen Nutzername/Passwort-Authentifizierung vorteilhaft?",
+            "options": [
+              "Da TLS-Zertifikate die Notwendigkeit beseitigen, den MQTT-Broker auf einem speziellen Port zu betreiben.",
+              "Da sie die Notwendigkeit von Firewall-Regeln zwischen verschiedenen Netzwerksegmenten komplett aufheben.",
+              "Da sie die Schwächen einer klassischen Nutzername/Passwort-Verwaltung vermeiden können.",
+              "Da TLS-Zertifikate automatisch das QoS-Level auf 2 erhöhen, um eine sicherere Zustellung zu gewährleisten."
+            ],
+            "correctIndex": 2,
+            "explanation": "Der Text erwähnt explizit, dass zweiseitige TLS-Anmeldungen genutzt werden können, um die Nachteile einer reinen Nutzername/Passwort-Systematik zu beseitigen."
+          },
+          {
+            "question": "Was passiert bei QoS-Level 2, wenn ein Client die Verbindung während einer Übertragung verliert?",
+            "options": [
+              "Der Broker verwirft alle ausstehenden Nachrichten sofort, um Speicherplatz freizugeben.",
+              "Der Broker sendet die Nachrichten nach einer festen Zeit unaufgefordert an den nächsten verfügbaren Broker im Netzwerk weiter.",
+              "Der Broker belässt die Nachrichten im Ausgangspuffer des Clients, bis dieser sich erneut anmeldet.",
+              "Der Broker stellt die Nachrichten in einem permanenten Logfile zur Verfügung, das über ein Web-Interface abgefragt werden kann."
+            ],
+            "correctIndex": 2,
+            "explanation": "Bei QoS 2 nutzt der Broker den Ausgangspuffer für den Client. Bei Verbindungsabbruch werden die Daten dort gehalten, bis der Client wieder online ist und sie in Reihenfolge empfängt."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778572266272,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist die zentrale Aufgabe eines MQTT-Brokers?",
+            "back": "Der Broker empfängt Daten von Clients, verwaltet diese unter sogenannten Topics und stellt sie anderen abonnierten Geräten zur Verfügung."
+          },
+          {
+            "front": "Wie wird ein MQTT-Topic strukturiert?",
+            "back": "Topics werden in einer Baumform strukturiert, wobei ein Schrägstrich (/) als Trenner zwischen den Hierarchie-Ebenen verwendet wird."
+          },
+          {
+            "front": "Was bewirkt die Wildcard '#' in einem MQTT-Topic?",
+            "back": "Die Raute '#' wählt alle Topics unterhalb der angegebenen Hierarchie-Ebene aus."
+          },
+          {
+            "front": "Was bewirkt die Wildcard '+' in einem MQTT-Topic?",
+            "back": "Das Pluszeichen '+' fungiert als Platzhalter für eine einzelne Hierarchie-Ebene. Alle Topics, deren übrige Bestandteile mit der Beschreibung übereinstimmen, werden erfasst."
+          },
+          {
+            "front": "Können Wildcards beim Veröffentlichen (Publish) von Nachrichten verwendet werden?",
+            "back": "Nein, Wildcards funktionieren ausschließlich für den lesenden Zugriff (Abonnieren/Subscribe)."
+          },
+          {
+            "front": "Was versteht man unter dem Begriff 'Payload' bei MQTT?",
+            "back": "Die Payload enthält den eigentlichen Inhalt bzw. die Daten einer Nachricht. Sie hat keine vorgeschriebene Form; üblich sind einfache Werte, JSON oder XML."
+          },
+          {
+            "front": "Erläutere kurz den QoS-Level 0 (at most once).",
+            "back": "Daten werden maximal einmal übertragen. Es gibt keine Bestätigung; bei Verbindungsabbrüchen gehen Nachrichten verloren."
+          },
+          {
+            "front": "Erläutere kurz den QoS-Level 1 (at least once).",
+            "back": "Daten werden mindestens einmal übertragen. Erfolgt keine Empfangsbestätigung, wird die Nachricht erneut gesendet."
+          },
+          {
+            "front": "Erläutere kurz den QoS-Level 2 (exactly once).",
+            "back": "Daten werden exakt einmal an die Gegenstelle übertragen. Dies ist der sicherste Modus und nutzt bei Verbindungsunterbrechungen einen Ausgangspuffer."
+          },
+          {
+            "front": "Welche Funktion hat die Client-ID bei MQTT?",
+            "back": "Jeder Client benötigt eine eindeutige ID zur Anmeldung am Broker. Sie ist relevant für die Umsetzung von QoS-Level 1 und 2 sowie zur Berechtigungskontrolle pro Topic."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-cs-netzwerke-einfuehrung_3",
+      "slides": [
+        {
+          "title": "Einführung in MQTT-Broker",
+          "bullets": [
+            "Zentrales Transportsystem für IoT-Daten und Smart-Home-Kommunikation",
+            "Ermöglicht Datenaustausch zwischen Sensoren und Aktoren",
+            "Fokus auf sichere Konfiguration für Privatanwender"
+          ],
+          "notes": "MQTT fungiert als Infrastruktur, um verteilte Geräte über einen zentralen Broker zu vernetzen. Wir betrachten die Grundlagen für einen sicheren Betrieb dieser Architektur.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Funktionsweise und Topic-Struktur",
+          "bullets": [
+            "Zentrale Rolle des Brokers für Datenempfang und -verteilung",
+            "Daten werden in einer hierarchischen Baumstruktur mittels 'Topics' organisiert",
+            "Publish/Subscribe-Modell entkoppelt Datenquelle und Empfänger",
+            "Schrägstrich (/) dient als Trenner der Topic-Hierarchie"
+          ],
+          "notes": "Der Broker ist das Herzstück: Ein Gerät publiziert unter einem Topic, während andere diesen Pfad abonnieren, um Daten zu erhalten.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Flexible Datenabfrage mit Wildcards",
+          "bullets": [
+            "'#' wählt alle Unterebenen einer Hierarchie für Abonnements aus",
+            "'+' ersetzt eine Ebene im Pfad zur flexiblen Filterung",
+            "Wildcards sind ausschließlich für lesende Abonnements zulässig",
+            "Keine Payload-Vorgabe (JSON, XML oder rohe Werte möglich)"
+          ],
+          "notes": "Durch Wildcards können wir effizient auf ganze Gruppen von Sensordaten zugreifen, ohne jedes Topic einzeln abonniert zu haben.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Quality of Service und Implementierung",
+          "bullets": [
+            "QoS 0: Maximal einmal (keine Bestätigung, schnell)",
+            "QoS 1: Mindestens einmal (mit Quittierung, Duplikate möglich)",
+            "QoS 2: Exakt einmal (garantiert durch Pufferung)",
+            "Mosquitto als referenzierte Standard-Implementierung für viele Systeme"
+          ],
+          "notes": "Das QoS-Level entscheidet darüber, wie zuverlässig eine Nachricht ankommt, besonders bei Verbindungsabbrüchen zwischen Broker und Client.",
+          "page_range": "4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Konfiguration und Sicherheit",
+          "bullets": [
+            "Broker-Hardening via Benutzerverwaltung und Firewall-Regeln",
+            "Mehrere Listener für parallele Konfigurationen auf einem Broker",
+            "TLS-Verschlüsselung schützt Daten in unsicheren Netzwerken",
+            "Zertifikatsbasierte Anmeldung ersetzt klassische Passwörter (PKI)"
+          ],
+          "notes": "Ein sicherer Broker nutzt TLS-Verschlüsselung und sauberes Rechtemanagement, um den Zugriff in vernetzten Umgebungen zu kontrollieren.",
+          "page_range": "5-6",
+          "image_prompt": ""
+        },
+        {
+          "title": "Skalierbarkeit und Redundanz",
+          "bullets": [
+            "Verbund mehrerer Broker über Netzwerksegmente hinweg sinnvoll",
+            "Redundante Broker-Architekturen zur Steigerung der Ausfallsicherheit",
+            "Clients können bei Ausfall automatisch auf Ersatz-Broker wechseln"
+          ],
+          "notes": "Für professionelle Anwendungen lässt sich MQTT durch mehrere, miteinander verbundene Broker skalieren und absichern.",
+          "page_range": "6",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 4 — IoT und MQTT - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778572266171,
+      "pdfName": "MQTT-Broker einrichten"
+    }
+  ],
+  "sourceHash": "eabc9198c203e176"
+}

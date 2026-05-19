@@ -4,9 +4,13 @@ key.secret
 content-index.json
 course-index.json
 
-# Klartext-Lesson-Asset-Bundles (IP) — niemals committen.
-# Nur die .enc-Varianten dürfen in content/ landen.
-content/**/*.json
-content/*.json
+# Klartext-Lektions-Bundles (CC-BY-SA TPM-Konformitaet, ab 2026-05-19):
+# Die .json in content/ SIND jetzt die kanonische Auslieferung —
+# .enc bleibt als Legacy-Fallback fuer ~7 Tage (Cache-TTL der App).
+# Indizes (content-index.enc, course-index.enc, training-index.enc) bleiben
+# verschluesselt (Datenbank-Schutz §87a UrhG).
 content-index.json.bak
 *.json.bak
+
+# Lokale Backups (Migration 2026-05-19)
+_backup_content_enc_*/

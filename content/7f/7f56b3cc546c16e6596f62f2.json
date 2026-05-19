@@ -1,0 +1,482 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Database Engineering: SQL, Postgres, Oracle, SQL Server - Lesson 1: Structured Query Language",
+    "pdfName": "Structured Query Language",
+    "createdAt": 1778789620571,
+    "exportedAt": "2026-05-14T20:13:40.572Z",
+    "meta": {
+      "courseId": "course-en-databases-engineering",
+      "lessonIndex": 0,
+      "courseTitle": "Database Engineering: SQL, Postgres, Oracle, SQL Server",
+      "lessonObjective": "Relational model, SELECT/JOIN, normalization.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-structured-query-language",
+            "title": "Structured Query Language",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Structured_Query_Language"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_9896d81635f4",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-7",
+          "chapterTitle": "Introduction and Database Theory",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "8-17",
+          "chapterTitle": "Data Structures and Relational Models",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "18-33",
+          "chapterTitle": "SQL Data Manipulation",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "34-43",
+          "chapterTitle": "Joins and Grouping",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "44-57",
+          "chapterTitle": "Logic, Values, and Functions",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "58-71",
+          "chapterTitle": "Views and Advanced Data Modification",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "72-84",
+          "chapterTitle": "Constraints and Data Types",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "85-99",
+          "chapterTitle": "System Management and Window Functions",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "100-109",
+          "chapterTitle": "Recursive Queries and Transactions",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "110-121",
+          "chapterTitle": "Appendices and Reference",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778789620571,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Lesson 1 Summary: Introduction to Structured Query Language (SQL)\n\nThis lesson introduces SQL as the standard language for relational database management systems (RDBMS), focusing on its core theory, structure, and usage.\n\n#### 1. The Relational Model\n*   **Structure:** Data is organized into relations (tables) consisting of attributes (columns). Unlike hierarchical models, the relational model does not predefine navigation paths.\n*   **Math Foundation:** SQL is based on relational algebra and Boolean logic. It is a **declarative language**—you specify *what* data to retrieve, while the system determines *how* (the execution plan).\n*   **Normalization:** Tables are designed to represent real-world entities. Complex data is broken down into related tables, which are later reconstructed using joins based on actual data values.\n\n#### 2. Key SQL Language Elements\n*   **Case Insensitivity:** SQL keywords (e.g., `SELECT`, `UPDATE`) are case-insensitive.\n*   **Orthogonality:** SQL allows language elements to be used in any logical position (e.g., functions can be deeply nested in queries), though the language contains some redundancy in how tasks can be performed.\n*   **Command Categories:**\n    *   **DDL (Data Definition Language):** Defines structure (`CREATE`, `ALTER`, `DROP`).\n    *   **DML (Data Manipulation Language):** Manages data (`INSERT`, `UPDATE`, `DELETE`, `SELECT`).\n    *   **DCL (Data Control Language):** Manages access (`GRANT`, `REVOKE`).\n\n#### 3. Database Principles (ACID)\nA robust RDBMS guarantees the ACID paradigm to ensure data integrity:\n*   **Atomicity:** All changes in a transaction occur, or none do.\n*   **Consistency:** Transitions the database from one valid state to another.\n*   **Isolation:** Concurrent transactions do not interfere with one another.\n*   **Durability:** Committed changes persist despite system failures.\n\n#### 4. The Importance of Standardization\n*   **Portability:** Using standardized SQL ensures that applications can, in theory, switch between different database vendors without major code refactoring.\n*   **Industry Stability:** Standardization prevents vendor lock-in and protects the long-term value of professional technical knowledge.\n\n#### 5. Limitations and Implementation\n*   **Vendor Divergence:** While a standard exists, most database vendors provide proprietary extensions beyond the ISO/IEC standard to offer unique performance or feature advantages.\n*   **Turing Completeness:** Core SQL is not Turing complete; manufacturers provide extensions (e.g., PL/SQL, T-SQL) to add procedural features like loops and conditional branches.\n\n***\n\n*Reference: [S.5], [S.6], [S.7], [S.8], [S.9], [S.10]*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789620571,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-databases-engineering_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 1: Structured Query Language - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lesson 1: Structured Query Language</div><ul class=\"pm-chat-slide-bullets\"><li>Introduction to database fundamentals and relational modeling.</li><li>Understanding data manipulation using SQL (p. 1-7).</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778789620572,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as a guide to Structured Query Language (SQL) based on the ISO/IEC standard. It focuses on universal language features rather than vendor-specific implementations, providing a conceptual introduction to database management systems (DBMS).\n\n**Key Concepts and DBMS Design**\n\n*   **DBMS Fundamentals:** A DBMS ensures data reliability through the ACID paradigm (Atomicity, Consistency, Isolation, Durability) in multi-user environments. It utilizes algorithms for data storage and indexing (e.g., B-trees) similar to those used in operating systems and file systems (p. 6).\n*   **DBMS Classification:**\n    *   **Hierarchical:** Data is structured as a tree; efficient for specific paths but lacks flexibility for complex queries (p. 6, 7).\n    *   **Network:** Uses complex links between nodes; efficient for traversal but physically coupled (p. 7).\n    *   **Relational (RDBMS):** Based on relational algebra, using tables and declarative operations. Relationships are defined by data values at runtime rather than fixed physical links (p. 7).\n    *   **Object-Oriented:** Addresses the impedance mismatch between object-oriented programming and RDBMS by supporting features like inheritance and encapsulation (p. 7).\n    *   **NoSQL and NewSQL:** NoSQL offers scalability for huge, unstructured volumes by relaxing ACID constraints. NewSQL attempts to combine RDBMS/ACID benefits with NoSQL-style scalability (p. 7).\n\n**Programming Conventions**\n\n*   SQL is case-insensitive regarding keywords (e.g., `SELECT` vs `select`), but string values are case-sensitive (e.g., 'Duckburg' $\\neq$ 'duckburg') (p. 6).\n*   For readability, the guide adopts the convention of writing keywords in upper case and user-defined objects in lower case (p. 6).\n\n**Theoretical Foundation**\n\n*   Relational databases rely on relational algebra, which provides a mathematical framework for data manipulation including projections, selections, joins, and set operations. This allows the DBMS to optimize and transform user queries efficiently into different forms (p. 7).\n\n**Usage Note**\n\n*   This text acts as a companion for study and does not replace a comprehensive technical reference or hands-on practice with a concrete database implementation (p. 5, 6).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789620581,
+      "channel": "plan_pipe_9896d81635f4",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 7
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the fundamentals of the relational model and SQL as described in pages [S.8] through [S.12].\n\n### The Relational Model\nThe relational model organizes data into tables (relations) containing attributes (columns). Information about real-world entities is stored in rows, often broken down into sub-entities to satisfy specific business requirements. These models are designed to conform to normal forms and are inherently descriptive rather than prescriptive regarding application use.\n\n### Relational Algebra and SQL\nRelational database management systems (rDBMS) utilize relational algebra, which operates on sets of rows rather than individual records. SQL provides a standardized, descriptive syntax that acts as a layer above this algebra.\n* Characteristics: SQL commands are case-insensitive and utilize English-like syntax. As a descriptive language, SQL allows the rDBMS to optimize the execution plan automatically.\n* Orthogonality: Language elements can generally be used wherever their resulting data type is expected, providing flexibility in expressions and subqueries.\n* Set Manipulation: SQL is powerful because it can process large sets of data with a single command, such as $UPDATE \\text{ table } SET \\text{ column} = \\text{value} \\dots$.\n\n### SQL Standardization and Structure\nSQL is standardized by ISO/IEC (e.g., ISO/IEC 9075). Standardization ensures portability, allowing developers to switch between different rDBMS products by minimizing reliance on implementation-specific features.\n* Statement Groups: SQL statements are typically categorized into:\n1. Data Definition Language (DDL): Managing schema structures (CREATE/ALTER/DROP).\n2. Data Manipulation Language (DML): Managing and retrieving data (SELECT/INSERT/UPDATE/DELETE).\n3. Data Control Language (DCL): Managing access rights (GRANT/REVOKE).\n\n### Practical Implementation\nThe standard includes provisions for data types (numeric, temporal, binary, etc.) and constraints that ensure data integrity (PRIMARY KEY, FOREIGN KEY, UNIQUE, CHECK).\n* Foreign Keys: These define relationships (1:m or n:m) between tables, including self-referencing relationships within a single table.\n* Turing Completeness: While core SQL is not Turing complete, most implementations include extensions (e.g., SQL/PSM) to support procedural logic like loops, conditional branching, and variables.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789620582,
+      "channel": "plan_pipe_9896d81635f4",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 8,
+        "end": 17
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the fundamentals of database management using SQL based on the provided documentation.\n\n### Table Fundamentals and Structure\nTables serve as the core storage structure. Every column must have a fixed name and a consistent data type. A Primary Key—a unique identifier for each row—is highly recommended for data integrity. Data is defined in a machine-understandable way using SQL commands like CREATE TABLE. Constraints, such as NOT NULL or PRIMARY KEY, ensure the quality of the data stored (S.18).\n\n### Data Manipulation Operations\nThere are four primary operations for managing table data:\n1. INSERT: Adds new rows to a table (S.19).\n2. SELECT: Retrieves specific data based on column lists, search conditions (WHERE), and ordering (ORDER BY) (S.20).\n3. UPDATE: Modifies existing values in specific rows (S.21).\n4. DELETE: Removes complete rows from a table (S.21).\n\nUnlike the DROP command, which deletes both the data and the table structure, the DELETE command only removes rows, keeping the table structure intact (S.19). Changes to data often require a COMMIT command to be finalized (S.19, S.21).\n\n### Database Relationships\nRelational databases utilize separate tables to manage data efficiently and avoid redundancy:\n- 1:m Relationships: Used when one entity (e.g., a person) relates to multiple items of another type (e.g., contact methods). This is managed by including the Primary Key of the main table as a Foreign Key in the secondary table (S.22).\n- n:m Relationships: Used when multiple entities relate to multiple items (e.g., persons and hobbies). This requires an intermediary \"bridge\" table (like $person\\_hobby$) that contains the IDs from both related tables to connect them (S.23).\n\n### Key SQL Constraints\nConstraints allow for fine-tuned control over database contents:\n- PRIMARY KEY: Uniquely identifies a single row.\n- FOREIGN KEY: Ensures referential integrity between tables.\n- CHECK: Validates values against specific allowed inputs.\n- UNIQUE: Prevents duplicate entries within a column (S.22, S.23).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789620583,
+      "channel": "plan_pipe_9896d81635f4",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 18,
+        "end": 33
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document explains the fundamentals of database normalization and the `JOIN` operation in SQL.\n\n**Database Normalization**\nNormalization is the process of organizing data into separate, redundancy-free tables (e.g., creating independent `person` and `hobby` tables). This minimizes data duplication, simplifies logic, and improves flexibility when assembling information.\n\n**The JOIN Operation**\nThe `JOIN` operation combines data from multiple tables at runtime based on a specified link. Synthetic tables created by joins are not physically stored but computed in memory. The basic syntax is:\n$SELECT <columns> FROM <table1> JOIN <table2> ON <condition>;$\n\n**Types of Joins**\n1. INNER JOIN: Returns only rows where there is a match in both tables based on the `ON` condition. If no match exists, the row is excluded.\n2. LEFT OUTER JOIN: Returns all rows from the left table, plus matching rows from the right table. If no match is found, the right-side columns are filled with a null special marker (p. 36).\n3. RIGHT OUTER JOIN: Functions like the left join but prioritizes all rows from the right table (p. 37).\n4. FULL OUTER JOIN: Returns all rows when there is a match in either the left or right table, filling missing values with null markers (p. 37).\n\n**Additional Concepts**\n- Cartesian Product: Occurs if the `ON` keyword is omitted in an inner join. This combines every record of the first table with every record of the second, resulting in a number of rows equal to the product of the two tables' record counts (p. 37).\n- Complex Joins: Tables can be joined with themselves (self-join) or joined with multiple other tables to resolve complex data relationships, such as many-to-many ($n:m$) scenarios. \n- Join Criteria: Joins are not limited to primary/foreign key equality. Conditions can utilize any column, comparison operators (e.g., $p1.weight > p2.weight$), or functions (e.g., `LENGTH()`) (p. 38, 39).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789620584,
+      "channel": "plan_pipe_9896d81635f4",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 34,
+        "end": 43
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers the management of NULL values, the use of aggregate and scalar functions, and set operations in SQL.\n\n### Handling NULL Values and Three-Valued Logic\nIn SQL, a NULL value represents missing information rather than zero or a blank space. Consequently, standard comparison operators (e.g., $=, <, >$) cannot evaluate conditions involving NULL, leading to a state of $unknown$ instead of true or false. Because traditional boolean logic cannot process $unknown$, SQL employs three-valued logic. To retrieve rows containing NULLs, the explicit predicate $IS NULL$ must be used. Conversely, $IS NOT NULL$ is used to exclude them. Standard functions like $COALESCE(expression1, expression2)$ are available to provide default values when a NULL is encountered (p. 44, 45).\n\n### Aggregate Functions\nAggregate functions operate on sets of rows to return a single value. They include $COUNT(*)$, $SUM()$, $AVG()$, $MIN()$, and $MAX()$. A critical rule is that aggregate functions ignore NULL values in their calculations (though $COUNT(*)$ counts all rows). Because they reduce a set of values to a single result, they cannot be used in a $SELECT$ clause alongside individual column names unless those columns are part of a $GROUP BY$ clause (p. 46, 47). \n\n### Scalar Functions\nScalar functions process data on a per-row basis. They are categorized by the data types they handle:\n- String functions: $UPPER()$, $LOWER()$, $SUBSTRING()$, $CHARACTER_LENGTH()$, and $TRIM()$.\n- Numeric functions: $ABS()$, $SQRT()$, and $MOD()$.\n- Date/Time functions: $CURRENT_DATE$ and $EXTRACT()$.\nThese can be used in the $SELECT$ list, the $WHERE$ clause, or for data transformation (p. 47, 48).\n\n### Multiset Operations\nSQL treats query results as multisets, where duplicates are permitted. The set operations $UNION$, $INTERSECT$, and $EXCEPT$ allow for the combination of results from multiple $SELECT$ statements. By default, the $UNION$ operator removes duplicate rows from the combined result set (p. 49).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789620585,
+      "channel": "plan_pipe_9896d81635f4",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 44,
+        "end": 57
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers advanced SQL techniques, specifically focusing on subqueries and views.\n\n**Subqueries**\nSubqueries are powerful tools used for conditional retrieval. They are categorized as:\n1. Non-correlated subqueries: These run independently once and provide a set or value for the main query.\n2. Correlated subqueries: These execute for each row processed by the surrounding query, utilizing values from the outer query to filter or calculate specific data (p. 59).\n\nSubqueries are essential for finding current records (e.g., retrieving the row with the maximum version number) or for aggregating data across related tables, such as counting contacts associated with specific persons (p. 58-59).\n\n**Views**\nViews are virtual tables that act as predefined SELECT statements. They do not store data themselves but provide a layer of abstraction over one or more underlying tables (p. 60). Key benefits include:\n- Security: Restricting access to specific sensitive columns or rows (p. 60-61).\n- Simplification: Hiding complex JOINs, aggregate functions (e.g., $SUM$, $COUNT$), or subqueries from the end-user (p. 61).\n- Flexibility: Allowing column renaming and restructuring data as needed for specific applications (p. 60).\n\n**Write Access and Management**\nWhile views primarily present data, some systems permit data modification ($INSERT$, $UPDATE$, $DELETE$) through them, provided the view definition is sufficiently simple (e.g., based on a single table, no aggregate functions, no subqueries). The SQL standard does not explicitly define these limits, so rules vary by implementation (p. 62). To remove view definitions without impacting the underlying data, the $DROP VIEW$ command is used (p. 62-63).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789620586,
+      "channel": "plan_pipe_9896d81635f4",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 58,
+        "end": 71
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers SQL table creation, constraint management, and data types based on the provided text.\n\n### Table Constraints\nConstraints ensure data integrity within a database. They can be defined as **Column Constraints** (inline with column definitions) or **Table Constraints** (defined after column definitions). Table constraints are generally preferred as they can be named, which facilitates better error reporting and allows for later modification via `ALTER TABLE`.\n\nKey constraint types include:\n* **NOT NULL**: Prevents storage of null values in a column.\n* **PRIMARY KEY**: Ensures values are unique and non-null; each table allows only one primary key.\n* **UNIQUE**: Ensures values across rows are distinct, though multiple nulls may be permitted depending on the DBMS (since $null = null$ evaluates to unknown).\n* **FOREIGN KEY**: Enables referential integrity by requiring values to exist in a referenced column of the same or another table, facilitating 1:m relationships.\n* **CHECK**: Validates that values meet specific conditions. General checks involving multiple columns must be defined as table constraints.\n\n### Default Values and Identity\nWhen a column is not specified in an `INSERT` command, the DBMS uses a defined default value. For automatic primary key generation, the standard syntax is `GENERATED { ALWAYS | BY DEFAULT } AS IDENTITY`, though implementation varies significantly by vendor.\n\n### SQL Data Types\nThe SQL standard categorizes predefined data types into several groups:\n\n1. **Character Types**: Used for text.\n   * `CHAR(n)`: Fixed-size strings.\n   * `VARCHAR(n)`: Variable-size strings with an upper limit $n$.\n   * `CLOB`: Large objects for strings exceeding system limits.\n\n2. **Binary Types**: For unstructured data.\n   * `BINARY(n)` and `VARBINARY(n)`: Fixed or variable size byte sequences.\n   * `BLOB`: Large objects for arbitrary binary data.\n\n3. **Numeric Types**:\n   * **Exact**: `DECIMAL(p,s)` and `NUMERIC(p,s)` define precision $p$ (total digits) and scale $s$ (digits after decimal). Must satisfy $p \\ge s \\ge 0$ and $p > 0$. Includes `SMALLINT`, `INTEGER`, and `BIGINT`.\n   * **Approximate**: `FLOAT(p)`, `REAL`, and `DOUBLE PRECISION` facilitate scientific calculations with implementation-defined precision.\n\n4. **Temporal Types**:\n   * `DATE`, `TIME`, and `TIMESTAMP` (optionally with `TIME ZONE`) manage calendar and clock data.\n   * `INTERVAL` stores a range of time (e.g., year to month or day to second).\n\n5. **Other**:\n   * `BOOLEAN` values (`true`, `false`).\n   * `XML` for storing XML instances (Part 14 of the standard).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789620587,
+      "channel": "plan_pipe_9896d81635f4",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 72,
+        "end": 84
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document covers database management concepts, specifically temporary tables, indexing strategies, access control, and subquery predicates.\n\nTemporary Tables\nTemporary tables are session-specific and categorized into three types:\n1. Global Temporary Tables (GTT): Definitions persist across sessions, but data is private to each session and cleared upon termination (p. 85).\n2. Local Temporary Tables (LTT): Both definition and data are restricted to the current session (p. 85).\n3. Declared Local Temporary Tables (DLTT): Similar to LTT, but the definition is local to a specific module and not stored in the schema (p. 85).\nImplementation varies by vendor; MySQL assumes all temporary tables are local and preserve data on commit (p. 86).\n\nIndexes\nIndexes improve query performance by using sophisticated search algorithms (e.g., binary search) rather than linear scans, offering large performance gains for massive datasets (p. 86).\n- Basic Index: Built on one or more columns to speed up filtering (p. 86).\n- Multiple Columns: Concatenates column values into the index key (p. 87).\n- Functional Index: Allows indexing the result of expressions, such as $UPPER(column)$ (p. 87).\n- Unique Index: Enforces data uniqueness, similar to a UNIQUE constraint (p. 87).\n\nAccess Control\nDatabase security is managed via GRANT and REVOKE commands (p. 88).\n- Privileges define user rights (e.g., SELECT, INSERT) on specific objects (p. 88).\n- Roles simplify management by grouping users with identical permissions (p. 88).\n- The WITH GRANT OPTION allows a user to delegate their granted privileges to others (p. 89).\n\nSubquery Predicates\nSQL provides specific predicates to compare values against subquery results:\n- IN: Checks if a value exists within the subquery result set (p. 89).\n- ALL: A row must satisfy the condition for every value returned by the subquery (Boolean AND logic) (p. 89).\n- ANY/SOME: A row must satisfy the condition for at least one value returned by the subquery (Boolean OR logic) (p. 90).\n- EXISTS: Returns true if the subquery retrieves one or more rows (p. 89).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789620588,
+      "channel": "plan_pipe_9896d81635f4",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 85,
+        "end": 99
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document provides a technical guide on implementing recursive queries, managing hierarchies, and understanding three-valued logic (3VL) in SQL.\n\n### Recursive Queries and Hierarchical Data\nHierarchical data, such as a family tree, is queried using the `WITH` clause to create an intermediate table that navigates levels between parent and child records.\n\n* Recursive Structure: A `UNION ALL` statement joins the base table with the intermediate result to traverse branches.\n* Hierarchy Levels: Using a pseudo-column (e.g., `hier_level` initialized at 0 and incremented by 1) allows for filtering by depth or relative positioning.\n* Path Generation: By concatenating names during recursion, one can build path strings that represent the specific branch of a node.\n* Traversal Strategies: Hierarchies can be processed via `DEPTH FIRST` or `BREADTH FIRST` search patterns to control the order in which child and sibling nodes are evaluated.\n* Constraints: Relational integrity is maintained through `FOREIGN KEY` constraints (potentially referencing the same table) and `CHECK` constraints to ensure data validity (p. 100-102).\n\n### Three-Valued Logic (3VL) and NULL\nSQL implements trivalent logic to handle the `NULL` marker, which represents the absence of data. Unlike standard boolean logic (TRUE/FALSE), 3VL includes a third state: `UNKNOWN`.\n\n* Comparison Rules: Any comparison involving `NULL` (e.g., $NULL = 5$ or $NULL = NULL$) results in `UNKNOWN`.\n* Filtering: A `WHERE` clause only returns rows where the condition evaluates to `TRUE`. Consequently, queries using standard operators will fail to return rows containing `NULL` values.\n* Logic Implications: The presence of `NULL` breaks the law of excluded middle, as negation does not simply flip `TRUE` to `FALSE` when `UNKNOWN` is involved (p. 103-104).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789620589,
+      "channel": "plan_pipe_9896d81635f4",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 100,
+        "end": 109
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document provides a technical glossary of fundamental database concepts and a comprehensive classification of SQLSTATE error codes.\n\n### Database Fundamentals ([S.111], [S.112])\n\nThe text outlines the core components of the Relational Model and Database Management Systems (DBMS):\n\n*   ACID Properties: Transactions must adhere to Atomicity (all or nothing), Consistency (valid state transitions), Isolation (independent execution), and Durability (persistence after crashes).\n*   Data Structures: Data is organized into tables (relations), which consist of rows (entities) and columns (attributes). A Data Dictionary stores metadata about the schema, tables, and views.\n*   Constraints and Keys: Constraints define validation rules (e.g., uniqueness). Primary keys identify individual rows, while foreign keys establish relationships. A junction table is used to handle many-to-many relationships.\n*   Logic and States: SQL supports Three-Valued Logic (TRUE, FALSE, and UNKNOWN) to accommodate the use of NULL markers, which indicate the absence of data.\n*   Statements: Operations are categorized into Data Definition (DDL), Data Manipulation (DML), and Data Control (DCL). \n\n### SQLSTATE Classification ([S.112], [S.113], [S.114], [S.115], [S.116])\n\nTo manage exceptions and flow control, the SQL standard uses SQLSTATE codes consisting of a 5-character string. These are divided into four categories:\n\n*   S (Success): Class 00, indicating successful completion.\n*   W (Warning): Class 01, notifying the user of conditions like data truncation or ineffective privileges.\n*   N (No Data): Class 02, indicating that a query resulted in no rows.\n*   X (Exception): All other classes, representing various errors such as dynamic SQL failures (Class 07), connection exceptions (Class 08), data exceptions (Class 22, e.g., division by zero), and integrity constraint violations (Class 23).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789620590,
+      "channel": "plan_pipe_9896d81635f4",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 110,
+        "end": 121
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778789620671,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "In the relational model, how are relationships between tables primarily established and evaluated?",
+            "options": [
+              "Through explicit physical links defined at the database storage level.",
+              "By evaluating actual data values at runtime, such as joining on column IDs.",
+              "By following a predefined hierarchical path from parent node to child node.",
+              "By utilizing object-oriented inheritance and polymorphism."
+            ],
+            "correctIndex": 1,
+            "explanation": "Relational DBMS design is declarative and does not predetermine links. Instead, relationships are based on data content, and joining is performed at runtime by evaluating matching values between tables."
+          },
+          {
+            "question": "What is a defining characteristic of the ACID paradigm in a Database Management System?",
+            "options": [
+              "Atomic: Changes occur in a specific order but can be partially committed.",
+              "Consistent: Transactions transform the database from one valid state to another.",
+              "Isolated: Transactions are readable by all other concurrent processes immediately.",
+              "Durable: Committed changes are kept in volatile memory to ensure high speed."
+            ],
+            "correctIndex": 1,
+            "explanation": "Consistency in the ACID model ensures that a transaction transforms the database from one valid state to another, maintaining all data integrity rules."
+          },
+          {
+            "question": "Why does the 'object-relational impedance mismatch' occur when using relational databases with object-oriented programming (OOP) languages?",
+            "options": [
+              "Relational databases are too fast for object-oriented languages to process.",
+              "Relational databases cannot be used for storing large volumes of data.",
+              "Relational databases lack support for OOP concepts like inheritance, encapsulation, and complex type systems.",
+              "Object-oriented languages do not support SQL interfaces."
+            ],
+            "correctIndex": 2,
+            "explanation": "The mismatch arises because relational databases (specifically pure relational models) do not natively support object-oriented concepts such as inheritance, polymorphism, encapsulation, and complex non-scalar data types."
+          },
+          {
+            "question": "What is the primary difference between how hierarchical DBMS and relational DBMS handle data navigation?",
+            "options": [
+              "Hierarchical DBMS require navigating through set structures, while relational DBMS use declarative queries to join tables.",
+              "Relational DBMS are restricted to a single root node, while hierarchical DBMS allow unlimited arbitrary connections.",
+              "Hierarchical DBMS use SQL as their standard interface, while relational DBMS use a proprietary Unstructured Query Language.",
+              "There is no functional difference; both store data as trees."
+            ],
+            "correctIndex": 0,
+            "explanation": "Hierarchical models require specific navigation paths through parent/child structures, whereas relational models use declarative SQL to derive relationships from data values at runtime."
+          },
+          {
+            "question": "According to the provided text, what is the best practice regarding the SQL convention of case sensitivity?",
+            "options": [
+              "SQL keywords and object names are always case-sensitive in all environments.",
+              "Storing and retrieving text data (the content) is case-sensitive, even if language keywords are not.",
+              "All SQL code including table names must be written in lower case to avoid errors.",
+              "The standard mandates that all SQL engines must treat identifiers as case-insensitive regardless of the operating system."
+            ],
+            "correctIndex": 1,
+            "explanation": "While SQL keywords are case-insensitive (e.g., SELECT and select are the same), the text explicitly warns that storing and retrieving actual text data (like a city name) is case-sensitive."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778789620672,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What does the ACID acronym stand for in the context of DBMS?",
+            "back": "Atomicity, Consistency, Isolation, Durability."
+          },
+          {
+            "front": "What defines a Relational DBMS (RDBMS)?",
+            "back": "It designs data as relations (tables) with attributes (columns), where relationships are based on matching data values rather than physical links."
+          },
+          {
+            "front": "What is the primary difference between Hierarchical and Relational DBMS regarding relationships?",
+            "back": "Hierarchical DBMS uses a parent/child tree model with physical links; Relational DBMS uses declarative joins based on data values at runtime."
+          },
+          {
+            "front": "What is the 'object-relational impedance mismatch'?",
+            "back": "The conceptual gap between object-oriented programming (classes, inheritance, polymorphism) and relational databases (scalar attributes in first normal form)."
+          },
+          {
+            "front": "What is the main theoretical foundation of the relational model and SQL?",
+            "back": "Relational algebra."
+          },
+          {
+            "front": "Why is the rule 'only one parent' a limitation in hierarchical databases?",
+            "back": "It makes it impossible to model n:m (many-to-many) relationships efficiently."
+          },
+          {
+            "front": "Are SQL keywords case-sensitive?",
+            "back": "No, SQL keywords are case-insensitive, though text data stored within the database is case-sensitive."
+          },
+          {
+            "front": "What is the purpose of the 'Atomicity' property in ACID?",
+            "back": "It ensures that all changes within a transaction take place entirely, or none of them do."
+          },
+          {
+            "front": "What is the main focus of NoSQL databases compared to traditional RDBMS?",
+            "back": "They focus on fault-tolerant, distributed data with high volume, often eschewing strict schemas and some ACID properties."
+          },
+          {
+            "front": "According to the lesson, what is the best practice for writing SQL commands in this book?",
+            "back": "Keywords in upper case and user-defined object names (tables, columns) in lower case."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-databases-engineering_0",
+      "slides": [
+        {
+          "title": "Lesson 1: Structured Query Language",
+          "bullets": [
+            "Introduction to database fundamentals and relational modeling.",
+            "Understanding data manipulation using SQL (p. 1-7)."
+          ],
+          "notes": "Welcome to our introduction to SQL. Today, we will explore how data is structured and accessed in relational databases.",
+          "page_range": "1-7",
+          "image_prompt": ""
+        },
+        {
+          "title": "The Relational Model",
+          "bullets": [
+            "Data is organized into tables (relations) with columns and rows.",
+            "Entities are broken into discrete tables and joined via values (p. 8).",
+            "Normalized data minimizes redundancy and increases flexibility.",
+            "SQL is descriptive; it defines 'what' to do, not 'how' (p. 8)."
+          ],
+          "notes": "The relational model relies on values to link tables, avoiding rigid physical links. This approach allows the database to optimize how it retrieves data.",
+          "page_range": "8-17",
+          "image_prompt": ""
+        },
+        {
+          "title": "SQL Data Manipulation",
+          "bullets": [
+            "CREATE TABLE defines table structure, columns, and constraints.",
+            "Primary keys uniquely identify rows (p. 18).",
+            "Primary data operations: INSERT, SELECT, UPDATE, DELETE (p. 19).",
+            "Commands are terminated by a semicolon."
+          ],
+          "notes": "Defining the table is the first step. We establish constraints like Primary Keys early to ensure data integrity before adding records.",
+          "page_range": "18-33",
+          "image_prompt": ""
+        },
+        {
+          "title": "Joins and Grouping",
+          "bullets": [
+            "Normalization splits data into tables to reduce redundancy.",
+            "JOIN combines tables based on related column values (p. 34).",
+            "The ON keyword specifies the join criterion.",
+            "Resulting joined data is computed at runtime, not stored permanently."
+          ],
+          "notes": "Joins are the engine of relational databases. By separating data logically, we can assemble complex views of information on the fly.",
+          "page_range": "34-43",
+          "image_prompt": ""
+        },
+        {
+          "title": "Logic and The NULL Marker",
+          "bullets": [
+            "SQL uses 3-value logic: TRUE, FALSE, and UNKNOWN.",
+            "NULL represents missing data, not zero or empty strings (p. 44).",
+            "Use 'IS NULL' or 'IS NOT NULL' to evaluate NULL values.",
+            "Standard operators fail against NULL; requires special predicates."
+          ],
+          "notes": "Handling missing data is subtle. Because NULL signifies an unknown state, we must use specific SQL predicates to test for its presence.",
+          "page_range": "44-57",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 1: Structured Query Language - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778789620571,
+      "pdfName": "Structured Query Language"
+    }
+  ],
+  "sourceHash": "65e01fd944a2b3df"
+}

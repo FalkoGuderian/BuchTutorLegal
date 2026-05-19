@@ -1,0 +1,508 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Programmieren lernen auf Deutsch - Lektion 1: Strukturierte Programmierung",
+    "pdfName": "Strukturierte Programmierung",
+    "createdAt": 1778790102068,
+    "exportedAt": "2026-05-14T20:21:42.069Z",
+    "meta": {
+      "courseId": "course-de-cs-programmierung-einfuehrung",
+      "lessonIndex": 0,
+      "courseTitle": "Programmieren lernen auf Deutsch",
+      "lessonObjective": "Grundkonzepte: Sequenz, Selektion, Iteration.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-strukturierte-programmierung",
+            "title": "Strukturierte Programmierung",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Strukturierte_Programmierung"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_3cafadab515e",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-3",
+          "chapterTitle": "Beispiele für Java-Anwendungen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-8",
+          "chapterTitle": "Grundlagen der Programmgestaltung und Kommentierung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "9-15",
+          "chapterTitle": "Strukturierung und Bezeichner in Quelltexten",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "16-20",
+          "chapterTitle": "Anweisungsstrukturen und Teilprogramme",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "21-27",
+          "chapterTitle": "Datenstrukturen: Verbünde und Arrays",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "28-36",
+          "chapterTitle": "Kontrollstrukturen und Algorithmen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "37-44",
+          "chapterTitle": "Typisierung und Objektorientierung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "45-50",
+          "chapterTitle": "Programmfluss und verschachtelte Strukturen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "51-57",
+          "chapterTitle": "Modulabhängigkeiten und Nebeneffekte",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "58-66",
+          "chapterTitle": "Fortgeschrittene Codethemen und Sicherung",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778790102068,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Kernaussagen zur strukturierten Programmierung basierend auf dem bereitgestellten Dokument:\n\n### Ziel der strukturierten Programmierung\nDie strukturierte Programmierung dient als Leitfaden zur Erstellung besser verständlicher, wartungsfreundlicher und fehlerärmerer Software. Sie reduziert Entwicklungszeiten und erhöht die Betriebssicherheit, wobei mögliche geringfügige Laufzeiteinbußen bei moderner Hardware vernachlässigbar sind (S. 1, S. 2).\n\n### Wichtige Gestaltungselemente des Quelltextes\n*   **Kommentare:** Dienen der Dokumentation von Inhalt, Ursprung, Lizenz sowie der Erklärung von Methoden (Parameter/Rückgabewerte). Sie helfen dem Compiler, nicht relevante Bereiche zu ignorieren, wobei bei geschachtelten Kommentaren Vorsicht geboten ist (S. 3, S. 4).\n*   **Leerräume:** Zeilenumbrüche, Tabulatoren und Leerzeichen strukturieren den Quelltext visuell, verbessern die Lesbarkeit und werden vom Compiler ignoriert (S. 5).\n*   **Bezeichner (Identifikatoren):** Aussagekräftige („sprechende“) Bezeichner sind essenziell, um die Lesbarkeit des Codes ohne zusätzliche Kommentare zu erhöhen (S. 5, S. 8).\n    *   **Konvention:** Klassen/Module beginnen meist mit einem Großbuchstaben, Methoden und Variablen mit einem Kleinbuchstaben (S. 5, S. 6).\n    *   **Konstanten:** Sollten durch den Zusatz `final` oder `CONST` geschützt und direkt bei der Deklaration initialisiert werden (S. 6, S. 7).\n*   **Qualifizierte Bezeichnungen:** Um Eindeutigkeit zu gewährleisten, sollten Bezeichner qualifiziert (z. B. `java.lang.System.out`) verwendet werden. Dies verhindert Verwechslungen und erleichtert die Zuordnung von Bibliotheken, auch wenn Import-Anweisungen die Vorstufe dazu bilden (S. 9, S. 10).\n\n### Strukturierung der Programmlogik\n*   **Hierarchie:** Software sollte ausgehend von einem Hauptblock durch schrittweise Verfeinerung hierarchisch aufgebaut werden (S. 12).\n*   **Komplexitätsreduktion:** Lange, komplexe Anweisungsfolgen (z. B. verschachtelte Layout-Methoden) sollten durch Hilfsvariablen und Zeilenumbrüche in verständliche Teilschritte zerlegt werden (S. 11, S. 12).\n*   **Visualisierung:** Zur Planung und Dokumentation von Algorithmen eignen sich Struktogramme (Nassi-Shneidermann-Diagramme) sowie formale Metasprachen wie die EBNF (S. 12).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778790102068,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-cs-programmierung-einfuehrung_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 1: Strukturierte Programmierung - Präsentation</span><span class=\"pm-chat-count\">7 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Strukturierte Programmierung: Grundlagen</div><ul class=\"pm-chat-slide-bullets\"><li>Leitfaden für besser strukturierte Softwareprogramme.</li><li>Fokus auf Nachvollziehbarkeit und Fehlerminimierung.</li><li>Effizientere Wartung und Teamarbeit durch klare Strukturen.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778790102069,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Die vorliegenden Abschnitte (S. 1-3) definieren das Ziel und die Vorteile strukturierter Programmierung. Hier ist die Zusammenfassung:\n\nZweck des Leitfadens\nDas Werk dient nicht als Sprachlehrbuch, sondern als Anleitung zur Erstellung besser strukturierter Programme, unabhängig von der verwendeten Programmiersprache (S. 1).\n\nVorteile der strukturierten Programmierung\n1. Nachvollziehbarkeit: Strukturierte Programme sind leichter zu verstehen, was die Teamarbeit und Wartung erheblich erleichtert (S. 1).\n2. Fehlerreduktion: Ein strukturierter Aufbau minimiert Programmierfehler, was die Entwicklungszeit verkürzt und die Akzeptanz bei Nutzern erhöht (S. 1).\n3. Effizienz: Professionell strukturierte Programme können oft ohne zeitaufwendigen Einsatz von Laufzeit-Debuggern erstellt werden (S. 2).\n4. Leistung: Eventuelle Laufzeiteinbußen sind bei modernen Rechnern vernachlässigbar. Die Betriebssicherheit sollte zugunsten geringfügiger Optimierungen nicht geopfert werden (S. 2).\n\nGestaltungsgrundsätze\nDie Programmqualität hängt nicht von der Kürze des Quelltexts ab, sondern von einer klaren Struktur. Zu einer soliden Quelltextgestaltung gehören:\n- Verwendung typischer Anweisungen wie Deklarationen, Blockanweisungen, Zuweisungen, Aufrufe, Rücksprünge, Verzweigungen, Schleifen und Sicherstellungen (S. 3).\n- Sorgfältige Kommentierung: Jeder Quelltext sollte zu Beginn einen Kommentar mit Metadaten (Dateiname, Autor, Lizenz, Datum, Version etc.) enthalten, der vom Compiler ignoriert wird (S. 3).\n- Nutzung von Leerräumen und Kommentaren zur Verbesserung der Lesbarkeit, auch wenn diese keine unmittelbare funktionale Auswirkung auf die Software haben (S. 3).\n\nAbschließend wird betont, dass Disziplin und formale Beschränkung die Grundlage für gute Programmierung bilden, analog zu Goethes Sonett, in dem das Gesetz die Freiheit begründet (S. 2-3).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790102078,
+      "channel": "plan_pipe_3cafadab515e",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung gibt die Kernaussagen zur Erstellung von quelltext-basierten Programmen gemäß den vorliegenden Unterlagen wieder:\n\nDokumentation und Kommentare\nQuelltexte sollten durch „sprechende“ Bezeichner selbsterklärend sein. Ergänzende Kommentare sind insbesondere bei Methoden für Parameter und Rückgabewerte sinnvoll (S. 4). Vorsicht ist bei geschachtelten Kommentaren geboten, da diese je nach Compiler zu Übersetzungsfehlern führen können, wenn die Syntax nicht standardkonform interpretiert wird (S. 4).\n\nFormatierung und Strukturierung\nLeerräume wie Leerzeichen, Tabulatoren und Zeilenumbrüche dienen der Lesbarkeit. Es empfiehlt sich, moderne Entwicklungssysteme für eine einheitliche Strukturierung (z.B. Einrücken von Programmblöcken) zu nutzen (S. 5).\n\nGestaltung von Bezeichnern\nBezeichner sollten keine Leerzeichen enthalten und mit einem Buchstaben beginnen. Während der Compiler meist nur den Zeichenvorrat prüft, helfen Konventionen bei der Lesbarkeit (S. 5):\n- Klassen und Module beginnen groß, ebenso übergeordnete Konstanten (S. 5, 7).\n- Lokale Variablen und Methoden werden vollständig kleingeschrieben (S. 6).\n- Methoden lassen sich oft durch die direkt folgende, obligatorische Klammerung von Variablen unterscheiden (S. 6).\n- Die „Kamelhöcker-Notation“ (camel case) hilft, Wortanfänge innerhalb eines Bezeichners ohne Leerzeichen kenntlich zu machen (S. 6).\n- Grammatische Formen sollten passen: Substantive für Variablen, Verben im Imperativ für Methoden und Partizipien für boolesche Werte (S. 6).\n\nKonstanten und Sicherheit\nKonstanten sollten direkt bei der Deklaration initialisiert werden, um Mehrdeutigkeiten zu vermeiden (S. 6, 7). Um den Zugriff zu kontrollieren, bieten viele Sprachen Modifikatoren wie „final“ oder „private“ an, die eine Kapselung (Read-only-Zugriff oder „get“-Methoden) ermöglichen (S. 6, 7).\n\nOptimierung des Quellcodes\nSprechende Bezeichner machen den Code oft leichter verständlich als zusätzliche Kommentare, etwa durch die Ersetzung kryptischer Ausdrücke wie $h \\leftarrow (t - b)$ durch $height \\leftarrow (top - bottom)$ (S. 8). Bei Methodenaufrufen sollten Parameter vorab in sprechenden Variablen gespeichert werden, anstatt komplexe Literale oder Berechnungen direkt in die Parameterliste zu schreiben, um kryptische und fehleranfällige Aufrufe zu vermeiden (S. 8).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790102079,
+      "channel": "plan_pipe_3cafadab515e",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 8
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die vorliegenden Dokumente behandeln die Strukturierung, Lesbarkeit und Sichtbarkeit in der Programmierung. Hier sind die Kernaussagen zusammengefasst:\n\nQualifizierte Bezeichner und Namenszuordnung\nUm in komplexen Programmen eine eindeutige Zuordnung von Bezeichnern zu Modulen oder Klassen sicherzustellen, ist eine qualifizierte Bezeichnung erforderlich (S. 9). Während manche Sprachen (wie Java) auf Import-Anweisungen zurückgreifen, um unqualifizierte Bezeichner zu erlauben, wird in streng strukturierten Umgebungen aus Gründen der Eindeutigkeit eine explizite Qualifikation gefordert (S. 10). Dies gilt auch für Datenstrukturen, bei denen der Zugriff auf Attribute über qualifizierte Bezeichner erfolgt (S. 10-11).\n\nSoftwarequalität und Strukturierung\nEin wesentliches Qualitätsmerkmal ist die Lokalität von Variablen. Variablen sollten so lokal wie möglich definiert werden, um Seiteneffekte zu vermeiden und die Wartbarkeit zu erhöhen (S. 13). Die Komplexität eines Programms kann analytisch durch die McCabe-Metrik bewertet werden, wobei ein Wert bis maximal 10 als erstrebenswert für die Übersichtlichkeit gilt (S. 13). Programmiersprachen können zudem durch formale Metasprachen wie die Erweiterte Backus-Naur-Form (EBNF) definiert werden (S. 12).\n\nSichtbarkeit und Namenskonflikte\nVariablen und Methoden sollten durch Sichtbarkeitsmodifikatoren (z. B. private) geschützt werden, um den unkontrollierten Zugriff zu minimieren (S. 13-14). Bei gleichlautenden Bezeichnern in unterschiedlichen Gültigkeitsbereichen haben lokale Variablen in der Regel Vorrang. Konflikte lassen sich auflösen, indem explizit auf die globale Instanz verwiesen wird (z. B. Klasse.bezeichner) oder Methoden durch ein Klammerpaar identifiziert werden (S. 14).\n\nProgrammorganisation\nTeilprogramme werden als Klassen oder Module in Paketen organisiert und über ihre Signatur eindeutig identifiziert (S. 15). Ein zentrales Ziel der Programmierung ist es, die Komplexität so zu minimieren, dass einerseits durch sprechende Bezeichner die Verständlichkeit steigt und andererseits Quelltext nur dann entfernt wird, wenn dies ohne Funktionsverlust möglich ist (S. 12-13). Die Strukturierung kann dabei durch Nassi-Shneidermann-Diagramme visualisiert werden, um die hierarchische Zerlegung in elementare Teilprogramme abzubilden (S. 12).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790102080,
+      "channel": "plan_pipe_3cafadab515e",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 9,
+        "end": 15
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der Inhalte von Seite 16 bis 20:\n\nGrundlagen von Methoden und Parametern\nMethoden definieren über Modifikatoren wie static, abstract oder final ihre Überschreibbarkeit (S. 16). Die Signatur einer Methode umfasst Anzahl, Namen, Datentypen und Reihenfolge der Parameter. Diese lassen sich in Eingangsparameter (in), Ausgangsparameter (out) und Durchgangsparameter (var) unterteilen, wobei Letztere durch Referenzen definiert sind und innerhalb der Methode verändert werden können (S. 16).\n\nProgrammstruktur und Anweisungen\nImperative Programmiersprachen basieren auf Deklarationen, Blockanweisungen, Zuweisungen und Unterprogrammen. Unterprogramme werden in Kommandos (ohne Rückgabewert), Prozeduren (ohne Rückgabewert) und Funktionen (mit Rückgabewert) unterteilt (S. 16). Komplexe Programmabläufe werden durch Kontrollstrukturen wie Fallunterscheidungen (if, switch) und Schleifen (while, for, do-while) gesteuert (S. 18).\n\nMethodik der Softwareentwicklung\nZur besseren Wartbarkeit wird die schrittweise Verfeinerung empfohlen: Grosse Aufgaben werden in kleinere, sinnvoll gekapselte Unteraufgaben zerlegt (S. 19). Quelltexte sollten übersichtlich bleiben, was durch das Auslagern von Blockanweisungen in eigene Methoden erreicht wird (S. 18-19). Entgegen verbreiteter Vorurteile ist die Ausführung strukturierter Programme auf modernen Systemen performant; Performance-Engpässe bei extrem rechenintensiven Aufgaben werden eher durch Parallelisierung oder Spezialhardware gelöst (S. 19).\n\nDatenstrukturen und Aufzählungen\nNeben dem Programmcode ist die Strukturierung von Daten entscheidend. Attribute verwandter Dinge sollten zu einer Datenstruktur zusammengefasst werden (S. 20). Sogenannte Aufzählungen (Enumerations) helfen dabei, endliche, abzählbare Merkmalsmengen durch sprechende symbolische Konstanten (wie zum Beispiel Kalendersysteme) darzustellen, anstatt mit abstrakten Zahlenwerten zu arbeiten (S. 20). Dies erhöht die Lesbarkeit und reduziert die Fehleranfälligkeit des Quellcodes signifikant (S. 20).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790102081,
+      "channel": "plan_pipe_3cafadab515e",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 16,
+        "end": 20
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Seiten 21 bis 27 behandeln grundlegende Datenstrukturen und Programmierkonzepte. Hier ist eine prägnante Zusammenfassung:\n\n**Datenstrukturen: Verbunde und Arrays**\nEin Verbund (auch \"struct\" oder \"record\" genannt) fasst verschiedene Attribute in einer Struktur zusammen, wobei jedes Attribut über einen zentralen Zugang adressiert wird (S. 21). Im Gegensatz dazu speichern Arrays eine endliche Menge gleichartiger Elemente in einer geordneten Reihe. Der Zugriff erfolgt über einen ganzzahligen Index, welcher meist bei Null beginnt (S. 22).\n\nDer Speicherbedarf für ein Array berechnet sich aus dem Produkt der Anzahl der Elemente und dem Speicherbedarf pro Element bzw. Zeiger (S. 22). Die Speicheradresse eines Elements an der Position $i$ lässt sich mit der Formel $Adresse = Arrayadresse + (i \\cdot Speicherbedarf)$ berechnen (S. 22). Arrays können zudem mehrdimensional gestaltet werden, beispielsweise zur Speicherung tabellarischer Daten wie Monatsnamen in verschiedenen Sprachen (S. 25, 26).\n\n**Sicherheit und Kontrollstrukturen**\nIn streng strukturierten Sprachen führen Zugriffe auf Indizes außerhalb der Array-Grenzen zu Programmabbrüchen. In Sprachen wie C oder C++ können fehlerhafte Zugriffe jedoch unbemerkt zu Datenverfälschungen oder Sicherheitslücken durch eingeschleusten Binärcode führen (S. 27).\n\nZur Steuerung des Programmablaufs sind Kontrollstrukturen (Unterprogramme, Schleifen, Fallunterscheidungen) zu verwenden. Explizite Sprunganweisungen wie \"goto\" oder der unbedachte Einsatz von \"break\" führen zu unstrukturiertem \"Spaghetti-Code\", der schwer nachzuvollziehen und zu warten ist (S. 27).\n\n**Unterprogramme**\nUnterprogramme (Prozeduren, Methoden, Funktionen) ermöglichen eine strukturierte Programmverzweigung. Durch die Übergabe von Parametern erfolgt ein Datenaustausch zwischen dem aufrufenden Programmteil und dem Unterprogramm. Nach dessen Abarbeitung wird der Programmfluss nahtlos hinter der Aufrufstelle fortgesetzt (S. 27).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790102082,
+      "channel": "plan_pipe_3cafadab515e",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 21,
+        "end": 27
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine Zusammenfassung der Kernaussagen des Dokuments (S. 28–36):\n\n**Unterprogramme**\nUnterprogramme ermöglichen die Modularisierung des Codes. Sie werden von einem Hauptprogramm aufgerufen, wobei die Ausführung nach Beendigung (Return) an der Aufrufstelle fortgesetzt wird (S. 28). Gibt ein Unterprogramm einen Wert zurück, spricht man von einer Funktion (S. 28). Strukturierter Code zeichnet sich durch eine einzige Rücksprunganweisung am Ende aus. Vorzeitige Abbrüche (z. B. durch \\text{break}) oder mehrere \\text{return}-Anweisungen sind zu vermeiden, da sie die Nachvollziehbarkeit und Analyse erschweren (S. 28-29).\n\n**Fallunterscheidungen**\n* Bedingte Anweisung (\\text{if-then}): Ein Pfad wird nur ausgeführt, wenn eine Bedingung wahr ist (S. 30).\n* Einfache Verzweigung (\\text{if-then-else}): Wahl zwischen zwei Pfaden (S. 30).\n* Mehrfache Verzweigung (\\text{switch-case}): Steuerung über ganzzahlige Ausdrücke. In Sprachen wie C sollten \\text{break}-Anweisungen obligatorisch verwendet werden, um unstrukturierten Code zu verhindern (S. 30-31).\n\n**Schleifen**\nSchleifen dienen der wiederholten Ausführung von Anweisungen basierend auf einer booleschen Laufvariablen (S. 31-32).\n* Kopfgesteuerte Schleife (\\text{while}): Prüfung der Bedingung vor dem Durchlauf; wird bei anfänglich \"falscher\" Bedingung nicht ausgeführt (S. 33).\n* Fußgesteuerte Schleife (\\text{repeat/do-while}): Bedingung wird am Ende geprüft; wird mindestens einmal ausgeführt (S. 33).\n* Endlosschleifen (z. B. $while(true)$) gelten als unstrukturiert und sind zu vermeiden (S. 34).\n* Zählvariablen sollten lokal für die Schleife definiert werden (S. 35).\n\n**Software-Design und Best Practices**\n* Codewiederholungen sollten vermieden werden; stattdessen ist allgemeiner, wiederverwendbarer Code zu bevorzugen (S. 35).\n* Symbolische Konstanten mit \"sprechenden\" Bezeichnern verbessern die Lesbarkeit und Wartbarkeit erheblich. Zahlenwerte sollten niemals direkt im Code hartcodiert werden, wenn sie eine inhaltliche Bedeutung haben (S. 35-36).\n* Komplexe Ausdrücke innerhalb von Rücksprunganweisungen sind unübersichtlich; besser ist die Zuweisung an eine lokale Variable und deren Rückgabe (S. 29).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790102083,
+      "channel": "plan_pipe_3cafadab515e",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 28,
+        "end": 36
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der Kernaussagen aus den Seiten 37 bis 44:\n\nUnterprogramme und Codestrukturierung\nUnterprogramme (Methoden, Prozeduren oder Funktionen) fassen Rechenvorschriften zu einer Einheit zusammen. Ihr Einsatz verhindert Codewiederholungen, wodurch Fehler effizienter an einer zentralen Stelle korrigiert werden können, statt mehrfach im Quelltext nachgebessert werden zu müssen (S. 37). Komplexe Ausdrücke sollten zur Vermeidung von Fehlern in kleine, überschaubare Einheiten zerlegt werden, da tief verschachtelte Operatoren oft zu schwer nachvollziehbarem oder sogar unerreichtem Code führen (S. 42–43).\n\nZuweisungskompatibilität und Datentypen\nZuweisungskompatibilität beschreibt, ob Datentypen einander zugewiesen werden können. Strenge Kompatibilität erfordert identische Typen (S. 38). Logische Kompatibilität geht über die rein technische Überführbarkeit hinaus: Selbst wenn Datentypen formal identisch sind, kann eine Zuweisung logisch falsch sein. In der objektorientierten Programmierung lässt sich logische Kompatibilität durch Vererbung erreichen (S. 39). Besonders kritisch sind Programmiersprachen mit schwacher Typprüfung, da diese das Risiko für Programmfehler durch unbemerkte Typverletzungen oder den Missbrauch von Ganzzahlen für boolesche Logik erhöhen (S. 38, 40).\n\nDatentypkonvertierung und Informationsverlust\nBei der Zuweisung zwischen verschiedenen Datentypen kann Informationsverlust auftreten. Eine Zuweisung von 555 in einen 8-Bit-Datentyp ist beispielsweise nicht möglich, da der Wertebereich überschritten wird (S. 41). Bei Gleitkommazahlen kann ein geringer Informationsverlust durch Abschneiden von Nachkommastellen toleriert werden ($|Fehler| \\approx 10^{-16}$), jedoch sollten bei wiederholten Konvertierungen sicherheitshalber ausschließlich Gleitkommatypen verwendet werden (S. 41). Bei der Vererbung führt eine Zuweisung von einer abgeleiteten auf eine Basisklasse zum Verlust der spezifischen Attribute der abgeleiteten Klasse (S. 41–42).\n\nVermeidung von Programmierfehlern\nSprachspezifische Eigenheiten können zu schwer zu findenden Fehlern führen. Beispiele hierfür sind:\n- Zeichenkettenverarbeitung: Die Verwendung eines Terminierungszeichens (NUL, 0X, $\\backslash\\text{0}$) sollte obligatorisch sein (S. 38).\n- Logische Operatoren: Die Verwechslung von Zuweisungsoperatoren ($=$) mit Vergleichsoperatoren ($==$) in Sprachen wie C kann die Programmlogik komplett verändern (S. 42).\n- Monster-Ausdrücke: Die Kombination von Inkrement-Operatoren und Zuweisungen erschwert die Analyse der Ausführungsreihenfolge massiv und macht den Code fehleranfällig bzw. sinnlos (S. 43–44).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790102084,
+      "channel": "plan_pipe_3cafadab515e",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 37,
+        "end": 44
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Kernaussagen der Seiten 45 bis 50:\n\n**Programmstruktur und Kontrollstrukturen**\nTernäre Operatoren fördern aufgrund ihrer kompakten Schreibweise die Unübersichtlichkeit. Es wird empfohlen, stattdessen explizite bedingte Anweisungen (if-then-else) zu verwenden (S. 45). Blockanweisungen dienen der Strukturierung des Codes und der Begrenzung der Sichtbarkeit lokaler Variablen. Sie dürfen zwar geschachtelt, aber nicht verschränkt werden (S. 45, 46).\n\n**Vermeidung von Programmierfehlern**\nEs ist ratsam, Blockanweisungen zur Strukturierung von Kontrollstrukturen kategorisch einzusetzen, selbst wenn die Syntax der Programmiersprache dies nicht zwingend erfordert (S. 46). Dies verhindert häufige Fehler, wie das irrtümliche Ausführen von Anweisungen außerhalb eines if-Blocks (S. 47) oder Probleme durch die sogenannte \"dangling else\"-Problematik bei verschachtelten Bedingungen (S. 48).\n\n**Datenvalidierung und Wertebereiche**\nEingeschränkte Wertebereiche sollten stets durch entsprechende Kontrollstrukturen oder Prüffunktionen validiert werden, um Laufzeitfehler – etwa eine Division durch null – zu vermeiden (S. 48). Zudem müssen bei komplexen Berechnungen alle relevanten Parameterkombinationen (z. B. Vorzeichen bei $[x,y]$-Koordinaten) explizit abgefangen und verarbeitet werden (S. 49).\n\n**Schnittstellen und Sichtbarkeit**\nSchnittstellen steuern die Interaktion zwischen Programmteilen. Um die Nachvollziehbarkeit zu erhöhen, sollten nur notwendige Methoden und Attribute als öffentlich (public) markiert werden, während interne Logik als privat (private) zu kapseln ist (S. 50). Die Verwendung von strukturierten, längeren Klassennamen ist gegenüber komplexen Paket-Strukturen oft zu bevorzugen, um die Übersichtlichkeit zu wahren (S. 50).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790102085,
+      "channel": "plan_pipe_3cafadab515e",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 45,
+        "end": 50
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die vorliegenden Abschnitte behandeln potenzielle Fehlerquellen und strukturierte Programmierpraktiken, um die Wartbarkeit und Korrektheit von Quelltexten zu erhöhen.\n\n**Import-Anweisungen**\nImporte sollten explizit und qualifiziert erfolgen, um die Herkunft von Bezeichnern eindeutig zu kennzeichnen (S. 51). Die Verwendung von Wildcards ist zu vermeiden, da sie die Nachvollziehbarkeit verschlechtert. Zyklische Importe führen zu instabilen Programmsystemen, Speicherüberläufen und nicht eindeutig überprüfbaren Schnittstellen; sie sollten durch saubere Softwarearchitektur oder rekursive Techniken mit definierten Abbruchbedingungen ersetzt werden (S. 51-52).\n\n**Unerwünschte Nebeneffekte**\nNebeneffekte treten auf, wenn Annahmen des Programmierers mit der Sprachdefinition in Konflikt stehen (S. 53). Dazu gehören:\n- Arithmetische Überläufe: Bei der Inkrementierung von Datentypen kann der Zahlenwert über seinen Wertebereich hinaus springen oder durch interne Berechnungsfehler (wie bei printf in Java) falsche Ergebnisse liefern (S. 53).\n- Rundungsfehler: Gleitkommazahlen können aufgrund ihrer begrenzten Präzision nicht exakt gespeichert werden, wodurch mathematische Gesetze (Kommutativ-, Assoziativgesetz) scheinbar verletzt werden. Hier empfiehlt sich die Prüfung gegen einen Schwellenwert ($\\text{epsilon} = 1.0E-15$) statt der direkten Gleichheit (S. 53-54).\n- Auswertungsreihenfolge: In kombinierten Ausdrücken kann die Reihenfolge von Funktionsaufrufen entscheidend sein, wenn diese globale Variablen oder Durchgangsparameter verändern. Die explizite Speicherung von Zwischenergebnissen in lokalen Variablen verbessert die Sicherheit und Analysierbarkeit (S. 55).\n\n**Operatoren und Sprachdefinitionen**\nKombinierte Zuweisungsoperatoren (z.B. +=) können aufgrund impliziter Datentypumwandlungen zu numerischen Fehlern führen und sollten zugunsten expliziter Formulierungen vermieden werden (S. 55-56). Zudem können Sprachdefinitionen intuitiv falsche Interpretationen erzwingen, etwa wenn Literale mit führender Null als Oktalzahlen anstatt dezimal interpretiert werden (S. 56).\n\n**Überladung von Bezeichnern und Operatoren**\nDie Überladung von Operatoren (insbesondere bei der Division) führt oft zu Verwechslungen zwischen ganzzahliger und reellwertiger Arithmetik. Hier ist der Einsatz expliziter Typumwandlungen (Type Cast) zur Sicherstellung der Korrektheit notwendig (S. 56-57). Auch die Verwendung identischer Bezeichner für Variablen in verschiedenen Sichtbarkeitsbereichen ist eine häufige Fehlerquelle bei der Code-Wartung (S. 57).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790102086,
+      "channel": "plan_pipe_3cafadab515e",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 51,
+        "end": 57
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die folgenden Kernaussagen fassen die behandelten Themen zur Programmierung (insbesondere Java und C) zusammen:\n\nMethodenüberladung und Variablenzugriff\nIn Java können Variablen auf Klassenebene durch Voranstellen des Klassennamens qualifiziert werden, um sie von lokalen Variablen zu unterscheiden (S. 58). Das Überladen von Methoden – die Deklaration mehrerer Methoden mit gleichem Namen, aber unterschiedlichen Parametern – wird kritisch betrachtet. Es kann zu unvorhersehbarem Verhalten führen, da automatische Typumwandlungen dazu führen können, dass zur Laufzeit eine andere Methode aufgerufen wird als beabsichtigt (S. 62, 63). Eine klare Namensgebung wird als sauberere Alternative empfohlen.\n\nSpeicherverwaltung und Vergleich von Datentypen\nSprachen wie C erlauben den Zugriff auf lokalen Speicher nach Funktionsende (Zeiger auf den Stapelspeicher), was zu undefiniertem Verhalten führen kann. Hier ist die Verwendung von Heap-Speicher sicher (S. 59). In Java ist bei komplexen Datentypen (Objekten) Vorsicht beim Vergleich geboten: Der Operator $==$ vergleicht lediglich Speicheradressen, nicht den Inhalt. Für den inhaltlichen Vergleich von Objekten (z. B. Zeichenketten) muss daher die Methode $equals$ verwendet werden (S. 60, 61).\n\nVererbung und Architektur\nVererbung dient der Vermeidung von Codewiederholungen („Ist-Beziehungen“). Während das Überschreiben von Methoden zur Anpassung von Verhalten nützlich ist, birgt es durch das „Fragile Base Class Problem“ Risiken, da Änderungen in der Basisklasse unerwartete Auswirkungen auf abgeleitete Klassen haben können (S. 61, 63).\n\nMehrfachvererbung\nMehrfachvererbung führt zu komplexen Abhängigkeiten und potenziellen Konflikten bei gleichnamigen Bezeichnern, bekannt als „Diamond-Problem“ (S. 64). In Java wird dies durch die Trennung in eine konkrete Klasse (`class`) und mehrere abstrakte Schnittstellen (`interface`) gelöst, wobei die Problematik der Namenskollisionen bei der Implementierung dennoch Sorgfalt erfordert (S. 64).\n\nAllgemeine Empfehlung\nEin strukturierter Programmierstil, Verzicht auf unnötiges Überladen, Vermeidung von Mehrfachvererbung sowie eine lückenlose Dokumentation sind essenziell, um die Wartbarkeit der Software zu erhöhen und subtile Programmierfehler zu vermeiden (S. 62, 63, 64).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790102087,
+      "channel": "plan_pipe_3cafadab515e",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 58,
+        "end": 66
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778790102168,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Welches ist ein wesentlicher Vorteil von strukturiertem Programmieren im Hinblick auf den Entwicklungsprozess?",
+            "options": [
+              "Programme benötigen weniger Speicherplatz als unstrukturierte.",
+              "Strukturierte Programme laufen ausschließlich auf modernen Hochleistungsrechnern.",
+              "Die Erstellung von Programmen ist ohne Laufzeit-Debugger möglich.",
+              "Der Quellcode erfordert keine Kommentare mehr."
+            ],
+            "correctIndex": 2,
+            "explanation": "Strukturierte Programme sind leichter nachvollziehbar und weisen weniger Fehler auf, wodurch sie oft ohne den Einsatz aufwendiger Laufzeit-Debugger erstellt werden können."
+          },
+          {
+            "question": "Warum sollten komplexe Ausdrücke oder Literale bei Methodenaufrufen vermieden werden?",
+            "options": [
+              "Weil sie die Bedeutung der einzelnen Parameter verschleiern und die Fehleranfälligkeit erhöhen.",
+              "Weil sie die Ausführungsgeschwindigkeit des Compilers massiv verlangsamen.",
+              "Weil sie die Verwendung von 'sprechenden' Bezeichnern innerhalb der Methode verhindern.",
+              "Weil die Programmiersprache Java komplexe Ausdrücke in Parameterlisten nicht unterstützt."
+            ],
+            "correctIndex": 0,
+            "explanation": "Durch die Zuweisung an Variablen mit sprechenden Namen vor dem Aufruf wird der Code dokumentiert und die Zuordnung der Parameterwerte für den Leser sofort verständlich."
+          },
+          {
+            "question": "Warum ist der Einsatz von geschachtelten Kommentaren laut Text problematisch?",
+            "options": [
+              "Weil die Interpretation des Kommentarendes ('*/') je nach Compiler unterschiedlich gehandhabt wird, was zu Fehlern führen kann.",
+              "Weil die meisten Compiler die Verschachtelung als Syntaxfehler interpretieren.",
+              "Weil sie den Quelltext unnötig stark vergrößern und die Einrückung des Codes zerstören.",
+              "Weil sie vom Compiler grundsätzlich in Maschinencode umgewandelt werden."
+            ],
+            "correctIndex": 0,
+            "explanation": "Unterschiedliche Compiler interpretieren das erste auftretende Kommentarende unterschiedlich, was beim Auskommentieren von Codeblöcken, die selbst Kommentare enthalten, zu Übersetzungsfehlern führen kann."
+          },
+          {
+            "question": "Was zeichnet eine 'sprechende' Benennung von Bezeichnern aus?",
+            "options": [
+              "Die Verwendung von möglichst kurzen Namen wie 'h' oder 't', um Platz zu sparen.",
+              "Die Verwendung von kryptischen Abkürzungen, die nur dem Ersteller des Codes bekannt sind.",
+              "Die Verwendung von grammatikalisch passenden Formen, wie Verben für Methoden und Substantive für Variablen.",
+              "Die ausschließliche Verwendung von Großbuchstaben, um die Aufmerksamkeit zu erhöhen."
+            ],
+            "correctIndex": 2,
+            "explanation": "Sprechende Bezeichner erleichtern das Verständnis des Codes enorm, indem sie die Intention der Variable oder Methode klar kommunizieren, z. B. durch Verben für Befehle."
+          },
+          {
+            "question": "Wie sollte laut Text mit der Initialisierung von Konstanten verfahren werden?",
+            "options": [
+              "Sie sollte immer unmittelbar im Kontext der Deklaration erfolgen, um Mehrdeutigkeiten zu vermeiden.",
+              "Konstanten sollten erst am Ende des Programmblocks initialisiert werden, sobald ihr Wert feststeht.",
+              "Sie sollte vermieden werden, da Konstanten automatisch vom Compiler initialisiert werden.",
+              "Sie sollte in einer Fallunterscheidung erfolgen, um die Flexibilität des Programms zu erhöhen."
+            ],
+            "correctIndex": 0,
+            "explanation": "Eine frühzeitige Initialisierung im Kontext der Deklaration verhindert, dass Zustände unklar bleiben oder die Variable zwischenzeitlich einen undefinierten Wert hat."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778790102169,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was sind die grundlegenden Vorteile strukturierter Programmierung?",
+            "back": "Strukturierte Programme sind leichter nachvollziehbar (Teamarbeit/Wartung), haben weniger Programmierfehler und können oft ohne Laufzeit-Debugger erstellt werden."
+          },
+          {
+            "front": "Warum sind Kommentare und Leerräume im Quelltext wichtig?",
+            "back": "Sie dienen der besseren Lesbarkeit und Nachvollziehbarkeit für Menschen. Compiler oder Interpreter ignorieren diese Elemente bei der Ausführung."
+          },
+          {
+            "front": "Was ist bei der Verwendung von Kommentaren zu beachten?",
+            "back": "Man sollte Vorsicht bei geschachtelten Kommentaren walten lassen, da nicht alle Compiler diese unterstützen, was zu Portierungsproblemen führen kann."
+          },
+          {
+            "front": "Was versteht man unter einem 'sprechenden' Bezeichner?",
+            "back": "Ein Bezeichner, der klar ausdrückt, wofür er steht (z. B. 'height' statt 'h'), wodurch der Quelltext selbsterklärend und leichter verständlich wird."
+          },
+          {
+            "front": "Wie sollten Bezeichner gemäß gängiger Praktiken gestaltet sein?",
+            "back": "Konstanten oft komplett in Großbuchstaben, Methoden und Variablen in Kleinbuchstaben, und bei mehreren Wörtern die 'Kamelhöcker-Notation' (camelCase)."
+          },
+          {
+            "front": "Was ist eine 'Blockanweisung'?",
+            "back": "Eine Zusammenfassung von Anweisungen (z. B. durch geschweifte Klammern), die in der Regel eingerückt werden, um die Struktur des Programms visuell zu verdeutlichen."
+          },
+          {
+            "front": "Warum sollten bei Methodenaufrufen Variablen anstatt komplexer Literale übergeben werden?",
+            "back": "Um die Bedeutung der einzelnen Parameter durch sprechende Variablennamen sofort verständlich zu machen und Verwechslungen oder kryptische Aufrufe zu vermeiden."
+          },
+          {
+            "front": "Was bedeutet 'Refactoring' in der Softwareentwicklung?",
+            "back": "Das zentrale Umbenennen oder Strukturieren von Quelltext, um die Lesbarkeit und Qualität zu verbessern, ohne das äußere Verhalten des Programms zu ändern."
+          },
+          {
+            "front": "Welche Funktion haben die Schlüsselwörter 'final' oder 'CONST'?",
+            "back": "Sie deklarieren eine Konstante. Der Wert kann nach der Initialisierung zur Laufzeit nicht mehr verändert werden."
+          },
+          {
+            "front": "Warum ist die qualifizierte Bezeichnung von Bezeichnern wichtig?",
+            "back": "Sie stellt sicher, dass ein Bezeichner eindeutig einem Modul oder einer Klasse zugeordnet werden kann, insbesondere wenn Namensüberschneidungen möglich sind."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-cs-programmierung-einfuehrung_0",
+      "slides": [
+        {
+          "title": "Strukturierte Programmierung: Grundlagen",
+          "bullets": [
+            "Leitfaden für besser strukturierte Softwareprogramme.",
+            "Fokus auf Nachvollziehbarkeit und Fehlerminimierung.",
+            "Effizientere Wartung und Teamarbeit durch klare Strukturen.",
+            "Grundkonzepte: Sequenz, Selektion und Iteration (S. 3)."
+          ],
+          "notes": "Willkommen zur Lektion über strukturierte Programmierung. Dieser Leitfaden hilft Ihnen, Code zu schreiben, der nicht nur funktioniert, sondern auch wartbar und leicht verständlich ist.",
+          "page_range": "1-3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Gestaltung des Quelltexts",
+          "bullets": [
+            "Nutzen Sie aussagekräftige, sprechende Bezeichner.",
+            "Leerräume und Kommentare verbessern die Lesbarkeit erheblich.",
+            "Jede Datei benötigt einen Header mit Metadaten (S. 3).",
+            "Dokumentieren Sie Parameter und Rückgabewerte bei Methoden (S. 4)."
+          ],
+          "notes": "Guter Code ist selbsterklärend. Durch konsequente Kommentierung und saubere Formatierung erleichtern Sie sich und anderen die Arbeit an komplexen Systemen.",
+          "page_range": "3-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Qualifizierte Bezeichner",
+          "bullets": [
+            "Eindeutige Zuordnung durch qualifizierte Namen (z.B. java.lang.System).",
+            "Vermeidet Konflikte bei gleichnamigen Bezeichnern in Modulen.",
+            "Import-Anweisungen können die Übersichtlichkeit bei großen Projekten mindern.",
+            "Strenge Qualifikation erhöht die Wartbarkeit des Codes (S. 9-10)."
+          ],
+          "notes": "Die Qualifikation von Bezeichnern sorgt für Klarheit. Man weiß sofort, aus welcher Bibliothek oder welchem Paket eine Funktion stammt – ein Muss für professionelle Software.",
+          "page_range": "9-10",
+          "image_prompt": ""
+        },
+        {
+          "title": "Struktur der Anweisungen",
+          "bullets": [
+            "Grundbestandteile: Deklaration, Blockanweisung, Zuweisung, Funktionsaufruf.",
+            "Methoden als zentrales Mittel zur Kapselung von Logik.",
+            "Einheitliche Signatur (Name, Parameter, Rückgabetyp).",
+            "Vermeiden Sie vorzeitige, unstrukturierte Unterprogrammabbrüche (S. 16, 28)."
+          ],
+          "notes": "Ein strukturiertes Programm folgt einem klaren Ablauf. Verwenden Sie Methoden gezielt, um Redundanzen zu vermeiden und die Logik zu isolieren.",
+          "page_range": "16-17, 28",
+          "image_prompt": ""
+        },
+        {
+          "title": "Datenstrukturen: Verbünde und Arrays",
+          "bullets": [
+            "Verbünde (Records/Structs) fassen logische Attribute zusammen.",
+            "Arrays speichern indizierte, gleichartige Elemente geordnet ab.",
+            "Speicherberechnung erfolgt effizient über Index und Datentypgröße.",
+            "Null-basierte Indizierung ist der Standard (S. 21-22)."
+          ],
+          "notes": "Daten müssen organisiert sein. Ob durch Verbünde für komplexe Objekte oder Arrays für Mengen: Die korrekte Strukturierung ist das Fundament effizienter Algorithmen.",
+          "page_range": "21-23",
+          "image_prompt": ""
+        },
+        {
+          "title": "Kontroll- und Blockstrukturen",
+          "bullets": [
+            "Kategorische Verwendung von Blockanweisungen '{}'.",
+            "Schutz vor logischen Fehlern in Verzweigungen (if-else).",
+            "Verschränkte Blöcke sind unzulässig und ineffizient.",
+            "Klare Strukturen verhindern 'leere Anweisungen' als Fehlerquelle (S. 45-47)."
+          ],
+          "notes": "Verlassen Sie sich nie auf implizite Blockstrukturen. Setzen Sie immer Klammern – so ist der Programmfluss auch bei zukünftigen Änderungen absolut eindeutig.",
+          "page_range": "45-47",
+          "image_prompt": ""
+        },
+        {
+          "title": "Modulabhängigkeiten und Sicherung",
+          "bullets": [
+            "Vermeidung von zyklischen Importen zur Stabilität.",
+            "Beachtung von Nebeneffekten (z.B. arithmetische Überläufe).",
+            "Vorsicht bei Speicheradressen und Zeigern in unsicheren Sprachen.",
+            "Strenge Typsicherheit verhindert kritische Laufzeitfehler (S. 51-53, 59)."
+          ],
+          "notes": "Zum Abschluss: Achten Sie auf Abhängigkeiten. Zirkelbezüge und unkontrollierte Nebeneffekte sind die Hauptursachen für schwer zu findende Fehler in komplexen Systemen.",
+          "page_range": "51-53, 59",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 1: Strukturierte Programmierung - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778790102068,
+      "pdfName": "Strukturierte Programmierung"
+    }
+  ],
+  "sourceHash": "da28588357ceb9b2"
+}

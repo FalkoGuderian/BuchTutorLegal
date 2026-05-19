@@ -1,0 +1,349 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Aerospace Engineering Fundamentals - Lesson 3 — Fluid Mechanics (Bar-Meir)",
+    "pdfName": "Fluid Mechanics (Bar-Meir)",
+    "createdAt": 1778578422579,
+    "exportedAt": "2026-05-12T09:33:42.579Z",
+    "meta": {
+      "courseId": "course-en-cs-aerospace-spezial",
+      "lessonIndex": 2,
+      "courseTitle": "Aerospace Engineering Fundamentals",
+      "lessonObjective": "Viscous flow and the Navier-Stokes equations."
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_854dd41bd2a7",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Introduction to Fluids and Fluid Statics",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-3",
+          "chapterTitle": "Conservation Laws and Differential Analysis",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-4",
+          "chapterTitle": "Dimensional Analysis and Inviscid Flow",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-5",
+          "chapterTitle": "Compressible and Multi-Phase Flow",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778578422579,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Based on the document provided, here is a concise summary of the *Fluid Mechanics* text by Dr. Genick Bar-Meir:\n\n### **Overview of Fluid Mechanics**\nFluid mechanics is the study of liquids, gases, and plasmas, along with the forces acting upon them. It is a critical field with broad applications in mechanical and chemical engineering, geophysics, astrophysics, and biology [S.1].\n\n### **Core Theoretical Divisions**\nThe study is divided into two primary areas:\n*   **Fluid Statics:** The analysis of fluids at rest [S.1].\n*   **Fluid Dynamics:** The analysis of the effect of forces on fluids in motion [S.1].\n\n### **Key Course Modules**\nThe text covers a comprehensive range of topics necessary for understanding fluid behavior, categorized into 13 key chapters:\n*   **Foundations:** Introductions to fluids, review of thermodynamics, and mechanics [S.1, S.2].\n*   **Conservation Principles:** Mass, momentum, and energy conservation, specifically regarding control volumes [S.2, S.3].\n*   **Analysis Approaches:** Differential analysis and dimensional analysis [S.3, S.4].\n*   **Flow Physics:** Study of fluid statics, potential (inviscid) flow, compressible flow (one and two-dimensional), and multi-phase flow [S.2, S.4, S.5].\n\n***\n\n*Note: While the provided text outlines the structure of the course, specific detailed derivations regarding the Navier-Stokes equations—which are typically covered under \"Differential Analysis\"—are indexed for Chapter 8 [S.3].*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778578422579,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-cs-aerospace-spezial_2\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 3 — Fluid Mechanics (Bar-Meir) - Presentation</span><span class=\"pm-chat-count\">6 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Fluid Mechanics: Viscous Flow</div><ul class=\"pm-chat-slide-bullets\"><li>Understanding fluid motion and forces.</li><li>Focusing on the Navier-Stokes framework.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778578422580,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document provides an overview of the field of fluid mechanics based on the textbook by Bar-Meir. \n\n### Definition and Scope\nFluid mechanics is a branch of physics dedicated to the study of fluids—specifically liquids, gases, and plasmas—and the various forces acting upon them (p. 1). This field is essential to numerous scientific and engineering disciplines, such as chemical engineering, mechanical engineering, astrophysics, biology, and geophysics (p. 1).\n\n### Core Branches\nThe study of fluid mechanics is categorized into two primary areas:\n* Fluid Statics: The investigation of fluids remain in a state of rest (p. 1).\n* Fluid Dynamics: The analysis of how forces influence the motion of fluids (p. 1).\n\n### Course Structure\nThe text outlines a logical progression for studying the subject, beginning with introductory material and reviews of fundamental thermodynamics and mechanics (p. 1, 2). This foundation leads into specialized topics such as fluid statics, control volumes, and the principle of mass conservation (p. 2).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778578422589,
+      "channel": "plan_pipe_854dd41bd2a7",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section focuses on three fundamental principles of fluid mechanics used for system analysis:\n\n1. Momentum Conservation for Control Volume\nThis topic involves applying Newton's second law to fluid flow within a defined control volume. It relates the sum of external forces acting on the fluid to the rate of change of momentum within the volume and the net flux of momentum across the control surfaces. The general integral form is expressed as:\n$$ \\sum \\vec{F} = \\frac{\\partial}{\\partial t} \\int_{CV} \\vec{V} \\rho dV + \\int_{CS} \\vec{V} (\\rho \\vec{V} \\cdot \\vec{n}) dA $$\n\n2. Energy Conservation\nThis section covers the application of the First Law of Thermodynamics to fluid systems. It accounts for the balance between heat transfer, work done by the fluid (or on the fluid), and the changes in internal, kinetic, and potential energy within the control volume. It is essential for analyzing flow systems involving pumps, turbines, and heat exchangers.\n\n3. Differential Analysis\nUnlike control volume analysis, which focuses on global inputs and outputs, differential analysis examines flow fields at an infinitesimal level. This approach uses the Navier-Stokes equations and the continuity equation in differential form to determine the velocity, pressure, and temperature distributions throughout the entire flow field. The continuity equation for an incompressible fluid is represented as:\n$$ \\nabla \\cdot \\vec{V} = 0 $$",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778578422590,
+      "channel": "plan_pipe_854dd41bd2a7",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers four fundamental areas of advanced fluid mechanics:\n\n1. Dimensional Analysis (Section 9): Focuses on the use of physical dimensions to simplify complex problems, specifically utilizing tools like the Buckingham Pi Theorem to organize variables into dimensionless groups.\n\n2. Inviscid or Potential Flow (Section 10): Examines flows where viscosity is neglected. It addresses the mathematical description of fluid motion using velocity potentials and stream functions, primarily for modeling laminar, non-turbulent behavior.\n\n3. Compressible Flow (One-Dimensional) (Section 11): Analyzes gas dynamics where density changes are significant. Key topics include Mach number, stagnation properties, and normal shock waves within ducts or nozzles.\n\n4. Compressible Flow (Two-Dimensional) (Section 12): Extends the previous analysis to multi-dimensional gas flow. It covers phenomena such as oblique shock waves, expansion fans, and the interaction of supersonic flow fields with geometric surfaces.\n\nThese topics provide the theoretical framework for understanding high-speed aerodynamics and complex fluid systems.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778578422591,
+      "channel": "plan_pipe_854dd41bd2a7",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary: Multi–Phase Flow (Section 13)\n\nThis section, authored by Dr. Genick Bar-Meir, serves as a resource focused on the fluid mechanics of multi-phase flow systems. Key details regarding the document include:\n\n**Document Overview**\n*   **Subject:** The text provides academic coverage of multi-phase flow phenomena within the broader context of fluid mechanics.\n*   **Source:** The material is hosted on the LibreTexts platform and is part of a larger curriculum authored by Dr. Genick Bar-Meir.\n\n**Licensing and Attribution**\n*   **Permissions:** The content is available for copying, distribution, and modification under the GNU Free Documentation License (Version 1.2 or later) or the Potto license.\n*   **Credits:** The thumbnail image is attributed to pixabay.com.\n\n**Technical Context**\n*   **Accessibility:** This document is indexed under Civil Engineering resources and maintains a standard update cycle for technical accuracy.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778578422592,
+      "channel": "plan_pipe_854dd41bd2a7",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778578422679,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "If an engineer is analyzing a chemical mixture flowing through a pipe without considering the forces causing the motion, which sub-discipline of fluid mechanics are they primarily utilizing?",
+            "options": [
+              "Fluid dynamics",
+              "Fluid statics",
+              "Differential analysis",
+              "Thermodynamics"
+            ],
+            "correctIndex": 1,
+            "explanation": "Fluid statics is defined as the study of fluids at rest. Since the question specifies not considering the forces causing motion, it falls under the static, rather than dynamic, classification."
+          },
+          {
+            "question": "A researcher is studying the transformation of potential energy to kinetic energy in a high-speed gas flow. Based on the provided table of contents, which two chapters would be most relevant to this study?",
+            "options": [
+              "Chapter 4 and Chapter 6",
+              "Chapter 7 and Chapter 11",
+              "Chapter 2 and Chapter 9",
+              "Chapter 5 and Chapter 10"
+            ],
+            "correctIndex": 1,
+            "explanation": "Energy conservation (Chapter 7) governs the transformation of energy types, and Compressible Flow (Chapter 11) specifically addresses the behavior of gases at high speeds."
+          },
+          {
+            "question": "Why is 'Differential Analysis' (Chapter 8) distinct from a 'Control Volume' approach (Chapter 5) in fluid mechanics?",
+            "options": [
+              "Differential analysis is only for fluids at rest",
+              "Control volume analysis cannot handle mass conservation",
+              "Differential analysis examines fluid behavior at a point, whereas control volume analysis considers a bulk region",
+              "Differential analysis excludes the study of Navier-Stokes equations"
+            ],
+            "correctIndex": 2,
+            "explanation": "Differential analysis focuses on the local behavior of the fluid at an infinitesimal point (often using partial differential equations like Navier-Stokes), while control volume analysis evaluates the overall effect on a macroscopic region."
+          },
+          {
+            "question": "Which of the following scenarios would be best analyzed using the content found in 'Chapter 10: Inviscid Flow or Potential Flow'?",
+            "options": [
+              "Determining the pressure drop in a high-viscosity oil pipe",
+              "Calculating the airflow over an airplane wing where viscous effects are negligible",
+              "Modeling the interaction between a liquid and a solid surface containing sediments",
+              "Studying the evaporation of a liquid in a closed container"
+            ],
+            "correctIndex": 1,
+            "explanation": "Inviscid flow models assume fluid viscosity is negligible. Airflow around aerodynamic shapes like wings is a classic application where these simplifications are valid and useful."
+          },
+          {
+            "question": "If a system is categorized under 'Multi-Phase Flow' (Chapter 13), what is a key mechanical distinction compared to single-phase flows?",
+            "options": [
+              "The system must be at absolute zero temperature",
+              "The system involves the simultaneous presence of more than one state of matter or immiscible fluids",
+              "The system ignores the conservation of momentum",
+              "The system relies exclusively on fluid statics"
+            ],
+            "correctIndex": 1,
+            "explanation": "Multi-phase flow describes situations where different states of matter (like gas bubbles in liquid or solid particles in a gas) exist simultaneously, requiring different analytical approaches than single-phase, homogeneous fluids."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778578422680,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the definition of fluid mechanics?",
+            "back": "The branch of physics that studies the mechanics of fluids (liquids, gases, and plasmas) and the forces acting upon them."
+          },
+          {
+            "front": "What are the two main subdivisions of fluid mechanics?",
+            "back": "Fluid statics (study of fluids at rest) and fluid dynamics (study of the effect of forces on fluid motion)."
+          },
+          {
+            "front": "Which fields commonly utilize fluid mechanics?",
+            "back": "Mechanical engineering, chemical engineering, geophysics, astrophysics, and biology."
+          },
+          {
+            "front": "What is the primary focus of Chapter 5 in Bar-Meir's text?",
+            "back": "The Control Volume and Mass Conservation."
+          },
+          {
+            "front": "What subject does Chapter 7 of the referenced text cover?",
+            "back": "Energy Conservation."
+          },
+          {
+            "front": "What is covered in Chapter 9 of the Bar-Meir fluid mechanics text?",
+            "back": "Dimensional Analysis."
+          },
+          {
+            "front": "Does fluid mechanics apply only to liquids?",
+            "back": "No, it also applies to gases and plasmas."
+          },
+          {
+            "front": "What is described in Chapter 10 of the text?",
+            "back": "Inviscid Flow or Potential Flow."
+          },
+          {
+            "front": "What does Chapter 13 discuss?",
+            "back": "Multi–Phase Flow."
+          },
+          {
+            "front": "According to the source, what does Chapter 6 analyze?",
+            "back": "Momentum Conservation for Control Volume."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-cs-aerospace-spezial_2",
+      "slides": [
+        {
+          "title": "Fluid Mechanics: Viscous Flow",
+          "bullets": [
+            "Understanding fluid motion and forces.",
+            "Focusing on the Navier-Stokes framework."
+          ],
+          "notes": "We are exploring the fundamental principles of fluid mechanics today. Our focus shifts specifically to viscous flow and differential analysis.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Fluid Fundamentals",
+          "bullets": [
+            "Fluids include liquids, gases, and plasmas.",
+            "Distinguishes between fluid statics and dynamics.",
+            "Applied across engineering and natural sciences."
+          ],
+          "notes": "Fluid mechanics covers everything from engineering to biology. We divide the field by whether fluids are at rest or in motion.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Foundational Review",
+          "bullets": [
+            "Integration of thermodynamics and classical mechanics.",
+            "Studying fluids at rest in statics.",
+            "Analyzing conservation of mass."
+          ],
+          "notes": "Before mastering complex flow, we review the basics of thermodynamics and mechanics. These form the bedrock for our upcoming conservation laws.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Conservation and Analysis",
+          "bullets": [
+            "Conservation laws for control volumes.",
+            "Energy conservation principles.",
+            "Differential analysis of fluid motion."
+          ],
+          "notes": "Now we transition to formal conservation laws. Differential analysis allows us to look at the motion of fluids at specific points.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Flow Classification",
+          "bullets": [
+            "Utilizing dimensional analysis techniques.",
+            "Theory of inviscid and potential flow.",
+            "One and two-dimensional compressible flow."
+          ],
+          "notes": "By using dimensional analysis, we simplify complex problems. We then categorize flows, such as inviscid or compressible streams, to predict behavior.",
+          "page_range": "4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Complex Fluid Systems",
+          "bullets": [
+            "Advanced multi-phase flow dynamics.",
+            "Attribution and open access resources."
+          ],
+          "notes": "Finally, we encounter multi-phase flows, where different states of matter interact. This concludes our overview of Dr. Bar-Meir's curriculum.",
+          "page_range": "5",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 3 — Fluid Mechanics (Bar-Meir) - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778578422579,
+      "pdfName": "Fluid Mechanics (Bar-Meir)"
+    }
+  ],
+  "sourceHash": "2cd04c84b35118ed"
+}

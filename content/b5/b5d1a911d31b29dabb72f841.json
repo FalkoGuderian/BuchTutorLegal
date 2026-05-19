@@ -1,0 +1,439 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Electric Vehicles - Lesson 1 — Electric Vehicles",
+    "pdfName": "Electric Vehicles",
+    "createdAt": 1778577352007,
+    "exportedAt": "2026-05-12T09:15:52.008Z",
+    "meta": {
+      "courseId": "course-en-gen-electric-vehicles",
+      "lessonIndex": 0,
+      "courseTitle": "Electric Vehicles",
+      "lessonObjective": "Selection on \"electric vehicles\"",
+      "licensing": {
+        "effective_license": "unknown",
+        "sources": [
+          {
+            "content_id": "doab-electric-vehicles",
+            "title": "Electric Vehicles",
+            "source": "doab",
+            "license": "unknown",
+            "license_url": "",
+            "url": "https://directory.doabooks.org/handle/20.500.12854/135412"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_a15995829f22",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-12",
+          "chapterTitle": "Electric Vehicles: Design, Modelling and Simulation - Introduction and Preface",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "13-40",
+          "chapterTitle": "Chapter 1: Control Strategies for Electric Motors Powered by Li-ion Batteries",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "41-64",
+          "chapterTitle": "Chapter 2: Load-Sharing Management for Fuel Cell Hybrid Electric Vehicles",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "65-84",
+          "chapterTitle": "Chapter 3: Battery State of Charge Management for Traction Systems",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "85-108",
+          "chapterTitle": "Chapter 4: Nonlinear Robust Control for Autonomous Ground Electric Vehicles",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "109-142",
+          "chapterTitle": "Chapter 5: Dynamics Modeling and Characteristics Analysis of Distributed Drive Electric Vehicles",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "143-172",
+          "chapterTitle": "Chapter 6: Hybrid Energy Storage Systems in Electric Vehicle Applications",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778577352007,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "This document, edited by Nicolae Tudoroiu, provides a comprehensive technical overview of the design, modeling, and simulation of electric vehicles (EVs). Below is a structured summary of the key points covered:\n\n### **Book Overview and Scope**\n*   **Core Focus:** The text covers research on hybrid and electric vehicles, specifically focusing on Li-ion battery management systems (BMS), state-of-charge (SOC) estimation, electric motor control, and vehicle dynamics.\n*   **Methodology:** Most research presented utilizes MATLAB and Simulink environments, often involving advanced AI techniques like neural networks, fuzzy logic, and state-of-the-art estimation algorithms.\n\n### **Key Technical Domains**\n*   **Battery Management (SOC Estimation):** The book emphasizes the importance of accurate SOC estimation for battery health, safety, and energy efficiency. It explores various techniques, ranging from traditional Kalman Filters (KF/EKF) to advanced, data-driven machine learning models (NARX Shallow Neural Networks).\n*   **Battery Modeling:** A core strategy involves the use of Equivalent Circuit Models (ECM), particularly the second-order RC (2RC) model, to represent the static and dynamic behavior of Li-ion batteries efficiently for real-time applications.\n*   **Control Strategies:** The text covers various control methodologies for EV traction systems, including:\n    *   **Nonlinear Control:** Approaches like partial state feedback linearization and robust $H$-infinity control to manage trajectory tracking in autonomous EVs.\n    *   **Intelligent Control:** Using neuro-controllers (NARMA-L2) and model predictive controllers to manage power flow and motor speed.\n*   **Vehicle Systems:** Beyond batteries, the content addresses fuel cell hybrid electric vehicles (FCHEVs), hybrid energy storage systems, and the dynamics of distributed drive electric vehicles.\n\n### **Structure of the Research**\nThe book is organized into six chapters, each focusing on a specific technological challenge:\n1.  **Speed Control:** Investigation of nonlinear motor dynamics and SOC estimation [S.9].\n2.  **FCHEV Management:** Intelligent load-sharing for fuel cell-powered vehicles [S.9].\n3.  **Traction System SOC:** Managing SOC in vehicles using field-oriented induction motors [S.9].\n4.  **Autonomous Control:** Nonlinear robust trajectory-following for ground vehicles [S.9].\n5.  **Dynamics Modeling:** Analysis of distributed drive torque vectoring and stability [S.9].\n6.  **Energy Storage:** Analysis of hybrid energy storage topologies and electrochemical technologies [S.9].\n\n**Conclusion:** \nThe work serves as a practical guide for researchers and engineers, bridging the gap between theoretical modeling and the real-time implementation of BMS and control systems in the competitive EV automotive industry [S.11, S.15].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577352007,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-gen-electric-vehicles_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 1 — Electric Vehicles - Presentation</span><span class=\"pm-chat-count\">7 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Electric Vehicles: Design, Modelling, and Simulation</div><ul class=\"pm-chat-slide-bullets\"><li>Overview of advanced EV design and simulation technologies.</li><li>Focuses on battery management, control strategies, and dynamics.</li><li>Edited by Nicolae Tudoroiu for automotive engineering research.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778577352008,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as the preface and front matter for the book titled *Electric Vehicles - Design, Modelling and Simulation*, edited by Nicolae Tudoroiu and published by IntechOpen in 2023 [S.1, S.4].\n\n**Core Overview**\nThe book provides a comprehensive analysis of hybrid and electric vehicles, focusing on design, modeling, Li-ion battery management systems, and state-of-charge (SOC) estimation [S.11]. It highlights contemporary research in electric vehicle automation and various control strategies, largely utilizing MATLAB and Simulink for simulation purposes [S.11].\n\n**Key Topics by Chapter**\n1. Speed control methods for motors powered by Li-ion batteries and advanced state estimators using neural networks [S.9, S.11].\n2. Intelligent load-sharing management for fuel cell hybrid electric vehicles (FCHEV) involving fuel cells, ultracapacitors, and batteries [S.9, S.11].\n3. Battery SOC management techniques for traction systems using fuzzy-tuned model predictive controllers [S.9, S.11].\n4. Nonlinear robust $H_{\\infty}$ control approaches for trajectory-following in autonomous ground vehicles to account for parametric uncertainties and disturbances [S.9, S.11].\n5. Dynamics modeling, torque vector control, and stability analysis for distributed drive electric vehicles [S.9, S.11].\n6. A review of hybrid energy storage system topologies and electrochemical energy storage technologies, comparing their pros and cons [S.9, S.11].\n\n**Editor and Contributors**\nThe editor, Nicolae Tudoroiu, is an experienced researcher with an extensive background in automation, control, and battery management systems [S.7]. The book features contributions from an international group of researchers from various academic and technical institutions [S.4, S.12].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577352017,
+      "channel": "plan_pipe_a15995829f22",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 12
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This research explores advanced methods for managing Li-ion batteries and controlling DC motors in electric vehicles. The primary focus is on developing accurate State of Charge (SOC) estimation techniques and nonlinear control strategies for motor speed.\n\n**Li-ion Battery Modeling and SOC Estimation**\nThe paper utilizes a second-order equivalent circuit model ($2RC\\text{ }ECM$) to capture both fast and slow battery dynamics. This model is chosen for its balance between simplicity and accuracy, making it suitable for real-time applications. Key findings and methods include:\n*   **State Space Representation:** The battery dynamics are defined by three differential equations, relating the charge/discharge current ($u$) to the terminal voltage ($y$), alongside a nonlinear function that maps Open Circuit Voltage (OCV) to SOC.\n*   **Estimation Techniques:**\n    *   **Extended Kalman Filter (EKF):** A model-based approach used to provide robust state estimation by linearizing the nonlinear process dynamics.\n    *   **Intelligent Learning:** A Nonlinear Autoregressive with Exogenous input (NARX) Shallow Neural Network was developed as an alternative to the EKF. This data-driven approach excels in mapping complex nonlinearities and does not rely on model complexity, outperforming traditional estimators in varied chemistry applications.\n\n**DC Motor Control and System Dynamics**\nThe research investigates a DC motor (DCM) drive to address the complexities of nonlinear control:\n*   **Proof of Concept:** A third-order nonlinear model is used to analyze feedback linearization, system singularities, and reference tracking.\n*   **Control Strategies:** The study compares traditional PID control with advanced intelligent strategies, specifically the NARMA-L2 neuro-controller, which learns and linearizes the motor dynamics to achieve effective speed regulation.\n\n**Tools and Implementation**\n*   **Simulink Simscape:** Used to create generic, preset battery models that generate experimental input-output data for training neural networks.\n*   **Parameter Optimization:** The Least Square Estimation (LSE) method and the Global Pattern Search (GPS) genetic algorithm are employed to identify and tune system parameters, ensuring the models accurately reflect physical battery behavior.\n\nBy integrating intelligent neural networks with traditional control theory, this work provides a framework for more efficient energy management and robust performance in future automotive electric powertrain systems.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577352018,
+      "channel": "plan_pipe_a15995829f22",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 13,
+        "end": 40
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The contents of the section covering pages 41–64 correspond to Chapter 2, titled \"Load-Sharing Management for Fuel Cell Hybrid Electric Vehicle (FCHEV) Based on Intelligent Controllers and Optimization Algorithms,\" authored by Mustafa A. Kamoona and Juan Manuel Mauricio.\n\nKey points of this chapter include:\n\nObjective: The research proposes an intelligent controller for a hydrogen-powered, plug-in fuel cell hybrid electric vehicle (FCHEV) to optimize energy management and resource utilization.\n\nSystem Architecture: The vehicle architecture integrates a fuel cell with a dual energy storage system, consisting of an ultracapacitor and a battery.\n\nPerformance Goals: The primary aim is to achieve a high dynamic response from the power system while maintaining efficient use of the available energy storage resources.\n\nMethodology: The study utilizes intelligent control techniques and optimization algorithms to manage the complex load-sharing requirements between the fuel cell and the hybrid storage components.\n\nScope: The implementation and validation of these management strategies are primarily conducted through simulations, typically utilizing environments such as MATLAB and Simulink.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577352019,
+      "channel": "plan_pipe_a15995829f22",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 41,
+        "end": 64
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The following summary covers the content of Chapter 3, located on pages 65–84, titled \"Battery State of Charge Management for an Electric Vehicle Traction System.\"\n\n**Overview of Chapter 3**\n\nThis chapter addresses the critical challenge of managing the State of Charge (SOC) in electric vehicle (EV) traction systems. The primary focus is on ensuring the longevity and efficiency of the battery by preventing it from operating outside its optimal parameters.\n\n**Key Components and Strategies**\n\nThe chapter investigates an EV traction system utilizing an indirect field-oriented induction motor drive. The core management strategy involves a closed-loop control system that regulates the battery SOC while simultaneously maintaining the performance of the motor drive.\n\n**The Control Methodology**\n\nThe author proposes a control scheme that features several notable characteristics:\n\n1. Energy Management: The system is designed to restrict fluctuations in the battery SOC. It ensures these changes do not exceed established maximum limits, which is vital for preserving battery health.\n2. Performance Compensation: To maintain vehicle drivability while limiting SOC depletion, the system compensates for motor speed tracking. This balance prevents the traction system from placing excessive, unsustainable demands on the battery pack during peak power requirements.\n3. Advanced Control Logic: The management technique employs a fuzzy-tuned model predictive controller. By integrating fuzzy logic with model predictive control, the system achieves a robust, adaptive response to the nonlinear dynamics inherent in EV traction motors and battery behaviors.\n\n**Conclusion**\n\nThe chapter highlights that by dynamically adjusting the motor drive performance based on real-time SOC data, it is possible to enhance the operational reliability of the EV powertrain. The proposed fuzzy-tuned predictive approach offers an effective solution for navigating the trade-offs between vehicle motion requirements and energy storage limitations.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577352020,
+      "channel": "plan_pipe_a15995829f22",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 65,
+        "end": 84
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Based on the provided text, the section spanning pages 85–108 (Chapter 4) focuses on the development of advanced control systems for autonomous ground electric vehicles. The chapter's key points are structured below:\n\n**Research Objective**\nThe study proposes a nonlinear robust $H$-infinity control approach to improve the trajectory-following accuracy of autonomous ground electric vehicles. \n\n**Control Challenges**\nThe research specifically addresses three main factors that complicate vehicle trajectory dynamics:\n1. Parametric uncertainties within the vehicle system.\n2. Nonlinearities inherent in the system dynamics.\n3. External disturbances caused by various driving maneuvers and changing road conditions.\n\n**Methodological Approach**\nThe chapter focuses on robust control strategies designed to handle these disturbances and uncertainties. By implementing nonlinear robust control, the system aims to maintain high performance in tracking intended paths despite the unpredictable nature of real-world driving environments.\n\n**Contextual Application**\nThe study advances the field of vehicle automation by providing a framework that ensures stability and precision for autonomous ground vehicles, effectively mitigating the negative impacts of environmental and systemic variables on steering and path adherence.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577352021,
+      "channel": "plan_pipe_a15995829f22",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 85,
+        "end": 108
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section (Chapter 5, pp. 109-142) focuses on the dynamics, control, and stability of distributed drive electric vehicles (DDEVs). The key aspects are summarized below:\n\n**Vehicle Dynamics and Modeling**\nThe chapter provides a comprehensive analysis of the dynamic modeling required to understand the behavior of vehicles equipped with distributed drive systems. This includes examining the interactions between the vehicle chassis and the individual motors located at each wheel, which allow for independent control of torque distribution.\n\n**Torque Vector Control**\nA primary focus of the chapter is the implementation of torque vectoring. By independently controlling the torque applied to each wheel, the system can significantly improve the vehicle's maneuverability and handling. The authors discuss how these control strategies assist in maintaining the desired trajectory, particularly during cornering or when encountering varying road surface conditions.\n\n**Stability Performance Analysis**\nThe text evaluates how distributed drive architectures impact vehicle stability. Key performance indicators include yaw rate tracking and sideslip angle regulation. The analysis demonstrates that the increased degrees of freedom provided by distributed motor configurations allow for more precise control interventions, which are essential for preventing skidding or loss of control in autonomous or human-driven scenarios.\n\n**System Integration**\nThe research highlights the importance of integrating drive-train modeling with control algorithms to ensure high efficiency and reliability. The analysis accounts for system nonlinearities and the complexities of coordinating multiple actuators to achieve optimal vehicle performance and safety.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577352022,
+      "channel": "plan_pipe_a15995829f22",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 109,
+        "end": 142
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The following is a summary of the section starting on page 143, which corresponds to Chapter 6 of the book:\n\n**Hybrid Energy Storage Systems in Electric Vehicle Applications**\n\nThis section explores the integration of Hybrid Energy Storage Systems (HESS) as a solution to the limitations of single-source energy storage in electric vehicles (EVs).\n\n**Key Focus Areas:**\n\n1. System Topologies: The chapter examines various architectural configurations for combining different electrochemical storage technologies. These topologies are designed to balance the power demand and energy density requirements of modern EVs.\n\n2. Electrochemical Technology Review: It provides a comprehensive analysis of the pros and cons of current energy storage technologies. The objective is to identify how pairing different storage components can optimize vehicle performance and efficiency.\n\n3. Performance Optimization: The discussion emphasizes that by utilizing hybrid systems, engineers can better manage transient power demands (often handled by high-power density components like supercapacitors) while maintaining long-range capacity (supported by high-energy density batteries).\n\nThis chapter serves as a comparative guide for selecting appropriate energy storage combinations to improve the overall functionality and longevity of EV power systems.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577352023,
+      "channel": "plan_pipe_a15995829f22",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 143,
+        "end": 172
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778577352107,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why is the traditional 'coulomb counting' (or ampere) method for estimating State of Charge (SOC) considered limited for real-time electric vehicle applications?",
+            "options": [
+              "It requires prohibitively expensive hardware to measure current.",
+              "It accumulates measurement errors over time, leading to inaccuracies.",
+              "It is only compatible with acidic battery chemistries.",
+              "It cannot function when the vehicle is in motion."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text states that the Coulomb counting method is prone to significant errors because the integration operation accumulates inaccuracies over time and is not well-suited for real-time online estimation."
+          },
+          {
+            "question": "What is the primary advantage of using an 'equivalent circuit model' (ECM) for Li-ion batteries in electric vehicles?",
+            "options": [
+              "It provides a perfectly accurate chemical representation of the battery's electrolyte.",
+              "It is simple and well-suited for online real-time estimation.",
+              "It eliminates the need for any complex software or Kalman filters.",
+              "It allows for the direct measurement of thermal energy."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text highlights that the equivalent circuit model (ECM) is suitable for online estimation because of its simplicity and its ability to effectively handle the relationship between parameters."
+          },
+          {
+            "question": "In the case study presented in Chapter 1, what role does the NARX Shallow Neural Network (SSN) serve?",
+            "options": [
+              "To physically replace the Li-ion battery inside the car.",
+              "To estimate SOC, predict terminal voltage, and map nonlinear OCV characteristics.",
+              "To bypass the need for any battery management system.",
+              "To physically control the steering of the autonomous vehicle."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text explains that the NARX SNN was developed to estimate battery SOC, predict terminal voltage, and map the nonlinear open circuit voltage (OCV) battery characteristic curve."
+          },
+          {
+            "question": "Why does the number of RC cells used in an equivalent circuit model (ECM) impact its utility?",
+            "options": [
+              "Increasing RC cells linearly increases the battery's actual physical capacity.",
+              "The number of RC cells does not affect the model's performance.",
+              "Higher numbers of RC cells increase model accuracy by capturing different dynamic behaviors.",
+              "Fewer RC cells are necessary to prevent the battery from overheating."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text mentions that the number of RC cells substantially increases the accuracy of the model, as specific cells (like R1C1) are used to capture distinct battery dynamics."
+          },
+          {
+            "question": "What is the primary motivation for researching and deploying advanced battery management systems (BMS) in EVs?",
+            "options": [
+              "To increase the weight of the vehicle for better traction control.",
+              "To ensure energy efficiency, safe operation, and extended battery life.",
+              "To enable the use of non-rechargeable battery technologies.",
+              "To reduce the reliance on MATLAB and Simulink software."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text states that SOC is an essential parameter for utilizing battery energy efficiency, operating safely under various conditions, and extending battery life, all of which are managed by the BMS."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778577352108,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Who is the editor of the book 'Electric Vehicles: Design, Modelling and Simulation'?",
+            "back": "Nicolae Tudoroiu."
+          },
+          {
+            "front": "What does 'SOC' stand for in the context of electric vehicle battery management?",
+            "back": "State of Charge."
+          },
+          {
+            "front": "What is the primary drawback of the 'coulomb counting' (ampere) method for SOC estimation?",
+            "back": "It is an open-loop method that accumulates errors over time and is often unsuitable for real-time online estimation."
+          },
+          {
+            "front": "What does 'ECM' stand for in Li-ion battery modeling?",
+            "back": "Equivalent Circuit Model."
+          },
+          {
+            "front": "Why are Li-ion batteries preferred for electric vehicles?",
+            "back": "They offer lightweight, high-energy density, low memory effect, and relatively low self-discharge."
+          },
+          {
+            "front": "Name two common environments mentioned for performing simulations in this book.",
+            "back": "MATLAB and Simulink."
+          },
+          {
+            "front": "What is the primary function of a Battery Management System (BMS)?",
+            "back": "To monitor internal states like SOC and SOH, ensure safe operation, and optimize energy efficiency and battery life."
+          },
+          {
+            "front": "What is the purpose of the NARX Shallow Neural Network mentioned in Chapter 1?",
+            "back": "To estimate battery SOC, predict terminal voltage, and map the nonlinear open circuit voltage (OCV) characteristic curve."
+          },
+          {
+            "front": "What does a '2RC ECM' battery model consist of?",
+            "back": "A Thevenin-type voltage source (OCV) connected in series with the internal resistance (Rint) and two RC polarization cells."
+          },
+          {
+            "front": "What is the main objective of the nonlinear robust H-infinity control approach proposed in Chapter 4?",
+            "back": "To enhance the trajectory-following capabilities of autonomous ground electric vehicles while addressing system nonlinearities and parametric uncertainties."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-gen-electric-vehicles_0",
+      "slides": [
+        {
+          "title": "Electric Vehicles: Design, Modelling, and Simulation",
+          "bullets": [
+            "Overview of advanced EV design and simulation technologies.",
+            "Focuses on battery management, control strategies, and dynamics.",
+            "Edited by Nicolae Tudoroiu for automotive engineering research."
+          ],
+          "notes": "This presentation introduces a comprehensive look at the modern electric vehicle landscape, covering both theoretical modeling and practical implementation. It sets the stage for understanding the critical systems that drive current automotive innovation.",
+          "page_range": "1-12",
+          "image_prompt": ""
+        },
+        {
+          "title": "Control Strategies for Li-Ion Powered Motors",
+          "bullets": [
+            "Analyzes non-linear motor dynamics and Li-ion power systems.",
+            "Utilizes NARX Neural Networks for battery state estimation.",
+            "Employs state feedback linearization for precise motor control.",
+            "Optimizes battery management for increased range and safety."
+          ],
+          "notes": "Chapter 1 examines how we integrate Li-ion battery management with motor control. By using intelligent neural networks, researchers can better predict battery behavior and improve overall vehicle efficiency.",
+          "page_range": "13-40",
+          "image_prompt": ""
+        },
+        {
+          "title": "Load-Sharing in Fuel Cell Hybrid EVs",
+          "bullets": [
+            "Explores energy management in Fuel Cell Hybrid Electric Vehicles.",
+            "Implements intelligent controllers for efficient power distribution.",
+            "Uses optimization algorithms to balance fuel cell loads."
+          ],
+          "notes": "Chapter 2 addresses the complexity of managing energy in hybrid systems that combine fuel cells with battery storage, ensuring optimal power flow during operation.",
+          "page_range": "41-64",
+          "image_prompt": ""
+        },
+        {
+          "title": "Battery State of Charge (SOC) Management",
+          "bullets": [
+            "Centralizes SOC monitoring for electric vehicle traction systems.",
+            "Ensures operational safety and extends battery lifecycle.",
+            "Critical for accurate energy management and performance tracking."
+          ],
+          "notes": "Chapter 3 focuses specifically on the State of Charge, which is the cornerstone of vehicle reliability. Accurate SOC management allows for safer operation and smarter energy consumption.",
+          "page_range": "65-84",
+          "image_prompt": ""
+        },
+        {
+          "title": "Robust Control for Autonomous Electric Vehicles",
+          "bullets": [
+            "Focuses on nonlinear robust control for trajectory following.",
+            "Develops strategies for autonomous ground electric vehicle navigation.",
+            "Ensures stability and safety in dynamic driving environments."
+          ],
+          "notes": "Chapter 4 shifts toward automation, exploring how to maintain control of a vehicle's trajectory in real-time, even under complex or unpredictable driving conditions.",
+          "page_range": "85-108",
+          "image_prompt": ""
+        },
+        {
+          "title": "Distributed Drive Dynamics and Modeling",
+          "bullets": [
+            "Analyzes dynamics of distributed drive electric vehicle systems.",
+            "Evaluates vehicle characteristics through advanced modeling.",
+            "Optimizes performance through specialized drive architecture."
+          ],
+          "notes": "Chapter 5 delves into the structural dynamics of distributed drive systems, providing a mathematical basis for how individual motors interact within the vehicle frame.",
+          "page_range": "109-142",
+          "image_prompt": ""
+        },
+        {
+          "title": "Hybrid Energy Storage Systems",
+          "bullets": [
+            "Investigates integrating diverse energy storage technologies.",
+            "Enhances vehicle range and power delivery capabilities.",
+            "Addresses future trends in EV energy storage design."
+          ],
+          "notes": "Chapter 6 concludes our overview by looking at hybrid energy storage, which combines different storage mediums to maximize the efficiency and longevity of electric power systems.",
+          "page_range": "143-172",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 1 — Electric Vehicles - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778577352007,
+      "pdfName": "Electric Vehicles"
+    }
+  ],
+  "sourceHash": "c41c3cc668bab836"
+}

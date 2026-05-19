@@ -1,0 +1,482 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Game and Graphics Programming - Lesson 2: GLSL Shaders",
+    "pdfName": "GLSL Programming",
+    "createdAt": 1778785827248,
+    "exportedAt": "2026-05-14T19:10:27.248Z",
+    "meta": {
+      "courseId": "course-en-game-and-graphics-programming",
+      "lessonIndex": 1,
+      "courseTitle": "Game and Graphics Programming",
+      "lessonObjective": "Vertex and fragment shaders.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-glsl-programming",
+            "title": "GLSL Programming",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/GLSL_Programming"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_d9f6e06e0929",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "3-6",
+          "chapterTitle": "Introduction",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "7-22",
+          "chapterTitle": "Basics: Minimal Shader and RGB Cube",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "23-30",
+          "chapterTitle": "Debugging of Shaders",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "31-40",
+          "chapterTitle": "Shading in World Space",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "41-74",
+          "chapterTitle": "Transparent Surfaces",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "75-134",
+          "chapterTitle": "Basic Lighting",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "135-178",
+          "chapterTitle": "Basic Texturing",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "179-240",
+          "chapterTitle": "Textures in 3D",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "241-356",
+          "chapterTitle": "Environment Mapping and Lighting Variations",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "357-466",
+          "chapterTitle": "Vertex Transformations and Appendix",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778785827248,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: GLSL Shaders in Unity\n\nThis lesson introduces the fundamentals of creating and applying GLSL shaders within the Unity game engine.\n\n#### Key Concepts\n*   **Shader Architecture:** A \"shader\" in Unity typically refers to a program containing both a **Vertex Shader** (executed for each vertex to transform geometry) and a **Fragment Shader** (executed for each pixel to determine output color).\n*   **Varying Variables:** These are essential for passing data from the vertex shader to the fragment shader. Because vertex shaders only execute at triangle corners, the GPU automatically interpolates these values across the surface of the triangle for the fragment shader. \n*   **Workflow:**\n    1.  **Creation:** Define a shader file containing a `GLSLPROGRAM` block.\n    2.  **Implementation:** Use `#ifdef VERTEX` and `#ifdef FRAGMENT` blocks to define logic for each stage.\n    3.  **Material Integration:** Create a Material, assign the custom shader to it, and apply the material to a GameObject.\n*   **Unity-Specific Tips:**\n    *   **Optimization/Cleaner Code:** You can declare shared variables (like `varying`) outside of the `#ifdef` blocks to ensure consistency between the vertex and fragment stages and reduce code duplication.\n    *   **Environment:** Windows users must launch Unity with the `-force-opengl` command-line argument to enable GLSL support.\n\n#### Essential Variables & Syntax\n*   **`gl_Vertex`**: The input attribute representing the position of a vertex.\n*   **`gl_ModelViewProjectionMatrix`**: The predefined matrix used to transform vertices into clip space.\n*   **`gl_FragColor`**: The output variable of the fragment shader that defines the pixel's final color (typically an `RGBA` `vec4`).\n\n*Reference: [S.14], [S.15], [S.16], [S.17], [S.18], [S.22], [S.23], [S.24], [S.25]*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778785827248,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-game-and-graphics-programming_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 2: GLSL Shaders - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lesson 2: GLSL Shaders</div><ul class=\"pm-chat-slide-bullets\"><li>Introduction to shader programming with GLSL</li><li>Overview of vertex and fragment shaders</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778785827249,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines the contents of a comprehensive guide on computer graphics, specifically focusing on shaders and the OpenGL pipeline. The curriculum is structured into nine core parts, complemented by an extensive appendix.\n\nThe key topical areas covered are:\n\nBasics and Workflow\nThe text begins by establishing core concepts, including minimal shader construction, RGB color representation, and the essentials of debugging. It further explores shading within world space environments (p. 3).\n\nSurface Properties and Transparency\nChapters 6 through 9 address the visual rendering of materials, covering cutaways, various transparency techniques, order-independent transparency, and methods for silhouette enhancement (p. 3).\n\nLighting Fundamentals and Texturing\nSections III and IV detail lighting models, starting with basic diffuse reflection and specular highlights. The material progresses to two-sided surfaces and multiple light sources, followed by an introduction to texturing, ranging from basic spherical textures to complex layered and glossy effects (p. 3, 4).\n\nAdvanced 3D Effects and Environment Mapping\nThe text examines 3D texturing, covering topics such as bumpy surface lighting, light attenuation, and projector effects. Part VI focuses on environment mapping, including reflections, curved glass, and skybox implementation (p. 4).\n\nAdvanced Lighting Variations and Vertex Transformations\nThe guide covers stylized rendering techniques like toon shading and soft shadows, as well as complex lighting models for translucent bodies and brushed metals. Part VIII explores non-standard geometric manipulations, including billboards, nonlinear deformations, and shadow projection on planes (p. 4, 5).\n\nTechnical Appendices\nThe final section provides a deep technical dive into the OpenGL ES 2.0 pipeline. This includes mathematical foundations such as vector and matrix operations ($v_{result} = M \\times v_{input}$), the mechanics of rasterization, per-fragment operations, and legal licensing information (p. 5, 6).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778785827258,
+      "channel": "plan_pipe_d9f6e06e0929",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document provides an introduction to GLSL (OpenGL Shading Language) and its implementation within the Unity game engine.\n\n**1. Fundamentals of GLSL and GPUs**\nGLSL is a shading language used to program shaders that execute on the GPU. Unlike CPUs, GPUs are massively parallel processors essential for modern real-time rendering. GLSL is integral to APIs like OpenGL, OpenGL ES, and WebGL, enabling graphics development across desktops, mobile devices, and the web (p. [S.8]).\n\n**2. Integrating GLSL into Unity**\nUnity simplifies GLSL development compared to raw OpenGL applications by providing graphical interfaces for mesh/texture imports and pre-defined vertex attributes.\n*   **Windows Configuration:** Users must launch Unity with the $-force-opengl$ command-line argument to enable GLSL support (p. [S.9]).\n*   **Terminology:** In this context, a \"shader\" refers to a complete program containing both a vertex and a fragment shader (p. [S.18]).\n*   **Workflow:** Creating a shader involves writing the GLSL code within a designated block, creating a Material, assigning the shader to that material, and finally attaching the material to a game object (p. [S.15], [S.17]).\n\n**3. Shader Structure and Data Flow**\nA basic GLSL shader in Unity uses a specific structure:\n*   **Vertex Shader:** Defines the position of vertices using the $gl\\_Position = gl\\_ModelViewProjectionMatrix * gl\\_Vertex$ transformation (p. [S.15]).\n*   **Fragment Shader:** Determines pixel color via $gl\\_FragColor$ (p. [S.15]).\n*   **Varying Variables:** These variables allow data communication between the vertex and fragment shaders. For instance, in an RGB cube, spatial coordinates from the vertex shader are passed via a varying variable to determine the fragment color, mapping position $(x, y, z)$ directly to color $(r, g, b)$ (p. [S.20], [S.21]).\n\n**4. Development Tips**\nIf a shader fails to compile, it will render as bright magenta. Developers should inspect the console and the shader's Inspector window for specific line-number reporting to debug errors (p. [S.17]). Unity's documentation focuses primarily on Cg/HLSL, meaning this guide serves to fill the documentation gap regarding GLSL-specific usage in Unity (p. [S.10]).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778785827259,
+      "channel": "plan_pipe_d9f6e06e0929",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 7,
+        "end": 22
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document covers advanced shader techniques in Unity, focusing on varying variables, data interpolation, and debugging methods.\n\n### Varying Variables and Code Efficiency\nA common source of errors in shader development is a mismatch between the definition of varying variables in the vertex and fragment shaders. A useful optimization in Unity is to place shared code directly between `GLSLPROGRAM` and the first `#ifdef` directive. This ensures that a single definition of a varying variable is automatically included in both shader stages, guaranteeing they match and reducing redundant code (p. 23).\n\n### Interpolation\nVarying variables are so named because they change across a triangle. The vertex shader performs calculations only at the vertices. When the GPU processes the fragments (pixels) within a triangle, it automatically interpolates the values written to the varying variables by the vertex shader (p. 24).\n\n### Debugging with False Color\nSince traditional debugging tools are limited in Unity, a common technique for inspecting shader values is \"false-color imaging.\" By assigning specific variables (like texture coordinates or normal vectors) to the output color channels of the fragment shader, developers can visually inspect and verify the data being processed by the GPU (p. 28).\n\n### Attribute Variables\nVertex shaders receive data from the Unity Mesh Renderer via attribute variables. Unity provides built-in attributes for standard data:\n- Positioning: `gl_Vertex`\n- Vertex color: `gl_Color`\n- Normals: `gl_Normal`\n- UV coordinates: `gl_MultiTexCoord0` and `gl_MultiTexCoord1`\n\nUnity also allows the use of a custom attribute named `Tangent` to access the surface tangent vector. These attributes allow developers to manipulate geometry data directly within the vertex shader before passing results to the fragment shader via varying variables (p. 29, 30).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778785827260,
+      "channel": "plan_pipe_d9f6e06e0929",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 23,
+        "end": 30
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers advanced shader debugging and the use of uniform variables in Unity. Key concepts include:\n\n**Shader Debugging Techniques**\n*   To debug black colors, visualize specific attributes by mapping them to color components (e.g., $vec4(attribute, 0.0, 0.0, 1.0)$) (p. 26).\n*   Coordinate ranges: Texture coordinates are $[0, 1]$, while normalized vectors (e.g., `gl_Normal`) are $[-1, 1]$. To visualize vectors in the $[0, 1]$ range, use the mapping $(vector + 1.0) / 2.0$ (p. 26).\n*   Color clamping: Values outside the $[0, 1]$ range are automatically clamped. This can be used to identify if values are above or below the expected range by observing saturation at 0 or 1 (p. 27).\n*   Special Fragment Variables: `gl_FragCoord` provides screen coordinates, and `gl_FrontFacing` identifies if the front or back of a triangle is being rendered (p. 28).\n\n**World Space Shading and Uniforms**\n*   Transformations: Vertices exist in object space but must be converted to world space using the model matrix `_Object2World`. This matrix allows for operations based on an object's position within the game world (p. 32-33).\n*   Predefined Uniforms: Unity provides built-in uniform variables for time, screen dimensions, camera positions, and lighting. These can often be accessed by including `UnityCG.glslinc` (p. 34).\n*   Light-Specific Uniforms: Variables like `_WorldSpaceLightPos0` and `_LightColor0` are only correctly updated if the shader pass is tagged with appropriate light modes, such as `Tags {\"LightMode\" = \"ForwardBase\"}` (p. 34-35).\n*   Standard OpenGL Uniforms: Built-in matrices like `gl_ModelViewProjectionMatrix` are available automatically without explicit definition, facilitating common coordinate space transformations (p. 35).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778785827261,
+      "channel": "plan_pipe_d9f6e06e0929",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 31,
+        "end": 40
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section discusses advanced shader techniques in Unity, focusing on matrix mathematics and the implementation of user-controllable shader properties.\n\n**Computing the View Matrix**\nSince Unity does not provide a direct view matrix, it must be derived from the available model-view matrix ($gl\\_ModelViewMatrix$) and the inverse model matrix. Because $_World2Object$ represents the inverse of the model matrix (scaled by $unity\\_Scale.w$), the view matrix can be computed as follows:\n\n$$modelMatrixInverse = \\_World2Object \\times unity\\_Scale.w$$\n$$modelMatrixInverse[3][3] = 1.0$$\n$$viewMatrix = gl\\_ModelViewMatrix \\times modelMatrixInverse$$\n\n**Shader Properties and Uniforms**\nShader properties allow non-programmers, such as CG artists, to adjust shader parameters (e.g., colors, distances, or coordinates) within the Unity Inspector without altering the underlying code. These properties are mapped to uniform variables within the shader file (p. 42).\n\n**Dynamic Updates via Scripting**\nShader properties can be modified programmatically during runtime using scripts. By accessing the object's material via `renderer.sharedMaterial` or `renderer.material`, developers can pass data from game objects to the shader. This is particularly useful for tasks like tracking the position of objects in real-time by passing transform data into a shader uniform (p. 43, 44).\n\n**Summary of Core Concepts**\nThe text concludes by emphasizing the importance of:\n1. Transforming vertices into world coordinates correctly.\n2. Utilizing Unity-specific and OpenGL-specific uniforms effectively.\n3. Increasing the flexibility and value of a shader by exposing parameters through the Properties block (p. 44).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778785827262,
+      "channel": "plan_pipe_d9f6e06e0929",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 41,
+        "end": 74
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers the fundamentals of lighting implementations in GLSL, moving from basic calculations to more complex surface renditions.\n\n**Basic Lighting Techniques**\nLighting begins with the implementation of Diffuse Reflection (p. 77), which simulates how light scatters upon hitting a surface. This is followed by the addition of Specular Highlights (p. 91), accounting for the shiny spots observed on surfaces. Concepts of Two-Sided Surfaces (p. 101) are introduced to handle rendering logic for both sides of a geometry, which is then extended to include Smooth Specular Highlights (p. 111) and Two-Sided Smooth Surfaces (p. 119) for more realistic visual results.\n\n**Multi-Light Environments**\nThe section concludes by addressing the complexity of Multiple Lights (p. 127). This involves calculating the contribution of several light sources simultaneously to a single surface, ensuring that the shader can aggregate lighting data to produce a cohesive visual output.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778785827263,
+      "channel": "plan_pipe_d9f6e06e0929",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 75,
+        "end": 134
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Basic Texturing (Pages 135–178)\n\nThis section focuses on applying textures to 3D objects and managing complex surface appearances within the GLSL framework of the Unity game engine. Key concepts covered include:\n\n*   **Textured Spheres (p. 137):** This foundational topic explains mapping 2D image data onto 3D spherical geometry, establishing the relationship between texture coordinates ($uv$) and surface fragments.\n*   **Lighting Textured Surfaces (p. 145):** This involves integrating light calculations with texture sampling. Shaders are structured to retrieve color data from a texture map and modify that color based on diffuse or specular lighting equations to achieve realistic material responses.\n*   **Glossy Textures (p. 153):** This module covers how to simulate material reflectivity by combining environmental textures with lighting models, allowing for surfaces that appear polished or wet.\n*   **Transparent Textures (p. 161):** This covers the processing of textures with alpha channels. It explains how to discard or blend fragments based on the alpha value retrieved during texture sampling to create effects like fences, leaves, or glass.\n*   **Layers of Textures (p. 171):** This advanced concept involves multi-texturing, where multiple texture maps are blended or layered onto a single surface. This is often used to combine a base diffuse texture with detail maps or decals to increase visual complexity without sacrificing performance.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778785827264,
+      "channel": "plan_pipe_d9f6e06e0929",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 135,
+        "end": 178
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The section covering \"Textures in 3D\" (pp. 179–240) explores advanced texturing techniques and how shaders interact with 3D space to simulate complex surface properties.\n\nKey Topics and Concepts:\n\nLighting of Bumpy Surfaces: This section focuses on techniques to simulate surface detail. It explores how normal mapping and related methods affect light interaction with geometry, allowing for the appearance of intricate details without increasing polygon count.\n\nProjection of Bumpy Surfaces: Discusses the mechanics of mapping textures onto complex geometries, specifically addressing how textures are projected and transformed to align correctly with the surface's topology.\n\nCookies and Light Attenuation: This area covers the use of textures to modify light sources, often referred to as \"cookies\" (or gobos), to create patterned shadows or light dispersion. It also examines how light intensity decreases or changes as it travels through space.\n\nProjectors: Details the implementation of projector-style effects, where a textures or light patterns are cast onto surfaces in the 3D scene from a specific point of view.\n\nOptimization and Implementation: The text emphasizes the practical application of these tools within the Unity framework, noting that while standard texturing is straightforward, 3D texturing requires a deeper understanding of how the GPU processes coordinates and surface normals to achieve realistic rendering effects.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778785827265,
+      "channel": "plan_pipe_d9f6e06e0929",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 179,
+        "end": 240
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The sections covering pages 241 through 356 focus on advanced lighting techniques, environment mapping, and specialized visual effects. The key concepts are summarized below:\n\nEnvironment Mapping: This area explores reflecting surfaces, the creation of curved glass effects, the implementation of skyboxes for background rendering, and handling multiple light sources within a scene (p. 241–277).\n\nVariations on Lighting: This section details complex lighting behaviors, including the simulation of brushed metal surfaces, specular highlights specifically at object silhouettes, and the diffuse reflection of skylight. It also covers the simulation of translucent surfaces and bodies, the calculation of soft shadows for spheres, and the application of toon shading for stylized 3D graphics (p. 279–356).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778785827266,
+      "channel": "plan_pipe_d9f6e06e0929",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 241,
+        "end": 356
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the final sections of the document, spanning pages 357 through 466.\n\n### Non-Standard Vertex Transformations (Part VIII)\nThis section explores advanced techniques that modify standard rendering pipelines, including:\n* Implementing screen-level overlays ($p. 359$).\n* Creating billboards to display 2D elements in 3D space ($p. 367$).\n* Executing nonlinear deformations to geometry ($p. 371$).\n* Projecting shadows onto flat planes and rendering mirrors ($p. 377, 385$).\n\n### Appendix: OpenGL Pipeline and GLSL Syntax (Part IX)\nThe appendix serves as a technical reference for readers, focusing on fundamental concepts:\n* Pipeline Architecture: Detailed overview of the OpenGL ES 2.0 pipeline and the rasterization process ($p. 399, 437$).\n* Transformations: Mathematical foundations for vertex transformations, including essential vector and matrix operations ($p. 407, 421$).\n* Matrix Application: Guidance on how to correctly apply matrix transformations within the shading workflow ($p. 429$).\n* Per-Fragment Operations: Explanations of the final stages of the rendering pipeline ($p. 443$).\n\n### Administration and Licensing\nThe final chapters document the collaborative and legal framework of the text:\n* Contributors: Acknowledgments for those who helped create the content ($p. 449$).\n* Licenses: Formal documentation of the licensing terms, including GPL, LGPL, and GFDL ($p. 459$).\n* Information: Includes the list of figures and specific license text for open-source compliance ($p. 451, 460-466$).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778785827267,
+      "channel": "plan_pipe_d9f6e06e0929",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 357,
+        "end": 466
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778785827348,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "In the context of the provided text, why is GLSL used in modern graphics applications?",
+            "options": [
+              "To program GPUs to perform massively parallel processing.",
+              "To automatically generate 3D meshes from user input.",
+              "To provide high-level abstractions for game physics.",
+              "To simplify the CPU's workload by offloading data management."
+            ],
+            "correctIndex": 0,
+            "explanation": "The text states that shaders are small programs executed on a GPU, which are massively parallel processors capable of high performance."
+          },
+          {
+            "question": "What is the primary role of the vertex shader provided in the tutorial's example?",
+            "options": [
+              "To change the color of the object based on its position.",
+              "To rasterize the polygon into individual pixels.",
+              "To transform vertex coordinates into the correct coordinate space.",
+              "To define the lighting intensity of the fragment."
+            ],
+            "correctIndex": 2,
+            "explanation": "The vertex shader uses gl_ModelViewProjectionMatrix to transform the gl_Vertex attribute and stores it in gl_Position."
+          },
+          {
+            "question": "If a shader fails to compile in Unity, how does the program visually indicate this state on the game object?",
+            "options": [
+              "It renders the object as a solid black silhouette.",
+              "It renders the object in bright magenta.",
+              "It hides the object from the scene view entirely.",
+              "It renders the object as a transparent wireframe."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text notes that in case the shader does not compile, Unity displays the material as bright magenta."
+          },
+          {
+            "question": "According to the author's stated terminology, what constitutes a 'shader' in Unity?",
+            "options": [
+              "A script that runs on the CPU to manage game objects.",
+              "The combination of both a vertex shader and a fragment shader.",
+              "Only the component that handles vertex transformations.",
+              "A text file that defines light attenuation settings."
+            ],
+            "correctIndex": 1,
+            "explanation": "The author clarifies that they use Unity's word 'shader' to refer to a GLSL program, which is the combination of a vertex and a fragment shader."
+          },
+          {
+            "question": "What is the specific purpose of modifying the fragment shader code to output a vec4(0.6, 1.0, 0.0, 1.0)?",
+            "options": [
+              "To define a new lighting model for specular highlights.",
+              "To set the coordinate system for texture mapping.",
+              "To increase the speed at which the GPU renders the object.",
+              "To manually set the individual red, green, blue, and alpha color channels."
+            ],
+            "correctIndex": 3,
+            "explanation": "The vec4(red, green, blue, alpha) structure is used to set the output color of the fragment, where 1.0 corresponds to full intensity."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778785827349,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is GLSL?",
+            "back": "GLSL (OpenGL Shading Language) is a programming language used to create shaders that execute on a GPU for real-time rendering."
+          },
+          {
+            "front": "What is the primary difference between a vertex shader and a fragment shader in GLSL?",
+            "back": "A vertex shader transforms input geometry (e.g., vertex positions), while a fragment shader defines the color of individual pixels on the screen."
+          },
+          {
+            "front": "What command-line argument must Windows users add to Unity to enable GLSL shader support?",
+            "back": "-force-opengl"
+          },
+          {
+            "front": "In Unity, what is the structure surrounding GLSL code within a Shader file?",
+            "back": "The GLSL code must be wrapped between 'GLSLPROGRAM' and 'ENDGLSL' keywords."
+          },
+          {
+            "front": "What is the function of the predefined variable 'gl_Position'?",
+            "back": "It is the output variable in a vertex shader used to store the transformed vertex position."
+          },
+          {
+            "front": "What is the function of the predefined variable 'gl_FragColor'?",
+            "back": "It is the variable in a fragment shader that sets the final output color of the fragment."
+          },
+          {
+            "front": "What does the transformation 'gl_ModelViewProjectionMatrix * gl_Vertex' perform?",
+            "back": "It transforms the vertex position from object space into screen/clip space."
+          },
+          {
+            "front": "What indicates an error in a shader within the Unity editor?",
+            "back": "The material using the faulty shader will appear as bright magenta, and error messages will appear in the Inspector or Console."
+          },
+          {
+            "front": "How do you apply a GLSL program to a 3D object in Unity?",
+            "back": "Create a Material, attach the Shader to the Material, and then drag the Material onto the target GameObject (or its Mesh Renderer)."
+          },
+          {
+            "front": "What is the difference between a GLSL 'shader' and a GLSL 'program'?",
+            "back": "A 'shader' refers to either a vertex or fragment shader, while a 'program' is the combination of both."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-game-and-graphics-programming_1",
+      "slides": [
+        {
+          "title": "Lesson 2: GLSL Shaders",
+          "bullets": [
+            "Introduction to shader programming with GLSL",
+            "Overview of vertex and fragment shaders"
+          ],
+          "notes": "Understanding GLSL is essential for real-time graphics rendering on GPUs, which are powerful, massively parallel processors.",
+          "page_range": "3-6",
+          "image_prompt": ""
+        },
+        {
+          "title": "Basics: Minimal Shader",
+          "bullets": [
+            "Shaders are small programs running directly on GPUs",
+            "GLSL is supported by OpenGL and Unity",
+            "Unity makes GLSL programming easier via tools",
+            "Requires -force-opengl argument in Windows Unity"
+          ],
+          "notes": "We are focusing on GLSL within the Unity game engine. Note that shaders must be written to run efficiently on the GPU.",
+          "page_range": "7-14",
+          "image_prompt": ""
+        },
+        {
+          "title": "RGB Cube and Varying Variables",
+          "bullets": [
+            "Varying variables communicate between vertex and fragment shaders",
+            "Values are interpolated across triangle surfaces",
+            "Vertex shader runs per vertex; fragment shader runs per pixel",
+            "Use #ifdef to structure shared code cleanly"
+          ],
+          "notes": "Varying variables are key to smooth gradients, as the hardware automatically interpolates values specified at the triangle corners.",
+          "page_range": "15-22",
+          "image_prompt": ""
+        },
+        {
+          "title": "Debugging Shaders",
+          "bullets": [
+            "Visualize internal data by mapping values to colors",
+            "Color components are clamped to the 0-1 range",
+            "Use normalized vectors (map -1..1 to 0..1)",
+            "Special variables like gl_FragCoord provide fragment data"
+          ],
+          "notes": "Debugging is often a visual process. Mapping hidden values into detectable color ranges is a standard, essential practice.",
+          "page_range": "23-30",
+          "image_prompt": ""
+        },
+        {
+          "title": "Shading in World Space",
+          "bullets": [
+            "Shader properties enable interactive parameter tuning",
+            "Uniforms can be set via scripts for dynamic effects",
+            "Compute view space matrices from model matrices",
+            "Use sharedMaterial for global changes, material for local"
+          ],
+          "notes": "By exposing shader properties, we allow non-programmers to iterate on visual effects without modifying the actual code.",
+          "page_range": "31-40",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 2: GLSL Shaders - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778785827248,
+      "pdfName": "GLSL Programming"
+    }
+  ],
+  "sourceHash": "dcd5fd0f5278405e"
+}

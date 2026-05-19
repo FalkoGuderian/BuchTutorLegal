@@ -1,0 +1,520 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Statistical Mechanics - Lesson 1: Statistical Mechanics of Nonequilbrium Liquids",
+    "pdfName": "Statistical Mechanics of Nonequilbrium Liquids",
+    "createdAt": 1778787462401,
+    "exportedAt": "2026-05-14T19:37:42.401Z",
+    "meta": {
+      "courseId": "course-en-gen-statistical-mechanics",
+      "lessonIndex": 0,
+      "courseTitle": "Statistical Mechanics",
+      "lessonObjective": "Selection on \"statistical mechanics\"",
+      "licensing": {
+        "effective_license": "unknown",
+        "sources": [
+          {
+            "content_id": "oapen-statistical-mechanics-of-nonequilbrium-liquids",
+            "title": "Statistical Mechanics of Nonequilbrium Liquids",
+            "source": "oapen",
+            "license": "unknown",
+            "license_url": "",
+            "url": "http://library.oapen.org/handle/20.500.12657/33616"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_3585214d66fd",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-16",
+          "chapterTitle": "Front Matter, Biographies and List of Symbols",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "17-26",
+          "chapterTitle": "Chapter 1: Introduction",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "27-32",
+          "chapterTitle": "Chapter 2: Linear Irreversible Thermodynamics",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "33-76",
+          "chapterTitle": "Chapter 3: The Microscopic Connection",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "77-92",
+          "chapterTitle": "Chapter 4: The Green Kubo Relations",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "93-116",
+          "chapterTitle": "Chapter 5: Linear Response Theory",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "117-166",
+          "chapterTitle": "Chapter 6: Computer Simulation Algorithms",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "167-208",
+          "chapterTitle": "Chapter 7: Nonlinear Response Theory",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "209-230",
+          "chapterTitle": "Chapter 8: Time Dependent Response Theory",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "231-318",
+          "chapterTitle": "Chapter 9 and 10: Steady State Fluctuations and Thermodynamics of Steady States",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778787462401,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: Introduction to Statistical Mechanics of Nonequilibrium Liquids\n\nThis chapter outlines the transition from equilibrium to nonequilibrium statistical mechanics, emphasizing the role of computer simulations and theoretical frameworks in modeling dense classical systems.\n\n#### Key Points:\n\n*   **Objective of Statistical Mechanics:** The field aims to predict macroscopic thermophysical constants—such as equations of state and transport coefficients—based on the microscopic interactions of constituent molecules.\n*   **Equilibrium vs. Nonequilibrium:**\n    *   **Equilibrium:** Regarded as a \"solved problem\" using Gibbsian ensemble theory, which provides reliable idealizations for atomic fluids.\n    *   **Nonequilibrium:** Unlike the well-understood kinetic theory of dilute gases, extending predictions to higher-density liquids is complex. Transport coefficients (e.g., shear viscosity) are often nonanalytic functions of density and force, making simple power-series expansions (like the virial series) invalid.\n*   **The Predictive Power of Simulations:**\n    *   **Kubo Relations:** Established that linear transport coefficients can be calculated from equilibrium fluctuations (e.g., the shear viscosity is the infinite time integral of an autocorrelation function).\n    *   **Unexpected Findings:** Computer simulations by Alder and Wainwright revealed that diffusion coefficients in two-dimensional systems do not exist, as autocorrelation functions decay too slowly for the integral to converge.\n*   **Role of Nonequilibrium Molecular Dynamics (NEMD):**\n    *   To study steady states, systems must be subjected to perturbing fields. Because this work generates heat, deterministic **thermostats** (such as the Gaussian thermostat) are essential to maintain steady-state conditions for analysis.\n    *   Algorithms like \"sliding brick\" (Lees-Edwards) boundary conditions allow for homogeneous simulations of shear flow.\n*   **Theoretical Frameworks:** The text develops a nonlinear response theory that does not rely on analytic expansions, utilizing **Transient Time Correlation Functions (TTCF)** and the **Kawasaki representation** to provide an exact framework for calculating transport processes far from equilibrium.\n\n***\n\n**Source Reference:**\n*   [S.17] – [S.22]",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787462401,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-gen-statistical-mechanics_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 1: Statistical Mechanics of Nonequilbrium Liquids - Presentation</span><span class=\"pm-chat-count\">8 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Statistical Mechanics of Nonequilibrium Liquids</div><ul class=\"pm-chat-slide-bullets\"><li>Bridging microscopic dynamics with macroscopic behavior.</li><li>Predicts thermophysical parameters through molecular interactions.</li><li>Explores fluid behavior away from equilibrium.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778787462402,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "The provided text, *Statistical Mechanics of Nonequilibrium Liquids* by Denis J. Evans and Gary P. Morriss, serves as a pedagogical text exploring the theoretical framework and computer simulation methods associated with nonequilibrium statistical mechanics.\n\n**Core Objectives**\nThe book establishes a symbiotic relationship between fundamental theory and the pragmatic requirements of computer simulation. It focuses primarily on atomic fluids, using shear flow as a testbed for nonlinear response theory, though the principles hold broader relevance to theoretical rheology.\n\n**Key Subject Areas**\n1. Linear Irreversible Thermodynamics: The text covers conservation equations, entropy production, Curie’s Theorem, and non-Markovian relations such as viscoelasticity (pp. 5, 11-32).\n2. Microscopic Foundation: It links classical mechanics to statistical descriptions via phase space, distribution functions, the Liouville equation, and the Irving-Kirkwood procedure to define microscopic fluxes and kinetic temperature (pp. 5, 33-75).\n3. Transport and Response Theories:\n   - Green-Kubo Relations: Discussion of Langevin equations, Mori-Zwanzig theory, and shear viscosity (pp. 5, 77-92).\n   - Linear and Nonlinear Response: Exploration of adiabatic versus isothermal linear response, the Van Kampen objection, and the Kawasaki distribution function (pp. 5-6, 93-115, 167-207).\n   - Time-Dependent Theory: Coverage of time evolution, propagators, and renormalization (pp. 6, 209-229).\n4. Simulation and Applications: Detailed methodology for computer simulation algorithms, including self-diffusion, Couette flow, thermal conductivity, and various ensembles (e.g., constant-pressure, constant-stress) (pp. 5-6, 117-163).\n5. Theoretical Extensions: The work concludes by examining steady-state fluctuations (including specific heat and differential susceptibility) and the broader thermodynamics of steady states, specifically through the lens of chaotic dynamical systems (pp. 6-7, 231-291).\n\n**Theoretical Framework**\nThe analysis relies on key mathematical operators and variables, including the Hamiltonian $$H$$, the Liouvillean $$iL$$, and phase space compression factors to describe the evolution of nonequilibrium systems. These serve as the foundation for calculating macroscopic transport coefficients like shear viscosity ($$\\eta$$) and thermal conductivity ($$\\lambda$$) (pp. 6, 13-14).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787462411,
+      "channel": "plan_pipe_3585214d66fd",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 16
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This text outlines the fundamental principles and challenges of nonequilibrium statistical mechanics, moving from classical thermodynamics to modern computer simulation techniques.\n\n**Microscopic Description and Macroscopic Theory**\nClassical mechanics provides a complete description of particles, but it is impractical for complex systems like a glass of water. Consequently, scientists rely on macroscopic frameworks—thermodynamics for equilibrium and fluid mechanics for nonequilibrium systems. Statistical mechanics bridges this gap by predicting macroscopic properties (e.g., transport coefficients) from molecular interactions (p. 1).\n\n**The Evolution of Statistical Mechanics**\n- Equilibrium statistical mechanics is well-understood, relying on Gibbsian ensemble theory (p. 1).\n- Kinetic theory of dilute gases is complete, but extending this to higher densities is difficult. It was proven that transport coefficients cannot be expressed as simple power series because they are nonanalytic functions of density (p. 1).\n- Computer simulations (starting with Alder and Wainwright) revealed that many transport coefficients diverge in two-dimensional systems, rendering standard definitions of viscosity inapplicable in those dimensions (p. 2).\n- In three dimensions, transport coefficients exist, but higher-order nonlinear terms (Burnett coefficients) are thought to diverge (p. 3).\n\n**Thermostats and Nonequilibrium Systems**\nA primary goal is developing an idealized framework for nonequilibrium systems, similar to Gibbsian ensembles at equilibrium. Because nonequilibrium systems are subject to perturbing fields that generate heat, deterministic thermostats (like the Gaussian or Nosé-Hoover thermostats) are required to maintain a steady state by removing dissipative heat (p. 3, 6, 7). These methods allow researchers to simulate systems at constant temperature, pressure, or enthalpy (p. 7).\n\n**Methodologies for Transport Coefficients**\n- The Green-Kubo relations relate linear transport coefficients to equilibrium fluctuations (p. 3, 4).\n- Nonequilibrium molecular dynamics (NEMD) calculates coefficients by simulating a system under a driving force and extrapolating to the linear regime. By using tools like the Transient Time Correlation Function (TTCF), researchers can characterize transport processes even far from equilibrium without relying on nonconvergent power series (p. 5).\n- Synthetic fields, such as the Evans-Gillan external field, are used to transform complex boundary-condition problems (like heat flow) into solvable homogeneous mechanical problems (p. 7, 8).\n\n**Theoretical Shift**\nThe adoption of thermostatted equations of motion has forced an abandonment of traditional Hamiltonian dynamics. Because these thermostats make phase space compressible, the standard Liouville equation is invalid, requiring a broader approach to nonequilibrium statistical physics (p. 7).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787462412,
+      "channel": "plan_pipe_3585214d66fd",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 17,
+        "end": 26
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section outlines the hydrodynamic derivation of conservation laws for mass, momentum, and energy in nonequilibrium liquids, focusing on how these macroscopic balance equations describe the evolution of conserved extensive variables.\n\nKey points include:\n\nThe fundamental premise of these equations is that conserved densities can only change via redistribution. Because this relaxation occurs on slow timescales, it is observable macroscopically. The Navier-Stokes equations serve as the macroscopic description of this motion, which statistical mechanics aims to justify at the microscopic level [S.27].\n\nMass Conservation\nThe mass continuity equation is derived by equating the rate of change of mass within an arbitrary volume to the flux through its surface. Applying the divergence theorem results in the continuity equation [S.27]:\n$$\\frac{\\partial \\rho}{\\partial t} = -\\nabla \\cdot (\\rho \\mathbf{u})$$\nUsing the streaming derivative, this can also be expressed as [S.28]:\n$$\\frac{\\partial \\rho}{\\partial t} + \\mathbf{u} \\cdot \\nabla \\rho = -\\rho \\nabla \\cdot \\mathbf{u}$$\n\nMomentum Conservation\nMomentum changes through convection and external pressure. The force exerted on a fluid element introduces the pressure tensor $P$, which is a second-rank tensor capturing the non-parallel relationship between force and surface area vectors. The resulting momentum conservation equation is [S.29, S.30]:\n$$\\frac{\\partial (\\rho \\mathbf{u})}{\\partial t} = -\\nabla \\cdot (\\rho \\mathbf{u}\\mathbf{u}) - \\nabla \\cdot \\mathbf{P}$$\nThis can be reformulated in terms of streaming derivatives to express the acceleration of the fluid [S.31].\n\nEnergy Conservation\nTotal energy accounts for convective kinetic energy and internal energy density $U$. The energy balance equation considers heat convection, heat diffusion via the heat flux vector $J_Q$, and the work performed by surface stresses. By constructing an energy account for an arbitrary volume, the continuity equation for specific internal energy is derived, accounting for the coupling between the internal energy, the pressure tensor, and the streaming velocity [S.31, S.32].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787462413,
+      "channel": "plan_pipe_3585214d66fd",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 27,
+        "end": 32
+      }
+    },
+    {
+      "role": "bot",
+      "content": "In the provided text, the author explores the macroscopic framework of linear irreversible thermodynamics. The key points are summarized below:\n\n### Conservation Laws and Local Equilibrium\nThe hydrodynamics equations for mass, momentum, and energy are exact expressions of conservation laws. To analyze entropy production in nonequilibrium systems, the \"local thermodynamic equilibrium\" postulate is required. This postulate assumes that equilibrium thermodynamic laws hold locally, provided the system’s inhomogeneities occur over distances significantly larger than molecular dimensions and that local equilibrium is reached rapidly compared to the system's time scales of change (p. 17).\n\n### Entropy Production\nThe entropy source strength, $\\sigma(r,t)$, represents the rate of entropy production per unit volume. By applying a local version of the Gibbs relation and equating convective and diffusive contributions, the entropy source strength is expressed in a canonical form (p. 18):\n\n$$\\sigma(r, t) = \\sum J_i X_i \\geq 0$$\n\nIn this expression, $J_i$ denotes the thermodynamic fluxes (such as heat flux and the viscous pressure tensor), and $X_i$ denotes the conjugate thermodynamic forces (such as the temperature gradient and the strain rate tensor). The identification of which variables are \"fluxes\" versus \"forces\" is a matter of convention rather than fundamental thermodynamic law (p. 19).\n\n### Linear Phenomenological Relationships\nLinear irreversible thermodynamics is based on the postulate that thermodynamic fluxes are linear functions of the forces. This is represented by phenomenological transport coefficients $L_{ij}$ (p. 20):\n\n$$J_i = \\sum L_{ij} X_j$$\n\nThis linear relation is viewed as the first term of a Taylor series expansion of the fluxes in terms of the forces, valid when forces are small. Under the assumption that the fluid is isotropic and devoid of external fields, the system must be invariant under mirror reflection. Consequently, the entropy source strength is a positive polar scalar, and the transport coefficients must reflect the underlying symmetry of an isotropic system (p. 21).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787462414,
+      "channel": "plan_pipe_3585214d66fd",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 33,
+        "end": 76
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Chapter 4, \"The Green Kubo Relations\" (p. 77–92), focuses on the fundamental link between microscopic fluctuations and macroscopic transport coefficients. The following key points summarize this section:\n\n**Langevin Dynamics and Correlation**\nThe chapter begins by introducing the Langevin equation (p. 77), which describes the motion of a particle subject to both a systematic drag force and a rapidly fluctuating random force. This framework provides the foundation for understanding how macroscopic dissipative phenomena emerge from microscopic stochastic processes.\n\n**Mori-Zwanzig Projection Operators**\nThe text utilizes the Mori-Zwanzig theory (p. 80) to derive expressions for time correlation functions. By employing projection operators, the full many-body dynamics are separated into a \"slow\" part (the hydrodynamic variable) and a \"fast\" part (the orthogonal component), providing a formal way to derive generalized Langevin equations for macroscopic variables.\n\n**Shear Viscosity**\nThe authors provide a specific derivation for shear viscosity (p. 84). They demonstrate how the fluctuations of the off-diagonal components of the stress tensor, $P_{\\alpha\\beta}$, are related to the viscosity coefficient, $\\eta$, through the integration of the autocorrelation function over time:\n$$\\eta = \\frac{V}{k_B T} \\int_0^\\infty \\langle P_{\\alpha\\beta}(t) P_{\\alpha\\beta}(0) \\rangle dt$$\n\n**Green-Kubo Relations and Transport**\nThe culminating focus of this section is the generalization of Green-Kubo relations for Navier-Stokes transport coefficients (p. 89). These relations establish that linear transport coefficients—such as thermal conductivity, shear viscosity, and bulk viscosity—can be expressed as time-integrals of equilibrium time-correlation functions of the appropriate microscopic fluxes. This reinforces the principle that the linear response of a system to a small external perturbation is fundamentally encoded in the spontaneous fluctuations of the equilibrium system.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787462415,
+      "channel": "plan_pipe_3585214d66fd",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 77,
+        "end": 92
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The following summary covers Chapter 5, Linear Response Theory (pp. 93–116).\n\nThis section formalizes how systems deviate from equilibrium when subjected to small external perturbations, bridging microscopic dynamics with macroscopic transport properties.\n\nAdiabatic Linear Response Theory\nThe authors examine how a system responds to an external field. When a driving force is applied, the system's distribution function evolves. Adiabatic theory describes the response without considering energy dissipation through thermostats, providing the foundation for analytical derivations of transport coefficients.\n\nThermostats and Equilibrium Distribution Functions\nTo model steady-state nonequilibrium systems, researchers introduce thermostats to prevent continuous heating from external work. This section discusses how the use of different thermostats—such as Gaussian or Nosé-Hoover equations of motion—affects the underlying equilibrium distribution. The authors demonstrate that while different thermostats alter the microscopic trajectories, they must lead to consistent macroscopic physical results.\n\nIsothermal Linear Response Theory\nThis part moves beyond adiabatic assumptions by incorporating isothermal constraints. It explores the derivation of linear response functions under conditions where the temperature is held constant. The focus is on ensuring that the distribution function remains well-behaved and that the resulting transport coefficients are independent of the specific thermostatting mechanism employed.\n\nEquivalence of Thermostatted Linear Responses\nThe concluding portion of this section proves that different deterministic thermostatting methods are equivalent in the linear regime. The authors show that for infinitesimal perturbations, the choice of thermostat does not alter the linear transport coefficients (such as viscosity or thermal conductivity), reinforcing the robustness of linear response theory. This confirms that the microscopic representation of fluxes—represented by variables such as $J$—correctly predicts macroscopic behavior regardless of the specific dissipation mechanism.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787462416,
+      "channel": "plan_pipe_3585214d66fd",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 93,
+        "end": 116
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section (pp. 117–166) focuses on the development and application of computer simulation algorithms used to study nonequilibrium fluids. The key points are summarized below:\n\n**Core Simulation Methodology**\nThe text introduces how computer simulations serve as a bridge between theoretical statistical mechanics and the modeling of physical systems. Algorithms are designed to simulate various transport phenomena by implementing specific equations of motion that represent nonequilibrium steady states.\n\n**Key Simulation Topics**\nThe chapter details specific computational approaches for different physical scenarios:\n1. Self-Diffusion: Techniques for measuring the movement of individual particles in a fluid (p. 124).\n2. Couette Flow and Shear Viscosity: Implementation of algorithms to model shear flow by adjusting particle dynamics to reflect viscosity (p. 128).\n3. Thermal Conductivity: Methods for simulating heat flow within a system (p. 145).\n\n**Algorithmic Frameworks**\nThe authors present several specialized ensembles and techniques to maintain stability during nonequilibrium simulations:\n- Thermostatting: Methods to regulate temperature in sheared systems (p. 142).\n- Norton Ensemble: Utilizing specific constraints to control the nonequilibrium process (p. 148).\n- Pressure and Stress Control: Algorithms for simulating constant-pressure (p. 152) and constant-stress (p. 155) environments.\n\n**Theoretical Significance**\nThese algorithms are not merely computational tools but are grounded in nonequilibrium statistical mechanics, allowing researchers to calculate transport coefficients and observe the behavior of liquids under external forces directly from microscopic particle trajectories.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787462417,
+      "channel": "plan_pipe_3585214d66fd",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 117,
+        "end": 166
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section (pages 167–208) focuses on Nonlinear Response Theory, detailing the mathematical frameworks used to describe systems driven far from equilibrium.\n\nThe chapter opens by introducing Kubo’s formulation for nonlinear response, which extends linear theory to higher-order effects. This is complemented by the Kawasaki distribution function, which provides a way to describe how probability distributions evolve in nonequilibrium steady states under external driving forces.\n\nA significant portion of the text is dedicated to the Transient Time Correlation Function (TTCF) formalism. This method allows for the calculation of nonlinear transport coefficients by observing the relaxation of systems toward a steady state after the sudden application of a perturbation. The authors discuss trajectory mappings and providing numerical validation for both the TTCF and the Kawasaki representation, illustrating how these tools bridge microscopic dynamics and macroscopic observations.\n\nThe chapter also addresses the formal theoretical challenges associated with these responses, specifically the Van Kampen objection to linear response theory. Van Kampen questioned the internal consistency of standard response theories; the authors analyze these criticisms within the context of their own mathematical framework.\n\nFinally, the discussion transitions into time-dependent response theory. Topics covered include the evolution of phase variables, the derivation of the Dyson equation, and the relationship between different propagators used to describe the trajectory of phase-space points. The authors emphasize the role of renormalization in these complex, time-dependent systems, setting the stage for understanding entropy and steady-state thermodynamics.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787462418,
+      "channel": "plan_pipe_3585214d66fd",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 167,
+        "end": 208
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided section (pp. 209-230) focuses on Time Dependent Response Theory and the mathematical framework governing the evolution of systems under time-varying conditions. Key points include:\n\n1. Time Evolution and Propagators: The section formalizes the time evolution of phase variables and explores the relationship between $p$ and $f$ propagators. It establishes how trajectory mappings and composition theorems define the state of the system over time.\n\n2. Representations and Equations: The text discusses the adaptation of Schrödinger and Heisenberg representations to statistical mechanics. A central component is the use of the Dyson equation, which provides a perturbative approach to understanding the evolution of operators within these systems.\n\n3. Time-Ordered Exponentials: The authors explain the necessity of time-ordered exponentials when dealing with time-dependent operators, ensuring that the chronological order of operations is preserved during integration.\n\n4. Renormalization: The structural analysis concludes by addressing renormalization techniques as a method to handle complex interactions within the time-dependent theory, aiming to simplify the representation of the evolution process.\n\n5. Foundational Purpose: This section serves to bridge the gap between static equilibrium behavior and the dynamic, time-dependent perturbations that characterize nonequilibrium liquids. It provides the formal machinery required to extend linear and nonlinear response theories into domains where external influences change over time.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787462419,
+      "channel": "plan_pipe_3585214d66fd",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 209,
+        "end": 230
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Based on the provided text, the final section of the book (Chapter 9 and 10) focuses on the statistical mechanics of nonequilibrium steady states and the analysis of chaotic dynamical systems.\n\n**Chapter 9: Steady State Fluctuations**\nThis chapter explores how fluctuations in steady states can provide thermodynamic information. Key topics include:\n* The calculation of specific heat and compressibility from steady-state fluctuations (p. 232, 237).\n* The definition of differential susceptibility and its relevance to transport processes (p. 239).\n* An extension into higher-order transport coefficients, specifically the inverse Burnett coefficients (p. 242).\n\n**Chapter 10: Towards a Thermodynamics of Steady States**\nThis chapter bridges the gap between microscopic dynamics and macroscopic thermodynamics by analyzing the chaotic nature of steady states:\n* Chaotic Dynamical Systems: The transition from simple microscopic equations to the study of chaotic trajectories in steady states (p. 247).\n* Characterization of Chaos: Methods for quantifying the degree of chaos inherent in nonequilibrium fluid models (p. 258).\n* Chaos in Planar Couette Flow: A specific application of chaotic analysis to a classic nonequilibrium fluid problem (p. 267).\n* Entropy and Expansion: Discussion on Green’s expansion for calculating entropy in these systems (p. 281).\n\nThis section serves to provide a rigorous statistical mechanical framework for understanding the nature of nonequilibrium steady states, moving beyond simple linear response theory to account for the complex, nonlinear, and chaotic behavior found in dense classical liquids.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787462420,
+      "channel": "plan_pipe_3585214d66fd",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 231,
+        "end": 318
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778787462501,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why, according to the text, does the study of statistical mechanics focus on microscopic interactions?",
+            "options": [
+              "To replace thermodynamics as the primary framework for macroscopic descriptions.",
+              "To predict essential thermophysical constants that macroscopic theories cannot calculate on their own.",
+              "To avoid the need for computer simulations in modeling complex fluid systems.",
+              "To solve the equations of motion for every individual molecule in a glass of water."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text states that macroscopic approaches must be supplemented with values for thermophysical constants (like transport coefficients), and statistical mechanics is tasked with predicting these parameters from the interactions of constituent molecules."
+          },
+          {
+            "question": "What is the primary significance of the Kubo relations in nonequilibrium statistical mechanics?",
+            "options": [
+              "They allow transport coefficients to be determined from equilibrium fluctuation data.",
+              "They prove that transport coefficients are analytic functions of density.",
+              "They replace the need for Navier-Stokes equations in nonequilibrium fluids.",
+              "They define the boundary conditions of a system at absolute zero."
+            ],
+            "correctIndex": 0,
+            "explanation": "Kubo (1957) showed that linear transport coefficients, which describe nonequilibrium behavior, can be calculated from the equilibrium autocorrelation functions of the corresponding fluxes."
+          },
+          {
+            "question": "What does the text suggest about the possibility of using a virial-like power series expansion for transport coefficients at high densities?",
+            "options": [
+              "It is the standard method used to solve kinetic theory for all liquid densities.",
+              "It is mathematically proven to be the most efficient way to compute viscosity.",
+              "It is impossible because transport coefficients are nonanalytic functions of density.",
+              "It is only applicable to two-dimensional systems."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text cites Cohen and Dorfman (1965, 1972) to explain that a density power series expansion for transport coefficients does not exist because those coefficients are nonanalytic functions of density."
+          },
+          {
+            "question": "How do researchers evaluate the validity of new nonequilibrium statistical mechanical theories?",
+            "options": [
+              "Solely through analytical derivations without experimental verification.",
+              "By relying on the Irving-Kirkwood procedure as the only valid simulation method.",
+              "By maintaining a symbiotic relationship with computer simulations.",
+              "By assuming all fluids move according to simple linear models."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text describes a 'symbiotic relationship' between nonequilibrium statistical mechanics and the theory/practice of computer simulation, noting that progress has been driven by both fundamental theory and the requirements of computer modeling."
+          },
+          {
+            "question": "What discovery did Alder and Wainwright (1956) make regarding equilibrium autocorrelation functions?",
+            "options": [
+              "They decay exponentially at all time scales and in all dimensions.",
+              "They do not decay, which proves that diffusion is impossible in liquids.",
+              "They decay following a power law rather than the expected exponential decay in two-dimensional systems.",
+              "They are unrelated to the transport coefficients of atomic fluids."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text notes that it was previously believed these functions should decay exponentially, but Alder and Wainwright discovered a longer-lived decay (proportional to t^(-1) in 2D), which challenged existing assumptions."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778787462502,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the stated primary purpose of statistical mechanics according to the text?",
+            "back": "To predict macroscopic thermophysical constants (like equation of state data and transport coefficients) from knowledge of the interactions between the system's constituent molecules."
+          },
+          {
+            "front": "What does the Kubo relation allow for regarding transport coefficients?",
+            "back": "It allows transport coefficients to be calculated from a knowledge of equilibrium fluctuations in the flux associated with that specific transport coefficient."
+          },
+          {
+            "front": "What did Alder and Wainwright discover about the decay of velocity autocorrelation functions in two-dimensional systems?",
+            "back": "They discovered that the function decays as t^-1, rather than the previously expected exponential decay, which implies the integral for the diffusion coefficient diverges."
+          },
+          {
+            "front": "According to the authors, how does the field of computer simulation relate to nonequilibrium statistical mechanics?",
+            "back": "There is a symbiotic relationship where progress is driven at times by the pragmatic requirements of computer simulation and at other times by fundamental theory."
+          },
+          {
+            "front": "What result did Cohen and Dorfman (1965, 1972) reach regarding density expansions of transport coefficients?",
+            "back": "They proved that a power series expansion of transport coefficients in density does not exist for higher densities, as Navier-Stokes transport coefficients are nonanalytic functions of density."
+          },
+          {
+            "front": "Define the equilibrium Green-Kubo relation for shear viscosity.",
+            "back": "The shear viscosity is given by the integral of the equilibrium autocorrelation function of the shear stress, multiplied by (V / kBT)."
+          },
+          {
+            "front": "What is the difference between equilibrium and nonequilibrium statistical mechanics in terms of maturity?",
+            "back": "Equilibrium statistical mechanics of atomic fluids is described as a 'solved problem,' whereas nonequilibrium statistical mechanics of dense systems has faced significant difficulties in extending kinetic theory to higher densities."
+          },
+          {
+            "front": "What is the Liouville equation used for in statistical mechanics?",
+            "back": "It describes the evolution of distribution functions in phase space over time."
+          },
+          {
+            "front": "Why is 'theoretical rheology' mentioned as a descriptor for the book?",
+            "back": "Because the formal theory of nonequilibrium statistical mechanics is frequently illustrated using examples of shear flow in liquids."
+          },
+          {
+            "front": "What is the Irving-Kirkwood procedure?",
+            "back": "A method used within the microscopic connection to provide an instantaneous microscopic representation of fluxes."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-gen-statistical-mechanics_0",
+      "slides": [
+        {
+          "title": "Statistical Mechanics of Nonequilibrium Liquids",
+          "bullets": [
+            "Bridging microscopic dynamics with macroscopic behavior.",
+            "Predicts thermophysical parameters through molecular interactions.",
+            "Explores fluid behavior away from equilibrium.",
+            "Uses computer simulation to test theoretic models."
+          ],
+          "notes": "This course bridges the gap between molecular interactions and macroscopic fluid phenomena. We rely on both analytical theory and modern computational methods.",
+          "page_range": "3-74",
+          "image_prompt": ""
+        },
+        {
+          "title": "1. Introduction: From Micro to Macro",
+          "bullets": [
+            "Thermodynamics describes equilibrium; fluid mechanics covers nonequilibrium.",
+            "Statistical mechanics predicts macroscopic constants from microscopic laws.",
+            "Navier-Stokes transport coefficients often diverge in two dimensions (p. 18).",
+            "Computer simulations challenge classical linear assumptions (p. 18)."
+          ],
+          "notes": "We introduce the goal of statistical mechanics: calculating macroscopic transport properties from microscopic molecular motion. We also discuss why classical assumptions sometimes fail, especially in two-dimensional systems.",
+          "page_range": "17-19",
+          "image_prompt": ""
+        },
+        {
+          "title": "2. Linear Irreversible Thermodynamics",
+          "bullets": [
+            "Derived from mass, momentum, and energy conservation (p. 27).",
+            "Hydrodynamics relies on local thermodynamic equilibrium (p. 33).",
+            "Fluxes and forces are identified via entropy production (p. 35).",
+            "Macroscopic equations require microscopic justification."
+          ],
+          "notes": "We derive the hydrodynamic conservation equations and introduce the local equilibrium postulate. This framework links spontaneous entropy production to thermodynamic fluxes and forces.",
+          "page_range": "27-32, 33-36",
+          "image_prompt": ""
+        },
+        {
+          "title": "3. The Microscopic Connection",
+          "bullets": [
+            "Classical mechanics provides the foundation for phase space.",
+            "Liouville's equation tracks the evolution of distribution functions.",
+            "Ergodicity implies the system explores its accessible energy surface.",
+            "Irving-Kirkwood procedure defines microscopic fluxes (p. 63)."
+          ],
+          "notes": "This chapter connects classical mechanics to the distribution functions used in statistical thermodynamics. We define the microscopically derived fluxes that underpin macroscopic transport laws.",
+          "page_range": "33-76",
+          "image_prompt": ""
+        },
+        {
+          "title": "4. Green-Kubo Relations",
+          "bullets": [
+            "Relates transport coefficients to equilibrium fluctuations (p. 77).",
+            "Shear viscosity expressed via shear stress autocorrelation (p. 84).",
+            "Provides a rigorous basis for Navier-Stokes coefficients (p. 89).",
+            "Connects microscopic dynamics to measurable transport."
+          ],
+          "notes": "The Green-Kubo relations are central to nonequilibrium statistical mechanics, allowing us to calculate transport coefficients from the history of equilibrium fluctuations.",
+          "page_range": "77-92",
+          "image_prompt": ""
+        },
+        {
+          "title": "5. Linear Response Theory",
+          "bullets": [
+            "Analyzes systems subjected to small external perturbations.",
+            "Explores thermostatted systems and distribution functions.",
+            "Establishes equivalence between various thermostatted models.",
+            "Linearizes the response of distribution functions to external fields."
+          ],
+          "notes": "Linear response theory allows us to predict how a macroscopic system responds to weak external fields based on internal equilibrium properties.",
+          "page_range": "93-116",
+          "image_prompt": ""
+        },
+        {
+          "title": "6. Computer Simulation Algorithms",
+          "bullets": [
+            "Enables direct testing of statistical mechanical theories (p. 117).",
+            "Simulates phenomena like diffusion, shear, and heat flow.",
+            "Algorithms implement precise thermostatting for steady-state study.",
+            "Explores various ensembles: constant-pressure, stress, and flow."
+          ],
+          "notes": "Computer simulations turn analytical theory into numerical experiments, providing a way to test the bounds of transport laws like shear viscosity and thermal conductivity.",
+          "page_range": "117-166",
+          "image_prompt": ""
+        },
+        {
+          "title": "7. Nonlinear Response Theory",
+          "bullets": [
+            "Extends response theory to far-from-equilibrium conditions.",
+            "Utilizes the Kawasaki distribution function (p. 168).",
+            "Introduces the Transient Time Correlation Function (TTCF) (p. 172).",
+            "Explores trajectory mappings in nonlinear regimes."
+          ],
+          "notes": "When systems are driven far from equilibrium, linear response fails. TTCF and nonlinear formalisms help us describe these complex, high-strain-rate behaviors.",
+          "page_range": "167-208",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 1: Statistical Mechanics of Nonequilbrium Liquids - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778787462401,
+      "pdfName": "Statistical Mechanics of Nonequilbrium Liquids"
+    }
+  ],
+  "sourceHash": "2d42b0dc0ecf15e5"
+}

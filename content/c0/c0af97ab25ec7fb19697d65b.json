@@ -1,0 +1,419 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Database Engineering: SQL, Postgres, Oracle, SQL Server - Lesson 5: Microsoft SQL Server",
+    "pdfName": "Microsoft SQL Server",
+    "createdAt": 1778787092679,
+    "exportedAt": "2026-05-14T19:31:32.679Z",
+    "meta": {
+      "courseId": "course-en-databases-engineering",
+      "lessonIndex": 4,
+      "courseTitle": "Database Engineering: SQL, Postgres, Oracle, SQL Server",
+      "lessonObjective": "The other two big engines.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-microsoft-sql-server",
+            "title": "Microsoft SQL Server",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Microsoft_SQL_Server"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_c2ef0a017f25",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-8",
+          "chapterTitle": "System Requirements and Installation",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "9-11",
+          "chapterTitle": "Instance Management and File Configuration",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "12-13",
+          "chapterTitle": "Mail Configuration and System Databases",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "14-21",
+          "chapterTitle": "Table Manipulation and SQL Functions",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "22-25",
+          "chapterTitle": "Geospatial Data Concepts and Types",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "26-28",
+          "chapterTitle": "Geospatial SQL Functions and Example Code",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "29-36",
+          "chapterTitle": "Geospatial Data/GML Standards and Models",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778787092679,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### **Lesson 5: Microsoft SQL Server Summary**\n\nThis lesson covers the fundamental architecture, installation, and management of Microsoft SQL Server, a core relational database engine.\n\n#### **1. Installation and Architecture**\n*   **Instances:** SQL Server allows for one **default instance** and multiple **named instances** per machine, which helps isolate resources and testing environments.\n*   **Editions:** Major versions include **Enterprise** (full feature set), **Standard**, **Workgroup**, **Developer** (Enterprise-equivalent for non-production use), and **Express** (free, stripped-down version).\n*   **System Requirements:** Installation necessitates a Windows-based environment (OS requirements vary by edition), appropriate memory allocation, and specific service account configurations (typically dedicated domain user accounts).\n*   **Security:** Supports **Windows Authentication** (default) and **Mixed Mode** authentication.\n\n#### **2. Storage and Configuration**\n*   **File Structure:** Databases consist of **Data files** (.mdf for primary, .ndf for secondary) and **Log files** (.ldf).\n*   **Best Practices:**\n    *   Separate transaction logs from data files on different physical drives.\n    *   Store `tempdb` on its own high-performance drive.\n    *   Utilize **RAID 10** for optimal performance and fault tolerance for logs, data, and index files [S.11].\n\n#### **3. System Databases**\nEvery SQL Server instance includes five critical system databases:\n*   **Resource:** Read-only, containing system objects (hidden from users).\n*   **master:** Stores server-wide configuration and metadata [S.13].\n*   **tempdb:** Global workspace for temporary objects and intermediate result sets [S.13].\n*   **model:** Template used to initialize all new databases.\n*   **msdb:** Stores job schedules, alerts, and integration service metadata.\n\n#### **4. Database Operations & Development**\n*   **Management:** **SQL Server Management Studio (SSMS)** is the primary GUI for administration and query execution.\n*   **Table Manipulation:** Uses standard DDL/DML, adhering to SQL-86 with added functionality like `MERGE` (since 2008). \n*   **Transact-SQL (T-SQL):** Includes powerful built-in functions for data conversion (e.g., `CAST`, `CONVERT`), string manipulation (`LEFT`, `SUBSTRING`, `REPLACE`), and robust date handling.\n*   **Geospatial Data:** SQL Server includes native support for spatial data types (e.g., `Point`, `Polygon`, `GeometryCollection`) and import capabilities for geographic information.\n\n#### **5. Connectivity**\n*   **External Integration:** SQL Server can be accessed from *nix environments using **FreeTDS** and **ODBC** drivers (e.g., `tdsodbc`) to facilitate cross-platform communication [S.8].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787092679,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-databases-engineering_4\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 5: Microsoft SQL Server - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Microsoft SQL Server Essentials</div><ul class=\"pm-chat-slide-bullets\"><li>Enterprise-grade relational database management system.</li><li>Supports diverse installations from Express to Enterprise.</li><li>Handles complex data, transactions, and spatial analysis.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778787092680,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document provides an overview of Microsoft SQL Server, focusing on system requirements, installation processes, and administrative configurations.\n\n### System Requirements and Editions\nSQL Server is available in 32-bit and 64-bit editions, with hardware requirements varying by edition (Enterprise, Standard, Workgroup, Developer, and Express). For example, memory requirements range from 192 MB for Express to 512 MB for other editions, with 1 GB recommended. A general heuristic for CPU scaling is:\n$$\\text{CPUs of an Edition} = \\text{CPUs of Previous Edition} \\times 2$$\n(This does not apply to the Enterprise edition, which supports unlimited CPUs).\n\n### Installation and Instance Management\nUsers may install a single \"default\" instance or multiple \"named\" instances. Named instances act as unique endpoints (e.g., `server/instance_name`), which help isolate workloads, enhance security, and prevent data corruption. Key installation steps include configuring network settings, selecting authentication modes (Windows or Mixed Mode), and managing hardware resources. System databases such as `master`, `tempdb`, `model`, and `msdb` are essential for server functionality and should be managed according to best practices.\n\n### Advanced Features and Connectivity\n*   **Geospatial Data:** SQL Server supports various spatial types, including Point, LineString, Polygon, and GeometryCollection, along with GML and WKT standards.\n*   **Database Objects:** The document outlines procedures for table manipulation, index creation, and the use of built-in functions for data conversion, string manipulation, and date arithmetic.\n*   **Connectivity:** Integration with Linux environments is possible via FreeTDS, unixODBC, and iODBC drivers, requiring the environment variable $SYBASE to be configured correctly to avoid connection errors.\n\n### Best Practices\nMaintenance and tuning are supported by tools like the Database Tuning Advisor and Best Practices Analyzer. High-availability features, such as database mirroring and failover clustering, are generally reserved for the Standard and Enterprise editions, while the Express edition is limited in terms of management tools and database capacity.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787092689,
+      "channel": "plan_pipe_c2ef0a017f25",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 8
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary outlines the configuration and management of Microsoft SQL Server based on the provided text.\n\n**SQL Server Instances**\nSQL Server supports multiple instances on a single machine, which allows for testing different versions or service packs and provides administrative isolation for different applications. However, multiple instances increase administrative overhead and resource consumption. A default instance is often required by specific Microsoft products.\n\n**Service Configuration and Security**\nSQL Server and SQL Server Agent should run under dedicated domain user accounts for security purposes. Running these services under built-in system accounts (like Local System or Network Service) is not recommended because they lack sufficient security isolation or network rights. Authentication modes include Windows (default) and Mixed mode; the latter is typically reserved for legacy support. Collation settings, which define how data is sorted and compared, must be established during installation.\n\n**Database Storage Structures**\nDatabases are composed of several file types:\n* Data Files: Primary files (.mdf) contain data and structure information, while secondary files (.ndf) store additional data.\n* Log Files: Transaction logs (.ldf) are mandatory for every database, and multiple log files can be created.\n* Filegroups: A logical grouping of data files that facilitates administrative tasks.\n\n**RAID Configurations and Best Practices**\nRAID systems are essential for performance and fault tolerance. \n* RAID 0 (striping) offers high performance but no fault tolerance.\n* RAID 1 (mirroring) provides redundancy.\n* RAID 5 (striping with parity) offers a balance of capacity and fault tolerance.\n* RAID 10 (striping and mirroring) is highly recommended for transaction logs, data, and index files due to its superior performance and availability.\n\nRecommended best practices include keeping data files separate from operating system files, placing transaction log files on different drives than data files, and storing the tempdb database on its own dedicated RAID-configured storage.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787092690,
+      "channel": "plan_pipe_c2ef0a017f25",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 9,
+        "end": 11
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the configuration of Database Mail and the role of SQL Server system databases.\n\n**Database Mail**\nDatabase Mail facilitates email functionality within SQL Server and does not rely on Extended MAPI. To function correctly, it requires the following prerequisites [S.12]:\n* Enabling via the Surface Area Configuration Tool, the Database Mail Configuration Wizard, or sp_configure.\n* Enabling the Service Broker in the msdb database.\n* Providing the Database Mail external executables access to an SMTP server.\n\nThe architecture consists of four components: a configuration component (accounts and profiles), a messaging component, the Database Mail executable, and a logging/auditing component [S.12].\n\n**SQL Server System Databases**\nEvery SQL Server instance automatically creates five specific system databases [S.12]:\n\n* Resource: A hidden, read-only database (SQL Server 2005+) that stores all system objects. It is updated only during system upgrades or patches [S.13].\n* master: Records server-wide metadata, logins, and configuration settings. An instance cannot start if this database is missing or corrupt [S.13].\n* tempdb: A global resource used for temporary objects, local temporary tables, and intermediate query results. It is recreated every time the SQL Server service restarts [S.13].\n* model: Acts as a template for all newly created databases. Modifications to this database are automatically applied to new databases created on the instance [S.13].\n* msdb: Stores metadata and configuration data for SQL Server features, including Service Broker, Integration Services, and Database Mail [S.13].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787092691,
+      "channel": "plan_pipe_c2ef0a017f25",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 12,
+        "end": 13
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided document (pp. S.14–S.21) covers foundational and advanced SQL Server management and data manipulation techniques. The key points are summarized below:\n\n**System Databases**\nEvery SQL Server instance includes five system databases: Resource, master, tempdb, model, and msdb. Each serves distinct roles, such as maintaining configuration metadata, managing temporary objects, and storing utility data.\n\n**Table Operations**\n*   **Creation & Manipulation**: Tables can be created via SSMS or the `CREATE TABLE` command. Data manipulation involves `INSERT`, `UPDATE`, `MERGE` (since 2008), and `DELETE` or `TRUNCATE` commands.\n*   **Maintenance**: Unique identifiers (primary keys) using the `IDENTITY` property are recommended. Tables can be cloned using `SELECT INTO` or imported from external files using `BULK INSERT`.\n*   **Searching**: Since there is no native \"search\" function for tables or values across all databases, custom scripts utilizing `sp_MSforeachdb` and system tables (like `sysobjects` and `syscolumns`) are required.\n\n**Functions and Data Handling**\n*   **Data Conversion**: The `CAST` and `CONVERT` functions are essential for managing data types, particularly when handling dates stored as strings. \n*   **String Manipulation**: Built-in functions like `LEFT`, `RIGHT`, `SUBSTRING`, `REPLACE`, and `ISNULL` allow for granular control over text fields.\n*   **Date Operations**: Beyond `GETDATE()`, the system provides `DATEDIFF` and `DATEADD` to perform complex calculations, such as determining the last day of a specific month. For instance, finding the last day of the current month can be expressed as: \n$$DATEADD(s,-1,DATEADD(mm, DATEDIFF(m,0,GETDATE())+1,0))$$\n\n**Best Practices**\n*   Always qualify objects with their owner schema.\n*   Use `WITH (NOLOCK)` for queries where strict transactional consistency is not required.\n*   Avoid using `CURSOR` operations due to performance overhead and prefer set-based operations.\n*   Avoid the `GOTO` statement.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787092692,
+      "channel": "plan_pipe_c2ef0a017f25",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 14,
+        "end": 21
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines best practices for SQL Server development and introduces the geospatial capabilities added in the 2008 release.\n\n### SQL Development Best Practices\nTo ensure performance and reliability, developers should follow these guidelines:\n* Avoid cursors and dynamic SQL (use $sp\\_executesql$ if necessary).\n* Use $INSERT SELECT$ instead of $SELECT INTO$ for temporary tables.\n* Always use ANSI join syntax and check for object existence.\n* Utilize $SCOPE\\_IDENTITY()$ rather than $@@IDENTITY$.\n* Ensure transaction integrity by checking $@@TRANCOUNT$ and handling commits/rollbacks, and validate $@@ERROR$ and $@@ROWCOUNT$ using variables.\n* Explicitly specify columns instead of using $SELECT *$, except within $WHERE EXISTS$ clauses or aggregate functions.\n* Minimize performance issues by avoiding table-valued User Defined Functions and cross-database dependencies (p. 22).\n\n### Geospatial Data Overview\nSQL Server supports two spatial data types:\n* $GEOMETRY$: Stores data on planar surfaces.\n* $GEOGRAPHY$: Stores data using an ellipsoidal model (p. 22).\n\nThere are seven instantiable spatial data types: Point, MultiPoint, LineString, MultiLineString, Polygon, MultiPolygon, and GeometryCollection (p. 23).\n\n### Data Import and Manipulation\nWhile SQL Server does not support direct shapefile imports, data can be imported from Well-Known Text (WKT), Well-Known Binary (WKB), and Geography Markup Language (GML) formats (p. 24). Import functions generally follow the format $STxxxFromyyy$. For example, $STGeomFromText$ is used to convert WKT data into spatial objects. Note that $GeomFromGml$ does not use the $ST$ prefix (p. 25).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787092693,
+      "channel": "plan_pipe_c2ef0a017f25",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 22,
+        "end": 25
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section of the text provides an overview of spatial data management and database implementation within Microsoft SQL Server. Below are the key points:\n\n**Spatial Features and Methods**\nThe documentation identifies various spatial methods used for processing and analyzing geometric data, including spatial predicates like $$STTouches$$, $$STContains$$, and $$STWithin$$, as well as constructors and processing functions such as $$STGeomFromText$$, $$STIntersection$$, and $$STUnion$$ ([S.26]).\n\n**Database Implementation**\nAn example database named \"Katmai\" is provided to demonstrate the practical application of spatial data in SQL Server. The provided script covers:\n* Database creation and configuration (e.g., compatibility levels and recovery settings) ([S.27], [S.28]).\n* The definition of a table named `ParkBoundaries`, which includes a geometry data type column named `geom` to store spatial information ([S.28]).\n* Sample insert statements that utilize $$STPolyFromText$$ to populate the table with polygon coordinates for defining geographic boundaries ([S.28]).\n\n**Geographic Markup Language (GML)**\nThe text establishes GML as an XML-based grammar defined by the Open Geospatial Consortium (OGC). GML functions as both a modeling language and an open interchange format for geographic features, supporting a wide range of data including discrete vector objects, sensor data, and coverages ([S.28]).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787092694,
+      "channel": "plan_pipe_c2ef0a017f25",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 26,
+        "end": 28
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The Geography Markup Language (GML) is an XML-based data standard for GeoWeb infrastructure designed to facilitate access to geographic information across the Internet (p. 29). It was developed by the OGC and aligns with international standards, such as ISO 19136 (p. 29).\n\n### Core Structure and Evolution\nGML’s architecture has evolved from its origins in the Resource Description Framework (RDF) to an XML-schema-based structure that improves connectivity between existing geographic databases while retaining RDF-like features such as remote property references (p. 29). The standard provides a library of primitives, including geometry, coordinate reference systems, time, dynamic features, coverage, and styling rules (p. 29).\n\n### Profiles and Application Schemas\nTo simplify adoption, GML implements profiles, which are logical, restricted subsets of the full GML specification (p. 29). \n*   Profiles are distinct from application schemas, as they exist within GML namespaces to constrain the standard, whereas application schemas define domain-specific vocabularies (p. 29).\n*   Examples of profiles include the Point Profile, the Simple Features Profile, and profiles for RSS or JPEG 2000 (p. 29).\n\n### GML Simple Features Profile\nThis profile serves as an accessible entry point for vector feature support (p. 30). Key features include:\n*   An optimized geometry model using 0d, 1d, and 2d linear interpolation objects (p. 30).\n*   A restricted, single-level feature model (p. 30).\n*   Non-geometric properties limited to XML Schema simple types (p. 30).\n*   Retention of remote property value references ($xlink:href$) (p. 30).\n*   Exclusion of complex elements like topology, coverages, and dynamic features (p. 30).\n\n### Tools\nThe GML specification includes a \"subset tool,\" consisting of XSLT scripts, which allows developers to create custom profiles by selecting specific components (p. 29, 30). Resulting profiles can be manually extended or further refined through schema restrictions, provided they remain valid GML application schemas (p. 30).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787092695,
+      "channel": "plan_pipe_c2ef0a017f25",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 29,
+        "end": 36
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778787092779,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why might a database administrator choose to install multiple instances of MS SQL Server on a single machine rather than just one?",
+            "options": [
+              "To increase the maximum memory limit beyond what the OS supports",
+              "To test different service packs, versions, or provide isolated environments for different applications",
+              "To automatically improve query performance for all databases on the machine",
+              "To bypass the requirement of using Windows Authentication"
+            ],
+            "correctIndex": 1,
+            "explanation": "Multiple instances are beneficial for isolating environments, such as testing different versions of SQL Server or service packs, and ensuring that different applications have their own dedicated database instances."
+          },
+          {
+            "question": "Based on the provided best practices for service accounts, why is it recommended to use dedicated domain user accounts for SQL Server services instead of local system or network service accounts?",
+            "options": [
+              "To simplify the installation process by skipping password entry",
+              "To ensure that both the SQL Server and the SQL Server Agent always have full administrative rights",
+              "To follow the principle of least privilege by avoiding unnecessary permissions that built-in accounts carry",
+              "To enable automatic updates of the database engine via the internet"
+            ],
+            "correctIndex": 2,
+            "explanation": "Using dedicated domain user accounts allows administrators to control permissions granularly, ensuring the service has only the access it needs, unlike local system accounts which may have excessive privileges."
+          },
+          {
+            "question": "In the context of SQL Server file management, what is the primary purpose of filegroups?",
+            "options": [
+              "To determine which collation settings are applied to the data",
+              "To increase the speed of the disk hardware through RAID emulation",
+              "To provide a logical structure for grouping data files to simplify management",
+              "To automatically convert .ldf files into .mdf files for optimal storage"
+            ],
+            "correctIndex": 2,
+            "explanation": "Filegroups are described as a logical structure for data files that allows for easier administration and management of large databases."
+          },
+          {
+            "question": "If you are setting up a specialized environment that requires hosting different customer databases with full administrative separation, what is a key architectural feature used to achieve this?",
+            "options": [
+              "Creating multiple named instances",
+              "Using only the Express edition",
+              "Configuring the primary data file in the root directory",
+              "Disabling the use of log files"
+            ],
+            "correctIndex": 0,
+            "explanation": "Named instances provide distinct environments under the same server name, allowing different customers or applications to have their own isolated system and user databases."
+          },
+          {
+            "question": "Regarding SQL Server editions, what is a primary limitation of the Express Edition compared to the Enterprise Edition?",
+            "options": [
+              "Express cannot run on 64-bit operating systems",
+              "Express lacks many management features like the Database Tuning Advisor and Job Scheduling",
+              "Express requires a proprietary license key for evaluation",
+              "Express is the only edition that does not support the .ldf file format"
+            ],
+            "correctIndex": 1,
+            "explanation": "The text notes that the Express edition is limited in many areas, explicitly stating it lacks features like SQL Server Agent Job Scheduling, the Database Tuning Advisor, and Full Text Search."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778787092780,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary administration interface for Microsoft SQL Server?",
+            "back": "SQL Server Management Studio (SSMS)."
+          },
+          {
+            "front": "What are the two main types of instances in SQL Server?",
+            "back": "Default instance and named instances."
+          },
+          {
+            "front": "How many default instances can you install on a single machine?",
+            "back": "Only one."
+          },
+          {
+            "front": "What is the function of the master database in SQL Server?",
+            "back": "It is a system database that records all the system-level information for a SQL Server system."
+          },
+          {
+            "front": "In SQL Server 2005, which edition is designed specifically as a free replacement for Microsoft Access?",
+            "back": "SQL Server Express Edition."
+          },
+          {
+            "front": "What extension is used for primary SQL Server data files?",
+            "back": ".mdf"
+          },
+          {
+            "front": "What extension is used for SQL Server log files?",
+            "back": ".ldf"
+          },
+          {
+            "front": "What is the purpose of TDS (Tabular Data Stream) protocol?",
+            "back": "It describes how to communicate with MS-SQL and Sybase databases."
+          },
+          {
+            "front": "What are the two types of authentication modes available in SQL Server?",
+            "back": "Windows Authentication mode and Mixed mode (Windows and SQL Server authentication)."
+          },
+          {
+            "front": "Why is it recommended to use dedicated domain user accounts for SQL Server and SQL Server Agent services?",
+            "back": "To follow the principle of least privilege and avoid assigning excessive administrative permissions to the service accounts."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-databases-engineering_4",
+      "slides": [
+        {
+          "title": "Microsoft SQL Server Essentials",
+          "bullets": [
+            "Enterprise-grade relational database management system.",
+            "Supports diverse installations from Express to Enterprise.",
+            "Handles complex data, transactions, and spatial analysis."
+          ],
+          "notes": "Microsoft SQL Server is one of the premier database engines, designed to scale from small developer needs to massive enterprise workloads.",
+          "page_range": "1-8",
+          "image_prompt": ""
+        },
+        {
+          "title": "Instances and Configuration",
+          "bullets": [
+            "Manage default and multiple named instances.",
+            "Configure authentication (Windows vs. Mixed mode).",
+            "Organize data into files, logs, and filegroups.",
+            "Utilize RAID levels to optimize storage performance."
+          ],
+          "notes": "Proper instance management and file configuration are critical for performance, security, and administrative control over your database.",
+          "page_range": "9-11",
+          "image_prompt": ""
+        },
+        {
+          "title": "System Databases",
+          "bullets": [
+            "Master (server configuration), Tempdb (temporary objects).",
+            "Model (template for new databases), Msdb (jobs/alerts).",
+            "Resource (read-only system object storage)."
+          ],
+          "notes": "Every instance runs on these five essential system databases, which automate the management of server-wide metadata and processing tasks.",
+          "page_range": "12-14",
+          "image_prompt": ""
+        },
+        {
+          "title": "Table Manipulation",
+          "bullets": [
+            "Create tables and apply primary keys.",
+            "Efficiently import data using BULK INSERT.",
+            "Use DELETE or TRUNCATE to manage records.",
+            "Manage indexes to improve query search speed."
+          ],
+          "notes": "SQL Server follows standard DDL and DML patterns, offering robust tools to structure, load, and manage data efficiently.",
+          "page_range": "14-17",
+          "image_prompt": ""
+        },
+        {
+          "title": "Geospatial Data Support",
+          "bullets": [
+            "Geometry (planar) and Geography (ellipsoidal) types.",
+            "Spatial primitives: Points, LineStrings, and Polygons.",
+            "Built-in functions for spatial intersection and analysis.",
+            "Integration with WKT and GML formats."
+          ],
+          "notes": "SQL Server includes advanced spatial capabilities, allowing you to store, index, and query complex geographic and geometric information spatially.",
+          "page_range": "22-26",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 5: Microsoft SQL Server - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778787092679,
+      "pdfName": "Microsoft SQL Server"
+    }
+  ],
+  "sourceHash": "72e7d12c1de2da8e"
+}

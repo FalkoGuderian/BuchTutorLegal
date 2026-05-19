@@ -1,0 +1,356 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Applied Cryptography and Disk Encryption - Lesson 3 — Goldbug — encrypted messaging",
+    "pdfName": "Goldbug",
+    "createdAt": 1778572716903,
+    "exportedAt": "2026-05-12T07:58:36.903Z",
+    "meta": {
+      "courseId": "course-en-cryptography-applied",
+      "lessonIndex": 2,
+      "courseTitle": "Applied Cryptography and Disk Encryption",
+      "lessonObjective": "End-to-end secure messenger.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-goldbug",
+            "title": "Goldbug",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Goldbug"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_8965478d0d12",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Introduction to Goldbug",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-3",
+          "chapterTitle": "The Necessity and Importance of Encryption",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-5",
+          "chapterTitle": "Cryptographic Algorithms and Alternatives to RSA",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "6-6",
+          "chapterTitle": "Hybrid Encryption System and Authentication",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778572716903,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Lesson 3: GoldBug Secure Messaging Summary\n\nGoldBug is an open-source, multi-platform communication tool designed to provide end-to-end encrypted email, instant messaging, and file transfers. Its primary objective is to maintain privacy in an era of surveillance, potential censorship, and cyber-threats [S.1, S.2, S.3].\n\n#### **Core Features**\n*   **Decentralized Communication:** By bypassing standard DNS mechanisms, GoldBug secures messages against third-party eavesdropping and remains functional even if portions of the public internet are rendered inoperable [S.1, S.2].\n*   **Hybrid Encryption:** The software utilizes a combination of asymmetric (public-key) and symmetric encryption to achieve both high security and operational efficiency [S.1, S.6].\n*   **Data Protection:** Beyond communication, GoldBug offers \"Rosetta CryptoPad\" and \"File Encryptor\" for local data protection, ensuring files remain secure even if a device is physically stolen or hacked [S.2].\n*   **No Central Authority:** GoldBug does not use a Public Key Infrastructure (PKI), preventing reliance on third-party entities for key authentication [S.6].\n\n#### **Cryptographic Strengths**\n*   **Future-Proof Algorithms:** In addition to standard RSA, GoldBug is a unique open-source implementer of **NTRU** and **McEliece** [S.1]. These algorithms are favored for their resistance to potential future threats, specifically those posed by quantum computation [S.1, S.4, S.5].\n*   **User-Defined Security:** Users can customize their \"Crypto-DNA\"—selecting specific key lengths, hash types, and encryption algorithms based on their security needs [S.4].\n\n#### **Deployment & Compatibility**\n*   **Technical Architecture:** Developed in C++ using the Qt framework, it is compatible with most major operating systems (Linux, Windows, macOS, FreeBSD) and ARM-based devices like the Raspberry Pi [S.2].\n*   **Mutual Synchrony:** For end-to-end security to function, both the sender and recipient must have GoldBug installed and configured with compatible cryptographic settings, as protection is tied to both endpoints of the communication link [S.3].\n\n#### **Security Philosophy**\nGoldBug views encryption as a fundamental safety measure, drawing an analogy to automotive safety features like seatbelts. It operates on the principle that because data packets pass through multiple uncontrollable nodes on the internet, encrypting information *before* transmission is essential for protecting against censorship and the erosion of free thought [S.2, S.3].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572716903,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-cryptography-applied_2\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 3 — Goldbug — encrypted messaging - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Goldbug: Secure Messaging</div><ul class=\"pm-chat-slide-bullets\"><li>End-to-end encrypted email and instant messenger.</li><li>Protects privacy against unauthorized third-party eavesdropping.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778572716904,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "GoldBug is an open-source, secure communication tool designed to provide end-to-end encrypted email, real-time chat, and file transfers. By utilizing hybrid encryption with strong, unbroken cryptographic libraries like libgcrypt and OpenSSL, it ensures that data remains private and protected from eavesdropping or interception [S.1, S.2].\n\nKey features and security benefits include:\n\nProtection against interception: GoldBug encrypts all data packets before they are sent, rendering transmissions unreadable to third parties, including governments, malicious actors, or hackers [S.1, S.2].\n\nResilience and Privacy: The software avoids standard Internet address resolution mechanisms (DNS), allowing communications to persist even if parts of the Internet become inoperable. It also supports decentralized p2p search and local file encryption via the \"Rosetta CryptoPad\" [S.1, S.2].\n\nAdvanced Cryptography: Beyond standard RSA, it is the only open-source project to implement NTRU and McEliece algorithms, which are designed to remain secure against advanced threats, including quantum computation [S.1].\n\nCross-Platform Infrastructure: Built using C++ and the Qt framework, the software is available on various platforms including FreeBSD, Linux, OS X, and Windows. It is designed to be accessible to beginners while providing robust security through its hybrid encryption architecture [S.2].\n\nWhy encryption is necessary:\nIndividuals must prioritize encryption because standard Internet traffic inherently passes through intermediate nodes where it remains vulnerable. Even those who believe they have \"nothing to hide\" are targets for criminals seeking financial information or malicious entities interested in personal and professional communications [S.2].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572716913,
+      "channel": "plan_pipe_8965478d0d12",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document discusses the necessity of cryptography to protect individual privacy, democratic processes, and freedom of thought. \n\nKey points include:\n\n1. The Risks of Unencrypted Communication: Without encryption, personal communications are vulnerable to eavesdropping, exploitation by malicious actors, and potential censorship. Users face risks ranging from identity theft to the misuse of their accounts for illegal activities.\n\n2. Cryptography as a Human Right: The author argues that proper encryption is essential to maintaining privacy as defined in international human rights charters. It serves as a modern safety mechanism, comparable to seat belts in automobiles; just as cars require safety features, digital communications require cryptographic protection.\n\n3. The Requirement for Synchronized Use: A critical limitation of tools like GoldBug is that both parties in a communication link must use compatible software for the encryption to function. Consequently, users are encouraged to advocate for the adoption of secure software among their contacts.\n\n4. Accessibility of GoldBug: GoldBug is presented as free, open-source software designed to be an accessible, secure email client and instant messenger. \n\n5. Inspiration for the Name: The name \"GoldBug\" is derived from the Edgar Allan Poe short story of the same name, which features a central plot point involving the successful decryption of a secret message to uncover treasure.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572716914,
+      "channel": "plan_pipe_8965478d0d12",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The GoldBug project, inspired by Edgar Allan Poe's 1843 short story \"The Gold-Bug,\" emphasizes the necessity of robust encryption for internet communication [S.4]. Recognizing that traditional encryption methods may eventually fail due to advances in mathematical analysis or quantum computing, GoldBug provides users with a variety of cryptographic alternatives [S.4, S.5].\n\n**Key Cryptographic Methods Offered**\n\nGoldBug supports several asymmetric encryption algorithms to ensure long-term security [S.4]:\n\n1. RSA: A traditional method based on the difficulty of integer factorization. Due to recent security concerns, the text advises using only very long keys [S.5]. NIST has suggested RSA is no longer secure for the future [S.4].\n2. McEliece: Developed in 1978, this is the first scheme to use randomization. It is resistant to quantum computing attacks, such as those using Shor's algorithm, because it is based on the NP-hard problem of inverting general linear codes. While encryption and decryption are fast, its primary drawback is a very large key size [S.5].\n3. NTRU: Developed in 1996, this method relies on lattice problems believed to be non-reversible. It is currently not known to be vulnerable to quantum attacks, though it has been less extensively studied than RSA [S.5].\n4. ElGamal: Developed in 1985 and based on the Diffie-Hellman key exchange, this system operates within a cyclic group of finite order. It is noted for not being subject to patent licensing [S.5].\n\n**Customization and Digital Signatures**\n\nGoldBug allows users to define their own \"Crypto-DNA\"—a custom set of cryptographic parameters including key length, iteration counts, salt-lengths, and hash types [S.4]. Additionally, the software supports multiple digital signature algorithms (DSA, ECDSA, EdDSA, ElGamal, and RSA) to maintain security in the event that specific methods are compromised [S.4]. \n\n**Note on Contradictions**\n\nThe provided documentation contains an internal contradiction regarding ElGamal, stating in one section that the ElGamal signature scheme is included as an option while later noting it is not implemented [S.4, S.5].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572716915,
+      "channel": "plan_pipe_8965478d0d12",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Executive Summary: GoldBug Hybrid Encryption System\n\nGoldBug utilizes a hybrid cryptographic approach to balance the security advantages of asymmetric encryption with the performance speed of symmetric encryption. Below are the key points regarding its implementation:\n\n**Cryptographic Architecture**\nThe system employs both asymmetric and symmetric ciphers. It generates per-message authentication and encryption keys for data encapsulation, which are then protected by the recipient's asymmetric public key. Digital signatures are optionally used to ensure data integrity and authenticity.\n\n**Key Management and Libraries**\nGoldBug leverages the `libgcrypt` and `libntru` libraries to generate public and private key pairs. During initialization, the system can generate up to 12 key pairs for different correspondents. Because these keys are stored locally, the system warns that security depends heavily on protecting the computer from malware, as unused keys could be compromised if the host is infiltrated.\n\n**Infrastructure and Key Exchange**\n*   **Absence of PKI:** GoldBug does not utilize a Public Key Infrastructure (PKI), avoiding reliance on third-party certificate authorities. Users must verify and exchange keys through alternative methods provided by the software.\n*   **Session Keys:** The system supports the secure distribution of one-time session keys, either protected by the public-key system or via previously established private keys.\n*   **Interoperability:** Communication between nodes utilizing different key types remains possible, provided both nodes share the same underlying `libgcrypt` and `libntru` libraries.\n\n**Security Considerations**\nThe implementation ensures that public keys meet specific criteria (e.g., proper identifiers), and private key correctness is verified via the `gcry_pk_testkey()` function. GoldBug prioritizes autonomy by avoiding central authentication mechanisms, reflecting a design choice to bypass institutional control over cryptographic communications.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572716916,
+      "channel": "plan_pipe_8965478d0d12",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778572717003,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why does GoldBug incorporate multiple encryption algorithms such as NTRU and McEliece alongside RSA?",
+            "options": [
+              "To allow the user to increase the speed of file transfers indefinitely.",
+              "To ensure continued security if one algorithm becomes vulnerable due to future technological advances like quantum computing.",
+              "To simplify the user interface by removing the need for key management.",
+              "Because these algorithms are required to comply with a central Public Key Infrastructure (PKI)."
+            ],
+            "correctIndex": 1,
+            "explanation": "GoldBug includes multiple algorithms as a form of 'cryptographic common sense'; if one method becomes insecure due to advances like quantum computing, others are likely to remain secure."
+          },
+          {
+            "question": "How does GoldBug achieve both efficiency and strong security in its communication?",
+            "options": [
+              "By using only symmetric encryption for all end-to-end transmissions.",
+              "By relying on a centralized server to manage all encryption session keys.",
+              "By using a hybrid encryption system that combines the security of asymmetric keys with the speed of symmetric keys.",
+              "By discarding the use of public keys entirely to prevent eavesdropping."
+            ],
+            "correctIndex": 2,
+            "explanation": "GoldBug uses a hybrid system that uses faster symmetric encryption for data encapsulation while using asymmetric public-key encryption to securely exchange those keys."
+          },
+          {
+            "question": "What is the primary operational requirement for GoldBug to protect a user's privacy?",
+            "options": [
+              "The user must have a paid subscription to an external security service.",
+              "The message recipient must also be using GoldBug and have compatible settings.",
+              "The user must connect to a central, high-speed GoldBug relay server.",
+              "The user must avoid using the internet entirely during communication."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text states that GoldBug depends on both ends of the communication link operating in synchrony. If the other user is not using GoldBug, the encryption cannot be verified and deployed."
+          },
+          {
+            "question": "In the context of GoldBug, what is the role of avoiding standard DNS resolution?",
+            "options": [
+              "It allows for faster download speeds of the software installation files.",
+              "It makes the application compatible with ARM-based CPUs and Raspberry Pi.",
+              "It maintains email and chat functionality even if standard internet addressing mechanisms are under attack.",
+              "It helps the software automatically generate private key pairs."
+            ],
+            "correctIndex": 2,
+            "explanation": "Avoiding standard DNS helps users continue their communications even when an attack renders standard internet resolution mechanisms inoperable."
+          },
+          {
+            "question": "What distinguishes GoldBug's approach to key management compared to typical commercial secure messaging systems?",
+            "options": [
+              "GoldBug does not use a Public Key Infrastructure (PKI), meaning it does not rely on third parties for key authentication.",
+              "GoldBug forces all users to obtain a digital certificate from a central government bank.",
+              "GoldBug stores all private keys in a public, central database for easier recovery.",
+              "GoldBug exclusively uses pre-shared keys generated by the hardware manufacturer."
+            ],
+            "correctIndex": 0,
+            "explanation": "GoldBug explicitly does not support a PKI, choosing instead to handle key exchange and verification without relying on a central authority."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778572717004,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary function of GoldBug?",
+            "back": "GoldBug is an open-source, end-to-end secure email client and instant messaging application that uses intensive encryption for all data packets."
+          },
+          {
+            "front": "What does GoldBug mean by 'hybrid encryption'?",
+            "back": "It uses both asymmetric encryption (for secure key exchange/practicality) and symmetric encryption (for faster speed in encrypting the actual message content)."
+          },
+          {
+            "front": "Which cryptographic libraries does GoldBug rely on?",
+            "back": "It mainly uses libgcrypt (part of GnuPG) and the OpenSSL library, as well as libntru."
+          },
+          {
+            "front": "Why does GoldBug provide algorithms like McEliece and NTRU instead of just relying on RSA?",
+            "back": "RSA is potentially vulnerable to future quantum computing attacks; McEliece and NTRU are considered more secure in a post-quantum cryptographic environment."
+          },
+          {
+            "front": "How does GoldBug avoid reliance on DNS?",
+            "back": "It includes methods to bypass standard Internet address resolution mechanisms, allowing communications to continue even if standard DNS is interfered with or under attack."
+          },
+          {
+            "front": "What is the significance of the name 'GoldBug'?",
+            "back": "It is named after the Edgar Allan Poe short story 'The Gold-Bug' (1843), which integrated cryptography as a central element of its narrative."
+          },
+          {
+            "front": "Does GoldBug use a central server or Public Key Infrastructure (PKI)?",
+            "back": "No, GoldBug is decentralized and does not use a PKI, meaning it does not rely on third parties for key authentication."
+          },
+          {
+            "front": "What is the purpose of 'Rosetta CryptoPad' and 'File Encryptor' in GoldBug?",
+            "back": "They provide local file encryption to protect stored files on a computer, even if the device is physicaly stolen or hacked."
+          },
+          {
+            "front": "What is the limitation of using GoldBug to secure communications?",
+            "back": "GoldBug requires both ends of the communication link to be using the software; it cannot provide privacy if the recipient is not using compatible GoldBug encryption."
+          },
+          {
+            "front": "What does the text suggest about the security of McEliece compared to RSA?",
+            "back": "McEliece has faster encryption/decryption speeds than RSA, but its keys are significantly larger."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-cryptography-applied_2",
+      "slides": [
+        {
+          "title": "Goldbug: Secure Messaging",
+          "bullets": [
+            "End-to-end encrypted email and instant messenger.",
+            "Protects privacy against unauthorized third-party eavesdropping."
+          ],
+          "notes": "Goldbug is a comprehensive secure communication tool designed to ensure your digital conversations remain private and encrypted from end to end.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Core Functionalities",
+          "bullets": [
+            "Offers secure, decentralized email and IRC-style chat.",
+            "Provides secure file transfers and peer-to-peer searching.",
+            "Includes 'Rosetta CryptoPad' for local file encryption.",
+            "Bypasses standard DNS to maintain connectivity during attacks."
+          ],
+          "notes": "Beyond basic messaging, Goldbug integrates various tools to secure your data storage and maintain communication resilience even when the internet is under duress.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        },
+        {
+          "title": "The Necessity of Encryption",
+          "bullets": [
+            "Internet data is vulnerable in transit to third parties.",
+            "Unencrypted communication risks censorship and exploitation.",
+            "Encryption acts like a seatbelt for digital safety.",
+            "Privacy is essential for independent thought and democracy."
+          ],
+          "notes": "We must treat unencrypted communication like driving without a seatbelt. Encryption is a fundamental tool for preserving human rights and free discourse.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Cryptographic Alternatives",
+          "bullets": [
+            "Named after Edgar Allan Poe's famous cryptography story.",
+            "Beyond RSA: Includes ElGamal, NTRU, and McEliece.",
+            "Quantum-resistant algorithms prepare for future threats.",
+            "Users can define custom security 'Crypto-DNA'."
+          ],
+          "notes": "Goldbug provides a 'common sense' approach by offering multiple cypher options, helping protect users against potential future leaps in computing power.",
+          "page_range": "4-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Hybrid Encryption System",
+          "bullets": [
+            "Combines asymmetric (secure) and symmetric (fast) encryption.",
+            "Generates unique per-message keys for security and speed.",
+            "Authenticates messages, preventing tampering in transit.",
+            "Avoids PKI, relying on direct user key verification."
+          ],
+          "notes": "By using a hybrid system, Goldbug balances the high security of asymmetric keys with the efficiency of symmetric keys for a robust communication experience.",
+          "page_range": "6",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 3 — Goldbug — encrypted messaging - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778572716903,
+      "pdfName": "Goldbug"
+    }
+  ],
+  "sourceHash": "cbd2378e5d065134"
+}

@@ -1,0 +1,438 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Algorithms Applications - Lesson 4 — Search Algorithms and Applications",
+    "pdfName": "Search Algorithms and Applications",
+    "createdAt": 1778577345883,
+    "exportedAt": "2026-05-12T09:15:45.883Z",
+    "meta": {
+      "courseId": "course-en-gen-algorithms-applications",
+      "lessonIndex": 3,
+      "courseTitle": "Algorithms Applications",
+      "lessonObjective": "Selection on \"algorithms applications\"",
+      "licensing": {
+        "effective_license": "unknown",
+        "sources": [
+          {
+            "content_id": "doab-search-algorithms-and-applications",
+            "title": "Search Algorithms and Applications",
+            "source": "doab",
+            "license": "unknown",
+            "license_url": "",
+            "url": "https://directory.doabooks.org/handle/20.500.12854/64979"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_c7049ec757e9",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-8",
+          "chapterTitle": "Title Page, Front Matter, and Editor Information",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "9-12",
+          "chapterTitle": "Table of Contents",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "13-14",
+          "chapterTitle": "Preface",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "15-78",
+          "chapterTitle": "Part 1: Population Based and Quantum Search Algorithms",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "115-258",
+          "chapterTitle": "Part 2: Search Algorithms for Image and Video Processing",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "259-454",
+          "chapterTitle": "Part 3: Search Algorithms for Engineering Applications",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "455-480",
+          "chapterTitle": "Vertex Search Algorithm and Modeling with Agents",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "481-510",
+          "chapterTitle": "Extremal Distribution Sorting Algorithm",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778577345883,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "This summary covers the introduction to **Seeker Optimization Algorithm (SOA)**, a population-based heuristic search method detailed in Chapter 1 of the provided text.\n\n### **Overview of Seeker Optimization Algorithm (SOA)**\nSOA is a metaheuristic search algorithm designed for real-parameter numerical optimization. It simulates human social and searching behaviors within a population of \"seekers\" (agents), rather than relying on derivative-based operations.\n\n### **Key Human Behaviors Modeled in SOA**\n*   **Uncertainty Reasoning:** Uses fuzzy logic to manage the relationship between objective function values and search step lengths. It dictates that smaller function values (closer to an extremum) warrant shorter search steps.\n*   **Egotistic Behavior:** Individuals engage in cognitive learning, moving toward their own historically best recorded position.\n*   **Altruistic Behavior:** Agents communicate and cooperate within subpopulations, moving toward either the local neighborhood's historical best or current best position to facilitate self-organized aggregation.\n*   **Pro-activeness Behavior:** Agents exhibit goal-directed behavior by using past performance to predict and influence future search directions.\n\n### **Implementation Mechanics**\n*   **Search Population:** The algorithm operates on a population of $D$-dimensional vectors. To maintain diversity and prevent premature convergence, the population is divided into subpopulations, with an inter-subpopulation learning strategy using a binomial crossover operator.\n*   **Search Direction:** A seeker's direction is determined by a compromise among four empirical directions (egotistic, two altruistic, and pro-active), selected via a proportional probability rule.\n*   **Step Length:** Determined through a fuzzy system:\n    *   **Fuzzification:** Maps fitness values to sequence numbers using a linear membership function.\n    *   **Defuzzification:** Uses a Gaussian membership function to calculate variable step lengths, which scale down over time using a parameter ($\\omega$) to gradually refine search precision.\n\n**Reference:** [S.17] – [S.22]",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577345883,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-gen-algorithms-applications_3\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 4 — Search Algorithms and Applications - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Search Algorithms and Applications</div><ul class=\"pm-chat-slide-bullets\"><li>Explores search strategies for diverse complex challenges.</li><li>Introduces theoretical frameworks and practical case studies.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778577345884,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as an introductory overview and bibliographic record for the academic book titled *Search Algorithms and Applications*, edited by Nashat Mansour [S.1, S.3].\n\n**Key Points:**\n\n*   **Publication Details:** Edited by Nashat Mansour and published by IntechOpen in 2011 (eBook 2019), the work is a compilation of contributions from numerous international researchers in the field of computer science [S.3, S.4].\n*   **Editor Background:** Nashat Mansour is a Professor of Computer Science at the Lebanese American University. His academic expertise includes metaheuristics, software testing, parallel computing, and data mining, with degrees from the University of New South Wales and Syracuse University [S.7].\n*   **Scope and Content:** The book focuses on various search algorithms and their practical applications. It includes a wide range of contributors—many of whom are affiliated with top-tier universities—covering topics in engineering and computational science [S.4, S.7].\n*   **Copyright and Licensing:** The book as a whole is protected by copyright. However, individual chapters are distributed under the Creative Commons Attribution 3.0 Unported License, allowing for distribution and reproduction provided that the original authors and the source are properly acknowledged [S.4].\n*   **Publisher Profile:** IntechOpen is positioned as a leading Open Access publisher, noting a significant volume of downloads (120M+) and a vast network of international contributors [S.5].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577345893,
+      "channel": "plan_pipe_c7049ec757e9",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 8
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines a collection of research works focused on advanced search algorithms and their diverse practical implementations. The content is organized into three primary thematic parts:\n\n**Part 1: Population-Based and Quantum Search Algorithms**\nThis section examines computational heuristics and quantum mechanical approaches to searching. Key topics include:\n* Implementations of Particle Swarm Optimization (PSO) utilizing GPU acceleration.\n* Heuristic methods applied to complex biological problems, such as protein structure prediction using the HP model.\n* Theoretical explorations of quantum search algorithms and the implementation of search strategies via quantum walks (p. 9).\n\n**Part 2: Search Algorithms for Image and Video Processing**\nThe chapters here focus on optimizing visual data handling, specifically:\n* Techniques for satellite image fusion and building extraction from high-resolution remote sensing data.\n* Computational methods for image quantization and the detection of fine structural details in computer vision.\n* Motion estimation and optimization for video compression, featuring specific algorithms such as the \"Enhanced Efficient Diamond Search\" and various block-based motion vector estimation techniques (p. 10).\n\n**Part 3: Search Algorithms for Engineering Applications**\nThe final section details the application of search heuristics to resolve complex engineering and systemic challenges, including:\n* Network optimization and telecommunication maintenance planning using Harmony Search and Swarm algorithms.\n* Power system economic dispatch and multi-objective optimization through Artificial Neural Networks.\n* Data mining and structural analysis, covering areas such as intertransaction association rules, document clustering, surface wave analysis in geophysics, and robotic manipulation modeling (p. 11).\n\nIn summary, the text provides a comprehensive overview of how search optimization—ranging from biological simulations to signal processing—serves as a fundamental backbone for modern computational engineering and data analysis (pp. 9-11).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577345894,
+      "channel": "plan_pipe_c7049ec757e9",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 9,
+        "end": 12
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This preface, written by Nashat Mansour in March 2011, introduces a compilation of research regarding the application of search algorithms across diverse fields. The text establishes the following key points:\n\n**Objective and Scope**\nSearch algorithms are designed to identify solutions or specific objects within expansive search spaces, satisfying predefined constraints. The text acknowledges that while the book demonstrates wide applicability, it does not provide an exhaustive survey of all available search methodologies (p. 13).\n\n**Target Audience**\nThe content is intended for a professional and academic readership, specifically including researchers, graduate students, and practitioners (p. 13).\n\n**Thematic Organization**\n\nThe book is structured into three primary sections:\n\n1. Population-based and Quantum Search Algorithms: This section covers swarm intelligence, particle swarm optimization on GPUs, genetic algorithms for bioinformatics (protein structure prediction), quantum searching properties, and quantum walk-based algorithms (p. 13).\n\n2. Search Algorithms for Image and Video Processing: This section focuses on simulated annealing for satellite imagery, object recognition techniques, diamond search algorithms for block motion estimation, and efficient patterns for video compression (p. 13).\n\n3. Search Algorithms for Engineering Applications: This section explores heuristic search for wireless network optimization, harmony search for maintenance and economic dispatch, neural network-based approximations for electromagnetic design, data mining (frequent inter-transaction itemsets), document clustering, and navigation/robotics (p. 13-14).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577345895,
+      "channel": "plan_pipe_c7049ec757e9",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 13,
+        "end": 14
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of the Seeker Optimization Algorithm (SOA)\n\nThe Seeker Optimization Algorithm (SOA), also known as the Human Team Optimization (HTO) or Human Team Search (HTS) algorithm, is a population-based heuristic search method inspired by human searching behaviors. It is designed to solve real-parameter optimization problems by simulating how individuals search for solutions based on memory, experience, uncertainty reasoning, and communication [S.18].\n\n#### Core Human Searching Behaviors\nThe algorithm models four primary human behaviors:\n* **Uncertainty Reasoning:** Employs fuzzy logic to determine search intensity. A simple rule is applied: \"If the objective function value is small, then the step length is short\" [S.18].\n* **Egotistic Behavior:** Reflects cognitive learning where the seeker moves toward their personal best position ($p_{i,best}$) [S.19].\n* **Altruistic Behavior:** Represents social learning, where seekers cooperate and move toward the neighborhood’s historical or current best position to achieve self-organized aggregation [S.19].\n* **Pro-Activeness Behavior:** Enables seekers to exhibit goal-directed behavior by taking the initiative and predicting future moves based on past performance [S.19].\n\n#### Implementation Mechanism\nThe SOA operates on a population of $s$ potential solutions (seekers). Each seeker updates their position using a search direction and a step length vector [S.19]:\n$$x_{ij}(t+1) = x_{ij}(t) + \\alpha_{ij}(t) \\cdot d_{ij}(t)$$\n* **Search Direction ($d_{ij}$):** Determined by a compromise among four empirical directions (egotistic, two altruistic, and pro-activeness) using a proportional selection rule based on the frequency of directional outcomes [S.20-21].\n* **Step Length ($\\alpha_{ij}$):** Derived via a fuzzy system where the fitness rank dictates the step size. A Gaussian membership function is used for defuzzification, guided by a parameter $\\omega$ that decreases over time to improve precision [S.21-22].\n* **Social Sharing:** To prevent premature convergence to local optima, the population is divided into subpopulations, and an inter-subpopulation learning strategy—utilizing a binomial crossover operator—is employed to exchange information [S.19-20].\n\nUnlike traditional methods like Particle Swarm Optimization (PSO) or Differential Evolution (DE), the SOA explicitly integrates distinct search direction and step length components, allowing it to navigate complex spaces effectively and converge to global optima in fewer generations [S.22].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577345896,
+      "channel": "plan_pipe_c7049ec757e9",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 15,
+        "end": 78
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section of the book, titled \"Search Algorithms for Image and Video Processing,\" focuses on applying various search methodologies to enhance visual data processing and analysis. The key contributions include:\n\nSatellite and Remote Sensing Imagery\nResearch in this area emphasizes optimizing the quality of satellite data. One approach utilizes simulated annealing to balance the spatial and spectral resolution of fused images (p. 117). Additionally, graph search techniques are applied to identify and extract buildings from high-resolution remote sensing imagery (p. 133). \n\nComputer Vision and Object Recognition\nImproved search techniques are introduced to handle the complexity of object recognition. This involves using applied extended associative memories for high-speed image quantization (p. 151) and specialized algorithms designed to identify small details and fine structures within computer vision systems (p. 175).\n\nMotion Estimation and Video Compression\nA significant portion of the section is dedicated to efficient video processing. The authors present an enhanced diamond search algorithm specifically for fast block motion estimation (p. 195). Furthermore, innovative prediction-based asymmetric search algorithms are developed for video compression (p. 207), and block-based motion vector estimation is improved through the use of specific algorithms known as FUHS16, UHDS16, and UHDS8 (p. 225). \n\nThese chapters demonstrate how adapted search strategies reduce computational overhead while maintaining or improving the fidelity of image and video sequence analysis.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577345897,
+      "channel": "plan_pipe_c7049ec757e9",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 115,
+        "end": 258
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The section covering pages 259–454 of the text focuses on practical engineering applications of search algorithms. The key applications discussed are:\n\nNetwork and Telecommunications Optimization\nSearch algorithms, particularly those based on swarm intelligence, are utilized for optimizing multiple access networks. Additionally, Harmony Search algorithms are applied to maintenance planning within complex telecommunication systems.\n\nPower Systems and Control\nMultiple-objective optimization methods are implemented using artificial neural networks. Furthermore, a fast version of the Harmony Search algorithm is applied specifically to economic dispatch problems within power systems.\n\nData Analysis and Filtering\nAdvancements in signal processing are addressed through the Recursive Minimal Residual Method for use in adaptive filtering. Additionally, data mining techniques are explored through the development of a search algorithm designed to identify intertransaction association rules.\n\nDocument and Pattern Analysis\nThis area includes methods for identifying conceptual document clusters using top-N pruning mechanisms. Advanced pattern search algorithms are also detailed for their use in surface wave analysis, providing reliable methods for interpreting seismic or geological data.\n\nOverall, this section illustrates how heuristic, swarm-based, and formal search methodologies provide robust solutions to multi-objective optimization, system maintenance, and complex data structuring in diverse physical and computational engineering domains.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577345898,
+      "channel": "plan_pipe_c7049ec757e9",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 259,
+        "end": 454
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers various specialized search algorithms and their practical engineering applications:\n\nVertex Search and Manipulation\nChapter 22 focuses on the Vertex Search Algorithm applied to convex polyhedra, specifically used for modeling the manipulation ability of the upper limb (p. 455). This provides a geometric approach to understanding complex biological movement capabilities through algorithmic search.\n\nNon-Cooperative Agent Modeling\nChapter 23 discusses the theoretical and practical aspects of modeling systems with non-cooperative agents. It explores both destructive and non-destructive search strategies designed to locate objects that are distributed randomly within a search space (p. 467).\n\nExtremal Distribution Sorting\nChapter 24 introduces an Extremal Distribution Sorting Algorithm as an optimization technique for Computational Fluid Dynamics (CFD). This method addresses complex optimization problems where the search space involves fluid flow constraints (p. 481).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577345899,
+      "channel": "plan_pipe_c7049ec757e9",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 455,
+        "end": 480
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The document indicates that the final section of the book, covering pages 481 through 495 (as implied by the range provided in the prompt), focuses on specialized optimization and modeling techniques:\n\nExtremal Distribution Sorting Algorithm\nChapter 24 discusses an Extremal Distribution Sorting Algorithm applied to Computational Fluid Dynamics (CFD) optimization problems. This approach aids in navigating complex solution spaces where fluid behavior must be optimized based on specific constraints.\n\nModeling with Non-cooperative Agents\nChapter 23 explores modeling techniques using non-cooperative agents, specifically analyzing destructive and non-destructive search algorithms for locating objects placed randomly within a system. This highlights the use of strategic search modeling in unpredictable environments.\n\nAdditional Engineering Applications\nThe third part of the book, which encompasses these chapters, emphasizes how heuristic search algorithms provide practical solutions for diverse engineering challenges. Beyond fluid dynamics and agent modeling, this section addresses:\n- Network optimization via swarm intelligence.\n- Telecommunication system maintenance planning using Harmony Search.\n- Multi-objective optimization via artificial neural networks.\n- Adaptive filtering and association rule mining.\n\nOverall, the text underscores that these algorithms are designed to find specific solutions or structures within vast search spaces, ranging from discrete structures to complex engineering constraints.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577345900,
+      "channel": "plan_pipe_c7049ec757e9",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 481,
+        "end": 510
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778577345983,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why are 'direct search' methods preferred for many real-world optimization problems?",
+            "options": [
+              "They can derive analytical solutions to complex mathematical equations.",
+              "They do not rely on calculating or approximating derivatives of the objective function.",
+              "They guarantee finding the global optimum without needing memory or heuristics.",
+              "They are computationally instantaneous even for high-dimensional search spaces."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text states that direct search methods remain popular because they do not compute or approximate values of derivatives, providing simplicity, flexibility, and reliability when function derivatives are difficult to compute."
+          },
+          {
+            "question": "What is the primary motivation behind the 'uncertainty reasoning' behavior in the Seeker Optimization Algorithm (SOA)?",
+            "options": [
+              "To eliminate the need for memory or past experience in the search process.",
+              "To mimic the random, unpredictable movements of natural insect swarms.",
+              "To adjust search step lengths based on the proximity to a promising solution.",
+              "To replace human thinking with rigid, purely deterministic mathematical rules."
+            ],
+            "correctIndex": 2,
+            "explanation": "Uncertainty reasoning is motivated by the idea that searching should be intensified in regions with good solutions. The text uses a fuzzy logic rule where the 'step length' is adjusted (short or long) based on how small or large the objective function value is."
+          },
+          {
+            "question": "In the context of the Seeker Optimization Algorithm, how does 'egotistic behavior' influence an individual seeker?",
+            "options": [
+              "It drives the seeker to move toward its own personal best position found so far.",
+              "It forces the seeker to ignore environmental signals and move in a purely random direction.",
+              "It encourages the seeker to sacrifice its own progress to aid the group's performance.",
+              "It relies exclusively on global signals provided by a central system controller."
+            ],
+            "correctIndex": 0,
+            "explanation": "Egotistic behavior is described as pro-self, where each agent believes it should move toward its personal best position through cognitive learning."
+          },
+          {
+            "question": "What distinguishes swarm intelligence systems from traditional systems based on central control?",
+            "options": [
+              "Swarm systems require a highly complex central processor to coordinate agents.",
+              "Swarm systems use deliberative agents that never interact with their environment.",
+              "Swarm systems allow for self-organized, collective behavior emerging from simple individual rules.",
+              "Swarm systems rely on exhaustive calculation rather than heuristic approximation."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text notes that in swarm intelligence, there is no central controller; instead, complex collective behavior emerges from individuals following simple rules and communicating with each other."
+          },
+          {
+            "question": "How does the Seeker Optimization Algorithm (SOA) address the 'pro-activeness' behavior of agents?",
+            "options": [
+              "By acting only when triggered by external environmental changes.",
+              "By using past behaviors and goal-directed initiative to guide future moves.",
+              "By strictly following the movements of the swarm leader without deviation.",
+              "By eliminating memory to prevent the 'combinatorial explosion' problem."
+            ],
+            "correctIndex": 1,
+            "explanation": "Pro-activeness means agents do not just respond to the environment but exhibit goal-directed behavior by taking the initiative, where future behavior is predicted and guided by past behavior."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778577345984,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the core objective of search algorithms?",
+            "back": "To find solutions or objects with specified properties and constraints within a large search space."
+          },
+          {
+            "front": "How is a 'direct search method' defined in numerical optimization?",
+            "back": "Any algorithm that depends on the objective function only through ranking a countable set of function values, without requiring derivative computations."
+          },
+          {
+            "front": "What problem do heuristic search algorithms aim to bypass?",
+            "back": "The 'combinatorial explosion' problem, by searching through promising solutions rather than evaluating all possibilities."
+          },
+          {
+            "front": "What defines a self-organizing system in swarm intelligence?",
+            "back": "A system with no central controller where complex collective behavior emerges from simple rules followed by individual agents communicating with each other and their environment."
+          },
+          {
+            "front": "What does the Seeker Optimization Algorithm (SOA) model?",
+            "back": "Human searching behaviors, specifically memory, experience, uncertainty reasoning, and communication, to solve real-parameter optimization problems."
+          },
+          {
+            "front": "What four human behaviors are simulated in the Seeker Optimization Algorithm (SOA)?",
+            "back": "Uncertainty reasoning, egotistic behavior, altruistic behavior, and pro-activeness behavior."
+          },
+          {
+            "front": "In the context of the SOA fuzzy logic rule, what is the action if the 'objective function value is small'?",
+            "back": "The 'step length is short'."
+          },
+          {
+            "front": "Define egotistic behavior in the context of swarm optimization.",
+            "back": "Cognitive learning where each agent (seeker) moves toward its personal best historical position."
+          },
+          {
+            "front": "Define altruistic behavior in the context of swarm optimization.",
+            "back": "Social learning where agents cooperate by moving toward the neighborhood’s best historical or current position, exhibiting self-organized aggregation."
+          },
+          {
+            "front": "What is the benefit of pro-activeness behavior in search agents?",
+            "back": "It allows agents to exhibit goal-directed behavior by taking the initiative and letting past behaviors predict or guide future search directions."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-gen-algorithms-applications_3",
+      "slides": [
+        {
+          "title": "Search Algorithms and Applications",
+          "bullets": [
+            "Explores search strategies for diverse complex challenges.",
+            "Introduces theoretical frameworks and practical case studies."
+          ],
+          "notes": "This collection, edited by Nashat Mansour, provides an overview of heuristic, quantum, and application-specific search algorithms.",
+          "page_range": "1-8",
+          "image_prompt": ""
+        },
+        {
+          "title": "Part 1: Population and Quantum Search",
+          "bullets": [
+            "Covers swarm intelligence and heuristic methods.",
+            "Discusses Genetic Algorithms and protein structure prediction.",
+            "Examines quantum search properties and quantum walks."
+          ],
+          "notes": "The first section focuses on biologically inspired algorithms and quantum-computing-based search methods.",
+          "page_range": "15-78",
+          "image_prompt": ""
+        },
+        {
+          "title": "Focus: Heuristic Search Methods",
+          "bullets": [
+            "Direct search methods avoid complex derivatives.",
+            "Heuristics mitigate 'combinatorial explosion' in optimization.",
+            "Swarm intelligence enables robust, self-organizing search.",
+            "SOA and SFS simulate human searching behaviors (p. 18)."
+          ],
+          "notes": "Heuristic search is essential when objective functions are complex or non-mathematical, allowing for more flexible navigation of search spaces.",
+          "page_range": "17-18",
+          "image_prompt": ""
+        },
+        {
+          "title": "Part 2: Image and Video Processing",
+          "bullets": [
+            "Applies search for satellite image quality balancing.",
+            "Utilizes graph search for building extraction.",
+            "Employs search for video compression and motion estimation."
+          ],
+          "notes": "This section demonstrates how search algorithms solve specific problems in computer vision, video compression, and remote sensing.",
+          "page_range": "115-258",
+          "image_prompt": ""
+        },
+        {
+          "title": "Part 3: Engineering Applications",
+          "bullets": [
+            "Optimizes network access using swarm search.",
+            "Applies Harmony Search to maintenance and dispatch.",
+            "Uses neural networks for multi-objective design.",
+            "Explores search in robotics and geophysics."
+          ],
+          "notes": "The final section bridges theory and real-world engineering, highlighting the versatility of search techniques in large-scale system optimization.",
+          "page_range": "259-454",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 4 — Search Algorithms and Applications - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778577345883,
+      "pdfName": "Search Algorithms and Applications"
+    }
+  ],
+  "sourceHash": "6dee9de88e23b47c"
+}

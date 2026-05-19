@@ -1,0 +1,456 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Pure Math — Geometry, Topology, Number Theory - Lesson 2 — Topology",
+    "pdfName": "Topology",
+    "createdAt": 1778506738634,
+    "exportedAt": "2026-05-11T13:38:58.634Z",
+    "meta": {
+      "courseId": "course-en-pure-math-geometry-topology",
+      "lessonIndex": 1,
+      "courseTitle": "Pure Math — Geometry, Topology, Number Theory",
+      "lessonObjective": "Pure topology reference.",
+      "licensing": {
+        "effective_license": "unknown",
+        "sources": [
+          {
+            "content_id": "doab-topology",
+            "title": "Topology",
+            "source": "doab",
+            "license": "unknown",
+            "license_url": "",
+            "url": "https://directory.doabooks.org/handle/20.500.12854/135138"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_3adf9378edc8",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-8",
+          "chapterTitle": "Topology Recent Advances and Applications",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "9-16",
+          "chapterTitle": "Section 1: Topology and Fixed-Point Theorems",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "15-28",
+          "chapterTitle": "Chapter 1: Common Fixed Point Theorems in Complex-Valued Non-Negative Extended b-Metric Spaces",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "29-36",
+          "chapterTitle": "Chapter 2: Fixed Point Theorems in Complex-Valued Double Controlled Metric-Like Spaces",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "37-50",
+          "chapterTitle": "Section 2: Geometry and Topology",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "51-66",
+          "chapterTitle": "Chapter 4: Obtaining the Main Curvatures of Orientable Hypersurfaces, Based on Differential Geometry",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "67-124",
+          "chapterTitle": "Section 3: Modern Research Topics in Topology",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "125-190",
+          "chapterTitle": "Section 4: Applications of Topology in Physics",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "191-218",
+          "chapterTitle": "Chapter 11: Advanced Knotting Techniques (Examples from Surgical Practice)",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778506738634,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: Topology – Recent Advances and Applications (Section 1)\n\nThis section focuses on the theoretical development and application of **fixed-point theorems** within specific mathematical frameworks, primarily extending classical metric space theory to more complex structures.\n\n#### 1. Defining Advanced Metric Spaces\nThe text introduces and categorizes several generalized metric spaces based on the codomain and the behavior of the triangle inequality:\n*   **C.V.M. Spaces (Complex-Valued Metric Spaces):** Replace the real-valued codomain ($\\mathbb{R}$) with the set of complex numbers ($\\mathbb{C}$), defined by a specific partial order (relying on real and imaginary components).\n*   **C.V.b-Metric Spaces:** Incorporate a parameter $\\tau \\geq 1$ into the triangle inequality to generalize standard metric spaces.\n*   **C.V.N.E.b-M. Spaces (Complex-Valued Non-Negative Extended b-Metric Spaces):** A further advancement where the triangle inequality is controlled by a mapping $\\vartheta(u, v) = \\vartheta_0(u, v) + \\mu$ (where $\\mu \\ge 1$).\n\n#### 2. Core Concepts\n*   **Fixed-Point Theory:** The section revisits the Banach and Kannan contraction principles, noting that while Banach mappings require continuity, Kannan mappings do not.\n*   **Rational Contractions:** The authors emphasize the study of mappings that satisfy rational-type inequalities to determine common fixed points, particularly in cases where standard contraction mappings in cone metric spaces are insufficient.\n*   **Convergence and Cauchy Sequences:** A sequence $\\{u_k\\}$ in these spaces is defined as convergent if $| \\psi_\\vartheta(u_k, u) | \\to 0$ and Cauchy if $| \\psi_\\vartheta(u_k, u_l) | \\to 0$ as $k, l \\to \\infty$.\n\n#### 3. Primary Research Results (Theorem 1.1)\nThe authors establish a new fixed-point theorem for mappings $F$ and $E$ on a complete C.V.N.E.b-M. space. Key findings include:\n*   **Existence and Uniqueness:** Under specific conditions—namely that $\\vartheta_1 < \\vartheta_2$ and a defined limit condition for the sequence—$F$ and $E$ possess a unique common fixed point.\n*   **Generalization:** The theorem serves as an expansion of previous work by Azam et al., showing that earlier fixed-point theorems in complex-valued metric spaces can be recovered as special cases by adjusting the parameters of $\\vartheta$ and $\\mu$.\n\n***\n\n**Reference Sources (from [S.15] – [S.23]):**\n*   [S.15] - [S.16]: Theoretical background and C.V.M. definitions.\n*   [S.17] - [S.18]: Definitions of C.V.b-Metric and C.V.N.E.b-Metric spaces.\n*   [S.19] - [S.22]: Statement and analytical proof of Theorem 1.1 regarding common fixed points.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778506738634,
+      "channel": "general",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 60
+      }
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-pure-math-geometry-topology_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 2 — Topology - Presentation</span><span class=\"pm-chat-count\">4 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Topology: Advances and Applications</div><ul class=\"pm-chat-slide-bullets\"><li>Topology examines geometric properties invariant under continuous transformations.</li><li>Crucial field intersecting analysis, differential geometry, and graph theory.</li><li>This volume explores contemporary research and practical scientific applications.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778506738736,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "### Summary: Topology - Recent Advances and Applications\n\n**Publication Overview**\n*Topology - Recent Advances and Applications*, edited by Paul Bracken and published by IntechOpen (2023), is an academic compilation exploring contemporary developments and practical applications in the field of topology. The volume serves as a collaborative platform for international researchers to present their findings in both theoretical and applied mathematics.\n\n**Key Institutional and Editorial Details**\n* **Editor:** Paul Bracken, a professor at the University of Texas Rio Grande Valley, specializing in differential geometry, partial differential equations, and mathematical physics.\n* **Format:** The book is available in print and digital formats (ISBN 978-1-83769-559-1 for print).\n* **Open Access Status:** While the book as a whole is copyrighted by IntechOpen, individual chapters are distributed under a Creative Commons Attribution 3.0 Unported License, facilitating broad academic dissemination and reuse with proper attribution.\n\n**Scope and Contributions**\n* **Interdisciplinary Coverage:** The text features contributions from a wide range of international authors, bridging pure topological theory with applications in physical and mathematical sciences.\n* **Academic Rigor:** The content reflects current research trends, consistent with IntechOpen’s goal of publishing high-impact scientific work indexed by repositories such as the Book Citation Index (Clarivate Analytics).\n* **Research Focus:** The editor’s background indicates a strong emphasis on the intersection of topology with broader frameworks like quantum mechanics and quantum field theory.\n\n**Distribution and Compliance**\n* The publication adheres to the Copyright, Designs and Patents Act 1988 of the United Kingdom.\n* It is indexed in the Web of Science Core Collection, underscoring its relevance within the scientific and mathematical research community. Users accessing the material must comply with specific guidelines regarding image reproduction and copyright permissions as defined by IntechOpen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778506738644,
+      "channel": "plan_pipe_3adf9378edc8",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 8
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This text introduces the foundational concepts and motivations for the research presented in Chapter 1 regarding Common Fixed Point Theorems in Complex-Valued Non-Negative Extended b-Metric Spaces (C.V.N.b-M.Spaces).\n\nKey points from this section include:\n\nEvolution of Fixed Point Theory\nThe study of fixed points, rooted in the Banach contraction principle, is essential for solving nonlinear equations. Over time, researchers have generalized these principles by either introducing more comprehensive contractive conditions or relaxing the axioms that define the underlying metric spaces, such as moving from real-valued to complex-valued or cone metric spaces.\n\nComplex-Valued Metric Spaces (C.V.M.Spaces)\nTo address limitations in other metric space models—such as the inability to handle certain rational contractions—Azam et al. introduced C.V.M.Spaces. These spaces provide a robust framework where complex numbers are ordered based on the partial order defined by $p_1 \\preceq p_2$, which compares both the real and imaginary components of the complex numbers involved.\n\nDevelopment of C.V.N.b-M.Spaces\nThe authors extend the work of Czerwik, who proposed b-metric spaces, and Branciari, who introduced rectangle metric spaces. By integrating these concepts with complex-valued metric spaces, the authors define C.V.N.b-M.Spaces. This structure allows for the formulation of new fixed point theorems that utilize specific rational constructive inequalities.\n\nMathematical Significance\nThe proposed research aims to improve upon existing literature by expanding the reach of known fixed point theorems. The authors emphasize that their approach generalizes previous findings in cone metric spaces and C.V.b-M.Spaces, providing a more versatile tool for analyzing mappings and integral equations through nontrivial examples and rigorous proof.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778506738645,
+      "channel": "plan_pipe_3adf9378edc8",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 9,
+        "end": 16
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This study explores Common Fixed Point theorems within the framework of Complex-Valued Non-Negative Extended b-Metric Spaces (C.V.N.E.b-M. Spaces). The work extends existing results from classical metric spaces and standard b-metric spaces by introducing mappings governed by rational contractions.\n\nKey points of the research include:\n\nMathematical Foundations\nThe paper establishes the definition of C.V.N.E.b-M. Spaces using a complex-valued function $\\psi_\\vartheta: \\mathcal{M} \\times \\mathcal{M} \\to \\mathbb{C}$ that satisfies specific triangular inequality conditions involving a mapping $\\vartheta: \\mathcal{M} \\times \\mathcal{M} \\to [1, \\infty)$. This generalizes previous metric space theories by weakening the triangle inequality constraint.\n\nConvergence and Cauchy Sequences\nA sequence $\\{u_k\\}$ in these spaces converges to $u$ if $|\\psi_\\vartheta(u_k, u)| \\to 0$ as $k \\to \\infty$. Similarly, $\\{u_k\\}$ is defined as a Cauchy sequence if $|\\psi_\\vartheta(u_k, u_l)| \\to 0$ as $k, l \\to \\infty$. The completeness of these spaces is essential for guaranteeing the existence of fixed points.\n\nThe Proposed Fixed Point Theorem\nThe authors provide a theorem for self-maps $F, E: \\mathcal{M} \\to \\mathcal{M}$ that satisfy the following rational contractive inequality for all $u, v \\in \\mathcal{M}$:\n$\\psi_\\vartheta(Fu, Ev) \\preceq \\vartheta_1(u, v) \\psi_\\vartheta(u, v) + \\vartheta_2(u, v) \\frac{\\psi_\\vartheta(u, Fu) \\psi_\\vartheta(v, Ev)}{1 + \\psi_\\vartheta(u, v)}$\n\nUnder specific conditions—namely that $\\vartheta_1 < \\vartheta_2$ and the convergence of the series formed by the contractive factors—the authors prove that $F$ and $E$ possess a unique common fixed point $u \\in \\mathcal{M}$, such that $Fu = Eu = u$.\n\nSignificance\nBy replacing the traditional co-domain of real numbers with the set of complex numbers and utilizing a flexible extension of the b-metric property, the authors offer a more robust set of tools for solving nonlinear phenomena and integral equations. The study concludes that these results improve upon classical Banach fixed point theorems and other recent modifications in the literature.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778506738646,
+      "channel": "plan_pipe_3adf9378edc8",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 15,
+        "end": 28
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section introduces the concept of Complex-Valued Double Controlled Metric-Like Spaces (CDCMLS) and sets the foundation for applying fixed-point theory within these structures.\n\n### Key Concepts and Definitions\n\nThe authors extend existing frameworks in metric space theory by defining a CDCMLS. Given a non-empty set $\\mathcal{X}$ and two non-comparable control functions $\\varrho, \\varsigma: \\mathcal{X} \\times \\mathcal{X} \\to [1, \\infty)$, a function $hcdl: \\mathcal{X}^2 \\to [0, \\infty)$ is a double controlled metric-like mapping if it satisfies the following for all $p, q, r \\in \\mathcal{X}$:\n\n1. $hcdl(p, q) = 0 \\implies p = q$\n2. $hcdl(p, q) = hcdl(q, p)$\n3. $hcdl(p, r) \\preceq \\varrho(p, q) hcdl(p, q) + \\varsigma(q, r) hcdl(q, r)$\n\nA critical observation is that while every complex-valued double controlled metric-type space is a CDCMLS, the reverse does not hold. This makes the CDCMLS a more generalized structure. The text also provides a rigorous verification of these conditions through 27 different logical cases, demonstrating that the defined structure functions effectively as a metric-like space.\n\n### Analytic Properties\n\nThe chapter establishes formal definitions for convergence and completeness within this new space:\n\n1. Convergence: A sequence $\\{p_n\\}$ converges to $p$ if for any $\\epsilon > 0$, there exists an integer $Z_\\epsilon$ such that $hcdl(p_n, p) \\prec \\epsilon$ for all $n \\ge Z_\\epsilon$.\n2. Cauchy Sequences: A sequence is considered Cauchy if for any $\\epsilon > 0$, $hcdl(p_n, p_m) \\prec \\epsilon$ for all $n, m \\ge Z_\\epsilon$.\n3. Completeness: A space $(\\mathcal{X}, hcdl)$ is complete if every Cauchy sequence in the space converges to an element within $\\mathcal{X}$.\n\n### Theoretical Goals\nThe authors aim to utilize this framework to establish two primary types of fixed-point principles: the Banach contraction principle and a Reich-type result. These proofs are intended to facilitate the study of solutions to specific mathematical models, explicitly mentioning the application for establishing the existence and uniqueness of solutions for Fredholm-type integral equations.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778506738647,
+      "channel": "plan_pipe_3adf9378edc8",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 29,
+        "end": 36
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Section 2: Geometry and Topology (Pages 37–50)\n\nThis section focuses on the intersection of differential geometry and topological structures, specifically emphasizing the analysis of manifolds and curvature.\n\n**Chapter 3: Geometry of Sub-Riemannian Manifolds Equipped with a Quasi-Semi-Weyl Structure**\nAuthors Sergey Galaev and Evgeny Kokin explore the properties of sub-Riemannian manifolds, which are defined by a distribution (a sub-bundle of the tangent bundle) equipped with a metric. The authors introduce the concept of a quasi-semi-Weyl structure, which serves as a generalization of the standard Weyl structure in differential geometry. This framework allows for a more flexible connection on the manifold, where the metric is not necessarily parallel with respect to the connection, but rather follows a specific, weaker condition. The study aims to characterize these geometric structures and understand their implications for the underlying manifold's path geometries and curvature tensors.\n\n**Chapter 4: Obtaining the Main Curvatures of Orientable Hypersurfaces, Based on Differential Geometry**\nAuthor Emmanoel Ferreira provides a methodology for calculating the principal curvatures of orientable hypersurfaces embedded within a Riemannian manifold. The chapter emphasizes the use of the shape operator (or Weingarten map) to derive these curvatures. The principal curvatures $$k_1, k_2, \\dots, k_n$$ are identified as the eigenvalues of the shape operator, which is derived from the second fundamental form of the surface. The author details the process of using the Gaussian and mean curvatures to analyze the local shape of the hypersurface. By applying tools from differential geometry, the chapter demonstrates how the extrinsic geometry of a hypersurface—described by its curvatures—relates to the intrinsic properties of the manifold it inhabits.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778506738648,
+      "channel": "plan_pipe_3adf9378edc8",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 37,
+        "end": 50
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary: Obtaining the Main Curvatures of Orientable Hypersurfaces (Chapter 4)\n\nThis chapter focuses on the differential geometry of orientable hypersurfaces, specifically addressing the derivation and characterization of their principal curvatures. The study provides a rigorous framework for understanding how the curvature of a manifold is determined through the properties of its normal vector field and the associated shape operator.\n\nKey aspects discussed in this section include:\n\n1. The Definition of Principal Curvatures:\nThe author defines the principal curvatures $k_1, k_2, \\dots, k_n$ of an orientable hypersurface as the eigenvalues of the shape operator $S$. For a given hypersurface $M \\subset \\mathbb{R}^{n+1}$ and a unit normal vector field $N$, the shape operator is represented by the Weingarten map $S(X) = -\\nabla_X N$. The principal curvatures are then found by solving the characteristic equation:\n$$\\det(S - kI) = 0$$\n\n2. Geometric Interpretation:\nThe section emphasizes that these curvatures provide essential information regarding the local geometry of the hypersurface. By analyzing the behavior of the normal vector field along the surface, the author demonstrates how one can describe the extrinsic geometry of the embedding.\n\n3. Calculation Methods:\nThe text outlines systematic methods to obtain these curvatures for orientable manifolds. This involves setting up the local coordinates and computing the first and second fundamental forms. The principal curvatures are derived from the relationship between these forms, often described via the equation involving the Weingarten map:\n$$II(X, Y) = \\langle S(X), Y \\rangle$$\nwhere $II$ is the second fundamental form and $\\langle \\cdot, \\cdot \\rangle$ denotes the inner product.\n\n4. Application to Curvature Measures:\nBeyond individual curvatures, the chapter links these values to global curvature descriptions, such as the Gaussian curvature $K$, defined as the product $K = \\prod_{i=1}^{n} k_i$, and the mean curvature $H$, defined as the sum $H = \\frac{1}{n} \\sum_{i=1}^{n} k_i$. \n\nIn conclusion, this chapter serves as a mathematical guide for researchers to compute curvature parameters for hypersurfaces, effectively bridging the gap between abstract differential geometry and practical application in broader topological contexts.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778506738649,
+      "channel": "plan_pipe_3adf9378edc8",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 51,
+        "end": 66
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The section covering pages 67–124 of this volume focuses on modern research topics in topology and their interdisciplinary applications. The key points are summarized below:\n\nTopology Optimization Generating System\nThis chapter explores the development of systems designed for topology optimization, a mathematical approach that optimizes material layout within a given design space. The focus is on the practical implementation of these systems in modern engineering and computational design.\n\nRecent Advances in Non-Hausdorff Topology\nThe text examines developments in non-Hausdorff spaces, which are topological spaces where not every pair of distinct points can be separated by disjoint open sets. This discussion addresses the theoretical nuances and advancements in understanding the properties of these spaces, which often arise in computer science and domain theory.\n\nTopological Connectivity of the Bipartite Graph’s Independence Complex\nThis research investigates the connectivity properties of independence complexes associated with bipartite graphs. By analyzing these structures topologically, the authors provide insights into how graph-theoretic properties relate to specific simplicial complexes, contributing to the broader field of algebraic combinatorics and topological graph theory.\n\nApplications to Physics and Mechanical Systems\nThe concluding chapters of this section bridge pure topology with physical phenomena:\n\nAnomalies in Yang-Mills Gauge Theories: This part discusses the occurrence of topological anomalies in gauge theories, highlighting the interaction between topological invariants (often expressed via differential forms like the Chern-Simons form or index theorems) and the fundamental symmetries of particle physics.\n\nSpin Systems: The text details topological phenomena in spin systems, specifically focusing on the mathematical description of textures and waves within magnetic materials.\n\nMechanical System Kinematics: This chapter applies the concepts of differential manifolds to the study of kinematics and dynamics, emphasizing how topological constraints and global geometric structures influence the motion of mechanical systems represented as manifolds in configuration space.\n\nAdvanced Knotting Techniques: Providing a practical application, this chapter demonstrates how topological principles—specifically knot theory—are utilized in surgical practices to improve medical procedures and suturing effectiveness.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778506738650,
+      "channel": "plan_pipe_3adf9378edc8",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 67,
+        "end": 124
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Section 4: Applications of Topology in Physics (Pages 125–190)\n\nThe fourth section of the book, titled \"Applications of Topology in Physics,\" explores the diverse ways topological principles intersect with physical systems and mechanical processes. This section contains four chapters covering theoretical physics, condensed matter, and engineering applications.\n\n**1. Anomalies in Yang-Mills Gauge Theories (Chapter 8)**\nPaul Bracken examines the role of topology within the framework of Yang-Mills gauge theories. The discussion focuses on the occurrence of anomalies—quantum mechanical violations of classical symmetries—and how topological considerations are essential for understanding the structure and consistency of these gauge fields.\n\n**2. Topological Phenomena in Spin Systems (Chapter 9)**\nPaula Mellado and Roberto E. Troncoso provide an analysis of topological textures and waves within spin systems. The chapter explores how spin configurations, often characterized by topological invariants, give rise to emergent phenomena. It specifically highlights how these structures manifest as waves that dictate the behavior of macroscopic physical systems.\n\n**3. Mechanical Systems on Differentiable Manifolds (Chapter 10)**\nEdward J. Haug and Petar Pavesic address the kinematics and dynamics of mechanical systems by utilizing the language of differential geometry and topology. This chapter outlines how the configuration space of a mechanical system can be modeled as a differentiable manifold, allowing for a rigorous treatment of the motion and constraints of complex machinery.\n\n**4. Advanced Knotting Techniques (Chapter 11)**\nKornél Kovách and Daniella Éva Pigniczki present a practical, interdisciplinary application of topology by exploring knotting techniques used in surgical practice. This chapter bridges the gap between abstract topological theory and applied biology, demonstrating how understanding the properties of knots ($K$) is critical for ensuring the stability and safety of various surgical interventions.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778506738651,
+      "channel": "plan_pipe_3adf9378edc8",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 125,
+        "end": 190
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary: Advanced Knotting Techniques (Chapter 11)\n\n**Overview**\nChapter 11, titled \"Advanced Knotting Techniques (Examples from Surgical Practice)\" by Kornél Kovách and Daniella Éva Pigniczki (pp. 191–218), explores the intersection of knot theory and practical surgical procedures. The authors bridge the gap between abstract topological concepts and clinical application, illustrating that the structural integrity of surgical knots is rooted in mathematical stability.\n\n**Key Points**\n\n*   **Mathematical Foundation:** The study analyzes knotting as a formal topological problem. It examines how specific configurations—often categorized by their crossing numbers and linking behavior—affect the mechanical security of sutures.\n*   **Surgical Relevance:** Reliable knotting is a critical skill in surgery. The chapter quantifies the efficiency of various surgical knots by assessing their tendency to slip or loosen under tension.\n*   **Mechanism of Security:** The authors discuss how variables such as the number of throws, the direction of loops, and the material properties of the suture (e.g., coefficient of friction) influence the knot's topology. Ensuring the knot does not invert or \"capsize\" is central to maintaining wound approximation.\n*   **Practical Applications:** The content provides surgeons with a better understanding of why specific techniques are more robust. By treating the suturing process as the manipulation of closed curves in a three-dimensional space, the authors offer a systematic approach to evaluating surgical knot performance.\n\n**Conclusion**\nThe chapter demonstrates that effective surgical outcomes rely heavily on the topological properties of the knots deployed. It serves as an interdisciplinary resource that interprets physical surgical challenges through the lens of mathematical knot theory.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778506738652,
+      "channel": "plan_pipe_3adf9378edc8",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 191,
+        "end": 218
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778506738734,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "In the context of the provided text, what is the primary difference identified between Banach's contractive mappings and Kannan's mappings?",
+            "options": [
+              "Banach mappings require continuity for contraction, whereas Kannan mappings do not always require continuity.",
+              "Banach mappings are exclusively for b-metric spaces, while Kannan mappings are for real-valued spaces.",
+              "Kannan mappings require the codomain to be a complex plane, while Banach mappings do not.",
+              "Kannan mappings operate only on non-Hausdorff spaces, while Banach mappings operate on metric spaces."
+            ],
+            "correctIndex": 0,
+            "explanation": "The text explicitly states: 'The difference between the Banach theorem and the mapping theory of Kannan is that whereas Kannan maps do not always require continuity, Banach mappings do require continuity for contraction.'"
+          },
+          {
+            "question": "What is the defining characteristic of a Complex-Valued Non-Negative Extended b-Metric Space (C.V.N.E.b-M.Space) regarding the triangle inequality?",
+            "options": [
+              "It uses a constant coefficient tau instead of a mapping function.",
+              "It requires the codomain to be the set of real numbers instead of complex numbers.",
+              "It replaces the metric with a constant real-valued number.",
+              "It incorporates a mapping function theta (u, v) in the bound of the triangle inequality, which is not strictly a constant."
+            ],
+            "correctIndex": 3,
+            "explanation": "The definition of C.V.N.E.b-M.Space involves a mapping theta: M x M -> [0, infinity) such that psi(u, v) <= theta(u, v) * (psi(u, w) + psi(w, v)), whereas standard or standard b-metric spaces use constants like tau or mu >= 1."
+          },
+          {
+            "question": "Based on the preliminaries section, why is the C.V.M.Space (Complex-Valued Metric Space) considered distinct from a cone metric space defined over a Banach space?",
+            "options": [
+              "C.V.M.Spaces do not require a partial order, while cone metric spaces do.",
+              "C.V.M.Space is based on the complex number system, whereas cone metric space definitions are based on a ground set (Banach space), not a division ring.",
+              "Cone metric spaces cannot support fixed point theorems, while C.V.M.Spaces can.",
+              "C.V.M.Spaces are restricted to one-dimensional real lines only."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text notes: 'A division ring is not the basis for the definition of a cone metric, which is based on the ground set, that is, Banach space. As a result, many division-related [concepts] clearly showing that we cannot extrapolate them into a cone metric spaces.'"
+          },
+          {
+            "question": "In the provided partial order definition for complex numbers, under what condition is p1 ≼ p2 considered true?",
+            "options": [
+              "If the real part of p1 is less than or equal to the real part of p2, and the imaginary part of p1 is less than or equal to the imaginary part of p2.",
+              "If p1 is a real number and p2 is a purely imaginary number.",
+              "If the complex argument of p1 is smaller than the argument of p2.",
+              "If the absolute values |p1| and |p2| follow the inequality |p1| <= |p2|."
+            ],
+            "correctIndex": 0,
+            "explanation": "The text defines the partial order on complex numbers as: 'p1 ≼ p2, ⇔ Re p1 ≤ Re p2 and Im p1 ≤ Im p2'."
+          },
+          {
+            "question": "What is the relationship between C.V.b-M.Spaces and cone b-metric spaces over a complex Banach algebra C?",
+            "options": [
+              "They are entirely unrelated mathematical structures.",
+              "Every cone b-metric space is automatically a C.V.b-M.Space, but the reverse is not true.",
+              "C.V.b-M.Spaces are a specific restricted case of cone b-metric spaces where the cone is normal, the normalcy coefficient is 1, and the interior is non-empty.",
+              "C.V.b-M.Spaces are a broader generalization that does not require the cone to be normal."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text states: 'Every C.V.b-M.Space, however, is a cone b-metric space over Banach algebra C, where the cone is normal and the normalcy coefficient is κ = 1, and where the interior of the cone is not empty.'"
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778506738735,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What does a topology typically concern in geometry?",
+            "back": "Topology deals with properties of configurations or geometric objects that remain unaltered under homeomorphisms."
+          },
+          {
+            "front": "What is the primary definition of a fixed point of a mapping F?",
+            "back": "An element u in a set M is a fixed point of F if Fu = u."
+          },
+          {
+            "front": "What is the condition for an element u to be a coincidence point of two maps F and E?",
+            "back": "An element u is a coincidence point if Fu = Eu."
+          },
+          {
+            "front": "How is a C.V.N.E.b-metric space abbreviated?",
+            "back": "Complex-Valued Non-Negative Extended b-Metric Space."
+          },
+          {
+            "front": "What is the triangle inequality condition for a C.V.N.E.b-metric ψϑ?",
+            "back": "ψϑ(u, v) ≼ ϑ(u, v) [ψϑ(u, w) + ψϑ(w, v)] for some mapping ϑ: M × M → [1, ∞)."
+          },
+          {
+            "front": "What defines a convergent sequence {uk} in a C.V.N.E.b-metric space?",
+            "back": "A sequence {uk} is convergent if |ψϑ(uk, u)| → 0 as k → ∞."
+          },
+          {
+            "front": "How does a C.V.N.E.b-metric space relate to a classical metric space?",
+            "back": "By replacing the ground set of complex numbers ℂ with real numbers ℝ, one obtains an ordinary metric space."
+          },
+          {
+            "front": "What is the significance of the Banach Fixed Point Theorem?",
+            "back": "It plays a major role in solving nonlinear phenomena and introduces contractive mappings in C.V.M. spaces."
+          },
+          {
+            "front": "Which specific constraint does a C.V.b-Metric space use to modify the triangle inequality?",
+            "back": "It uses a parameter τ ≥ 1, such that d(u, v) ≼ τ [d(u, w) + d(w, v)]."
+          },
+          {
+            "front": "What is the condition for a sequence {uk} to be a Cauchy sequence in a C.V.N.E.b-metric space?",
+            "back": "A sequence is Cauchy if |ψϑ(uk, ul)| → 0 as k, l → ∞."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-pure-math-geometry-topology_1",
+      "slides": [
+        {
+          "title": "Topology: Advances and Applications",
+          "bullets": [
+            "Topology examines geometric properties invariant under continuous transformations.",
+            "Crucial field intersecting analysis, differential geometry, and graph theory.",
+            "This volume explores contemporary research and practical scientific applications.",
+            "Contributions span fixed-point theorems to advanced surgical knotting."
+          ],
+          "notes": "Topology serves as a foundational mathematical framework. This presentation introduces key research themes from the current volume.",
+          "page_range": "1-8",
+          "image_prompt": ""
+        },
+        {
+          "title": "Fixed-Point Theory in Complex Spaces",
+          "bullets": [
+            "Fixed-point theorems are central to solving nonlinear phenomena.",
+            "Advances include mappings in complex-valued extended b-metric spaces.",
+            "Generalizes classical Banach and Kannan contraction principles (p. 15).",
+            "Features applications like solving Fredholm-type integral equations (p. 29)."
+          ],
+          "notes": "Fixed-point theory has evolved from simple metrics to complex-valued and controlled structures. It remains a cornerstone for numerical solutions.",
+          "page_range": "9-36",
+          "image_prompt": ""
+        },
+        {
+          "title": "Sub-Riemannian Geometry and Topology",
+          "bullets": [
+            "Explores quasi-semi-Weyl and quasi-statistical manifold structures.",
+            "Incorporates torsion into connections for accurate geometric modeling.",
+            "Focuses on sub-Riemannian manifolds of contact type (p. 39).",
+            "Includes methods for calculating main curvatures of hypersurfaces."
+          ],
+          "notes": "Geometry and topology intertwine to describe torsion-rich spaces. These structures are vital for understanding complex manifolds in physics.",
+          "page_range": "37-66",
+          "image_prompt": ""
+        },
+        {
+          "title": "Modern Trends and Applications",
+          "bullets": [
+            "Focuses on non-Hausdorff topology and system optimization.",
+            "Investigates the topological connectivity of complex bipartite graphs.",
+            "Applies topology to gauge theories and spin systems (p. 125).",
+            "Analyzes practical knotting techniques in medical practice (p. 191)."
+          ],
+          "notes": "Topology extends from abstract gauge physics to concrete clinical applications. This diversity highlights its interdisciplinary power.",
+          "page_range": "67-218",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 2 — Topology - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778506738634,
+      "pdfName": "Topology"
+    }
+  ],
+  "sourceHash": "9fa45a3a919ce1e4"
+}

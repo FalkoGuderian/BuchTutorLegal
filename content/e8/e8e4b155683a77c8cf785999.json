@@ -1,0 +1,482 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Datenbanken — SQL und PostgreSQL - Lektion 1 — SQL Grundlagen",
+    "pdfName": "Einführung in SQL",
+    "createdAt": 1778514350281,
+    "exportedAt": "2026-05-11T15:45:50.282Z",
+    "meta": {
+      "courseId": "course-de-cs-datenbanken-praxis",
+      "lessonIndex": 0,
+      "courseTitle": "Datenbanken — SQL und PostgreSQL",
+      "lessonObjective": "SELECT, JOIN, Aggregation.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-einf-hrung-in-sql",
+            "title": "Einführung in SQL",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_cdbaa84f44d9",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Einführung in SQL",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Übersicht",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-12",
+          "chapterTitle": "Inhaltsverzeichnis",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "13-14",
+          "chapterTitle": "Vorwort",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "15-16",
+          "chapterTitle": "Teil I: Einführung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "17-22",
+          "chapterTitle": "Ein Einstieg",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "23-28",
+          "chapterTitle": "Einleitung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "29-36",
+          "chapterTitle": "Relationale Datenbanken",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "37-44",
+          "chapterTitle": "Normalisierung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "45-466",
+          "chapterTitle": "Grundlagen",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778514350281,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der grundlegenden Konzepte basierend auf dem vorliegenden Dokument:\n\n### Zusammenfassung: Grundlagen von SQL\n\nDer vorliegende Text bildet die Basis für den Umgang mit relationalen Datenbanken mittels der standardisierten Sprache **SQL (Structured Query Language)** (S. 18).\n\n#### 1. Kernkonzepte der Datenabfrage (DML)\nDas Herzstück der Arbeit mit Datenbanken bildet die **Data Manipulation Language (DML)** (S. 6).\n*   **SELECT:** Dient zum Abrufen von Daten. Die Grundstruktur ermöglicht die Auswahl von Spalten (`SELECT`), die Festlegung der Datenquelle (`FROM`), die Einschränkung der Ergebnismenge (`WHERE`) sowie die Sortierung (`ORDER BY`) (S. 58, 60, 61).\n*   **Duplikate vermeiden:** Mit dem Befehl `DISTINCT` können doppelte Zeilen in der Ergebnismenge unterdrückt werden (S. 58).\n*   **Tabellenverknüpfungen (JOINs):** SQL bietet moderne Wege, um Daten aus mehreren Tabellen zu verbinden. Dies reicht von einfachen Verknüpfungen über `INNER JOIN` bis hin zu verschiedenen `OUTER JOIN`-Varianten (`LEFT`, `RIGHT`, `FULL`), um auch Datensätze ohne Entsprechung in der jeweils anderen Tabelle abzubilden (S. 168, 181, 191).\n*   **Aggregation und Gruppierung:** Für statistische Auswertungen und komplexere Abfragen stehen Gruppierungen (`GROUP BY`) sowie Unterabfragen zur Verfügung (S. 241, 251).\n\n#### 2. Datenbankstruktur und Verwaltung (DDL & Weitere)\nNeben der Manipulation der Daten umfasst SQL Mechanismen zur Definition der Datenbankstruktur:\n*   **Data Definition Language (DDL):** Wird zur Erstellung und Änderung von Datenbankobjekten (Tabellen, Views) verwendet (S. 51, 79).\n*   **Datentypen:** SQL unterstützt diverse Datentypen für Zahlen, Zeichenketten (Texte), Datum/Zeit sowie spezielle logische Werte (S. 97).\n*   **Transaktionskontrolle (TCL) & Rechte (DCL):** Zur Sicherstellung der Datenintegrität bei Änderungen sowie zur Steuerung der Zugriffsrechte auf die Datenbank (S. 52).\n\n#### 3. methodischer Ansatz\nDas Buch betont, dass SQL auf einer **standardisierten Form** basiert, um mit Datenbanken zu kommunizieren (S. 18). Der Fokus liegt dabei nicht auf der Verwaltung der DBMS-Software selbst, sondern auf:\n1.  Dem Abfragen von Daten (S. 13).\n2.  Der Manipulation von Daten (S. 13).\n3.  Dem einfachen Ändern der Datenbankstruktur (S. 13).\n\n**Hinweis für den weiteren Lernverlauf:** \nDie Normalisierung von Datenbanken (1. bis 3. Normalform) ist eine grundlegende Voraussetzung für die Gestaltung von relationalen Modellen, um Datenredundanzen zu minimieren (S. 25–36).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778514350281,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-cs-datenbanken-praxis_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 1 — SQL Grundlagen - Präsentation</span><span class=\"pm-chat-count\">5 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lektion 1: SQL Grundlagen</div><ul class=\"pm-chat-slide-bullets\"><li>Einführung in die Arbeit mit relationalen Datenbanken</li><li>Fokus: Abfrage, Verknüpfung und Aggregation</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778514350282,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der Seiten 1 und 2:\n\n**Titel und Autor**\nDas Werk trägt den Titel „Einführung in SQL“ und wurde von Jürgen Thomas verfasst (S. 1). Es handelt sich dabei um ein Projekt aus dem Bereich der Wikibooks, einer Plattform der Wikimedia Foundation (S. 2).\n\n**Publikationsdaten**\nDas Buch ist in der Deutschen Nationalbibliothek registriert und wurde im Juli 2012 unter der ISBN 978-3-9815260-0-4 veröffentlicht (S. 2). Es existieren verschiedene Formate, darunter eine Online-, PDF- sowie eine Druckversion, die sich in technischer Hinsicht unterscheiden (S. 2).\n\n**Rechtliche Rahmenbedingungen und Erstellung**\nDie Inhalte unterliegen den Lizenzen Creative Commons Attribution/Share-Alike (CC-BY-SA) und GFDL (S. 2). Für die technische Erstellung der PDF- und Druckversion wurde das Programm wb2pdf sowie das Textsatzsystem LaTeX eingesetzt (S. 2). Namen technischer Produkte und Programme werden aus Gründen der Vereinfachung ohne das Symbol ® verwendet (S. 2). Details zu Quellen und weiteren regulatorischen Hinweisen sind im Anhang zu finden (S. 2).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514350291,
+      "channel": "plan_pipe_cdbaa84f44d9",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die vorliegenden Seiten 3 und 4 bieten eine strukturierte Übersicht über die Inhalte eines Fachbuchs zum Thema SQL und relationale Datenbanken. Das Werk ist systematisch in fünf Hauptbereiche unterteilt:\n\nDie Einführung (S. 3) legt die theoretischen Grundlagen. Hier werden relationale Datenbanken (Kapitel 4), der Prozess der Normalisierung (Kapitel 5) sowie eine Beispieldatenbank (Kapitel 6) behandelt.\n\nDer Bereich Grundlagen (S. 3) widmet sich der praktischen Anwendung von SQL. Dies umfasst neben der Syntax der SQL-Befehle, Datenmanipulation (DML) und Datenstrukturierung (DDL) auch Themen wie Ablaufsteuerung (TCL), Zugriffsrechte (DCL), Datentypen und grundlegende Funktionen (Kapitel 7 bis 14).\n\nDer Abschnitt Mehr zu Abfragen (S. 3) vertieft die Möglichkeiten der SELECT-Struktur. Schwerpunkte bilden hier Tabellenverknüpfungen (JOINs und OUTER JOINs), Gruppierungen, Unterabfragen sowie die Erstellung von Views (Kapitel 15 bis 27).\n\nDer Teil Erweiterungen (S. 4) führt in fortgeschrittene Konzepte ein. Dazu zählen unter anderem Fremdschlüssel-Beziehungen, SQL-Programmierung, die Entwicklung eigener Funktionen, Prozeduren und Trigger. Zudem werden praktische Tipps zur Datenbankwartung und zur Erzeugung von Testdaten gegeben (Kapitel 28 bis 36).\n\nDer Anhang (S. 4) komplettiert das Buch durch Informationen zur Tabellenstruktur der Beispieldatenbank, Download-Optionen, eine Befehlsreferenz sowie weiterführende Verweise.\n\nInsgesamt deckt das Werk den gesamten Lebenszyklus einer Datenbank ab, von der theoretischen Modellierung bis hin zur komplexen Programmierung und Administration.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514350292,
+      "channel": "plan_pipe_cdbaa84f44d9",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Der vorliegende Abschnitt (S. 5–12) bildet den Einstieg in das Thema SQL und relationale Datenbanken. Hier sind die Kernaussagen strukturiert zusammengefasst:\n\nEinführung in Datenbanken (S. 5–6)\nDatenbanken fungieren als Speicher für strukturierte Informationen. Der Einstieg beleuchtet praktische Szenarien wie das Abfragen von Mitarbeiterdaten sowie das Hinzufügen neuer Datensätze. Es wird verdeutlicht, wie SQL als Verbindung zwischen natürlicher Sprache und Datenbanklogik dient.\n\nEinleitung und Hintergrund (S. 6)\nDieser Teil widmet sich der Historie von SQL, einem Überblick über gängige Datenbankmanagementsysteme und den im Buch verwendeten Schreibweisen zur besseren Orientierung für den Leser.\n\nRelationale Datenbanken (S. 6)\nDie Grundlagen relationaler Datenbanken bilden den Kern dieser Einführung. Dabei werden die essenziellen Bestandteile einer Datenbank definiert:\n- Tabellen: Als grundlegende Speichereinheit für Daten.\n- Spalten: Zur Definition der Attributstruktur.\n- Schlüssel und Verknüpfungen: Diese ermöglichen die logische Verbindung zwischen verschiedenen Tabellen.\n\nNormalisierung (S. 6)\nEin wesentliches Konzept für das effiziente Design von Datenbanken ist die Normalisierung. Der Text führt in den Grundgedanken ein und erläutert schrittweise die Anforderungen der ersten, zweiten und dritten Normalform, um Datenredundanzen zu vermeiden und die Konsistenz zu gewährleisten.\n\nBeispieldatenbank (S. 6)\nZur praktischen Veranschaulichung wird ein spezifischer Sachverhalt definiert, der in einer schematischen Darstellung sowie einer konkreten Tabellenstruktur für eine Beispieldatenbank mündet.\n\nGrundlagen der SQL-Befehle (S. 6)\nDer Abschnitt schließt mit einer Klassifizierung der SQL-Befehlssätze, die das Fundament der späteren Arbeit bilden:\n- DML (Data Manipulation Language): Zuständig für die Abfrage ($SELECT$) und Manipulation von Daten ($INSERT$, $UPDATE$, $DELETE$).\n- DDL (Data Definition Language): Dient der Definition der Datenbankstruktur.\n- TCL (Transaction Control Language): Regelt die Ablaufsteuerung von Transaktionen.\n- DCL (Data Control Language): Verwaltet den Zugriff und die Rechte.\n\nZusätzlich werden in diesem Teil erste Übungen angeboten, um das Verständnis für die verschiedenen Befehlsgruppen zu festigen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514350293,
+      "channel": "plan_pipe_cdbaa84f44d9",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 12
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Das bereitgestellte Vorwort erläutert den konzeptionellen Rahmen und die Zielsetzung des Buches (S. 13-14). Die wichtigsten Punkte sind wie folgt zusammengefasst:\n\nFokus und Zielgruppe\nDas Werk dient als Einführung in den SQL-Standard, wobei spezifische Dialekte der verschiedenen Datenbanksysteme nur dort thematisiert werden, wo es zwingend erforderlich ist (S. 13). Angesprochen werden primär Schüler sowie Studenten, die sich mit relationalen Datenbanken auseinandersetzen (S. 13).\n\nInhaltliche Schwerpunkte\nDas Buch vermittelt SQL anhand einer Beispieldatenbank, die der Leser auf seinem eigenen System praktisch nachvollziehen kann (S. 13). Die Kernbereiche sind:\n- Abfragen von Daten (S. 13)\n- Manipulation von Daten (S. 13)\n- Einfache Änderungen an der Datenbankstruktur (S. 13)\n\nAbgrenzung\nDie Publikation versteht sich ausdrücklich nicht als Leitfaden für die theoretische Gestaltung oder Modellierung relationaler Datenbanken (S. 13). Ebenso werden Themen wie die Systemverwaltung, Performance-Optimierung sowie prozedurale oder objektorientierte Erweiterungen (z. B. PL/SQL) nicht behandelt (S. 13).\n\nHintergrund und Entstehung\nDer Autor Jürgen Thomas betont, dass das Buch über mehrere Jahre hinweg entstanden ist und auf Vorarbeiten bei Wikibooks sowie auf dem Feedback der Leserschaft basiert (S. 14).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514350294,
+      "channel": "plan_pipe_cdbaa84f44d9",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 13,
+        "end": 14
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts:\n\nDer vorliegende Text beginnt mit Teil I, welcher die Einführung darstellt (S. 15). Dieser Teil dient als strukturelles Fundament, um in das übergeordnete Thema einzuleiten und den thematischen Rahmen für die weiteren Ausführungen zu setzen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514350295,
+      "channel": "plan_pipe_cdbaa84f44d9",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 15,
+        "end": 16
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Dieser Abschnitt gibt einen grundlegenden Einstieg in die Arbeit mit Datenbanken über die strukturierte Abfragesprache SQL anhand einer fiktiven Beispieldatenbank (S. 17).\n\nDie zentralen Kernaussagen lassen sich wie folgt zusammenfassen:\n\nGrundlagen von SQL\nSQL (Structured Query Language) ist eine standardisierte Sprache zur Interaktion mit Datenbanken. Die Syntax lehnt sich stark an die natürliche englische Sprache an, was den Einstieg erleichtert (S. 18, 20).\n\nWichtige Datenbankbefehle\nDie Interaktion mit der Datenbank erfolgt über vier wesentliche Befehlsgruppen:\n\n1. Datenauswahl: Mit dem SELECT-Befehl werden Informationen abgefragt. Die Grundstruktur lautet: SELECT <Spalten> FROM <Tabelle> WHERE <Bedingung> ORDER BY <Sortierung> (S. 19, 20).\n\n2. Datenerfassung: Der INSERT-Befehl fügt neue Datensätze hinzu. Dabei müssen alle erforderlichen Spaltenwerte (inklusive Pflichtfelder) korrekt definiert werden (S. 19, 21).\n\n3. Datenänderung: Der UPDATE-Befehl ermöglicht die Aktualisierung bestehender Einträge mittels SET <Spalte> = <Wert> und einer WHERE-Bedingung (S. 21).\n\n4. Datenlöschung und Struktur: Der DELETE-Befehl entfernt Datensätze basierend auf Bedingungen. Mit CREATE TABLE können neue Tabellenstrukturen angelegt werden (S. 21).\n\nWichtige Regeln für die Anwendung\n- Die Reihenfolge der SQL-Klauseln ist strikt vorgegeben. So muss etwa die WHERE-Bedingung vor der Sortierung (ORDER BY) stehen, um Fehlermeldungen zu vermeiden (S. 18, 19).\n- Datenbanken setzen oft spezifische Datentypen und Pflichtfelder voraus (z.B. Personalnummer), weshalb unvollständige Eingaben zu Validierungsfehlern führen können (S. 20).\n- Das Platzhalterzeichen * fungiert als Kürzel für den Abruf sämtlicher verfügbarer Informationen einer Tabelle (S. 19).\n\nDurch die klare und begrenzte Struktur der SQL-Befehle, die der englischen Logik folgt, ist das System auch für Anfänger effizient erlernbar (S. 20, 21).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514350296,
+      "channel": "plan_pipe_cdbaa84f44d9",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 17,
+        "end": 22
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine zusammenfassende Übersicht basierend auf den bereitgestellten Seiten:\n\n**Zielsetzung und Grundkonzepte**\nDas Werk bietet einen praxisorientierten Einstieg in die Abfragesprache SQL, die für relationale Datenbankmanagementsysteme (DBMS) entwickelt wurde. Ziel ist es, den Leser zur eigenständigen Erstellung, Manipulation und Strukturierung von Datenbanken zu befähigen (S. 23). Die Beispiele basieren primär auf dem SQL-Standard von 2003, da dessen Grundlagen für das Verständnis von SQL universell und unverzichtbar sind (S. 24).\n\n**Datenbankmanagementsysteme (DBMS)**\nDas Buch konzentriert sich ausschließlich auf relationale DBMS. Es wird zwischen kommerziellen Anbietern (z.B. Oracle, MS SQL Server, DB2) und Systemen mit freier Verfügbarkeit (z. B. MySQL, PostgreSQL, SQLite) unterschieden (S. 25). Andere Systeme wie MS-Access oder dBase werden nicht behandelt, da deren Befehlssätze und Optionen stark von der jeweiligen Programmdokumentation abhängen (S. 25-26).\n\n**Schreibweisen und Konventionen**\nUm Konsistenz zu gewährleisten, gelten für die Darstellung der SQL-Befehle im Buch spezifische Regeln:\n- SQL-Schlüsselwörter werden großgeschrieben, obwohl SQL selbst weitgehend unabhängig von Groß- und Kleinschreibung ist (S. 26).\n- String-Literale werden in einfache Anführungszeichen gesetzt (S. 26).\n- Jeder Befehl schließt mit einem Semikolon ab (S. 27).\n- Optionale Argumente werden in [ ], variable Argumente in < > und Wahlmöglichkeiten durch das Pipe-Symbol | dargestellt (S. 27).\n\n**Hinweise zur Praxis**\nDa jeder Hersteller eigene Erweiterungen und Besonderheiten implementiert, wird darauf hingewiesen, dass eine vollkommene Kompatibilität zwischen verschiedenen DBMS nicht garantiert werden kann. Bei Abweichungen oder Zweifeln sollte daher immer die spezifische Dokumentation des verwendeten Systems herangezogen werden (S. 24).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514350297,
+      "channel": "plan_pipe_cdbaa84f44d9",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 23,
+        "end": 28
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der Abschnitte zu relationalen Datenbanken (S. 29–36):\n\n**Grundprinzipien relationaler Datenbanken**\nDas Ziel relationaler Datenbanken ist die Abbildung realer Objekte und ihrer Beziehungen in einem logischen Datenmodell. Dabei werden Daten zur Vermeidung von Redundanzen normalisiert, was bedeutet, dass Informationen nur einmal gespeichert werden sollen (S. 29, 31, 35).\n\n**Strukturierung der Daten**\nDie Datenverwaltung erfolgt über Tabellen, die aus Spalten (Attributen mit definiertem Datentyp) und Zeilen (einzelnen Datensätzen) bestehen (S. 32, 33). Neben Basistabellen existieren virtuelle Sichttabellen (Views), die gespeicherte Abfragen darstellen (S. 32). Ein besonderer Wert ist der NULL-Wert. Er steht nicht für \"null\" oder \"leer\", sondern signalisiert einen \"unbekannten\" Zustand (S. 33, 34).\n\n**Verknüpfungen und Schlüssel**\nDie Beziehungen zwischen verschiedenen Tabellen sind das Herzstück relationaler Systeme und werden über Schlüssel realisiert (S. 34):\n\n1. Primärschlüssel (Primary Key): Jede Zeile einer Tabelle muss durch einen Primärschlüssel eindeutig identifizierbar sein (S. 35). Da fachliche Attribute (wie Namen) sich ändern können oder nicht garantierte Eindeutigkeit bieten, werden hierfür meist systemgenerierte IDs verwendet (S. 35).\n2. Fremdschlüssel (Foreign Key): Diese verknüpfen Datensätze einer Tabelle mit dem Primärschlüssel einer anderen Tabelle, um den logischen Zusammenhang zwischen den Objekten herzustellen (S. 35).\n\n**Effizienz und Integrität**\nDurch die Trennung der Daten (Normalisierung) ergeben sich signifikante Vorteile: \n- Datenänderungen (z. B. Umzug einer Abteilung) müssen nur an einer Stelle vorgenommen werden (S. 35).\n- Die referenzielle Integrität stellt sicher, dass verknüpfte Datensätze nicht versehentlich gelöscht werden können, solange sie noch in Verwendung sind (S. 35).\n- Indizes dienen dazu, Suchvorgänge innerhalb der Tabellen zu beschleunigen oder die Eindeutigkeit bestimmter Spaltenwerte sicherzustellen (S. 36).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514350298,
+      "channel": "plan_pipe_cdbaa84f44d9",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 29,
+        "end": 36
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Das Kapitel 5 befasst sich mit der Normalisierung von Datenbanken und deren Konzeption (S. 37). Hier sind die wesentlichen Kernpunkte zusammengefasst:\n\nDer Abschnitt dient als Leitfaden für die strukturierte Gestaltung von Datenbanken (S. 37). Er ist explizit nicht für Nutzer gedacht, die lediglich mit bestehenden Systemen arbeiten, sondern richtet sich an Gestalter und Entwickler, die Datenbanken neu konzipieren (S. 37).\n\nDer inhaltliche Fokus liegt auf den verschiedenen Stufen der Normalisierung:\n\nDie erste bis dritte Normalform bilden das theoretische Fundament zur Vermeidung von Redundanzen und zur Konsistenzsicherung (S. 37). Zusätzlich werden ergänzende Maßnahmen zur Optimierung vorgestellt (S. 37). Zum Abschluss bietet das Kapitel eine Zusammenfassung sowie weiterführende Hinweise (S. 37).\n\nDas Dokument verdeutlicht somit, dass eine fundierte Auseinandersetzung mit Normalisierungsregeln über die Grundkenntnisse einfacher Anwender hinausgeht und für professionelles Datenbank-Design essenziell ist (S. 37).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514350299,
+      "channel": "plan_pipe_cdbaa84f44d9",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 37,
+        "end": 44
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der Grundlagen und weiterführenden Konzepte aus dem Bereich (S. 45-123):\n\nDer Teil II des Buches behandelt die essenziellen technischen Aspekte von SQL. \n\nGrundlegende Befehlskategorien\nDie Funktionalität von SQL unterteilt sich in vier Hauptgruppen:\n1. DML (Data Manipulation Language): Zuständig für die Datenabfrage und -verarbeitung (S. 49).\n2. DDL (Data Definition Language): Dient der Definition der Datenbankstruktur (S. 51).\n3. TCL (Transaction Control Language): Regelt die Ablaufsteuerung und Transaktionen zur Sicherung der Datenintegrität (S. 52, S. 89-92).\n4. DCL (Data Control Language): Verwaltet den Zugriff auf die Datenbank (S. 52).\n\nDatenmanipulation und -abfrage\nEin zentraler Bestandteil ist der SELECT-Befehl zur Datenabfrage. Dieser lässt sich durch spezifische Zusätze präzisieren:\n- DISTINCT: Verhindert die Ausgabe doppelter Zeilen (S. 59).\n- WHERE: Ermöglicht die Einschränkung der Ergebnismenge anhand von Kriterien (S. 60).\n- ORDER BY: Dient zur Sortierung der Resultate (S. 61).\nFür die Datenpflege werden INSERT (Einfügen), UPDATE (Ändern), DELETE (Löschen) und TRUNCATE (Tabelle leeren) genutzt (S. 69-75).\n\nDatenbankstruktur und Funktionen\nDie DDL-Befehle werden verwendet, um die Struktur der Datenbank aufzubauen und anzupassen (S. 79-85). Ergänzend dazu werden Datentypen definiert, um die Art der gespeicherten Informationen zu bestimmen, wobei zwischen vordefinierten, konstruierten und spezialisierten Typen unterschieden wird (S. 97-105).\n\nFunktionale Erweiterungen\nUm Daten effizient zu verarbeiten, bietet SQL zahlreiche vordefinierte Funktionen an:\n- Arithmetische Funktionen für Zahlenwerte (S. 110).\n- Funktionen zur Manipulation von Zeichenketten (S. 113).\n- Zeit- und Datumsfunktionen (S. 115).\n- Logische Operatoren und Funktionen für NULL-Werte (S. 116).\n- Konvertierungsfunktionen und Spaltenfunktionen (S. 117-120).\n\nDiese Grundlagen bilden das Fundament für die komplexeren Datenbankabfragen und -strukturen, wie sie im weiteren Verlauf des Werkes (ab S. 127) detailliert beschrieben werden.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514350300,
+      "channel": "plan_pipe_cdbaa84f44d9",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 45,
+        "end": 466
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778514350381,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Was ist der Hauptunterschied zwischen einer 'INNER JOIN' und einer 'OUTER JOIN' Operation bei der Tabellenverknüpfung?",
+            "options": [
+              "INNER JOIN benötigt zwingend einen Primärschlüssel, während OUTER JOIN ohne Schlüsselbedingungen zwischen den Tabellen funktioniert.",
+              "INNER JOIN gibt Ergebnisse nur für übereinstimmende Zeilen zurück, während OUTER JOIN auch nicht übereinstimmende Zeilen aus einer oder beiden Tabellen einbezieht.",
+              "OUTER JOIN ist schneller, da es weniger Daten verarbeitet, während INNER JOIN alle möglichen Kombinationen (kartesisches Produkt) berechnet.",
+              "Es gibt keinen Unterschied; die Begriffe sind lediglich Aliasse für denselben Vorgang in unterschiedlichen SQL-Dialekten."
+            ],
+            "correctIndex": 1,
+            "explanation": "INNER JOIN filtert Datensätze, bei denen keine Übereinstimmung existiert. OUTER JOIN (Left, Right oder Full) behält auch Datensätze bei, die keinen Partner in der zu verknüpfenden Tabelle haben."
+          },
+          {
+            "question": "Warum ist die 'GROUP BY'-Klausel in Verbindung mit Aggregatfunktionen (wie SUM, AVG, COUNT) notwendig?",
+            "options": [
+              "Um die Daten in Kategorien zu unterteilen, damit Aggregatfunktionen auf diese spezifischen Gruppen statt auf die gesamte Tabelle angewendet werden.",
+              "Um die Anzahl der Spalten in der SELECT-Liste auf ein Minimum zu reduzieren.",
+              "Um die Datenbankstruktur temporär in einer neuen Tabelle zu speichern.",
+              "Um die Ergebnismenge nach dem Zufallsprinzip zu sortieren."
+            ],
+            "correctIndex": 0,
+            "explanation": "Ohne GROUP BY würde eine Aggregatfunktion den Wert über die gesamte Ergebnismenge bilden. GROUP BY splittet die Menge in Gruppen auf, für die dann jeweils der Aggregatwert berechnet wird."
+          },
+          {
+            "question": "Welche Funktion erfüllt die 'DISTINCT'-Klausel in einer SELECT-Abfrage?",
+            "options": [
+              "Sie berechnet die Gesamtzahl aller Zeilen in der Ergebnismenge.",
+              "Sie filtert doppelte Zeilen aus dem Ergebnis heraus, sodass jeder Wert nur einmal vorkommt.",
+              "Sie verknüpft zwei Tabellen miteinander, die keine gemeinsame Spalte besitzen.",
+              "Sie sortiert die Ergebnisse alphabetisch oder numerisch."
+            ],
+            "correctIndex": 1,
+            "explanation": "DISTINCT sorgt dafür, dass aus einer Liste von Werten Duplikate entfernt werden, sodass man eine eindeutige Auflistung erhält."
+          },
+          {
+            "question": "Was passiert technisch, wenn zwei Tabellen ohne eine Join-Bedingung oder WHERE-Klausel (z.B. SELECT * FROM A, B) kombiniert werden?",
+            "options": [
+              "Es wird ein kartesisches Produkt erzeugt, bei dem jeder Datensatz der ersten Tabelle mit jedem Datensatz der zweiten Tabelle kombiniert wird.",
+              "Das Datenbankmanagementsystem wählt automatisch die passenden Primärschlüssel aus.",
+              "Es entsteht ein Fehler, da SQL zwingend eine Verknüpfung verlangt.",
+              "Es werden nur die ersten Zeilen jeder Tabelle miteinander kombiniert."
+            ],
+            "correctIndex": 0,
+            "explanation": "Wird keine Einschränkung (Join-Bedingung) definiert, kombiniert SQL jede Zeile von Tabelle A mit jeder Zeile von Tabelle B (kartesisches Produkt)."
+          },
+          {
+            "question": "Bei der Abfrage von Datenbanken dient die 'HAVING'-Klausel als Ergänzung zu welcher anderen Klausel, um Gruppen zu filtern?",
+            "options": [
+              "ORDER BY, damit nur sortierte Gruppen angezeigt werden.",
+              "INSERT, um Gruppen direkt in andere Tabellen zu kopieren.",
+              "WHERE, weil sie dieselben Einschränkungen auf einzelne Zeilen anwendet.",
+              "GROUP BY, um gefilterte Gruppen auf Basis von Aggregat-Ergebnissen auszuschließen."
+            ],
+            "correctIndex": 3,
+            "explanation": "Die WHERE-Klausel filtert Zeilen vor der Gruppierung. Die HAVING-Klausel filtert Gruppen erst nach Anwendung von Aggregatfunktionen (z.B. 'Zeige nur Gruppen, die mehr als 5 Artikel enthalten')."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778514350382,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Wofür steht die Abkürzung SQL?",
+            "back": "SQL steht für Structured Query Language. Es ist eine standardisierte Sprache zur Abfrage, Manipulation und Definition von Daten in relationalen Datenbanken."
+          },
+          {
+            "front": "Was ist die Hauptaufgabe des SELECT-Befehls in SQL?",
+            "back": "Der SELECT-Befehl dient zum Abfragen und Ausgeben von Daten aus einer oder mehreren Tabellen."
+          },
+          {
+            "front": "Welchen Zweck erfüllt die DISTINCT-Klausel?",
+            "back": "DISTINCT verhindert, dass doppelte Zeilen im Abfrageergebnis erscheinen; es werden nur einzigartige Datensätze zurückgegeben."
+          },
+          {
+            "front": "Was bewirkt der INNER JOIN?",
+            "back": "Ein INNER JOIN verknüpft Datensätze aus zwei Tabellen nur dann, wenn die Verknüpfungsbedingung in beiden Tabellen erfüllt ist."
+          },
+          {
+            "front": "Was ist der Unterschied zwischen LEFT OUTER JOIN und INNER JOIN?",
+            "back": "Ein LEFT OUTER JOIN gibt alle Datensätze der linken Tabelle zurück, auch wenn keine passende Entsprechung in der rechten Tabelle gefunden wird (dann mit NULL-Werten), während der INNER JOIN nur passende Paare zeigt."
+          },
+          {
+            "front": "Welche Funktion erfüllt die GROUP BY-Klausel?",
+            "back": "GROUP BY fasst Datensätze mit gleichen Werten in bestimmten Spalten zu Gruppen zusammen, oft in Kombination mit Aggregatfunktionen wie SUM, AVG oder COUNT."
+          },
+          {
+            "front": "Was ist der Zweck von HAVING?",
+            "back": "HAVING wird verwendet, um Gruppen von Datensätzen nach einer Aggregation zu filtern, ähnlich wie WHERE für einzelne Zeilen wirkt."
+          },
+          {
+            "front": "Was ist eine DML-Sprache?",
+            "back": "DML steht für Data Manipulation Language. Sie befasst sich mit der Struktur der Datenbearbeitung, z. B. SELECT, INSERT, UPDATE und DELETE."
+          },
+          {
+            "front": "Was ist DDL in SQL?",
+            "back": "DDL steht für Data Definition Language. Sie dient zur Definition und Änderung der Datenbankstruktur (z. B. CREATE, ALTER, DROP von Tabellen)."
+          },
+          {
+            "front": "Was macht eine View (Sicht) in SQL?",
+            "back": "Eine View ist die gespeicherte Definition einer SELECT-Abfrage, die wie eine virtuelle Tabelle abgefragt werden kann, ohne die zugrunde liegenden physischen Daten zu ändern."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-cs-datenbanken-praxis_0",
+      "slides": [
+        {
+          "title": "Lektion 1: SQL Grundlagen",
+          "bullets": [
+            "Einführung in die Arbeit mit relationalen Datenbanken",
+            "Fokus: Abfrage, Verknüpfung und Aggregation"
+          ],
+          "notes": "Willkommen zur Lektion 1. Wir legen heute das Fundament für den Umgang mit Datenbanken.",
+          "page_range": "1-3",
+          "image_prompt": ""
+        },
+        {
+          "title": "SQL – Die Sprache für Daten",
+          "bullets": [
+            "Abkürzung für Structured Query Language",
+            "Standardisierte Sprache für relationale Datenbanken",
+            "Orientiert sich an natürlicher englischer Sprache",
+            "Grundlegende Befehle: SELECT, INSERT, UPDATE, DELETE"
+          ],
+          "notes": "SQL ist die Standardsprache, um mit Datenbanken zu kommunizieren. Sie ist intuitiv aufgebaut.",
+          "page_range": "18, 20, 24",
+          "image_prompt": ""
+        },
+        {
+          "title": "Daten abfragen mit SELECT",
+          "bullets": [
+            "SELECT: Wählt benötigte Spalten aus",
+            "FROM: Definiert die Quell-Tabelle",
+            "WHERE: Schränkt Ergebnismengen durch Bedingungen ein",
+            "ORDER BY: Sortiert die Ausgabe der Abfrage"
+          ],
+          "notes": "Mit SELECT steuern wir exakt, welche Informationen wir aus der Datenbank erhalten möchten.",
+          "page_range": "18-20",
+          "image_prompt": ""
+        },
+        {
+          "title": "Relationale Konzepte & JOIN",
+          "bullets": [
+            "Daten werden zur Redundanzvermeidung auf Tabellen verteilt",
+            "Verknüpfung erfolgt über Fremdschlüssel (Beziehungen)",
+            "JOIN-Operationen führen Tabellen in Abfragen zusammen",
+            "Ermöglicht komplexe Sichten auf verteilte Daten"
+          ],
+          "notes": "In relationalen Datenbanken liegen Daten oft getrennt vor. JOIN verbindet sie effizient.",
+          "page_range": "30-31, 181",
+          "image_prompt": ""
+        },
+        {
+          "title": "Aggregation & Gruppierung",
+          "bullets": [
+            "Daten zusammenfassen mit Aggregationsfunktionen",
+            "GROUP BY: Gruppiert Datensätze nach bestimmten Kriterien",
+            "HAVING: Filtert Gruppierungen nach Aggregatsbedingungen",
+            "Essentiell für statistische Auswertungen"
+          ],
+          "notes": "Wenn wir nicht nur Einzeldaten, sondern Zusammenfassungen brauchen, nutzen wir Gruppierungen.",
+          "page_range": "20, 241",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 1 — SQL Grundlagen - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778514350281,
+      "pdfName": "Einführung in SQL"
+    }
+  ],
+  "sourceHash": "c5304d5bf79d8ca2"
+}

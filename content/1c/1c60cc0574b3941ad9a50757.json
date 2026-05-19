@@ -1,0 +1,542 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Mathematik-Grundlagen - Lektion 4: Formelsammlung Statistik",
+    "pdfName": "Formelsammlung Statistik",
+    "createdAt": 1778790633210,
+    "exportedAt": "2026-05-14T20:30:33.210Z",
+    "meta": {
+      "courseId": "course-de-mathematik-grundlagen",
+      "lessonIndex": 3,
+      "courseTitle": "Mathematik-Grundlagen",
+      "lessonObjective": "Wahrscheinlichkeit, Statistik, Verteilungen.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-formelsammlung-statistik",
+            "title": "Formelsammlung Statistik",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Formelsammlung_Statistik"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_3f0b46002158",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "6-9",
+          "chapterTitle": "Grundlagen der Statistik",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "10-19",
+          "chapterTitle": "Zufallsvariablen und Verteilungsmodelle",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "20-25",
+          "chapterTitle": "Deskriptive Statistik",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "26-27",
+          "chapterTitle": "Parameterschätzung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "28-37",
+          "chapterTitle": "Hypothesentests",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "38-41",
+          "chapterTitle": "Varianzanalyse",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "42-43",
+          "chapterTitle": "Regressionsrechnung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "44-47",
+          "chapterTitle": "Zeitreihenanalyse",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "48-49",
+          "chapterTitle": "Symbolverzeichnis",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "50-68",
+          "chapterTitle": "Tabellen und Anhang",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778790633210,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung basiert auf dem Abschnitt **„4 Parameterschätzung“** der bereitgestellten Formelsammlung (S. 26–27).\n\n### Zusammenfassung: Parameterschätzung\nDie Parameterschätzung dient dazu, auf Basis einer Stichprobe Rückschlüsse auf den unbekannten Erwartungswert ($\\mu$) oder den Anteilswert ($p$) einer Grundgesamtheit zu ziehen. Hierbei wird ein Konfidenzintervall bestimmt; ein Bereich, in dem der wahre Parameter mit einer bestimmten Wahrscheinlichkeit ($1 - \\alpha$) liegt.\n\n#### 1. Konfidenzintervall für den Erwartungswert ($\\mu$)\nDie Berechnung des Konfidenzintervalls hängt davon ab, ob die Varianz ($\\sigma^2$) bekannt ist und ob das Merkmal normalverteilt ist:\n\n*   **Normalverteilt, $\\sigma$ bekannt (S. 26):**\n    Das Intervall liegt bei: $[\\bar{x} - z_{1-\\alpha/2} \\cdot \\frac{\\sigma}{\\sqrt{n}}; \\bar{x} + z_{1-\\alpha/2} \\cdot \\frac{\\sigma}{\\sqrt{n}}]$.\n*   **Normalverteilt, $\\sigma$ unbekannt (S. 26):**\n    Statt der Normalverteilung ($z$) wird die $t$-Verteilung mit $(n-1)$ Freiheitsgraden verwendet:\n    $[\\bar{x} - t_{n-1, 1-\\alpha/2} \\cdot \\frac{s}{\\sqrt{n}}; \\bar{x} + t_{n-1, 1-\\alpha/2} \\cdot \\frac{s}{\\sqrt{n}}]$.\n*   **Unbekannte Verteilung (S. 26–27):**\n    *   Bei bekannter Varianz wird der $z$-Wert der Normalverteilung genutzt.\n    *   Bei unbekannter Varianz dient die Stichprobenvarianz ($s$) als Schätzer innerhalb der $z$-Formel (Approximation).\n\n#### 2. Konfidenzintervall für den Anteilswert ($p$)\nHierbei wird nach der Art der Stichprobenentnahme unterschieden (S. 27):\n\n*   **Mit Zurücklegen:**\n    Unter der Bedingung $n \\cdot \\hat{p} \\cdot (1 - \\hat{p}) \\geq 9$, wird das Intervall über die Normalverteilung angenähert:\n    $[\\hat{p} \\pm z_{1-\\alpha/2} \\cdot \\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}]$.\n*   **Ohne Zurücklegen:**\n    Ist die Stichprobe groß genug ($n/N \\leq 0,05$), wird der Korrekturfaktor $\\sqrt{\\frac{N-n}{N-1}}$ in die Formel integriert, um die Abhängigkeit der Ziehung zu berücksichtigen.\n\n---\n**Hinweis für das Studium:** Achten Sie bei der Anwendung dieser Formeln stets darauf, ob die Voraussetzungen (z. B. Normalverteilung oder Stichprobenumfang) erfüllt sind, da dies entscheidet, ob Sie einen $z$-Test oder einen $t$-Test durchführen müssen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778790633210,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-mathematik-grundlagen_3\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 4: Formelsammlung Statistik - Präsentation</span><span class=\"pm-chat-count\">10 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lektion 4: Formelsammlung Statistik</div><ul class=\"pm-chat-slide-bullets\"><li>Grundlagen der Wahrscheinlichkeitsrechnung und Kombinatorik</li><li>Stetige und diskrete Verteilungsmodelle in der Statistik</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778790633211,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der Grundlagen der Wahrscheinlichkeitsrechnung basierend auf den bereitgestellten Unterlagen (S.6-S.8):\n\n**1. Mengenlehre und Kombinatorik (S.6)**\nDie Mengenlehre nutzt die Gesetze von DE MORGAN, um Komplemente und Schnittmengen zu verknüpfen:\n$P(\\bar{A} \\cup \\bar{B}) = P(A \\cap B)$ sowie $P(\\bar{A} \\cap \\bar{B}) = P(A \\cup B)$.\nDie Kombinatorik befasst sich mit Abzählverfahren:\n* Fakultät: $n! = 1 \\cdot 2 \\cdot ... \\cdot n$ mit $0! = 1$.\n* Binomialkoeffizient: $\\binom{n}{k} = \\frac{n!}{k!(n-k)!}$.\n\n**2. Wahrscheinlichkeitsbegriffe und Axiome (S.7)**\nDie Wahrscheinlichkeit eines Ereignisses $A$ ist definiert als Verhältnis der günstigen Fälle zur Gesamtzahl der Möglichkeiten: $P(A) = \\frac{|A|}{|\\Omega|}$.\nDie von Kolmogoroff aufgestellten Axiome fordern:\n* Nichtnegativität: $P(A) \\ge 0$.\n* Normiertheit: $P(\\Omega) = 1$.\n* Additivität: Für disjunkte Ereignisse gilt $P(A \\cup B) = P(A) + P(B)$.\n\nDer Additionssatz für allgemeine Ereignisse lautet:\n$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$.\n\n**3. Bedingte Wahrscheinlichkeit und Unabhängigkeit (S.7)**\nDie bedingte Wahrscheinlichkeit eines Ereignisses $A$ unter der Bedingung $B$ ist definiert als:\n$P(A | B) = \\frac{P(A \\cap B)}{P(B)}$.\nEreignisse gelten als unabhängig, wenn die Bedingung keinen Einfluss auf die Wahrscheinlichkeit hat, also $P(A | B) = P(A)$ (S.7).\n\n**4. Totale Wahrscheinlichkeit und Satz von BAYES (S.8)**\nDie totale Wahrscheinlichkeit ermöglicht die Berechnung von $P(B)$ über eine Partition des Ereignisraums:\n$P(B) = \\sum_{i=1}^{k} P(B | A_i) \\cdot P(A_i)$.\n\nDas BAYES-Theorem ermöglicht die Umkehrung von bedingten Wahrscheinlichkeiten:\n$P(A | B) = \\frac{P(B | A) \\cdot P(A)}{P(B)}$.\n\nFür den Fall einer binären Partition (Ereignis $A$ und Gegenereignis $\\bar{A}$) ergibt sich die erweiterte Formel:\n$P(A | B) = \\frac{P(B | A) \\cdot P(A)}{P(B | A) \\cdot P(A) + P(B | \\bar{A}) \\cdot P(\\bar{A})}$.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790633220,
+      "channel": "plan_pipe_3f0b46002158",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 9
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung behandelt die Grundlagen der Wahrscheinlichkeitsrechnung und Statistik gemäß dem bereitgestellten Dokument (S. 10–19).\n\n### 1. Zufallsvariablen (S. 10–11)\nEine diskrete Zufallsvariable $X$ wird durch ihre Wahrscheinlichkeitsfunktion $f(x) = P(X=x_i)$ und ihre Verteilungsfunktion $F(x) = P(X \\leq x)$ definiert. Wichtige Kennzahlen sind:\n- Erwartungswert: $E(X) = \\sum x_i \\cdot f(x_i)$\n- Varianz: $Var(X) = \\sum (x_i - E(X))^2 \\cdot f(x_i) = \\left( \\sum x_i^2 \\cdot f(x_i) \\right) - E(X)^2$\n- Standardabweichung: $\\sigma = \\sqrt{Var(X)}$\n- Varianz der Summe: $Var(X+Y) = Var(X) + Var(Y)$\n\n### 2. Mehrdimensionale Zufallsvariablen (S. 11–12)\nBei mehreren Zufallsvariablen untersuchen wir deren Zusammenhang über:\n- Kovarianz: $cov_{XY} = \\sum \\sum (x_i - E(X)) \\cdot (y_j - E(Y)) \\cdot f_{X,Y}(x_i; y_j)$\n- Korrelationskoeffizient nach Bravais-Pearson: Beschreibt die lineare Stärke des Zusammenhangs.\n- Rangkorrelationskoeffizient nach Spearman: Analyse basierend auf Rängen zur Messung monotoner Zusammenhänge.\n\n### 3. Diskrete Verteilungsmodelle (S. 12–13)\n- Binomialverteilung: Anwendung bei $n$ unabhängigen Versuchen mit Erfolgswahrscheinlichkeit $\\theta$. $E(X) = n \\cdot \\theta$ und $Var(X) = n \\cdot \\theta \\cdot (1-\\theta)$.\n- Hypergeometrische Verteilung: Einsatz bei Stichproben ohne Zurücklegen aus einer endlichen Menge.\n- Poissonverteilung: Modellierung von Ereignissen mit Rate $\\lambda$ (Ereignisse pro Zeitintervall); $E(X) = Var(X) = \\lambda$.\n\n### 4. Stetige Zufallsvariablen und Verteilungen (S. 13–15)\nStetige Variablen werden über die Dichtefunktion $f(x)$ definiert, wobei $F(a) = \\int_{-\\infty}^{a} f(x) dx$ gilt.\n- Stetige Gleichverteilung: Gleiche Dichte im Intervall $[a, b]$.\n- Exponentialverteilung: Charakterisiert durch die Rate $\\lambda$ mit $E(X) = 1/\\lambda$.\n- Normalverteilung ($N(\\mu, \\sigma^2)$): Zentrales Modell. Die Standardnormalverteilung $N(0,1)$ wird durch die Transformation $z = (x-\\mu)/\\sigma$ erreicht.\n\n### 5. Spezielle Verteilungen und Grenzwerte (S. 16–19)\n- Linearkombinationen: Summen normalverteilter Variablen sind wiederum normalverteilt.\n- Chi-Quadrat-Verteilung: Summe quadrierter standardnormalverteilter Variablen; wichtig für statistische Tests (Anpassung, Unabhängigkeit, Homogenität).\n- t-Verteilung: Anwendung bei unbekannter Varianz in Stichproben.\n- Fisher-Verteilung: Quotient zweier Chi-Quadrat-Verteilungen.\n- Approximation: Komplexe Verteilungen können bei großen Stichproben $n$ oft durch die Normalverteilung approximiert werden.\n- Hauptsätze: Das Gesetz der großen Zahlen und der Zentrale Grenzwertsatz besagen, dass sich die Summe unabhängiger Zufallsvariablen bei wachsendem $n$ einer Normalverteilung annähert (S. 19).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790633221,
+      "channel": "plan_pipe_3f0b46002158",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 10,
+        "end": 19
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der deskriptiven Statistik basierend auf den bereitgestellten Inhalten:\n\n**1. Skalenniveaus (S. 20)**\nDie deskriptive Statistik unterscheidet vier grundlegende Skalenniveaus:\n- Nominalskala: Werte können nur unterschieden, aber nicht geordnet werden (qualitative Daten).\n- Ordinalskala: Werte besitzen eine natürliche Rangfolge; Abstände zwischen den Werten sind nicht interpretierbar (z. B. Noten).\n- Intervallskala: Abstände zwischen Werten sind interpretierbar, es gibt keinen natürlichen Nullpunkt (z. B. Temperatur).\n- Verhältnissskala: Verfügt über einen natürlichen Nullpunkt, was Verhältnisse interpretierbar macht.\n\n**2. Statistische Kennzahlen und Diagramme (S. 21-22)**\n- Zweig-Blätter-(stem-leaf-)Diagramm: Eine Methode zur grafischen Darstellung von Häufigkeitsverteilungen (S. 21).\n- Lageparameter:\n  - Arithmetisches Mittel: $\\bar{X} = \\frac{1}{n} \\sum_{i=1}^{n} x_i$ (S. 21).\n  - Median: Der zentrale Wert nach der Sortierung (S. 21).\n  - Geometrisches Mittel: $\\bar{X}_{\\text{geom}} = \\sqrt[n]{\\prod_{i=1}^{n} x_i}$ (S. 21).\n  - Harmonisches Mittel: $\\bar{X}_{\\text{harm}} = \\frac{n}{\\sum_{i=1}^{n} \\frac{1}{x_i}}$ (S. 21).\n  - Modalwert: Der am häufigsten auftretende Wert (S. 22).\n\n**3. Streuung und Konzentration (S. 22-24)**\n- Varianz: Maß für die Streuung um den Mittelwert, wobei zwischen der theoretischen Varianz $\\sigma^2$ und der Schätzung $s^2$ unterschieden wird. Der Verschiebungssatz erlaubt eine vereinfachte Berechnung (S. 22).\n- Variationskoeffizient: $v = \\frac{s}{\\bar{X}}$ (S. 22).\n- Konzentrationsmaße (S. 23-24):\n  - Lorenzkurve: Visualisiert die Verteilung eines Merkmals über die Merkmalsträger.\n  - Gini-Koeffizient ($G$): Ein Maß für die Ungleichverteilung. Der Wert liegt zwischen 0 (perfekte Gleichverteilung) und 1 (maximale Konzentration).\n  - Herfindahl-Index: $H = \\sum_{i=1}^{n} p_i^2$, wobei $p_i$ den Anteil des i-ten Trägers am Gesamtwert darstellt (S. 24).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790633222,
+      "channel": "plan_pipe_3f0b46002158",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 20,
+        "end": 25
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die bereitgestellten Seiten behandeln die Parameterschätzung mittels Konfidenzintervallen für Erwartungswerte und Anteilswerte.\n\n### 1. Konfidenzintervall für den Erwartungswert $\\mu$\n\nDie Berechnung des Intervalls hängt von der Verteilung des Merkmals und der Kenntnis der Varianz ab:\n\n*   Normalverteiltes Merkmal mit bekannter Varianz $\\sigma^2$: Man verwendet den z-Wert der Standardnormalverteilung (S. 26).\n    Intervall: $[\\bar{x} - z_{1-\\alpha/2} \\cdot \\frac{\\sigma}{\\sqrt{n}}; \\bar{x} + z_{1-\\alpha/2} \\cdot \\frac{\\sigma}{\\sqrt{n}}]$\n\n*   Normalverteiltes Merkmal mit unbekannter Varianz: Es wird die Stichprobenvarianz $s^2$ genutzt und der z-Wert durch den t-Wert aus der t-Verteilung mit $n-1$ Freiheitsgraden ersetzt (S. 26).\n    Intervall: $[\\bar{x} - t_{1-\\alpha/2; n-1} \\cdot \\frac{s}{\\sqrt{n}}; \\bar{x} + t_{1-\\alpha/2; n-1} \\cdot \\frac{s}{\\sqrt{n}}]$\n\n*   Unbekannte Verteilung:\n    *   Bei bekannter Varianz wird der z-Wert verwendet (S. 26).\n    *   Bei unbekannter Varianz wird die Stichprobenvarianz $s$ anstelle von $\\sigma$ genutzt und weiterhin mit dem z-Wert gerechnet (S. 27).\n\n### 2. Konfidenzintervall für den Anteilswert $p$\n\nDie Konstruktion unterscheidet sich je nach Stichprobenmodell, sofern die Bedingung $n \\cdot \\hat{p} \\cdot (1-\\hat{p}) \\geq 9$ erfüllt ist (S. 27):\n\n*   Modell mit Zurücklegen: Hier wird die geschätzte Quote $\\hat{p} = \\frac{x}{n}$ verwendet (S. 27).\n    Intervall: $[\\hat{p} - z_{1-\\alpha/2} \\cdot \\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}; \\hat{p} + z_{1-\\alpha/2} \\cdot \\sqrt{\\frac{\\hat{p}(1-\\hat{p})}{n}}]$\n\n*   Modell ohne Zurücklegen: Unter weiteren Bedingungen (z.B. $n > 100$ und Endlichkeitskorrektur $\\frac{n}{N} \\leq 0,05$) wird der Standardfehler zusätzlich mit dem Faktor $\\sqrt{\\frac{N-n}{N-1}}$ multipliziert (S. 27).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790633223,
+      "channel": "plan_pipe_3f0b46002158",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 26,
+        "end": 27
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung deckt die Abschnitte über Hypothesentests (S. 28–37) ab.\n\n**Grundprinzipien der Hypothesentests (S. 28)**\nEin Hypothesentest entscheidet anhand von Stichprobendaten, ob eine Nullhypothese $H_0$ beibehalten oder abgelehnt wird. Dabei kann es zu zwei Fehlern kommen:\n- Fehler 1. Art ($\\alpha$): $H_0$ ist wahr, wird aber abgelehnt.\n- Fehler 2. Art ($\\beta$): $H_1$ ist wahr, aber $H_0$ wird fälschlicherweise nicht abgelehnt.\nDas Konfidenzniveau wird durch $1 - \\alpha$ definiert.\n\n**Tests auf Lageparameter (S. 28–32)**\n- Erwartungswert: Bei bekannter Varianz ($\\sigma$) wird die Standardnormalverteilung $N(0;1)$ genutzt, bei unbekannter Varianz die $t$-Verteilung mit $n-1$ Freiheitsgraden (S. 29–30).\n- Vorzeichentest: Ein non-parametrischer Test, der auf der Richtung von Differenzen basiert. Bei großen Stichproben wird die Binomialverteilung durch die Normalverteilung approximiert ($n \\pi (1-\\pi) \\geq 9$) (S. 30–31).\n- Anteilswert (Binomialtest): Testet Parameter einer Binomialverteilung. Für $n > 30$ und hinreichend große Erwartungswerte wird die Normalverteilung zur Approximation genutzt; bei kleinen Stichproben erfolgt der Test exakt über die Binomialverteilung (S. 32–33).\n\n**Tests auf Streuung (S. 34)**\nZur Prüfung von Varianzen ($\\sigma^2$) wird die $\\chi^2$-Verteilung verwendet. Die Teststatistik berechnet sich bei unbekanntem Erwartungswert als:\n$T = \\frac{(n-1) S^2}{\\sigma^2_0} \\sim \\chi^2(n-1)$\n\n**Zusammenhangs- und Verteilungstests (S. 35–37)**\n- $\\chi^2$-Unabhängigkeitstest: Prüft in Kontingenztafeln, ob zwei Merkmale $X$ und $Y$ unabhängig sind. Die Prüfgröße summiert die quadrierten Differenzen zwischen beobachteten ($n_{jk}$) und erwarteten Häufigkeiten ($n^*_{jk}$) (S. 35).\n- $\\chi^2$-Anpassungstest: Überprüft, ob Daten einer theoretischen Verteilung $F_0$ folgen (S. 35–36).\n- Kolmogorow-Smirnow-Test (K-S-Test): Ein nicht-parametrischer Test, der das Supremum der Differenzen zwischen der empirischen Verteilungsfunktion $F_n$ und der theoretischen Verteilungsfunktion $F_0$ misst. Er wird sowohl für Eintichproben- als auch für Zweistichprobenprobleme angewendet (S. 36–37).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790633224,
+      "channel": "plan_pipe_3f0b46002158",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 28,
+        "end": 37
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der univariaten Varianzanalyse (ANOVA) basierend auf den bereitgestellten Seiten:\n\nDie univariate Varianzanalyse (ANOVA) dient dazu, die Mittelwerte von $k$ Gruppen zu vergleichen (S. 38).\n\nHypothesenprüfung\nDie Nullhypothese $H_0$ postuliert, dass alle Gruppenmittelwerte identisch sind ($\\mu_1 = \\mu_2 = \\dots = \\mu_k$). Die Alternativhypothese $H_1$ besagt, dass sich mindestens zwei Gruppenmittelwerte unterscheiden (S. 38).\n\nEffektdarstellung\nDas Modell wird beschrieben durch $X_{ij} = \\mu + \\alpha_i + \\varepsilon_{ij}$, wobei $\\mu$ der Gesamterwartungswert, $\\alpha_i$ der Effekt der $i$-ten Gruppe und $\\varepsilon_{ij}$ der zufällige Fehlerterm ist. Dabei gilt $\\sum_{i=1}^{k} n_i \\alpha_i = 0$ (S. 38-39).\n\nQuadratsummenzerlegung\nDie Gesamtquadratsumme $QST$ lässt sich in die Quadratsumme zwischen den Gruppen ($QSA$) und die Fehlerquadratsumme ($QSE$) zerlegen (S. 39):\n$QST = QSA + QSE$\n\nDabei ist:\n$QSA = \\sum_{i} n_i (\\bar{X}_i - \\bar{X})^2$\n$QSE = \\sum_{i,j} (X_{ij} - \\bar{X}_i)^2$\n\nPrüfgröße\nZur Überprüfung der Hypothese wird das Verhältnis der mittleren Quadratsummen ($MQSA$ und $MQSE$) als $F$-Statistik berechnet (S. 39):\n$F = \\frac{MQSA}{MQSE} = \\frac{QSA / (k-1)}{QSE / (n-k)}$\n\nBei Gruppen gleicher Größe $b$ vereinfacht sich die Formel zu (S. 40):\n$F = \\frac{1/(k-1) \\cdot b \\cdot \\sum_{i} (\\bar{X}_i - \\bar{X})^2}{1/(k \\cdot (b-1)) \\cdot \\sum_{i,j} (X_{ij} - \\bar{X}_i)^2}$\n\nEntscheidungsregel\nDie Nullhypothese wird abgelehnt, wenn der berechnete $F$-Wert größer ist als der kritische Wert $F_{\\text{krit}}(\\alpha, k-1, k \\cdot (b-1))$ (S. 40). In diesem Fall wird davon ausgegangen, dass sich die Gruppen signifikant unterscheiden.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790633225,
+      "channel": "plan_pipe_3f0b46002158",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 38,
+        "end": 41
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Seiten:\n\n### 1. Lineare Regression (Methode der kleinsten Quadrate)\nDas Ziel der linearen Regression ist die Minimierung der Summe der Fehlerquadrate (RSS), um eine bestmögliche Anpassung an die Datenpunkte zu erreichen (S. 42):\n$RSS = \\sum_{i=1}^{n} d_i^2 = \\sum_{i=1}^{n} (y_i - (a + bx_i))^2 \\rightarrow \\text{min!}$\n\nDurch die partielle Ableitung nach $a$ und $b$ und anschließendes Gleichsetzen auf Null erhält man die Schätzwerte für die Regressionsgerade:\n$b = \\frac{\\sum_{i=1}^{n} (x_i - \\bar{x})(y_i - \\bar{y})}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2}$ und $a = \\bar{y} - b\\bar{x}$ (S. 42).\n\nDie Schätzung für einen einzelnen Wert lautet $\\hat{y}_i = a + bx_i$, wobei die Differenz zum tatsächlichen Wert als Residuum $d_i = y_i - \\hat{y}_i$ bezeichnet wird (S. 42).\n\n### 2. Kennzahlen der Güte\nZur Beurteilung der Qualität des Regressionsmodells dienen der Varianzschätzer der Residuen und das Bestimmtheitsmaß (S. 43):\n\n* Residuenvarianz: $s^2 = \\frac{1}{n-2} \\sum d_i^2$ (S. 43).\n* Bestimmtheitsmaß $r^2$: Es gibt an, welcher Anteil der Varianz durch das Modell erklärt wird, wobei $0 \\leq r^2 \\leq 1$ gilt (S. 43):\n$r^2 = \\frac{(\\sum_{i=1}^{n} (x_i - \\bar{x})(y_i - \\bar{y}))^2}{\\sum_{i=1}^{n} (x_i - \\bar{x})^2 \\sum_{i=1}^{n} (y_i - \\bar{y})^2}$\n\n### 3. Variablentransformation\nNicht-lineare Zusammenhänge können durch Transformation der Variablen in ein lineares Modell überführt werden, um die oben genannten Methoden anzuwenden (S. 43). Beispiele hierfür sind:\n\n* Exponentialfunktionen wie $y = a \\cdot e^{b \\cdot x}$, die durch $v = \\ln(y) = \\ln(a) + b \\cdot x$ linearisiert werden.\n* Potenzfunktionen wie $y = a \\cdot x^b$, die durch $v = \\ln(y) = \\ln(a) + b \\cdot \\ln(x)$ transformiert werden (S. 43).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790633226,
+      "channel": "plan_pipe_3f0b46002158",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 42,
+        "end": 43
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts zur Zeitreihenanalyse (S. 44–47):\n\nDie Zeitreihenanalyse befasst sich mit der Zerlegung einer Zeitreihe in verschiedene Komponenten.\n\n**1. Komponentenunterteilung (S. 44–45)**\nMan unterscheidet prinzipiell zwischen zwei Modellen:\n- Additives Modell: $y_t = Q_t + K_t + S_t + r_t$\n- Multiplikatives Modell: $y_t = Q_t \\cdot K_t \\cdot S_t \\cdot r_t$\nHierbei steht $Q$ für den Trend, $K$ für die Konjunkturkomponente, $S$ für den saisonalen Effekt und $r$ für den Restwert. Durch Logarithmierung lässt sich das multiplikative Modell in eine additive Form überführen (S. 44).\n\n**2. Schätzung der Komponenten (S. 44–45)**\nDer Trend ($Q_t$) kann mittels linearer Regression geschätzt werden: $\\hat{y}_t = a + bt$. Die Parameter werden dabei so bestimmt, dass die Summe der quadratischen Abweichungen minimiert wird (S. 44-45). Nach der Bestimmung des Trends kann die Saisonkomponente durch die Differenzbildung $d_t = y_t - Q_t$ (im additiven Modell) isoliert werden. Der Restwert ergibt sich schließlich aus $r_t = y_t - Q_t - S_t$ (S. 45).\n\n**3. Glatte Komponente (Gleitende Mittelwerte) (S. 46)**\nUm kurzfristige Schwankungen auszugleichen, können gleitende Mittelwerte berechnet werden:\n- Einfacher gleitender Mittelwert: $Y_k = \\frac{1}{3} \\cdot (Y_{k-1} + Y_k + Y_{k+1})$ (S. 46).\n- Gewichteter gleitender Mittelwert: Hier werden verschiedene Gewichte $w_i$ vergeben, wobei die Summe der Gewichte $\\sum w_i = 1$ entsprechen muss (S. 46).\n\n**4. Exponentielle Glättung (S. 46–47)**\nBei der exponentiellen Glättung erster Ordnung erfolgt die Schätzung über:\n$y^*_t = \\alpha \\cdot y_t + (1 - \\alpha) \\cdot y^*_{t-1}$ (S. 46).\nDer Parameter $\\alpha$ liegt dabei im Bereich von $0 \\le \\alpha \\le 1$. \n\nFür trendbehaftete Werte wird ein zweifaches Glättungsverfahren angewendet:\n$y^{**}_t = \\alpha \\cdot y^*_t + (1 - \\alpha) \\cdot y^{**}_{t-1}$ (S. 47).\nDie Prognose für die nächste Periode berechnet sich dann durch:\n$\\hat{y}_{t+1} = 2 \\cdot y^*_t - y^{**}_{t-1}$ (S. 47).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790633227,
+      "channel": "plan_pipe_3f0b46002158",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 44,
+        "end": 47
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Der vorliegende Abschnitt auf Seite 48 (S. 48) bietet eine Übersicht über mathematische Symbole und statistische Verteilungsmodelle.\n\nDas Symbolverzeichnis ist in zwei Hauptbereiche unterteilt:\n\nAllgemeine Symbole und Operatoren\nDer erste Teil definiert grundlegende mathematische Notationen. Dazu gehören unter anderem Mengenoperationen wie die Vereinigung $\\cup$ und der Durchschnitt $\\cap$. Zudem werden statistische Kennzahlen adressiert, wie die Varianz $\\text{Var}(X)$ und der Parameter $\\Theta$ zur Kennzeichnung von Verteilungsparametern (S. 48).\n\nVerteilungsmodelle\nDer zweite Teil listet spezifische Wahrscheinlichkeitsverteilungen auf, die durch ihre jeweilige Notation charakterisiert werden (S. 48):\n\n- Die Binomialverteilung wird als $b ( x | n ; \\theta )$ dargestellt (S. 48).\n- Die hypergeometrische Verteilung wird mit $h ( x | N ; M ; n )$ spezifiziert (S. 48).\n- Die Poisson-Verteilung erscheint als $p ( x | \\lambda )$ (S. 48).\n- Die Normalverteilung wird durch $N ( \\mu, \\sigma^2 )$ definiert (S. 48).\n- Die Standardnormalverteilung wird mit $\\phi_x ( z )$ gekennzeichnet (S. 48).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790633228,
+      "channel": "plan_pipe_3f0b46002158",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 48,
+        "end": 49
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die vorliegenden Unterlagen (S. 50–57) stellen eine Sammlung statistischer Tabellen für verschiedene Wahrscheinlichkeitsverteilungen dar, die als Referenzmaterial dienen.\n\n**Kernaussagen der tabellarischen Daten:**\n\nDie Dokumentation umfasst die folgenden zentralen statistischen Werkzeuge:\n\n1. Binomialverteilung: Auf den Seiten 50 und 51 sind Werte für die Wahrscheinlichkeitsfunktion der Binomialverteilung bei einem Parameter von $n = 10$ und der Erfolgswahrscheinlichkeit $p = 0,3$ aufgeführt.\n\n2. Standard-Normalverteilung: Seite 52 enthält die Verteilungsfunktion $\\Phi(z)$ der Standard-Normalverteilung. Als Beispiel für die Anwendung wird der Wert $\\Phi(1,75) = 0,9599$ explizit genannt.\n\n3. Chi-Quadrat-Verteilung: Auf Seite 53 finden sich die Quantile für die $\\chi^2$-Verteilung.\n\n4. Kolmogorov-Smirnov-Anpassungstest: Seite 54 bietet kritische Werte für den KS-Test. Für den Fall $n > 35$ wird eine Formel zur Berechnung bereitgestellt: $d_{\\alpha} = \\frac{\\sqrt{\\ln(2/\\alpha)}}{\\sqrt{2n}}$.\n\n5. F-Verteilung: Die Seiten 55 und 56 liefern rechtsseitige Quantile für die F-Verteilung für verschiedene Freiheitsgrade ($n_1$, $n_2$) und Signifikanzniveaus $\\alpha$.\n\n6. t-Verteilung: Auf Seite 57 werden die Quantile für die Student-t-Verteilung für unterschiedliche Freiheitsgrade aufgeführt.\n\n**Weitere Informationen:**\nDie Seiten 58 bis 62 enthalten formale Angaben zu den Autoren des Werkes sowie detaillierte Lizenzhinweise (u. a. GNU FDL, Creative Commons) und Verzeichnisse zu den verwendeten Abbildungen und elektronischen Ressourcen.\n\nDie Tabellen verweisen mehrfach auf ergänzende mathematische Software-Dokumentationen, insbesondere zur Nutzung des Statistik-Programms R (verlinkt auf den Seiten 51, 52, 53, 54, 55, 56 und 57).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790633229,
+      "channel": "plan_pipe_3f0b46002158",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 50,
+        "end": 68
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778790633310,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Was besagt das Symmetrieprinzip nach Laplace bei der Definition der Wahrscheinlichkeit?",
+            "options": [
+              "Alle möglichen Ergebnisse des Zufallsexperiments treten mit der gleichen Wahrscheinlichkeit ein.",
+              "Nur die Ergebnisse mit einer Wahrscheinlichkeit größer als Null werden betrachtet.",
+              "Die Summe der Wahrscheinlichkeiten ist immer größer als eins.",
+              "Die Wahrscheinlichkeit eines Ereignisses hängt von der Häufigkeit der Durchführung ab."
+            ],
+            "correctIndex": 0,
+            "explanation": "Beim Laplace-Prinzip wird davon ausgegangen, dass alle Elementarereignisse im Ergebnisraum Ω gleich wahrscheinlich sind."
+          },
+          {
+            "question": "Welche Bedingung muss für zwei Ereignisse A und B gelten, damit sie als unabhängig betrachtet werden können?",
+            "options": [
+              "P(A | B) = P(A)",
+              "P(A ∩ B) = P(A) + P(B)",
+              "P(A ∪ B) = 0",
+              "P(A | B) = P(B)"
+            ],
+            "correctIndex": 0,
+            "explanation": "Zwei Ereignisse sind unabhängig, wenn das Eintreten von B keinen Einfluss auf die Wahrscheinlichkeit von A hat, also P(A|B) gleich P(A) ist."
+          },
+          {
+            "question": "Welche Eigenschaft zeichnet die Intervallskala im Vergleich zur Ordinalskala aus?",
+            "options": [
+              "Die Abstände zwischen den Werten sind interpretierbar (gleich große Skalenabstände).",
+              "Es gibt einen natürlichen Nullpunkt, der das absolute Fehlen der Eigenschaft bedeutet.",
+              "Die Werte können nur in eine feste Reihenfolge gebracht werden.",
+              "Die Skala erlaubt nur qualitative Aussagen über die Gleichheit von Werten."
+            ],
+            "correctIndex": 0,
+            "explanation": "Bei der Intervallskala sind die Abstände (Intervalle) zwischen den Merkmalsausprägungen quantitativ vergleichbar, im Gegensatz zur Ordinalskala."
+          },
+          {
+            "question": "Was beschreibt der Erwartungswert E(X) bei einer diskreten Zufallsvariablen?",
+            "options": [
+              "Die mit den Wahrscheinlichkeiten gewichtete Summe der möglichen Ausprägungen.",
+              "Dasjenige Ergebnis, das am häufigsten eintritt (Modus).",
+              "Die Differenz zwischen dem größten und kleinsten möglichen Wert.",
+              "Den Wert, der die Daten genau in zwei Hälften teilt (Median)."
+            ],
+            "correctIndex": 0,
+            "explanation": "Der Erwartungswert ist das theoretische Mittel, berechnet als E(X) = Σ (xi * f(xi)), also die gewichtete Summe."
+          },
+          {
+            "question": "Wann ist die Anwendung einer Normalverteilung als Approximation für eine Binomialverteilung sinnvoll?",
+            "options": [
+              "Wenn n groß genug ist, sodass n * p * (1-p) > 9 gilt.",
+              "Wenn die Erfolgswahrscheinlichkeit p exakt 0,5 beträgt.",
+              "Wenn die Stichprobe n kleiner als 9 ist.",
+              "Nur wenn die Zufallsvariable diskret und nicht stetig ist."
+            ],
+            "correctIndex": 0,
+            "explanation": "Gemäß den Grenzwertsätzen ist eine Approximation der Binomialverteilung durch die Normalverteilung dann gut möglich, wenn n ausreichend groß ist (n > 9 / (p*(1-p)) bzw. n*p*(1-p) > 9)."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778790633311,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was besagen die DE MORGANschen Regeln in der Mengenlehre?",
+            "back": "P(A̅ ∪ B̅) = P(A ∩ B) und P(A̅ ∩ B̅) = P(A ∪ B)."
+          },
+          {
+            "front": "Welches Symbol steht für den Binomialkoeffizienten und wie lautet die Formel?",
+            "back": "Symbol: (n über k). Formel: n! / (k! * (n - k)!)."
+          },
+          {
+            "front": "Wie definiert sich das LAPLACE-Prinzip?",
+            "back": "P(A) = |A| / |Ω|, wobei jedes Elementarereignis in Ω gleich wahrscheinlich ist."
+          },
+          {
+            "front": "Wie lautet der Additionssatz für zwei Ereignisse A und B?",
+            "back": "P(A ∪ B) = P(A) + P(B) - P(A ∩ B)."
+          },
+          {
+            "front": "Wann ist ein Ereignis A bedingt durch B definiert?",
+            "back": "P(A | B) = P(A ∩ B) / P(B), sofern P(B) > 0."
+          },
+          {
+            "front": "Wie lautet der Erwartungswert E(X) einer diskreten Zufallsvariablen?",
+            "back": "E(X) = μ = Σ (xi * f(xi)) für alle k."
+          },
+          {
+            "front": "Wie berechnet man die Varianz Var(X) einer diskreten Zufallsvariablen?",
+            "back": "Var(X) = Σ ((xi - E(X))^2 * f(xi)) oder alternativ: E(X^2) - (E(X))^2."
+          },
+          {
+            "front": "Was sind die Parameter der Binomialverteilung?",
+            "back": "n (Anzahl der Versuche) und θ (Erfolgswahrscheinlichkeit)."
+          },
+          {
+            "front": "Wie sind Erwartungswert und Varianz einer Poissonverteilung mit Parameter λ definiert?",
+            "back": "E(X) = Var(X) = λ."
+          },
+          {
+            "front": "Welche Skalenniveaus werden in der deskriptiven Statistik unterschieden?",
+            "back": "Nominalskala, Ordinalskala, Intervallskala, Verhältnissskala."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-mathematik-grundlagen_3",
+      "slides": [
+        {
+          "title": "Lektion 4: Formelsammlung Statistik",
+          "bullets": [
+            "Grundlagen der Wahrscheinlichkeitsrechnung und Kombinatorik",
+            "Stetige und diskrete Verteilungsmodelle in der Statistik"
+          ],
+          "notes": "Willkommen zur vierten Lektion. Wir decken heute die wichtigsten Formeln der Statistik ab, von den Grundlagen bis zu komplexen Modellen.",
+          "page_range": "6-47",
+          "image_prompt": ""
+        },
+        {
+          "title": "Grundlagen & Kombinatorik",
+          "bullets": [
+            "Mengenlehre: De Morgansche Regeln für Wahrscheinlichkeiten",
+            "Kombinatorik: Fakultät (n!) und Binomialkoeffizient",
+            "Zufallsstichproben mit und ohne Zurücklegen",
+            "Symmetrieprinzip und Laplace-Wahrscheinlichkeit"
+          ],
+          "notes": "Wir starten mit den mathematischen Fundamenten: Mengenlehre und Abzählverfahren bilden die Basis für jede Wahrscheinlichkeitsberechnung.",
+          "page_range": "6-7",
+          "image_prompt": ""
+        },
+        {
+          "title": "Wahrscheinlichkeitsaxiome & Sätze",
+          "bullets": [
+            "Kolmogoroff-Axiome: Nichtnegativität, Normiertheit, Additivität",
+            "Additionssatz für disjunkte und allgemeine Ereignisse",
+            "Bedingte Wahrscheinlichkeit und Unabhängigkeit",
+            "Totale Wahrscheinlichkeit und Bayes-Theorem"
+          ],
+          "notes": "Über diese Axiome definieren wir die Regeln, nach denen Wahrscheinlichkeiten kombiniert werden. Bayes ist hierbei zentral für Inferenz.",
+          "page_range": "7-8",
+          "image_prompt": ""
+        },
+        {
+          "title": "Diskrete Zufallsvariablen",
+          "bullets": [
+            "Wahrscheinlichkeits- und Verteilungsfunktion",
+            "Erwartungswert E(X) und Varianz Var(X) berechnen",
+            "Kovarianz und Korrelationskoeffizient (Bravais-Pearson)",
+            "Spearman-Rangkorrelation bei Ordinaldaten"
+          ],
+          "notes": "Hier betrachten wir diskrete Variablen und wie wir deren Zusammenhang messen, etwa durch Korrelationen.",
+          "page_range": "10-12",
+          "image_prompt": ""
+        },
+        {
+          "title": "Diskrete Verteilungsmodelle",
+          "bullets": [
+            "Binomialverteilung: Häufigkeit von Erfolgen in n Versuchen",
+            "Hypergeometrische Verteilung: Ziehen ohne Zurücklegen",
+            "Poissonverteilung: Seltene Ereignisse in festen Zeitintervallen",
+            "Parameter: Erwartungswert und Varianz für jedes Modell"
+          ],
+          "notes": "Diese drei Modelle sind der Standard für diskrete Daten. Wählen Sie das Modell immer basierend auf der Art Ihrer Stichprobenziehung.",
+          "page_range": "12-13",
+          "image_prompt": ""
+        },
+        {
+          "title": "Stetige Zufallsvariablen",
+          "bullets": [
+            "Verteilungsfunktion über das Integral der Dichtefunktion f(x)",
+            "Erwartungswert und Varianz durch Integralrechnung",
+            "Stetige Gleichverteilung (Rechteck)",
+            "Exponential- und Normalverteilung (NV)"
+          ],
+          "notes": "Bei stetigen Variablen arbeiten wir statt mit Summen mit Integralen. Die NV ist dabei das wichtigste Modell für Messdaten.",
+          "page_range": "13-15",
+          "image_prompt": ""
+        },
+        {
+          "title": "Deskriptive Statistik",
+          "bullets": [
+            "Skalenniveaus: Nominal bis Verhältnissskala",
+            "Lageparameter: Mittelwerte (arithmetisch, geometrisch, harmonisch) und Median",
+            "Streuungsmaße: Varianz und Variationskoeffizient",
+            "Konzentrationsmaße: Lorenzkurve und Gini-Koeffizient"
+          ],
+          "notes": "Deskriptive Statistik gibt uns Methoden an die Hand, um Datenmengen auf ihre wesentlichen Merkmale zu reduzieren.",
+          "page_range": "20-24",
+          "image_prompt": ""
+        },
+        {
+          "title": "Parameterschätzung",
+          "bullets": [
+            "Konfidenzintervalle für Mittelwerte (mit/ohne bekannter Varianz)",
+            "Schätzung für Anteilswerte (dichotom)",
+            "Modelle mit und ohne Zurücklegen",
+            "Standardnormalverteilung (z) vs. Student-t-Verteilung"
+          ],
+          "notes": "Wir schätzen nun Parameter der Grundgesamtheit basierend auf unseren Stichprobendaten – inklusive der Sicherheit unserer Aussagen.",
+          "page_range": "26-27",
+          "image_prompt": ""
+        },
+        {
+          "title": "Hypothesentests",
+          "bullets": [
+            "Vorgehen: Hypothesen aufstellen, Testfunktion und Ablehnungsbereich wählen",
+            "Test auf Erwartungswert, Vorzeichentest und Binomialtest",
+            "Fehler 1. und 2. Art (alpha und beta)",
+            "Einseitige vs. zweiseitige Tests"
+          ],
+          "notes": "Wie beweisen wir Annahmen statistisch? Tests helfen dabei, Hypothesen gegen den Zufall abzuwägen.",
+          "page_range": "28-32",
+          "image_prompt": ""
+        },
+        {
+          "title": "Varianzanalyse & Regression",
+          "bullets": [
+            "ANOVA: Vergleich von Mittelwerten über Gruppen (F-Test)",
+            "Lineare Regression: Schätzung durch kleinste Quadrate (RSS)",
+            "Bestimmtheitsmaß r² zur Gütebewertung",
+            "Zeitreihen: Trend, Saisonalität und gleitende Mittelwerte"
+          ],
+          "notes": "Zum Abschluss sehen wir uns an, wie wir Gruppen vergleichen, Zusammenhänge linear modellieren und zeitliche Entwicklungen analysieren.",
+          "page_range": "38-47",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 4: Formelsammlung Statistik - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778790633210,
+      "pdfName": "Formelsammlung Statistik"
+    }
+  ],
+  "sourceHash": "8460b42e83320310"
+}

@@ -1,0 +1,335 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Tour of Programming Languages — From C to Haskell - Lesson 15 — Eiffel Programming",
+    "pdfName": "Eiffel Programming",
+    "createdAt": 1778576738996,
+    "exportedAt": "2026-05-12T09:05:38.997Z",
+    "meta": {
+      "courseId": "course-en-programming-languages-tour",
+      "lessonIndex": 14,
+      "courseTitle": "Tour of Programming Languages — From C to Haskell",
+      "lessonObjective": "Ada, D, Eiffel, Fortran 2003.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-eiffel-programming",
+            "title": "Eiffel Programming",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Eiffel_Programming"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_832c1bf66eb0",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-1",
+          "chapterTitle": "Introduction and Principles of Eiffel",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-2",
+          "chapterTitle": "Language Components, Syntax, and Features",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Advanced Language Concepts and Mechanisms",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576738996,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: Eiffel Programming\n\nEiffel is a statically-typed, object-oriented language developed by Bertrand Meyer, designed with a focus on code readability, maintainability, and scalability. It is particularly noted for its robust implementation of design principles such as Design by Contract and the Uniform Access Principle.\n\n#### **Key Characteristics**\n*   **Design Philosophy:** Emphasizes long-term code evolution and maintainability through a strong, exhaustive type system.\n*   **Foundational Principles:**\n    *   **Design by Contract:** Uses assertions, invariants, and variants to ensure software reliability.\n    *   **Uniform Access Principle:** Maintains consistency in how attributes and functions are accessed.\n    *   **Command/Query Separation:** Distinguishes between operations that modify state and those that retrieve information (S.1).\n*   **Language Features:**\n    *   **Advanced Typing:** Supports multiple inheritance, constrained genericity, and anchored types (S.1, S.3, S.4).\n    *   **Modern Concurrency & Safety:** Includes SCOOP (Simple Concurrent Object Oriented Programming) and Void Safety (S.1).\n    *   **Flexibility:** Utilizes agents (closures) for functional-style programming and tuples for returning multiple values (S.3).\n\n#### **Structural Elements**\n*   **Class Architecture:** Programs are built from classes with clearly defined features (Attributes, Functions, and Procedures) (S.2).\n*   **Control Flow:** Provides standard conditional and iteration constructs, including specialized \"inspect\" statements and attachment checking (S.2).\n*   **Memory Management:** Eiffel utilizes garbage collection to manage memory, abstracting away manual allocation (S.4).\n\n#### **Development Trade-offs**\nWhile Eiffel is sometimes criticized for its verbosity compared to \"terse\" languages, proponents argue that it significantly reduces the amount of code required to express complex ideas when compared to the C-family of languages (e.g., C++, Java) (S.1).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576738996,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-programming-languages-tour_14\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 15 — Eiffel Programming - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lesson 15: Eiffel Programming</div><ul class=\"pm-chat-slide-bullets\"><li>Introduction to the Eiffel language design.</li><li>Bertrand Meyer's principles for maintainable code.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778576738997,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This section introduces the Eiffel programming language, developed by Bertrand Meyer, highlighting its focus on maintainability, readability, and robust software design.\n\n**Key Design Principles**\nEiffel is built upon several foundational concepts that promote clear and reliable code:\n* Everything is an Object.\n* Design by Contract.\n* Single Entry, Single Exit.\n* The Open/Closed Principle.\n* Command/Query Separation.\n\n**Core Language Features**\nThe language distinguishes itself through advanced features that simplify the expression of complex logic:\n* Strong type system with exhaustive static type checking.\n* Multiple inheritance and constrained genericity.\n* Type-safe agents and SCOOP (Simple Concurrent Object Oriented Programming).\n* A robust set of assertions and contract inheritance.\n\n**Development Philosophy**\nWhile Eiffel is sometimes criticized for its verbosity, the text argues that its design requires less code to implement complex ideas compared to languages in the C family, such as Java or C++. The language is specifically engineered to allow programs to scale and evolve effectively.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576739006,
+      "channel": "plan_pipe_832c1bf66eb0",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 1
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Eiffel Language Fundamentals\n\nThis section provides a structural overview of the Eiffel programming language, covering its syntax, object-oriented principles, and type system.\n\n**1. Language Structure and Syntax**\nEiffel utilizes specific reserved words for syntax definition. Code is organized into classes, which are comprised of various sections:\n*   **Features:** These are the building blocks of a class, divided into Attributes (state), Functions (queries returning values), and Procedures (commands that modify state).\n*   **The Uniform Access Principle:** A core design philosophy in Eiffel stating that a client should not need to know whether a feature is stored as an attribute or computed as a function.\n\n**2. Control Flow and Logic**\nEiffel manages program execution via structured control statements:\n*   **Conditional Control:** Handled through standard if-then-else structures and the inspect statement for multi-branch selection.\n*   **Iteration:** Managed using loop constructs.\n*   **Attachment Checking:** A robust mechanism for handling nullability, such as the `if attached l_foo as al_foo then` syntax, which ensures safe object usage.\n\n**3. Type System**\nEiffel categorizes types into two primary groups:\n*   **Expanded Types:** Includes value types like $$INTEGER$$, $$REAL$$, $$CHARACTER$$, and $$BOOLEAN$$. These types are treated as values rather than references.\n*   **Reference Types:** Includes complex objects like $$STRING$$, $$DATE$$, and various container classes. All reference types ultimately inherit from the root class $$ANY$$.\n\n**4. Core Object Operations**\nThe language provides built-in mechanisms for object lifecycle and interaction:\n*   **Object Creation:** Managed via the create clause.\n*   **Copying and Comparison:** Eiffel distinguishes between shallow/deep copies and object equality vs. reference equality.\n*   **Assignment and Calls:** Features are accessed through dot notation, and local variables are used to manage temporary state within routines.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576739007,
+      "channel": "plan_pipe_832c1bf66eb0",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the core technical components of the Eiffel programming language as outlined in the provided sections.\n\n**Section [S.3]: Design by Contract and Advanced Language Features**\n\nThis section explores the formal methodology of Eiffel, centered on Design by Contract ($DbC$). Key points include:\n\n- Formal Verification: The use of preconditions and postconditions defines what a routine requires and ensures, while class invariants establish conditions that must always hold true.\n- Inheritance and Polymorphism: The text addresses the Liskov Substitution Principle ($LSP$), rules for renaming or redefining features, and the complexities of contract inheritance.\n- Generic Programming: Discussion of constrained genericity and its application to data structures like hash tables.\n- Advanced Language Structures: The use of tuples for handling multiple return values and iteration patterns, alongside the \"agent\" mechanism, which provides a flexible approach to functional programming and closures.\n\n**Section [S.4]: Systems Programming and Interoperability**\n\nThis section focuses on low-level system concerns and cross-language integration:\n\n- Type System Nuances: Explanations of covariance and anchored types, which allow for more flexible and model-accurate type definitions.\n- Resource Management: Details on automatic memory management and garbage collection, including the inherent limitations associated with these processes.\n- Interoperability and Debugging: Strategies for interfacing Eiffel with other languages (specifically .NET support) and techniques for low-level debugging.\n- Extensibility: A roadmap towards advanced and highly specialized topics, including the use of standard libraries and further reading materials.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576739008,
+      "channel": "plan_pipe_832c1bf66eb0",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576739096,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "The text suggests that Eiffel's verbosity, often criticized, is actually balanced by what advantage in large-scale development?",
+            "options": [
+              "The reduction of complexity in declaring and using complex types compared to C-style languages.",
+              "The ability to compile code significantly faster than C++ or Java.",
+              "The elimination of the need for external libraries due to a massive standard library.",
+              "The automatic generation of documentation for all developers."
+            ],
+            "correctIndex": 0,
+            "explanation": "The text notes that while Eiffel is criticized for verbosity, it is often less verbose than the C family of languages when it comes to the declaration and use of complex types."
+          },
+          {
+            "question": "In the context of the 'Uniform Access Principle' mentioned in the content, what does this imply about how a client perceives a class feature?",
+            "options": [
+              "That all features must be declared as public attributes.",
+              "That a client cannot distinguish between a stored attribute and a functional computation when accessing data.",
+              "That all inherited features must be redefined to ensure uniform access.",
+              "That the language forces all objects to implement the same set of interface methods."
+            ],
+            "correctIndex": 1,
+            "explanation": "The Uniform Access Principle allows a client to access data through a feature regardless of whether that data is stored as a variable (attribute) or calculated on the fly (function)."
+          },
+          {
+            "question": "What is the primary significance of Design by Contract (DbC) in an Eiffel program?",
+            "options": [
+              "It replaces the need for writing unit tests.",
+              "It allows the compiler to automatically fix logic errors at runtime.",
+              "It defines the formal obligations and benefits between a caller and a routine using requirements, ensures, and invariants.",
+              "It is a mechanism solely used to manage memory in the absence of a garbage collector."
+            ],
+            "correctIndex": 2,
+            "explanation": "Design by Contract uses assertions like requirements (preconditions), ensures (postconditions), and invariants to explicitly state the rules and guarantees of software components."
+          },
+          {
+            "question": "How does Eiffel’s approach to 'Constrained Genericity' enhance code robustness?",
+            "options": [
+              "It prevents the use of generics entirely to ensure type safety.",
+              "It allows developers to restrict type parameters to specific types or inheritance hierarchies.",
+              "It automatically converts all generic types to the 'ANY' base type to prevent errors.",
+              "It simplifies the syntax of generic classes by removing the need for type arguments."
+            ],
+            "correctIndex": 1,
+            "explanation": "Constrained genericity allows a generic class to place requirements on the types passed to it, ensuring that those types support specific operations or inherit from specific classes."
+          },
+          {
+            "question": "Why might a developer use 'Attachment Checking' (e.g., if attached l_foo as al_foo) in Eiffel?",
+            "options": [
+              "To manually invoke the garbage collector on a specific object.",
+              "To define a new inheritance relationship at runtime.",
+              "To safely handle potential void references before accessing an object's features.",
+              "To bypass the static type checker for high-performance operations."
+            ],
+            "correctIndex": 2,
+            "explanation": "Attachment checking allows for safe handling of void/null references, ensuring that features are only called on an object once it is confirmed to be attached (non-void)."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778576739097,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Who is the primary developer of the Eiffel programming language?",
+            "back": "Bertrand Meyer."
+          },
+          {
+            "front": "What defines the 'Uniform Access Principle' in Eiffel?",
+            "back": "It suggests that client code should not need to know whether a value is stored in an attribute (a variable) or calculated via a function."
+          },
+          {
+            "front": "What is the core design philosophy regarding class safety in Eiffel?",
+            "back": "Design by Contract (DbC), which uses preconditions, postconditions, and invariants to ensure system correctness."
+          },
+          {
+            "front": "What are the three components of a contract in Eiffel?",
+            "back": "Preconditions (require), postconditions (ensure), and class invariants (invariant)."
+          },
+          {
+            "front": "What mechanism in Eiffel allows for a type to be constrained to satisfy specific requirements?",
+            "back": "Constrained Genericity."
+          },
+          {
+            "front": "What are 'agents' in the context of Eiffel?",
+            "back": "They are type-safe objects representing functions or procedures, similar to closures in other languages."
+          },
+          {
+            "front": "What does SCOOP stand for in Eiffel?",
+            "back": "Simple Concurrent Object Oriented Programming."
+          },
+          {
+            "front": "In Eiffel, what distinguishes a 'Command' from a 'Query'?",
+            "back": "A Command performs an action that changes the object's state (procedure), while a Query returns information without changing state (function)."
+          },
+          {
+            "front": "How does Eiffel handle memory management?",
+            "back": "It utilizes automatic garbage collection."
+          },
+          {
+            "front": "What is the purpose of the 'inspect' statement in Eiffel?",
+            "back": "It is used for branching control flow based on the value of an expression, similar to a 'switch' or 'case' statement in other languages."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-programming-languages-tour_14",
+      "slides": [
+        {
+          "title": "Lesson 15: Eiffel Programming",
+          "bullets": [
+            "Introduction to the Eiffel language design.",
+            "Bertrand Meyer's principles for maintainable code."
+          ],
+          "notes": "Lesson 15 covers the design philosophy and technical foundations of the Eiffel programming language. We will explore its key features and architectural significance.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Introduction and Principles",
+          "bullets": [
+            "Emphasizes readability and maintainable software design.",
+            "Features design by contract and multiple inheritance.",
+            "Strict static type checking for program scalability.",
+            "Unique features include SCOOP and Void Safety."
+          ],
+          "notes": "Eiffel is designed for long-term project health. By using Design by Contract, it ensures that developers clearly define expectations for code components.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Language Components and Syntax",
+          "bullets": [
+            "Rigid class anatomy featuring attributes and features.",
+            "Uniform access principle for data and functions.",
+            "Conditional logic via if and inspect statements.",
+            "Comprehensive basic types including strings and containers."
+          ],
+          "notes": "The language enforces a consistent structure. Understanding the distinction between commands and queries is central to mastering Eiffel's syntax.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Advanced Language Concepts",
+          "bullets": [
+            "Class invariants define persistent object states.",
+            "Multiple inheritance and contract redefinition patterns.",
+            "Constrained genericity for type-safe containers.",
+            "Agents provide flexible closure and callback systems."
+          ],
+          "notes": "Advanced mechanisms like agents and generics allow for highly reusable, type-safe architectures that reduce overhead in complex systems.",
+          "page_range": "3-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Expert Topics and Interfacing",
+          "bullets": [
+            "Advanced covariance and anchored types mechanics.",
+            "Automatic memory management using garbage collection.",
+            "Direct interfacing with .NET and external libraries.",
+            "Low-level debugging and platform-specific support."
+          ],
+          "notes": "To support real-world deployment, Eiffel provides robust garbage collection and methods for interoperability, ensuring it performs well in heterogeneous environments.",
+          "page_range": "4",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 15 — Eiffel Programming - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576738996,
+      "pdfName": "Eiffel Programming"
+    }
+  ],
+  "sourceHash": "0a19504fffba3254"
+}

@@ -1,0 +1,470 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Programmieren-Aufbau — Java, Ruby, Pascal, Assembler - Lektion 7 — Fortran",
+    "pdfName": "Fortran",
+    "createdAt": 1778576652010,
+    "exportedAt": "2026-05-12T09:04:12.011Z",
+    "meta": {
+      "courseId": "course-de-programmieren-aufbau",
+      "lessonIndex": 6,
+      "courseTitle": "Programmieren-Aufbau — Java, Ruby, Pascal, Assembler",
+      "lessonObjective": "Maschinen-nahe Programmierung und numerische Codes.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-fortran",
+            "title": "Fortran",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Fortran"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_765e035ffb12",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-6",
+          "chapterTitle": "Einleitung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "7-24",
+          "chapterTitle": "Compiler",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "25-30",
+          "chapterTitle": "Die Programmiersprache",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "31-110",
+          "chapterTitle": "FORTRAN 77",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "111-238",
+          "chapterTitle": "Fortran 95",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "239-272",
+          "chapterTitle": "Fortran 2003",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "273-326",
+          "chapterTitle": "Bibliotheken",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "327-356",
+          "chapterTitle": "Fortran in Kombination mit anderen Programmiersprachen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "357-364",
+          "chapterTitle": "Fortran-Dialekte",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "365-494",
+          "chapterTitle": "Sonstiges und Anhänge",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576652010,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der grundlegenden Aspekte von Fortran basierend auf dem vorliegenden Dokument:\n\n### Zusammenfassung: Fortran als Programmierwerkzeug\n\nFortran ist eine etablierte Programmiersprache, die sich durch eine lange historische Entwicklung auszeichnet (S. 3) und primär im Bereich der numerischen Berechnungen und wissenschaftlichen Programmierung eingesetzt wird.\n\n**Kernmerkmale und Struktur:**\n*   **Versionenvielfalt:** Das Dokument deckt verschiedene Standards ab, von der klassischen **FORTRAN 77** (S. 4) über **Fortran 95** (S. 5) bis hin zu **Fortran 2003** (S. 8), was eine schrittweise Modernisierung der Sprache verdeutlicht.\n*   **Programmierkonzepte:** Die Sprache unterstützt sowohl prozedurale Ansätze (durch `SUBROUTINE` und `FUNCTION`, S. 5, 7) als auch moderne Features wie Datenverbunde (Datenstrukturen, S. 6) und den Übergang zur objektorientierten Programmierung (S. 7).\n*   **Hardware- und Systemnähe:** Durch den Einsatz von Zeigern (S. 7), Speicherverwaltung und die direkte Anbindung an Systemroutinen (Datum/Zeit, Zufallszahlen, S. 7) eignet sich Fortran für hardware-nahe Aufgaben.\n*   **Interoperabilität:** Ein wesentlicher Vorteil ist die Möglichkeit, Fortran-Code mit anderen Programmiersprachen wie **C, Tcl oder Python** zu kombinieren (S. 10), wobei insbesondere die Schnittstellen (Interfaces) zu C (S. 10) eine zentrale Rolle spielen.\n\n**Praktische Einbindung:**\n*   **Compiler:** Zur Nutzung stehen diverse Compiler zur Verfügung, darunter der quelloffene **gfortran** (S. 3, 13) sowie kommerzielle Alternativen von Anbietern wie Intel, Silverfrost und AMD (S. 3).\n*   **Mathematische Leistungsfähigkeit:** Fortran ist prädestiniert für hochperformante Berechnungen, unterstützt durch spezialisierte Bibliotheken wie **BLAS, ATLAS und LAPACK** (S. 9).\n*   **Parallele Programmierung:** Zur Steigerung der Recheneffizienz integriert Fortran moderne Techniken der parallelen Programmierung wie **OpenMP** (S. 9).\n\nDiese Kombination aus numerischer Präzision, Kompatibilität zu moderner Softwareentwicklung und HPC-Fähigkeiten (High Performance Computing) macht Fortran zu einer wertvollen Ergänzung zu Sprachen wie C oder Java, insbesondere in rechenintensiven Anwendungsbereichen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778576652010,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-programmieren-aufbau_6\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 7 — Fortran - Präsentation</span><span class=\"pm-chat-count\">4 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lektion 7: Einführung in Fortran</div><ul class=\"pm-chat-slide-bullets\"><li>Fokus auf maschinen-nahe Programmierung und numerische Codes</li><li>Historisch gewachsene Sprache für hochperformante Berechnungen</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778576652011,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Das vorliegende Dokument ist ein Wikibook zum Thema Fortran, das als allgemeiner Leitfaden für die Programmierung in dieser Sprache dient. Hier ist eine Zusammenfassung der Kernaussagen basierend auf dem Inhaltsverzeichnis und den einleitenden Seiten:\n\nDas Werk bietet eine strukturierte Einführung in die Programmiersprache Fortran und ist unter der Creative Commons Attribution-ShareAlike 3.0 Lizenz veröffentlicht (S. 2). Es ist in verschiedene Teile gegliedert, die sowohl die technische Umgebung als auch die Sprachstandards abdecken.\n\nCompiler-Ebene\nDer erste Teil widmet sich dem Verständnis von Compilern im Allgemeinen und stellt spezifische Implementierungen vor. Dazu gehören gfortran, der Intel Fortran Compiler, der Silverfrost Compiler sowie der AMD Fortran Compiler (S. 3). Neben der grundlegenden Anwendung werden Themen wie Dateiendungen, Installation und die Prüfung auf Standardkonformität behandelt (S. 3).\n\nProgrammier-Grundlagen\nDer zweite Teil befasst sich mit der theoretischen Einordnung von Fortran als Programmiersprache und gibt einen Überblick über ihre historische Entwicklung (S. 3).\n\nFortran 77 und Fortran 95\nDie beiden Hauptteile III und IV bilden den Kern des Buches und vergleichen die Standards Fortran 77 und Fortran 95 (S. 4, 5, 6). Beide Sektionen behandeln jeweils:\n- Programmaufbau: Strukturen wie das \"Hallo Welt\"-Beispiel, Zeilenformate und der Sprachzeichensatz.\n- Datenmanagement: Datentypen, Variablen, Konstanten, Wertzuweisungen und die Arbeit mit eindimensionalen sowie mehrdimensionalen Feldern.\n- Logik und Kontrollstrukturen: Arithmetische Ausdrücke, logische Vergleichsoperatoren, Verzweigungen und verschiedene Schleifenkonstrukte.\n- Modularisierung: Die Erstellung von Unterprogrammen (FUNCTION und SUBROUTINE) sowie die Verwaltung über Parameter und COMMON-Blöcke.\n- Ein- und Ausgabe: Die Nutzung von READ- und WRITE-Anweisungen sowie Dateihandling.\n\nErgänzungen\nFür Fortran 77 werden zusätzliche historische Befehle im Anhang gelistet (S. 5). Für Fortran 95 liegt ein besonderer Fokus auf modernen Konzepten wie Datentypen höherer Genauigkeit, der Definition von Datenverbunden (Strukturen) sowie erweiterten Standardfunktionen für Felder und Zeichenketten (S. 6).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576652020,
+      "channel": "plan_pipe_765e035ffb12",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Seiten 7 bis 24, die sich auf die in den Inhaltsverzeichnissen aufgeführten Themenbereiche konzentriert:\n\nDie Abschnitte 7 bis 24 (entsprechend dem bereitgestellten Inhaltsverzeichnis auf den Seiten 7 bis 13) bilden das Fundament für die moderne Programmierung mit Fortran 95 und Fortran 2003.\n\nGrundlagen der Programmstruktur und Unterprogramme\nEin zentraler Schwerpunkt liegt auf der modularen Programmierung. Dies umfasst sowohl Function- als auch Subroutine-Unterprogramme (S. 7). Fortran bietet dabei fortgeschrittene Konzepte wie optionale Parameter, rekursive Aufrufe und die Verwendung von Modulen zur Strukturierung des Codes (S. 7). Die objektorientierte Programmierung wird hierbei als logische Weiterentwicklung der modularen Struktur eingeführt (S. 7).\n\nDatenverwaltung und Speicher\nEin wesentlicher Teil befasst sich mit dem effizienten Umgang mit Daten. Hierzu gehören Zeiger (Pointer) für die dynamische Speicherverwaltung und die Erstellung komplexer Datenstrukturen wie verkettete Listen (S. 7). Zudem werden Bitfunktionen, Vektoren- und Matrizenrechnung sowie die systemnahe Programmierung (Datum, Zeit, Zufallszahlen) behandelt (S. 7).\n\nEin- und Ausgabe sowie Systemintegration\nDas Werk vermittelt Methoden der Ein- und Ausgabe, inklusive der Formatierung und Dateiverarbeitung (S. 7). Für Fortran 2003 werden modernere Konzepte wie Streams, asynchrone I/O und rekursive Ein-/Ausgabevorgänge erläutert (S. 8). Ein besonderes Augenmerk liegt auf der Interoperabilität. Dies umfasst den Aufruf von Systemroutinen sowie die Kombination von Fortran mit anderen Programmiersprachen wie C, Python oder Tcl, wobei explizit auf Interfaces und Datentyp-Zuordnungen eingegangen wird (S. 10).\n\nSpezialisierte Bibliotheken und Parallelisierung\nDas Dokument deckt zudem den Einsatz externer Bibliotheken ab, darunter BLAS, LAPACK und DISLIN für grafische Darstellungen (S. 8, 9). Ein weiterer Kernaspekt ist die parallele Programmierung mittels OpenMP, bei der Thread-Erzeugung, Daten-Synchronisation und die Nutzung spezifischer Module wie \\text{omp\\_lib} zentral sind (S. 9).\n\nMethodik und Werkzeuge\nAbgerundet werden diese Abschnitte durch praktische Hinweise zur Qualitätssicherung. Dies beinhaltet den Einsatz von Debuggern, die Dokumentation des Quellcodes (z. B. mit Doxygen oder ROBODoc) sowie die Automatisierung des Build-Prozesses mit Werkzeugen wie Make, CMake oder SCons (S. 12).\n\nDie behandelten mathematischen Konzepte, wie die Berechnung von Dreiecksgeometrien ($ \\text{Fläche} = \\frac{1}{2} \\cdot \\text{Grundlinie} \\cdot \\text{Höhe} $), dienen dabei als praktische Anwendungsbeispiele für die theoretischen Sprachkonstrukte (S. 12).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576652021,
+      "channel": "plan_pipe_765e035ffb12",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 7,
+        "end": 24
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der Abschnitte zu Gfortran (S. 26–30):\n\n**Was ist Gfortran?**\nGfortran ist das Fortran-Compiler-Frontend der GNU Compiler Collection (GCC) (S. 26).\n\n**Installation und Start**\nInstallationshinweise finden sich auf der Website des GCC-Projekts. Der Compiler wird über die Kommandozeile bedient. Unter Windows wird eine ausführbare Datei (z. B. a.exe) erzeugt, unter Linux heißt diese standardmäßig a.out (S. 26, 27).\n\n**Dateiendungen**\nDer Compiler erkennt den Fortran-Standard anhand der Dateiendung. Während .f für festes Zeilenformat (FORTRAN 77) steht, nutzen modernere Standards wie Fortran 90/95/2003/2008 das freie Zeilenformat (Endungen .f90 bis .f08). Aus Kompatibilitätsgründen empfiehlt es sich bei neueren Standards oft, die Endung .f90 zu verwenden (S. 28).\n\n**Anwendung und Befehle**\nWichtige Grundbefehle zur Übersetzung von Quelldateien sind:\n- Übersetzung zu ausführbarer Datei: gfortran bsp.f90\n- Erzeugung einer Objektdatei: gfortran -c bsp.f90\n- Namensfestlegung der Ausgabedatei: gfortran -o bsp bsp.f90\n- Kombinierte Kompilierung mehrerer Quelldateien ist ebenfalls möglich (S. 29).\n\n**Standardkonformität**\nZur Überprüfung des Quellcodes auf bestimmte Standards kann die Option -std verwendet werden (z. B. -std=f2023). Ohne explizite Angabe wird ein Modus mit GNU-Erweiterungen genutzt (S. 29).\n\n**Historisches**\nGfortran entstand aus einer Abspaltung des Projekts g95 im Jahr 2003. Während Gfortran heute fester Bestandteil der GCC-Entwicklung ist, wurde die Weiterentwicklung von g95 im Jahr 2013 eingestellt (S. 30).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576652022,
+      "channel": "plan_pipe_765e035ffb12",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 25,
+        "end": 30
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung der bereitgestellten Dokumentenabschnitte (S. 32-42):\n\n**Compiler für Fortran**\n\nEs stehen verschiedene Compiler für die Programmentwicklung zur Verfügung:\n\n1. Intel Fortran Compiler: Ein kostenfrei erhältliches Paket, das modernste Sprachstandards unterstützt. Die Anwendung erfolgt über das Kommando ifx. Quelldateien werden je nach Endung (.f, .f90, .F90 etc.) unterschiedlich interpretiert (S. 32, 33).\n\n2. Silverfrost FTN95: Ein speziell für MS Windows entwickeltes Paket mit der IDE Plato, das in einer kostenlosen Version für den Privatgebrauch existiert (S. 34).\n\n3. AMD Fortran Compiler (AOCC): Ein auf LLVM basierendes Compiler-Paket für Linux, das über den Befehl flang gestartet wird (S. 36).\n\n**Einordnung und Historie von Fortran**\n\nFortran ist eine imperative, prozedurale und höhere Programmiersprache, die seit der Version 2003 auch objektorientierte Ansätze unterstützt. Sie ist stark typisiert (S. 40, 41).\n\nTrotz ihres Alters bleibt Fortran aufgrund stetiger Weiterentwicklung relevant. Besonders im Bereich der numerischen Datenverarbeitung und auf Hochleistungsrechnern nimmt sie eine führende Rolle ein. Statistiken zur Popularität weisen eine schwankende, aber teils signifikante Präsenz auf (S. 41).\n\nDie historische Entwicklung begann 1954 unter John W. Backus bei IBM. Meilensteine waren unter anderem:\n\n- 1966: Erste standardisierte Programmversion (FORTRAN 66).\n- 1978: FORTRAN 77 mit strukturierten Kontrollstrukturen.\n- 1991: Grundlegende Modernisierung durch Fortran 90 (freies Zeilenformat, Module).\n- 2003 / 2010: Einführung von objektorientierten Konzepten (OOP) und Co-Arrays (S. 42).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576652023,
+      "channel": "plan_pipe_765e035ffb12",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 31,
+        "end": 110
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine Zusammenfassung für den Bereich ab Seite 111:\n\nDer Abschnitt ab Seite 111 widmet sich den Grundlagen und der Struktur von Fortran 95. Im Zentrum steht die Modernisierung der Syntax im Vergleich zu älteren Standards.\n\nEin wesentlicher Bestandteil ist der Aufbau eines Fortran 95-Programms. Dies wird anhand eines \"Hallo Welt\"-Beispiels illustriert (S. 113). Ein zentraler Aspekt ist dabei das Zeilenformat, das gegenüber früheren Versionen angepasst wurde, um die Programmierung zu erleichtern (S. 113). Zudem wird die Programmstruktur für das Hauptprogramm detailliert beschrieben, welche festlegt, wie der Quellcode logisch zu gliedern ist (S. 115). Ein weiterer Punkt in diesem Kontext ist die Definition des Fortran-Zeichenvorrats, der festlegt, welche Symbole zur Erstellung von Programmen zulässig sind (S. 115).\n\nZusammenfassend bietet das Dokument eine systematische Einführung, die von der einfachen Ausgabe bis hin zur strukturellen Organisation komplexerer Programme reicht. Es legt damit die Basis für das Verständnis der Arbeitsweise von Fortran 95 und dessen syntaktische Regeln.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576652024,
+      "channel": "plan_pipe_765e035ffb12",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 111,
+        "end": 238
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Der von dir angegebene Bereich (S. 239–272) ist in dem bereitgestellten Dokument nicht enthalten. Das Inhaltsverzeichnis des vorliegenden Dokuments endet bereits auf Seite 115, und der Text umfasst insgesamt lediglich 115 Seiten (S. 115).\n\nDa dieser Bereich außerhalb des zur Verfügung gestellten Inhalts liegt, kann ich dazu keine Zusammenfassung erstellen. Gerne helfe ich dir jedoch bei Fragen zu den Inhalten, die in den Seiten 1 bis 115 behandelt werden!",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576652025,
+      "channel": "plan_pipe_765e035ffb12",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 239,
+        "end": 272
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Es tut mir leid, aber das von dir bereitgestellte Dokument endet bereits auf Seite 113. Daher kann ich keine Zusammenfassung für den Bereich S. 273–326 erstellen, da dieser Teil nicht im vorliegenden Text vorhanden ist.\n\nFalls du Unterstützung zu einem der behandelten Themen (wie die Grundlagen von Fortran, verschiedene Compiler wie `gfortran` oder `Intel Fortran`, die Programmstruktur oder FORTRAN 77-Elemente) benötigst, helfe ich dir basierend auf den vorhandenen Seiten sehr gerne weiter.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576652026,
+      "channel": "plan_pipe_765e035ffb12",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 273,
+        "end": 326
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Das von dir angegebene Dokument umfasst laut Inhaltsverzeichnis lediglich 110 Seiten (plus Anhänge, die bis Seite 480 geführt werden). Der von dir genannte Bereich (S. 327–356) ist in der vorliegenden PDF-Quelle **nicht enthalten**.\n\nDas Dokument deckt im Wesentlichen folgende Themenbereiche ab:\n\nGrundlagen und Werkzeuge: Das Buch führt in die Programmiersprache Fortran ein, behandelt die Geschichte (S. 3) sowie die grundlegende Funktionsweise und den Aufbau von Compilern (S. 9–10). Es werden verschiedene Compiler-Implementierungen wie der gfortran (S. 13), der Intel Fortran Compiler (S. 19), Silverfrost (S. 21) und der AMD Fortran Compiler (S. 23) kurz vorgestellt.\n\nFORTRAN 77: Der Hauptteil widmet sich der klassischen Syntax, beginnend mit dem Programmaufbau und dem klassischen \"Hallo Welt\"-Beispiel (S. 33). Behandelt werden zentrale Konzepte wie Datentypen, Variablen und Konstanten (S. 39), die Verwendung von Feldern ($1$-dimensional bis mehrdimensional, S. 45), sowie arithmetische und logische Operatoren. Weiterhin werden Kontrollstrukturen wie IF-Verzweigungen und DO-Schleifen (S. 61), Unterprogramme (Funktionen und Subroutinen, S. 75) sowie Ein- und Ausgabebefehle inkl. Formatierung erläutert (S. 89).\n\nFortran 95: Zum Ende des Dokuments beginnt ein Abschnitt, der den Programmaufbau und das Zeilenformat von Fortran 95 behandelt (S. 113).\n\nDa der von dir angefragte Bereich über das Ende des bereitgestellten Inhaltsverzeichnisses hinausgeht, kann ich dazu keine inhaltliche Zusammenfassung erstellen. Falls du Fragen zu den oben genannten, tatsächlich im Dokument enthaltenen Kapiteln hast, helfe ich dir gerne weiter.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576652027,
+      "channel": "plan_pipe_765e035ffb12",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 327,
+        "end": 356
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Da das von Ihnen angegebene Dokument mit Seite 115 endet, konnten die Seiten 357 bis 364 nicht aus dem Dokument extrahiert werden. Der bereitgestellte Text enthält lediglich die Inhaltsverzeichnisse und grundlegende Abschnitte bis Seite 115.\n\nSollten Sie sich auf einen anderen Bereich oder ein anderes Dokument beziehen, lassen Sie es mich bitte wissen. Falls Sie eine Zusammenfassung zu einem der gelisteten Themen (etwa FORTRAN 77 oder Fortran 95 Grundlagen) wünschen, erstelle ich Ihnen diese gerne auf Basis der verfügbaren Seiten.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576652028,
+      "channel": "plan_pipe_765e035ffb12",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 357,
+        "end": 364
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Da das bereitgestellte Dokument nur bis zur Seite 115 reicht (Inhaltsverzeichnis und Beginn von Teil IV), können Informationen aus dem Bereich S. 365–494 nicht aus dem vorliegenden Text extrahiert werden.\n\nBasierend auf den vorhandenen Daten kann ich dir jedoch eine Zusammenfassung des Inhaltsverzeichnisses zu den Randbereichen geben, die in diesem Dokument explizit genannt werden:\n\nDie enthaltenen Abschnitte ab Seite 471 befassen sich mit den administrativen und rechtlichen Rahmenbedingungen des Buchprojekts.\n\nDie Kernaussagen in diesem Bereich umfassen:\n\n- Contributors: Ab Seite 471 ist die Liste der Mitwirkenden für das Wikibooks-Projekt aufgeführt.\n- List of Figures: Auf Seite 473 findet sich die Liste der verwendeten Abbildungen inklusive ihrer jeweiligen Lizenzhinweise und der Referenz zur Creative Commons Attribution-ShareAlike 3.0 Lizenz.\n- Licenses: Die Abschnitte ab Seite 479 behandeln die rechtlichen Grundlagen. Da das Werk teilweise unter Lizenzen wie GPL, LGPL oder GFDL stehen kann, sind diese zur Einhaltung der Lizenzbedingungen im Anhang enthalten.\n- Technische Generierung: Das PDF wurde mittels LaTeX erstellt. Der Quellcode ist als Anhang (source.7z.txt) in das Dokument eingebettet und kann mit Werkzeugen wie pdfdetach extrahiert werden.\n\nSolltest du Fragen zu den inhaltlichen Kapiteln (Kapitel 1 bis 18) haben, die im Dokument detailliert aufgeführt sind, helfe ich dir gerne weiter.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576652029,
+      "channel": "plan_pipe_765e035ffb12",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 365,
+        "end": 494
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576652110,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Welche Rolle spielt ein Compiler im Entwicklungsprozess von Fortran-Programmen?",
+            "options": [
+              "Er interpretiert den Quellcode Zeile für Zeile während der Laufzeit.",
+              "Er übersetzt den Quellcode in eine maschinennahe, ausführbare Form.",
+              "Er dient ausschließlich der grafischen Darstellung von mathematischen Funktionen.",
+              "Er verwaltet den Arbeitsspeicher dynamisch während der Ausführung."
+            ],
+            "correctIndex": 1,
+            "explanation": "Ein Compiler ist eine Software, die den in einer höheren Programmiersprache geschriebenen Quellcode direkt in Maschinencode (oder einen anderen Zielcode) übersetzt, damit er vom Computer ausgeführt werden kann."
+          },
+          {
+            "question": "Warum ist Fortran historisch besonders für numerische Codes bekannt?",
+            "options": [
+              "Wegen seiner exzellenten Möglichkeiten zur Entwicklung moderner Benutzeroberflächen.",
+              "Aufgrund der eingebauten Unterstützung für objektorientierte Datenbanken.",
+              "Wegen der effizienten Verarbeitung mathematischer Ausdrücke und mathemathischer Standardfunktionen.",
+              "Weil es die einzige Sprache ist, die keine Compiler zur Ausführung benötigt."
+            ],
+            "correctIndex": 2,
+            "explanation": "Fortran wurde von Anfang an für wissenschaftliche Berechnungen und numerische Anwendungen konzipiert, was sich in der breiten Unterstützung für mathematische Operationen und Funktionen widerspiegelt."
+          },
+          {
+            "question": "Was beschreibt der Begriff 'Module' im Kontext von moderneren Fortran-Versionen (z. B. 95/2003)?",
+            "options": [
+              "Ein Verfahren zur manuellen Speicherverwaltung ohne Compiler-Unterstützung.",
+              "Eine Methode zur Kapselung von Daten und Prozeduren, um modulare oder objektorientierte Strukturen zu ermöglichen.",
+              "Ein reines Textdokumentationsformat für Quellcode-Kommentare.",
+              "Ein veraltetes Ersatzformat für das klassische Zeilenformat von FORTRAN 77."
+            ],
+            "correctIndex": 1,
+            "explanation": "Module in Fortran erlauben es, Daten, Typdefinitionen und Prozeduren zu gruppieren, was die Wiederverwendbarkeit und Strukturierung moderner Programme (inkl. objektorientierter Ansätze) maßgeblich fördert."
+          },
+          {
+            "question": "Welchen Vorteil bietet das Attribut 'intent' in Unterprogrammen in Bezug auf die Programmqualität?",
+            "options": [
+              "Es definiert, ob eine Variable als Zeiger oder als statisches Feld verwendet werden soll.",
+              "Es erlaubt dem Compiler, die Nutzung von Parametern zu prüfen (z. B. ob sie nur gelesen oder beschrieben werden dürfen).",
+              "Es verhindert automatisch, dass mathematische Rundungsfehler bei Fließkommazahlen auftreten.",
+              "Es wird benötigt, um die Kompatibilität zu sehr alten FORTRAN 77-Versionen sicherzustellen."
+            ],
+            "correctIndex": 1,
+            "explanation": "Das 'intent'-Attribut spezifiziert die Absicht bei der Verwendung von Argumenten (in, out oder inout), was die Sicherheit durch eine explizite Schnittstellendefinition erhöht."
+          },
+          {
+            "question": "Was ist der Hauptunterschied bei der Verwaltung von Speicher zwischen traditionellem statischem Fortran und der Verwendung von 'Zeigern' (Pointern)?",
+            "options": [
+              "Zeiger erlauben die dynamische Reservierung und Freigabe von Speicher während der Laufzeit.",
+              "Zeiger wandeln den Quellcode automatisch in eine interpretierte Sprache um.",
+              "Zeiger existieren in Fortran nicht, da die Sprache nur statische Felder erlaubt.",
+              "Zeiger dienen ausschließlich der Formatierung von Ein- und Ausgabedaten."
+            ],
+            "correctIndex": 0,
+            "explanation": "Während klassische Fortran-Variablen oft eine statische Speicherzusage haben, ermöglichen Zeiger und spezielle Anweisungen die dynamische Speicherallokation, was flexiblere Datenstrukturen ermöglicht."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778576652111,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist gfortran?",
+            "back": "gfortran ist der freie Fortran-Compiler aus der GNU Compiler Collection (GCC), der für das Kompilieren von Fortran-Quellcode verwendet wird."
+          },
+          {
+            "front": "Welche Dateiendungen werden typischerweise für Fortran-Quelldateien verwendet?",
+            "back": "Häufige Dateiendungen sind .f, .for, .f90, .f95, .f03, je nachdem, welche Sprachversion verwendet wird."
+          },
+          {
+            "front": "Was versteht man unter einem Compiler?",
+            "back": "Ein Compiler ist ein Computerprogramm, das Quellcode einer Programmiersprache in eine vom Computer direkt ausführbare Maschinensprache oder eine andere Zielsprache übersetzt."
+          },
+          {
+            "front": "Was ist der Hauptzweck der 'COMMON'-Anweisung in FORTRAN 77?",
+            "back": "Sie ermöglicht es verschiedenen Programmeinheiten (z.B. Hauptprogramm und Unterprogrammen), auf denselben Speicherbereich zuzugreifen, um Variablen zu teilen."
+          },
+          {
+            "front": "Wozu dient das 'SAVE'-Attribut bzw. die 'SAVE'-Anweisung bei Subroutinen?",
+            "back": "Sie bewirkt, dass lokale Variablen einer Subroutine ihren Wert zwischen zwei Aufrufen der Subroutine behalten, anstatt bei jedem Aufruf neu initialisiert zu werden."
+          },
+          {
+            "front": "Was ist der Unterschied zwischen einer 'FUNCTION' und einer 'SUBROUTINE' in Fortran?",
+            "back": "Eine FUNCTION gibt einen Wert zurück und kann direkt in einem Ausdruck verwendet werden, während eine SUBROUTINE keine direkte Rückgabe über ihren Namen hat, sondern Parameter ändert oder Seiteneffekte erzeugt."
+          },
+          {
+            "front": "Inwiefern unterscheidet sich die 'select case'-Verzweigung von einer einfachen 'if'-Verzweigung?",
+            "back": "Die 'select case'-Anweisung erlaubt eine übersichtlichere Auswahl zwischen mehreren Alternativen basierend auf dem Wert eines Ausdrucks, ähnlich einem 'switch' in anderen Sprachen."
+          },
+          {
+            "front": "Was bewirkt das Attribut 'sequence' in einem Fortran-Datenverbund (derived type)?",
+            "back": "Es stellt sicher, dass die Komponenten des Datenverbunds im Speicher in der physikalisch definierten Reihenfolge abgelegt werden, was für die gemeinsame Nutzung über COMMON-Blöcke oder Dateien wichtig sein kann."
+          },
+          {
+            "front": "Welche Rolle spielen 'Module' in Fortran (ab Fortran 95)?",
+            "back": "Module dienen der Kapselung von Daten, Prozeduren und Definitionen, um sie in anderen Programmeinheiten mithilfe der 'use'-Anweisung wiederzuverwenden und die Modularität zu erhöhen."
+          },
+          {
+            "front": "Was versteht man unter einem 'Zeiger' (Pointer) in moderneren Fortran-Versionen?",
+            "back": "Ein Zeiger ist eine Variable, die eine Adresse im Speicher speichert und auf eine andere Variable oder ein Feld 'zeigen' (assoziieren) kann, was dynamische Speicherverwaltung und komplexe Datenstrukturen wie verkettete Listen ermöglicht."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-programmieren-aufbau_6",
+      "slides": [
+        {
+          "title": "Lektion 7: Einführung in Fortran",
+          "bullets": [
+            "Fokus auf maschinen-nahe Programmierung und numerische Codes",
+            "Historisch gewachsene Sprache für hochperformante Berechnungen"
+          ],
+          "notes": "Diese Lektion beleuchtet Fortran als robuste Wahl für numerische Höchstleistungen. Wir starten bei den Grundlagen der Compiler-Einrichtung.",
+          "page_range": "1-6",
+          "image_prompt": ""
+        },
+        {
+          "title": "Compiler im Überblick",
+          "bullets": [
+            "Compiler übersetzen Quelltext in maschinenlesbaren Code",
+            "Unterschiedliche Standards erfordern passende Compiler-Wahl",
+            "Gfortran ist Standard-Frontend der GNU Compiler Collection",
+            "Intel, Silverfrost und AMD bieten spezialisierte Lösungen an"
+          ],
+          "notes": "Um Fortran effizient zu nutzen, benötigen wir einen Compiler. Ob Open Source wie Gfortran oder Hersteller-spezifische Lösungen, die Wahl entscheidet über die Kompatibilität.",
+          "page_range": "7-24",
+          "image_prompt": ""
+        },
+        {
+          "title": "Gfortran in der Praxis",
+          "bullets": [
+            "Grundlegende Kompilierung: gfortran quelltext.f90",
+            "Dateiendungen kennzeichnen Sprachversionen (.f90, .f95, .f03)",
+            "Prüfung auf Standardkonformität via -std=... möglich",
+            "Integration in Linux-PATH oder Windows-Eingabeaufforderung"
+          ],
+          "notes": "Gfortran ist der Einstieg für viele. Durch klare Dateiendungen und definierte Übersetzungskommandos behalten Sie den Überblick über verschiedene Fortran-Standards.",
+          "page_range": "26-30",
+          "image_prompt": ""
+        },
+        {
+          "title": "Die Programmiersprache Fortran",
+          "bullets": [
+            "Höhere, imperative und prozedurale Programmiersprache",
+            "Objektorientierte Konzepte wurden ab Fortran 2003 ergänzt",
+            "Kombination aus expliziter und impliziter Typisierung",
+            "Stetige Evolution sichert Relevanz in modernen Kontexten"
+          ],
+          "notes": "Fortran ist mehr als nur 'alt'. Es verbindet bewährte imperative Strukturen mit modernen objektorientierten Ansätzen und bleibt damit hochrelevant für komplexe Systeme.",
+          "page_range": "40-41",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 7 — Fortran - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576652010,
+      "pdfName": "Fortran"
+    }
+  ],
+  "sourceHash": "53e3835a1e6bccbb"
+}

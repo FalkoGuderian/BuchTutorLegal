@@ -1,0 +1,537 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Elektrizität, Optik und Wellen - Lektion 2 — Maxwell-Gleichungen",
+    "pdfName": "Maxwell-Gleichungen in der klassischen Elektrodynamik",
+    "createdAt": 1778501730039,
+    "exportedAt": "2026-05-11T12:15:30.039Z",
+    "meta": {
+      "courseId": "course-de-math-physik-elektro-optik",
+      "lessonIndex": 1,
+      "courseTitle": "Elektrizität, Optik und Wellen",
+      "lessonObjective": "Elektromagnetismus kompakt.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-maxwell-gleichungen-in-der-klassischen-elektrodynamik",
+            "title": "Maxwell-Gleichungen in der klassischen Elektrodynamik",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Maxwell-Gleichungen_in_der_klassischen_Elektrodynamik"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_53a175ff204c",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-3",
+          "chapterTitle": "Maxwell-Gleichungen in der klassischen Elektrodynamik",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-5",
+          "chapterTitle": "Wellengleichungen für Felder",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "6-8",
+          "chapterTitle": "Leistungsdichte und Poynting-Vektor",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "9-10",
+          "chapterTitle": "Energie und Polarisation elektromagnetischer Wellen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "11-13",
+          "chapterTitle": "Elektromagnetischer Impuls und Potentiale",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "14-16",
+          "chapterTitle": "Eichfreiheit und Eichungen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "17-17",
+          "chapterTitle": "Lösungen der Wellengleichungen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "18-20",
+          "chapterTitle": "Strahlungssysteme und Multipolentwicklung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "21-21",
+          "chapterTitle": "Abgestrahlte Leistung und Nahzone",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "22-22",
+          "chapterTitle": "Referenzen",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778501730039,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Maxwell-Gleichungen und ihrer physikalischen Konsequenzen basierend auf dem vorliegenden Dokument:\n\n### 1. Die Maxwell-Gleichungen\nDie Maxwell-Gleichungen bilden das Fundament der klassischen Elektrodynamik. Man unterscheidet zwischen der mikroskopischen und der makroskopischen Formulierung (bei Anwesenheit von Materie wie Dielektrika oder Magnetika):\n\n*   **Gauss-Gesetz (Magnetismus):** $\\nabla \\cdot \\mathbf{B} = 0$. Es existieren keine magnetischen Monopole (S. 1, S. 2).\n*   **Gauss-Gesetz (Elektrostatik):** $\\nabla \\cdot \\mathbf{D} = \\rho$. Elektrische Ladungen sind die Quellen elektrischer Felder (S. 1, S. 2).\n*   **Ampère-Maxwell-Gesetz:** $\\nabla \\times \\mathbf{H} = \\mathbf{j} + \\frac{\\partial \\mathbf{D}}{\\partial t}$. Magnetische Felder werden durch Ströme und zeitlich ändernde elektrische Felder (Verschiebungsstrom) erzeugt (S. 2).\n*   **Faraday-Induktionsgesetz:** $\\nabla \\times \\mathbf{E} = -\\frac{\\partial \\mathbf{B}}{\\partial t}$. Zeitlich ändernde Magnetfelder erzeugen elektrische Wirbelfelder. Das Minuszeichen begründet die Lenz'sche Regel (S. 2).\n\n### 2. Wellenphänomene und Ausbreitung\n*   **Wellengleichung:** Aus den Maxwell-Gleichungen lassen sich für $\\mathbf{E}$ und $\\mathbf{B}$ Wellengleichungen ableiten, die die Ausbreitung elektromagnetischer Wellen im Vakuum mit Lichtgeschwindigkeit $c$ beschreiben (S. 4, S. 5).\n*   **Transversalität:** Im Vakuum sind elektromagnetische Wellen transversal, d.h. die Feldstärken stehen senkrecht zur Ausbreitungsrichtung (S. 9, S. 14).\n*   **Polarisation:** Je nach Phasenbeziehung der Feldkomponenten unterscheidet man verschiedene Polarisationstypen, wie die lineare oder zirkulare Polarisation (S. 9, S. 10).\n\n### 3. Energie, Impuls und Potentiale\n*   **Poynting-Vektor:** Beschreibt den Energiefluss pro Fläche und Zeit. Die Energieerhaltung ist eng mit der Kontinuitätsgleichung verknüpft (S. 6, S. 7).\n*   **Elektromagnetische Potentiale:** Die Felder lassen sich durch ein skalares Potential $\\Phi$ und ein Vektorpotential $\\mathbf{A}$ darstellen ($\\mathbf{B} = \\nabla \\times \\mathbf{A}$). Dies vereinfacht oft die mathematische Behandlung, führt jedoch zu einer Eichfreiheit (z. B. Lorenz- oder Coulomb-Eichung), die genutzt wird, um überschüssige Freiheitsgrade zu eliminieren (S. 11, S. 12, S. 14).\n\n### 4. Strahlung und Dipole\n*   **Strahlungssysteme:** Ladungs- und Stromverteilungen strahlen Energie ab. In der Dipolnäherung (Fernzone) kann die abgestrahlte Leistung berechnet werden. Das Dipolmoment der Quelle bestimmt hier maßgeblich das resultierende Feld (S. 19, S. 20, S. 21).\n*   **Nah- vs. Fernzone:** Während in der Fernzone die abgestrahlte Welle dominiert, herrschen in der Nahzone noch die Quell-nahen, nahezu statischen Felder vor (S. 18, S. 21).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778501730039,
+      "channel": "general",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 22
+      }
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-math-physik-elektro-optik_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 2 — Maxwell-Gleichungen - Präsentation</span><span class=\"pm-chat-count\">9 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Maxwell-Gleichungen: Einführung</div><ul class=\"pm-chat-slide-bullets\"><li>Zusammenfassung der klassischen Elektrodynamik und Elektrostatik.</li><li>Maxwell-Gleichungen bilden das Fundament der elektromagnetischen Phänomene.</li><li>Unterscheidung zwischen mikroskopischen und makroskopischen Gleichungen.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778501730141,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der grundlegenden Aspekte der Maxwell-Gleichungen:\n\nDie Maxwell-Gleichungen bilden das Fundament der klassischen Elektrodynamik und beschreiben die Wechselwirkungen zwischen elektrischen Feldern, Magnetfeldern, Ladungen und Strömen.\n\n**Physikalische Grundlagen**\nDie Theorie basiert auf den bekannten Größen elektrische Ladung ($q$), Ladungsdichte ($\\rho$), Stromdichte ($\\vec{j}$), elektrisches Feld ($\\vec{E}$), magnetische Flussdichte ($\\vec{B}$) sowie der Lichtgeschwindigkeit ($c$).\n\n**Mikroskopische Maxwell-Gleichungen (Vakuum)**\nDiese beschreiben das Feld ohne polarisierbare Medien:\n1. $\\nabla \\cdot \\vec{B} = 0$: Abwesenheit magnetischer Monopole.\n2. $\\nabla \\cdot \\vec{E} = \\frac{\\rho}{\\epsilon_{0}}$: Coulomb-Gesetz; Ladungsdichten als Quellen des elektrischen Feldes.\n3. $\\nabla \\times \\vec{B} = \\mu_{0} \\vec{j} + \\mu_{0} \\epsilon_{0} \\frac{\\partial \\vec{E}}{\\partial t}$: Ampère-Gesetz inklusive des Maxwell’schen Verschiebungsstroms.\n4. $\\nabla \\times \\vec{E} = -\\frac{\\partial \\vec{B}}{\\partial t}$: Faraday-Induktionsgesetz; Wirbelfelder durch zeitliche Änderung des Magnetfelds (Lentz'sche Regel durch das Minuszeichen).\n\n**Makroskopische Maxwell-Gleichungen (Medien)**\nIn Materie werden zusätzlich die elektrische Flussdichte ($\\vec{D}$) und das magnetische Feld ($\\vec{H}$) eingeführt, um den Einfluss von Dielektrika und Magnetika zu berücksichtigen:\n1. $\\nabla \\cdot \\vec{B} = 0$\n2. $\\nabla \\cdot \\vec{D} = \\rho$\n3. $\\nabla \\times \\vec{H} = \\vec{j} + \\frac{\\partial \\vec{D}}{\\partial t}$\n4. $\\nabla \\times \\vec{E} = -\\frac{\\partial \\vec{B}}{\\partial t}$\n\nHierbei werden die Polarisationen ($\\vec{P}$, $\\vec{M}$) und Materieeigenschaften wie die dielektrische Leitfähigkeit bzw. Suszeptibilität verwendet. In isotropen Medien vereinfachen sich diese Beziehungen durch Materialkonstanten, die physikalisch auch den Brechungsindex beeinflussen.\n\n**Alternative Darstellungen und Kinetik**\nMittels des Stokes’schen Integralsatzes lassen sich die differenziellen Gleichungen in eine Integralform überführen. Dies ist besonders bei der Herleitung der Induktionsspannung ($U$) und des magnetischen Flusses ($\\Phi$) hilfreich:\n$U = \\oint \\vec{E} \\cdot d\\vec{s} = -\\frac{d\\Phi}{dt}$, mit $\\Phi = \\int \\vec{B} \\cdot d\\vec{A}$. Zudem wird die Lorentzkraft als Wirkung des Feldes auf eine bewegte Ladung definiert.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501730049,
+      "channel": "plan_pipe_53a175ff204c",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der physikalischen Herleitungen:\n\n**Wellengleichung für die elektrische Feldstärke**\nAus den Maxwell-Gleichungen lässt sich für das elektrische Feld eine Wellengleichung ableiten. Durch Anwenden der Rotation auf das Induktionsgesetz und Einsetzen der zeitlich abgeleiteten Materiegleichung für die Stromdichte ergibt sich:\n\n$$\\nabla^2 \\vec{E} - \\epsilon_0 \\mu_0 \\frac{\\partial^2 \\vec{E}}{\\partial t^2} = \\mu_0 \\frac{\\partial \\vec{j}}{\\partial t} + \\frac{1}{\\epsilon_0} \\nabla \\rho$$\n\nIm ladungs- und stromfreien Raum vereinfacht sich dies zu einer homogenen Wellengleichung:\n\n$$\\nabla^2 \\vec{E} - \\frac{1}{c^2} \\frac{\\partial^2 \\vec{E}}{\\partial t^2} = 0$$\n\nDie allgemeine Lösung dieser Gleichung lautet $\\vec{E}(\\vec{r},t) = \\text{Re}\\{ \\vec{E}_0 e^{i(\\vec{k} \\cdot \\vec{r} - \\omega t)} \\}$, wobei $c = 1/\\sqrt{\\epsilon_0 \\mu_0}$ die Lichtgeschwindigkeit darstellt und $\\vec{E}_0$ eine komplexe Amplitude beschreibt.\n\n**Wellengleichung für das magnetische Feld**\nAnalog zum elektrischen Feld lässt sich durch Anwendung der Rotation auf das Ampère-Gesetz eine identische Wellengleichung für die magnetische Flussdichte $\\vec{B}$ herleiten:\n\n$$\\nabla^2 \\vec{B} - \\frac{1}{c^2} \\frac{\\partial^2 \\vec{B}}{\\partial t^2} = 0$$\n\n**Kontinuitätsgleichung**\nDie Kontinuitätsgleichung ist mathematisch direkt aus den Maxwell-Gleichungen ableitbar. Durch die Divergenzbildung von $\\nabla \\times \\vec{H} = \\vec{j} + \\frac{\\partial \\vec{D}}{\\partial t}$ unter Berücksichtigung von $\\nabla \\cdot \\vec{D} = \\rho$ folgt:\n\n$$\\nabla \\cdot \\vec{j} + \\frac{\\partial \\rho}{\\partial t} = 0$$\n\nDieser Ausdruck beschreibt die Erhaltung der Ladung. Die Divergenzbildung von $\\nabla \\times \\vec{E} = -\\frac{\\partial \\vec{B}}{\\partial t}$ liefert hingegen keine neuen physikalischen Erkenntnisse, da die Divergenz der Rotation stets verschwindet ($\\nabla \\cdot (\\nabla \\times \\vec{A}) = 0$).\n\n**Leistung der Joule'schen Wärme**\nFür eine Punktladung $q$ innerhalb eines elektrischen Feldes mit der Stromdichte $\\vec{j} = q \\vec{v} \\delta(\\vec{r} - \\vec{r}_q)$ ergibt sich die lokale Leistungsdichte der Joule'schen Wärme zu:\n\n$$P = \\vec{j} \\cdot \\vec{E}$$",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501730050,
+      "channel": "plan_pipe_53a175ff204c",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung behandelt die Herleitung der Joule'schen Wärme sowie die energetischen Aspekte elektromagnetischer Felder mittels des Poynting-Vektors.\n\nDie Joule'sche Wärme und Leistungsdichte\nDie elektrische Leistung ergibt sich aus $P = U \\cdot I$. Über den Zusammenhang der Stromdichte $\\vec{j}$ und des elektrischen Feldes $\\vec{E}$ mit der Leitfähigkeit $\\sigma$ kann die Leistungsdichte der Joule'schen Wärme ausgedrückt werden als $p = \\vec{j} \\cdot \\vec{E} = \\sigma \\vec{E}^2$. Diese beschreibt den Energieverlust durch ohmschen Widerstand.\n\nDer Poynting-Vektor\nDer Poynting-Vektor $\\vec{S} = \\vec{E} \\times \\vec{H}$ beschreibt den Fluss der elektromagnetischen Energie. Bei harmonischer Zeitabhängigkeit der Felder ($\\vec{E}(t) = \\text{Re}\\{\\vec{E}_0 e^{-i\\omega t}\\}$) vereinfacht sich der zeitliche Mittelwert des Poynting-Vektors zu $\\langle\\vec{S}\\rangle = \\frac{1}{2} \\text{Re}\\{\\vec{E} \\times \\vec{H}^*\\}$. Dabei wurde die komplexe Darstellung genutzt, wobei der Mittelwert von Schwingungstermen wie $\\cos^2(\\omega t)$ zu $1/2$ führt.\n\nEnergetische Betrachtungen im Medium\nUnter der Annahme harmonischer Felder in isotropen Medien (ohne freie Ladungen und Ströme) lässt sich der Zusammenhang $\\vec{H} = \\frac{1}{\\omega\\mu} (\\vec{k} \\times \\vec{E})$ nutzen, um den mittleren Energiefluss direkt über die Feldamplituden auszudrücken.\n\nMittlere Energiedichte\nDie mittlere Energiedichte $w$ setzt sich aus den elektrischen und magnetischen Anteilen zusammen: $w = \\langle w_e \\rangle + \\langle w_m \\rangle$. Mit den Ansätzen $\\langle w_e \\rangle = \\frac{1}{4} (\\epsilon \\vec{E} \\cdot \\vec{E}^*)$ und $\\langle w_m \\rangle = \\frac{1}{4} (\\mu \\vec{H} \\cdot \\vec{H}^*)$ sowie der Eigenschaft $\\langle \\cos^2(\\omega t) \\rangle = 1/2$ ergibt sich für die mittlere Gesamtenergie in einem Medium mit Permittivität $\\epsilon$ und Permeabilität $\\mu$:\n\n$$\\langle w \\rangle = \\frac{1}{4} \\left( \\epsilon |\\vec{E}|^2 + \\mu |\\vec{H}|^2 \\right)$$\n\nZusammenfassend erlaubt dieser Formalismus die Beschreibung der Energiebilanz und des Energietransports in elektromagnetischen Feldern unter Verwendung komplexer Feldgrößen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501730051,
+      "channel": "plan_pipe_53a175ff204c",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 8
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung deckt die physikalischen Grundlagen der elektromagnetischen Wellen und deren Impulsübertragung ab:\n\nDer Zusammenhang zwischen dem Mittelwert des Poyntingvektors und der elektromagnetischen Energiedichte wird durch die Lichtgeschwindigkeit $v = c/n$ in einem Medium mit Brechungsindex $n$ bestimmt. Für ebene Wellen im quellenfreien Vakuum gilt die Transversalität, wobei die komplexen Amplituden $\\vec{E}_0$ und $\\vec{B}_0$ über $\\vec{B}_0 = \\frac{1}{\\omega} (\\vec{k} \\times \\vec{E}_0)$ verknüpft sind.\n\nDie Polarisation beschreibt die Phasenbeziehung der Wellenkomponenten:\nBei linearer Polarisation schwingen die Komponenten in Phase ($\\delta_x = \\delta_y$). Bei zirkularer Polarisation gilt $|\\vec{E}_{0x}| = |\\vec{E}_{0y}|$ mit einer Phasendifferenz von $\\pi/2$. Dies erlaubt die mathematische Darstellung durch zirkulare Einheitsvektoren $\\vec{\\epsilon}_{\\pm} = \\frac{1}{\\sqrt{2}} (\\hat{e}_x \\pm i \\hat{e}_y)$. Die Helizität $\\pm 1$ charakterisiert dabei den Drehsinn der Welle relativ zum Wellenvektor $\\vec{k}$.\n\nDer Impuls des Strahlungsfeldes wird über die Lorentz-Kraft abgeleitet. Unter Annahme eines linearen Zusammenhangs $\\vec{D} = \\epsilon \\vec{E}$ und eines symmetrischen Tensors bei isotropen Dielektrika ergibt sich eine konsistente Beschreibung der Wechselwirkung zwischen elektromagnetischen Feldern und Materie.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501730052,
+      "channel": "plan_pipe_53a175ff204c",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 9,
+        "end": 10
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Abschnitte zu den elektromagnetischen Potentialen und Wellengleichungen:\n\nDer Text beschreibt den Übergang von den elektromagnetischen Feldern zu den Potentialen, um die Maxwell-Gleichungen effizienter zu lösen. Durch die Definition des Vektorpotentials $\\vec{A}$ mit $\\vec{B} = \\text{rot} \\vec{A}$ wird die Quellfreiheit des Magnetfeldes ($\\text{div} \\vec{B} = 0$) automatisch erfüllt. Analog folgt für das elektrische Feld die Einführung eines Skalarpotentials $\\phi$, sodass $\\vec{E} = -\\text{grad} \\phi - \\frac{\\partial \\vec{A}}{\\partial t}$ gilt.\n\nFür diese Potentiale lassen sich inhomogene Wellengleichungen herleiten, die das physikalische Verhalten des Feldes in Raum und Zeit bestimmen. In Materie ändert sich die Ausbreitungsgeschwindigkeit der Wellen durch die Materialkonstanten (Permeabilität $\\mu$ und Permittivität $\\epsilon$), was mathematisch durch die Einführung des Brechungsindex $n$ und der Lichtgeschwindigkeit im Medium $v = c/n$ berücksichtigt wird.\n\nDie Kernaussagen lassen sich wie folgt gliedern:\n\n1. Potentialdarstellung: Die Felder werden durch $\\vec{A}$ und $\\phi$ ausgedrückt. Dies vereinfacht die mathematische Beschreibung der Maxwell-Gleichungen grundlegend.\n\n2. Wellengleichungen: Sowohl für das Vektorpotential als auch für das Skalarpotential ergeben sich Wellengleichungen, die den Transport elektromagnetischer Energie beschreiben. In der allgemeinen Form lauten diese $\\Delta \\vec{A} - \\frac{1}{v^2} \\frac{\\partial^2 \\vec{A}}{\\partial t^2} = -\\mu \\vec{j}$ sowie $\\Delta \\phi - \\frac{1}{v^2} \\frac{\\partial^2 \\phi}{\\partial t^2} = -\\frac{\\rho}{\\epsilon}$.\n\n3. Materialeinfluss: Bei Vorhandensein von Materie ersetzen die effektiven Materialkonstanten die Werte des Vakuums. Es zeigt sich, dass sich die Wellen langsamer ausbreiten, abhängig vom Brechungsindex des jeweiligen Mediums.\n\n4. Ebene Wellen: Im ladungsfreien Raum ($\\rho = 0, \\vec{j} = 0$) reduzieren sich die Lösungen auf einfache Wellenfunktionen der Form $\\vec{A}(\\vec{r}, t) = \\vec{A}_0 e^{i(\\vec{k}\\vec{r} - \\omega t)}$.\n\nAbschließend weist der Text darauf hin, dass diese mathematische Struktur eine Basis für weiterführende Konzepte wie die Greensfunktionen für die Elektro- und Elektrodynamik sowie die physikalisch wichtige Eichfreiheit bildet, welche die Mehrdeutigkeit der Potentiale bei gleichem physikalischem Feldeffekt beschreibt.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501730053,
+      "channel": "plan_pipe_53a175ff204c",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 11,
+        "end": 13
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der physikalischen Grundlagen zur Eichung elektrodynamischer Potentiale:\n\n**Die Notwendigkeit der Eichung**\nDas elektromagnetische Feld wird durch das Skalarpotential $\\Phi$ und das Vektorpotential $\\vec{A}$ beschrieben, welche insgesamt vier Komponenten besitzen. Da elektromagnetische Wellen jedoch transversal sind, werden für ihre physikalische Beschreibung nur zwei Freiheitsgrade benötigt. Die zwei überzähligen Freiheitsgrade werden durch die Wahl einer Eichung entfernt. Dabei bleibt der physikalische Zustand (die Felder $\\vec{E}$ und $\\vec{B}$) erhalten, wenn eine Eichtransformation der Form $\\vec{A}' = \\vec{A} + \\nabla \\Lambda$ und $\\Phi' = \\Phi - \\partial_t \\Lambda$ angewendet wird.\n\n**Die Coulomb-Eichung**\nIn dieser Eichung wird die Bedingung $\\nabla \\cdot \\vec{A} = 0$ auferlegt. Das Skalarpotential entspricht dabei dem Coulomb-Potential $\\Phi(\\vec{r}, t) = \\frac{1}{4\\pi\\varepsilon_0} \\int \\frac{\\rho(\\vec{r}', t)}{|\\vec{r}-\\vec{r}'|} d^3r'$. Dies ermöglicht die Zerlegung der Stromdichte in einen transversalen und einen longitudinalen Anteil. Die Wellengleichung für das Vektorpotential lautet in diesem Fall $\\Box \\vec{A} = \\mu_0 \\vec{j}_{tr}$. Das Skalarpotential ist hier instantan durch die Ladungsdichte bestimmt.\n\n**Die Lorenz-Eichung**\nDie Lorenz-Eichung nutzt die Bedingung $\\nabla \\cdot \\vec{A} + \\frac{1}{c^2} \\partial_t \\Phi = 0$. Sie hat den Vorteil der kovarianten Schreibweise. Mit dem Viererpotential $A^\\mu = (\\Phi/c, \\vec{A})$ und dem Viererstrom $j^\\mu = (c\\rho, \\vec{j})$ lassen sich die Wellengleichungen zur kompakten Form $\\Box A^\\mu = \\mu_0 j^\\mu$ zusammenfassen. Hierbei ist $\\Box = \\partial_\\mu \\partial^\\mu$ der d'Alembert-Operator. Die Lorenz-Eichbedingung lässt sich kurz als $\\partial_\\mu A^\\mu = 0$ ausdrücken.\n\n**Kernpunkte im Überblick**\n- Eichtransformationen ändern die physikalischen Felder $\\vec{E}$ und $\\vec{B}$ nicht.\n- Coulomb-Eichung ($\\nabla \\cdot \\vec{A} = 0$): Trennung in longitudinales Skalarpotential und transversales Vektorpotential.\n- Lorenz-Eichung ($\\partial_\\mu A^\\mu = 0$): Ermöglicht eine symmetrische, relativistisch kovariante Darstellung der Potentialgleichungen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501730054,
+      "channel": "plan_pipe_53a175ff204c",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 14,
+        "end": 16
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung des Abschnitts:\n\n**Zusammenfassung: Lösung der Wellengleichungen und harmonische Strahlungsquellen**\n\nDer vorliegende Abschnitt befasst sich mit der formalen Lösung der inhomogenen Wellengleichungen der Elektrodynamik unter Verwendung der Greensfunktion.\n\n**1. Zentrale Kopplung an die Greensfunktion**\nDie Lösung der Wellengleichungen in der Lorenz-Eichung ($ \\Box A^\\mu = \\mu_0 j^\\mu $) sowie in der Coulomb-Eichung lässt sich direkt auf die definierende Eigenschaft der Greensfunktion zurückführen, für die gilt:\n$ \\Box G(\\vec{r}, t; \\vec{r}', t') = \\delta^{(3)}(\\vec{r}-\\vec{r}') \\delta(t-t') $\nDurch Anwendung auf die Lorenz-Eichung ergibt sich die formale Lösung als Faltungsintegral:\n$ A^\\mu(\\vec{r}, t) = \\mu_0 \\int d^3r' \\int dt' G(\\vec{r}, t; \\vec{r}', t') j^\\mu(\\vec{r}', t') $\n\n**2. Übergang zu Strahlungssystemen**\nIm weiteren Verlauf werden diese formalen Lösungen genutzt, um Strahlungsprozesse zu analysieren. Dabei wird der Spezialfall einer harmonischen Zeitabhängigkeit der Quellen (Ladungen und Ströme) betrachtet:\n$ j(\\vec{r}, t) = j_\\omega(\\vec{r}) e^{-i \\omega t} $\n$ \\rho(\\vec{r}, t) = \\rho_\\omega(\\vec{r}) e^{-i \\omega t} $\n\nDiese harmonische Zerlegung stellt eine grundlegende Vereinfachung dar, da sie die Analyse komplexer zeitabhängiger Strahlungsquellen durch die Anwendung von Fourier-Methoden ermöglicht. Die Ergebnisse bilden die Basis für die Untersuchung der Abstrahlung elektromagnetischer Wellen in den nachfolgenden Kapiteln.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501730055,
+      "channel": "plan_pipe_53a175ff204c",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 17,
+        "end": 17
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Abschnitte zur elektrodynamischen Strahlung:\n\nDer Abschnitt behandelt die Berechnung des Vektorpotentials für zeitlich veränderliche Quellen unter Verwendung der retardierten Greensfunktion $G(\\mathbf{r}, t; \\mathbf{r}', t') = \\frac{\\delta(t' - (t - |\\mathbf{r}-\\mathbf{r}'|/c))}{4\\pi |\\mathbf{r}-\\mathbf{r}'|}$, die das Kausalitätsprinzip erfüllt.\n\nDie wesentlichen Kernaussagen sind:\n\n1. Strahlungsbedingung: Unter der Annahme einer kleinen Quellenabmessung $d \\ll \\lambda$ (bzw. $kd \\ll 1$) wird die räumliche Ausdehnung der Quelle vernachlässigt.\n\n2. Nahzone ($r \\ll \\lambda$): Hier lässt sich das Vektorpotential durch eine Entwicklung in Kugelflächenfunktionen darstellen, was in eine Beschreibung über Multipolmomente der Stromdichte mündet.\n\n3. Fernzone ($r \\gg \\lambda$): Hier wird der Ausdruck $|\\mathbf{r}-\\mathbf{r}'|$ in einer Taylor-Reihe approximiert. Es resultiert eine auslaufende Kugelwelle, wobei die niedrigste Ordnung der Entwicklung die Dipolnäherung darstellt.\n\n4. Dipolnäherung: Durch Anwendung des Gaußschen Integralsatzes und der Kontinuitätsgleichung $\\nabla \\cdot \\mathbf{j} = -\\frac{\\partial \\rho}{\\partial t}$ gelingt die Umformung des Stromintegrals, sodass das Vektorpotential durch das elektrische Dipolmoment $\\mathbf{p}(t) = \\int \\rho(\\mathbf{r}', t) \\mathbf{r}' d^3r'$ ausgedrückt werden kann: $\\mathbf{A}(\\mathbf{r}, t) = \\frac{\\mu_0}{4\\pi r} \\dot{\\mathbf{p}}(t - r/c)$.\n\n5. Felder: Aus dem Vektorpotential lassen sich die magnetische Flussdichte $\\mathbf{B} = \\nabla \\times \\mathbf{A}$ und – unter der Annahme harmonischer Zeitabhängigkeit im Fernfeld – die elektrische Feldstärke $\\mathbf{E}$ bestimmen. Im Fernbereich bilden diese eine elektromagnetische Welle.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501730056,
+      "channel": "plan_pipe_53a175ff204c",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 18,
+        "end": 20
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die zusammenfassende Analyse des Abschnitts:\n\nDer Text beschreibt das Verhalten eines oszillierenden Dipols in Abhängigkeit vom Abstand zum Ursprung und unterteilt dies in zwei Zonen:\n\nDie Fernzone ($r \\gg \\lambda$)\nIn diesem Bereich dominiert die Strahlung, da das elektrische Feld stärker abfällt als das magnetische (bzw. die Abstrahlung mit der Entfernung wächst). Die abgestrahlte Leistung in ein Raumwinkelelement $d\\Omega$ berechnet sich aus dem Poynting-Vektor zu:\n$dP = \\frac{p_0^2 \\omega^4}{32 \\pi^2 \\epsilon_0 c^3} \\sin^2 \\theta \\, d\\Omega$\nDurch Integration über den gesamten Raumwinkel ergibt sich die Gesamtabstrahlleistung:\n$P = \\frac{p_0^2 \\omega^4}{12 \\pi \\epsilon_0 c^3}$\n\nDie Nahzone ($r \\ll \\lambda$)\nIn diesem Bereich dominieren die klassischen quasistatischen Dipolfelder. Das elektrische Dipolfeld überwiegt hier gegenüber dem magnetischen Feld, was zu den bekannten Formeln der Elektrostatik führt:\n$E \\approx \\frac{p_0}{4 \\pi \\epsilon_0 r^3} (2 \\cos \\theta \\, \\vec{e}_r + \\sin \\theta \\, \\vec{e}_\\theta)$\n$B \\approx \\frac{\\mu_0 p_0 \\omega}{4 \\pi r^2} \\sin \\theta \\, \\vec{e}_\\phi$\n\nZusammenfassend lässt sich festhalten, dass der Übergang von der Nah- zur Fernzone einen Wechsel von einem dominierten statischen Feld hin zu einem elektromagnetischen Strahlungsfeld kennzeichnet.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501730057,
+      "channel": "plan_pipe_53a175ff204c",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 21,
+        "end": 21
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des angegebenen Inhalts basierend auf der genannten Literatur und Systematik:\n\nDie theoretische Behandlung der klassischen Elektrodynamik beginnt bei der Elektrostatik und führt über die Maxwell-Gleichungen hin zur vollständigen kovarianten Formulierung in der Speziellen Relativitätstheorie.\n\nGrundlagen und statische Felder\nDie Elektrostatik basiert auf dem Gaußschen Gesetz und dem Coulomb-Gesetz. Sie beschreibt die Felder ruhender Ladungen. In der klassischen Feldtheorie werden diese Konzepte durch die Maxwell-Gleichungen zu einer geschlossenen Theorie erweitert, die sowohl elektrische als auch magnetische Phänomene vereint.\n\nRelativistische Formulierung\nDurch die Spezielle Relativitätstheorie lassen sich die Maxwell-Gleichungen in eine manifeste kovariante Form bringen. Hierbei werden das elektrische Feld ($\\vec{E}$) und das magnetische Feld ($\\vec{B}$) in einem antisymmetrischen Feldstärketensor $F^{\\mu\\nu}$ zusammengefasst. Die Bewegung geladener Teilchen wird dabei konsistent mit den Transformationsregeln der Lorentz-Gruppe beschrieben. Ein fundamentales Resultat ist die Beschreibung der Strahlung einer bewegten Ladung, die durch die Liénard-Wiechert-Potentiale ausgedrückt wird.\n\nDynamik und komplexe Systeme\nÜber die Punktmechanik hinaus betrachtet die moderne theoretische Physik die Dynamik geladener Polymere. Hierbei müssen die Wechselwirkung von Ladungsdichten mit dem elektromagnetischen Feld sowie die thermischen und statistischen Einflüsse auf die Konformation der Polymere berücksichtigt werden.\n\nLiteraturhinweise und Methodik\nDie wissenschaftliche Fundierung erfolgt durch Standardwerke der theoretischen Physik:\n1. Scheck, F.: Fokus auf Mechanik, Übergang zum deterministischen Chaos und Einbettung der Feldtheorie.\n2. Sommerfeld, A.: Klassische Darstellung der Elektrodynamik.\n3. Lindner, A.: Methodische Grundlagen des Grundkurses der theoretischen Physik.\n4. Jackson, J.D.: Das maßgebliche Referenzwerk für die elektrodynamische Feldtheorie und ihre relativistische Formulierung.\n\nZusammenfassend lässt sich festhalten, dass die Elektrodynamik eine der am präzisesten bestätigten Theorien der Physik ist, deren Konsistenz durch die relativistische Invarianz sichergestellt wird. Die mathematische Struktur ermöglicht dabei Anwendungen von der elementaren Teilchenphysik bis hin zur komplexen Polymerdynamik.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501730058,
+      "channel": "plan_pipe_53a175ff204c",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 22,
+        "end": 22
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778501730139,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Was besagt die Maxwell-Gleichung ∇ · B = 0 im Kontext der klassischen Elektrodynamik?",
+            "options": [
+              "Sie beweist die Existenz magnetischer Monopole.",
+              "Sie zeigt, dass magnetische Monopole in der Natur nicht existieren.",
+              "Sie zeigt, dass elektrische Monopole existieren.",
+              "Sie beschreibt die Entstehung eines elektrischen Feldes durch zeitlich ändernde Magnetfelder."
+            ],
+            "correctIndex": 1,
+            "explanation": "Die Gleichung ∇ · B = 0 ist die quellenfreie Maxwell-Gleichung, welche aussagt, dass das Magnetfeld keine Quellen hat, es also keine magnetischen Monopole gibt."
+          },
+          {
+            "question": "Warum wird in der Elektrodynamik der Begriff der 'Eichung' oder 'Eichtransformation' verwendet?",
+            "options": [
+              "Weil die Maxwell-Gleichungen ohne Eichung mathematisch nicht lösbar wären.",
+              "Weil die Potentiale mehr Komponenten besitzen (drei für das Vektorpotential, einen für das Skalarpotential) als für die Beschreibung der Felder physikalisch notwendig sind.",
+              "Um die Lichtgeschwindigkeit in Medien zu korrigieren.",
+              "Um die elektromagnetischen Felder künstlich zu verstärken."
+            ],
+            "correctIndex": 1,
+            "explanation": "Das Vektor- und Skalarpotential liefern zusammen vier Komponenten, von denen aufgrund der Transversalität der Wellen nur zwei für die Beschreibung der physikalisch gemessenen Felder benötigt werden; die überzähligen Freiheitsgrade werden 'weggeeicht'."
+          },
+          {
+            "question": "Was beschreibt das Maxwell'sche Ampère'sche Gesetz, erweitert um den Verschiebungsstrom-Term?",
+            "options": [
+              "Dass sowohl Ströme als auch zeitlich veränderliche elektrische Felder magnetische Wirbelfelder erzeugen.",
+              "Dass ein Magnetfeld ausschließlich durch stromdurchflossene Leiter entsteht.",
+              "Dass nur bewegte Ladungen ein Magnetfeld erzeugen können.",
+              "Dass das Magnetfeld immer parallel zum Stromverlauf ist."
+            ],
+            "correctIndex": 0,
+            "explanation": "Durch den Verschiebungsstrom-Term (die zeitliche Änderung des elektrischen Feldes) wird ausgedrückt, dass nicht nur bewegte Ladungen, sondern auch dynamische elektrische Felder Magnetfelder induzieren."
+          },
+          {
+            "question": "Welche Aussage trifft auf die 'retardierte' Greensfunktion in der Elektrodynamik zu?",
+            "options": [
+              "Sie ist mathematisch identisch mit der avancierten Greensfunktion.",
+              "Sie berücksichtigt, dass die Wirkung der Quelle erst nach einer Laufzeit beim Beobachter ankommt (Ursache vor Wirkung).",
+              "Sie beschreibt einen Zustand, bei dem die Wirkung zeitlich vor der Ursache eintritt.",
+              "Sie wird ausschließlich zur Berechnung von Feldern im statischen Fall verwendet."
+            ],
+            "correctIndex": 1,
+            "explanation": "Die retardierte Greensfunktion stellt sicher, dass physikalische Wirkungen erst nach einer endlichen Laufzeit, die durch die Lichtgeschwindigkeit begrenzt ist, am Beobachtungsort registriert werden."
+          },
+          {
+            "question": "Was passiert bei der mathematischen Herleitung der Wellengleichung aus den Maxwell-Gleichungen?",
+            "options": [
+              "Die Ladungsdichte verschwindet automatisch ohne weitere Annahmen.",
+              "Man ignoriert die Stromdichte komplett, da sie für Wellen irrelevant ist.",
+              "Man setzt die Rotations-Gleichungen ineinander ein (z.B. Rotation der Rotation), um eine Gleichung nur für ein Feld zu erhalten.",
+              "Die Zeitabhängigkeit wird vollständig aus der Gleichung eliminiert."
+            ],
+            "correctIndex": 2,
+            "explanation": "Die Wellengleichungen für E- und B-Felder entstehen durch die Anwendung des Rotations-Operators auf eine der Maxwell-Gleichungen und anschließendes Einsetzen einer weiteren Maxwell-Gleichung, um die Felder zu entkoppeln."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778501730140,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was besagt das Gauß-Gesetz (mikroskopisch) $\\nabla \\cdot \\vec{E} = \\rho / \\epsilon_0$?",
+            "back": "Es besagt, dass eine Ladungsdichte die Quelle eines elektrischen Feldes ist (Coulomb-Gesetz)."
+          },
+          {
+            "front": "Was besagt die Maxwell-Gleichung $\\nabla \\cdot \\vec{B} = 0$?",
+            "back": "Sie besagt, dass es keine magnetischen Monopole gibt; das Magnetfeld ist quellenfrei."
+          },
+          {
+            "front": "Was wird durch das Induktionsgesetz $\\nabla \\times \\vec{E} = -\\partial \\vec{B} / \\partial t$ ausgedrückt?",
+            "back": "Jedes sich ändernde Magnetfeld erzeugt ein elektrisches Wirbelfeld. Das Minuszeichen entspricht der Lenz'schen Regel."
+          },
+          {
+            "front": "Was erweitert den Term $\\nabla \\times \\vec{B} = \\mu_0 \\vec{j}$ zur vierten Maxwell-Gleichung?",
+            "back": "Der Maxwell'sche Verschiebungsstrom-Term $\\mu_0 \\epsilon_0 \\partial \\vec{E} / \\partial t$, was bedeutet, dass zeitlich ändernde elektrische Felder ebenfalls Magnetfelder erzeugen."
+          },
+          {
+            "front": "Was ist die Lorentzkraft?",
+            "back": "Die Kraft, die auf eine mit Geschwindigkeit $\\vec{v}$ bewegte Ladung $q$ in einem elektromagnetischen Feld wirkt: $\\vec{F} = q(\\vec{E} + \\vec{v} \\times \\vec{B})$."
+          },
+          {
+            "front": "Was beschreibt der Poynting-Vektor $\\vec{S} = \\frac{1}{\\mu_0} \\vec{E} \\times \\vec{B}$?",
+            "back": "Er beschreibt die gerichtete Leistungsdichte bzw. den Energiefluss des elektromagnetischen Feldes."
+          },
+          {
+            "front": "Was ist der Zweck der Eichung von Potentialen?",
+            "back": "Da das Skalarpotential $\\Phi$ und Vektorpotential $\\vec{A}$ redundant sind (4 Komponenten für nur 2 Freiheitsgrade), werden überschüssige Freiheitsgrade durch Eichbedingungen 'weggeeicht'."
+          },
+          {
+            "front": "Was unterscheidet die Lorenz-Eichung von der Coulomb-Eichung?",
+            "back": "Lorenz-Eichung: Bedingung $\\nabla \\cdot \\vec{A} + \\frac{1}{c^2} \\frac{\\partial \\Phi}{\\partial t} = 0$. Coulomb-Eichung: Bedingung $\\nabla \\cdot \\vec{A} = 0$."
+          },
+          {
+            "front": "Was ist der Unterschied zwischen Nahzone und Fernzone bei Strahlungsquellen?",
+            "back": "Nahzone ($d \\ll r \\ll \\lambda$): Dominanz des statischen Dipolfeldes. Fernzone ($r \\gg \\lambda$): Abstrahlung von Energie durch auslaufende Kugelwellen."
+          },
+          {
+            "front": "Wie hängen elektrische Feldstärke $\\vec{E}$ und Skalar-/Vektorpotential ($\\Phi, \\vec{A}$) zusammen?",
+            "back": "$\\vec{E} = -\\nabla \\Phi - \\frac{\\partial \\vec{A}}{\\partial t}$."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-math-physik-elektro-optik_1",
+      "slides": [
+        {
+          "title": "Maxwell-Gleichungen: Einführung",
+          "bullets": [
+            "Zusammenfassung der klassischen Elektrodynamik und Elektrostatik.",
+            "Maxwell-Gleichungen bilden das Fundament der elektromagnetischen Phänomene.",
+            "Unterscheidung zwischen mikroskopischen und makroskopischen Gleichungen.",
+            "Klassisch bedeutet hier: explizit nicht quantenmechanisch."
+          ],
+          "notes": "Wir betrachten elektromagnetische Felder als Grundlage der klassischen Physik. Dabei leiten wir grundlegende Gesetze direkt aus den allgemeinen Maxwell-Gleichungen ab.",
+          "page_range": "1-3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Die Maxwell-Gleichungen",
+          "bullets": [
+            "Keine magnetischen Monopole existieren (Div B = 0).",
+            "Elektrische Ladungen sind Quellen elektrischer Felder (Div E = rho/eps_0).",
+            "Zeitliche Magnetfeldänderungen erzeugen elektrische Wirbelfelder (Faraday-Induktionsgesetz).",
+            "Ströme und zeitliche E-Feld-Änderungen erzeugen magnetische Wirbelfelder (Ampère-Gesetz)."
+          ],
+          "notes": "Diese vier Gleichungen beschreiben vollständig das Wechselspiel zwischen elektrischen und magnetischen Feldern sowie deren Quellen.",
+          "page_range": "1-3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Wellengleichungen für Felder",
+          "bullets": [
+            "Aus Maxwell-Gleichungen lassen sich Wellengleichungen für E und B ableiten.",
+            "Im Vakuum propagieren Felder als Wellen mit Lichtgeschwindigkeit c.",
+            "Die Kontinuitätsgleichung folgt zwingend aus den Maxwell-Gleichungen.",
+            "Beschreibt die Joule'sche Wärmeentwicklung durch strömende Ladungen."
+          ],
+          "notes": "Elektromagnetische Felder breiten sich als Wellen aus. Dies ist eine direkte mathematische Konsequenz der Maxwell-Gleichungen ohne externe Quellen.",
+          "page_range": "4-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Leistung und Poynting-Vektor",
+          "bullets": [
+            "Joule'sche Wärme quantifiziert Energieverluste in leitenden Medien.",
+            "Der Poynting-Vektor beschreibt den gerichteten Energiefluss einer Welle.",
+            "Zeitliche Mittelwerte zeigen den durchschnittlichen Energietransport an.",
+            "Verknüpfung von Feldenergie und lokaler Energiedichte (w)."
+          ],
+          "notes": "Der Poynting-Vektor beantwortet die Frage, wohin die Energie in einem elektromagnetischen Feld fließt.",
+          "page_range": "6-8",
+          "image_prompt": ""
+        },
+        {
+          "title": "Polarisation und elektromagnetischer Impuls",
+          "bullets": [
+            "Ebene Wellen sind transversal (schwingen senkrecht zur Ausbreitungsrichtung).",
+            "Polarisationsformen: Linear, zirkular und die Helizität der Welle.",
+            "Elektromagnetische Felder tragen Impuls in den Raum.",
+            "Maxwell'scher Spannungstensor beschreibt die Impulsdichte des Feldes."
+          ],
+          "notes": "Licht ist eine transversale Welle. Wir betrachten hier, wie sich Polarisation mathematisch definiert und Impuls übertragen wird.",
+          "page_range": "9-10",
+          "image_prompt": ""
+        },
+        {
+          "title": "Potentiale und Eichfreiheit",
+          "bullets": [
+            "Feldvektoren lassen sich durch Skalar- und Vektorpotentiale darstellen.",
+            "Potentiale erfüllen ebenfalls Wellengleichungen.",
+            "Eichfreiheit: Gleiche Felder bei unterschiedlichen Potentialen möglich.",
+            "Lorenz- und Coulomb-Eichung als Standardwerkzeuge der Vereinfachung."
+          ],
+          "notes": "Da Potentiale oft einfacher zu berechnen sind als Felder, 'eichen' wir diese, um die Gleichungen lösbar zu machen.",
+          "page_range": "11-13",
+          "image_prompt": ""
+        },
+        {
+          "title": "Eichungen in der Praxis",
+          "bullets": [
+            "Coulomb-Eichung: Fokus auf transversale Anteile der Stromdichte.",
+            "Lorenz-Eichung: Kovariante Formulierung mittels Vierervektoren.",
+            "Reduktion überschüssiger Freiheitsgrade durch Eichtransformationen.",
+            "Integration formaler Lösungen über Greensfunktionen möglich."
+          ],
+          "notes": "Je nach Problemstellung wählen wir die Lorenz- oder Coulomb-Eichung, um die Potentialgleichungen effizient zu lösen.",
+          "page_range": "14-16",
+          "image_prompt": ""
+        },
+        {
+          "title": "Strahlungssysteme",
+          "bullets": [
+            "Retardierte Greensfunktion berücksichtigt kausale zeitliche Abfolgen.",
+            "Multipolentwicklung zur Analyse ausgedehnter Strahlungsquellen.",
+            "Dipolnäherung: Wichtigste Ordnung bei kleinen Quellen (d << lambda).",
+            "Fernzone zeigt Charakter einer auslaufenden Kugelwelle."
+          ],
+          "notes": "Wir untersuchen, wie Antennen oder Quellen elektromagnetische Wellen abstrahlen. Die Dipolnäherung liefert hier das Grundverständnis.",
+          "page_range": "17-20",
+          "image_prompt": ""
+        },
+        {
+          "title": "Abstrahlung und Nahzone",
+          "bullets": [
+            "Abgestrahlte Leistung ist ein Integral über den Raumwinkel.",
+            "Fernzone: Felder fallen mit 1/r ab.",
+            "Nahzone: Statisches Dipolfeld dominiert das Abstrahlverhalten.",
+            "Kombination aus elektrostatischen und dynamischen Feldanteilen."
+          ],
+          "notes": "Abschließend unterscheiden wir zwischen der energetisch relevanten Fernzone und der strukturell komplexeren Nahzone der Strahlquelle.",
+          "page_range": "21-21",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 2 — Maxwell-Gleichungen - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778501730039,
+      "pdfName": "Maxwell-Gleichungen in der klassischen Elektrodynamik"
+    }
+  ],
+  "sourceHash": "456a134d9656f1f6"
+}

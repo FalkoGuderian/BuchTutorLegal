@@ -1,0 +1,470 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Tour of Programming Languages — From C to Haskell - Lesson 6 — Haskell",
+    "pdfName": "Haskell",
+    "createdAt": 1778576730013,
+    "exportedAt": "2026-05-12T09:05:30.013Z",
+    "meta": {
+      "courseId": "course-en-programming-languages-tour",
+      "lessonIndex": 5,
+      "courseTitle": "Tour of Programming Languages — From C to Haskell",
+      "lessonObjective": "Haskell, F#, Clojure, Scala.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-haskell",
+            "title": "Haskell",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Haskell"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_df877f4474b5",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-18",
+          "chapterTitle": "Haskell Basics and Getting Set Up",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "19-24",
+          "chapterTitle": "Variables, Functions, and Truth Values",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "25-46",
+          "chapterTitle": "Types, Lists, and Tuples",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "47-58",
+          "chapterTitle": "Type Classes and Vocabulary",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "59-108",
+          "chapterTitle": "Control Structures, Recursion, and Lists",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "109-172",
+          "chapterTitle": "Pattern Matching and Datatypes",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "173-250",
+          "chapterTitle": "Functors, Monads, and Transformers",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "251-330",
+          "chapterTitle": "Advanced Haskell: Monoids, Applicatives, and Arrows",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "331-378",
+          "chapterTitle": "Zippers, Lenses, and Concurrency",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "379-667",
+          "chapterTitle": "Type Theory, Semantics, and Library References",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576730013,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Based on the provided documentation for Haskell, here is a concise summary of the core concepts covered in the text:\n\n### Haskell Fundamentals\n*   **Basics & Setup:** The language uses a declarative approach where source files contain variables and functions (p. 3).\n*   **Type System:** Haskell is a statically-typed language. It features strong type basics, including polymorphic types, functional types, and the ability to define custom data types and type synonyms (p. 3).\n*   **Data Structures:** The language heavily utilizes lists and tuples as primary structures, with advanced support for trees and custom datatypes (p. 3, p. 5).\n*   **Pattern Matching & Control:** Logic is often handled through pattern matching, guards, and `case` expressions rather than traditional loop-based control structures (p. 4, p. 5).\n\n### Functional Programming Concepts\n*   **Functions:** Haskell treats functions as first-class citizens, supporting high-order functions, function composition, and anonymous functions (lambdas) (p. 4, p. 5).\n*   **Recursion:** Recursion is a fundamental building block, with standard patterns for both numeric and list-based recursion (p. 4).\n*   **Evaluation Strategy:** The language utilizes **lazy evaluation**, where expressions are only evaluated when their result is required. This is supported by concepts like \"thunks\" and can be modified using strictness annotations or `seq` when necessary for performance (p. 10, p. 11).\n\n### Advanced Abstractions\n*   **Monads & Functors:** Haskell organizes side effects and computational contexts using sophisticated structures, including the `Functor`, `Applicative`, and `Monad` classes. Chapters dedicated to `do` notation, `IO`, `State`, and `Maybe` monads demonstrate how to handle state and real-world input/output while maintaining functional purity (p. 6, p. 7).\n*   **Type Theory:** The advanced sections cover type-level programming, such as Generalized Algebraic Data-types (GADTs), phantom types, and the Curry-Howard isomorphism, which links logic and computation (p. 9, p. 10).\n\n### Software Architecture\n*   **Modularity:** Code is organized into modules that support clear export and import boundaries (p. 5).\n*   **Performance:** While functional, Haskell provides tools for performance optimization, including concurrency, software transactional memory (STM), and Mutable objects (`IORef` and `ST` monad) for tasks where pure immutability may be inefficient (p. 8, p. 9).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576730013,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-programming-languages-tour_5\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 6 — Haskell - Presentation</span><span class=\"pm-chat-count\">4 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Introduction to Haskell</div><ul class=\"pm-chat-slide-bullets\"><li>Haskell is a functional programming language emphasizing mathematical purity.</li><li>Supports efficient development through recursion and strong typing.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778576730014,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document segment covers the foundational concepts of the Haskell programming language. The key topics presented in the initial chapters are summarized below:\n\n**Getting Started and Basic Syntax**\nThe text introduces setting up the Haskell environment and running basic code. It emphasizes the structural basics, such as defining variables, writing source files, and using comments effectively. It also distinguishes between the behavior of variables in Haskell versus imperative programming languages.\n\n**Functions and Control Flow**\nA significant portion of the early material is dedicated to functional programming concepts, including:\n* Function definitions and the use of local definitions (such as let and where).\n* Logical control: Implementing truth values, Boolean operations, equality comparisons, and guards for conditional logic.\n\n**Types and Data Structures**\nThe guide explains Haskell's type system, covering:\n* Understanding basic and functional types using the interactive :type command.\n* Utilizing type signatures for clarity in code.\n* Working with core data structures: Lists (for collections) and Tuples (for fixed-size heterogeneous groupings).\n* Introduction to polymorphic types, which allow functions to operate on various data types.\n\n**Numeric and Vocabulary Development**\nThe text details the Num class and various numeric types, establishing the vocabulary necessary for functional development. It also discusses the importance of the Prelude library as a standard environment for Haskell development. \n\nThe content provides a logical progression from the simplest syntax to fundamental functional abstractions, preparing the reader for more complex topics like recursion and higher-order functions.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576730023,
+      "channel": "plan_pipe_df877f4474b5",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 18
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section introduces the fundamentals of working with variables and source files in Haskell. Key points are summarized below:\n\n**Variables**\nVariables allow programmers to assign names to values, simplifying calculations and reuse. Haskell includes built-in variables like $\\pi$ for precision. Variables are immutable, meaning they cannot be redefined or modified once set within a given scope (p. 23-24). Unlike imperative languages where variables represent changing memory locations, Haskell variables function like mathematical constants (p. 23-24).\n\n**Source Files and GHCi**\nWhile GHCi serves as a calculator for short expressions, longer programs should be written in text files with the $.hs$ extension. These files are loaded into GHCi using the $:load$ or $:l$ command. Changes to a file are reflected in the environment using $:reload$ or $:r$. Variables can also be defined directly at the command prompt using the $let$ keyword, though this is primarily for quick testing rather than complex tasks (p. 21-23).\n\n**Comments**\nHaskell provides two mechanisms for documentation to explain code:\n1. Single-line comments starting with $--$.\n2. Multi-line block comments enclosed in $\\{- ... -\\}$. \n\n**Mathematical Foundations**\nHaskell code reflects mathematical logic rather than step-by-step instructions. For instance, defining $area = \\pi \\times r^2$ allows the program to dynamically update the result whenever the value of $r$ is updated in the source file, demonstrating the declarative nature of the language (p. 22, 24).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576730024,
+      "channel": "plan_pipe_df877f4474b5",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 19,
+        "end": 24
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Haskell Functions and Definitions\n\n**1. Function Definition and Usage**\nHaskell functions allow for code reuse by defining a formula that operates on input parameters. A function is defined with its name followed by parameters, then the `=` sign and the expression:\n$area\\ r = \\pi \\cdot r^2$ (p. 13)\n\nFunctions can accept multiple arguments, which are separated by spaces. When calling a function, arguments should be placed in the same order as defined:\n$areaRect\\ l\\ w = l \\cdot w$ (p. 15)\n\n**2. Evaluation and Precedence**\nWhen an expression is provided to GHCi, it performs evaluation by repeatedly replacing the function call with its defined expression until a single value is reached (p. 14). Functions hold high precedence; for example, $area\\ 5 \\cdot 3$ is parsed as $(area\\ 5) \\cdot 3$. Parentheses are used to group expressions to alter this standard order or to pass function results as arguments into other functions (p. 14, 15).\n\n**3. Composition and Reuse**\nPrograms can be structured by combining smaller functions to create more complex ones, such as calculating the volume of a cylinder by multiplying the result of an $area$ function by height (p. 16).\n\n**4. Local Definitions and Scope**\nTo keep code clean, intermediate calculations can be defined locally within a function using the `where` keyword. These definitions must be indented by four spaces (p. 16).\n\nVariables follow the rule of scope, meaning a variable defined inside a function only exists within that specific context. Reusing variable names in different contexts does not interfere with previous definitions (p. 17).\n\n**5. Comparison**\nWhile the equals sign ($=$) acts as a definition tool in Haskell, it is also used in a logical sense to construct propositions (comparing if two values are equivalent), which is a distinct concept from assignment (p. 17).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576730025,
+      "channel": "plan_pipe_df877f4474b5",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 25,
+        "end": 46
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers building a solid foundation in Haskell types, vocabulary, and basic libraries (p. 47-58).\n\nThe Type Basics II chapter examines the $Num$ class and the hierarchy of numeric types. It explains how Haskell organizes types into classes to allow for flexible, polymorphic code, extending these concepts beyond simple numbers to broader category-based behaviors (p. 47-51).\n\nThe Building Vocabulary chapter emphasizes the importance of mastering function composition and understanding the Haskell ecosystem. Key points include:\n\n. Function composition is a primary tool for creating complex behavior from simpler building blocks (p. 53).\n. A strong vocabulary of functions is essential for efficient development, which is supported by the standard libraries (p. 54).\n. The Prelude is introduced as the default library imported into Haskell programs, providing core functionality (p. 54).\n. The text provides guidance on how to navigate and utilize libraries and external documentation to expand your programming capabilities effectively (p. 57-58).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576730026,
+      "channel": "plan_pipe_df877f4474b5",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 47,
+        "end": 58
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text covers several fundamental and advanced topics in Haskell programming between pages 59 and 108. The key concepts are summarized below:\n\nControl Structures\nThe transition to conditional logic includes the traditional if / then / else expressions (p. 59). A significant portion of the text is dedicated to pattern matching, which allows for clean deconstruction of data types such as tuples and lists (p. 60, 63).\n\nInput and Output\nBasic I/O operations are introduced, specifically focusing on the use of do blocks to sequence actions, which allows programmers to interact with the \"real world\" (p. 67, 68).\n\nRecursion\nThis section categorizes recursion into two main types: numeric and list-based (p. 79, 83). While central to functional programming, the text notes the importance of not over-relying on explicit recursion when higher-order functions are available (p. 85).\n\nList Processing\nThe text expands significantly on list manipulation. Techniques include:\n- Rebuilding lists and generalization (p. 87, 89).\n- Using the map function for transformations (p. 90).\n- Advanced tools like folds for aggregating data (p. 95) and scans (p. 100).\n- The use of filter to select elements based on predicates (p. 101) and list comprehensions as a concise syntax for mapping and filtering (p. 102).\n\nType Declarations\nThe document explains how to define custom data types using the data keyword and constructor functions (p. 105). It also discusses how to deconstruct these types (p. 106) and how to create type synonyms using the type keyword (p. 107).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576730027,
+      "channel": "plan_pipe_df877f4474b5",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 59,
+        "end": 108
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The section covering pages 109 through 172 of the provided text focuses on advanced pattern matching, control structures, and the modular organization of Haskell programs.\n\nPattern Matching\nThe text explains that pattern matching is a fundamental mechanism connected to data constructors. It can be used beyond simple functions, such as within case expressions or let bindings. Users can match against literal values and utilize syntax tricks to simplify code logic (p. 109-114).\n\nControl Structures\nControl flow in Haskell is managed through several mechanisms. Conditional logic is handled via if-then-else expressions and guard clauses. Additionally, case expressions allow for branching logic based on pattern matching, and specific syntax is provided for controlling actions within IO contexts (p. 117-120).\n\nAdvanced Functions\nThis section explores more complex function definitions, including the usage of local bindings (let and where) for scoping. It introduces anonymous functions known as lambdas, which are useful for short-lived computations, and discusses how to manipulate operators to create more flexible code (p. 123-126).\n\nHigher-Order Functions\nA significant portion is dedicated to higher-order functions—functions that take other functions as arguments or return them. The text demonstrates this through a sorting algorithm example and explains how type signatures represent functional relationships, allowing for greater abstraction (p. 127-134).\n\nGHCi and Modularization\nPractical usage of the GHCi interactive environment is discussed to improve the development workflow. The text also covers the module system, explaining how to organize code into separate files using import and export statements to manage namespaces and data visibility (p. 135-142).\n\nIndentation and Data Structures\nThe text outlines the rules of layout (indentation), which govern how Haskell parses code blocks. Finally, it expands on data types, detailing enumerations, record syntax for named fields, and the creation of parameterized types, alongside an introduction to alternative data structures like trees (p. 143-155).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576730028,
+      "channel": "plan_pipe_df877f4474b5",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 109,
+        "end": 172
+      }
+    },
+    {
+      "role": "bot",
+      "content": "I apologize, but I cannot fulfill this request because the provided document ends at page 155 (section 25.1) and does not contain the page range 173-250. \n\nBased on the document provided, here is a summary of the available information regarding the structure of the Haskell learning material:\n\n**Core Concepts and Foundation**\nThe text introduces Haskell basics starting from installation and simple code, progressing through variables, functions, and local definitions. It emphasizes the fundamental differences between variables in functional versus imperative languages.\n\n**Type Systems and Data Structures**\nA significant portion of the text is dedicated to Haskell's strong type system. Key topics include:\n- Truth values, boolean logic, and guards.\n- Functional types, type signatures, and polymorphism.\n- Lists and tuples, including methods for retrieving and manipulating these collections.\n- Numeric types and the Num class, as well as type declaration mechanisms using data and type.\n\n**Advanced Language Features**\nThe guide covers sophisticated techniques for building functional programs:\n- Pattern matching: Used extensively across constructors, literal values, and function definitions.\n- Higher-order functions: Explaining function composition and the manipulation of functions.\n- Recursion: Both numeric and list-based recursion techniques.\n- Control flow: Managing logic with if-then-else expressions, guards, and case expressions.\n- Modules: Exporting and importing functionality for better code organization.\n- Input and Output: Managing real-world actions using do-sequencing.\n- Layout: The importance of indentation rules in Haskell syntax.\n- Data structures: Introduction to record syntax, enumerations, parameterized types, and basic tree structures.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576730029,
+      "channel": "plan_pipe_df877f4474b5",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 173,
+        "end": 250
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Based on the provided document structure, the pages 251 through 330 fall beyond the scope of the provided Table of Contents, which concludes on page 155 with the discussion of trees. Therefore, I cannot summarize content that is not present in the provided text.\n\nIf you have specific sections or topics within the provided range (or within the first 155 pages) that you would like me to explain, please let me know. I would be happy to help you breakdown concepts such as Haskell recursion, higher-order functions, or data types.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576730030,
+      "channel": "plan_pipe_df877f4474b5",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 251,
+        "end": 330
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided document text contains a table of contents that lists chapters up to page 155. There is no content provided for pages 331 through 378. \n\nAs a result, I cannot provide a summary for that specific page range. Please verify the page range or provide the relevant text if you would like me to summarize those sections.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576730031,
+      "channel": "plan_pipe_df877f4474b5",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 331,
+        "end": 378
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Based on the provided document structure, the pages between 379 and 667 contain administrative and supplemental details rather than technical Haskell tutorials. Here is a summary of the contents found in that section:\n\n**License and Compliance Information**\nThis section provides the legal framework for the document. It confirms that the text is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported license. It identifies the inclusion of various open-source licenses, specifically the GPL, LGPL, and GFDL, which are provided for reference due to the potential usage of code or components that may or may not fall under these specific terms.\n\n**Technical Metadata and Source Handling**\nThis portion of the manual documents the technical provenance of the PDF. It notes that the document was generated using the LaTeX typesetting system. Furthermore, it provides instructions on how to access the original source code, which is embedded as a 7z archive within the PDF file. It recommends specific utilities like pdfdetach and 7-zip for extracting and decompressing the source material.\n\n**Supporting Documentation**\nThe end matter includes specific lists and records required for transparency and institutional tracking:\n- A comprehensive list of contributors who helped author the book contents.\n- A list of figures, including the specific licensing information for the visual assets used throughout the book.\n- Extensive references and appendices for the licenses themselves, ensuring the document remains compliant with the requirements of the projects from which the content was derived.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576730032,
+      "channel": "plan_pipe_df877f4474b5",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 379,
+        "end": 667
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576730113,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "In Haskell, why does the language distinguish between variables in imperative languages and those used within its own functional paradigm?",
+            "options": [
+              "Because functional variables do not allow for state mutation, unlike imperative variables.",
+              "Because imperative languages use types, but Haskell uses only dynamic inference.",
+              "Because functional variables must be declared in global scope, unlike imperative ones.",
+              "Because variables in Haskell are exclusively used for mathematical definitions rather than storage."
+            ],
+            "correctIndex": 0,
+            "explanation": "Chapter 3 highlights that while imperative languages rely on mutable state for variables, Haskell's functional model treats variables differently, focusing on immutability."
+          },
+          {
+            "question": "What is the primary role of the 'do' notation in Haskell's input/output operations?",
+            "options": [
+              "To enable imperative-style variable mutation within pure functions.",
+              "To provide a means of sequencing multiple actions within a monadic context.",
+              "To automatically convert list types into tuple patterns.",
+              "To define new data types that require explicit memory management."
+            ],
+            "correctIndex": 1,
+            "explanation": "Chapter 10 explains that 'do' notation is essentially syntactic sugar used to sequence actions, particularly useful for managing IO operations."
+          },
+          {
+            "question": "Which concept in Haskell represents a 'notion of computation' that allows for the chaining of operations while managing specific side effects?",
+            "options": [
+              "Type synonyms",
+              "Function composition",
+              "Monads",
+              "Literal matching"
+            ],
+            "correctIndex": 2,
+            "explanation": "Chapter 30 defines Monads not just as containers, but as abstractions that encapsulate specific notions of computation."
+          },
+          {
+            "question": "What is the main advantage of using pattern matching in function definitions rather than using 'if/then/else' chains?",
+            "options": [
+              "Pattern matching is significantly faster for the hardware to execute than conditional logic.",
+              "Pattern matching integrates with data constructors to decompose complex structures clearly.",
+              "Pattern matching is required for all IO actions, whereas if/else is for pure functions only.",
+              "Pattern matching allows the compiler to ignore types, speeding up development time."
+            ],
+            "correctIndex": 1,
+            "explanation": "Chapter 16 explains the link between pattern matching and data constructors, which allows for declarative deconstruction of complex data types."
+          },
+          {
+            "question": "Why does Haskell provide the 'Functor' type class?",
+            "options": [
+              "To enforce strict ordering of list elements during sorting.",
+              "To provide an interface for applying a function over a wrapped value without unwrapping its structure.",
+              "To allow developers to define new infix operators for numeric types.",
+              "To hide the complexity of recursion when traversing large trees."
+            ],
+            "correctIndex": 1,
+            "explanation": "Chapter 27 describes Functor as a class that captures the ability to 'map' a function over a value contained within a structure, preserving that structure."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778576730114,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary interactive command in Haskell to determine the type of an expression?",
+            "back": ":type"
+          },
+          {
+            "front": "Which keyword is used to conditionally execute sequences of IO actions in Haskell?",
+            "back": "do"
+          },
+          {
+            "front": "In Haskell, what is the purpose of the 'let' keyword?",
+            "back": "It is used for variable bindings."
+          },
+          {
+            "front": "What are the two main ways to deconstruct types in Haskell?",
+            "back": "Pattern matching and constructor functions."
+          },
+          {
+            "front": "What is meant by 'polymorphic types' in Haskell?",
+            "back": "Types that are not restricted to a single concrete data type, allowing functions to work with generic data."
+          },
+          {
+            "front": "What is the 'golden rule' of indentation in Haskell?",
+            "back": "Code that is part of an expression must be indented further than the beginning of that expression."
+          },
+          {
+            "front": "What are 'higher-order functions' in Haskell?",
+            "back": "Functions that can take other functions as arguments or return a function as a result."
+          },
+          {
+            "front": "What fundamental data structure in Haskell is defined by 'data' and uses constructor functions?",
+            "back": "Custom user-defined data types."
+          },
+          {
+            "front": "What is the primary role of the 'Monad' class in Haskell?",
+            "back": "To define a structure for chaining operations together, often used for managing side effects or computation contexts."
+          },
+          {
+            "front": "How do lists and tuples differ in Haskell?",
+            "back": "Lists are homogenous (elements of the same type) while tuples can be heterogeneous (elements of potentially different types)."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-programming-languages-tour_5",
+      "slides": [
+        {
+          "title": "Introduction to Haskell",
+          "bullets": [
+            "Haskell is a functional programming language emphasizing mathematical purity.",
+            "Supports efficient development through recursion and strong typing."
+          ],
+          "notes": "Haskell offers a powerful paradigm for building robust software through mathematical abstractions.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Variables in Haskell",
+          "bullets": [
+            "Variables store values for reuse in intermediate calculations (p. 21).",
+            "Defined using simple assignment within .hs source files (p. 22).",
+            "Haskell automatically provides useful built-in variables like pi (p. 21).",
+            "GHCi allows interactive testing and variable assignment with let (p. 23)."
+          ],
+          "notes": "Variables in Haskell are not mutable storage locations; they act as symbolic names for calculated values.",
+          "page_range": "21-23",
+          "image_prompt": ""
+        },
+        {
+          "title": "Working with Functions",
+          "bullets": [
+            "Functions mapping arguments to results are core to Haskell (p. 25).",
+            "Defined with syntax: name argument = expression (p. 25).",
+            "Multiple arguments are passed separated by spaces (p. 27).",
+            "Functions take precedence over standard operators during evaluation (p. 26)."
+          ],
+          "notes": "Functions can be combined and reused to build complex logic from simpler primitives.",
+          "page_range": "25-28",
+          "image_prompt": ""
+        },
+        {
+          "title": "Function Evaluation",
+          "bullets": [
+            "Evaluation replaces function calls with their defined bodies (p. 26).",
+            "Haskell computes expressions until a final value remains (p. 26).",
+            "Parentheses group expressions to control operator order of operations (p. 26).",
+            "Functions can be passed as arguments to other functions (p. 27)."
+          ],
+          "notes": "Understanding the substitution model is key to mastering how Haskell evaluates your code.",
+          "page_range": "26-27",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 6 — Haskell - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576730013,
+      "pdfName": "Haskell"
+    }
+  ],
+  "sourceHash": "ffa9b85dfb4e802b"
+}

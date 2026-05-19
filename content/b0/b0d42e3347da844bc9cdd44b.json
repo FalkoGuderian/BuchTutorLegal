@@ -1,0 +1,335 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Excel und VBA für die Praxis - Lektion 1 — VBA in Excel",
+    "pdfName": "VBA in Excel",
+    "createdAt": 1778578376267,
+    "exportedAt": "2026-05-12T09:32:56.267Z",
+    "meta": {
+      "courseId": "course-de-cs-excel-vba-praxis",
+      "lessonIndex": 0,
+      "courseTitle": "Excel und VBA für die Praxis",
+      "lessonObjective": "Makros aufzeichnen, Schleifen, Bedingungen.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-vba-in-excel",
+            "title": "VBA in Excel",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/VBA_in_Excel"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_70fb7cee2da2",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Grundlagen, Syntax und Prozeduren",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Variablen, Funktionen und Schleifen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-7",
+          "chapterTitle": "Programmierbeispiele, Sortierung und Rechtschreibprüfung",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778578376267,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Lerninhalte basierend auf dem Dokument:\n\n### Zusammenfassung: VBA in Excel\n\nDiese Lerneinheit bietet eine fundierte Einführung in die VBA-Programmierung (Visual Basic for Applications) innerhalb von Excel. Der Fokus liegt auf der Strukturierung von Code, der Umsetzung logischer Abläufe und der effizienten Automatisierung.\n\n#### 1. Grundlagen und Struktur\n*   **Prozeduren und Funktionen:** Die Arbeit mit `Subs` (Aktionsanweisungen) und `Functions` (Rückgabewert-orientiert) bildet das Rückgrat. Das Dokument erläutert deren Aufruf-Syntax – sowohl innerhalb desselben Projekts als auch zwischen verschiedenen Arbeitsmappen oder Applikationen (S. 2).\n*   **Variablen und Gültigkeit:** Die Deklaration auf Prozedur-, Modul- oder Public-Ebene sowie die Verwendung statischer Variablen bestimmen, wie lange Daten im Speicher gehalten werden (S. 2). Die Unterscheidung zwischen `ByRef` (Verweis) und `ByVal` (Wertübergabe) ist essenziell für die Datenmanipulation (S. 3).\n*   **Namenskonventionen:** Klare Standards für Variablen, Typen und Konstanten sind notwendig für wartbaren Code (S. 1).\n\n#### 2. Logik und Ablaufsteuerung\n*   **Schleifen:** Zur Automatisierung repetitiver Aufgaben werden verschiedene Schleifentypen eingesetzt:\n    *   **Zählschleifen:** Für einfache Abfolgen (S. 3).\n    *   **Do-Schleifen:** Für bedingungsabhängige Wiederholungen (Do-While/Until) (S. 3).\n    *   **For-Each-Schleifen:** Ideal zur Bearbeitung von Objektsammlungen (S. 4).\n*   **Wenn-Abfragen:** Zur Steuerung des Programmflusses dienen einfache `If`-Abfragen sowie `Select-Case`-Strukturen, die bei komplexen Alternativen übersichtlicher sind (S. 3).\n\n#### 3. Best Practices und Code-Optimierung\n*   **Vermeidung von Selektionen:** Ein zentraler Punkt ist der Verzicht auf das „Selektieren“ (`.Select` / `.Activate`) von Zellen. Stattdessen wird die direkte Referenzierung auf Objekte empfohlen, was den Code schneller und stabiler macht (S. 3, S. 4).\n*   **Datenstrukturen:** Der Einsatz von Matrizen (Arrays) erlaubt eine effiziente Verarbeitung großer Datenmengen (S. 4).\n*   **Erweiterte Funktionen:** Fortgeschrittene Anwender nutzen zudem Klassenmodule, Ereignisprozeduren (z.B. `Worksheet_Change`) und XL4-Makros für Spezialaufgaben wie das Auslesen geschlossener Dateien (S. 4, S. 5).\n\nDiese Grundlagen bilden die Basis, um komplexe Automatisierungen in Excel zu erstellen, wobei die strikte Trennung von Logik (VBA) und Darstellung die Qualität der Programmierung maßgeblich verbessert.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778578376267,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-cs-excel-vba-praxis_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 1 — VBA in Excel - Präsentation</span><span class=\"pm-chat-count\">5 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">VBA in Excel: Grundlagen</div><ul class=\"pm-chat-slide-bullets\"><li>Einstieg in die Automatisierung mit Excel-Makros.</li><li>Grundlagen: Editor, Syntax und Prozeduren (S.1).</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778578376268,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung umfasst die in dem Dokument behandelten Grundlagen der VBA-Programmierung in Excel:\n\nStruktur und Namenskonventionen\nDas Dokument führt in die Grundlagen der VBA-Programmierung ein, beginnend mit Namenskonventionen für Variablen, Konstanten, Prozeduren und MS-Forms-Elemente (S. 1). Ein zentraler Bestandteil ist die Einführung in den Visual-Basic-Editor, seine Einstellungen sowie die Nutzung des Objektkatalogs (S. 1).\n\nProzeduren und Funktionsarten\nEs wird zwischen Subs und Funktionen unterschieden. Dabei wird erläutert, wann diese eingesetzt werden und in welcher Form Excel-Funktionen, Standard-VBA-Funktionen sowie benutzerdefinierte Funktionen (UDF) sowohl innerhalb des Codes als auch direkt im Arbeitsblatt verwendet werden können (S. 2). Einen Schwerpunkt bildet die Aufruf-Syntax, die den Aufruf von Makros und Funktionen sowohl innerhalb der eigenen Arbeitsmappe als auch in anderen Anwendungen (wie Word oder Access) abdeckt (S. 2).\n\nGültigkeit und Parameterübergabe\nEin wesentlicher Teil der Anleitung befasst sich mit der Gültigkeit von Variablen und Konstanten. Dies umfasst die Deklaration auf Prozedur- oder Modulebene sowie die Verwendung statischer und öffentlicher (Public) Variablen (S. 2). Ergänzend wird die Parameterübergabe an Unterprogramme (einschließlich \"ByRef\"-Verarbeitung) erläutert, was für den Datenaustausch zwischen verschiedenen Programmteilen entscheidend ist (S. 2).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778578376277,
+      "channel": "plan_pipe_70fb7cee2da2",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung der Seiten 3 und 4 bietet einen strukturierten Überblick über die wesentlichen Konzepte der Programmierung (fokussiert auf VBA/Excel):\n\nGrundlegende Konzepte der Parameterübergabe und Programmsteuerung\nEin zentrales Thema ist die Übergabe von Werten mittels ByRef und ByVal, wobei die Auswirkungen auf verschiedene Datentypen wie Integer, String und Objekte erläutert werden (S. 3). Ein weiterer Schwerpunkt liegt auf der Optimierung des Codes durch den Verzicht auf das Selektieren (.Select) und Aktivieren von Objekten. Stattdessen wird die direkte Referenzierung empfohlen (S. 3, 4).\n\nSchleifen, Logik und Ablaufsteuerung\nDie Dokumentation behandelt verschiedene Schleifen-Strukturen, darunter For-Schleifen, Do-While, Do-Until sowie For-Each-Schleifen (S. 3). Diese werden um Wenn-Abfragen (If-Then-Else sowie Select-Case) ergänzt und in Kombination mit Matrizen (Arrays) für die Datenverarbeitung eingesetzt (S. 3, 4).\n\nDatenmanagement und Objekttypen\nDie Seiten behandeln das gesamte Spektrum des Variablenmanagements, von der Deklaration über die Verwendung von Konstanten und verschiedenen Variablentypen (String, Variant, Public) bis hin zur Arbeit mit hierarchischen Objekttypen und Collections (S. 4). Dies schließt die Dimensionierung von Arrays und die Anwendung spezialisierter Konzepte wie Klassenmodule und Ereignisprozeduren ein (S. 4).\n\nCode-Optimierung und Praxiserfahrung\nAbschließend steht die Effizienz des Codes im Fokus. Es wird vermittelt, wie durch die Vermeidung von eckigen Klammern, die Nutzung von With-Rahmen und eine saubere Variablen-Dimensionierung eine höhere Performance und Stabilität der Programme erreicht werden kann (S. 4). Zudem werden fortgeschrittene Themen wie das Worksheet-Change-Ereignis und die Ereignissteuerung für Steuerelemente behandelt (S. 4).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778578376278,
+      "channel": "plan_pipe_70fb7cee2da2",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung bietet einen strukturierten Überblick über die essenziellen Programmiertechniken für Excel-VBA, basierend auf den Seiten 5 bis 7:\n\n**Benutzeroberflächen und Menümanagement (S. 5–6)**\nVBA ermöglicht die dynamische Gestaltung von Menü- und Symbolleisten. Dies umfasst das Ein- und Ausblenden ganzer Menüstrukturen sowie die Erstellung spezifischer Hilfsmittel, wie etwa eines Jahreskalenders als Symbolleiste. Zudem werden Methoden zum Auslesen von Dateieigenschaften und Metadaten der `.xlb`-Dateien beschrieben (S. 5).\n\n**Datenbereinigung und Zellmanipulation (S. 5)**\nEin zentrales Thema ist die gezielte Datenpflege. Dazu gehören Routinen zum Löschen leerer Zellen, Zeilen oder fehlerhafter Einträge. Auch die datenbankgestützte Bereinigung nach Kriterien (z. B. Zellinhalt oder Hintergrundfarbe) wird erläutert (S. 5).\n\n**Integration von XL4-Makros (S. 5–6)**\nTrotz des Alters der XL4-Technologie zeigt das Dokument deren Nutzbarkeit für VBA-Projekte. Dies ermöglicht beispielsweise den Datenaustausch mit geschlossenen Arbeitsmappen, die Anwendung von SVERWEIS-Funktionen oder die Druckprogrammierung außerhalb des direkten Excel-Interfaces (S. 5–6).\n\n**Datenimport und Sortieralgorithmen (S. 6)**\nDer Text behandelt den Textimport in unterschiedliche Zielmedien (MsgBox, HTML, Tabellenblätter oder UserForms). Ein Schwerpunkt liegt auf komplexen Sortierroutinen, die über die Standard-Funktionen von Excel hinausgehen. Dazu zählen die Dateiverwaltung in Verzeichnissen, benutzerdefinierte Sortierfolgen, die Berücksichtigung von Sonderzeichen (z. B. \\text{Ä} vor A) sowie Mehrkriteriensortierungen (S. 6).\n\n**Automatisierung (S. 6–7)**\nDie Programmierung von Schleifen (Zähl- und Bedingungsprüfungen) bildet die Grundlage für die Automatisierung von Objekten, sei es für Arbeitsmappen, Tabellenblätter oder Steuerelemente in UserForms. Abschließend werden Methoden der Rechtschreibprüfung dargelegt, die von der Textprüfung in einzelnen Zellen bis hin zur automatischen Überprüfung beim Schließen von Arbeitsmappen reichen (S. 6–7).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778578376279,
+      "channel": "plan_pipe_70fb7cee2da2",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 7
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778578376367,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Warum wird in professionellem VBA-Code das ‚Selektieren‘ (z.B. .Select oder .Activate) von Zellen oder Arbeitsblättern vermieden?",
+            "options": [
+              "Weil Excel sonst die Arbeitsmappe automatisch schließt.",
+              "Weil selektiertes Programmieren langsamer ist und fehleranfällig, da es vom Fokus des Benutzers abhängt.",
+              "Weil der VBA-Editor keine Selektionsbefehle unterstützt.",
+              "Weil dadurch nur eine einzige Zelle gleichzeitig bearbeitet werden kann."
+            ],
+            "correctIndex": 1,
+            "explanation": "Durch direkte Referenzierung (z.B. Worksheets('Tabelle1').Range('A1').Value) wird der Zugriff stabiler und schneller, da der Code nicht vom aktuell markierten Bereich abhängt."
+          },
+          {
+            "question": "Was ist der wesentliche Unterschied zwischen der Übergabe eines Arguments 'ByVal' und 'ByRef'?",
+            "options": [
+              "ByVal übergibt eine Kopie des Wertes, während ByRef die Speicheradresse der Originalvariable übergibt und diese ändern kann.",
+              "ByRef ist nur für Integer-Variablen erlaubt, ByVal hingegen für alle Typen.",
+              "ByVal beschleunigt die Ausführung des Makros, während ByRef den Speicherbedarf verdoppelt.",
+              "Es gibt keinen Unterschied, die Begriffe sind Synonyme."
+            ],
+            "correctIndex": 0,
+            "explanation": "ByVal schützt die Originalvariable vor ungewollten Änderungen durch das gerufene Unterprogramm, während ByRef direkte Änderungen am Originalwert in der aufrufenden Instanz ermöglicht."
+          },
+          {
+            "question": "Wann ist der Einsatz einer 'Function' einer 'Sub' vorzuziehen?",
+            "options": [
+              "Wenn das Programm eine Dialogbox anzeigen muss.",
+              "Wenn der Code innerhalb einer Zelle im Arbeitsblatt als Formel verwendet werden soll.",
+              "Immer, da Funktionen in VBA speichereffizienter sind als Subs.",
+              "Wenn man Variablen auf Modulebene deklarieren möchte."
+            ],
+            "correctIndex": 1,
+            "explanation": "Benutzerdefinierte Funktionen (UDF) geben einen Wert zurück und können daher direkt wie Standard-Excel-Funktionen in Tabellenzellen oder anderen Berechnungen verwendet werden."
+          },
+          {
+            "question": "Welcher Schleifentyp eignet sich am besten, um eine Aktion für jedes Element in einer Sammlung (z.B. alle Arbeitsblätter einer Mappe) auszuführen?",
+            "options": [
+              "Do-While-Schleife",
+              "For-Next-Schleife",
+              "For-Each-Schleife",
+              "If-Then-Else-Schleife"
+            ],
+            "correctIndex": 2,
+            "explanation": "Die For-Each-Schleife ist speziell darauf ausgelegt, alle Elemente innerhalb einer Objektgruppe oder Sammlung effizient und ohne manuelle Indexzählung zu durchlaufen."
+          },
+          {
+            "question": "Was passiert bei einer Deklaration einer Variablen mit 'Public' auf Modulebene?",
+            "options": [
+              "Die Variable kann nur innerhalb einer einzigen Prozedur gelesen werden.",
+              "Die Variable wird nach jedem Durchlauf der Prozedur automatisch gelöscht.",
+              "Die Variable ist im gesamten Projekt (in allen Modulen) verfügbar und behält ihren Wert während der Laufzeit.",
+              "Die Variable kann nur als Konstante definiert werden."
+            ],
+            "correctIndex": 2,
+            "explanation": "Public-Variablen haben eine breite Gültigkeit und machen Daten über die Grenzen einzelner Prozeduren oder Module hinweg verfügbar."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778578376368,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist der Hauptunterschied zwischen einer Sub und einer Function in VBA?",
+            "back": "Eine Sub führt eine Aktion aus, ein Wert wird jedoch nicht direkt zurückgegeben. Eine Function führt Berechnungen durch und gibt einen Wert an den Aufrufer zurück."
+          },
+          {
+            "front": "Welche Bedeutung haben die Begriffe 'ByVal' und 'ByRef' bei der Parameterübergabe?",
+            "back": "ByVal übergibt eine Kopie des Wertes, das Original bleibt unverändert. ByRef übergibt einen Verweis auf die Originalvariable, Änderungen innerhalb der Prozedur wirken sich auf die Variable aus."
+          },
+          {
+            "front": "Warum sollte man in VBA das 'Selektieren' (z.B. Select, Activate) vermeiden?",
+            "back": "Selektieren verlangsamt den Code erheblich und macht ihn fehleranfällig. Direkte Objektbezüge (z.B. Worksheets(\"Tabelle1\").Range(\"A1\").Value) sind schneller und stabiler."
+          },
+          {
+            "front": "Nenne drei Arten von Schleifen, die in VBA verwendet werden können.",
+            "back": "For-Next (Zählschleife), Do-While/Do-Until (bedingungsgesteuerte Schleifen) und For-Each (Objektschleife)."
+          },
+          {
+            "front": "Wie unterscheidet sich die 'If-Then-Else'-Abfrage von der 'Select-Case'-Abfrage?",
+            "back": "If-Then-Else eignet sich für logische Bedingungen. Select-Case ist übersichtlicher, wenn eine Variable auf viele verschiedene mögliche Werte geprüft werden soll."
+          },
+          {
+            "front": "Was ist eine benutzerdefinierte Funktion (UDF) in Excel-VBA?",
+            "back": "Eine selbst erstellte Funktion, die nach der Deklaration ähnlich wie eine integrierte Excel-Funktion direkt in einer Zelle im Arbeitsblatt verwendet werden kann."
+          },
+          {
+            "front": "Welche Gültigkeitsbereiche für Variablen gibt es in VBA?",
+            "back": "Prozedurebene (nur innerhalb der Prozedur), Modulebene (zugänglich für alle Prozeduren im Modul), und Public (global, innerhalb des gesamten Projekts)."
+          },
+          {
+            "front": "Was ist der Zweck eines 'With'-Rahmens in VBA?",
+            "back": "Er dient zur Code-Optimierung und Lesbarkeit, indem man auf ein Objekt mehrfach zugreifen kann, ohne dessen Namen jedes Mal explizit angeben zu müssen."
+          },
+          {
+            "front": "Was ist eine 'Array' (Feldvariable) in VBA?",
+            "back": "Eine strukturierte Variable, die mehrere Werte unter einem einzigen Namen speichert, wobei die einzelnen Elemente über einen Index (z.B. 0 bis n) angesprochen werden."
+          },
+          {
+            "front": "Was versteht man unter einer 'Ereignisprozedur' in VBA?",
+            "back": "Ein Code-Block, der automatisch ausgeführt wird, wenn ein bestimmtes Ereignis eintritt, z.B. das Öffnen einer Arbeitsmappe (Workbook_Open) oder das Ändern einer Zelle (Worksheet_Change)."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-cs-excel-vba-praxis_0",
+      "slides": [
+        {
+          "title": "VBA in Excel: Grundlagen",
+          "bullets": [
+            "Einstieg in die Automatisierung mit Excel-Makros.",
+            "Grundlagen: Editor, Syntax und Prozeduren (S.1)."
+          ],
+          "notes": "Willkommen zu unserer ersten Lektion. Wir beschäftigen uns heute mit dem Aufbau von VBA-Makros in Excel.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Prozeduren und Funktionsweise",
+          "bullets": [
+            "Unterscheidung zwischen Subs und Funktionen.",
+            "Prozeduren (S.1-2) enthalten die eigentliche Logik.",
+            "Parameterübergabe ermöglicht flexible Code-Strukturen (S.2).",
+            "Gültigkeit und Deklaration von Variablen beachten (S.2)."
+          ],
+          "notes": "Wir schauen uns an, wann Sie eine Prozedur oder eine Funktion wählen sollten und wie Daten übergeben werden.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Best Practices: Effizientes Programmieren",
+          "bullets": [
+            "Selektieren von Zellen vermeiden (S.3).",
+            "Direkte Referenzierung statt Select verwenden (S.4).",
+            "ByRef und ByVal präzise einsetzen (S.3).",
+            "Code-Optimierung durch saubere Strukturierung."
+          ],
+          "notes": "Ein häufiger Anfängerfehler ist das ständige Selektieren. Wir lernen, wie Sie effizienter direkt auf Objekte zugreifen.",
+          "page_range": "3-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Steuerung: Schleifen und Wenn-Bedingungen",
+          "bullets": [
+            "For-Schleifen für wiederkehrende Abläufe (S.3).",
+            "Do-While und Do-Until für bedingte Wiederholungen (S.3).",
+            "If-Abfragen und Select-Case-Strukturen steuern die Logik (S.3).",
+            "Kombination ermöglicht komplexe Automatisierung (S.3-4)."
+          ],
+          "notes": "Schleifen und Bedingungen sind das Herzstück Ihrer Makros. Sie erlauben dem Computer, komplexe Auswahlverfahren zu treffen.",
+          "page_range": "3-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Praxisbeispiele und Ausblick",
+          "bullets": [
+            "Sortierroutinen und Dateihandling implementieren (S.6).",
+            "Automatisierte Rechtschreibprüfung nutzen (S.6-7).",
+            "Integration von XL4-Makros für erweiterte Funktionen (S.5-6).",
+            "Weiterführende Konzepte in weiteren Lektionen."
+          ],
+          "notes": "Zum Abschluss sehen wir, wie man diese Werkzeuge für Aufgaben wie Sortierung oder Textimport einsetzt.",
+          "page_range": "5-7",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 1 — VBA in Excel - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778578376267,
+      "pdfName": "VBA in Excel"
+    }
+  ],
+  "sourceHash": "d1e593e8e2699c76"
+}

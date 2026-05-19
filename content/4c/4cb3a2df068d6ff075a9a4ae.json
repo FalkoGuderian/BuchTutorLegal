@@ -1,0 +1,492 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Python und Datenbanken: von SQL bis PostGIS - Lektion 2: Einführung in SQL",
+    "pdfName": "Einführung in SQL",
+    "createdAt": 1778785646015,
+    "exportedAt": "2026-05-14T19:07:26.015Z",
+    "meta": {
+      "courseId": "course-de-python-und-datenbanken",
+      "lessonIndex": 1,
+      "courseTitle": "Python und Datenbanken: von SQL bis PostGIS",
+      "lessonObjective": "SELECT, JOIN, DDL, DML, Transaktionen.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-einf-hrung-in-sql",
+            "title": "Einführung in SQL",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_b533708a39f7",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-4",
+          "chapterTitle": "Einführung in SQL",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-44",
+          "chapterTitle": "Einleitung und Grundlagen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "45-68",
+          "chapterTitle": "SQL-Befehle und DML-Grundlagen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "69-88",
+          "chapterTitle": "Daten speichern und Datenbankstruktur",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "89-108",
+          "chapterTitle": "TCL, DCL und Datentypen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "109-172",
+          "chapterTitle": "Funktionen und fortgeschrittene Abfragen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "173-212",
+          "chapterTitle": "JOIN-Operationen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "213-270",
+          "chapterTitle": "Erweiterte Abfragen und Gruppierung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "271-322",
+          "chapterTitle": "Views und DDL-Einzelheiten",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "323-466",
+          "chapterTitle": "Programmierung, Trigger und Anhang",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778785646015,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung bietet dir einen prägnanten Überblick über die grundlegenden SQL-Konzepte basierend auf dem vorliegenden Buch „Einführung in SQL“.\n\n### Zusammenfassung: Einführung in SQL\n\nSQL (**Structured Query Language**) ist die standardisierte Sprache zur Arbeit mit relationalen Datenbanken. Das vorliegende Material gliedert die Arbeit mit Datenbanken in fünf Hauptbereiche:\n\n**1. DDL – Data Definition Language (Struktur)**\n*   Dient der Definition und Änderung der Datenbankstruktur (z. B. Tabellen erstellen, anpassen oder löschen) (S. 6, 10).\n*   Beinhaltet das Management von Fremdschlüssel-Beziehungen und Constraints zur Sicherung der Datenintegrität (S. 10).\n\n**2. DML – Data Manipulation Language (Datennutzung)**\n*   **Abfragen (SELECT):** Das Kerninstrument zur Datenbeschaffung. Dies umfasst einfache Selektionen, Sortierungen (`ORDER BY`), Eingrenzungen (`WHERE`), Gruppierungen (`GROUP BY`) sowie komplexe Abfragen mittels Unterabfragen (S. 6, 7, 9).\n*   **Speicherung:** Befehle zum Einfügen (`INSERT`), Ändern (`UPDATE`), Löschen (`DELETE`) oder Leeren (`TRUNCATE`) von Datensätzen (S. 6).\n\n**3. Tabellenverknüpfungen (JOINs)**\n*   SQL ermöglicht die Verknüpfung mehrerer Tabellen, um zusammengehörige Informationen abzurufen (S. 8, 9).\n*   Dabei kommen verschiedene Typen zum Einsatz: `INNER JOIN`, sowie diverse `OUTER JOIN`-Varianten (`LEFT`, `RIGHT`, `FULL`) und der `SELF JOIN` (S. 8, 9).\n\n**4. TCL – Transaction Control Language (Transaktionen)**\n*   Befehle zur Ablaufsteuerung, um sicherzustellen, dass Datenbankoperationen korrekt verarbeitet werden, insbesondere im Fehlerfall (S. 7).\n\n**5. Erweiterte Funktionen**\n*   **Views:** Das Erstellen virtueller Tabellenansichten (S. 9, 10).\n*   **Programmierung:** Einsatz von eigenen Funktionen, Prozeduren und Triggern direkt innerhalb des Datenbanksystems (S. 11).\n*   **Funktionen:** Umfassende Möglichkeiten zur Verarbeitung von Zahlen, Zeichenketten, Datums- und Zeitwerten sowie logischen Werten (S. 7, 8).\n\n**Fazit für deinen Kurs:**\nDas Buch liefert das notwendige theoretische und praktische Fundament für den Umgang mit `SELECT`-Abfragen, `JOINs`, `DDL` und `DML`. Dieses Wissen bildet die Basis, um später in deinem Kurs komplexere Aufgaben wie die Interaktion mit **PostgreSQL** oder die Verarbeitung räumlicher Daten mit **PostGIS** erfolgreich umzusetzen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778785646015,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-python-und-datenbanken_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 2: Einführung in SQL - Präsentation</span><span class=\"pm-chat-count\">6 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Einführung in SQL: Grundlagen</div><ul class=\"pm-chat-slide-bullets\"><li>SQL als Standard zur Verwaltung relationaler Datenbanken.</li><li>Grundlegende Sprachkategorien: DDL, DML, TCL und DCL.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778785646016,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Das vorliegende Dokument ist das Inhaltsverzeichnis sowie die bibliografischen Angaben des Buches „Einführung in SQL“ von Jürgen Thomas, welches als Wiki-Buch im Jahr 2012 publiziert wurde (S. 2-4).\n\nHier sind die Kernaussagen zusammengefasst:\n\nDas Werk bietet eine strukturierte Einführung in die Arbeit mit relationalen Datenbanken und SQL (S. 1, 3). Es gliedert sich in fünf Hauptbereiche:\n\n1. Einführung (S. 3): Behandelt Grundlagen relationaler Datenbanken, Normalisierung sowie eine Beispieldatenbank.\n2. Grundlagen (S. 3): Vermittelt die wesentlichen SQL-Befehlsgruppen wie DML, DDL, TCL und DCL sowie Datentypen und Funktionen.\n3. Mehr zu Abfragen (S. 3): Vertieft komplexe Abfragetechniken, insbesondere die Verwendung von JOIN-Operationen, Gruppierungen, Unterabfragen und Views.\n4. Erweiterungen (S. 4): Deckt fortgeschrittene Themen ab, darunter SQL-Programmierung, Prozeduren, Trigger, Fremdschlüssel-Beziehungen und die Änderung von Datenbankstrukturen.\n5. Anhang (S. 4): Enthält eine Befehlsreferenz, Details zur Tabellenstruktur der Beispieldatenbank sowie Informationen zu Downloads.\n\nDas Buch basiert auf dem Wikibooks-Projekt und steht unter den Lizenzen Creative Commons Attribution/Share-Alike sowie der GFDL zur Verfügung (S. 2). Es dient als Nachschlagewerk und Lernmaterial für die SQL-Datenbankmanipulation (S. 1).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778785646025,
+      "channel": "plan_pipe_b533708a39f7",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der Abschnitte auf den Seiten 5 bis 44, die in die Grundlagen von SQL und relationalen Datenbanken einführen:\n\n**Einführung und Grundlagen (S. 5–11)**\nDer Einstieg vermittelt das grundlegende Verständnis, dass Datenbanken Informationen speichern und mittels SQL (Structured Query Language) abgefragt oder erweitert werden können (S. 5). SQL dient dabei als Schnittstelle zwischen der natürlichen Sprache und der Datenbankverwaltung. Darüber hinaus werden die Geschichte von SQL und ein grober Überblick über verschiedene Datenbankmanagementsysteme gegeben (S. 6).\n\n**Relationale Datenbanken (S. 6)**\nDer Fokus liegt hier auf der Struktur relationaler Datenbanken:\n- Tabellen bilden den Kern der Datenspeicherung (S. 6).\n- Innerhalb der Tabellen werden Daten in Spalten organisiert.\n- Verknüpfungen und Schlüssel (Primär- und Fremdschlüssel) sind essenziell, um Beziehungen zwischen den verschiedenen Tabellen abzubilden (S. 6).\n\n**Normalisierung (S. 6)**\nDie Normalisierung zielt auf eine effiziente und redundanzfreie Datenstruktur ab. Behandelt werden dabei:\n- Der grundlegende Zweck der Normalisierung (S. 6).\n- Die drei Stufen der Normalisierung: Die 1. Normalform (Aufbau von Tabellen), die 2. Normalform (funktionale Abhängigkeiten) und die 3. Normalform (Vermeidung transitiver Abhängigkeiten) (S. 6).\n- Ergänzend werden allgemeine Methoden zur Qualitätsverbesserung von Datenbankschemata vorgestellt (S. 6).\n\n**Beispieldatenbank (S. 6)**\nUm das theoretische Wissen praktisch greifbar zu machen, wird ein konkreter Sachverhalt als Fallbeispiel eingeführt. Dies umfasst die schematische Darstellung der Zusammenhänge sowie die tatsächliche Definition der Tabellenstrukturen, die als Grundlage für spätere Übungen dient (S. 6).\n\nInsgesamt vermitteln diese Seiten das notwendige theoretische Rüstzeug, um den logischen Aufbau einer Datenbank zu verstehen, bevor im weiteren Verlauf des Buches die spezifischen SQL-Befehle zur Datenmanipulation (DML) und Definition (DDL) eingeführt werden.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778785646026,
+      "channel": "plan_pipe_b533708a39f7",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 44
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Der Bereich von Seite 45 bis 68 vermittelt die wesentlichen Grundlagen der Datenbankarbeit mittels SQL. Hier ist eine strukturierte Zusammenfassung der Kernaussagen:\n\nGrundlagen und SQL-Befehlskategorien\nDatenbankbefehle werden in vier logische Gruppen unterteilt: DML (Data Manipulation Language) zur Datenverarbeitung, DDL (Data Definition Language) zur Strukturdefinition, TCL (Transaction Control Language) zur Ablaufsteuerung sowie DCL (Data Control Language) für Zugriffsrechte (S. 47-52).\n\nDatenabfragen mit SELECT\nDer SELECT-Befehl bildet das Herzstück der Datenabfrage (S. 57). Die grundlegende Struktur umfasst folgende Möglichkeiten:\n\n- Einfache Abfragen geben Daten aus definierten Spalten oder Tabellen zurück (S. 58).\n- DISTINCT unterdrückt die Ausgabe doppelter Zeilen in der Ergebnismenge (S. 59).\n- Die WHERE-Klausel dient der gezielten Einschränkung der abgerufenen Datensätze anhand bestimmter Kriterien (S. 60).\n- ORDER BY ermöglicht eine gezielte Sortierung der Ausgabe (S. 61).\n- Über die FROM-Klausel können Zusammenhänge zwischen verschiedenen Tabellen hergestellt werden (S. 62).\n\nZusätzlich wird ein Ausblick auf komplexere Abfragetechniken gegeben, die über die Basiselemente hinausgehen (S. 64). Zum weiteren Verständnis der Logik bietet der Abschnitt gezielte Übungen an, um die Anwendung der Befehle zu festigen (S. 53, 65).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778785646027,
+      "channel": "plan_pipe_b533708a39f7",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 45,
+        "end": 68
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Der Bereich der Seiten 69 bis 88 befasst sich mit der Manipulation der Dateninhalte und der Definition der Datenbankstruktur. Hier sind die Kernaussagen zusammengefasst:\n\nDatenmanipulation (DML)\n- Um Daten in eine relationale Datenbank einzufügen, wird der INSERT-Befehl verwendet [S. 69].\n- Bestehende Datensätze lassen sich mittels UPDATE-Befehl gezielt verändern [S. 72].\n- Zum Entfernen von Datensätzen dient der DELETE-Befehl [S. 74].\n- Soll eine Tabelle vollständig geleert werden, bietet der TRUNCATE-Befehl eine effiziente Möglichkeit [S. 75].\n\nStruktur der Datenbank (DDL)\n- Die Data Definition Language (DDL) dient dazu, die Struktur einer Datenbank festzulegen [S. 79].\n- Ein grundlegendes Konzept ist dabei die Definition der Hauptbestandteile der Datenbank sowie die Verwaltung und Erweiterung von Tabelleneigenschaften [S. 80-83].\n- Zudem wird aufgezeigt, dass SQL auch Möglichkeiten zur Programmierung innerhalb der Datenbankumgebung bereitstellt [S. 85].\n\nZusammenfassend lässt sich festhalten, dass dieser Abschnitt die notwendigen Befehle behandelt, um sowohl die Inhalte (DML) als auch das logische Grundgerüst (DDL) einer SQL-Datenbank professionell zu verwalten. Am Ende der jeweiligen Kapitel finden sich zur Vertiefung praktische Übungen [S. 75, S. 86].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778785646028,
+      "channel": "plan_pipe_b533708a39f7",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 69,
+        "end": 88
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der Abschnitte zu TCL, DCL und Datentypen (S. 89–108):\n\n**1. TCL – Transaktionssteuerung (S. 89–93)**\nDie Transaction Control Language (TCL) dient dazu, den Ablauf von Datenbankvorgängen zu steuern. Eine Transaktion fasst mehrere zusammengehörige Befehle zu einer logischen Einheit zusammen, um die Datenintegrität sicherzustellen. Ein zentrales Konzept ist der Umgang mit Misserfolgen: Änderungen können entweder dauerhaft gespeichert („Commit“) oder bei Fehlern vollständig rückgängig gemacht werden („Rollback“).\n\n**2. DCL – Zugriffsrechte (S. 95)**\nDie Data Control Language (DCL) befasst sich mit der Verwaltung von Zugriffsrechten innerhalb eines Datenbanksystems. Sie regelt, welcher Benutzer oder welche Anwendung berechtigt ist, auf bestimmte Daten zuzugreifen oder diese zu verändern.\n\n**3. Datentypen (S. 97–108)**\nDie Wahl des korrekten Datentyps ist entscheidend für die Struktur und Effizienz der Datenbank. Das Buch unterscheidet hierbei drei Kategorien:\n\n* Vordefinierte Datentypen: Dies sind die Basis-Typen, die das System bereitstellt (z.B. für Zahlen, Zeichenketten oder Datumswerte).\n* Konstruierte und benutzerdefinierte Datentypen: Hierbei handelt es sich um komplexere Strukturen, die entweder durch das System kombiniert oder individuell vom Anwender definiert werden können.\n* Spezialisierte Datentypen: Diese werden für spezifische Anforderungen genutzt, etwa zur Unterstützung internationaler Zeichensätze oder nationaler Standards (S. 103).\n\nDie korrekte Zuweisung dieser Typen bildet das Fundament für eine reibungslose Datenverarbeitung und die spätere Arbeit mit Funktionen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778785646029,
+      "channel": "plan_pipe_b533708a39f7",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 89,
+        "end": 108
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Bereichs von Seite 109 bis Seite 172:\n\n**Funktionen in SQL (S. 109-126)**\nDieser Abschnitt erläutert die Arbeit mit Funktionen zur Datenmanipulation. Dabei wird zwischen Funktionen für unterschiedliche Datentypen unterschieden:\n- Zahlenfunktionen: Mathematische Operationen und Berechnungen.\n- Zeichenkettenfunktionen: Bearbeitung oder Umwandlung von Textinhalten.\n- Datums- und Zeitfunktionen: Kalkulationen mit zeitlichen Werten.\n- Logische Funktionen: Behandlung von NULL-Werten und bedingte Auswertungen.\n- Konvertierungsfunktionen: Umwandlung von Datentypen.\n- Spaltenfunktionen: Aggregationen über Datensätze hinweg.\n\n**Erweiterte SELECT-Struktur (S. 129-140)**\nDie SELECT-Anweisung bildet das Herzstück der Datenabfrage. Der Abschnitt vertieft die Syntax und bietet einen Ausblick darauf, wie komplexe Abfragen über einfache Abrufe hinaus durch gezielte Klauseln strukturiert werden können.\n\n**Vertiefung von Funktionen (S. 141-154)**\nHier werden die bereits eingeführten Funktionen (Kapitel 14) durch weiterführende Konzepte ergänzt, um noch komplexere Datenanalysen innerhalb des SELECT-Befehls durchführen zu können.\n\n**WHERE-Klausel im Detail (S. 155-166)**\nDieser Bereich konzentriert sich auf die gezielte Filterung von Ergebnismengen. Die korrekte Anwendung der WHERE-Klausel ist entscheidend, um nur die Datensätze abzurufen, die spezifischen Kriterien entsprechen.\n\n**Verbinden mehrerer Tabellen (S. 167-172)**\nRelationale Datenbanken leben von der Verknüpfung unterschiedlicher Tabellen. Dieser Teil erklärt die Grundlagen, wie Informationen aus verschiedenen Tabellen in einer gemeinsamen Abfrage zusammengeführt werden können, um Zusammenhänge zwischen Datenbeständen sichtbar zu machen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778785646030,
+      "channel": "plan_pipe_b533708a39f7",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 109,
+        "end": 172
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Abschnitte auf den Seiten 173 bis 212 behandeln fortgeschrittene Methoden zur Verknüpfung von Datensätzen in relationalen Datenbanken. Hier ist die strukturierte Zusammenfassung:\n\nEinfache Tabellenverknüpfungen (S. 173–180)\nDer grundlegende Ansatz, um Daten aus mehreren Tabellen gemeinsam darzustellen, ist die Verknüpfung über gemeinsame Spalten. Dies ermöglicht es, logisch zusammengehörige Informationen, die auf verschiedene Tabellen verteilt sind, in einer gemeinsamen Ergebnismenge zu kombinieren.\n\nArbeiten mit JOIN (S. 181–190)\nDer JOIN-Befehl ist das Standardwerkzeug zur tabellenübergreifenden Abfrage. Er dient dazu, Zeilen aus zwei oder mehreren Tabellen basierend auf einer logischen Bedingung zu verbinden. Die korrekte Anwendung dieser Syntax ist essenziell für die effiziente Datenabfrage in einer normalisierten Datenbankstruktur.\n\nOUTER JOIN (S. 191–202)\nIm Gegensatz zum inneren JOIN, der nur übereinstimmende Datensätze zurückgibt, ermöglicht der OUTER JOIN (links, rechts oder voll) auch die Einbeziehung von Zeilen, für die keine Entsprechung in der verknüpften Tabelle existiert. Hierbei werden fehlende Werte in der Ergebnismenge durch NULL-Werte dargestellt, was für die Vollständigkeitsprüfung von Datenbeziehungen wichtig ist.\n\nVertiefung der JOIN-Thematik (S. 203–212)\nIn diesem Bereich werden komplexe Szenarien betrachtet, wie etwa die Verknüpfung einer Tabelle mit sich selbst (Self-Join) oder die Verwendung multipler JOIN-Bedingungen. Der Fokus liegt darauf, die logischen Verknüpfungen von Datensätzen bei komplexen Datenbankstrukturen präzise zu steuern.\n\nZusammenfassend lässt sich festhalten, dass das Verständnis der unterschiedlichen Join-Typen entscheidend ist, um die für eine Fragestellung notwendigen Datenmengen korrekt zu identifizieren und aus relationalen Strukturen zu extrahieren.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778785646031,
+      "channel": "plan_pipe_b533708a39f7",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 173,
+        "end": 212
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Seiten 213 bis 270 des vorliegenden Werks befassen sich mit fortgeschrittenen Techniken der Datenabfrage und -verarbeitung in SQL. Hier sind die Kernaussagen strukturiert zusammengefasst:\n\nNützliche Erweiterungen (S. 213): Dieser Bereich vertieft die Möglichkeiten, Abfrageergebnisse über einfache Selektionen hinaus anzupassen und zu verfeinern.\n\nBerechnete Spalten (S. 235): Anwender können Spaltenwerte während der Abfrage durch Berechnungen modifizieren. Dabei können mathematische Operatoren oder logische Zusammenhänge genutzt werden, um neue Informationen aus bestehenden Daten abzuleiten.\n\nGruppierungen (S. 241): Mittels Gruppierungen können Datenmengen in Teilmengen unterteilt werden, um Kennzahlen wie Summen oder Mittelwerte für spezifische Kategorien zu bilden. Dies ist essenziell für die aggregierte Datenanalyse.\n\nUnterabfragen (S. 251): Dies ermöglicht die Verschachtelung von Abfragen. Eine äußere Abfrage nutzt das Ergebnis einer inneren Abfrage als Kriterium oder Datenquelle. Dies erlaubt komplexe Filterungen, bei denen die Suchlogik von dynamischen Werten anderer Tabellen abhängt.\n\nErstellen von Views (S. 271): Das Buch beschreibt hier den Übergang zur logischen Sichtweise auf Daten, bei der virtuelle Tabellen (Views) gespeichert werden, um wiederkehrende oder komplexe Abfragen zu vereinfachen, ohne die darunterliegende physische Tabellenstruktur zu verändern.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778785646032,
+      "channel": "plan_pipe_b533708a39f7",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 213,
+        "end": 270
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Der Bereich von S. 271 bis S. 322 befasst sich mit fortgeschrittenen Techniken der SQL-Programmierung und der Datenbankstrukturierung. Hier sind die Kernaussagen zusammengefasst:\n\n**Erstellen von Views (S. 271–282)**\nViews sind virtuelle Tabellen, die auf SELECT-Abfragen basieren. Sie dienen dazu, die Komplexität von Datenbankabfragen zu reduzieren, den Zugriff auf bestimmte Datenspalten zu beschränken sowie die Datenstruktur für Anwender zu vereinfachen, ohne die physische Tabellenstruktur zu verändern.\n\n**DDL – Detaillierte Strukturen (S. 285–304)**\nIn diesem Abschnitt werden die Möglichkeiten der Data Definition Language vertieft. Es geht um die präzise Definition von Tabellenstrukturen, Indizes und die Verwaltung von Einschränkungen (Constraints), um die Datenintegrität sicherzustellen.\n\n**Fremdschlüssel-Beziehungen (S. 305–322)**\nEin zentrales Thema ist die Implementierung von Fremdschlüssel-Beziehungen (Foreign Keys). Diese stellen die referenzielle Integrität zwischen Tabellen sicher. Sie definieren, wie Datensätze über Tabellengrenzen hinweg verknüpft sind, und verhindern, dass verwaiste Datensätze entstehen. Diese Beziehungen bilden das Rückgrat relationaler Modelle.\n\nZusammenfassend liegt der Schwerpunkt dieser Seiten auf der Sicherstellung einer sauberen Datenbankstruktur und der Vereinfachung des Datenzugriffs durch virtuelle Ebenen. Während Views die Abfrageoberfläche abstrahieren, sorgen Fremdschlüssel für die logische Kohärenz des gesamten Datenbestandes.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778785646033,
+      "channel": "plan_pipe_b533708a39f7",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 271,
+        "end": 322
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die zusammenfassende Übersicht für den Bereich ab Seite 323:\n\nTeil IV: Erweiterungen (S. 323–416)\nDieser Abschnitt vertieft die Arbeit mit SQL über reine Abfragen hinaus. Er behandelt die gezielte Programmierung innerhalb von Datenbanken, einschließlich der Erstellung eigener Funktionen (S. 347) und komplexer Prozeduren (S. 357). Ein wesentlicher Aspekt ist die Automatisierung durch Trigger (S. 377), welche bei definierten Ereignissen automatisch ausgeführt werden. Ergänzend dazu werden Methoden zur Modifikation der Datenbankstruktur (S. 397), Techniken zur Erzeugung von Testdaten (S. 407) sowie praxisorientierte Tipps und Tricks (S. 389) vermittelt, um Datenbanken effizient zu verwalten und zu warten.\n\nTeil V: Anhang (S. 417–466)\nDer Anhang dient als Nachschlagewerk und ergänzende Unterstützung. Er enthält detaillierte Informationen zur Tabellenstruktur der im Buch verwendeten Beispieldatenbank (S. 419) sowie Hinweise auf Download-Quellen (S. 423). Zudem bietet er eine kompakte Befehlsreferenz (S. 431) als schnelles Hilfsmittel für die SQL-Syntax. Komplettiert wird das Werk durch weiterführende Informationen (S. 445) und Angaben zur Entstehung der Publikation (S. 451).\n\nZentrale Konzepte innerhalb der Programmierung erfordern häufig mathematische oder logische Verknüpfungen, beispielsweise wenn man die Ausführung von Funktionen von Bedingungen abhängig macht, wie in $f(x) = \\text{falls } a > b \\text{ dann } x \\text{ else } 0$.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778785646034,
+      "channel": "plan_pipe_b533708a39f7",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 323,
+        "end": 466
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778785646115,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Was ist der primäre Zweck von Transaktionen (TCL) in SQL?",
+            "options": [
+              "Daten zwischen verschiedenen Datenbankmanagementsystemen zu konvertieren.",
+              "Das Design neuer Tabellenstrukturen festzulegen.",
+              "Die Berechtigung von Benutzern für Tabellenzugriffe zu verwalten.",
+              "Mehrere Datenbankbefehle als eine logische Einheit sicher auszuführen."
+            ],
+            "correctIndex": 3,
+            "explanation": "TCL (Transaction Control Language) dient dazu, eine Reihe von DML-Operationen zu kapseln, um sicherzustellen, dass entweder alle Änderungen erfolgreich übernommen werden (Commit) oder bei einem Fehler der Ausgangszustand wiederhergestellt wird (Rollback)."
+          },
+          {
+            "question": "Welche SQL-Sprachkategorie wird verwendet, um die Struktur einer Datenbank (z.B. Tabellen erstellen oder ändern) zu definieren?",
+            "options": [
+              "TCL (Transaction Control Language)",
+              "DML (Data Manipulation Language)",
+              "DDL (Data Definition Language)",
+              "DCL (Data Control Language)"
+            ],
+            "correctIndex": 2,
+            "explanation": "DDL steht für Data Definition Language. Sie wird genutzt, um die Architektur der Datenbank mittels Befehlen wie CREATE, ALTER oder DROP zu bestimmen, während DML für die Daten selbst zuständig ist."
+          },
+          {
+            "question": "Welcher JOIN-Typ gibt alle Datensätze einer Tabelle zurück, auch wenn keine übereinstimmenden Daten in der verknüpften Tabelle gefunden werden?",
+            "options": [
+              "SELF JOIN",
+              "CROSS JOIN",
+              "INNER JOIN",
+              "OUTER JOIN"
+            ],
+            "correctIndex": 3,
+            "explanation": "Ein OUTER JOIN (LEFT, RIGHT oder FULL) stellt sicher, dass Datensätze aus einer oder beiden Tabellen erhalten bleiben, selbst wenn die Verknüpfungsbedingung zu keiner Entsprechung in der Gegentabelle führt."
+          },
+          {
+            "question": "Warum ist die Verwendung von DISTINCT in einer SELECT-Abfrage sinnvoll?",
+            "options": [
+              "Um die Abfragegeschwindigkeit bei riesigen Tabellen zu erhöhen.",
+              "Um doppelte Zeilen in der Ergebnismenge der Abfrage zu unterdrücken.",
+              "Um die Datenbank automatisch von Dubletten zu bereinigen.",
+              "Um sicherzustellen, dass nur berechnete Spalten im Ergebnis erscheinen."
+            ],
+            "correctIndex": 1,
+            "explanation": "DISTINCT sorgt dafür, dass aus dem Abfrageergebnis alle doppelten Zeilen entfernt werden, sodass für jede Kombination der selektierten Werte nur eine einzige Zeile ausgegeben wird."
+          },
+          {
+            "question": "Was passiert bei einer Datenbank-Normalisierung (z. B. 1. bis 3. Normalform)?",
+            "options": [
+              "Redundante Daten werden minimiert und die Konsistenz durch Tabellenstrukturierung verbessert.",
+              "Die Datenbank wird physisch auf verschiedene Festplatten verteilt.",
+              "Alle Daten werden in einer einzigen, großen Tabelle zusammengefasst.",
+              "Die SQL-Befehle werden automatisch in eine performantere Syntax übersetzt."
+            ],
+            "correctIndex": 0,
+            "explanation": "Das Ziel der Normalisierung ist es, logische Abhängigkeiten abzubilden und Redundanzen zu vermeiden, um Inkonsistenzen bei der Datenänderung zu verhindern."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778785646116,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist die Hauptaufgabe von DML in SQL?",
+            "back": "DML steht für Data Manipulation Language und dient der Abfrage und Bearbeitung von Daten (z.B. SELECT, INSERT, UPDATE, DELETE)."
+          },
+          {
+            "front": "Was ist der Zweck der DDL-Befehle?",
+            "back": "DDL steht für Data Definition Language; sie wird zur Definition und Änderung der Datenbankstruktur (z.B. CREATE, ALTER, DROP) verwendet."
+          },
+          {
+            "front": "Welche Funktion hat der SELECT-Befehl?",
+            "back": "Der SELECT-Befehl wird für die Abfrage von Daten aus der Datenbank verwendet."
+          },
+          {
+            "front": "Was passiert bei einem INNER JOIN?",
+            "back": "Ein INNER JOIN liefert nur die Zeilen zurück, bei denen die Verknüpfungsbedingung in beiden beteiligten Tabellen übereinstimmende Werte aufweist."
+          },
+          {
+            "front": "Wozu dienen TCL-Befehle (Transaction Control Language)?",
+            "back": "TCL-Befehle dienen der Ablaufsteuerung von Transaktionen, um sicherzustellen, dass Datenbankoperationen entweder vollständig ausgeführt werden oder bei Fehlern rückgängig gemacht werden (z.B. COMMIT, ROLLBACK)."
+          },
+          {
+            "front": "Was ist der Unterschied zwischen einem LEFT OUTER JOIN und einem INNER JOIN?",
+            "back": "Ein LEFT OUTER JOIN liefert alle Datensätze aus der linken Tabelle, auch wenn es in der rechten Tabelle keine Übereinstimmungen gibt, während ein INNER JOIN nur übereinstimmende Datensätze zurückgibt."
+          },
+          {
+            "front": "Was bewirkt die WHERE-Klausel?",
+            "back": "Die WHERE-Klausel grenzt die Ergebnismenge einer SQL-Abfrage basierend auf bestimmten Bedingungen ein."
+          },
+          {
+            "front": "Was ist eine Transaktion in SQL?",
+            "back": "Eine Transaktion ist eine logische Einheit von Datenbankoperationen, die nach dem All-or-Nothing-Prinzip (Atomarität) bearbeitet wird."
+          },
+          {
+            "front": "Was ist das Ziel der Normalisierung?",
+            "back": "Die Normalisierung dient dazu, Redundanzen zu vermeiden und die Datenkonsistenz innerhalb der Datenbankstruktur zu erhöhen."
+          },
+          {
+            "front": "Was ist eine View (Sicht) in SQL?",
+            "back": "Eine View ist eine virtuelle Tabelle, die auf einer gespeicherten SELECT-Abfrage basiert und den Zugriff auf komplexe Datenstrukturen vereinfachen kann."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-python-und-datenbanken_1",
+      "slides": [
+        {
+          "title": "Einführung in SQL: Grundlagen",
+          "bullets": [
+            "SQL als Standard zur Verwaltung relationaler Datenbanken.",
+            "Grundlegende Sprachkategorien: DDL, DML, TCL und DCL."
+          ],
+          "notes": "Willkommen zur Einführung in SQL. Heute betrachten wir, wie SQL Informationen in relationalen Strukturen organisiert und manipuliert.",
+          "page_range": "1-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Daten abfragen mit SELECT",
+          "bullets": [
+            "SELECT dient zum gezielten Abrufen vorhandener Daten.",
+            "WHERE-Klausel grenzt Ergebnismengen präzise ein.",
+            "Sortierung der Ergebnisse mittels ORDER BY (S. 61).",
+            "Doppelte Datensätze werden durch DISTINCT effizient gefiltert (S. 59)."
+          ],
+          "notes": "Der SELECT-Befehl ist das Herzstück jeder Abfrage. Wir lernen, wie wir Daten nicht nur finden, sondern auch sortieren und filtern.",
+          "page_range": "57-65",
+          "image_prompt": ""
+        },
+        {
+          "title": "Strukturierung mit DDL",
+          "bullets": [
+            "Data Definition Language für Tabellenstrukturen.",
+            "Erstellen, Ändern und Löschen von Datenbankobjekten.",
+            "Basis für ein geordnetes Datenbankschema."
+          ],
+          "notes": "Bevor wir Daten speichern, müssen wir die Architektur festlegen. Mit DDL definieren wir das Grundgerüst unserer Datenbank.",
+          "page_range": "79-88",
+          "image_prompt": ""
+        },
+        {
+          "title": "Datenmanipulation mit DML",
+          "bullets": [
+            "INSERT fügt neue Datensätze in Tabellen ein.",
+            "UPDATE ermöglicht die gezielte Änderung vorhandener Informationen.",
+            "DELETE und TRUNCATE bereinigen den Datenbestand sicher.",
+            "Grundlage für den aktiven Betrieb einer Datenbank."
+          ],
+          "notes": "DML macht unsere Datenbank lebendig. Wir sehen uns an, wie Informationen eingefügt, angepasst oder bei Bedarf wieder gelöscht werden.",
+          "page_range": "69-76",
+          "image_prompt": ""
+        },
+        {
+          "title": "Daten verknüpfen mit JOIN",
+          "bullets": [
+            "Zusammenführung von Daten aus mehreren Tabellen.",
+            "Grundlegende Verknüpfung via Tabellenbeziehungen (S. 173).",
+            "Einsatz von INNER JOIN für exakte Übereinstimmungen.",
+            "Erweiterung durch OUTER JOIN für umfassendere Berichte (S. 191)."
+          ],
+          "notes": "In der Realität liegen Daten oft verteilt. JOIN-Operationen ermöglichen es uns, diese Informationen wieder logisch zusammenzuführen.",
+          "page_range": "173-212",
+          "image_prompt": ""
+        },
+        {
+          "title": "Ablaufsteuerung mit Transaktionen",
+          "bullets": [
+            "TCL garantiert konsistente Datenbank-Zustände.",
+            "Transaktionen fassen mehrere Befehle logisch zusammen.",
+            "Kontrolle bei Erfolg oder Fehler (Rollback/Commit)."
+          ],
+          "notes": "Sicherheit geht vor: Mit Transaktionen stellen wir sicher, dass Datenbankoperationen entweder vollständig oder gar nicht ausgeführt werden.",
+          "page_range": "89-94",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 2: Einführung in SQL - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778785646015,
+      "pdfName": "Einführung in SQL"
+    }
+  ],
+  "sourceHash": "08785a1069def6c8"
+}

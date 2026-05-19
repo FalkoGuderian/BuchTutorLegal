@@ -1,0 +1,530 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Stochastik und Statistik - Lektion 1: Stochastik Grundlagen",
+    "pdfName": "Mathematik Stochastik",
+    "createdAt": 1778789621109,
+    "exportedAt": "2026-05-14T20:13:41.110Z",
+    "meta": {
+      "courseId": "course-de-math-stochastik-vertiefung",
+      "lessonIndex": 0,
+      "courseTitle": "Stochastik und Statistik",
+      "lessonObjective": "Zufallsvariablen, Verteilungen.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-mathematik-stochastik",
+            "title": "Mathematik Stochastik",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Mathematik_Stochastik"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_bbaa16cd0a78",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "6-7",
+          "chapterTitle": "Einführung in die Statistik",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "8-35",
+          "chapterTitle": "Wahrscheinlichkeitsrechnung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "36-65",
+          "chapterTitle": "Zufallsvariablen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "66-93",
+          "chapterTitle": "Ausgewählte Verteilungen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "94-129",
+          "chapterTitle": "Deskriptive Statistik",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "130-171",
+          "chapterTitle": "Analyse mehrerer Merkmale",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "172-179",
+          "chapterTitle": "Maßzahlen zur Konzentration",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "180-211",
+          "chapterTitle": "Schätzen und Testen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "212-223",
+          "chapterTitle": "Übungsaufgaben",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "224-248",
+          "chapterTitle": "Statistik-Software und Anhang",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778789621109,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der Grundlagen zur Wahrscheinlichkeitsrechnung basierend auf den bereitgestellten Dokumenten:\n\n### 1. Der Zufallsvorgang und das Ereignis (S. 9–11)\nEin **Zufallsvorgang** (Experiment) ist durch drei Merkmale definiert:\n*   Gleiche Ausgangsbedingungen.\n*   Ein unsicherer Ausgang.\n*   Beliebige Wiederholbarkeit.\n\n*   **Ergebnismenge ($\\Omega$):** Die Menge aller möglichen Einzelergebnisse. Diese kann endlich (z. B. Würfelwurf), abzählbar unendlich (z. B. Fahrzeugzählung) oder überabzählbar (z. B. Gewicht, Cash-Flow) sein.\n*   **Ereignis:** Eine Teilmenge der Ergebnismenge. Elementarereignisse enthalten nur ein einzelnes Ergebnis, zusammengesetzte Ereignisse mehrere.\n*   **Ereignismenge ($E$):** Die Zusammenfassung der Ereignisse, die mittels Mengenalgebra (Komplement, Schnitt, Vereinigung) bearbeitet werden können.\n\n### 2. Axiome der Wahrscheinlichkeit (S. 12)\nDie Wahrscheinlichkeit $P(A)$ bildet ein Ereignis $A$ auf das Intervall $[0, 1]$ ab, basierend auf dem von Kolmogorow begründeten Axiomensystem:\n1.  **Nichtnegativität:** $P(A) \\geq 0$\n2.  **Normiertheit:** $P(\\Omega) = 1$\n3.  **Additivität:** Bei disjunkten Ereignissen gilt $P(A \\cup B) = P(A) + P(B)$. (Erweiterbar zur $\\sigma$-Additivität für unendliche Ereignismengen).\n\n### 3. Methoden zur Bestimmung von Wahrscheinlichkeiten (S. 12–13)\n*   **Klassische Auffassung (Symmetrieprinzip/Laplace):** Alle Ergebnisse sind gleich wahrscheinlich. $P(A) = \\frac{|A|}{|\\Omega|}$.\n*   **Statistische Auffassung (Gesetz der großen Zahlen):** Die Wahrscheinlichkeit wird als Grenzwert der relativen Häufigkeit bei unendlich vielen Versuchen geschätzt ($P(A) = \\lim_{n \\to \\infty} \\frac{n(A)}{n}$).\n*   **Subjektive Auffassung:** Anwendung bei fehlenden Daten oder Einmalereignissen basierend auf persönlichen Einschätzungen.\n\n### 4. Rechenregeln für Ereignisse (S. 15)\n*   **Gegenereignis:** $P(\\bar{A}) = 1 - P(A)$\n*   **Additionssatz:** $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$\n*   **De Morgansche Regeln:** Dienen dazu, Wahrscheinlichkeiten von Verknüpfungen (Schnitten und Vereinigungen) von Komplementen effizient zu berechnen (z. B. $P(\\bar{A} \\cup \\bar{B}) = P(\\overline{A \\cap B})$).\n\n### 5. Stochastische Abhängigkeit und bedingte Wahrscheinlichkeit (S. 16–20)\n*   **Stochastische Unabhängigkeit:** Das Eintreten eines Ereignisses beeinflusst das andere nicht (z. B. $P(R \\cap E) = P(R) \\cdot P(E)$ bei Unabhängigkeit).\n*   **Bedingte Wahrscheinlichkeit:** Interessiert man sich für das Auftreten eines Ereignisses unter der Voraussetzung, dass ein anderes bereits eingetreten ist ($P(K|Z)$ – Wahrscheinlichkeit für Karies unter der Bedingung, dass das Kind Zähne putzt).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778789621109,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-math-stochastik-vertiefung_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 1: Stochastik Grundlagen - Präsentation</span><span class=\"pm-chat-count\">9 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lektion 1: Stochastik Grundlagen</div><ul class=\"pm-chat-slide-bullets\"><li>Einführung in die grundlegenden Konzepte der Statistik</li><li>Fokus: Zufallsvariablen und theoretische Verteilungsmodelle</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778789621110,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der bereitgestellten Inhalte (S. 6-7):\n\n**Definition und Ziel der Statistik**\nStatistik wird definiert als die Gesamtheit der Methoden zur Untersuchung von Massendaten (S. 6). Das Kernziel besteht darin, komplexe Datenmengen zu reduzieren und zu komprimieren, um verborgene Strukturen sowie Gesetzmäßigkeiten innerhalb dieser Daten aufzudecken (S. 7).\n\n**Die Rolle der Statistik im Wirtschaftskontext**\nIn einer von Globalisierung und Wettbewerbsdruck geprägten Wirtschaft dient die Statistik als unverzichtbares Werkzeug für rationale Entscheidungen (S. 7). Da Unternehmensprozesse oft zu komplex für eine vollständige Datenerfassung sind, zukünftige Zahlen Schätzwerte erfordern oder unvorhersehbare Umwelteinflüsse existieren, liefert die Statistik Entscheidungshilfen unter Unsicherheit (S. 7). Sie wandelt dabei verfügbare Informationsmengen in fundierte Entscheidungsgrundlagen um (S. 7).\n\n**Einteilung der statistischen Methoden**\nDie Statistik lässt sich in zwei grundlegende Bereiche unterteilen (S. 7):\n\n1. Deskriptive Statistik: Diese umfasst das Zusammenfassen, Ordnen und grafische Darstellen von Daten. Auf verallgemeinernde wissenschaftliche Aussagen wird hierbei verzichtet (S. 7).\n\n2. Induktive Statistik: Sie basiert auf der Wahrscheinlichkeitstheorie und nutzt Ergebnisse der deskriptiven Statistik, um verallgemeinernde Aussagen zu treffen (S. 7). Dieses Teilgebiet ist der Stochastik zuzuordnen (S. 7).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778789621119,
+      "channel": "plan_pipe_bbaa16cd0a78",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 7
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Inhalte zur Wahrscheinlichkeitsrechnung:\n\n**Grundlagen und Definitionen (S. 8-10)**\nDie Wahrscheinlichkeitsrechnung dient der Vorhersage von Ereignissen unter Unsicherheit. Ein Zufallsvorgang (Experiment) zeichnet sich durch einen gleichen Bedingungskomplex, einen unsicheren Ausgang und eine beliebige Wiederholbarkeit aus. Die Ergebnismenge $\\Omega$ umfasst alle möglichen Ergebnisse eines solchen Vorgangs (S. 9). Ein Ereignis ist dabei als Teilmenge von $\\Omega$ definiert (S. 11).\n\n**Ereignisse und Mengenalgebra (S. 11-12, 15)**\nEreignisse können mit den Regeln der Mengenalgebra (Boolesche Algebra) bearbeitet werden. Insbesondere gelten die De Morganschen Regeln:\n$P(\\bar{A} \\cup \\bar{B}) = P(A \\cap B)$ und $P(\\bar{A} \\cap \\bar{B}) = P(A \\cup B)$ (S. 15).\nFür die Wahrscheinlichkeit eines Ereignisses $A$ gilt $0 \\le P(A) \\le 1$ sowie der Additionssatz für zwei Ereignisse:\n$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$ (S. 15).\n\n**Axiome von Kolmogorow (S. 12)**\nDie mathematische Grundlage bildet das Axiomensystem von Kolmogorow, das jeder Wahrscheinlichkeit folgende Eigenschaften zuschreibt:\n1. Nichtnegativität: $P(A) \\ge 0$\n2. Normiertheit: $P(\\Omega) = 1$\n3. Additivität (für disjunkte Ereignisse): $P(A \\cup B) = P(A) + P(B)$\n\n**Wahrscheinlichkeitsauffassungen (S. 12-13)**\nEs existieren drei wesentliche Ansätze zur Zuordnung von Wahrscheinlichkeiten:\n- Klassische Auffassung (Laplace): Alle Ergebnisse sind gleich wahrscheinlich. Für ein Ereignis $A$ gilt $P(A) = \\frac{|A|}{|\\Omega|}$ (S. 12).\n- Statistische Auffassung: Basiert auf dem Gesetz der großen Zahlen. Die Wahrscheinlichkeit ist der Grenzwert des relativen Anteils bei unendlicher Wiederholung: $P(A) = \\lim_{n \\to \\infty} \\frac{n(A)}{n}$ (S. 13).\n- Subjektive Auffassung: Anwendung bei seltenen Ereignissen ohne Versuchsreihen, basierend auf Einschätzungen (S. 13).\n\n**Stochastische Unabhängigkeit (S. 16-18)**\nZwei Ereignisse $E$ und $R$ heißen stochastisch unabhängig, wenn das Eintreten des einen den Ausgang des anderen nicht beeinflusst. Für zwei unabhängige Ereignisse gilt multiplikativ:\n$P(R \\cap E) = P(R) \\cdot P(E)$ (S. 17).\nIm Allgemeinen ist jedoch von einer stochastischen Abhängigkeit zwischen untersuchten Ereignissen auszugehen (S. 18).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778789621120,
+      "channel": "plan_pipe_bbaa16cd0a78",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 8,
+        "end": 35
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine zusammenfassende Übersicht zu den Inhalten des bereitgestellten Dokuments (S. 36–53):\n\n**1. Grundlagen diskreter Zufallsvariablen (S. 36–43)**\nEine Zufallsvariable ordnet den Ergebnissen eines Zufallsvorgangs (Ergebnismenge $\\Omega$) reelle Zahlen zu (S. 37).\n- Diskrete Zufallsvariablen können in einem Intervall nur endlich oder abzählbar unendlich viele Werte annehmen (S. 43).\n- Die Wahrscheinlichkeitsverteilung wird durch die Wahrscheinlichkeitsfunktion $f(x_i) = P(X = x_i)$ beschrieben, wobei $\\sum f(x_i) = 1$ gilt (S. 38, 43).\n- Kennzahlen: Der Erwartungswert $EX = \\sum x_i f(x_i)$ markiert den langfristigen Durchschnitt, die Varianz $Var X = \\sum (x_i - EX)^2 f(x_i)$ misst die Streuung um diesen Wert (S. 42-43).\n\n**2. Verteilungsfunktion (S. 40–43)**\nDie Verteilungsfunktion $F(a) = P(X \\leq a)$ gibt die kumulierte Wahrscheinlichkeit an. Sie hat folgende Eigenschaften:\n- Sie ist monoton steigend und rechtsseitig stetig (S. 42).\n- Der Wertebereich liegt zwischen 0 und 1 (S. 42).\n- Für Intervalle gilt: $P(a < X \\leq b) = F(b) - F(a)$ (S. 40, 42).\n\n**3. Stetige Zufallsvariablen (S. 44–50)**\nIm Gegensatz zu diskreten Variablen können stetige Variablen in einem Intervall unendlich viele Werte annehmen (S. 44).\n- Die Wahrscheinlichkeit, einen exakten Punkt zu treffen, beträgt null ($P(X=x) = 0$), weshalb man stattdessen mit Dichtefunktionen $f(x)$ arbeitet (S. 45, 49).\n- Die Verteilungsfunktion berechnet sich als Integral der Dichtefunktion: $F(a) = \\int_{-\\infty}^{a} f(x) dx$ (S. 46, 49).\n- Erwartungswert und Varianz werden analog über Integrale bestimmt: $EX = \\int_{-\\infty}^{\\infty} x \\cdot f(x) dx$ bzw. $Var X = \\int_{-\\infty}^{\\infty} (x - EX)^2 \\cdot f(x) dx$ (S. 49-50).\n\n**4. Quantile (S. 45, 48–49)**\nDas $p$-Quantil $x(p)$ ist der Wert $x$, für den gilt $F(x) = p$. Ein wichtiges Beispiel ist der Median ($x(0,5)$), bei dem 50\\% der Werte unterhalb dieser Ausprägung liegen (S. 49).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778789621121,
+      "channel": "plan_pipe_bbaa16cd0a78",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 36,
+        "end": 65
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Dokumentation zu den ausgewählten Verteilungen:\n\n**1. Grundlagen (S. 66)**\nTheoretische Zufallsverteilungen werden durch bekannte Funktionen beschrieben und dienen dazu, reale Beobachtungen zu modellieren. Sie ermöglichen eine einfache Berechnung und wahrscheinlichkeitstheoretische Schlussfolgerungen.\n\n**2. Diskrete Verteilungen**\n\n*   **Binomialverteilung (S. 66-70):** Sie basiert auf dem Urnenmodell mit Zurücklegen bei einer dichotomen Grundgesamtheit. Die Zufallsvariable $X$ gibt die Anzahl der Erfolge bei $n$ Versuchen mit der Erfolgswahrscheinlichkeit $\\theta$ an. Die Wahrscheinlichkeitsfunktion lautet:\n$P(X = x) = \\binom{n}{x} \\theta^x (1 - \\theta)^{n - x}$\nErwartungswert und Varianz sind $E(X) = n \\cdot \\theta$ sowie $\\text{var}(X) = n \\cdot \\theta \\cdot (1 - \\theta)$.\n\n*   **Hypergeometrische Verteilung (S. 70-72):** Diese Anwendung findet sich beim Modell ohne Zurücklegen. Die Parameter sind die Grundgesamtheit $N$, die Anzahl der Kugeln erster Sorte $M$ und die Anzahl der Ziehungen $n$.\n$P(X = x) = \\frac{\\binom{M}{x} \\cdot \\binom{N - M}{n - x}}{\\binom{N}{n}}$\nBei sehr großen $N$ nähert sie sich der Binomialverteilung an, da der Korrekturfaktor gegen 1 geht.\n\n*   **Poissonverteilung (S. 72-73):** Beschreibt das Auftreten von Ereignissen innerhalb einer bestimmten Einheit (Zeit, Volumen etc.) mit dem Parameter $\\lambda$. Es gilt $E(X) = \\text{var}(X) = \\lambda$. Die Funktion lautet:\n$P(X = x) = \\frac{e^{-\\lambda} \\cdot \\lambda^x}{x!}$\nSie ist reproduktiv, das heißt, die Summe unabhängiger Poisson-verteilter Variablen ist wieder Poisson-verteilt mit der Summe der $\\lambda$-Werte.\n\n**3. Stetige Verteilungen**\n\n*   **Normalverteilung (S. 74-78):** Diese Verteilung ist symmetrisch um den Erwartungswert $\\mu$ und wird durch die Varianz $\\sigma^2$ charakterisiert. Die Dichtefunktion lautet:\n$\\phi(x | \\mu; \\sigma^2) = \\frac{1}{\\sqrt{2 \\cdot \\pi \\cdot \\sigma^2}} \\exp\\left(-\\frac{(x - \\mu)^2}{2\\sigma^2}\\right)$\nZur Berechnung wird die Standardnormalverteilung mit $Z = \\frac{X - \\mu}{\\sigma}$ genutzt, wobei $Z \\sim N(0; 1)$. Mit Hilfe von Tabellen können Wahrscheinlichkeiten $P(Z \\leq z)$ oder Quantile bestimmt werden, wobei $P(Z \\leq -z) = 1 - \\Phi(z)$ gilt.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778789621122,
+      "channel": "plan_pipe_bbaa16cd0a78",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 66,
+        "end": 93
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die deskriptive Statistik dient der strukturierten Zusammenfassung und Analyse empirischer Daten, ohne dabei direkt auf verteilungstheoretische Annahmen zurückzugreifen (S. 94).\n\nHier sind die zentralen Konzepte:\n\nGrundbegriffe\nDie Untersuchungseinheit (Merkmalsträger) weist bei Merkmalen (statistischen Variablen) spezifische Ausprägungen (Merkmalswerte) auf. Die Menge aller Einheiten bildet die Grundgesamtheit (S. 94). Bei der Analyse ist das Skalenniveau entscheidend, da nicht alle Operationen mit allen Daten zulässig sind (S. 95).\n\nSkalenniveaus\n1. Nominalskala: Ausprägungen sind lediglich vergleichbar und zählbar (qualitative Merkmale, z. B. Geschlecht) (S. 96).\n2. Ordinalskala: Es existiert eine Rangordnung (z. B. Noten), aber keine festgelegten Abstände (S. 96).\n3. Metrische Skala: Die Abstände sind messbar (quantitative Merkmale). Man unterscheidet zwischen diskreten (abzählbaren) und stetigen Werten (S. 96-97).\n\nAnalyseinstrumente\nZur übersichtlichen Darstellung dienen Urlisten, Häufigkeitsverteilungen und Zweig-Blätter-Diagramme (Stem-and-Leaf), die eine erste Sortierung ermöglichen (S. 97-99). Für die kumulierten Häufigkeiten wird die Summenfunktion verwendet, die als Treppenfunktion grafisch dargestellt wird (S. 100-101).\n\nLageparameter\nDiese beschreiben das Niveau der Daten:\n- Arithmetisches Mittel: $\\bar{x} = \\frac{1}{n} \\sum_{i=1}^{n} x_i$. Es ist nur für metrische Daten sinnvoll und reagiert empfindlich auf Ausreißer (S. 101-103).\n- Median (Zentralwert): Der Wert in der Mitte der geordneten Beobachtungsreihe. Er ist resistenter gegen Ausreißer und auch bei ordinal skalierten Daten einsetzbar (S. 102-103).\n\nStreuungsparameter\nUm die Variabilität der Daten zu erfassen, wird die Varianz genutzt. Diese berechnet die mittleren quadratischen Abweichungen vom Mittelwert:\n$s^2 = \\frac{1}{n-1} \\sum_{i=1}^{n} (x_i - \\bar{x})^2$ (S. 104).\nDie Standardabweichung $s = \\sqrt{s^2}$ dient als anschaulicheres Maß in der ursprünglichen Einheit des Merkmals (S. 105). Zur rechnerischen Vereinfachung kann der Verschiebungssatz angewendet werden:\n$s^2 = \\frac{1}{n-1} (\\sum_{i=1}^{n} x_i^2 - n \\cdot \\bar{x}^2)$ (S. 105).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778789621123,
+      "channel": "plan_pipe_bbaa16cd0a78",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 94,
+        "end": 129
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Analyse mehrerer Merkmale beschäftigt sich mit den Zusammenhängen zwischen Variablen innerhalb einer Stichprobe. Dabei werden zwei Hauptmethoden unterschieden: die Korrelationsanalyse und die Regressionsanalyse (S. 130).\n\n**Korrelationsanalyse**\n\nDie Korrelationsanalyse untersucht das Ausmaß des linearen Zusammenhangs zwischen Variablen.\n\n* Korrelationskoeffizient nach Bravais-Pearson: Dieser misst die Stärke der linearen Abhängigkeit bei metrisch skalierten Merkmalen. Er liegt zwischen -1 und 1. Ein Wert nahe 0 deutet auf keinen linearen Zusammenhang hin, während Werte nahe 1 oder -1 auf eine starke (positive oder negative) Korrelation hindeuten (S. 131-132). Die Formel lautet:\n$r = \\frac{\\sum_{i=1}^{n}(x_{i}-\\bar{x})(y_{i}-\\bar{y})}{\\sqrt{\\sum_{i=1}^{n}(x_{i}-\\bar{x})^{2}} \\cdot \\sqrt{\\sum_{i=1}^{n}(y_{i}-\\bar{y})^{2}}}$ (S. 131)\n\n* Rangkorrelationskoeffizient nach Spearman-Pearson: Dieser wird für ordinalskalierte Merkmale oder bei deutlicher Abweichung von der Normalverteilung verwendet. Er basiert auf den Rangfolgen der Merkmalswerte (S. 134). Die vereinfachte Formel bei fehlenden Bindungen lautet:\n$r_{SP} = 1 - \\frac{6 \\sum_{i} d_{i}^{2}}{n \\cdot (n^{2} - 1)}$ (S. 134)\n\n**Regressionsanalyse**\n\nDie Regressionsanalyse dient dazu, einen funktionalen Zusammenhang zwischen einer erklärenden Variablen $x$ und einer Zielvariablen $y$ zu schätzen (S. 136, 139).\n\n* Lineares Modell: Man geht von dem Zusammenhang $y_{i} = \\alpha + \\beta x_{i} + u_{i}$ aus, wobei $u_{i}$ eine Störgröße darstellt (S. 139).\n* Methode der kleinsten Quadrate (KQ-Schätzer): Ziel ist es, die summierten quadrierten Residuen $d_{i}$ zu minimieren, um die Parameter $a$ und $b$ für die Ausgleichsgerade $\\hat{y} = a + bx$ zu bestimmen (S. 141-142).\n* Berechnung: Die Regressionskoeffizienten ergeben sich aus (S. 142):\n$b = \\frac{\\sum_{i=1}^{n}(x_{i}-\\bar{x})(y_{i}-\\bar{y})}{\\sum_{i=1}^{n}(x_{i}-\\bar{x})^{2}}$ und $a = \\bar{y} - b\\bar{x}$\n\nWichtige Voraussetzungen für das Regressionsmodell sind, dass die Störgrößen den Erwartungswert Null haben, eine konstante Varianz aufweisen (Homoskedastizität) und stochastisch unabhängig voneinander sind (S. 141).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778789621124,
+      "channel": "plan_pipe_bbaa16cd0a78",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 130,
+        "end": 171
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Konzentrationsmessung analysiert die Intensität der Verteilung eines Merkmals auf eine vorgegebene Menge von Objekten (S. 172). Hier ist eine strukturierte Zusammenfassung der Kernpunkte des Textes:\n\n**Grundlagen der Konzentrationsmessung**\nVoraussetzung für die Analyse ist eine aufsteigend geordnete Liste der Merkmalsbeträge $x_{[1]} \\leq x_{[2]} \\leq ... \\leq x_{[n]}$. Zur Berechnung werden die Merkmalssumme ($\\sum x_i$), die kumulierten Merkmalsbeträge ($q_i$) sowie die relativen kumulierten Merkmalsbeträge ($q_i^*$) und Summenhäufigkeiten ($S_i^*$) genutzt (S. 172).\n\n**Grafische Darstellung: Die Lorenzkurve**\nDie Lorenzkurve stellt die Konzentration grafisch dar. Dabei werden die Wertepaare $(S_i^*; q_i^*)$ in einem Diagramm aufgetragen und geradlinig verbunden. Die Kurve verläuft innerhalb eines Einheitsquadrats zwischen den Punkten (0;0) und (1;1). Als Referenz dient die Winkelhalbierende, die eine gleichmäßige Verteilung repräsentiert. Je stärker die Kurve unterhalb dieser Diagonale „durchhängt“, desto höher ist die Konzentration im Datensatz (S. 173-174).\n\n**Der Ginikoeffizient ($G$)**\nDer Ginikoeffizient ist ein quantitatives Maß für die Konzentration. Er entspricht dem Verhältnis der Fläche zwischen der Winkelhalbierenden und der Lorenzkurve zur gesamten Fläche unter der Winkelhalbierenden (S. 174).\n- $G = 0$: Keine Konzentration (vollkommene Gleichverteilung).\n- $G = 1$: Vollständige Konzentration (ein Element vereint alle Merkmalsbeträge auf sich).\n\nDie Berechnung erfolgt über die Summierung von Trapezflächen, die durch die Punkte der Lorenzkurve gebildet werden. Eine vereinfachte Berechnungsmethode für die Teilfläche $F$ lautet:\n$F = \\frac{1}{2} \\cdot (a + c) \\cdot h$ (S. 174-175).\n\n**Sonderfälle der Datenverarbeitung**\n- Metrische Merkmale mit wenigen Ausprägungen: Hier wird statt des Einzelindexes $i$ ein Index $j$ verwendet, wobei die Merkmalsbeträge als Produkt aus Merkmalswert $x_j$ und Häufigkeit $n_j$ berechnet werden (S. 176-177).\n- Klassierte Merkmale: Wenn Daten in Klassen vorliegen, wird die Klassenmitte $x_j'$ als Ersatzwert für die Merkmalsausprägung innerhalb der Klasse genutzt, um die Summenwerte und Schätzungen für die Lorenzkurve zu ermitteln (S. 177-178).\n\nDer Vergleich verschiedener Lorenzkurven, etwa über verschiedene Zeiträume hinweg, ermöglicht eine schnelle visuelle Interpretation der Veränderung von Konzentrationsprozessen (S. 174, 178).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778789621125,
+      "channel": "plan_pipe_bbaa16cd0a78",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 172,
+        "end": 179
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung behandelt die zentralen Konzepte der schließenden Statistik: Konfidenzintervalle (Schätzen) und Hypothesentests.\n\n**1. Konfidenzintervalle (S. 180–189)**\nEin Konfidenzintervall dient dazu, den unbekannten Parameter $\\mu$ einer Grundgesamtheit mit einer gewissen Wahrscheinlichkeit (Konfidenzkoeffizient $1-\\alpha$) einzugrenzen. Die Breite des Intervalls wird durch die Varianz und den Stichprobenumfang $n$ bestimmt: Je größer die Varianz, desto breiter und ungenauer das Intervall; ein höherer Stichprobenumfang verringert die Breite (S. 186).\n\nDie Bestimmung des Intervalls hängt von den Voraussetzungen ab:\n- Bei normalverteilter Grundgesamtheit und bekannter Varianz $\\sigma^2$ wird das $z$-Quantil der Standardnormalverteilung verwendet (S. 188):\n$[\\bar{x} - z_{(1-\\alpha/2)} \\cdot \\frac{\\sigma}{\\sqrt{n}}; \\bar{x} + z_{(1-\\alpha/2)} \\cdot \\frac{\\sigma}{\\sqrt{n}}]$\n- Bei unbekannter Varianz wird die $t$-Verteilung mit $n-1$ Freiheitsgraden herangezogen (S. 188).\n- Für dichotome Merkmale (Anteilswert $p$) werden Binomialverteilungen approximiert, wobei für große Stichproben die Normalverteilung genutzt werden kann (S. 189).\n\n**2. Hypothesentests (S. 190–195)**\nHypothesentests prüfen eine Annahme über einen Parameter (Nullhypothese $H_0$).\n\n- Ablauf:\n1. Aufstellen von $H_0$ (z. B. $H_0: \\mu = \\mu_0$) (S. 191).\n2. Festlegung des Nichtablehnungsbereichs (NAB) unter Annahme einer Irrtumswahrscheinlichkeit $\\alpha$ (Signifikanzniveau) (S. 192).\n3. Erhebung einer Stichprobe und Berechnung einer Prüfgröße $\\bar{x}$ (S. 194).\n4. Entscheidung: Liegt $\\bar{x}$ außerhalb des NAB, wird $H_0$ abgelehnt (S. 194).\n\nAlternativ zur Berechnung des NAB für $\\bar{x}$ kann die standardisierte Prüfgröße $z$ berechnet werden (S. 194):\n$z = \\frac{\\bar{x} - \\mu_0}{\\sigma / \\sqrt{n}}$\nFällt dieser Wert in den Bereich $[-z_{(1-\\alpha/2)}; z_{(1-\\alpha/2)}]$, wird $H_0$ beibehalten. Der $\\alpha$-Fehler beschreibt dabei die Wahrscheinlichkeit, $H_0$ fälschlicherweise abzulehnen, obwohl sie wahr ist (S. 192).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778789621126,
+      "channel": "plan_pipe_bbaa16cd0a78",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 180,
+        "end": 211
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Seiten 212 bis 222 des Dokuments enthalten eine umfangreiche Sammlung von Übungsaufgaben zu verschiedenen Themengebieten der Statistik und Wahrscheinlichkeitsrechnung.\n\nHier ist eine strukturierte Zusammenfassung der behandelten Themenkomplexe:\n\n1. Mengenlehre und Ereignisse\nKapitel 1 (S. 212-214) fokussiert sich auf grundlegende wahrscheinlichkeitstheoretische Konzepte. Dazu gehören die Definition von Komplementärmengen, Schnitt- und Vereinigungsmengen sowie die Überprüfung von Disjunktheit. Anhand konkreter Szenarien (Mischanlage, Zustelldienst, Würfelsimulationen) werden Wahrscheinlichkeiten für Ereignisse berechnet.\n\n2. Bedingte Wahrscheinlichkeit und Satz von Bayes\nEin Schwerpunkt liegt auf der Anwendung der Wahrscheinlichkeitsrechnung in komplexen Entscheidungssituationen. Die Aufgaben zu den Themen Aktiengewinne, Alarmanlagen-Fehlalarme und Zugverspätungen (S. 213-214) erfordern das Verständnis von bedingten Wahrscheinlichkeiten und den Einsatz des Satzes von Bayes. Auch die Analyse von Zufallsvorgängen ohne Zurücklegen (z. B. bei Schraubensortimenten, S. 215) wird behandelt.\n\n3. Zufallsvariablen und Verteilungen\nKapitel 2 (S. 215-217) führt diskrete und stetige Zufallsvariablen ein. Zentrale Punkte sind:\n- Die Bestimmung der Wahrscheinlichkeitsfunktion, des Erwartungswerts $E(X)$ und der Varianz $Var(X)$.\n- Die Anwendung von Dichtefunktionen bei stetigen Variablen (z. B. Bäckerei-Beispiel).\n- Die Analyse der gemeinsamen Verteilung zweier Zufallsvariablen inklusive Korrelationskoeffizienten.\n\n4. Spezielle Wahrscheinlichkeitsverteilungen\nKapitel 3 (S. 218-220) widmet sich der praktischen Anwendung von Standardverteilungen:\n- Binomialverteilung: Anwendung bei Abnahmekontrollen und Qualitätsprüfungen.\n- Poisson-Verteilung: Modellierung von Wartezeiten oder Schadensereignissen (z. B. Kunden am Schalter, LKW-Versicherung).\n- Normalverteilung: Berechnung von Wahrscheinlichkeiten basierend auf Erwartungswert $\\mu$ und Standardabweichung $\\sigma$ (z. B. Batterielaufzeiten, Schabengrößen).\n\n5. Regressionsanalyse und Korrelation\nKapitel 5 (S. 221-222) behandelt den statistischen Zusammenhang zwischen Datenreihen:\n- Bestimmung des Rangkorrelationskoeffizienten nach Spearman.\n- Durchführung einer linearen Regressionsanalyse ($y = a + bx$), inklusive der Berechnung von Residuen und dem Bestimmtheitsmaß $R^2$, um die Qualität der Vorhersage zu bewerten.\n\n6. Hypothesentests\nDer Übergang zu den Hypothesentests auf S. 222 bildet den Abschluss. Hierbei wird exemplarisch am Beispiel eines Tarifsystems gefragt, wie die Hypothese über den Anteil von Kunden, die ein System nicht verstehen, in einem statistischen Testverfahren verifiziert werden kann.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778789621127,
+      "channel": "plan_pipe_bbaa16cd0a78",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 212,
+        "end": 223
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Der vorliegende Text bietet einen Überblick über Softwarelösungen für statistische Berechnungen sowie statistische Hilfstabellen.\n\n**Statistik-Software**\n\nDie statistische Datenverarbeitung am Computer kann auf verschiedenen Ebenen erfolgen:\n\nTabellenkalkulationen: Programme wie OpenOffice oder Gnumeric ermöglichen einfache statistische Berechnungen (z.B. Median, Mittelwert, Standardabweichung) direkt in der Anwendung (S. 224-225).\n\nProgrammiersprachen: Die unter Linux verbreitete Sprache Gambas bietet die Möglichkeit, statistische Funktionen selbst zu implementieren, um ein tieferes Verständnis der Materie zu erlangen (S. 225).\n\nProfessionelle Statistik-Software:\n*   R: Eine leistungsstarke, kostenlose Programmierumgebung für statistische Auswertungen, die als Standard im Forschungsbereich gilt (S. 225-226).\n*   SPSS: Besonders in Sozial- und Verhaltenswissenschaften verbreitet, bietet eine einfache Bedienung über Menüs und grafische Oberflächen (S. 226).\n*   STATA: Zeichnet sich durch eine gut strukturierte Integration statistischer Verfahren und eine einfach zu erlernende Befehlssyntax aus (S. 226).\n\n**Statistische Hilfstabellen**\n\nFür die Arbeit mit Wahrscheinlichkeitsverteilungen werden im Anhang tabellarische Werte bereitgestellt:\n\nNormalverteilung: Der Text enthält eine Tabelle der standardnormalverteilten Zufallsvariablen, um Wahrscheinlichkeiten $P(Z \\le z)$ zu bestimmen (S. 230-231).\n\n$\\text{Chi-Quadrat-Verteilung}$: Tabellarische Auflistung von Quantilen in Abhängigkeit von der Wahrscheinlichkeit $p$ und den Freiheitsgraden (S. 231).\n\nF-Verteilung: Umfassende Quantiltabellen für die F-Verteilung, gegliedert nach Freiheitsgraden $k_1$ und $k_2$ (S. 232-233).\n\n**Literaturhinweise**\n\nDer Abschnitt schließt mit einer Liste empfohlener Fachliteratur ab, die grundlegende und fortgeschrittene statistische Verfahren sowie Stochastik und medizinische Statistik behandelt (S. 228).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778789621128,
+      "channel": "plan_pipe_bbaa16cd0a78",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 224,
+        "end": 248
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778789621209,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Was zeichnet einen Zufallsvorgang gemäß der Definition im Text aus?",
+            "options": [
+              "Er basiert auf einem unveränderlichen Bedingungskomplex und liefert einen unsicheren Ausgang.",
+              "Er ist nur bei deterministischen Prozessen in der Wirtschaft anwendbar.",
+              "Er ist immer mathematisch exakt berechenbar.",
+              "Er muss nur ein einziges Mal durchgeführt werden, um Gesetzmäßigkeiten zu erkennen."
+            ],
+            "correctIndex": 0,
+            "explanation": "Ein Zufallsvorgang erfordert laut Text einen gleichen Bedingungskomplex, einen unsicheren Ausgang und muss beliebig oft wiederholbar sein."
+          },
+          {
+            "question": "Warum wird bei kontinuierlichen Größen (wie dem Cash-Flow) oft mit 'Quasistetigkeit' gearbeitet?",
+            "options": [
+              "Da die Finanzmathematik ausschließlich auf der Normalverteilung basiert.",
+              "Weil Computer nur mit stetigen Zahlen rechnen können.",
+              "Um die Analyse zu vereinfachen, da bei sehr vielen nah beieinander liegenden Werten die Unterscheidung zwischen diskret und stetig praktisch vernachlässigbar ist.",
+              "Weil sie tatsächlich keine kleinste Einheit wie den Cent haben."
+            ],
+            "correctIndex": 2,
+            "explanation": "Obwohl Werte wie der Cash-Flow diskret sein könnten (Euro/Cent), vereinfacht man die Analyse bei sehr vielen Messpunkten, indem man sie als stetig (intervallbasiert) betrachtet."
+          },
+          {
+            "question": "Welche Eigenschaft muss eine Ereignismenge E gemäß Kolmogorow für die Boolesche Algebra zwingend erfüllen?",
+            "options": [
+              "Sie muss zwingend unendlich viele Ereignisse enthalten.",
+              "Sie darf keine leere Menge enthalten.",
+              "Wenn ein Ereignis A enthalten ist, muss auch sein Komplement (nicht A) enthalten sein.",
+              "Sie muss alle erdenklichen Wahrscheinlichkeiten bereits als Festwert enthalten."
+            ],
+            "correctIndex": 2,
+            "explanation": "Eine Ereignismenge (σ-Algebra) muss unter anderem abgeschlossen bezüglich der Komplementbildung sein, damit sie mit der Booleschen Algebra konsistent arbeitet."
+          },
+          {
+            "question": "Wann ist das klassische Symmetrieprinzip (Laplace-Definition) für die Wahrscheinlichkeitsberechnung ungeeignet?",
+            "options": [
+              "Immer dann, wenn nicht alle Ergebnisse der Ergebnismenge die gleiche Wahrscheinlichkeit haben.",
+              "Nur wenn die Ergebnismenge zu klein ist.",
+              "Wenn die Ergebnismenge endlich ist.",
+              "Wenn der Zufallsvorgang auf einem Würfel basiert."
+            ],
+            "correctIndex": 0,
+            "explanation": "Das Symmetrieprinzip setzt voraus, dass alle Ergebnisse gleich wahrscheinlich sind. Dies trifft auf viele reale Ereignisse (wie das Wetter) nicht zu."
+          },
+          {
+            "question": "Was beschreibt das 'Gesetz der großen Zahlen' im Kontext der statistischen Wahrscheinlichkeitsauffassung?",
+            "options": [
+              "Dass man Wahrscheinlichkeiten nicht schätzen, sondern nur durch Axiome bestimmen kann.",
+              "Dass große Datenmengen in der Statistik stets die gleichen Ergebnisse liefern wie bei kleinen Mengen.",
+              "Dass man mit sehr vielen Versuchen den wahren Wert einer Wahrscheinlichkeit empirisch annähern kann.",
+              "Dass die Wahrscheinlichkeit eines Ereignisses immer gegen 1 konvergiert, wenn man nur lange genug wartet."
+            ],
+            "correctIndex": 2,
+            "explanation": "Das Gesetz der großen Zahlen besagt, dass sich der beobachtete relative Anteil eines Ereignisses bei einer sehr großen Anzahl von Versuchen der theoretischen Wahrscheinlichkeit annähert."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778789621210,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist die Definition von Statistik?",
+            "back": "Statistik ist die Gesamtheit der Methoden, die für die Untersuchung von Massendaten angewendet werden können."
+          },
+          {
+            "front": "Was ist das Hauptziel der Statistik?",
+            "back": "Massendaten zu reduzieren und zu komprimieren, um Gesetzmäßigkeiten und Strukturen in den Daten sichtbar zu machen."
+          },
+          {
+            "front": "Unterscheidung: Deskriptive vs. Induktive Statistik",
+            "back": "Die deskriptive Statistik fasst Daten zusammen und stellt sie dar (ohne Verallgemeinerung). Die induktive Statistik nutzt Wahrscheinlichkeitstheorie, um von Daten auf eine Grundgesamtheit zu schließen."
+          },
+          {
+            "front": "Was kennzeichnet einen Zufallsvorgang?",
+            "back": "Ein Zufallsvorgang (Experiment) umfasst einen gleichen Bedingungskomplex, einen unsicheren Ausgang und er ist beliebig oft wiederholbar."
+          },
+          {
+            "front": "Was ist eine Ergebnismenge (Ω)?",
+            "back": "Die Ergebnismenge (Stichprobenraum) enthält alle möglichen Ergebnisse, die bei einem Zufallsvorgang auftreten können."
+          },
+          {
+            "front": "Was unterscheidet ein Elementarereignis von einem zusammengesetzten Ereignis?",
+            "back": "Ein Elementarereignis enthält genau ein Element der Ergebnismenge. Ein zusammengesetztes Ereignis besteht aus mehreren Ergebnissen, ist also eine Teilmenge der Ergebnismenge."
+          },
+          {
+            "front": "Nenne die drei Axiome nach Kolmogorow.",
+            "back": "1. Nichtnegativität (P(A) ≥ 0), 2. Normiertheit (P(Ω) = 1), 3. Additivität (P(A ∪ B) = P(A) + P(B) bei disjunkten A und B)."
+          },
+          {
+            "front": "Was besagt das Symmetrieprinzip (Laplace-Regel)?",
+            "back": "Die Wahrscheinlichkeit eines Ereignisses berechnet sich als Quotient aus der Anzahl der günstigen Ergebnisse und der Anzahl aller möglichen Ergebnisse, sofern alle Ergebnisse gleich wahrscheinlich sind."
+          },
+          {
+            "front": "Was besagt das Gesetz der großen Zahlen?",
+            "back": "Die statistische Wahrscheinlichkeit nähert sich mit zunehmender Versuchszahl (n → ∞) der wahren Wahrscheinlichkeit an (relative Häufigkeit = P(A))."
+          },
+          {
+            "front": "Was versteht man unter Quasistetigkeit bei stetigen Zufallsvorgängen?",
+            "back": "Obwohl Daten (wie Cash-Flow) diskret sein könnten (z. B. Cent-Einheiten), vereinfacht man bei sehr vielen, eng beieinander liegenden Werten die Analyse, indem man die Menge als stetiges Intervall betrachtet."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-math-stochastik-vertiefung_0",
+      "slides": [
+        {
+          "title": "Lektion 1: Stochastik Grundlagen",
+          "bullets": [
+            "Einführung in die grundlegenden Konzepte der Statistik",
+            "Fokus: Zufallsvariablen und theoretische Verteilungsmodelle"
+          ],
+          "notes": "Willkommen zur Lektion 1. Heute legen wir das Fundament für das Verständnis von Zufallsvorgängen und deren statistischer Beschreibung.",
+          "page_range": "6-7",
+          "image_prompt": ""
+        },
+        {
+          "title": "Was ist Statistik?",
+          "bullets": [
+            "Gesamtheit der Methoden zur Untersuchung von Massendaten",
+            "Ziele: Datenkompression, Sichtbarmachen von Strukturen",
+            "Deskriptive Statistik: Beschreibende Zusammenfassung",
+            "Induktive Statistik: Schließende, mathematische Analyse"
+          ],
+          "notes": "Statistik hilft uns, Ordnung in komplexe Datenmengen zu bringen. Wir unterscheiden dabei zwischen rein deskriptiven Ansätzen und analytischen Methoden.",
+          "page_range": "6-7",
+          "image_prompt": ""
+        },
+        {
+          "title": "Zufallsvorgänge und Ereignisse",
+          "bullets": [
+            "Zufallsvorgang: Wiederholbares Experiment mit unsicherem Ausgang",
+            "Ergebnismenge (Ω): Menge aller möglichen Ausgänge",
+            "Ereignis: Teilmenge der Ergebnismenge (S. 9)",
+            "Axiomatische Definition nach Kolmogorow (S. 10)"
+          ],
+          "notes": "Ein Zufallsvorgang zeichnet sich durch Wiederholbarkeit bei gleichem Bedingungskomplex aus. Die Ergebnismenge lässt sich dabei in endlich viele oder unendliche Punkte unterteilen.",
+          "page_range": "8-10",
+          "image_prompt": ""
+        },
+        {
+          "title": "Zufallsvariablen",
+          "bullets": [
+            "Zuordnung von Zahlenwerten zu Ergebnissen eines Zufallsvorgangs",
+            "Zufallsvariable X ordnet Ausprägungen x zu (S. 37)",
+            "Wahrscheinlichkeitstabelle: Zuordnung von P(X=x)",
+            "Ermöglicht Berechnung von Erwartungswerten und Durchschnitten"
+          ],
+          "notes": "Durch die Zuordnung von Zahlen zu Ergebnissen wird eine mathematische Weiterverarbeitung möglich. So lassen sich beispielsweise Kosten oder Erträge präzise analysieren.",
+          "page_range": "36-37",
+          "image_prompt": ""
+        },
+        {
+          "title": "Wahrscheinlichkeitsverteilungen",
+          "bullets": [
+            "Wahrscheinlichkeitsfunktion f(x): f(x_i) = P(X = x_i)",
+            "Verteilungsfunktion F(x): Kumulierte Wahrscheinlichkeiten P(X ≤ x)",
+            "Binomialverteilung: Modell für diskrete, dichotome Daten (S. 66)",
+            "Wichtige Kenngrößen: Erwartungswert EX und Varianz VarX (S. 68)"
+          ],
+          "notes": "Die Verteilungsfunktion zeigt uns das kumulierte Risiko oder die Wahrscheinlichkeit. Besonders die Binomialverteilung ist ein mächtiges Werkzeug für binäre Fragestellungen.",
+          "page_range": "38-40, 66-68",
+          "image_prompt": ""
+        },
+        {
+          "title": "Deskriptive Datenanalyse",
+          "bullets": [
+            "Ziel: Übersichtliche Präsentation und Datenzusammenfassung",
+            "Skalenniveaus: Nominal-, Ordinal- und Metrische Skala (S. 96)",
+            "Unterschied: Qualitative vs. Quantitative Merkmale (S. 95)",
+            "Umgang mit diskreten vs. stetigen Daten (S. 96)"
+          ],
+          "notes": "Je nach Skalenniveau sind unterschiedliche Berechnungen zulässig. Wir müssen stets prüfen: Macht ein Durchschnitt hier überhaupt einen Sinn?",
+          "page_range": "94-97",
+          "image_prompt": ""
+        },
+        {
+          "title": "Analyse mehrerer Merkmale",
+          "bullets": [
+            "Korrelationsanalyse untersucht Beziehungen zwischen Variablen",
+            "Streudiagramm visualisiert Zusammenhänge von Datenpaaren",
+            "Korrelationskoeffizient (r) misst lineare Abhängigkeit",
+            "r nahe 0 bedeutet schwache, r nahe 1 starke Korrelation"
+          ],
+          "notes": "Wenn wir zwei Merkmale gleichzeitig betrachten, suchen wir oft nach Zusammenhängen. Der Korrelationskoeffizient nach Bravais-Pearson ist hier unser Standardmaß.",
+          "page_range": "130-132",
+          "image_prompt": ""
+        },
+        {
+          "title": "Konzentrationsmessung",
+          "bullets": [
+            "Konzentration: Verteilung eines Objekts auf eine Menge",
+            "Lorenzkurve: Grafisches Maß für Ungleichverteilung (S. 172)",
+            "Ginikoeffizient: Statistisches Maß der Konzentration (S. 174)",
+            "G = 0 (gleichmäßig) bis G = 1 (maximale Konzentration)"
+          ],
+          "notes": "Wie stark konzentrieren sich beispielsweise Umsätze auf wenige Kunden? Mit Lorenzkurve und Ginikoeffizient machen wir Konzentration messbar.",
+          "page_range": "172-175",
+          "image_prompt": ""
+        },
+        {
+          "title": "Schätzen und Testen",
+          "bullets": [
+            "Konfidenzintervalle grenzen den wahren Wert μ ein",
+            "Stichprobendurchschnitt als Basis der Schätzung",
+            "Signifikanzniveau α definiert die Irrtumswahrscheinlichkeit",
+            "Breite des Intervalls hängt von Varianz und n ab"
+          ],
+          "notes": "Da wir meist nur Stichproben haben, arbeiten wir mit Konfidenzintervallen. Sie sagen uns, in welchem Bereich der wahre Wert mit hoher Sicherheit liegt.",
+          "page_range": "180-186",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 1: Stochastik Grundlagen - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778789621109,
+      "pdfName": "Mathematik Stochastik"
+    }
+  ],
+  "sourceHash": "db46c72dfe186895"
+}

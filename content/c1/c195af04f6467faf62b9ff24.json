@@ -1,0 +1,548 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Mathematik-Aufbau — Komplexe Zahlen, Funktionentheorie, Lineare Algebra - Lektion 3 — Lineare Algebra für Mechanik",
+    "pdfName": "Lineare Algebra für Mechanik",
+    "createdAt": 1778501039166,
+    "exportedAt": "2026-05-11T12:03:59.166Z",
+    "meta": {
+      "courseId": "course-de-mathematik-aufbau",
+      "lessonIndex": 2,
+      "courseTitle": "Mathematik-Aufbau — Komplexe Zahlen, Funktionentheorie, Lineare Algebra",
+      "lessonObjective": "Vektoren, Matrizen, Tensoren in mechanischen Anwendungen.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-lineare-algebra-f-r-mechanik",
+            "title": "Lineare Algebra für Mechanik",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Lineare_Algebra_f%C3%BCr_Mechanik"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_04953651b755",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Einleitung und Grundlagen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-3",
+          "chapterTitle": "Vektorklassifizierung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-5",
+          "chapterTitle": "Koordinatensysteme und Basisvektoren",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "6-6",
+          "chapterTitle": "Gruppentheoretische Grundlagen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "7-9",
+          "chapterTitle": "Skalarprodukt und Arbeit",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "10-15",
+          "chapterTitle": "Vektorprodukt und mehrfache Produkte",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "16-18",
+          "chapterTitle": "Matrizen und Determinanten",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "19-19",
+          "chapterTitle": "Inverse Matrix",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "20-21",
+          "chapterTitle": "Koordinatentransformationen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "22-24",
+          "chapterTitle": "Krummlinige Koordinaten",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778501039166,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Lerninhalte zur Linearen Algebra für Mechanik auf Basis des vorliegenden Textes (S. 1–20):\n\n### Zusammenfassung: Lineare Algebra für Mechanik\n\nDiese Lerneinheit konzentriert sich auf die mathematischen Grundlagen, die für das Verständnis einer mechanischen Anfängervorlesung (Massenpunktmechanik) erforderlich sind. Dabei wird eine physikalisch motivierte, anschauliche Herangehensweise einer rein axiomatischen mathematischen Strenge vorgezogen (S. 1, S. 5).\n\n#### 1. Physikalische Größen und Tensoren\nPhysikalische Größen werden über ihre Dimensionen (z. B. $[Länge] = m$) definiert. Sie lassen sich in Tensoren verschiedener Stufen klassifizieren (S. 2):\n*   **Tensoren 0. Ordnung (Skalare):** Zahlenwerte mit Einheit (z. B. Masse $m$, Arbeit $W$).\n*   **Tensoren 1. Ordnung (Vektoren):** Besitzen Betrag, Richtung und (oft) einen Angriffspunkt (z. B. Kraft $F$, Beschleunigung $a$).\n*   **Dynamische Grundgleichung:** Das Gesetz $F = m \\cdot a$ verdeutlicht die Proportionalität zwischen Vektoren gleicher Stufe, vermittelt durch einen Skalar (S. 2).\n\n#### 2. Vektorbegriff und Klassifizierung\nVektoren werden nach ihrem Transformationsverhalten und ihrer Verschiebbarkeit unterschieden (S. 3):\n*   **Verschiebbarkeit:** Freie, linienflüchtige und ortsgebundene Vektoren.\n*   **Klassifizierung nach Inversion:** Polare vs. axiale Vektoren (z. B. Drehimpuls).\n*   **Struktur:** Vektoren bilden eine Gruppe $(V, +)$ mit Assoziativität, neutralem Element (Nullvektor) und inversen Elementen (S. 6).\n\n#### 3. Operationen und Produkte\nZur mathematischen Behandlung von Vektoren dienen spezifische Rechenoperationen (S. 7–15):\n*   **Skalarprodukt (inneres Produkt):** Dient zur Bestimmung der Ähnlichkeit (Kosinusfaktor) und zur Projektion von Vektoren. Es erzeugt einen Skalar und ermöglicht die Definition der Norm (Länge) sowie des normierten Raums.\n*   **Vektorprodukt (äußeres Produkt):** Verwendet einen Sinusfaktor und liefert einen Vektor orthogonal zur Ebene der Ausgangsvektoren (wichtig für Drehmomente).\n*   **Spatprodukt:** Ein Produkt aus drei Vektoren, das zur Volumenbestimmung dient und stark mit der Epsilon-Tensor-Schreibweise verknüpft ist.\n*   **Identitäten:** Bac-cab-Regel (Graßmann-Identität) und Jacobi-Identität sind essenzielle Werkzeuge für Vektor-Manipulationen (S. 15).\n\n#### 4. Basis-Systeme und Komponentendarstellung\nDie Darstellung von Vektoren erfordert eine Basis, vorzugsweise eine **Orthonormalbasis (ONB)**, in der Basisvektoren senkrecht aufeinander stehen und normiert sind (S. 10–11).\n*   **Vollständigkeit:** Ein Vektor ist eindeutig durch seine Komponenten in einer ONB definiert. Hierbei findet das Kronecker-Delta ($\\delta_{ij}$) Anwendung.\n*   **Komponentenrechnung:** Vektoroperationen (Addition, Skalar- und Kreuzprodukt) lassen sich effizient komponentenweise berechnen, oft unter Nutzung der **Summenkonvention** (S. 12–14).\n\n#### 5. Matrizen und Koordinatentransformation\nMatrizen vermitteln das Transformationsverhalten bei einem Basiswechsel (S. 3, S. 16).\n*   **Determinanten:** Sie geben geometrische Größen an (Parallelogrammfläche bzw. Spatvolumen) und entscheiden über die Invertierbarkeit (reguläre Matrix) einer Matrix (S. 17–18).\n*   **Inverse Matrix:** Berechenbar über das Gauß-Jordan-Verfahren (S. 19).\n*   **Koordinatensysteme:** Neben kartesischen (geradlinigen) Systemen existieren krummlinige Koordinatensysteme (z. B. Polarkoordinaten), die bei symmetrischen Problemen vorteilhaft sind (S. 20).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778501039166,
+      "channel": "general",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 24
+      }
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-mathematik-aufbau_2\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 3 — Lineare Algebra für Mechanik - Präsentation</span><span class=\"pm-chat-count\">10 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lineare Algebra für Mechanik</div><ul class=\"pm-chat-slide-bullets\"><li>Grundlagen für physikalische Mechanik-Vorlesungen.</li><li>Fokus auf Vektoren, Matrizen und Tensoren.</li><li>Vermittlung intuitiver, physikalischer mathematischer Konzepte.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778501039268,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung des Projekts „Lineare Algebra für Mechanik“:\n\n**Projektübersicht**\nDas Buch dient als Begleitmaterial für den Wikiversity-Kurs „Mathematik für Mechanik“ und richtet sich an Physik-Studierende. Ziel ist es, mathematische Konzepte der Linearen Algebra praxisnah und physikalisch motiviert für die Mechanik-Grundvorlesung aufzubereiten. Aktuell ist das Werk zu 60 % fertiggestellt; Beiträge sollen zunächst über die Diskussionsseite koordiniert werden.\n\n**Didaktischer Ansatz**\nDer Fokus liegt auf einer intuitiven, „naiven“ Einführung physikalischer Begriffe, um den Einstieg zu erleichtern, ohne den mathematischen Anspruch mittelfristig zu vernachlässigen. Eine rigorose mathematische Fundierung (z. B. Basis-Invarianz) ist geplant, steht aber hinter der physikalischen Anwendbarkeit zurück.\n\n**Zentrale Konzepte**\n1. Physikalische Größen und Einheiten: Unterscheidung zwischen Skalaren (Tensoren 0. Ordnung) und Vektoren (Tensoren 1. Ordnung). Die Dimension einer Größe wird durch eckige Klammern ausgedrückt, z. B. $[\\text{Länge}] = m$.\n2. Vektorbegriff: Physikalische Vektoren werden hier als gerichtete Größen mit Betrag und Angriffspunkt betrachtet. Später erfolgt die Überführung in das Konzept der Koordinatentransformation unter Basiswechsel.\n3. Physikalische Gesetze als Proportionalitäten: Gleichungen zwischen Tensoren derselben Stufe erfordern zur Angleichung oft einen Proportionalitätsfaktor (einen Tensor niedrigerer Stufe). Ein zentrales Beispiel ist das zweite Newtonsche Gesetz:\n$F = m \\cdot a$\nHierbei ist $F$ ein Tensor 1. Stufe, $a$ ein Tensor 1. Stufe und die Masse $m$ als Tensor 0. Stufe der Proportionalitätsfaktor.\n\n**Projektumfang**\nDas Werk beschränkt sich strikt auf mathematische Methoden, die für die Mechanik eines Massenpunktes notwendig sind, und legt einen hohen Wert auf anschauliche Beispiele und Übungsaufgaben.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501039176,
+      "channel": "plan_pipe_04953651b755",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der bereitgestellten Informationen über vektorielle Größen und deren Klassifizierung:\n\n**Grundlagen und Definitionen**\nTensoren stellen eine mathematische Verallgemeinerung dar, die Skalare, Vektoren und Matrizen zusammenfasst. Ein Vektor lässt sich dabei durch sein Transformationsverhalten beim Basiswechsel definieren, wobei die Multiplikation mit einer Matrix die Änderung des Bezugssystems vermittelt.\n\n**Klassifizierung nach Verschiebbarkeit**\nVektoren unterscheiden sich in ihrer geometrischen Freiheit im Raum:\n1. Freie Vektoren: Diese sind parallel zu sich selbst im Raum verschiebbar.\n2. Linienflüchtige Vektoren: Sie sind an eine Wirkungslinie gebunden (z. B. Kräfte) und nur entlang dieser verschiebbar.\n3. Ortsgebundene Vektoren: Diese sind fest an einen Punkt oder den Ursprung gebunden (z. B. Feldvektoren oder Ortsvektoren) und nicht verschiebbar.\n\n**Klassifizierung nach Rauminversion**\nBezüglich der Spiegelung am Ursprung unterscheidet man:\n1. Polare Vektoren: Diese ändern bei einer Rauminversion ihr Vorzeichen. Beispiele sind Geschwindigkeit und Beschleunigung.\n2. Axiale Vektoren (Pseudovektoren): Diese behalten ihr Vorzeichen bei einer Rauminversion bei. Ein Beispiel ist das Drehmoment.\n\n**Der Nullvektor**\nDer Nullvektor dient als neutrales Element der Vektoraddition. Kombiniert man einen Vektor mit seinem entgegengesetzten Gegenstück ($\\vec{a} + (-\\vec{a}) = \\vec{0}$), so ergibt sich der Nullvektor. Voraussetzung für diese Addition ist, dass die Vektoren im selben Vektorraum (auf der gleichen Ebene) angesiedelt sind; eine Addition von Vektoren aus verschiedenen Ebenen ist im Standardmodell der linearen Algebra ohne Projektion auf einen gemeinsamen Raum nicht direkt definiert. Ein Nullvektor selbst besitzt keine Richtung und ist daher unabhängig von den genannten Transformationskriterien.\n\n**Zusatzbegriffe**\nEin Pseudoskalar ist eine physikalische Größe, die sich wie ein Skalar verhält, jedoch bei einer Rauminversion im Gegensatz zu einem echten Skalar ihr Vorzeichen ändert.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501039177,
+      "channel": "plan_pipe_04953651b755",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts:\n\n**Lineare Abhängigkeit und Vektoren**\nEine Gruppe von Vektoren ist dann linear abhängig, wenn eine Linearkombination existiert, bei der durch Strecken und Stauchen (Multiplikation mit Skalaren) die Summe der Vektoren den Nullvektor ergibt, ohne dass alle Faktoren gleichzeitig null sind. Ist dies nicht möglich, sind die Vektoren linear unabhängig. Das Strecken oder Stauchen des Nullvektors mit einem beliebigen Skalar $c$ führt aufgrund der Eigenschaften des Nullvektors immer wieder zum Nullvektor ($c \\cdot \\vec{0} = \\vec{0}$).\n\n**Koordinatensysteme und Basis**\nVektoren werden mathematisch durch ihre Komponenten in einem Koordinatensystem beschrieben. Ein solches System basiert auf einer Basis, die aus Einheitsvektoren besteht.\n* Kartesisches Koordinatensystem: Ein System mit senkrecht zueinander stehenden Achsen (Orthonormal-Basis). Die Komponenten eines Vektors werden durch die Projektion auf diese Achsen bestimmt.\n* Allgemein: Es existieren auch schiefwinklige oder krummlinige Koordinatensysteme. Ein Vektor selbst ist in seiner Existenz invariant; seine Darstellung ändert sich jedoch mit der Wahl der Basis.\n* Polarkoordinaten: Hier hängen die Einheitsvektoren vom Ort des Punktes ab.\n\n**Physikalische vs. mathematische Sichtweise**\nIn der Mathematik werden Vektoren axiomatisch definiert, während in der Physik zusätzlich ein Angriffspunkt sowie Messwerte aus der Empirie eine Rolle spielen. Vektoren werden als Tensoren 1. Ordnung bezeichnet, Skalare als Tensoren 0. Ordnung. Die Grundlage für das Rechnen mit Vektoren bildet die Lineare Algebra, die durch den Gruppenbegriff und elementare Rechenregeln das Fundament für physikalische Anwendungen legt.\n\n**Übungslösungen**\n1. Darstellung des Punktes (1,1) in Polarkoordinaten:\nDer Radius berechnet sich zu $r = \\sqrt{1^2 + 1^2} = \\sqrt{2}$. Der Winkel ergibt sich aus $\\tan(\\phi) = \\frac{1}{1}$, woraus $\\phi = 45^{\\circ}$ bzw. $\\frac{\\pi}{4}$ folgt. Der Punkt ist also $(\\sqrt{2}, 45^{\\circ})$.\n\n2. Einheitsvektoren bei Polarkoordinaten:\nIn Polarkoordinaten sind die Einheitsvektoren radial ($\\vec{e}_r$) und tangential ($\\vec{e}_{\\phi}$) orientiert. Sie hängen vom jeweiligen Punkt im Raum ab und bilden an jedem Ort eine lokale Orthonormal-Basis.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501039178,
+      "channel": "plan_pipe_04953651b755",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung der Grundlagen zur Gruppentheorie im Kontext der Linearen Algebra:\n\n**Kernkonzept: Die Gruppe**\nEine Gruppe ist definiert als eine Menge zusammen mit einer Verknüpfungsregel. In der Vektoralgebra bilden die Vektoren $V$ mit der Addition $+$ die Gruppe $(V,+)$.\n\n**Die vier Gruppen-Grundsätze**\nEine Struktur erfüllt den Gruppenbegriff, wenn sie folgende Regeln einhält:\n\n1. Abgeschlossenheit: Die Verknüpfung zweier Elemente aus der Menge führt immer zu einem Ergebnis innerhalb derselben Menge.\n2. Assoziativität: Klammersetzungen verändern das Ergebnis nicht, also $(a+b)+c = a+(b+c)$.\n3. Neutrales Element: Es existiert ein Element $O$, für das gilt: $a + O = a$. Bei Vektoren ist dies der Nullvektor.\n4. Inverses Element: Zu jedem Element $a$ existiert ein inverses Element $-a$, sodass $a + (-a) = O$ gilt.\n\nWenn zusätzlich die Kommutativität ($a+b = b+a$) erfüllt ist, spricht man von einer kommutativen Gruppe.\n\n**Wichtige Begriffe und Anmerkungen**\n* Vektor-Subtraktion: Diese stellt keine eigenständige Operation dar, sondern ist lediglich eine abkürzende Schreibweise für die Addition des inversen Elements: $a + (-b) = a - b$.\n* Ausblick: Das Konzept der Gruppe ist essenziell für die spätere Beschreibung physikalischer Transformationen wie etwa der orthogonalen Drehungen von Koordinatensystemen in der Quantenmechanik.\n\n**Übung zum Verständnis**\nWarum bilden die natürlichen Zahlen mit der Subtraktion keine Gruppe? (Hinweis: Prüfe insbesondere die Abgeschlossenheit und das inverse Element).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501039179,
+      "channel": "plan_pipe_04953651b755",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts zur Skalarmultiplikation, zum Skalarprodukt und zur Norm:\n\n**Grundlagen der Skalarmultiplikation**\nDie Skalarmultiplikation verknüpft einen Vektorraum mit einem Skalarkörper (reelle Zahlen). Dabei wirken Skalare als richtungslose Größen auf die Vektoren ein. Die geltenden Rechenregeln werden durch die Körperaxiome definiert.\n\n**Das Skalarprodukt**\nDas Skalarprodukt zweier Vektoren $\\vec{a}$ und $\\vec{b}$ liefert einen Skalar als Ergebnis. Es dient als Maß für die Ähnlichkeit:\n$$ \\vec{a} \\cdot \\vec{b} = |\\vec{a}| \\cdot |\\vec{b}| \\cdot \\cos(\\theta) $$\nHierbei beschreibt der Cosinus-Faktor die kolineare Ausrichtung. Je mehr die Vektoren in die gleiche Richtung zeigen, desto größer ist das Ähnlichkeitsmaß. Vektorräume mit einem definierten Skalarprodukt werden als unitäre Räume bezeichnet.\n\n**Norm und normierte Räume**\nDas Skalarprodukt erlaubt die Definition einer Norm $\\| \\vec{V} \\|$, welche die Länge eines Vektors angibt:\n$$ \\| \\vec{V} \\| = \\sqrt{\\vec{V} \\cdot \\vec{V}} $$\nDie Norm definiert die Größe eines Vektors und muss drei Eigenschaften erfüllen: Definitheit, Homogenität und die Dreiecksungleichung. Ein Vektorraum mit einer Norm heißt normierter Raum. Durch Teilen eines Vektors durch seine Norm erhält man einen Einheitsvektor (Normierung).\n\n**Projektion und Zerlegung**\nDie Projektion eines Vektors auf eine Richtung $n$ bestimmt den Anteil, den dieser Vektor in besagte Richtung besitzt. Dies wird geometrisch durch das Lot auf die Wirkungslinie erreicht. Eine praktische Anwendung ist die physikalische Arbeit, bei der eine Kraft $\\vec{F}$ entlang eines Weges $\\vec{s}$ wirkt:\n$$ W = \\vec{F} \\cdot \\vec{s} = |\\vec{F}| \\cdot |\\vec{s}| \\cdot \\cos(\\theta) $$\nHierbei ist der parallele Anteil der Kraft zur Wirkungslinie entscheidend für den resultierenden Energietransfer.\n\n**Wichtige Identitäten und Sätze**\nDas Skalarprodukt ist die Grundlage für bedeutende mathematische Zusammenhänge, darunter:\n1. Die Cauchy-Schwarzsche Ungleichung, welche die Beziehung zwischen Skalarprodukt und Normen festlegt.\n2. Den Kosinussatz, der geometrische Abstände mit dem Skalarprodukt verknüpft.\n3. Den Satz von Thales, der sich ebenfalls über die Eigenschaften des Skalarprodukts (insbesondere bei orthogonalen Vektoren) beweisen lässt.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501039180,
+      "channel": "plan_pipe_04953651b755",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 7,
+        "end": 9
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die prägnante Zusammenfassung der grundlegenden Vektorkonzepte:\n\n**1. Sinus, Cosinus und Einheitskreis**\nDer Cosinus und Sinus repräsentieren im Einheitskreis die Projektionen eines Vektors auf die kartesischen Koordinatenachsen. Das Skalarprodukt (inneres Produkt) nutzt den Cosinus-Faktor, während das Kreuzprodukt (äußeres Produkt) durch den Sinus-Faktor charakterisiert wird.\n\n**2. Orthonormierte Basissysteme (ONB)**\nEin Vektorraum wird durch eine Basis aufgespannt. Eine ONB ist besonders effizient, da die Basisvektoren normiert (Länge 1) und orthogonal (senkrecht zueinander) sind. Dies drückt sich durch die Orthonormalitätsrelation aus: Das Skalarprodukt zweier Basisvektoren ergibt das Kronecker-Symbol $\\delta_{ij}$, welches für $i=j$ eins und für $i \\neq j$ null ist. Über die Vollständigkeitsrelation lässt sich jeder Vektor eindeutig in seine Komponenten entwickeln.\n\n**3. Komponentenrechnung**\nVektoroperationen werden im kartesischen System komponentenweise durchgeführt:\n- Addition: $(a+b)_i = a_i + b_i$\n- Skalarprodukt: $a \\cdot b = \\sum_i a_i b_i$\n- Kreuzprodukt: $c = a \\times b$ berechnet sich mit Hilfe des total antisymmetrischen Epsilon-Tensors $\\epsilon_{ijk}$: $c_i = \\sum_{j,k} \\epsilon_{ijk} a_j b_k$. Das Spatprodukt dient hierbei als geometrisches Maß für das Volumen eines von drei Vektoren aufgespannten Spats.\n\n**4. Mehrfache Produkte und Identitäten**\nDas Spatprodukt ist invariant bei zyklischer Vertauschung der Indizes. Bei zweifachen Vektorprodukten ist die Bac-Cab-Regel (Graßmann-Identität) zentral:\n$a \\times (b \\times c) = b(a \\cdot c) - c(a \\cdot b)$\n\n**Übung: Drehmoment**\nDas Drehmoment ist ein Anwendungsbeispiel für das Kreuzprodukt. Die Projektion der Kraft $F$ in den senkrechten Anteil zum Weg $s$ entspricht dem Betrag des Kreuzproduktes:\n$\\tau = \\| r \\times F \\| = \\| r \\| \\| F \\| \\sin(\\phi)$\nHierbei beschreibt der Sinus den wirksamen, senkrechten Anteil der Kraft bezogen auf den Hebelarm.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501039181,
+      "channel": "plan_pipe_04953651b755",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 10,
+        "end": 15
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine zusammenfassende Übersicht zu den Inhalten der Matrizenrechnung, Determinanten und der Vektoralgebra:\n\n**1. Grundlagen und Rechenregeln**\nMatrizen erlauben die kompakte Darstellung linearer Transformationen. Für eine Matrix $A$ und die Einheitsmatrix $E$ gilt $A \\cdot E = E \\cdot A = A$. Ein zentrales Werkzeug ist die Summenkonvention, bei der über doppelt auftretende Indizes (z. B. $i = 1, 2, 3$) automatisch summiert wird. Dies findet Anwendung bei Koordinatentransformationen und der Beschreibung von Drehungen sowohl in der Ebene als auch im Raum.\n\n**2. Determinanten**\nDie Determinante einer Matrix liefert wichtige geometrische Informationen. Für eine $2 \\times 2$-Matrix entspricht ihr Betrag dem Flächeninhalt eines Parallelogramms; bei einer $3 \\times 3$-Matrix entspricht sie dem Spatvolumen.\nFür $3 \\times 3$-Matrizen kann die Regel von Sarrus zur manuellen Berechnung genutzt werden. Alternativ lässt sich die Determinante über das Levi-Civita-Symbol $\\epsilon_{ijk}$ definieren: \n$\\det(A) = \\epsilon_{ijk} A_{1i} A_{2j} A_{3k}$.\n\n**3. Vektorberechnungen und Epsilontik**\nDas Levi-Civita-Symbol $\\epsilon_{ijk}$ ist eng mit dem Kronecker-Delta $\\delta_{ij}$ verknüpft. Die sogenannte Lagrange-Identität stellt einen wichtigen Zusammenhang zwischen dem Skalarprodukt und dem Kreuzprodukt her. Diese Werkzeuge erlauben eine effiziente Vektorrechnung im $\\mathbb{R}^3$, insbesondere bei der Berechnung von Kreuzprodukten und Spatprodukten.\n\n**4. Inverse Matrizen**\nEine quadratische Matrix $A$ ist genau dann invertierbar (regulär), wenn ihre Determinante ungleich Null ist ($\\det(A) \\neq 0$). Die inverse Matrix $A^{-1}$ ist definiert durch die Beziehung $A \\cdot A^{-1} = A^{-1} \\cdot A = E$. Die Existenz der Inversen ist ein entscheidendes Kriterium für die Lösbarkeit linearer Gleichungssysteme.\n\n**Zentrale Konzepte:**\n- Summenkonvention zur Vereinfachung komplexer Ausdrücke.\n- Geometrische Interpretation von Determinanten als Volumen bzw. Fl\\text{ä}che.\n- Nutzen der Beziehung zwischen Epsilon-Tensor und Kronecker-Delta zur Vereinfachung vektoralgebraischer Beweise.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501039182,
+      "channel": "plan_pipe_04953651b755",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 16,
+        "end": 18
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung des Verfahrens nach Gauß-Jordan zur Invertierung einer Matrix:\n\nDas Gauß-Jordan-Verfahren ermöglicht die Berechnung der inversen Matrix $A^{-1}$ zu einer gegebenen quadratischen Matrix $A$. Die Kernidee besteht darin, die Matrix $A$ durch elementare Zeilenumformungen in die Einheitsmatrix $I$ zu transformieren. Da dies nur durch Addition, Subtraktion, Multiplikation und Division von Zeilen erfolgt, kann man exakt dieselben Rechenoperationen simultan auf eine Einheitsmatrix anwenden.\n\nDas Vorgehen lässt sich in zwei Schritten zusammenfassen:\n\n1. Transformation: Die Matrix $A$ wird durch eine Folge von Zeilenoperationen schrittweise in die Einheitsmatrix $I$ überführt.\n\n2. Übertragung: Die identischen Zeilenoperationen werden auf die Einheitsmatrix $I$ angewandt. Das Ergebnis dieser Transformation ist die gesuchte inverse Matrix $A^{-1}$.\n\nEs gilt somit der Zusammenhang, dass die Anwendung der Rechenschritte auf $I$ zur Matrix $A^{-1}$ führt, wodurch die Bedingung $A \\cdot A^{-1} = I$ erfüllt ist. Diese Methode ist bei jeder invertierbaren Matrix erfolgreich anwendbar. Die Korrektheit zeigt sich daran, dass bei der Multiplikation der ursprünglichen Matrix mit der berechneten Inversen wieder die Einheitsmatrix entsteht.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501039183,
+      "channel": "plan_pipe_04953651b755",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 19,
+        "end": 19
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Kernaussagen zu Koordinatensystemen und dem Konzept der Jacobi-Matrix:\n\n**Grundlagen der Koordinatensysteme**\nKoordinatensysteme überziehen die Ebene mit einem Raster aus Koordinatenlinien. Bei kartesischen Systemen bestehen diese aus parallelen Geraden, während krummlinige Systeme (wie Polarkoordinaten) komplexe Muster bilden. Die Wahl des passenden Systems ist entscheidend, um die Symmetriebedingungen eines Problems zu vereinfachen. Das Umrechnen zwischen Systemen wird als Koordinatentransformation bezeichnet.\n\n**Die Jacobi-Matrix (Funktionalmatrix)**\nDie Jacobi-Matrix stellt die erste Ableitung einer differenzierbaren Funktion dar und besteht aus allen partiellen Ableitungen erster Ordnung. Sie ermöglicht die Linearisierung (Taylor-Approximation erster Ordnung) einer Funktion in der Nähe eines Punktes $x_0$:\n$f(x) \\approx f(x_0) + J_f(x_0) \\cdot (x - x_0)$\n\n**Die Funktionaldeterminante (Jacobi-Determinante)**\nWenn die Jacobi-Matrix quadratisch ist, bildet ihre Determinante ein wichtiges Maß für das Verhalten der Abbildung:\n1. Lokale Invertierbarkeit: Ist die Determinante ungleich Null, ist die Abbildung lokal umkehrbar.\n2. Orientierung: Ein positives Vorzeichen bedeutet Erhalt der Orientierung, ein negatives eine Umkehrung.\n3. Volumenänderung: Der Betrag der Determinante gibt den lokalen Faktor an, mit dem die Funktion Bereiche expandiert oder staucht.\n\n**Anwendungen**\nDie Jacobi-Matrix findet breite Anwendung bei der Minimierung mehrdimensionaler Funktionen, bei numerischen Approximationen und insbesondere bei Transformationen von Integralen. Ein klassisches Beispiel ist der Übergang von Zylinderkoordinaten $(r, \\phi, z)$ in kartesische Koordinaten, bei dem die Funktionaldeterminante das Verhältnis der Volumenelemente zueinander beschreibt.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501039184,
+      "channel": "plan_pipe_04953651b755",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 20,
+        "end": 21
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die zusammenfassende Übersicht zu den krummlinigen Koordinatensystemen basierend auf den vorliegenden Inhalten:\n\n**Grundprinzip der Koordinatentransformation**\nBei der Transformation von einem Koordinatensystem in ein anderes (z. B. kartesische Koordinaten) ist für das Volumenelement der Betrag der Funktionaldeterminante (Jacobi-Determinante) entscheidend. Da der Betrag verwendet wird, ist das Ergebnis unabhängig von der Reihenfolge der Variablen bei der Differentiation.\n\n**Ebene Polarkoordinaten**\nDie Umrechnung von Polarkoordinaten $(r, \\phi)$ in kartesische Koordinaten $(x, y)$ erfolgt primär über:\n$x = r \\cos(\\phi)$\n$y = r \\sin(\\phi)$\nDas zugehörige Volumenelement ist $dV = r \\, dr \\, d\\phi$.\n\n**Zylinderkoordinaten**\nZylinderkoordinaten $(r, \\phi, z)$ beschreiben den Raum durch eine Erweiterung der Polarkoordinaten um die Höhe $z$. Die Umrechnung in kartesische Koordinaten lautet:\n$x = r \\cos(\\phi)$\n$y = r \\sin(\\phi)$\n$z = z$\nDas Volumenelement ergibt sich zu $dV = r \\, dr \\, d\\phi \\, dz$.\n\n**Kugelkoordinaten**\nKugelkoordinaten $(r, \\theta, \\phi)$ oder $(r, \\phi, \\theta)$ nutzen den Radius, den Polarwinkel und den Azimutwinkel. Die Umrechnung in kartesische Koordinaten lautet:\n$x = r \\sin(\\theta) \\cos(\\phi)$\n$y = r \\sin(\\theta) \\sin(\\phi)$\n$z = r \\cos(\\theta)$\nDie Funktionaldeterminante ergibt für das Volumenelement den Ausdruck $dV = r^2 \\sin(\\theta) \\, dr \\, d\\theta \\, d\\phi$.\n\n**Bestimmung der Winkel**\nBei der Rücktransformation von kartesischen in krummlinige Koordinaten erfordert die Bestimmung des Winkels $\\phi$ eine Fallunterscheidung, um den korrekten Quadranten bzw. das Intervall $(-\\pi, \\pi]$ oder $[0, 2\\pi)$ abzudecken. Durch die Verwendung des Arkuskosinus lässt sich die Anzahl der notwendigen Fallunterscheidungen für die Winkelbestimmung reduzieren.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501039185,
+      "channel": "plan_pipe_04953651b755",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 22,
+        "end": 24
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778501039266,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Was unterscheidet einen physikalischen Vektor laut Text von einer rein mathematischen Definition eines Vektors?",
+            "options": [
+              "Physikalische Vektoren sind unter Basiswechsel im Gegensatz zu mathematischen Vektoren nicht invariant.",
+              "Ein physikalischer Vektor besitzt einen Angriffspunkt, einen Betrag und eine Richtung.",
+              "Physikalische Vektoren können nur als Skalare 0. Ordnung definiert werden.",
+              "Physikalische Vektoren sind ausschließlich auf kartesische Koordinatensysteme beschränkt."
+            ],
+            "correctIndex": 1,
+            "explanation": "Laut Text hat ein physikalischer Vektor einen Angriffspunkt, einen Betrag und eine Richtung, während die Mathematik den Begriff axiomatisch fasst."
+          },
+          {
+            "question": "Warum wird die Masse (m) in der Gleichung F = m * a als 'Tensor 0. Stufe' bezeichnet?",
+            "options": [
+              "Weil sie die Gesamtdimension des physikalischen Systems auf Null reduziert.",
+              "Weil sie bei der Addition von Vektoren immer als neutrales Element fungiert.",
+              "Weil sie als Vektor unter Rauminversion negativ wird.",
+              "Weil sie ein Skalar ist, der als Proportionalitätsfaktor zwischen zwei Tensoren 1. Stufe dient."
+            ],
+            "correctIndex": 3,
+            "explanation": "Skalare werden als Tensoren 0. Ordnung bezeichnet. Hier dient die skalare Masse als Proportionalitätskonstante zwischen dem Kraftvektor und dem Beschleunigungsvektor (beide Tensoren 1. Ordnung)."
+          },
+          {
+            "question": "Was charakterisiert eine Menge von Vektoren als 'linear unabhängig'?",
+            "options": [
+              "Wenn es unmöglich ist, die Vektoren durch Linearkombination zum Nullvektor zu machen (ohne dass alle Faktoren gleichzeitig null sind).",
+              "Wenn man sie durch Strecken oder Stauchen immer zu einem Nullvektor ergänzen kann.",
+              "Wenn sie in einem schiefwinkligen Koordinatensystem definiert sind.",
+              "Wenn sie alle den gleichen Betrag haben und parallel zueinander liegen."
+            ],
+            "correctIndex": 0,
+            "explanation": "Vektoren sind linear unabhängig, wenn sie sich nicht durch Strecken und Stauchen (Linearkombination) zu einem Nullvektor kombinieren lassen, sofern nicht alle Streckfaktoren gleich Null sind."
+          },
+          {
+            "question": "Welche Aussage zur Vektoraddition (als Gruppe V,+) ist laut Text korrekt?",
+            "options": [
+              "Die Vektoraddition ist nicht kommutativ, da a+b nicht dasselbe ist wie b+a.",
+              "Die Vektoraddition ist nicht assoziativ, da die Klammerung das Resultat verändert.",
+              "Das neutrale Element der Vektoraddition ist kein Vektor, sondern die Zahl Null.",
+              "Die Inversen eines Vektors a sind solche Elemente, die mit a addiert den Nullvektor ergeben."
+            ],
+            "correctIndex": 3,
+            "explanation": "Das inverse Element -a ist so definiert, dass a + (-a) = O (Nullvektor) gilt. Die Vektoraddition ist zudem assoziativ und kommutativ."
+          },
+          {
+            "question": "Was misst das Skalarprodukt (inneres Produkt) zweier Vektoren aus physikalischer Sicht?",
+            "options": [
+              "Die Ähnlichkeit der Vektoren, wobei ein Wert nahe 1 Kollinearität anzeigt.",
+              "Das Ausmaß ihrer Orthogonalität durch einen Sinus-Faktor.",
+              "Den räumlichen Flächeninhalt, der durch die beiden Vektoren aufgespannt wird.",
+              "Die Differenz ihrer Beträge unter Berücksichtigung der Rauminversion."
+            ],
+            "correctIndex": 0,
+            "explanation": "Das Skalarprodukt nutzt den Cosinus-Faktor als Ähnlichkeitsmaß; je kolinearer die Vektoren sind, desto näher ist dieser Wert an 1."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778501039267,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Wie wird eine physikalische Größe in Dimension und Einheit notiert?",
+            "back": "[Physikalische Größe] = Einheit (z. B. [Länge] = m)."
+          },
+          {
+            "front": "Was unterscheidet Tensoren verschiedener Stufen bei Gleichungen?",
+            "back": "Gleichungen zwischen Tensoren verschiedener Stufen benötigen Proportionalitäten. Tensoren gleicher Stufe können proportional zueinander sein (z. B. F = m * a)."
+          },
+          {
+            "front": "Wie werden Vektoren nach ihrem Verschiebeverhalten klassifiziert?",
+            "back": "Freie Vektoren (beliebig verschiebbar), linienflüchtige Vektoren (nur längs der Wirkungslinie verschiebbar) und ortsgebundene Vektoren (festem Punkt zugeordnet, z. B. Ortsvektoren)."
+          },
+          {
+            "front": "Welche Eigenschaft haben polare bzw. axiale Vektoren bei einer Rauminversion?",
+            "back": "Polare Vektoren werden bei Inversion negativ, axiale Vektoren beibehalten ihre Richtung."
+          },
+          {
+            "front": "Wann ist eine Menge von Vektoren linear unabhängig?",
+            "back": "Wenn die Vektoren nicht durch Strecken oder Stauchen (mit Koeffizienten ungleich Null) so aneinandergeheftet werden können, dass sich der Nullvektor ergibt."
+          },
+          {
+            "front": "Was zeichnet eine Orthonormal-Basis (ONB) aus?",
+            "back": "Die Basisvektoren stehen paarweise senkrecht aufeinander und haben alle den Betrag 1."
+          },
+          {
+            "front": "Welche Axiome muss eine Menge V mit der Operation + erfüllen, um eine Gruppe zu bilden?",
+            "back": "(G1) Abgeschlossenheit, (G2) Assoziativität, (G3) Existenz eines neutralen Elements (Nullvektor O) sowie Existenz eines inversen Elements."
+          },
+          {
+            "front": "Was misst das Skalarprodukt (inneres Produkt) geometrisch?",
+            "back": "Das Skalarprodukt zweier Vektoren misst deren Ähnlichkeit. Es ist durch den Cosinus des Winkels zwischen den Vektoren charakterisiert."
+          },
+          {
+            "front": "Wie ist die Norm eines Vektors definiert?",
+            "back": "Die Norm eines Vektors V ist definiert als ||V|| = sqrt(V · V) und gibt die Vektorlänge an."
+          },
+          {
+            "front": "Was ist der Unterschied zwischen Skalar- und Vektorprodukt?",
+            "back": "Das Skalarprodukt (inneres Produkt) verwendet einen Cosinus-Faktor und ergibt einen Skalar; das Vektorprodukt (äußeres Produkt/Kreuzprodukt) verwendet einen Sinus-Faktor und ergibt einen Vektor."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-mathematik-aufbau_2",
+      "slides": [
+        {
+          "title": "Lineare Algebra für Mechanik",
+          "bullets": [
+            "Grundlagen für physikalische Mechanik-Vorlesungen.",
+            "Fokus auf Vektoren, Matrizen und Tensoren.",
+            "Vermittlung intuitiver, physikalischer mathematischer Konzepte."
+          ],
+          "notes": "Willkommen zur dritten Lektion. Heute legen wir das mathematische Fundament, um mechanische Probleme präzise zu beschreiben.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Physikalische Größen und Tensoren",
+          "bullets": [
+            "Skalare: Tensoren 0. Ordnung (z.B. Masse).",
+            "Vektoren: Tensoren 1. Ordnung (z.B. Kraft).",
+            "Gesetze als Proportionalitäten zwischen Tensoren.",
+            "Beispiel: F = m * a (Kraft = Masse * Beschleunigung)."
+          ],
+          "notes": "Physikalische Größen haben Dimensionen. Wir nutzen Tensoren, um die Kopplung zwischen diesen Größen mathematisch zu formulieren.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Klassifizierung von Vektoren",
+          "bullets": [
+            "Freie, linienflüchtige und ortsgebundene Vektoren.",
+            "Transformationseigenschaften bei Basiswechsel.",
+            "Polare vs. axiale Vektoren (Verhalten unter Rauminversion).",
+            "Nullvektor als Identitätselement der Addition."
+          ],
+          "notes": "Nicht jeder Pfeil ist gleich. Die Art der Bindung im Raum entscheidet über die physikalische Interpretation.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Koordinaten und Basisvektoren",
+          "bullets": [
+            "Basis als Menge linear unabhängiger Vektoren.",
+            "Orthonormal-Basis (ONB): Senkrechte Einheitsvektoren.",
+            "Komponentendarstellung durch Projektion auf Basis.",
+            "Invarianz: Vektoren existieren unabhängig von der Basis."
+          ],
+          "notes": "Wie wir einen Vektor messen, hängt vom gewählten System ab. Die physikalische Realität bleibt jedoch invariant.",
+          "page_range": "4-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Gruppentheoretische Grundlagen",
+          "bullets": [
+            "Vektorenraum (V, +) bildet eine Gruppe.",
+            "Abgeschlossenheit, Assoziativität, neutrales Element.",
+            "Inverses Element erlaubt Vektor-Subtraktion.",
+            "Vorgriff auf Quantenmechanik durch Analogien."
+          ],
+          "notes": "Die Gruppenstruktur garantiert uns, dass unsere Rechenregeln konsistent und verlässlich sind.",
+          "page_range": "6",
+          "image_prompt": ""
+        },
+        {
+          "title": "Skalarprodukt und Arbeit",
+          "bullets": [
+            "Skalarprodukt misst Ähnlichkeit (Projektion) von Vektoren.",
+            "Definition: W = F · s (Kraft mal Weg).",
+            "Normierung führt zum normierten Vektorraum.",
+            "Wichtige Sätze: Cauchy-Schwarz & Dreiecks-Ungleichung."
+          ],
+          "notes": "Das Skalarprodukt verknüpft Vektoren zu Skalaren. In der Mechanik ist es der Schlüssel zur Energieberechnung.",
+          "page_range": "7-9",
+          "image_prompt": ""
+        },
+        {
+          "title": "Vektorprodukt und Basisrechnungen",
+          "bullets": [
+            "Eigenschaften: Äußeres Produkt liefert Vektor.",
+            "Nutzen: Berechnung von Drehmomenten (Sinusfaktor).",
+            "Vollständigkeitsrelation & Kronecker-Symbol.",
+            "Rechnen mit Komponenten in der ONB."
+          ],
+          "notes": "Das Vektorprodukt gibt uns eine Richtung senkrecht zur Ebene – ideal für Rotationsdynamik.",
+          "page_range": "10-15",
+          "image_prompt": ""
+        },
+        {
+          "title": "Matrizen und Determinanten",
+          "bullets": [
+            "Matrizen beschreiben Transformationen im Raum.",
+            "Determinante: Skalierung von Volumen/Flächen.",
+            "Epsilontik zur effizienten Berechnung.",
+            "Inverse Matrix bei regulären Systemen (Det ≠ 0)."
+          ],
+          "notes": "Matrizen sind unsere Werkzeuge, um den Raum zu drehen oder Koordinaten systematisch zu transformieren.",
+          "page_range": "16-18",
+          "image_prompt": ""
+        },
+        {
+          "title": "Inverse Matrix: Gauß-Jordan-Verfahren",
+          "bullets": [
+            "Lösung linearer Gleichungssysteme.",
+            "Umformung zur Einheitsmatrix durch Zeilenoperationen.",
+            "Anwendung identischer Schritte auf Einheitsmatrix.",
+            "Resultat ist die inverse Matrix A⁻¹."
+          ],
+          "notes": "Wenn wir Prozesse umkehren müssen, führt kein Weg am Gauß-Jordan-Verfahren vorbei.",
+          "page_range": "19",
+          "image_prompt": ""
+        },
+        {
+          "title": "Transformationen & Krummlinige Koordinaten",
+          "bullets": [
+            "Jacobi-Matrix zur Linearisierung (Taylor-Näherung).",
+            "Funktionaldeterminante für Volumenelemente.",
+            "Wechsel zu Polarkoordinaten bei Symmetrien.",
+            "Erleichterung komplexer Berechnungen durch Systemwahl."
+          ],
+          "notes": "Oft ist die Wahl des Koordinatensystems entscheidend, ob ein Problem einfach lösbar ist. Hier helfen uns Jacobi-Matrizen.",
+          "page_range": "20-24",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 3 — Lineare Algebra für Mechanik - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778501039166,
+      "pdfName": "Lineare Algebra für Mechanik"
+    }
+  ],
+  "sourceHash": "a69b140df0a774a9"
+}

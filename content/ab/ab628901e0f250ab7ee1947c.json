@@ -1,0 +1,335 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Applied Cryptography and Disk Encryption - Lesson 2 — Cryptsetup (LUKS) on Linux",
+    "pdfName": "Cryptsetup",
+    "createdAt": 1778572714974,
+    "exportedAt": "2026-05-12T07:58:34.975Z",
+    "meta": {
+      "courseId": "course-en-cryptography-applied",
+      "lessonIndex": 1,
+      "courseTitle": "Applied Cryptography and Disk Encryption",
+      "lessonObjective": "Full-disk encryption in practice.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-cryptsetup",
+            "title": "Cryptsetup",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Cryptsetup"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_d64a4dd50c08",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-1",
+          "chapterTitle": "Introduction to Linux Encryption Methods",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-3",
+          "chapterTitle": "Installation and Setup of LUKS Encryption",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-5",
+          "chapterTitle": "Formatting, Mounting, and Managing Encrypted Partitions",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778572714974,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Lesson Summary: Implementing LUKS Encryption on Linux\n\nThis lesson covers the practical application of **LUKS (Linux Unified Key Setup)**, a block-level encryption standard for Linux systems.\n\n#### 1. Overview of Encryption Methods\nThe text highlights several approaches to data encryption, categorizing them into:\n*   **Filesystem-level:** eCryptfs (metadata stored per file) and EncFS (user-space filesystem).\n*   **Block-level:** Loop-AES and the recommended standard, **dm-crypt+LUKS**, which provides transparent encryption for whole disks, partitions, and logical volumes [S.1].\n\n#### 2. Preparation and Installation\n*   **Package Management:** Install the necessary utilities using `apt-get install cryptsetup` (Debian/Ubuntu) or `yum install cryptsetup-luks` (RHEL/CentOS/Fedora) [S.1, S.2].\n*   **Disk Preparation:** To prevent forensic recovery of previous data, overwrite the target partition (e.g., `/dev/xvdc`) with random data using the `shred` command [S.2].\n\n#### 3. Configuring LUKS\n*   **Initialization:** Use `cryptsetup luksFormat` to initialize the volume and define the master passphrase [S.2, S.3].\n*   **Mapping:** Use `cryptsetup luksOpen` to create a virtual mapping (e.g., `/dev/mapper/backup2`), which acts as the unencrypted gateway to the data [S.3].\n*   **Formatting/Mounting:** Once mapped, fill the device with random-looking data (zeros) using `dd` to mask usage patterns, format with a filesystem (e.g., `ext4`), and mount as a standard directory [S.4].\n\n#### 4. Maintenance and Security\n*   **Filesystem Checks:** `fsck` can be run against mapped LUKS devices after unmounting the partition [S.5].\n*   **Key Management:** LUKS supports up to 8 passphrase slots. You can manage access by adding new passphrases (`luksAddKey`) or removing old ones (`luksRemoveKey`) [S.5].\n*   **Security Workflow:** To secure data, always unmount the filesystem and close the encrypted mapping (`luksClose`) [S.4].\n\n***Warning:** The LUKS passphrase is not recoverable. If the password is forgotten, the data on the encrypted partition will be permanently inaccessible [S.3].*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572714974,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-cryptography-applied_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 2 — Cryptsetup (LUKS) on Linux - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lesson 2: Cryptsetup (LUKS) on Linux</div><ul class=\"pm-chat-slide-bullets\"><li>Mastering full-disk encryption with LUKS.</li><li>Securing data partitions on Linux systems.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778572714975,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Linux Encryption Methods\n\nThis document provides an introductory guide to encrypting partitions in Linux using the Linux Unified Key Setup (LUKS). It categorizes encryption approaches into two primary levels:\n\n**1. Filesystem Stacked Level Encryption**\nThis method operates at the file level, allowing individual files or directories to be encrypted.\n* eCryptfs: A widely used cryptographic filesystem that stores metadata within file headers. It is used by Ubuntu’s Encrypted Home Directory and ChromeOS.\n* EncFS: An open-source, user-space filesystem that utilizes the FUSE library and does not require special administrative permissions.\n\n**2. Block Device Level Encryption**\nThis method encrypts entire partitions, disks, or volumes.\n* Loop-AES: A fast, transparent encryption tool that does not require modifications to the Linux kernel.\n* Truecrypt: A cross-platform encryption tool that is now deprecated.\n* dm-crypt+LUKS: The standard Linux kernel subsystem for transparent encryption of disks, removable media, and logical volumes.\n\n**Setup Instructions**\nTo utilize dm-crypt+LUKS on Debian or Ubuntu-based systems, the user must install the cryptsetup utility. This is achieved by executing the command:\n\n$ apt-get install cryptsetup$",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572714984,
+      "channel": "plan_pipe_d64a4dd50c08",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 1
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text outlines the process of installing and configuring LUKS (Linux Unified Key Setup) encryption on a Linux partition. The key points are summarized below:\n\nInstallation\nTo start the encryption process, you must install the cryptsetup package. On Ubuntu-based systems, this is done via `apt-get`, while RHEL/CentOS/Fedora systems use `yum install cryptsetup-luks` (p. 2).\n\nData Sanitization\nBefore encryption, it is recommended to overwrite the target partition (in this example, `/dev/xvdc`) with random data to prevent forensic recovery. The command `shred --verbose --random-source=/dev/urandom --iterations=3 /dev/xvdc` is used for this purpose (p. 2).\n\nEncryption Setup\nThe partition is prepared using the `cryptsetup luksFormat` command, which initializes the volume and establishes a passphrase (p. 2, 3). Users must exercise caution, as this action is destructive and the passphrase cannot be recovered if lost (p. 3).\n\nMapping and Verification\nAfter formatting, the device must be mapped to be accessible. By using `cryptsetup luksOpen /dev/xvdc backup2`, the encrypted device becomes available under `/dev/mapper/backup2` (p. 3). The status of this mapping can be verified using `cryptsetup -v status backup2`, and utility commands like `luksDump` allow users to inspect the LUKS header information (p. 3).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572714985,
+      "channel": "plan_pipe_d64a4dd50c08",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines procedures for managing encrypted partitions using LUKS (dm-crypt).\n\nData Preparation and Partitioning\nTo protect against the disclosure of usage patterns, one should initialize an encrypted device by overwriting it with zeros using the `dd` command, optionally utilizing `pv` to track progress (p. 4). Once the device is prepared, a filesystem (such as ext4) can be created and mounted to a directory for use (p. 4). Unmounting and closing the LUKS partition are essential steps for securing the data once operations are complete (p. 4).\n\nMaintenance and Security\nThe `fsck` command can be used to check and repair filesystems on LUKS-based volumes provided the partition is unmounted first (p. 5). Key management is handled through `cryptsetup`, which allows users to view existing key slots, add new passphrases via `luksAddKey`, or remove old passwords using `luksRemoveKey` (p. 5). Each device supports a maximum of 8 passwords, ensuring flexible access control (p. 5).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572714986,
+      "channel": "plan_pipe_d64a4dd50c08",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778572715074,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why is the 'shred' command recommended on the partition before running 'luksFormat'?",
+            "options": [
+              "To improve filesystem performance once the partition is encrypted.",
+              "To initialize the LUKS header structure for faster encryption.",
+              "To protect against forensic investigation by overwriting existing data.",
+              "To verify that the partition is free of physical bad sectors."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text states that overwriting the partition with random data using 'shred' is performed to protect the user against forensic investigation."
+          },
+          {
+            "question": "What is the purpose of running 'dd if=/dev/zero of=/dev/mapper/backup2' after opening the encrypted volume?",
+            "options": [
+              "To wipe the encryption keys from the system memory.",
+              "To obscure usage patterns by filling the encrypted container with zeros, making it indistinguishable from random data to outside observers.",
+              "To format the underlying disk partition with the ext4 filesystem.",
+              "To increase the iteration time of the LUKS passphrase hashing."
+            ],
+            "correctIndex": 1,
+            "explanation": "Filling the encrypted device with zeros ensures that the data on the disk appears as random data, which hides the actual usage patterns of the partition."
+          },
+          {
+            "question": "If you need to change your LUKS passphrase, which of the following describes the correct logic?",
+            "options": [
+              "You must decrypt the entire partition, re-run luksFormat, and restore data from a backup.",
+              "You can add a new passphrase and remove the old one using cryptsetup commands.",
+              "You simply overwrite the current passphrase by running luksFormat again on the active mapping.",
+              "You must edit the /etc/fstab file to update the encryption key reference."
+            ],
+            "correctIndex": 1,
+            "explanation": "LUKS supports multiple keys. You can add a new passphrase using 'luksAddKey' and subsequently remove the old one using 'luksRemoveKey', provided you have the current passphrase."
+          },
+          {
+            "question": "What is the primary difference between eCryptfs and dm-crypt/LUKS as described in the lesson?",
+            "options": [
+              "eCryptfs operates at the block device level, while dm-crypt operates at the filesystem level.",
+              "eCryptfs is deprecated, whereas dm-crypt is the modern standard for all Linux systems.",
+              "eCryptfs is a stacked filesystem that encrypts individual files, while dm-crypt/LUKS provides block-level encryption for entire partitions.",
+              "dm-crypt is user-space software, while eCryptfs is handled internally by the kernel."
+            ],
+            "correctIndex": 2,
+            "explanation": "eCryptfs is a cryptographic stacked Linux filesystem that manages encryption per file, whereas dm-crypt/LUKS works at the block device level to encrypt entire partitions or volumes."
+          },
+          {
+            "question": "When using 'cryptsetup luksOpen', what does the second argument (e.g., 'backup2') represent?",
+            "options": [
+              "The name of the physical block device on the disk.",
+              "The label given to the mapping device created in /dev/mapper/.",
+              "The alias for the encryption algorithm being used.",
+              "The mount point directory where the filesystem will be accessed."
+            ],
+            "correctIndex": 1,
+            "explanation": "The command creates a mapping, and the second argument acts as the name for the mapped device that appears in /dev/mapper/."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778572715075,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary function of dm-crypt+LUKS?",
+            "back": "It is a transparent disk encryption subsystem in the Linux kernel used to encrypt whole disks, partitions, removable media, and logical volumes."
+          },
+          {
+            "front": "What command is used to install cryptsetup on Debian/Ubuntu systems?",
+            "back": "sudo apt-get install cryptsetup"
+          },
+          {
+            "front": "Before encrypting a partition, why is it recommended to overwrite it using the 'shred' command?",
+            "back": "To overwrite existing data with random patterns, which helps protect against forensic investigation."
+          },
+          {
+            "front": "Which command initializes an encrypted volume and sets the initial passphrase?",
+            "back": "cryptsetup luksFormat /dev/[device]"
+          },
+          {
+            "front": "What is the command to create an active mapping for an encrypted partition named 'backup2'?",
+            "back": "cryptsetup luksOpen /dev/[device] backup2"
+          },
+          {
+            "front": "Why is it recommended to write zeros to the mapped encrypted device (e.g., using 'dd') after format?",
+            "back": "To ensure the device appears as random data to the outside world, preventing the disclosure of usage patterns."
+          },
+          {
+            "front": "What tool is used to monitor the progress of the 'dd' command while writing data?",
+            "back": "The 'pv' (Pipe Viewer) command."
+          },
+          {
+            "front": "How do you securely lock an encrypted partition after unmounting it?",
+            "back": "Use the 'cryptsetup luksClose [mapping_name]' command."
+          },
+          {
+            "front": "Can you run 'fsck' on a LUKS-based partition?",
+            "back": "Yes, but the partition must be unmounted before running it; the fsck command is run against the mapped device (e.g., /dev/mapper/backup2)."
+          },
+          {
+            "front": "How do you add a new passphrase to a LUKS encrypted device?",
+            "back": "Use the 'cryptsetup luksAddKey /dev/[device]' command."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-cryptography-applied_1",
+      "slides": [
+        {
+          "title": "Lesson 2: Cryptsetup (LUKS) on Linux",
+          "bullets": [
+            "Mastering full-disk encryption with LUKS.",
+            "Securing data partitions on Linux systems."
+          ],
+          "notes": "Welcome to our second lesson. Today we will focus on practical full-disk encryption using the Linux Unified Key Setup standard.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Understanding Linux Encryption",
+          "bullets": [
+            "Diverse methods: eCryptfs, EncFS, and Loop-AES.",
+            "dm-crypt+LUKS provides block-level encryption.",
+            "LUKS natively encrypts whole disks and volumes.",
+            "Install via 'apt-get install cryptsetup' (Debian/Ubuntu)."
+          ],
+          "notes": "Linux offers various encryption paths, but dm-crypt combined with LUKS is the industry standard for robust block-device security.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Preparing Your Partition",
+          "bullets": [
+            "Install cryptsetup utilities on your distribution.",
+            "Securely overwrite data with random noise (p. 2).",
+            "Format partition with strong encryption parameters (p. 2).",
+            "LUKS passphrases are non-recoverable; keep them safe."
+          ],
+          "notes": "Before encrypting, we sanitize the raw partition. Remember, the passphrase is the only gatekeeper; lose it, and the data is gone forever.",
+          "page_range": "2-3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Mapping and Managing Volumes",
+          "bullets": [
+            "Open the encrypted container using 'luksOpen' (p. 3).",
+            "Check mapping status via 'dm-crypt' device nodes.",
+            "Securely wipe the mapped volume with zeros (p. 4).",
+            "Standard formatting (ext4) and mounting apply (p. 4)."
+          ],
+          "notes": "Once formatted, we interact with a mapped device. Zeroing the volume prevents outside observers from discerning usage patterns.",
+          "page_range": "3-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Maintenance and Key Management",
+          "bullets": [
+            "Run fsck natively on mounted LUKS encrypted systems.",
+            "LUKS supports up to eight different master keys.",
+            "Add or remove passphrases with luksAddKey/RemoveKey.",
+            "Always verify operations with luksDump (p. 5)."
+          ],
+          "notes": "Encryption doesn't stop you from performing file system checks. You can also manage access keys dynamically without re-encrypting the data.",
+          "page_range": "5",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 2 — Cryptsetup (LUKS) on Linux - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778572714974,
+      "pdfName": "Cryptsetup"
+    }
+  ],
+  "sourceHash": "d07f41d84e05c1db"
+}

@@ -1,0 +1,542 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Database Engineering: SQL, Postgres, Oracle, SQL Server - Lesson 2: SQL Dialects Reference",
+    "pdfName": "SQL Dialects Reference",
+    "createdAt": 1778790890936,
+    "exportedAt": "2026-05-14T20:34:50.937Z",
+    "meta": {
+      "courseId": "course-en-databases-engineering",
+      "lessonIndex": 1,
+      "courseTitle": "Database Engineering: SQL, Postgres, Oracle, SQL Server",
+      "lessonObjective": "Relational model, SELECT/JOIN, normalization.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-sql-dialects-reference",
+            "title": "SQL Dialects Reference",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/SQL_Dialects_Reference"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_89c66914a991",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-12",
+          "chapterTitle": "Implementations and Data Structure Definitions",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "12-14",
+          "chapterTitle": "Identifiers in SQL",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "15-16",
+          "chapterTitle": "Sequence and Identity Support",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "17-21",
+          "chapterTitle": "Mathematical and Trigonometric Functions",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "22-24",
+          "chapterTitle": "Aggregate Functions",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "25-31",
+          "chapterTitle": "Date, Time, and String Functions",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "32-37",
+          "chapterTitle": "Misc Functions and Subqueries",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "37-40",
+          "chapterTitle": "Hierarchical and Replace Queries",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "41-45",
+          "chapterTitle": "Data Manipulation and Transactions",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "46-56",
+          "chapterTitle": "Procedures, Functions, XML, and Admin",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778790890936,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: SQL Dialects Reference\n\nThis document serves as a compact, comparative reference for developers and system administrators working with multiple SQL implementations. It addresses the challenge of SQL standardization by highlighting deviations and best practices across various dialects.\n\n#### Core Objectives\n*   **Portability:** Assist developers in writing SQL that works across different platforms or porting projects between SQL implementations.\n*   **Efficiency:** Provide a quick reference for syntax and \"pitfalls\" for professionals already familiar with at least one SQL dialect.\n*   **Completeness:** Focus on advanced topics and minor differences between major database systems rather than general SQL tutorials.\n\n#### Scope of Coverage\nThe guide covers multiple implementations (including DB2, Firebird, MonetDB, MySQL, MSSQL, Oracle, PostgreSQL, SQLite, Virtuoso, and Linter) and addresses several functional areas:\n*   **Data Definition:** Numeric, character, date/time, large objects (LOBs), and miscellaneous types.\n*   **Syntax:** Delimited identifiers and auto-increment/sequence strategies.\n*   **Operations & Functions:** Mathematical (trigonometric and numeric) functions, aggregate functions, and date/time manipulation.\n*   **Advanced Features:** Subqueries, hierarchical queries, transaction handling, and stored procedures.\n*   **Administration:** Database dumping, restoration, and command-line interactions.\n\n#### Key Takeaways for Developers\n*   **Dialect Nuance:** While SQL is standardized, implementations often behave differently regarding case sensitivity (e.g., delimited identifiers), random number generation, and data type handling.\n*   **Implementation Standards:** The reference maps features against the **SQL:2011 Standard**, noting whether a feature is standard-compliant or a dialect-specific extension.\n*   **Efficiency:** The document prioritizes \"universal solutions\" where possible. Where universal approaches are unavailable, it outlines recommended industry best practices for specific SQL engines.\n\n***\n\n*Reference Document: SQL Dialects Reference [S.1, S.3, S.4]*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790890936,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-databases-engineering_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 2: SQL Dialects Reference - Presentation</span><span class=\"pm-chat-count\">10 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">SQL Dialects Reference</div><ul class=\"pm-chat-slide-bullets\"><li>A compact guide for navigating diverse SQL implementations.</li><li>Focuses on practical portability and common pitfalls (p. 3-4).</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778790890937,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as a comparative reference for various SQL dialects, designed to assist developers and administrators in navigating the inconsistencies between different SQL implementations.\n\n### Purpose and Scope\nThe reference intends to provide a compact, professional guide for professionals who need to work across multiple SQL environments, port projects, or ensure application portability. It is not intended for beginners, as it focuses on advanced topics, minor syntax deviations, and implementation-specific pitfalls rather than general SQL education.\n\n### Content Coverage\nThe text provides comparative data for several major SQL systems, including:\n- IBM DB2\n- Firebird (2.5)\n- MonetDB (V11)\n- MySQL (5.0)\n- MSSQL (2008)\n- Oracle (11g2)\n- PostgreSQL (8.4)\n- SQLite\n- OpenLink Virtuoso\n- Linter\n\n### Key Technical Areas\nThe reference details structural and functional variations across the following topics:\n\n1. Data Definitions: Comparative analysis of numeric types (including precision $p$ and scale $s$), character types, date/time formats, and large object (LOB) handling.\n2. Dialect Features: Coverage of auto-increment columns, mathematical functions (trigonometric and aggregate), string functions, and expression handling.\n3. Query Operations: Instructions on subqueries, limiting result sets, hierarchical queries, and data modification techniques (e.g., Replace, Insert/Update).\n4. Procedural & Administrative: Guidelines for stored procedures, user-defined functions (UDF), transaction management, and database dump/restore operations.\n5. Identifiers: An explanation of regular versus delimited identifiers, which allow for the use of SQL keywords and special characters in object naming.\n\nThe book is structured to reference official documentation and standards (SQL-92 through SQL:2011) to ensure readers can verify specific details for their implementation of choice.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790890946,
+      "channel": "plan_pipe_89c66914a991",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 12
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines the use of delimited identifiers and auto-increment mechanisms across various SQL dialects [S.12-14].\n\n### Delimited Identifiers\nDelimited identifiers allow the use of SQL keywords and special characters as object names. While the SQL standard mandates that these identifiers be case-sensitive and enclosed in double quotes, implementation varies significantly [S.12, S.13]:\n\n* Standard usage: Double quotes (\"identifier\") are the standard for case-sensitive identifiers [S.13].\n* Variant syntax: Some systems use non-standard delimiters, such as brackets ([identifier]) in MSSQL and SQLite, or backticks (`) in MySQL [S.13].\n* Case sensitivity: Many databases follow the standard (case-sensitive when quoted), but others exhibit unique behaviors. For example, Oracle converts unquoted identifiers to uppercase, whereas PostgreSQL converts them to lowercase [S.13].\n* Exception: SQLite is unique in that its identifiers are never case-sensitive, even when quoted [S.13, S.14].\n\n### Auto-increment Columns\nThe SQL standard provides two primary methods for generating auto-incrementing values for columns, typically used for Primary Keys [S.14].\n\n1. Identity Columns: Utilizing the syntax $$GENERATED \\{ ALWAYS | BY DEFAULT \\} AS IDENTITY$$, this acts as an extension to numeric types [S.14].\n2. Sequences and Triggers: A more manual approach that involves creating a sequence object and using a trigger to manage the insertion of values into the table [S.14].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790890947,
+      "channel": "plan_pipe_89c66914a991",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 12,
+        "end": 14
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document provides a technical overview of how different SQL dialects handle auto-incrementing columns and sequences.\n\nKey Methods for Auto-Incrementing Columns\n\nThe documentation identifies three primary approaches used across various database systems:\n\n1. Sequences with Triggers: This traditional approach involves creating a sequence object and a trigger that intercepts INSERT operations to assign the next value from that sequence (p. [S.15], [S.16]). Oracle, for instance, uses a trigger to ensure the sequence remains synchronized with table data (p. [S.16]).\n\n2. Identity Columns: Many modern SQL dialects support the IDENTITY keyword to handle auto-incrementing values automatically. This includes standard implementations (e.g., $$col1 INT IDENTITY (1,1)$$) and more advanced configurations like those found in Firebird 3.0+, which allow for specific start values, increment logic, and cycling behavior (p. [S.15], [S.16]).\n\n3. AUTO_INCREMENT/SERIAL Keywords: Systems like MySQL and SQLite utilize intuitive keywords to designate primary keys that automatically increment. SQLite distinguishes between standard primary keys and the specific AUTOINCREMENT keyword, the latter of which prevents the reuse of identifiers from deleted rows (p. [S.15], [S.16]).\n\nSummary of Dialect Differences\n\nFirebird: Recommended practice involves combining sequences with triggers, though newer versions support the identity property (p. [S.15]).\n\nOracle: Historically relied on triggers and sequences, but since version 12.1, it supports the GENERATED BY DEFAULT AS IDENTITY clause (p. [S.16]).\n\nSQLite: Offers simple syntax for auto-incrementing columns, with the AUTOINCREMENT keyword serving as a specific constraint for managing identifier reuse (p. [S.16]).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790890948,
+      "channel": "plan_pipe_89c66914a991",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 15,
+        "end": 16
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section of the SQL Dialects Reference outlines various numeric and mathematical functions supported across different database management systems, specifically comparing them against the Standard SQL:2011 specifications.\n\n**Mathematical and Trigonometric Functions**\nThe reference provides a comprehensive list of functions available in DB2, Firebird, and Ingres. Standard trigonometric operations, such as sine, cosine, tangent, and their respective arc and hyperbolic variants (e.g., $ASIN(x)$, $ACOS(x)$, $SINH(x)$, $TANH(x)$), are widely supported across these dialects [S.18, S.19].\n\n**Numeric Operations**\nStandard arithmetic and rounding functions are provided to manipulate numeric data [S.20]:\n*   Basic operations include $ABS(x)$ for absolute value, $SIGN(x)$ for sign detection, and $MOD(x, y)$ for calculating remainders.\n*   Functions such as $CEILING(x)$ and $FLOOR(x)$ are used for integer rounding.\n*   Precision management is handled via $ROUND(x, d)$ and various forms of truncation like $TRUNC(x, n)$ or $TRUNCATE(x, n)$.\n*   Advanced mathematical operations include powers and roots: $SQRT(x)$, $EXP(x)$, and $POWER(x, y)$ (or the alternative syntax $x ** y$) [S.20].\n\n**Logarithmic and Random Number Functions**\nLogarithmic calculations are supported through $LN(x)$, $LOG(b, x)$, and $LOG10(x)$ [S.21]. Random number generation is also addressed, though implementation varies: while some systems use $RAND()$ or $RAND(x)$ to generate values or set seeds, others, such as Ingres, may require specific commands like $RANDOMF()$ or $SET RANDOM_SEED$ [S.21].\n\n**List Comparisons and Aggregate Functions**\n*   Functions like $MAXVALUE(list)$ and $MINVALUE(list)$ are available to determine the highest or lowest numeric values in a set [S.21].\n*   Aggregate functions are defined to operate on groups of values to return a single scalar result. Per the SQL standard, most aggregate functions support the use of the $ALL$ quantifier, with specific exceptions such as $VAR\\_POP$, $VAR\\_SAMP$, $STDDEV\\_POP$, and $STDDEV\\_SAMP$ [S.21].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790890949,
+      "channel": "plan_pipe_89c66914a991",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 17,
+        "end": 21
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This documentation excerpt outlines the usage and implementation differences of various aggregate functions across SQL standards and specific database systems (DB2, Firebird). The following summary highlights the primary technical considerations described in [S.22], [S.23], and [S.24].\n\n### Aggregate Quantifiers\nAggregate functions support optional quantifiers denoted as $[DISTINCT|ALL]$ (p. 22). \n* $ALL$: The default behavior; includes all values processed by the function.\n* $DISTINCT$: Filters the input set to only include unique values before performing the calculation.\n\n### Database Compatibility and Functionality\nThe documentation provides a comparison of how different SQL environments handle standard aggregate operations (p. 23, 24):\n\n* Basic Counts: While $COUNT(*)$ is universally supported for counting groups, specific column-based counts permit the use of $DISTINCT$ qualifiers.\n* Arithmetic Aggregates: Functions such as $SUM(x)$, $AVG(x)$, $MIN(x)$, and $MAX(x)$ are widely available. Support for $DISTINCT$ within these functions varies by platform.\n* Statistical Functions: Operations regarding population/sample standard deviation ($STDDEV\\_POP, STDDEV\\_SAMP$) and variance ($VAR\\_POP, VAR\\_SAMP$) are provided, with implementation nuances depending on the SQL dialect.\n* Covariance: $COVAR\\_POP(x, y)$ and $COVAR\\_SAMP(x, y)$ functions are documented, though availability for sample covariance varies across systems.\n\n### Implementation Constraints\nCertain operations are not natively available in all SQL dialects. For example, string concatenation (using a separator) and specific sample covariance calculations may require alternative approaches (p. 23, 24). Suggested workarounds for these missing features include:\n* Developing user-defined aggregator functions.\n* Utilizing internal, undocumented system functions (e.g., $wmsys.wm\\_concat$).\n* Implementing logic through database-specific features like array types in PostgreSQL.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790890950,
+      "channel": "plan_pipe_89c66914a991",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 22,
+        "end": 24
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text (pp. 25–31) outlines key functions and expressions for date, time, and string manipulation across various SQL dialects (specifically comparing Standard SQL with DB2, Firebird, and SQLite).\n\n**Date and Time Functions**\nDate and time operations vary significantly by dialect. Standard SQL utilizes functions like $CURRENT\\_DATE$, $CURRENT\\_TIME$, and $CURRENT\\_TIMESTAMP$ (pp. 25) to retrieve temporal data. Mathematical operations, such as adding or subtracting time intervals, are typically performed using arithmetic operators (e.g., $date + arg$) (p. 25). Extraction of specific components like years, months, or days is accomplished via the $EXTRACT$ function (p. 26).\n\n**String Manipulation Functions**\nThe documentation categorizes several essential string operations available across SQL systems (pp. 28–30):\n\nCharacter conversion and analysis: ASCII and character conversion ($ASCII(x)$, $CHR(x)$), length assessment ($CHAR\\_LENGTH(x)$, $OCTET\\_LENGTH(x)$), and case conversion ($LOWER(x)$, $UPPER(x)$).\n\nString modification: Concatenation (often $arg1 || arg2$), trimming white space ($TRIM$, $LTRIM$, $RTRIM$), and substring extraction ($SUBSTRING$ or $SUBSTR$).\n\nPattern and advanced analysis: Pattern searching ($INSTR$, $LOCATE$, $POSSTR$), string replacement ($REPLACE$), and phonetic indexing ($SOUNDEX(x)$).\n\n**Platform Specifics**\nThe text highlights that while Standard SQL provides a foundation, implementations often differ (pp. 25, 28). For instance, DB2 frequently offers specialized functions like $VARCHAR\\_FORMAT$ or $LCASE(x)$, whereas SQLite may omit certain features or require specific compilation flags, such as those needed for $SOUNDEX$ (p. 30). Common tasks like converting dates to strings or vice versa often rely on database-specific casting or formatting functions like $TO\\_CHAR$ or $CAST$ (pp. 25–26).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790890951,
+      "channel": "plan_pipe_89c66914a991",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 25,
+        "end": 31
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text outlines variations in SQL syntax across different database systems regarding common query operations.\n\nStandard SQL Functions\nMany systems support the $CAST(val AS type)$ syntax for data conversion and the $COALESCE(val_1, val_2, ...)$ function to handle NULL values. While $NULLIF(a, b)$ is standard for returning NULL if two values are equal, some systems provide vendor-specific alternatives like $NVL$ (p. 32).\n\nSubqueries and CTEs\nSubqueries in the FROM clause are widely supported, frequently requiring an alias. Common Table Expressions (CTEs) are typically initiated using $WITH subquery\\_alias AS (...)$, though syntax and support vary by vendor (p. 33).\n\nQueries Without Tables\nTo evaluate expressions without referencing a physical table, diverse approaches are used. While some systems allow a simple $SELECT expressions$ statement, others require specific dummy tables, such as $FROM dual$ in Oracle and MySQL, $FROM sysibm.sysdummy1$ in DB2, or $FROM rdb$database$ in Firebird (p. 34).\n\nLimiting Results\nThere is significant divergence in how result sets are limited. While the standard uses $OFFSET \\dots FETCH \\dots ROWS ONLY$, many vendors implement vendor-specific keywords like $LIMIT$, $TOP$, or $FIRST$ combined with $SKIP$ or $OFFSET$ (p. 35, 36).\n\nAdvanced Operations\nThe document notes that set operations like EXCEPT (often implemented as $NOT IN$ or $MINUS$) and hierarchical \"self-referencing\" queries are used to navigate tree-like data structures (p. 37).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790890952,
+      "channel": "plan_pipe_89c66914a991",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 32,
+        "end": 37
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section provides an overview of two advanced SQL operations: Hierarchical Queries and \"Replace\" (Upsert) queries across different database dialects.\n\n### Hierarchical Queries\nHierarchical queries allow the retrieval of data structured as a self-referencing tree (e.g., retrieving an organizational structure from an `id` and `father` column) (p. 37).\n\n*   Standard approach: Most modern databases use a Common Table Expression (CTE) with the `WITH RECURSIVE` syntax to define a base case and a recursive step (p. 38).\n*   Oracle/Linter approach: Use the proprietary `CONNECT BY` clause paired with `START WITH` to define the tree's root and traversal direction (p. 38).\n\n### Replace (Upsert) Queries\nA Replace query inserts a new row if a primary key does not exist; otherwise, it updates the existing row (p. 38).\n\n*   Standard approach: The `MERGE` statement is the SQL:2003 standard for performing conditional updates or inserts (p. 39).\n*   Database-specific implementations:\n    *   MySQL: Supports `INSERT ... ON DUPLICATE KEY UPDATE` and the non-standard `REPLACE` statement (p. 40).\n    *   PostgreSQL: Uses `INSERT ... ON CONFLICT ... DO UPDATE` (p. 40).\n    *   SQLite: Uses the `REPLACE` statement, which performs the operation by deleting the old row before inserting the new one (p. 40).\n    *   Firebird: Provides a non-standard shortcut `UPDATE OR INSERT INTO` in addition to the standard `MERGE` (p. 39).\n    *   Oracle/MSSQL: Primarily utilize the `MERGE` statement, though they also support multi-statement procedural approaches (p. 39, 40).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790890953,
+      "channel": "plan_pipe_89c66914a991",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 37,
+        "end": 40
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text (pages [S.41]–[S.45]) outlines syntax variations across SQL dialects regarding data manipulation, transaction management, and stored procedures.\n\n### Data Manipulation Operations\nQuery results can be handled in two primary ways:\n\n1. Inserting into existing tables: Most SQL dialects (including Standard, DB2, MSSQL, MySQL, Oracle, etc.) utilize the following syntax:\nINSERT INTO existing_table SELECT columns FROM table ...\n\n2. Saving results into a new table: Syntax varies significantly. Many systems (like MySQL, SQLite, and Oracle) use `CREATE TABLE new_table AS SELECT ...`, while MSSQL and PostgreSQL support `SELECT columns INTO new_table FROM table ...`. \n\n### Advanced Updates\nSome dialects support the `RETURNING` clause to output modified rows. For instance:\n* PostgreSQL (since 8.2) and Oracle use `RETURNING` to return updated values.\n* MSSQL uses the `OUTPUT` clause with `inserted` or `deleted` prefixes to capture changes.\n* Firebird provides similar functionality via `RETURNING` using `old` or `new` prefixes.\n* MySQL and SQLite do not support these features.\n\n### Transaction Management\nThe document outlines standard transaction control commands:\n\n* Transaction Control: Key commands include `START TRANSACTION` (or implicit starting), `COMMIT`, and `ROLLBACK`.\n* Savepoints: Systems allow for granular control using `SAVEPOINT x`, `ROLLBACK TO SAVEPOINT x`, and `RELEASE SAVEPOINT x`. \n* Prepared Transactions: While the standard defines roles for preparing transactions (e.g., `PREPARE`, `COMMIT`, `ROLLBACK` for an `id`), implementation varies widely across specific engines.\n\n### Procedural Language\nThe document concludes by noting that procedural languages and stored procedure support differ by vendor, with Linter specific behavior outlined regarding implicit commits/rollbacks triggered by DDL statements or abnormal disconnections.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790890954,
+      "channel": "plan_pipe_89c66914a991",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 41,
+        "end": 45
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section provides a technical overview of SQL syntax variations across different database management systems (DBMS) and covers administrative tasks related to XML handling and database maintenance.\n\n### Stored Procedures and Functions\nThe syntax for creating procedures and functions varies significantly depending on the platform (p. 46-48):\n- Procedure declaration: While DB2 and MonetDB use a straightforward syntax, systems like MySQL and Firebird require a `DELIMITER` or `SET TERM` command to manage code blocks (p. 46).\n- Function definition: Most platforms, such as PostgreSQL and MySQL, utilize a `RETURNS` clause to specify the output type. Firebird handles User-Defined Functions (UDFs) by loading them as external modules (p. 48).\n\n### XML Support in SQL\nThe ISO/IEC 9075-14 standard defines XML data types and manipulation functions (p. 49). Key functions across supported SQL environments include (p. 50-51):\n- $XMLElement()$: Generates XML elements.\n- $XMLForest()$: Creates XML fragments from component inputs.\n- $ExtractValue()$: Retrieves scalar values using XPath expressions.\n- $UpdateXML()$: Modifies XML instances based on XPath.\nMicrosoft SQL Server achieves similar functionality through specialized methods such as $.query()$, $.nodes()$, and $.modify()$ (p. 51).\n\n### Database Administration\nAdministrative operations are focused on two primary tasks (p. 52-54):\n- Dumping: The process of exporting database schemas and data. While many systems allow for generating SQL dumps (using `CREATE` and `INSERT` statements), some lack command-line tools to serialize data as SQL.\n- Restoring: Importing schema and data back into a database. This is generally performed via command-line SQL clients, often using shell redirection for input/output handling (p. 54).\n\nThe provided text concludes with extensive references and documentation links for major RDBMS platforms, noting that while standard SQL exists, specific implementations often require environment-specific syntax and tools (p. 55-56).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778790890955,
+      "channel": "plan_pipe_89c66914a991",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 46,
+        "end": 56
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778790891036,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Based on the text, why does this book emphasize studying differences between SQL dialects?",
+            "options": [
+              "Because SQL has no standard, making all implementations entirely unique.",
+              "To provide a comprehensive, step-by-step introduction to database design principles.",
+              "Because developers encounter major pitfalls when implementations deviate from the SQL standard.",
+              "To ensure developers memorize every possible query for every server platform."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text states the book aims to help developers avoid 'major pitfalls' caused by the deviations between standard SQL and specific implementations."
+          },
+          {
+            "question": "What is the primary function of delimited identifiers in SQL?",
+            "options": [
+              "To automatically increase numeric values in a column.",
+              "To allow the use of SQL keywords or special characters as object names.",
+              "To define the data type of a column as a large object (LOB).",
+              "To specify the character encoding of the database."
+            ],
+            "correctIndex": 1,
+            "explanation": "The content explains that delimited identifiers are used to denominate database objects when you want to use SQL keywords (like 'FROM') as identifiers or include special characters in names."
+          },
+          {
+            "question": "Regarding SQL data types, how does SQLite differ from other implementations like PostgreSQL or MySQL?",
+            "options": [
+              "SQLite requires explicit numeric precision and scale for all integer types.",
+              "SQLite does not support character types, only numeric types.",
+              "SQLite uses dynamic typing and allows almost any type name.",
+              "SQLite is the only implementation that strictly follows the SQL:2011 standard for floats."
+            ],
+            "correctIndex": 2,
+            "explanation": "The table notes for numerical and character types state that SQLite 'uses dynamic typing' and 'allows any type name', unlike the explicitly typed systems."
+          },
+          {
+            "question": "If you are using Oracle or PostgreSQL and do not use double quotes for an identifier, how does the database handle the case sensitivity?",
+            "options": [
+              "Oracle converts to uppercase, while PostgreSQL converts to lowercase.",
+              "Both databases remain strictly case-sensitive regardless of quotes.",
+              "Both databases convert all text to lowercase to ensure consistency.",
+              "Both databases leave the casing exactly as it was typed by the user."
+            ],
+            "correctIndex": 0,
+            "explanation": "The text mentions that Oracle converts non-quoted identifiers to uppercase, while PostgreSQL converts them to lowercase."
+          },
+          {
+            "question": "Based on the auto-increment column section, which of the following is a standardized method for generating auto-incrementing values?",
+            "options": [
+              "Hard-coding a trigger into every row of the table directly.",
+              "Using the 'GENERATED AS IDENTITY' syntax.",
+              "Deleting the table and recreating it with new values.",
+              "Manually updating the column index via the administration console."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text lists 'IDENTITY columns as an extension to exact numeric types' with the syntax 'GENERATED { ALWAYS | BY DEFAULT } AS IDENTITY' as a standardized way to generate auto-increment values."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778790891037,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary function of the 'SQL Dialects Reference' book?",
+            "back": "It serves as a compact comparative reference for common tasks and differences between various SQL server implementations."
+          },
+          {
+            "front": "In SQL, what is the standard delimiter for identifiers that use SQL keywords or special characters?",
+            "back": "Double quotes (\") are used for delimited identifiers per the SQL standard."
+          },
+          {
+            "front": "How does Oracle handle identifiers that are not double-quoted?",
+            "back": "It performs case-insensitive matching by converting identifiers to uppercase."
+          },
+          {
+            "front": "Which character does MySQL use as a delimited identifier by default?",
+            "back": "Backticks (`)."
+          },
+          {
+            "front": "What behavior does SQLite exhibit regarding the case sensitivity of identifiers?",
+            "back": "It is never case sensitive, even when quoted."
+          },
+          {
+            "front": "What are the two ways the SQL standard defines for generating auto-increment values?",
+            "back": "Identity columns (using GENERATED AS IDENTITY syntax) and the use of sequences combined with triggers."
+          },
+          {
+            "front": "How do you define an auto-increment column in Microsoft SQL Server (MSSQL)?",
+            "back": "Using 'IDENTITY(start, increment)', e.g., 'col1 INT IDENTITY(1,1)'."
+          },
+          {
+            "front": "How do you define an auto-increment column in MySQL?",
+            "back": "Using the 'AUTO_INCREMENT' keyword, e.g., 'col1 INT NOT NULL PRIMARY KEY AUTO_INCREMENT'."
+          },
+          {
+            "front": "Which SQL type would you use for a binary large object (BLOB) in standard SQL?",
+            "back": "BLOB(n)."
+          },
+          {
+            "front": "In the context of the text, what is the main purpose of the 'Numeric types' comparison table?",
+            "back": "To identify which SQL dialects support specific integer byte sizes (1, 2, 4, 8 bytes) and float precisions."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-databases-engineering_1",
+      "slides": [
+        {
+          "title": "SQL Dialects Reference",
+          "bullets": [
+            "A compact guide for navigating diverse SQL implementations.",
+            "Focuses on practical portability and common pitfalls (p. 3-4)."
+          ],
+          "notes": "SQL has been standardized for decades, yet many proprietary dialects exist, making cross-platform development challenging. This reference aims to bridge those gaps for experienced developers.",
+          "page_range": "1-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Identifiers",
+          "bullets": [
+            "Standard uses double quotes for case-sensitive identifiers (p. 13).",
+            "Implementation behavior varies significantly regarding case sensitivity.",
+            "Delimiters allow SQL keywords to be used as identifiers (p. 12).",
+            "SQLite is case-insensitive, while most others follow standards (p. 13)."
+          ],
+          "notes": "Managing identifiers correctly ensures your queries don't break when switching databases, as the standard and individual servers handle quoting differently.",
+          "page_range": "12-14",
+          "image_prompt": ""
+        },
+        {
+          "title": "Identity Columns",
+          "bullets": [
+            "SQL standard defines identity columns and sequence objects (p. 14).",
+            "MSSQL uses IDENTITY, MySQL uses AUTO_INCREMENT (p. 15).",
+            "Oracle supports sequences and modern identity columns (p. 16).",
+            "SQLite uses AUTOINCREMENT on primary keys (p. 16)."
+          ],
+          "notes": "Generating unique, incrementing IDs is essential for primary keys. Each dialect offers distinct mechanisms, from standard sequences to specialized keywords.",
+          "page_range": "14-16",
+          "image_prompt": ""
+        },
+        {
+          "title": "Mathematical Functions",
+          "bullets": [
+            "Standardized math functions include trigonometric operations (p. 18).",
+            "Basic arithmetic (ABS, CEIL, FLOOR) is widely supported (p. 20).",
+            "Power functions and natural logs are consistent across major dialects (p. 20).",
+            "Randomization methods differ significantly per vendor (p. 21)."
+          ],
+          "notes": "While standard mathematical functions like SIN or ABS are consistent, ensure you check specific random number generation implementations for your target platform.",
+          "page_range": "17-21",
+          "image_prompt": ""
+        },
+        {
+          "title": "Aggregate Functions",
+          "bullets": [
+            "Standard functions support ALL or DISTINCT quantifiers (p. 21-22).",
+            "Common aggregates: COUNT, SUM, AVG, MIN, MAX (p. 23).",
+            "Standard deviation and variance are supported by standard SQL (p. 23).",
+            "String concatenation for groups requires non-standard workarounds (p. 24)."
+          ],
+          "notes": "Aggregates are fundamental for data analysis. Most standard functions are consistent, but be prepared to use specific vendor functions for complex string aggregations.",
+          "page_range": "21-24",
+          "image_prompt": ""
+        },
+        {
+          "title": "Date and Time Functions",
+          "bullets": [
+            "Standards define current date/time accessors (p. 25).",
+            "Arithmetic on dates varies by vendor implementations (p. 25).",
+            "Extracting specific parts (YEAR, DAY, HOUR) is standard (p. 26).",
+            "Type casting is required for cross-platform date compatibility (p. 26)."
+          ],
+          "notes": "Date manipulation is notoriously dialect-specific. Always verify your target environment's syntax for date subtraction and extraction.",
+          "page_range": "25-26",
+          "image_prompt": ""
+        },
+        {
+          "title": "String Functions",
+          "bullets": [
+            "Standard string operations: CONCAT, LOWER, UPPER (p. 28-29).",
+            "Trimming blanks occurs via standard TRIM syntax (p. 29).",
+            "String length calculation variants exist for bytes vs. characters (p. 30).",
+            "Specialized functions like SOUNDEX vary by implementation (p. 30)."
+          ],
+          "notes": "Text processing requires careful selection of functions, as differences in byte-length versus character-length calculations can cause subtle bugs.",
+          "page_range": "27-31",
+          "image_prompt": ""
+        },
+        {
+          "title": "Subqueries and Selection",
+          "bullets": [
+            "Subqueries are essential for complex join logic (p. 32).",
+            "Scalar queries without a table use DUAL or specific keywords (p. 33-34).",
+            "Limiting rows varies: LIMIT, FETCH FIRST, or TOP (p. 35-36).",
+            "Hierarchical queries often use recursive CTEs (p. 37-38)."
+          ],
+          "notes": "Accessing data requires standard subquery logic, but limiting result sets and iterating through hierarchies relies on highly dialect-specific approaches.",
+          "page_range": "32-38",
+          "image_prompt": ""
+        },
+        {
+          "title": "Data Manipulation (DML)",
+          "bullets": [
+            "MERGE is the standard for 'upsert' functionality (p. 38-39).",
+            "Insert-select supports bulk loading across major engines (p. 41).",
+            "CREATE TABLE AS SELECT allows new table creation (p. 42).",
+            "RETURNING clauses allow immediate access to affected rows (p. 43)."
+          ],
+          "notes": "Write queries can be streamlined using MERGE or RETURNING, though support for these features is often implementation-dependent.",
+          "page_range": "38-43",
+          "image_prompt": ""
+        },
+        {
+          "title": "Transactions and Procedures",
+          "bullets": [
+            "Standard transaction control includes COMMIT and SAVEPOINT (p. 44).",
+            "Stored procedures have high variability in syntax (p. 46-47).",
+            "User-defined functions require specific registration or definitions (p. 48).",
+            "SQL/XML support remains an evolving, vendor-specific capability (p. 49-51)."
+          ],
+          "notes": "Global standards exist for transactions, but procedural languages and extensions like XML handling require deep dive into specific database documentation.",
+          "page_range": "44-51",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 2: SQL Dialects Reference - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778790890936,
+      "pdfName": "SQL Dialects Reference"
+    }
+  ],
+  "sourceHash": "132e75de7ef93408"
+}

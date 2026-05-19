@@ -1,0 +1,506 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Pre-College Math — Arithmetic to Trigonometry - Lesson 5 — Trigonometry",
+    "pdfName": "Trigonometry",
+    "createdAt": 1778576817852,
+    "exportedAt": "2026-05-12T09:06:57.853Z",
+    "meta": {
+      "courseId": "course-en-precollege-math",
+      "lessonIndex": 4,
+      "courseTitle": "Pre-College Math — Arithmetic to Trigonometry",
+      "lessonObjective": "Right triangles, identities, laws.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-trigonometry",
+            "title": "Trigonometry",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Trigonometry"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_fc23509398b5",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "4-6",
+          "chapterTitle": "Prerequisites and Introduction",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "7-10",
+          "chapterTitle": "Radian and Degree Measure",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "11-15",
+          "chapterTitle": "The Unit Circle and Trigonometric Functions",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "16-20",
+          "chapterTitle": "Graphs of Trigonometric Functions",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "21-25",
+          "chapterTitle": "Inverse Trigonometric Functions and Applications",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "26-27",
+          "chapterTitle": "Analytic Trigonometry and Identities",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "28-34",
+          "chapterTitle": "Solving Trigonometric Equations",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "35-37",
+          "chapterTitle": "Sum, Difference, and Multiple-Angle Formulas",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "38-41",
+          "chapterTitle": "Additional Topics in Trigonometry",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "42-51",
+          "chapterTitle": "References and License",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576817852,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "This summary covers the key components of trigonometry as outlined in the provided text.\n\n### 1. Fundamentals and the Unit Circle\n*   **The Unit Circle:** A circle with a radius of 1 centered at (0,0). All trigonometric functions (sine, cosine, tangent) can be derived from a right triangle inscribed within this circle [S.4, S.5, S.11].\n*   **Radians and Degrees:** Angles are measured in degrees or radians. One full revolution is $2\\pi$ radians or $360^\\circ$ [S.7, S.9].\n*   **Definitions:** In the unit circle, for a radius intersecting at $(x,y)$, $\\cos(\\theta) = x$ and $\\sin(\\theta) = y$. Tangent is defined as $\\frac{y}{x}$ (or $\\frac{\\sin}{\\cos}$) [S.12, S.13].\n\n### 2. Right Angle Trigonometry\nWhen applied to a right triangle with sides $A$ (opposite), $B$ (adjacent), and $C$ (hypotenuse), the primary ratios are [S.15]:\n*   $\\sin(a) = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{A}{C}$\n*   $\\cos(a) = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{B}{C}$\n*   $\\tan(a) = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{A}{B}$\n\n### 3. Analytic Trigonometry and Identities\nTrigonometric identities allow for the simplification of equations. Key identities include:\n*   **Pythagorean Identity:** $\\sin^2(a) + \\cos^2(a) = 1$, derived from the Pythagorean theorem ($A^2 + B^2 = C^2$) [S.26].\n*   **Reciprocal/Ratio Identities:** Includes $\\sec = \\frac{1}{\\cos}$, $\\csc = \\frac{1}{\\sin}$, and $\\cot = \\frac{1}{\\tan}$ [S.26, S.27].\n*   **Equation Solving:** Basic equations like $\\sin(x) = n$ are solved by identifying the reference angle $\\alpha$ and accounting for the periodic nature of the functions (using integers $k$ to represent multiple rotations) [S.28, S.29].\n\n### 4. Advanced Topics\n*   **Graphs:** Sine and cosine functions are periodic with a period of $2\\pi$. Functions like tangent, secant, and cosecant are unbounded and feature vertical asymptotes [S.16, S.20].\n*   **Inverse Functions:** To ensure functions are one-to-one, domain restrictions are applied (e.g., restricted ranges for $\\sin^{-1}$, $\\cos^{-1}$, and $\\tan^{-1}$) [S.21].\n*   **Laws and Applications:**\n    *   **Simple Harmonic Motion:** Modeled by sine or cosine functions, such as the movement of a weight on a spring (Hooke’s Law) [S.23, S.24].\n    *   **Laws (Sine/Cosines):** Used for solving non-right triangles (these are listed as advanced topics) [S.38, S.39].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576817852,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-precollege-math_4\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 5 — Trigonometry - Presentation</span><span class=\"pm-chat-count\">7 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lesson 5: Trigonometry</div><ul class=\"pm-chat-slide-bullets\"><li>Understanding angles, triangles, and circular functions.</li><li>Developing tools for practical and theoretical mathematics.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778576817853,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This text provides an introductory overview of trigonometry, emphasizing its foundation in the unit circle and its relationship to right-angled triangles.\n\n### Prerequisites\nTo study this subject effectively, students are recommended to have a background in Geometry, Algebra I, and Algebra II. Access to a graphing calculator or graphing software is also highly encouraged (p. 4).\n\n### The Foundation: The Unit Circle\nTrigonometry is fundamentally linked to the unit circle, which has a radius of 1 and is centered at the origin $(0,0)$ of a Cartesian plane. By inscribing a right triangle within this circle (with the hypotenuse acting as the radius), we define the triangle's dimensions relative to the circle's quadrants (p. 5).\n\n### Key Concepts\n* **Functions as Translation Tables:** Functions like sine and cosine are interpreted as translation tables that provide the lengths of the triangle's legs based on an angle ($\\phi$). Historically, these were accessed via printed tables, but they are now computed via algorithms (p. 5).\n* **Scaling:** Because trigonometric functions are defined for a unit circle, values for circles of any size can be found by multiplying the result of the function by a scaling coefficient (p. 5).\n* **The Pythagorean Relationship:** The defining identity of trigonometry is a direct application of the Pythagorean theorem: \n$$\\cos(\\phi)^2 + \\sin(\\phi)^2 = 1$$\nThis holds true because the hypotenuse ($c$) of the triangle in the unit circle is always 1, resulting in $a^2 + b^2 = 1^2$ (p. 5).\n\n### Angle Interpretation\nAngles are viewed as a method to consolidate information about the triangle's \"directed\" length and its quadrant location. This facilitates the conversion between Cartesian $(x,y)$ coordinates and polar coordinates, provided that the signs of the coordinates are correctly accounted for across the four quadrants (p. 5-6).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576817862,
+      "channel": "plan_pipe_fc23509398b5",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Angles and Radian Measure\n\n**Angle Definitions and Terminology (p. 7)**\nAn angle is formed by rotating a ray about an endpoint called the vertex. The starting position is the initial side, and the ending position is the terminal side. \n*   Positive angles result from counter-clockwise rotation, while negative angles result from clockwise rotation.\n*   An angle is in standard position when its vertex is at the origin and its initial side lies on the positive x-axis.\n\n**Radian Measure (pp. 7-8)**\nA radian is the measure of an angle whose arc length $s$ is equal to its radius $r$. The measure of an angle $\\theta$ in radians is defined by the ratio:\n$$\\theta = \\frac{s}{r}$$\nIf no unit is specified for an angle, it is assumed to be in radians.\n\n**Conversions between Degrees and Radians (p. 9)**\nBecause an entire circle consists of $360^\\circ$ and $2\\pi$ radians, the conversion formulas are as follows:\n\nTo convert from degrees to radians, multiply by $\\frac{\\pi}{180^\\circ}$:\n$$\\text{radians} = \\text{degrees} \\times \\frac{\\pi}{180^\\circ}$$\n\nTo convert from radians to degrees, multiply by $\\frac{180^\\circ}{\\pi}$:\n$$\\text{degrees} = \\text{radians} \\times \\frac{180^\\circ}{\\pi}$$",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576817863,
+      "channel": "plan_pipe_fc23509398b5",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 7,
+        "end": 10
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section provides a foundational understanding of the Unit Circle and trigonometric functions. Here are the key points:\n\n**The Unit Circle**\nThe Unit Circle is defined as a circle with its center at the origin $(0,0)$ and a radius of $1$. Angles are measured from the positive x-axis, with counterclockwise rotation yielding positive values and clockwise rotation yielding negative values [S.11].\n\n**Defining Trigonometric Functions**\n*   **Sine and Cosine:** For a point $(x,y)$ on the Unit Circle at an angle $\\alpha$, the x-coordinate represents the cosine and the y-coordinate represents the sine [S.12].\n*   **Tangent:** Geometrically, the tangent is the ordinate of the point where a line through the origin (at angle $\\theta$) intersects the tangent line $x = 1$ [S.13].\n*   **Domain and Range:** Sine and cosine can accept any real number as input and produce values within the range of $[-1, 1]$. The tangent function is undefined at odd multiples of $\\pi/2$ but has an unrestricted range [S.14].\n\n**Right-Angle Trigonometry**\nTrigonometric functions can be applied to right triangles by relating the sides to the Unit Circle definitions:\n*   $\\sin(a) = \\frac{\\text{opposite}}{\\text{hypotenuse}} = \\frac{A}{C}$ [S.15]\n*   $\\cos(a) = \\frac{\\text{adjacent}}{\\text{hypotenuse}} = \\frac{B}{C}$ [S.15]\n*   $\\tan(a) = \\frac{\\text{opposite}}{\\text{adjacent}} = \\frac{A}{B}$ [S.15]",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576817864,
+      "channel": "plan_pipe_fc23509398b5",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 11,
+        "end": 15
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section summarizes the properties and graphical characteristics of trigonometric functions:\n\n**Sine and Cosine Functions**\nThe sine and cosine functions are periodic, meaning their patterns repeat at intervals of $2\\pi$ (p. 16).\n\n**Additional Trigonometric Functions**\nThe remaining trigonometric functions are defined as follows:\n- The secant function is defined as $\\sec(x) = \\frac{1}{\\cos(x)}$ (p. 18).\n- The cosecant function is defined as $\\csc(x) = \\frac{1}{\\sin(x)}$ (p. 19).\n- The cotangent function is defined as $\\cot(x) = \\frac{1}{\\tan(x)}$ or $\\cot(x) = \\frac{\\cos(x)}{\\sin(x)}$ (p. 20).\n\n**Key Characteristic**\nFunctions such as $\\tan(x)$, $\\sec(x)$, $\\csc(x)$, and $\\cot(x)$ are identified as being unbounded (p. 20).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576817865,
+      "channel": "plan_pipe_fc23509398b5",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 16,
+        "end": 20
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers the mathematical foundations of inverse trigonometric functions and their application to physical models of motion.\n\n### Inverse Trigonometric Functions\nBecause trigonometric functions are not one-to-one, obtaining an inverse requires restricting their domains. The text distinguishes between inverse relations and inverse functions by using capitalized notation, such as $\\text{Sin}^{-1} x$, $\\text{Cos}^{-1} x$, and $\\text{Tan}^{-1} x$, which correspond to the \"arcfunction\" notation (e.g., $\\arcsin x$) (p. 21). These restricted functions ensure that each input yields a unique output within specific ranges. It is important to note that inverse operations do not always cancel out the original function unless the input value is within the restricted range (p. 21). The document also provides specific definitions for the inverse relations of sine, cosine, and tangent based on their respective periods and symmetries (p. 21-22).\n\n### Simple Harmonic Motion (SHM)\nSHM models the motion of objects, such as a weight hanging on a spring, using functions of the form:\n$x(t) = A \\sin(\\omega t + \\phi)$ or $x(t) = c_1 \\cos(\\omega t) + c_2 \\sin(\\omega t)$ (p. 23)\n\nIn these models:\n* $A$ represents the amplitude.\n* $\\omega$ represents the angular velocity.\n* $\\phi$ represents the phase shift.\n* $c_1 = A \\sin \\phi$ and $c_2 = A \\cos \\phi$ (p. 23).\n\nVelocity and acceleration are derived by taking the first and second derivatives of the position function with respect to time (p. 23).\n\n### Springs and Hooke's Law\nThe motion of a spring is governed by Hooke's Law, $F = -kx$, where $F$ is force, $x$ is position, and $k$ is the spring constant. By applying Newton’s Second Law ($F = ma$), this relationship is expressed as a second-order differential equation:\n$a = -\\frac{k}{m}x \\implies \\frac{d^2x}{dt^2} + \\frac{k}{m}x = 0$ (p. 24)\n\nBy substituting $\\omega = \\sqrt{\\frac{k}{m}}$, the solution to this differential equation can be simplified into the standard SHM trigonometric form using geometric and trigonometric identities (p. 24-25).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576817866,
+      "channel": "plan_pipe_fc23509398b5",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 21,
+        "end": 25
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers fundamental trigonometric identities derived from the Pythagorean Theorem and other core relationships.\n\n**Pythagorean Identities**\nThese originate from the geometric relationship $A^2 + B^2 = C^2$ in a right triangle. By dividing by the hypotenuse squared ($C^2$), the primary identity is established:\n$\\sin^2 a + \\cos^2 a = 1$ (p. 26)\n\nFrom this, secondary forms can be derived, such as:\n$\\sin^2 a = 1 - \\cos^2 a$ and $\\cos^2 a = 1 - \\sin^2 a$ (p. 26)\n$\\tan^2 a + 1 = \\sec^2 a$ (p. 26)\n$1 + \\cot^2 a = \\csc^2 a$ (p. 26)\n\n**Additional Categorizations**\nBeyond Pythagorean identities, the text notes the existence of three other essential groups used in analytic trigonometry:\n1. Reciprocal identities (p. 26)\n2. Ratio identities (p. 26)\n3. Co-function identities (p. 26)\n\nThe document specifies that co-function identities are expressed in radians for these calculations (p. 27).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576817867,
+      "channel": "plan_pipe_fc23509398b5",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 26,
+        "end": 27
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary outlines the methods for solving basic and advanced trigonometric equations as presented in pages [S.28] through [S.34].\n\n### Basic Equations\nThe solvability of basic trigonometric equations depends on the range of the function:\n\n*   Sine and Cosine: The equations $\\sin x = n$ and $\\cos x = n$ only have real solutions if $|n| \\le 1$. Solutions are found by identifying an angle $\\alpha$ such that the function equals $n$, then applying the corresponding general solution formulas involving an integer $k$ [S.29, S.30].\n*   Tangent and Cotangent: The equations $\\tan x = n$ and $\\cot x = n$ have solutions for any real number $n$ [S.31, S.32].\n*   Reciprocal Functions: Equations involving $\\csc x = n$ and $\\sec x = n$ are solved by transforming them into equivalent $\\sin x = 1/n$ or $\\cos x = 1/n$ expressions [S.32].\n\n### Special Cases\nFor specific values of $n$ ($1, 0, -1$), the general solution formulas simplify significantly. These simplified forms are generally referenced in standard tables for quick application [S.29, S.30, S.31, S.32].\n\n### Advanced Transformations\nTo solve more complex equations, such as $a \\sin x + b \\cos x = c$, you must first use trigonometric identities to transform the expression into a basic trigonometric equation [S.33]. Specifically:\n\n1.  Identify the coefficients $a$ and $b$ to apply the identity $a \\sin x + b \\cos x = R \\sin(x + \\theta)$, where $R = \\sqrt{a^2 + b^2}$ [S.33].\n2.  Determine the phase shift $\\theta$ based on the values of $a$ and $b$ [S.33].\n3.  Solve the resulting equation of the form $\\sin(x + \\theta) = c/R$ using the standard sine solution method [S.33, S.34].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576817868,
+      "channel": "plan_pipe_fc23509398b5",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 28,
+        "end": 34
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document provides an overview of essential trigonometric identities, including sum/difference formulas, double-angle formulas, and their derivations (p. 35-37).\n\n### Sum and Difference Formulas\nThese formulas allow for the expansion of trigonometric functions involving the sum or difference of two angles:\n\nCosines:\n$\\cos(a \\pm b) = \\cos a \\cos b \\mp \\sin a \\sin b$ (p. 35)\n\nSines:\n$\\sin(a \\pm b) = \\sin a \\cos b \\pm \\cos a \\sin b$ (p. 35-36)\n\nTangents:\n$\\tan(a \\pm b) = \\frac{\\tan a \\pm \\tan b}{1 \\mp \\tan a \\tan b}$ (p. 35)\n\n### Double-Angle Formulas\nBy setting $a = b$ in the sum formulas, the following double-angle identities are derived:\n\nSine:\n$\\sin(2a) = 2 \\sin a \\cos a$ (p. 35, 37)\n\nCosine:\n$\\cos(2a) = \\cos^2 a - \\sin^2 a = 1 - 2 \\sin^2 a = 2 \\cos^2 a - 1$ (p. 37)\n\nTangent:\n$\\tan(2a) = \\frac{2 \\tan a}{1 - \\tan^2 a}$ (p. 37)\n\n### Key Derivation Principles\n- The derivation of $\\cos(a - b)$ relies on the fact that cosine is an even function ($\\cos(-b) = \\cos b$) and sine is an odd function ($\\sin(-b) = -\\sin b$) (p. 35).\n- The sine sum formulas utilize cofunction identities, specifically $\\sin a = \\cos(90^\\circ - a)$ (p. 35).\n- Double-angle formulas are proven by substituting $b = a$ into the corresponding sum formulas and applying the Pythagorean identity $\\sin^2 x + \\cos^2 x = 1$ (p. 37).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576817869,
+      "channel": "plan_pipe_fc23509398b5",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 35,
+        "end": 37
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers fundamental trigonometric laws, vector operations, and complex number representation.\n\n### Law of Sines (p. 38, 39)\nThe Law of Sines relates side lengths to their opposite angles within any triangle. It is expressed as:\n$$\\frac{A}{\\sin a} = \\frac{B}{\\sin b} = \\frac{C}{\\sin c}$$\nThe reciprocal form is also valid:\n$$\\frac{\\sin a}{A} = \\frac{\\sin b}{B} = \\frac{\\sin c}{C}$$\nThe proof utilizes a perpendicular line dropped to the base to create two right-angled triangles and eliminate height $h$.\n\n### Law of Cosines (p. 40)\nThe Law of Cosines provides a relationship between the sides and one angle of a triangle:\n$$c^2 = a^2 + b^2 - 2ab \\cos C$$\nSimilar expressions exist for $a^2$ and $b^2$. The proof involves splitting the triangle into two right-angled triangles and applying the Pythagorean theorem.\n\n### Vectors and Dot Products (p. 41)\nFor two vectors $U$ and $V$ with an angle $\\theta$ between them, the dot product is defined as:\n$$U \\cdot V = |U| |V| \\cos \\theta$$\nIf the vectors are defined by components, such as $U = (u_1, u_2)$ and $V = (v_1, v_2)$, the dot product is:\n$$U \\cdot V = u_1 v_1 + u_2 v_2$$\n\n### Trigonometric Form of Complex Numbers (p. 41)\nA complex number can be expressed using its modulus $r$ and argument $\\theta$ as:\n$$z = r(\\cos \\theta + i \\sin \\theta)$$\nThis is often abbreviated as $z = r \\text{ cis } \\theta$. When $\\theta$ is in radians, it is observed that:\n$$e^{i \\theta} = \\cos \\theta + i \\sin \\theta$$",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576817870,
+      "channel": "plan_pipe_fc23509398b5",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 38,
+        "end": 41
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section provides a reference for trigonometric identities and legal terms regarding document distribution.\n\n### Trigonometric Identities\nThe reference covers several core functional categories:\n*   **Fundamental Identity:** The primary relationship is defined as $\\sin^2\\theta + \\cos^2\\theta = 1$ (p. 42).\n*   **Periodicity:** All trigonometric functions repeat every $2\\pi$ (p. 42).\n*   **Identities:** The text lists formulas for Pythagoras, sum/difference of angles, product-to-sum, sum-to-product, double angle, half angle, and power reduction (pp. 42–44).\n*   **Symmetry:** Formulas for even/odd properties are provided, such as $\\sin(-\\theta) = -\\sin(\\theta)$ and $\\cos(-\\theta) = \\cos(\\theta)$ (p. 44).\n*   **Primary Angles:** A table provides values in radians and degrees for common trigonometric functions at key points (p. 46).\n\n### GNU Free Documentation License\nPages 48–51 outline the terms of the GNU Free Documentation License (version 1.2), establishing the following:\n*   **Purpose:** To permit the copying, distribution, and modification of documents, ensuring they remain \"free\" (p. 48).\n*   **Copying Rules:** Verbatim copies may be distributed commercially or non-commercially, provided the license and copyright notices are preserved (p. 49).\n*   **Modifications:** Modified versions must fulfill specific transparency and attribution requirements, including listing previous authors in a \"History\" section and releasing the work under the same license (p. 49–50).\n*   **Aggregation and Translation:** Guidelines are provided for combining documents, creating collections, and translating sections while maintaining the integrity of original licenses and disclaimers (p. 50–51).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576817871,
+      "channel": "plan_pipe_fc23509398b5",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 42,
+        "end": 51
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576817952,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why is the unit circle a useful standard for defining trigonometric functions?",
+            "options": [
+              "Because it allows us to define functions based on lengths of 1, simplifying the Pythagorean theorem to sin²(φ) + cos²(φ) = 1.",
+              "Because it is the only way to mathematically represent an angle larger than 90 degrees.",
+              "Because it ensures that sine and cosine values are always integers.",
+              "Because it eliminates the need to consider the quadrant in which an angle resides."
+            ],
+            "correctIndex": 0,
+            "explanation": "The unit circle has a radius of 1. By the Pythagorean theorem, x² + y² = r². Substituting x = cos(φ), y = sin(φ), and r = 1 results in cos²(φ) + sin²(φ) = 1."
+          },
+          {
+            "question": "In the standard position on a Cartesian plane, how are positive and negative angles generated?",
+            "options": [
+              "Positive angles are generated by clockwise rotation, and negative angles by counter-clockwise rotation.",
+              "Positive angles are generated by counter-clockwise rotation, and negative angles by clockwise rotation.",
+              "Positive angles are always located in the first quadrant, while negative angles are always in the fourth quadrant.",
+              "The value of the angle is determined by the length of the arc, regardless of the direction of rotation."
+            ],
+            "correctIndex": 1,
+            "explanation": "According to the provided text, positive angles are generated by counter-clockwise rotation and negative angles by clockwise rotation."
+          },
+          {
+            "question": "What is the relationship between radians and the geometry of a circle?",
+            "options": [
+              "One radian is the angle formed when the arc length is exactly double the radius of the circle.",
+              "A radian represents the degree measure of an angle divided by π.",
+              "A radian is defined by the ratio of the arc length (s) to the circle radius (r).",
+              "There are exactly 100 radians in a full circle."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text defines the size of an angle in radians as the length of the circle arc (s) divided by the circle radius (r)."
+          },
+          {
+            "question": "If you are working with an angle that has no units specified, what is the standard assumption in trigonometry?",
+            "options": [
+              "The angle is measured in degrees.",
+              "The angle is measured in radians.",
+              "The value is invalid and requires correction.",
+              "The angle is assumed to be a multiple of π."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text explicitly states: 'If no unit is given on an angle measure, the angle is assumed to be in radians.'"
+          },
+          {
+            "question": "How does trigonometry allow us to work with circles of any scale, not just the unit circle?",
+            "options": [
+              "By adding a constant value to the trigonometric function results.",
+              "By calculating complex variations of the Pythagorean theorem for every radius.",
+              "By multiplying the scaling factor (radius) with the result of the trigonometric function obtained from the unit circle.",
+              "By converting all radii to 1 before performing any calculations."
+            ],
+            "correctIndex": 2,
+            "explanation": "To apply knowledge to a circle of any scale, you simply multiply the scaling coefficient (the radius) by the result of the trigonometric function, which is defined based on the unit circle."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778576817953,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is represented by the x and y coordinates of a point on the unit circle?",
+            "back": "The x-coordinate represents the cosine of the angle, and the y-coordinate represents the sine of the angle."
+          },
+          {
+            "front": "What is the definition of the unit circle?",
+            "back": "A circle with its center at the origin (0,0) and a radius of exactly one unit."
+          },
+          {
+            "front": "What is the Pythagorean identity derived from the unit circle?",
+            "back": "cos²(φ) + sin²(φ) = 1"
+          },
+          {
+            "front": "How are positive and negative angles defined in trigonometry?",
+            "back": "Positive angles are generated by counter-clockwise rotation, while negative angles are generated by clockwise rotation."
+          },
+          {
+            "front": "How is the measure of an angle in radians defined?",
+            "back": "It is the length of the arc (s) divided by the radius of the circle (r): rad = s/r."
+          },
+          {
+            "front": "What is the conversion formula from degrees to radians?",
+            "back": "multiply degrees by (π / 180°)."
+          },
+          {
+            "front": "What is the conversion formula from radians to degrees?",
+            "back": "multiply radians by (180° / π)."
+          },
+          {
+            "front": "What is an angle in 'standard position'?",
+            "back": "An angle whose vertex is at the origin and whose initial side lies on the positive x-axis."
+          },
+          {
+            "front": "What is the total number of radians in a full circle?",
+            "back": "2π radians, which corresponds to 360°."
+          },
+          {
+            "front": "How do you calculate the leg lengths of a triangle in a circle of radius r other than the unit circle?",
+            "back": "Multiply the scaling coefficient (radius r) by the result of the trigonometric function applied to the unit circle: x = r * cos(φ) and y = r * sin(φ)."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-precollege-math_4",
+      "slides": [
+        {
+          "title": "Lesson 5: Trigonometry",
+          "bullets": [
+            "Understanding angles, triangles, and circular functions.",
+            "Developing tools for practical and theoretical mathematics."
+          ],
+          "notes": "Welcome to our study of trigonometry, where we explore the essential relationships defining right triangles and circular motions.",
+          "page_range": "4-6",
+          "image_prompt": ""
+        },
+        {
+          "title": "Unit Circle and Angles",
+          "bullets": [
+            "Unit circle centers at origin (0,0) (p. 5).",
+            "Quadrants count counter-clockwise (p. 5).",
+            "Hypotenuse always equals 1 radius unit (p. 5).",
+            "Angles determined by rotating rays (p. 7)."
+          ],
+          "notes": "The unit circle is our foundational tool, providing a consistent framework to define angles and trigonometric functions.",
+          "page_range": "5-8",
+          "image_prompt": ""
+        },
+        {
+          "title": "Degree and Radian Measure",
+          "bullets": [
+            "Radians: arc length divided by radius (p. 8).",
+            "Full circle is 2π radians or 360° (p. 9).",
+            "Convert degrees to radians using (π/180) (p. 9).",
+            "Convert radians to degrees using (180/π) (p. 9)."
+          ],
+          "notes": "We measure rotational size using degrees or radians, with simple conversion formulas bridging the two systems.",
+          "page_range": "7-10",
+          "image_prompt": ""
+        },
+        {
+          "title": "Trigonometric Functions",
+          "bullets": [
+            "Sine, cosine defined via point (x,y) (p. 12).",
+            "Applied to right triangles: SOH CAH TOA (p. 15).",
+            "Tangent function defined as ratio of legs (p. 15).",
+            "Periodic graphs repeat every 2π (p. 16)."
+          ],
+          "notes": "By relating circular coordinates to triangle sides, we derive the fundamental functions used throughout the course.",
+          "page_range": "11-16",
+          "image_prompt": ""
+        },
+        {
+          "title": "Inverses and Models",
+          "bullets": [
+            "Inverse functions require domain restriction (p. 21).",
+            "Arcfunctions yield specific angles (p. 21).",
+            "Simple harmonic motion modeled by sine (p. 23).",
+            "Hooke's law links springs to periodic motion (p. 23)."
+          ],
+          "notes": "Inverse functions allow us to find angles from ratios, while these concepts help us model real-world physical systems.",
+          "page_range": "21-25",
+          "image_prompt": ""
+        },
+        {
+          "title": "Analytic Identities",
+          "bullets": [
+            "Pythagorean identity: sin²a + cos²a = 1 (p. 26).",
+            "Reciprocal and ratio identities defined (p. 26-27).",
+            "Simplifying equations using fundamental substitutions (p. 33).",
+            "Double-angle formulas derived from sums (p. 37)."
+          ],
+          "notes": "Mastering these identities simplifies complex expressions and provides the necessary tools to solve trigonometric equations.",
+          "page_range": "26-27, 33-37",
+          "image_prompt": ""
+        },
+        {
+          "title": "Laws and Applications",
+          "bullets": [
+            "Law of Sines: side/angle ratio consistency (p. 38).",
+            "Law of Cosines: extension of Pythagoras (p. 40).",
+            "Dot products connect vectors to angles (p. 41).",
+            "Complex numbers utilize polar trigonometric form (p. 41)."
+          ],
+          "notes": "The Laws of Sines and Cosines allow us to solve for any triangle, while trigonometric principles extend into vectors and complex numbers.",
+          "page_range": "38-41",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 5 — Trigonometry - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576817852,
+      "pdfName": "Trigonometry"
+    }
+  ],
+  "sourceHash": "204a0b1f0c70479f"
+}

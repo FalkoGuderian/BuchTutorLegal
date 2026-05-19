@@ -1,0 +1,482 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Linux Sysadmin and LPI Certification - Lesson 3 — BourneShellScripting",
+    "pdfName": "BourneShellScripting",
+    "createdAt": 1778576767286,
+    "exportedAt": "2026-05-12T09:06:07.287Z",
+    "meta": {
+      "courseId": "course-en-linux-sysadmin-cert",
+      "lessonIndex": 2,
+      "courseTitle": "Linux Sysadmin and LPI Certification",
+      "lessonObjective": "Bourne shell, awk, productive automation.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-bourneshellscripting",
+            "title": "BourneShellScripting",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/BourneShellScripting"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_e9dac0dc4fe3",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "6-8",
+          "chapterTitle": "Comparing Shells",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "9-17",
+          "chapterTitle": "Running Commands",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "18-38",
+          "chapterTitle": "Environment",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "39-44",
+          "chapterTitle": "Variable Expansion",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "45-66",
+          "chapterTitle": "Control Flow",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "67-80",
+          "chapterTitle": "Files and Streams",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "81-86",
+          "chapterTitle": "Modularization",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "87-102",
+          "chapterTitle": "Debugging and Signal Handling",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "103-108",
+          "chapterTitle": "Cookbook",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "109-132",
+          "chapterTitle": "Quick Reference and Command Reference",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576767286,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Based on the provided text, here is a concise summary of **Lesson 3: Bourne Shell Basics and Environment**.\n\n### **1. The Bourne Shell (`sh`)**\n*   **Definition:** An interpreter that acts as a user interface over the OS kernel, allowing users to execute commands without deep programming knowledge (p. 6).\n*   **Evolution:** While the original Bourne Shell (`sh`) remains a standard, most modern systems use \"descendant\" shells (e.g., Bash, ksh, zsh). These are often provided via symbolic links, meaning your system's `sh` is likely a more advanced shell running in a compatible mode (p. 7).\n*   **Portability:** Using strictly Bourne-compatible syntax ensures that scripts remain portable across different Unix/Linux environments (p. 8).\n\n### **2. Execution Modes**\n*   **Interactive Mode:** Used for manual, day-to-day tasks. The shell provides a prompt, waits for user input, and executes one command at a time (p. 10).\n*   **Non-Interactive (Scripting):** The shell reads a sequence of commands from a text file, executing them sequentially from top to bottom (p. 12).\n*   **Sourcing:** Using the `.` (dot) operator executes a script within the **current shell environment**, whereas running `sh scriptname` or an executable script creates a **child process** (p. 13).\n\n### **3. Scripting & Automation**\n*   **Direct Execution:** To execute a script directly (e.g., `./myscript`), the file must have execute permissions (`chmod +x`) and include a \"shebang\" line at the top to define the interpreter, typically `#!/bin/sh` (p. 13–14).\n*   **PATH:** The shell looks for programs in directories defined in the `PATH` variable. If a script is located in a directory not in your `PATH`, it must be invoked with its relative or absolute path (p. 13).\n\n### **4. Multiprocessing & Environment**\n*   **Process Hierarchy:** When running a command, the shell acts as a \"parent,\" and the program runs as a \"child.\"\n*   **Environment Constraints:** A child process receives a *copy* of the parent's environment. Crucially, a child process **cannot** modify the environment of its parent (p. 15–16).\n*   **Background Processing:** Appending an `&` to a command allows a process to run in the background. This releases the shell to perform other tasks immediately while the background process completes, a key technique for system automation (p. 16–17).\n\n### **5. Useful Shortcuts**\n*   **Interrupt:** `Ctrl+C` halts a running process (p. 11).\n*   **Terminate Session:** `Ctrl+D` (or the `exit` command) closes the current shell session (p. 11).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576767286,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-linux-sysadmin-cert_2\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 3 — BourneShellScripting - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Bourne Shell Scripting</div><ul class=\"pm-chat-slide-bullets\"><li>Introduction to productive automation with the Unix shell.</li><li>Understanding shell evolution and foundational command execution.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778576767287,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This section explores the history, significance, and practical use of the Bourne Shell within the Unix environment.\n\n**The Origin of the Shell**\nThe Unix operating system was designed for power users who required a way to interact with the kernel and coding libraries without performing complex programming. Stephen Bourne created the \"shell\" to serve as an interpreter—a tool that translates individual user commands into machine-executable instructions. Because the original Bourne Shell (executable `sh`) was lightweight and powerful, it became the industry standard [S.6, S.7].\n\n**Evolution and Compatibility**\nOver time, many alternative shells were developed to add functionality or change command syntax. Most modern Unix systems do not run the original Bourne Shell; instead, they use descendant shells (such as Bash, the \"Bourne Again SHell,\" or ksh) that masquerade as `sh` via system links. While some shells like C shell (csh) deviate from Bourne syntax, many others remain highly compatible [S.7, S.8].\n\n**Why Use the Bourne Shell Today?**\nWhile modern shells offer advanced features beyond the original `sh`, the Bourne Shell remains the \"Latin\" of the Unix world. The primary reason to target the Bourne Shell when writing scripts is portability. By adhering to the original, minimal syntax of the Bourne Shell, developers ensure that their scripts will execute successfully across almost any Unix-based system, regardless of the specific shell the end-user has installed [S.8].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576767296,
+      "channel": "plan_pipe_e9dac0dc4fe3",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 8
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the mechanics of command execution and process management within the Bourne Shell as described in pages [S.12] through [S.17].\n\n### Running Commands and Scripts\n\nCommands can be executed in two primary ways:\n\n1. Interactive Mode: The shell displays a prompt, accepts user input, and waits for the command to finish before returning the prompt.\n2. Non-interactive Mode (Scripts): A sequence of commands is stored in a plain-text file. The shell reads and executes these commands sequentially without human intervention.\n\nScripts can be executed using the `sh` interpreter (e.g., `sh MyScript`) or by setting the file's Unix executable permission using `chmod +x` and invoking it directly. For direct execution, the script must include a \"shebang\" line at the top to identify the interpreter, typically `#!/bin/sh`. Using the dot notation (`. MyScript`) \"sources\" the script, executing the commands within the current shell environment rather than starting a child process.\n\n### Unix Multiprocessing Concepts\n\nUnix is a multi-user, multi-processing operating system. This architecture dictates how commands interact with the system:\n\n- Child Processes: When you execute a command, the shell often creates a \"child process.\" This process receives a copy of the parent shell's environment but cannot modify the parent's environment.\n- Environment Inheritance: A child process can never change the environment of its parent because it only inherits a copy.\n- Background Processes: Users can start a process in the background—allowing the shell to remain available for other tasks—by appending an ampersand (`&`) to the command.\n\n### Key Operational Commands\n\n- Interrupt a running command: Press Control+C.\n- Quit the shell: Use the `exit` command or press Control+D.\n- View file permissions: Execute `ls -l`.\n- Make a file executable: Execute `chmod +x filename`.\n- Force current directory execution: Use `./filename`. \n\nExample of a high-load command that would normally block the terminal, but can be run via an ampersand to allow continued shell usage:\n\n$N=0$ && while [ $N -lt 10000 ]; do date >> scriptout; $N=\\text{\\`expr } $N + 1 \\text{\\`}$; done &",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576767297,
+      "channel": "plan_pipe_e9dac0dc4fe3",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 9,
+        "end": 17
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The environment in the Bourne Shell represents the context and resources available to a program during its execution. It is categorized into two concepts: the Command Execution Environment (CEE) and the \"environment\" variable set.\n\nThe Command Execution Environment (CEE) \nThe CEE consists of global resources that influence how a program runs, including open files (Standard Input, Output, and Error), the current working directory, file creation masks, shell functions, aliases, and specific options set via the $set$ command. When a child process is started, it inherits a copy of the parent’s CEE, excluding resources not marked for export.\n\nEnvironment Variables\nThe \"environment\" is a collection of name/value pairs used to store data or configuration.\n* Defining and using: Variables are created using $name=value$ and accessed by prepending a $ (e.g., $VAR). The shell substitutes the stored value for the variable name.\n* Configuration: Some variables like $PATH$ (directory search order) or $PS1$ (prompt formatting) are used by the shell itself to govern its behavior.\n* Exporting: By default, child processes do not receive all parent variables. To pass a variable to a subprocess, it must be marked for export using the $export$ command.\n\nSpecial Variables\nThe shell maintains specific variables that provide runtime information:\n* Positional variables: Arguments passed to a script are stored in $1$ through $9$ (with $0$ representing the script name). The $shift$ command allows access to arguments beyond the first nine by moving them to lower-indexed variables.\n* Status and process variables: These include $#$ (argument count), $?$ (exit status of the last command), $$ (process ID), and others like $* and $@ for handling all command-line arguments.\n\nConfiguration\nThe $set$ command is used to inspect defined variables and toggle shell behavior flags, such as $+/-x$ for debugging or $+/-v$ for verbose command printing. Through these mechanisms, the environment provides a flexible, persistent, and hierarchical structure for passing data and maintaining the state of shell sessions.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576767298,
+      "channel": "plan_pipe_e9dac0dc4fe3",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 18,
+        "end": 38
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Based on the document provided, here is a summary of the section covering Variable Expansion (covering the content related to pages 39-44 of the source text):\n\nVariable expansion is a fundamental feature of the shell that allows for dynamic script content. The primary mechanisms are substitution and various expansion forms.\n\nSubstitution and Variable Forms\nThe shell processes variables by replacing references with their assigned values. This process is essential for making scripts flexible. The text outlines specific syntactic forms used to handle these variables, which allow for conditional or default behaviors based on whether a variable is set or null.\n\nKey concepts in this area include:\n\n1. Basic Substitution: Retrieving the value stored in a variable, often represented by the $$ notation in shell scripting contexts for specific internal variables (e.g., $$ representing the process ID in many shells).\n\n2. Expansion Logic: The shell provides specialized syntax to manage variables based on their state:\n- Default values: Assigning a fallback value if a variable is unset or empty.\n- Error checking: Providing mechanisms to trigger errors or display messages if specific variables are not defined.\n- Conditional substitution: Substituting values only if certain criteria regarding the variable's state (set vs. unset) are met.\n\nThese features enable the programmer to control the flow of data within a script effectively, ensuring that commands have the input they need without requiring extensive manual checking for every variable.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576767299,
+      "channel": "plan_pipe_e9dac0dc4fe3",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 39,
+        "end": 44
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The document, covering pages 45 to 66, details the essential mechanisms for managing shell execution and logic.\n\nControl Flow (p. 45-56)\nThis section outlines how scripts manage decision-making and repetitive tasks. It covers the logic behind conditional statements, which allow the script to branch based on specific criteria, and loop structures, which enable the repeated execution of commands.\n\nCommand Execution (p. 56-66)\nThis segment explains how the shell processes and runs the commands provided to it. It discusses the relationship between commands and the environment, emphasizing the shell's role as an interpreter that translates user commands into instructions understood by the operating system. It also touches upon the mechanics of how the shell evaluates these commands before execution, ensuring that variables and expressions are correctly interpreted by the underlying kernel.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576767300,
+      "channel": "plan_pipe_e9dac0dc4fe3",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 45,
+        "end": 66
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The sections covering files, streams, and here documents (pages 67–80) focus on how the shell processes data and manages input/output operations.\n\nKey points include:\n\nThe Unix philosophy emphasizes processing one file at a time, allowing shells to treat data as a continuous flow rather than static blocks.\n\nStreams represent the data moving between files or processes. By utilizing redirection, the shell can manipulate where this data originates or terminates. This includes connecting the output of one command to the input of another, as well as sending output to specific files or reading input from them.\n\nHere documents are identified as a specialized method within the shell for embedding multi-line input directly into a script. This allows users to feed block-formatted data into a command without needing to reference an external file, effectively using the script's own body as the data stream.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576767301,
+      "channel": "plan_pipe_e9dac0dc4fe3",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 67,
+        "end": 80
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided document covers the topic of modularization in shell scripting between pages 81 and 86. Below is a concise summary of the key points:\n\nModularization through Named Functions\nThe shell allows for the creation of named functions to organize code, promote reusability, and simplify complex scripts. By defining blocks of code under a specific name, developers can invoke these blocks multiple times throughout a script without duplicating the underlying commands.\n\nCreating Named Functions\nA function is defined by providing a name followed by empty parentheses and a block of code enclosed in curly braces. The structure follows this syntax:\n\nfunction_name () {\n    commands\n}\n\nExecution and Scope\nOnce defined, a function can be executed simply by calling its name. Functions act as modular components of a script, holding a sequence of commands that are executed as a single unit when the function is invoked. This approach mirrors the concept of procedure-oriented programming, allowing for better management of script logic and debugging.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576767302,
+      "channel": "plan_pipe_e9dac0dc4fe3",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 81,
+        "end": 86
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The section covering pages 87 to 102 focuses on maintaining, diagnosing, and controlling shell scripts.\n\nDebugging Flags\nTo troubleshoot scripts, the Bourne shell provides debugging flags (p. 87). These flags allow users to trace command execution, providing visibility into the flow of the script and uncovering silent errors during runtime.\n\nBreaking Out of a Script\nScripts require methods to terminate prematurely or exit cleanly when specific conditions are met. This section explains the logic for stopping the execution of a script, ensuring that resources are released or status codes are reported back to the parent environment (p. 93).\n\nSignal Trapping\nThe shell can handle external interrupts using signal trapping. This mechanism allows a script to catch signals sent by the user (such as an interruption request) or the system. By defining traps, a programmer can perform cleanup tasks, such as removing temporary files or closing streams, before the script exits involuntarily (p. 95).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576767303,
+      "channel": "plan_pipe_e9dac0dc4fe3",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 87,
+        "end": 102
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The \"Cookbook\" section (p. 103-108) provides practical examples and workflows for common shell scripting tasks:\n\nBranching on extensions: This technique allows scripts to perform different actions based on a file’s extension, facilitating automated file handling (p. 103).\n\nRenaming files: Examples are provided for renaming multiple files at once, a frequent requirement for organizing file systems (p. 103).\n\nHandling long options: The text demonstrates how to parse and manage long command-line options within a script, improving user interface and clarity (p. 104).\n\nUsing xargs: Scripts can process specific groups of files by piping output into the xargs command, which builds and executes command lines from standard input (p. 105).\n\nGStreamer playlist frontend: A functional example is provided for creating a simple, command-line-based playlist frontend for GStreamer, illustrating how to wrap complex functionality into a user-friendly shell script (p. 106).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576767304,
+      "channel": "plan_pipe_e9dac0dc4fe3",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 103,
+        "end": 108
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text contains the references for the document, including a quick reference guide, command and environment references, and licensing details.\n\n### Quick Reference (p. 109-114)\nThis section serves as a practical resource for developers, covering:\n* Commonly used Unix/shell commands.\n* Fundamental shell capabilities.\n* Syntax structures for control flow, specifically IF statements, CASE statements, and loop constructs.\n* Credit and attribution for the documentation.\n\n### Command and Environment References (p. 115-120)\n* These chapters provide technical documentation regarding specific shell commands and the configuration of the shell environment.\n\n### Contributors (p. 121-122)\n* Lists the individuals who contributed to the creation and maintenance of the content.\n\n### Figures and Licensing (p. 123-132)\n* The list of figures provides documentation on the visual content included in the text.\n* The licensing section formally details the usage terms for the content, including:\n    * The GNU General Public License (GPL).\n    * The GNU Free Documentation License.\n    * The GNU Lesser General Public License (LGPL).\n* These licenses ensure the content remains open and available for derived works, provided they adhere to the requirements of the respective licenses.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576767305,
+      "channel": "plan_pipe_e9dac0dc4fe3",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 109,
+        "end": 132
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576767386,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why is the Bourne Shell often considered a universal choice for writing scripts?",
+            "options": [
+              "Because it is the only shell available on modern Unix-based systems.",
+              "Because it is a high-level programming language similar to C.",
+              "Because it serves as a common standard, making scripts more portable across different system shells.",
+              "Because it is required by the Linux kernel to perform file system operations."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text describes the Bourne Shell as the 'Latin of Unix command shells,' noting that writing scripts for it ensures they are likely to run on almost any command shell in existence."
+          },
+          {
+            "question": "What happens when you run a shell script using the command 'sh MyScript' compared to running it from an interactive session?",
+            "options": [
+              "The script runs in a new, non-interactive shell process.",
+              "The script executes in the current shell process, sharing the same environment.",
+              "The script must be compiled into machine code before it can execute.",
+              "The script runs with elevated root permissions automatically."
+            ],
+            "correctIndex": 0,
+            "explanation": "The text states that using the 'sh' command starts a new, non-interactive shell process to execute the commands contained within the file."
+          },
+          {
+            "question": "What is the primary technical difference between running a script with 'sh MyScript' and sourcing it with '. MyScript'?",
+            "options": [
+              "Sourcing does not require the script to be saved as a plain text file.",
+              "The 'sh' command starts a new process, whereas the '.' command does not.",
+              "The '.' command automatically runs the script in the background.",
+              "The 'sh' command is only for Bash, while '.' is for the original Bourne Shell."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text explicitly notes the difference: the 'sh' command starts a new process, while the execute/source command (represented by a period) does not."
+          },
+          {
+            "question": "Why, according to the text, would a user employ a shell instead of programming directly in C to perform day-to-day tasks?",
+            "options": [
+              "Because the C library cannot interact with the operating system kernel.",
+              "Because compilers like GCC are not available on Unix systems.",
+              "Because shells provide a quick, interpretive interface to system functions without requiring complex compilation.",
+              "Because the shell runs faster than binary executables created by C."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text explains that while Unix is built on a C library, using pure C is a 'pain in the backside' for daily tasks, so a shell was designed to act as an on-the-fly interpreter to access system power efficiently."
+          },
+          {
+            "question": "What is the function of the '-c' flag when used with the 'sh' command?",
+            "options": [
+              "It creates a new directory before executing the command.",
+              "It allows you to pass a single command string to be executed in a non-interactive shell.",
+              "It checks the script for syntax errors without actually running it.",
+              "It clears the current shell environment variables before running the command."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text identifies the '-c' command-line switch as the method to pass a single command string for execution within a new, non-interactive shell session."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778576767387,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary function of the Bourne Shell?",
+            "back": "It acts as a command-line interpreter, allowing users to execute system commands and automate tasks without needing to compile programs."
+          },
+          {
+            "front": "What does the 'sh' executable represent across different Unix systems?",
+            "back": "It is the standard, ubiquitous name for the Bourne Shell (or a shell compatible with its original design)."
+          },
+          {
+            "front": "What does the abbreviation 'Bash' stand for?",
+            "back": "Bourne Again SHell."
+          },
+          {
+            "front": "Why is it recommended to target scripts specifically for the Bourne Shell?",
+            "back": "It ensures high portability, meaning the script will likely run on any Unix-like system regardless of the specific shell installed."
+          },
+          {
+            "front": "What is 'interactive mode' in the context of a shell?",
+            "back": "A mode where the shell displays a prompt and waits for the user to type commands one by one to be executed."
+          },
+          {
+            "front": "How do you interrupt a running shell command or program?",
+            "back": "Press Control+C."
+          },
+          {
+            "front": "How can you terminate a shell session?",
+            "back": "Press Control+D (EOF) or execute the 'exit' command."
+          },
+          {
+            "front": "What is a 'shell script'?",
+            "back": "A plain text file containing a sequence of commands that the shell executes in non-interactive mode."
+          },
+          {
+            "front": "What is the difference between running a script with 'sh MyScript' and '. MyScript' (sourcing)?",
+            "back": "'sh MyScript' executes the script in a new process, whereas '. MyScript' executes the script within the current shell process."
+          },
+          {
+            "front": "What is the purpose of the '-c' flag when used with the 'sh' command?",
+            "back": "It allows the shell to execute a single command string provided as an argument instead of reading commands from a script file."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-linux-sysadmin-cert_2",
+      "slides": [
+        {
+          "title": "Bourne Shell Scripting",
+          "bullets": [
+            "Introduction to productive automation with the Unix shell.",
+            "Understanding shell evolution and foundational command execution."
+          ],
+          "notes": "Welcome to our deep dive into Bourne shell scripting. We will explore how to automate tasks efficiently within the Unix environment.",
+          "page_range": "6-17",
+          "image_prompt": ""
+        },
+        {
+          "title": "Comparing Shells",
+          "bullets": [
+            "Unix focus: empower power users via command interpreters.",
+            "The Bourne shell (sh) is the foundational standard.",
+            "Modern shells: Bash, ksh, zsh are often 'sh' descendants.",
+            "Most 'sh' executables today are links to modern shells."
+          ],
+          "notes": "While many shells exist, Bourne shell remains the bedrock of Unix. Almost every modern shell maintains compatibility with its legacy.",
+          "page_range": "6-8",
+          "image_prompt": ""
+        },
+        {
+          "title": "Running Commands",
+          "bullets": [
+            "Interactive mode: direct user input via prompt.",
+            "Control+C to interrupt; Control+D to exit session.",
+            "Non-interactive scripts: pre-written sequences in text files.",
+            "Automate repetitive tasks using scripts instead of retyping."
+          ],
+          "notes": "You can run commands directly in your terminal or save them into a script to replay complex workflows easily.",
+          "page_range": "10-12",
+          "image_prompt": ""
+        },
+        {
+          "title": "Environment Concepts",
+          "bullets": [
+            "Environment: data context for running programs.",
+            "Command Execution Environment (CEE): includes open files, directory, and permissions.",
+            "Child processes inherit a partial copy of parent CEE.",
+            "Use 'set' to inspect or modify shell CEE options."
+          ],
+          "notes": "Every program runs within an environment. Understanding how CEE handles data and inheritance is key to writing robust scripts.",
+          "page_range": "18-19",
+          "image_prompt": ""
+        },
+        {
+          "title": "Environment Variables",
+          "bullets": [
+            "Labelled storage for variables (name=value pairs).",
+            "Crucial mechanism for passing data between processes.",
+            "Use '$' prefix to substitute variable values.",
+            "Scripts make decisions based on stored environment values."
+          ],
+          "notes": "Environment variables allow your scripts to store and retrieve information, enabling dynamic behavior within the system.",
+          "page_range": "20",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 3 — BourneShellScripting - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576767286,
+      "pdfName": "BourneShellScripting"
+    }
+  ],
+  "sourceHash": "ae8892eb0adac9db"
+}

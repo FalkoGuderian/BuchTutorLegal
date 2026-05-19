@@ -1,0 +1,370 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Netzwerktechnik — Einführung - Lektion 2 — IP-Telefonie",
+    "pdfName": "IP-Telefonie",
+    "createdAt": 1778572429595,
+    "exportedAt": "2026-05-12T07:53:49.596Z",
+    "meta": {
+      "courseId": "course-de-cs-netzwerke-einfuehrung",
+      "lessonIndex": 1,
+      "courseTitle": "Netzwerktechnik — Einführung",
+      "lessonObjective": "VoIP, SIP und Protokolle.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-ip-telefonie",
+            "title": "IP-Telefonie",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/IP-Telefonie"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_9a43dffd58d1",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Grundlagen und Herkunft der IP-Telefonie",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Endgeräte und VoIP-Rufnummern",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-6",
+          "chapterTitle": "VoIP-Anbieter und Sprach-Codecs",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "7-8",
+          "chapterTitle": "Vorteile, Nachteile und Einsatzbereiche",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778572429595,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung zur Lerneinheit IP-Telefonie basierend auf dem bereitgestellten Dokument:\n\n### Zusammenfassung: IP-Telefonie (VoIP)\n\n**1. Definition und Grundlagen**\n*   **IP-Telefonie (Voice over IP, VoIP):** Bezeichnet die Sprach- und Bildkommunikation über Computernetzwerke auf Basis des Internetprotokolls (TCP/IP). Die Sprachdaten werden dabei in digitalen Datenpaketen übertragen (S. 1, S. 2).\n*   **Protokolle:** Während TCP/IP der Standard ist, nutzt VoIP für die Sprachübertragung die ungesicherten Protokolle **UDP und IP**, da für Echtzeit-Sprachdaten keine Paketwiederholungen nötig sind (S. 2). Der wichtigste Signalisierungsstandard ist heute **SIP**, der den älteren Standard H.323 weitgehend verdrängt hat (S. 2).\n\n**2. Voraussetzungen für VoIP**\n*   **Bandbreite:** Die Qualität hängt maßgeblich vom Upload (Upstream) ab. Ein unkomprimiertes Gespräch (Codec G.711) benötigt ca. 80 Kbps, während komprimierte Codecs (z. B. iLBC, Speex) eine effizientere Nutzung bei geringerer Bandbreite erlauben (S. 2).\n*   **Komponenten:** Man benötigt einen Internetzugang, ein Endgerät und eine VoIP-Rufnummer (SIP-Nummer).\n\n**3. VoIP-Endgeräte**\nEs existieren vier grundlegende Arten, VoIP zu nutzen (S. 2, S. 3):\n1.  **Software-Telefon:** Nutzung über PC (mit Headset/Kamera); Unterscheidung in *kompatible* (Standard-Protokolle wie SIP) und *nicht-kompatible* Softphones (proprietäre Protokolle wie z. B. Skype) (S. 3).\n2.  **IP-Telefon:** Hardware-Gerät mit RJ45-Anschluss, das direkt am Router/Switch betrieben wird (S. 3).\n3.  **Analoger Telefon-Adapter (ATA):** Ermöglicht die Weiterverwendung herkömmlicher analoger Telefone durch Anschluss zwischen Telefon und Internet (S. 3, S. 4).\n4.  **ISDN-Telefon-Adapter (ITA):** Analog zu ATA für die Nutzung von ISDN-Geräten am Internetanschluss (S. 3).\n\n**4. Sprachcodecs und Qualität**\n*   Sprachcodecs wandeln analoge Signale in digitale Daten um und komprimieren diese.\n*   **G.711:** Hohe Qualität (ISDN), aber hoher Bandbreitenverbrauch (S. 5).\n*   **iLBC:** Speziell für das Internet entwickelt; hochgradig resistent gegen Paketverluste und sehr bandbreiteneffizient (S. 6).\n*   Die Sprachqualität wird in **MOS (Mean Opinion Score)** gemessen (Skala bis ca. 4,3) (S. 6).\n\n**5. Vor- und Nachteile**\n*   **Vorteile:** Kosteneinsparung (insb. netzintern), Flexibilität (keine physische Telefonverkabelung nötig), zusätzliche Funktionen (z. B. Fax-over-IP, CTI-Integration) (S. 6, S. 7).\n*   **Nachteile:** Abhängigkeit von der Internetverfügbarkeit (Ausfallrisiko), mögliche Probleme bei Notrufen (Standortübermittlung) und die Notwendigkeit einer ausreichenden Bandbreitendimensionierung in Unternehmensnetzen (S. 7).\n\n**6. Rolle der Anbieter**\nEin VoIP-Anbieter ist technisch nur notwendig, wenn eine Verbindung zwischen Internet-Telefonie und dem klassischen Telefonnetz (Festnetz) hergestellt werden soll (S. 5).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778572429595,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-cs-netzwerke-einfuehrung_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 2 — IP-Telefonie - Präsentation</span><span class=\"pm-chat-count\">6 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Einführung in die IP-Telefonie</div><ul class=\"pm-chat-slide-bullets\"><li>IP-Telefonie nutzt das Internetprotokoll zur Sprach- und Bildübertragung.</li><li>Bekannt als Voice over IP (VoIP).</li><li>Ermöglicht Telefonie über Breitband-Internetanschlüsse.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778572429596,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des bereitgestellten Textes (S.1–2):\n\nDie IP-Telefonie, auch als Voice over IP (VoIP) bekannt, ermöglicht Sprach- und Bildkommunikation über Computernetzwerke auf Basis des Internetprotokolls (S.1). Der Ursprung der Technologie liegt im Jahr 1995; nach der Etablierung des Standards H.323 durch die ITU-T im Jahr 1996 setzte sich später SIP als Signalisierungsprotokoll durch (S.2).\n\nTechnische Grundlagen der VoIP-Kommunikation:\nDie Übertragung nutzt innerhalb des TCP/IP-Stacks vorzugsweise UDP statt TCP, da bei der Sprachübertragung Paketwiederholungen in Echtzeit nicht sinnvoll sind. Das menschliche Gehör toleriert Paketverluste von bis zu 5 % ohne merkliche Einbußen (S.2).\n\nAnforderungen und Kapazitäten:\nEin wesentlicher Faktor für die Qualität ist die zur Verfügung stehende Bandbreite, insbesondere im Upstream des Internetanschlusses. Während die unkomprimierte Übertragung (Codec G.711) etwa 80 Kbps benötigt, ermöglichen komprimierende Codecs wie iLBC oder Speex mehrere parallele Telefonate über eine Standard-DSL-Leitung (S.2).\n\nNutzungsvoraussetzungen:\nFür die aktive Teilnahme an der IP-Telefonie werden ein Internetzugang, eine VoIP-Rufnummer sowie ein entsprechendes Endgerät benötigt. Als Endgeräte dienen primär Software-Lösungen (PC-Programme) oder dedizierte IP-Telefone mit RJ45-Schnittstelle (S.2).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572429605,
+      "channel": "plan_pipe_9a43dffd58d1",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die zusammenfassende Übersicht der Internet-Telefonie (VoIP) basierend auf den Seiten 3 und 4:\n\n**Möglichkeiten der Anbindung**\nDie Internettelefonie kann über verschiedene Hardware- oder Software-Lösungen realisiert werden:\n- Software-Telefone: Diese benötigen einen Computer mit Mikrofon und Lautsprecher (S. 3). Man unterscheidet zwischen kompatiblen (standardisiertes Protokoll wie SIP) und nicht-kompatiblen Softphones (proprietäre Protokolle wie Skype) (S. 3).\n- IP-Telefone: Diese dienen als eigenständige Hardware und benötigen keinen PC, da sie direkt an einen Router oder Switch angeschlossen werden (S. 3).\n- Adapter-Lösungen (ATA/ITA): Analog- oder ISDN-Telefone lassen sich über spezielle Adapter mit dem Internet verbinden. Manche Modelle (z. B. Fritz!Box Fon) ermöglichen die parallele Nutzung des herkömmlichen Telefonnetzes und des Internets über ein einziges Gerät (S. 3, 4).\n\n**Rufnummern und Identifikation**\n- SIP-Nummern: Diese funktionieren ähnlich wie E-Mail-Adressen und ermöglichen weltweit kostenlose Gespräche zwischen Nutzern, sofern beide Endgeräte mit dem Internet verbunden sind (S. 4).\n- Standortunabhängigkeit: Zum Telefonieren ist es unerheblich, wo der SIP-Server des Anbieters steht oder in welchem Land die Nummer registriert wurde (S. 4).\n- Verbindungsaufbau zu Nicht-VoIP-Nutzern: Um herkömmliche Telefonverbindungen (Festnetz) zu nutzen, benötigt man eine entsprechende Festnetznummer des VoIP-Anbieters, wobei auch die Portierung der eigenen alten Nummer möglich ist (S. 4).\n\nDie Übertragungsqualität wird nicht durch den Standort des SIP-Servers beeinflusst, da die Datenpakete direkt zwischen den Endgeräten der Gesprächspartner übertragen werden (S. 4).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572429606,
+      "channel": "plan_pipe_9a43dffd58d1",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der bereitgestellten Informationen auf den Seiten 5 und 6:\n\nGrundlagen und VoIP-Anbieter\nDer Begriff VoIP-Anbieter ist insofern irreführend, als für die Internet-Telefonie prinzipiell lediglich ein Internetanschluss erforderlich ist. Ein VoIP-Anbieter fungiert primär als Brücke zum klassischen Telefonnetz oder ermöglicht die Erreichbarkeit durch die Vergabe einer Festnetznummer (S. 5). Bei Anrufen zwischen zwei Internet-Endgeräten dient der Anbieter lediglich dem Verbindungsaufbau durch den Austausch der IP-Adressen; danach erfolgt die Datenübertragung direkt zwischen den Geräten (S. 5). Einige Anbieter beschränken die kostenlose VoIP-Telefonie künstlich auf ihren eigenen Nutzerkreis, indem sie die Adressübermittlung an eine Registrierung binden (S. 5).\n\nSprachcodecs und Qualität\nUm analoge Sprache für das Internet zu digitalisieren und zu komprimieren, werden verschiedene Codecs eingesetzt. Da bei der Übertragung Datenpakete verloren gehen können, nutzen moderne Codecs Verschleierungstechniken (S. 5).\n\n- G.711: Bietet ISDN-Qualität, erfordert jedoch eine hohe Bandbreite von ca. 88 kbit/s (S. 5).\n- G.726: Eine Codec-Familie für das Festnetz, wobei G.726-32 ca. 55 kbit/s benötigt (S. 5, 6).\n- iLBC (\"Internet Low Bitrate Codec\"): Wurde speziell für das Internet entwickelt. Er benötigt nur ca. 27 kbit/s und ist besonders robust gegenüber Paketverlusten, was ihn für internationale Gespräche prädestiniert (S. 6).\n\nDie Qualität wird über den MOS-Wert (Mean Opinion Score) gemessen. Der iLBC liefert hierbei auch bei Paketverlustraten von beispielsweise 5\\% noch gute Ergebnisse (S. 6).\n\nVorteile von VoIP\nVoIP bietet erhebliche strukturelle und ökonomische Vorteile:\n- Kosteneinsparungen bei der Verkabelung und durch kostenloses Telefonieren innerhalb von TCP/IP-Netzwerken (S. 6).\n- Flexibilität durch die Nutzung von Telefonie über den PC oder die einfache Bereitstellung mehrerer Endgeräte ohne ISDN-Anschluss (S. 6).\n- Erweiterte Kontroll- und Steuerungsmöglichkeiten durch die Integration in die PC-Netzwerktechnik sowie zusätzliche Funktionen wie den Versand oder Empfang von Faxen über Netzwerkspeicher (S. 6).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572429607,
+      "channel": "plan_pipe_9a43dffd58d1",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des bereitgestellten Abschnitts:\n\n**Technik und Produktivität**\nDer Einsatz von VoIP ermöglicht in Unternehmen eine effiziente Abwicklung des gesamten Telefonverkehrs über das vorhandene Netzwerk (S.7). Die Nutzung von Hardware-Endgeräten (z. B. Snom 720) in Kombination mit CTI-Software (wie Asterisk oder Estos Procall) sowie Headsets steigert die Produktivität durch Funktionen wie Auto-Dial und freihändiges Arbeiten maßgeblich (S.7). Dank moderner Router mit integrierter Firewall, Modem und ISDN-Funktionalität ist zudem ein Betrieb ohne eingeschalteten PC sowie eine platzsparende Installation möglich (S.8).\n\n**Herausforderungen und Nachteile**\nTrotz der Vorteile gibt es kritische Aspekte: Die Ausfallsicherheit ist mit 97 % begrenzt (S.7). Zudem stellt der Upstream oft einen Flaschenhals dar, weshalb bei der Mischung von VoIP mit anderen EDV-Datenströmen Maßnahmen wie Bandbreitenregulatoren oder separate Telefonbackbones notwendig sein können (S.7). Weitere Einschränkungen betreffen die Notruffunktion, die nicht bei allen Anbietern vollständig unterstützt wird, sowie die teilweise uneinheitliche Übermittlung von Rufnummern (S.7).\n\n**Wirtschaftliche Aspekte**\nIn Unternehmen ist VoIP besonders effizient, sofern die Bandbreite korrekt dimensioniert ist (S.7). In Privathaushalten lohnt sich VoIP vor allem im Rahmen von Komplettpaketen oder bei hohem Gesprächsaufkommen. Durch die Kombination mit Flatrates kann ein analoger Anschluss kostengünstig um ISDN-Funktionen erweitert werden (S.7). Mit aktuellen Breitbandlösungen sind ISDN-Mehrstellenanlagen und Internetzugang heute deutlich erschwinglicher als noch vor einigen Jahren (S.8).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572429608,
+      "channel": "plan_pipe_9a43dffd58d1",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 7,
+        "end": 8
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778572429695,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Warum nutzt die IP-Telefonie bevorzugt das UDP-Protokoll anstelle von TCP?",
+            "options": [
+              "Weil UDP eine höhere Verschlüsselung bietet.",
+              "Weil Paketwiederholungen und Quittierungen bei Echtzeit-Sprachdaten oft kontraproduktiv sind.",
+              "Weil TCP-Protokolle nicht über DSL-Anschlüsse übertragen werden können.",
+              "Weil UDP die Sprachqualität durch eine stärkere Kompression verbessert."
+            ],
+            "correctIndex": 1,
+            "explanation": "Für IP-Telefonie ist eine verzögerungsfreie Übertragung entscheidend. Da das menschliche Ohr kleine Paketverluste toleriert, sind die für TCP charakteristischen Paketwiederholungen bei Echtzeit-Sprache unnötig und würden den Fluss eher stören."
+          },
+          {
+            "question": "Was unterscheidet kompatible von nicht-kompatiblen Software-Telefonen?",
+            "options": [
+              "Nicht-kompatible nutzen geheime oder proprietäre Protokolle, weshalb sie meist nur mit der gleichen Software funktionieren.",
+              "Kompatible Software-Telefone benötigen keine Internetverbindung.",
+              "Nicht-kompatible Software-Telefone besitzen immer eine Hardware-Schnittstelle.",
+              "Kompatible Software-Telefone funktionieren nur unter dem Betriebssystem Linux."
+            ],
+            "correctIndex": 0,
+            "explanation": "Kompatible Software-Telefone setzen auf offene Standards wie SIP, während inkompatible Varianten oft eigene, geschlossene Protokolle verwenden, die eine Kommunikation zwischen unterschiedlicher Software verhindern."
+          },
+          {
+            "question": "Welche Rolle spielt ein VoIP-Anbieter bei einem Gespräch zwischen zwei Internet-Telefonen?",
+            "options": [
+              "Der Anbieter muss während des gesamten Gesprächs die Sprachdaten weiterleiten.",
+              "Der Anbieter ist zwingend erforderlich, da die IP-Adressen der Endgeräte sonst nicht erkannt werden.",
+              "Der Anbieter hilft primär beim Verbindungsaufbau durch den Austausch der IP-Adressen; danach fließen die Daten oft direkt zwischen den Endgeräten.",
+              "Der Anbieter dient als Speicherort für alle geführten Telefonate."
+            ],
+            "correctIndex": 2,
+            "explanation": "Nachdem der VoIP-Server die IP-Adressen der beiden Gegenstellen vermittelt hat, findet die eigentliche Sprachübertragung direkt zwischen den Endgeräten statt, also am VoIP-Server vorbei."
+          },
+          {
+            "question": "Welche Eigenschaft zeichnet den iLBC-Codec besonders aus?",
+            "options": [
+              "Er bietet die absolut höchste Datenrate aller verfügbaren Codecs.",
+              "Er ist der Standardcode für ISDN-Festnetztelefonie.",
+              "Er ist besonders robust gegenüber Paketverlusten und benötigt nur eine geringe Bandbreite.",
+              "Er ist ausschließlich für Videotelefonie geeignet."
+            ],
+            "correctIndex": 2,
+            "explanation": "Der iLBC wurde speziell für die Internet-Telefonie entwickelt und zeichnet sich durch seine geringe Bandbreite sowie eine hohe Robustheit bei Paketverlusten aus."
+          },
+          {
+            "question": "Was ist der Hauptgrund für die Begrenzung der parallelen Telefonate bei einem DSL-Anschluss?",
+            "options": [
+              "Die begrenzte Kapazität des Downstreams.",
+              "Die meist deutlich geringere Bandbreite im Upstream.",
+              "Die Begrenzung der IP-Adressen durch den Provider.",
+              "Die maximale Anzahl an Telefonen, die man an einen Router anschließen kann."
+            ],
+            "correctIndex": 1,
+            "explanation": "Die Telefonie erfordert in beide Richtungen Bandbreite. Da bei DSL-Anschlüssen der Upstream (Daten vom Rechner weg) physikalisch meist viel kleiner ist als der Downstream, stellt er den eigentlichen Flaschenhals für die Anzahl gleichzeitiger Gespräche dar."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778572429696,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist Voice over IP (VoIP)?",
+            "back": "IP-Telefonie ist das Telefonieren über ein Computernetzwerk auf Grundlage des Internetprotokolls."
+          },
+          {
+            "front": "Welches Signalisierungsprotokoll hat H.323 als Industriestandard weitgehend verdrängt?",
+            "back": "Das von der IETF entwickelte SIP-Protokoll (Session Initiation Protocol)."
+          },
+          {
+            "front": "Warum nutzt die IP-Telefonie bevorzugt das UDP-Protokoll statt TCP?",
+            "back": "Da bei der Sprachübertragung Paketwiederholungen oder Quittierungen (wie bei TCP) keinen Sinn ergeben, nutzt VoIP das Protokoll UDP, um die Latenz gering zu halten."
+          },
+          {
+            "front": "Was ist der Flaschenhals bei der IP-Telefonie über Standard-DSL-Anschlüsse?",
+            "back": "Der Upstream, da dieser bei herkömmlichen Anschlüssen oft stark begrenzt ist (z. B. 128 Kbps)."
+          },
+          {
+            "front": "Nenne vier grundsätzliche Arten von VoIP-Endgeräten.",
+            "back": "1. Software-Telefon (PC-Programm), 2. IP-Telefon (hardwareseitig), 3. Analog-Telefon-Adapter (ATA), 4. ISDN-Telefon-Adapter (ITA)."
+          },
+          {
+            "front": "Was unterscheidet 'kompatible' von 'nicht-kompatiblen' Software-Telefonen?",
+            "back": "Kompatible Software-Telefone nutzen Standardprotokolle (wie SIP), während nicht-kompatible auf proprietäre/geheime Protokolle setzen, die meist nur innerhalb derselben Software funktionieren."
+          },
+          {
+            "front": "Was ist eine SIP-Nummer (SIP-URI)?",
+            "back": "Eine SIP-Nummer ist vergleichbar mit einer E-Mail-Adresse und dient der weltweiten, kostenlosen Erreichbarkeit zwischen SIP-fähigen Endgeräten über das Internet."
+          },
+          {
+            "front": "Welche Funktion hat ein VoIP-Anbieter?",
+            "back": "Er fungiert als Brücke zwischen dem Internet und dem herkömmlichen Festnetz, wenn einer der Gesprächspartner kein VoIP nutzt."
+          },
+          {
+            "front": "Warum wird der iLBC-Codec in der IP-Telefonie empfohlen?",
+            "back": "Er benötigt eine sehr geringe Bandbreite (ca. 27kbit/s inkl. Overhead) und ist aufgrund seiner Architektur sehr robust gegenüber Paketverlusten."
+          },
+          {
+            "front": "Was gibt der MOS (Mean Opinion Score) bei Sprachcodecs an?",
+            "back": "Der MOS ist ein Wert zur Einschätzung der Sprachqualität, wobei 4 als 'gut' und 3 als 'ausreichend' gilt."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-cs-netzwerke-einfuehrung_1",
+      "slides": [
+        {
+          "title": "Einführung in die IP-Telefonie",
+          "bullets": [
+            "IP-Telefonie nutzt das Internetprotokoll zur Sprach- und Bildübertragung.",
+            "Bekannt als Voice over IP (VoIP).",
+            "Ermöglicht Telefonie über Breitband-Internetanschlüsse.",
+            "Integration von Sprache und Daten direkt bis zum Endgerät."
+          ],
+          "notes": "Willkommen zur Lektion über IP-Telefonie. Wir betrachten heute, wie Sprache über Computernetzwerke statt klassischer Telefonanschlüsse übertragen wird.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Technik und Entwicklung",
+          "bullets": [
+            "Ursprung 1995: Demonstration durch die Firma Vocaltec.",
+            "SIP löste H.323 als Standard für Signalisierung ab.",
+            "Nutzung von UDP statt TCP für effizientere Sprachpakete.",
+            "Toleranz menschlicher Ohren gegenüber moderatem Paketverlust."
+          ],
+          "notes": "Die Technik entwickelte sich von frühen Versuchen hin zu stabilen SIP-basierten Standards, die heute die Basis unserer Kommunikation bilden.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Endgeräte für VoIP",
+          "bullets": [
+            "Software-Telefone: PC-basierte Lösungen (kompatibel vs. inkompatibel).",
+            "IP-Telefone: Hardware mit direkter RJ45-Netzwerkanbindung.",
+            "ATA (Analog-Telefon-Adapter): Weiternutzung analoger Endgeräte.",
+            "ITA-Adapter: Anbindung klassischer ISDN-Telefone an das Internet."
+          ],
+          "notes": "Ob über PC, dediziertes IP-Telefon oder Adapter für alte Geräte – VoIP bietet vielfältige Möglichkeiten der Einbindung in den Alltag.",
+          "page_range": "3-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Rufnummern und Anbieter",
+          "bullets": [
+            "SIP-Nummern funktionieren ortsunabhängig wie eine E-Mail-Adresse.",
+            "IP-Anbieter dienen bei Verbindungen ins Festnetz als Gateways.",
+            "Direkte IP-zu-IP-Telefonie erfolgt oft ohne Provider-Server nach Verbindungsaufbau.",
+            "Festnetznummern ermöglichen Erreichbarkeit aus dem klassischen Telefonnetz."
+          ],
+          "notes": "Die SIP-Rufnummer ist das Identitätsmerkmal in der IP-Welt. Anbieter fungieren dabei oft als Brückenschlag zum klassischen Telefonnetz.",
+          "page_range": "4-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Sprach-Codecs und Qualität",
+          "bullets": [
+            "Codecs wandeln analoge Signale in digitale Datenströme um.",
+            "G.711 liefert ISDN-Qualität bei hohem Bandbreitenbedarf.",
+            "iLBC ist bandbreiteneffizient und robust gegenüber Paketverlusten.",
+            "Qualität wird mittels MOS-Werten (Mean Opinion Score) gemessen."
+          ],
+          "notes": "Die Wahl des Codecs entscheidet über die Balance zwischen benötigter Bandbreite und der wahrgenommenen Sprachqualität.",
+          "page_range": "5-6",
+          "image_prompt": ""
+        },
+        {
+          "title": "Vorteile, Risiken und Fazit",
+          "bullets": [
+            "Vorteile: Kostenersparnis, flexiblere Büroverkabelung, Zusatzfunktionen wie CTI.",
+            "Nachteile: Abhängigkeit von Breitband, Notruf-Einschränkungen, mögliche Latenzen.",
+            "Unternehmensumfeld erfordert oft Bandbreitenmanagement (QoS).",
+            "Privatsektor profitiert durch kostengünstige Komplettpakete."
+          ],
+          "notes": "Zusammenfassend bietet VoIP enormes Effizienzpotenzial, erfordert aber eine solide Infrastruktur und Kenntnis der spezifischen Anforderungen.",
+          "page_range": "7-8",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 2 — IP-Telefonie - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778572429595,
+      "pdfName": "IP-Telefonie"
+    }
+  ],
+  "sourceHash": "74a3253c47aeffa4"
+}

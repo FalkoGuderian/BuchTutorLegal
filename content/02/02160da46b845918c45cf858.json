@@ -1,0 +1,351 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Tour of Programming Languages — From C to Haskell - Lesson 16 — Fortran 2003",
+    "pdfName": "Fortran 2003",
+    "createdAt": 1778576740772,
+    "exportedAt": "2026-05-12T09:05:40.773Z",
+    "meta": {
+      "courseId": "course-en-programming-languages-tour",
+      "lessonIndex": 15,
+      "courseTitle": "Tour of Programming Languages — From C to Haskell",
+      "lessonObjective": "Ada, D, Eiffel, Fortran 2003.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-fortran-2003",
+            "title": "Fortran 2003",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Fortran_2003"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_b2641ecc7b17",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-1",
+          "chapterTitle": "Introduction to Fortran: Data Types and Arithmetic",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-3",
+          "chapterTitle": "Arrays and Iterative Loops",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Nested Loops and Comparison Operators",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-5",
+          "chapterTitle": "Functions and Subroutines",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576740772,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: Introduction to Modern Fortran (2003 Standard)\n\nModern Fortran focuses on clear variable declaration and structured programming. Below are the core concepts covered in this section:\n\n**1. Fundamentals**\n*   **Variables:** Must be explicitly declared using `implicit none`. Key data types include `integer`, `real`, `complex`, `logical`, and `character` [S.1].\n*   **Arithmetic:** Supports standard operators (+, -, /, *) and exponentiation via `**` [S.1].\n*   **Comparison:** Supports operators such as `/=` (not equal), `==`, `<`, `>`, `<=`, and `>=` [S.3].\n\n**2. Arrays**\n*   Arrays are inherently powerful in Fortran, with index numbering default starting at 1 [S.2].\n*   The language provides intrinsic functions for array operations, including `size`, `sum`, `product`, `minval`, and `maxval` [S.2].\n\n**3. Control Flow**\n*   **Loops:** Use `do` loops for iteration, which can be defined with a specific step size or nested for multi-dimensional operations [S.2, S.3, S.4].\n*   **Conditionals:** The `do` loop can run indefinitely when combined with an `exit` statement [S.3].\n\n**4. Modularity and Procedures**\n*   **Functions:** Used to return values. They can be bundled into `modules` and imported using the `use` statement [S.4].\n*   **Subroutines:** Unlike functions, subroutines cannot be used directly in expressions; they are invoked via a `call` statement and typically use variables with `intent(in)` and `intent(out)` to manage data flow [S.4, S.5].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576740772,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-programming-languages-tour_15\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 16 — Fortran 2003 - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Introduction to Fortran 2003</div><ul class=\"pm-chat-slide-bullets\"><li>Modern Fortran focuses on current standards.</li><li>Implicit none ensures all variables are declared.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778576740773,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This section provides an introduction to modern Fortran (specifically the 2003 standard), emphasizing current practices over obsolete conventions.\n\n**Core Concepts:**\n\n*   **Best Practices:** The use of the `implicit none` statement is highly recommended, as it mandates explicit variable declarations to ensure code clarity and prevent errors.\n*   **Data Types:** Fortran supports five primary data types: `integer`, `real`, `complex`, `logical`, and `character`.\n*   **Arithmetic Operators:** Standard mathematical operations are supported, including addition ($+$), subtraction ($-$), division ($/$), multiplication ($*$), and exponentiation ($**$).\n*   **Input/Output:** The `write (*,*)` statement is the primary method for outputting results to the console.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576740782,
+      "channel": "plan_pipe_b2641ecc7b17",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 1
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section provides an overview of array handling, iteration, and control structures in Fortran 90 and later versions.\n\n**Arrays**\nFortran arrays are 1-indexed by default (p. [S.2]). They support powerful intrinsic functions, such as $size(vec)$, $sum(vec)$, $product(vec)$, $minval(vec)$, and $maxval(vec)$ (p. [S.2]). Arrays can be initialized using constructors and support element-wise mathematical operations, such as adding a scalar to every element or squaring them (p. [S.2]).\n\n**Loops and Iteration**\nIteration is performed using $do$ loops, which can function with or without specific step sizes (p. [S.2]). \n1. Standard loops: $i$ iterates through a range, and upon completion, the variable $i$ retains the value of the last iteration plus the step size (p. [S.2], [S.3]).\n2. Conditional loops: A $do$ loop can run without a counter and requires an $exit$ statement to terminate based on logic (p. [S.3]). \n3. Nesting: Loops can be nested within one another to handle multi-level iteration (p. [S.3]).\n\n**Logical Comparisons**\nFortran utilizes standard comparison operators: $<, <=, /=, ==, >=, >$ (p. [S.3]). It is important to note that $/=$ represents the \"not equal\" operator (p. [S.3]). Additionally, constants can be defined using the $parameter$ attribute, which ensures their values remain immutable throughout the program execution (p. [S.3]).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576740783,
+      "channel": "plan_pipe_b2641ecc7b17",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the key programming concepts in Fortran from the provided text.\n\n### Control Flow and Loops\n*   **DO Loops**: These can utilize counter variables with specified step sizes or operate as infinite loops controlled by an $EXIT$ statement (p. 3).\n*   **Loop Termination**: After a loop concludes, the counter variable holds its final value plus the step size (p. 3).\n*   **Nested Loops**: Loops can be placed within one another to handle multi-dimensional iteration, such as iterating through both index $i$ and $j$ (p. 3, 4).\n*   **Comparison Operators**: Fortran uses standard operators including $<$, $<=$, $==$, $>=$, $>$, and the unique $/=$ for \"not equal\" (p. 3).\n\n### Constants and Data\n*   **Parameters**: Declaring a variable with the $parameter$ attribute makes it an immutable constant that cannot be altered during program execution (p. 3).\n\n### Modularity: Functions and Subroutines\n*   **Functions**: Designed to return a value based on input arguments and can be used directly within expressions (p. 4).\n*   **Subroutines**: These are invoked using the $call$ statement rather than via expressions. They provide an alternative modular approach for performing tasks (p. 4).\n*   **Implementation**: Both functions and subroutines are often organized within modules and accessed via the $use$ statement, promoting structured and reusable code (p. 4).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576740784,
+      "channel": "plan_pipe_b2641ecc7b17",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines the differences between functions and subroutines in Fortran, as demonstrated through temperature conversion examples (p. 4, 5).\n\nFunctions\nFunctions are designed to return a value based on provided arguments and can be used directly within expressions (p. 4). They are defined using the `function` and `result` keywords and are invoked by calling the function name within the code (p. 4). The formula used for the conversion is:\n$$degrees\\_C = \\frac{degrees\\_F - 32}{1.8}$$\n\nSubroutines\nSubroutines cannot be used as part of an expression (p. 4). Instead, they are invoked specifically using a `call` statement (p. 4, 5). Unlike functions, they do not return a single result value directly; instead, they use $intent(out)$ arguments to pass data back to the calling program (p. 5).\n\nKey Comparison\nWhile both modules perform identical calculations, functions provide a more concise syntax for expressions, whereas subroutines provide a structured way to modify variable values through a formal call statement (p. 4, 5).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576740785,
+      "channel": "plan_pipe_b2641ecc7b17",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576740872,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "In Fortran, what is the resulting value of the loop counter variable 'i' after completing the loop 'do i=1,3'?",
+            "options": [
+              "3",
+              "4",
+              "5",
+              "Undefined"
+            ],
+            "correctIndex": 1,
+            "explanation": "According to the text, after completing a loop, the value of the loop variable 'i' is its last value before leaving the loop plus the step size. Since the loop ends at 3 with a step of 1, i becomes 4."
+          },
+          {
+            "question": "What is the primary syntactical difference between how functions and subroutines are invoked in Fortran?",
+            "options": [
+              "Functions require a module, while subroutines do not.",
+              "Subroutines return values, while functions do not.",
+              "Functions can be used within arithmetic expressions, while subroutines must be invoked with a 'call' statement.",
+              "Functions must be written in capitalized letters, while subroutines do not."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text states that a function can return a value and be used in an expression, whereas a subroutine cannot be used in an expression and must be invoked using a 'call' statement."
+          },
+          {
+            "question": "How does the indexing of array elements in Fortran differ from the indexing behavior commonly found in C or C++?",
+            "options": [
+              "Fortran arrays start at index 1 by default, whereas C/C++ arrays start at 0.",
+              "Fortran arrays start at index 0, whereas C/C++ arrays start at 1.",
+              "Fortran arrays do not use integer indexing.",
+              "Fortran uses negative indexing by default."
+            ],
+            "correctIndex": 0,
+            "explanation": "The content explicitly notes that unlike C or C++, array elements in Fortran are numbered from 1 by default."
+          },
+          {
+            "question": "What is the result of the Fortran expression '2/3'?",
+            "options": [
+              "0.666",
+              "1",
+              "0",
+              "Error"
+            ],
+            "correctIndex": 2,
+            "explanation": "In integer arithmetic, 2 divided by 3 results in 0 because the fractional part is truncated when dealing with integer data types."
+          },
+          {
+            "question": "What is the correct Fortran syntax to represent the 'not equal' comparison operator?",
+            "options": [
+              "!=",
+              "<>",
+              "/=",
+              "=="
+            ],
+            "correctIndex": 2,
+            "explanation": "The text specifies that Fortran uses the '/=' operator to represent 'not equal' during comparisons."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778576740873,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What does the statement 'implicit none' do in Fortran?",
+            "back": "It forces the programmer to explicitly declare all variables."
+          },
+          {
+            "front": "What is the Fortran symbol for exponentiation?",
+            "back": "**"
+          },
+          {
+            "front": "In Fortran, what is the default starting index for array elements?",
+            "back": "1"
+          },
+          {
+            "front": "What Fortran operator is used for 'not equal'?",
+            "back": "/="
+          },
+          {
+            "front": "What is the value of the loop counter variable after a DO loop terminates?",
+            "back": "The last value before leaving the loop plus the step size."
+          },
+          {
+            "front": "What keyword is used to stop a DO loop without a counter variable?",
+            "back": "EXIT"
+          },
+          {
+            "front": "What does declaring a variable as 'parameter' mean in Fortran?",
+            "back": "Its value cannot be changed during the program execution."
+          },
+          {
+            "front": "How do you invoke a subroutine in Fortran?",
+            "back": "Using the 'call' statement (subroutines cannot be used in expressions)."
+          },
+          {
+            "front": "What are the five basic data types mentioned for Fortran?",
+            "back": "integer, character, real, complex, and logical."
+          },
+          {
+            "front": "What is the primary difference in how functions and subroutines return values?",
+            "back": "Functions return a value and can be used in expressions, while subroutines modify arguments (intent(out)) and are invoked via 'call'."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-programming-languages-tour_15",
+      "slides": [
+        {
+          "title": "Introduction to Fortran 2003",
+          "bullets": [
+            "Modern Fortran focuses on current standards.",
+            "Implicit none ensures all variables are declared."
+          ],
+          "notes": "We are setting aside obsolete features of Fortran 77 to focus on modern conventions and robust coding styles.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Data Types and Arithmetic",
+          "bullets": [
+            "Core types: integer, character, real, complex, logical.",
+            "Arithmetic uses standard operators plus ** exponentiation."
+          ],
+          "notes": "Fortran provides a strong foundation for mathematical computation using native support for complex numbers and arithmetic power.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Arrays and Iteration",
+          "bullets": [
+            "Array indices start at 1 by default.",
+            "Intrinsic functions include sum, product, and minval/maxval.",
+            "DO loops manage iteration with configurable step sizes."
+          ],
+          "notes": "Fortran's array handling is highly efficient, offering powerful built-in functions for data manipulation.",
+          "page_range": "2-3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Flow Control and Comparisons",
+          "bullets": [
+            "Expanded comparison operators like /= for not equal.",
+            "EXIT statement allows breaking from unconditional DO loops.",
+            "Nested loops enable multi-dimensional iteration control."
+          ],
+          "notes": "We can manage complex logical flows and data dependencies through nested structures and conditional exits.",
+          "page_range": "3-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Functions and Subroutines",
+          "bullets": [
+            "Functions return values used directly in expressions.",
+            "Subroutines are invoked via the call statement.",
+            "Modules organize code and encapsulate logic."
+          ],
+          "notes": "Modularizing code with functions and subroutines improves readability and supports professional software development practices.",
+          "page_range": "4-5",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 16 — Fortran 2003 - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576740772,
+      "pdfName": "Fortran 2003"
+    }
+  ],
+  "sourceHash": "75e726a8f866d384"
+}

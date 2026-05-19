@@ -1,0 +1,482 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Numerical Methods - Lesson 3 — Numerical Recipes in Python",
+    "pdfName": "Numerical Recipes in Python",
+    "createdAt": 1778577307351,
+    "exportedAt": "2026-05-12T09:15:07.352Z",
+    "meta": {
+      "courseId": "course-en-gen-numerical-methods",
+      "lessonIndex": 2,
+      "courseTitle": "Numerical Methods",
+      "lessonObjective": "Selection on \"numerical methods\"",
+      "licensing": {
+        "effective_license": "CC-BY-4.0",
+        "sources": [
+          {
+            "content_id": "zenodo-numerical-recipes-in-python",
+            "title": "Numerical Recipes in Python",
+            "source": "zenodo",
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "url": "https://zenodo.org/records/8371794"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_8042a46f9cd1",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-18",
+          "chapterTitle": "Preliminary Concepts in Numerical Analysis",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "19-36",
+          "chapterTitle": "Solution of a Nonlinear Equation in One Variable",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "37-48",
+          "chapterTitle": "Polynomial Interpolation",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "49-66",
+          "chapterTitle": "Numerical Integration",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "67-68",
+          "chapterTitle": "Numerical Differentiation",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "69-100",
+          "chapterTitle": "Direct Linear Solvers",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "101-112",
+          "chapterTitle": "Iterative Linear Solvers",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "113-120",
+          "chapterTitle": "Eigenvalues and Eigenvectors",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "121-156",
+          "chapterTitle": "Numerical Solution of Ordinary Differential Equations (ODEs)",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "157-176",
+          "chapterTitle": "Introduction to SciPy",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778577307351,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Based on the provided document, here is a concise summary of the preliminary concepts of numerical analysis:\n\n### **Summary: Preliminary Concepts in Numerical Analysis**\n\n**1. Definition and Purpose**\n*   **Numerical Analysis** is the \"mathematics of scientific computing,\" focused on deriving, analyzing, and implementing numerical methods to obtain approximate numerical solutions when exact analytical solutions are impractical [S.10], [S.16].\n*   Numerical methods typically employ an **iterative approach**: starting with an initial guess and repeatedly refining it through a set of computational steps until a sufficiently accurate solution is found [S.16].\n\n**2. Accuracy and Error Analysis**\n*   **Accuracy vs. Precision:** Accuracy measures agreement with the true value, whereas precision refers to the size/representation of the number [S.16].\n*   **Error Quantification:**\n    *   **Absolute Error:** |True Value – Approximate Value| [S.16].\n    *   **Relative Error:** Absolute Error / |True Value| [S.16].\n*   **Sources of Error:**\n    *   **Data/Inherent Error:** Occurs due to modeling simplifications or uncertainty.\n    *   **Round-off Error:** Arises from approximating numbers (e.g., due to computer storage limits).\n    *   **Truncation Error:** Occurs when approximating mathematical procedures to achieve efficiency [S.16].\n\n**3. Significant Figures**\n*   Significant figures provide a measure of meaningful precision. They begin with the first non-zero digit and end with the last correct/exact digit. Trailing zeros depend on the context of the rounding-off process [S.13, S.14, S.16].\n\n**4. Computational Frameworks**\n*   **Number Systems:** Numerical methods utilize binary (base 2), octal (base 8), decimal (base 10), and hexadecimal (base 16) systems [S.16, S.17].\n*   **Computing Resources:** Beginners are encouraged to implement algorithms in languages like **Python, C++, or MATLAB®**. Other tools include Computer Algebra Systems (e.g., Mathematica, Maple) and online solvers (e.g., Wolfram|Alpha) [S.11, S.12].\n*   **Machine Numbers:** Computers store real numbers as \"machine numbers\" within specific floating-point representations (e.g., IEEE 754 standard). If a number cannot be represented exactly, it is rounded to the nearest machine number, inherently introducing round-off error [S.15, S.17].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577307351,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-gen-numerical-methods_2\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 3 — Numerical Recipes in Python - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Numerical Recipes in Python</div><ul class=\"pm-chat-slide-bullets\"><li>Practical manual for implementing numerical methods using Python</li><li>Companion resource to 'Simplified Numerical Analysis' (4th Edition)</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778577307352,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This laboratory manual, *Numerical Recipes in Python* (4th Edition), serves as a practical companion to Dr. Amjad Ali’s principal textbook, *Simplified Numerical Analysis*. It focuses on implementing numerical methods through computational algorithms using the Python programming language [S.1, S.2, S.3].\n\n### Core Focus and Scope\nThe manual provides a structured approach to numerical analysis, divided into sections such as Basics, Analysis, and a \"Programming Arcade\" where algorithms are implemented [S.5, S.9]. The scope covers:\n*   **Fundamental Concepts:** Number systems, round-off errors, and truncation errors [S.5, S.11].\n*   **Nonlinear Equations:** Bracketing methods (Bisection, Regula-Falsi) and open methods (Newton-Raphson, Secant, Fixed-Point iteration) [S.5].\n*   **Interpolation and Differentiation:** Techniques such as Newton Divided-Difference, Lagrange, and Splines, as well as finite difference approximations [S.6, S.7].\n*   **Numerical Integration:** Trapezoidal and Simpson’s rules [S.6].\n*   **Linear Systems:** Direct methods (Gaussian elimination, LU factorization) and iterative solvers (Jacobi, Gauss-Seidel, SOR) [S.7, S.8].\n*   **Eigen-problems and ODEs:** Power methods for eigenvalues and various single-step or multi-step methods for solving ordinary differential equations [S.8, S.9].\n\n### Computing and Educational Resources\nThe text emphasizes that numerical methods must be practiced on computers to be truly understood [S.11]. While highlighting Python (using IDEs like Spyder, Jupyter, and PyCharm), it acknowledges a broad ecosystem of tools:\n*   Programming languages: C++, MATLAB, and GNU-Octave [S.11, S.12].\n*   Computer Algebra Systems: MATHEMATICA and MAPLE [S.12].\n*   Calculation Tools: Spreadsheets and online solvers (e.g., Wolfram|Alpha, AtoZmath) [S.12].\n\n### Precision and Significant Figures\nThe manual defines significant figures as the digits used to express an approximate number meaningfully [S.13]. Rules for identifying significant digits include:\n*   All non-zero digits ($1, 2, \\dots, 9$) are significant [S.13].\n*   Zeros between non-zero digits are significant [S.13].\n*   Leading zeros used as placeholders are not significant [S.13].\n\nAll source codes for the methods described are available via the author's GitHub repository or the official website [S.2, S.4].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577307361,
+      "channel": "plan_pipe_8042a46f9cd1",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 18
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers the numerical solution of nonlinear equations in one variable, focusing on both bracketing and open methods.\n\n### Key Concepts\nNumerical methods are used to solve equations of the form $f(x) = 0$ by generating a sequence of successive approximations $\\{x_k\\}$ that converge to the root.\n\n### Methods Discussed\n1. Bracketing Methods: These include the Bisection Method and the False-Position (Regula-Falsi) Method, which require an initial interval containing the root (p. 19).\n2. Open Methods: These require initial guesses but not necessarily a bracket. They include:\n   - Fixed-Point Iteration: Rearranging $f(x)=0$ into $x = g(x)$ and using the iteration $x_k = g(x_{k-1})$ (p. 26).\n   - Newton-Raphson Method: Uses the tangent line at the current approximation to find the next, following the formula:\n     $x_k = x_{k-1} - \\frac{f(x_{k-1})}{f'(x_{k-1})}$ (p. 21).\n   - Secant Method: An alternative to Newton's method that does not require the derivative $f'(x)$, using instead two initial approximations $x_0$ and $x_1$ with the formula:\n     $x_k = x_{k-1} - \\frac{f(x_{k-1})(x_{k-1} - x_{k-2})}{f(x_{k-1}) - f(x_{k-2})}$ (p. 28-29).\n\n### Implementation and Convergence\n- Algorithms: The text provides structured pseudo-code incorporating stopping criteria, such as a maximum number of iterations ($N$) and a tolerance level ($TOL$) for permissible error (p. 23-24, 26-27, 29).\n- Stopping Criteria: Efficient algorithms compare the error $|x_n - x_p|$ against a predefined $TOL$ to determine if the desired accuracy is achieved, ensuring the process terminates immediately upon convergence (p. 23, 24).\n- Computational Tools: The text demonstrates solving $f(x) = 4x + \\sin(x) - e^x = 0$ using Python, specifically utilizing the NumPy library for mathematical functions (p. 22, 24-28).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577307362,
+      "channel": "plan_pipe_8042a46f9cd1",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 19,
+        "end": 36
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided document section (pages 37–48) covers Chapter 3, which focuses on Polynomial Interpolation, and the beginning of Chapter 4, which covers Numerical Integration.\n\n**Chapter 3: Polynomial Interpolation**\n\nThis chapter introduces various methods for estimating values between known data points. \n\n*   Basics and Methods: The text explores Newton’s Divided Difference Interpolation and Lagrange Interpolation. It details the derivation of the Lagrange formula starting from Newton’s Divided-Difference. \n*   Specialized Approaches: The chapter addresses interpolation for equally spaced nodes, Hermite Interpolation, and various Spline Interpolations, including Linear, Quadratic, and Cubic splines.\n*   Analysis and Implementation: It provides an analysis of interpolation errors and contains a Programming Arcade section that offers algorithms for implementing Newton’s Divided Difference formula.\n\n**Chapter 4: Numerical Integration**\n\nThis chapter shifts to the numerical approximation of definite integrals.\n\n*   Fundamental Rules: It introduces the Trapezoidal Rule and Simpson’s 1/3 Rule, alongside a generalized approach known as the Closed Newton-Cotes Quadrature.\n*   Error Analysis: The section provides an analytical look at the truncation errors associated with both the Trapezoidal Rule and Simpson’s 1/3 Rule. \n*   Advanced Concepts: Brief coverage is given to the Gaussian Quadrature method. \n*   Programming Arcade: This section provides practical algorithms for the following methods:\n    *   The Composite Trapezoidal Rule\n    *   The Composite Simpson’s 1/3 Rule\n    *   The Composite Simpson’s 3/8 Rule \n\nBoth chapters are structured to transition from theoretical basics to error analysis and finally to practical algorithmic implementations within the \"Programming Arcade.\"",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577307363,
+      "channel": "plan_pipe_8042a46f9cd1",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 37,
+        "end": 48
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided content covering pages 49 to 66 spans Chapter 4 (Numerical Integration) and Chapter 5 (Numerical Differentiation).\n\nNumerical Integration (Chapter 4)\nThis chapter explores techniques for approximating the definite integral of a function. The material is divided into three sections:\n\nBasics: Introduces fundamental quadrature methods, including the Trapezoidal Rule and Simpson’s 1/3 Rule. It also covers the Generalized Closed Newton-Cotes Quadrature.\n\nAnalysis: Examines the theoretical accuracy of the integration methods by calculating the truncation error for both the Trapezoidal and Simpson’s 1/3 rules. It also touches upon the Gaussian Quadrature method.\n\nProgramming Arcade: Provides practical Python implementations for several techniques, specifically:\n- The Composite Trapezoidal Rule\n- The Composite Simpson’s 1/3 Rule\n- The Composite Simpson’s 3/8 Rule\n\nNumerical Differentiation (Chapter 5)\nThis chapter focuses on approximating derivatives using discrete data points and series expansions. Key concepts include:\n\nFinite Difference Approximations: Derives formulas for calculating derivatives using Taylor Series expansions. It specifically covers strategies for both first-order and second-order derivatives.\n\nReference Listing: The chapter concludes by providing a comprehensive list of derivative formulas useful for numerical computation.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577307364,
+      "channel": "plan_pipe_8042a46f9cd1",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 49,
+        "end": 66
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The document outlines two key topics in chapters 5 and 6, focusing on numerical differentiation and linear algebraic solvers.\n\nNumerical Differentiation\nChapter 5 introduces the fundamental approach to estimating derivatives using numerical methods. The core strategy involves utilizing the Taylor series to derive finite difference approximations. The text covers methods for calculating both first-order and second-order derivatives and provides a comprehensive listing of these formulas for practical application.\n\nDirect Linear Solvers\nChapter 6 focuses on solving systems of linear equations of the form $AX = B$. The content is structured into three main areas:\n\nBasics and Methodology\nThe text introduces Gaussian Elimination as a primary solver, supplemented by various pivoting strategies to improve numerical stability, including Partial Pivoting, Scaled Partial Pivoting, and Complete Pivoting. It also details the Gauss-Jordan method and specialized matrix factorization techniques, specifically:\n- Doolittle’s Method\n- Crout’s Method\n- Cholesky’s Method\n\nAnalysis\nThis stage involves theoretical evaluations, specifically focusing on operation count analysis to measure computational efficiency and the procedures for performing matrix inversion.\n\nProgramming Arcade\nThe practical component provides algorithmic implementations for the solvers discussed, including:\n- Gaussian Elimination with Partial Pivoting\n- LU factorization techniques (Doolittle, Crout, and Cholesky)\n- Algorithms to perform operation count analysis",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577307365,
+      "channel": "plan_pipe_8042a46f9cd1",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 67,
+        "end": 68
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section, spanning pages 69 to 100, focuses on methods for solving systems of linear equations and is divided into two primary categories: Direct Linear Solvers and Iterative Linear Solvers.\n\nDirect Linear Solvers (Chapter 6)\nThe text addresses the solution of linear systems $AX = B$ using various deterministic algorithms:\n- Gaussian Elimination: Explores methods to solve linear systems, emphasizing the importance of pivoting strategies such as partial, scaled partial, and complete pivoting to manage numerical stability.\n- Gauss-Jordan Method: An extension of the elimination approach for solving systems.\n- Matrix Factorization: Detailed analysis of LU decomposition techniques, specifically Doolittle’s, Crout’s, and Cholesky’s methods.\n- Analysis: Discusses the efficiency of these methods through operation count analysis and explores the process of matrix inversion.\n- Implementation: The Programming Arcade section provides algorithms for Gaussian elimination with partial pivoting, the various LU factorization methods, and practical operation count analysis.\n\nIterative Linear Solvers (Chapter 7)\nThe text introduces iterative approaches for solving systems of linear equations:\n- Fundamental Concepts: Covers vector norms, distances, and convergence criteria necessary for evaluating iterative solvers.\n- Basic Methods: Details the Jacobi method, Gauss-Seidel method, and the Successive Over-Relaxation (SOR) method.\n- Analytical Framework: Examines matrix norms, system conditioning, and the iteration matrix formulation.\n- Implementation: Provides algorithms for the Jacobi method and outlines modifications for iterative processes.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577307366,
+      "channel": "plan_pipe_8042a46f9cd1",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 69,
+        "end": 100
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Based on the provided text, the section spanning pages 101–112 focuses on Iterative Linear Solvers. The key points are summarized below:\n\n### 7.1 Vector Norms and Distances\nThis section establishes the mathematical foundation for measuring the size and convergence of vectors, which is essential for determining the proximity of iterative approximations to an exact solution.\n\n### 7.2 Convergence Criteria\nNumerical solvers require specific criteria to determine when an iterative process has reached an acceptable level of precision. These criteria rely on the stability and convergence characteristics of the chosen linear method.\n\n### 7.3 Basic Methods\nThree primary iterative techniques are introduced for solving systems of linear equations:\n. The Jacobi Method: A fundamental iterative approach where each component of the solution is updated independently.\n. The Gauss-Seidel Method: A modification that uses updated values immediately within the same iteration.\n. The Successive Over-Relaxation (SOR) Method: An acceleration technique used to improve the convergence rate of the Gauss-Seidel approach.\n\n### 7.4 Analysis of Linear Solvers\nThe text explores the theoretical requirements for convergence, specifically focusing on:\n. Matrix Norms and Conditioning: Assessing how the properties of the coefficient matrix impact the stability of the numerical solution.\n. Iteration Matrix and Matrix Form: Representing solvers in the generalized form $x^{(k+1)} = Gx^{(k)} + c$, where $G$ is the iteration matrix.\n\n### 7.5 Programming Arcade\nThe manual provides practical Python implementations for the discussed solvers, including:\n. The Jacobi Method (p. 103): Detailed algorithmic implementation.\n. Modifications: Further refinements to the Jacobi and related methods are provided to optimize computation.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577307367,
+      "channel": "plan_pipe_8042a46f9cd1",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 101,
+        "end": 112
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Based on the provided document, the section spanning pages 113–120 (Chapter 7: Iterative Linear Solvers) focuses on solving systems of linear equations through iterative approaches. The key points are summarized below:\n\n**Core Concepts and Foundation**\nThe chapter introduces iterative methods as a way to solve systems of linear equations, $Ax = B$, by starting with an initial guess and refining it until the solution converges. A fundamental requirement for these methods is the understanding of vector norms and distances, which quantify the \"closeness\" of successive approximations (p. v).\n\n**Convergence Criteria**\nBecause iterative solvers do not provide an exact solution in a finite number of steps, they rely on specific convergence criteria. These criteria measure the difference between consecutive iterations (often using vector norms) to determine when the solution is sufficiently accurate (p. v).\n\n**Major Iterative Methods**\nThe text highlights three primary basic methods for solving linear systems:\n1. The Jacobi Method: Updates variables based on values from the previous iteration.\n2. The Gauss-Seidel Method: Uses updated values as soon as they become available within the same iteration, often leading to faster convergence.\n3. The SOR (Successive Over-Relaxation) Method: An extension of the Gauss-Seidel method that utilizes a relaxation parameter to optimize the convergence rate (p. v-vi).\n\n**Analytical Depth**\nThe analysis section focuses on the mathematical behavior of these solvers:\n- Matrix Norms and Conditioning: These are used to determine the stability and sensitivity of the linear system.\n- Iteration Matrix: The solvers are represented in the matrix form $x^{(k+1)} = Gx^{(k)} + c$, where $G$ is the iteration matrix. The spectral properties of $G$ dictate whether the method converges to the true solution (p. vi).\n\n**Programming and Implementation**\nThe \"Programming Arcade\" section provides practical guidance for translating these theoretical methods into Python. Specifically, algorithms for the Jacobi Method and modifications to the Jacobi approach are detailed to demonstrate how to handle vector calculations efficiently in a digital environment (p. vi).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577307368,
+      "channel": "plan_pipe_8042a46f9cd1",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 113,
+        "end": 120
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided document does not contain pages 121 through 156. The text concludes at page 103, which is the final page of the document excerpt provided. \n\nAs such, I cannot provide a summary for the requested page range. The document structure covers Chapters 1 through 7, ending with an introduction to the Jacobi Method. For your reference, the chapters cover:\n\n1. Preliminary Concepts (p. 1)\n2. Solution of Nonlinear Equations (p. 9)\n3. Polynomial Interpolation (p. 37)\n4. Numerical Integration (p. 49)\n5. Numerical Differentiation (p. 67)\n6. Direct Linear Solvers (p. 69)\n7. Iterative Linear Solvers (p. 101)",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577307369,
+      "channel": "plan_pipe_8042a46f9cd1",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 121,
+        "end": 156
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided document does not contain pages 157 through 176. The text ends at page [S.vi], which includes the concluding segments of Chapter 7 regarding iterative linear solvers. Based on the available content, a summary of the manual’s structure is provided below:\n\nThe Laboratory Manual of Simplified Numerical Analysis (Python Version) serves as a companion to the principal textbook, providing practical programming implementations for numerical methods. The manual is organized into seven primary chapters:\n\n1. Preliminary Concepts: Covers fundamental numerical theory, including number systems, round-off errors, and truncation errors [S.iii].\n\n2. Nonlinear Equations: Explores root-finding techniques, categorized into bracketing methods (e.g., Bisection, Regula-Falsi) and open methods (e.g., Newton-Raphson, Secant, Fixed-Point Iteration) [S.iii].\n\n3. Polynomial Interpolation: Details techniques for data approximation, such as Newton’s Divided Difference, Lagrange, Hermite, and various Spline interpolations [S.iv].\n\n4. Numerical Integration: Focuses on quadrature methods, including the Trapezoidal Rule, Simpson’s rules ($1/3$ and $3/8$ rules), and Gaussian Quadrature [S.iv].\n\n5. Numerical Differentiation: Discusses finite difference approximations derived from the Taylor series for first and second-order derivatives [S.v].\n\n6. Direct Linear Solvers: Addresses systems of linear equations ($AX = B$) using methods like Gaussian elimination with pivoting strategies, Gauss-Jordan, and matrix factorizations (Doolittle, Crout, and Cholesky methods) [S.v].\n\n7. Iterative Linear Solvers: Examines techniques for solving linear systems through iteration, such as the Jacobi, Gauss-Seidel, and Successive Over-Relaxation (SOR) methods, supported by analysis of vector/matrix norms and convergence criteria [S.v, S.vi].\n\nEach chapter is typically divided into \"Corridors\" covering theory, analysis, and a \"Programming Arcade\" that provides specific Python implementations accessible via the author's GitHub repository [S.iii, S.iv].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577307370,
+      "channel": "plan_pipe_8042a46f9cd1",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 157,
+        "end": 176
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778577307451,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why does the author advocate for learning both the algorithmic style of numerical methods and their implementation in computing tools?",
+            "options": [
+              "To ensure students memorize the syntax of various programming languages.",
+              "To bridge the gap between theoretical numerical concepts and their practical application on computers.",
+              "To prioritize the use of proprietary software over open-source alternatives.",
+              "Because numerical analysis is independent of how computations are physically executed."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text states that numerical methods are devised to be used on computers and emphasizes that it makes no sense to study them without considering their practicality using computing tools."
+          },
+          {
+            "question": "Which of the following describes the purpose of 'leading zeros' in a numerical value?",
+            "options": [
+              "They define the degree of precision of the measurement.",
+              "They are always considered significant figures in scientific notation.",
+              "They are used to fix the decimal place and are not significant.",
+              "They indicate that the number is an exact integer."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text explicitly defines leading zeros as not significant, noting that they are used to fix the decimal place."
+          },
+          {
+            "question": "In the context of the provided curriculum, what is the primary distinction between 'Corridor I: BASICS' and 'Corridor III: PROGRAMMING ARCADE'?",
+            "options": [
+              "Corridor I covers theoretical foundations, while Corridor III focuses on algorithms and implementation.",
+              "Corridor I is for advanced users, while Corridor III is for beginners.",
+              "Corridor I focuses on hardware, while Corridor III focuses on software.",
+              "There is no functional difference; they are interchangeable sections."
+            ],
+            "correctIndex": 0,
+            "explanation": "The table of contents structures chapters into 'Corridor I' for basics (introduction/theory) and 'Corridor III' for algorithms and implementation, showing a transition from theory to practice."
+          },
+          {
+            "question": "Based on the chapter listings, why might a student use the 'Finite Difference Method' in the context of Ordinary Differential Equations (ODEs)?",
+            "options": [
+              "To solve initial value problems using single-step methods.",
+              "To convert a nonlinear equation into a linear one by iteration.",
+              "Specifically for solving linear boundary value problems (BVPs).",
+              "To simplify the calculation of eigenvalues in large matrices."
+            ],
+            "correctIndex": 2,
+            "explanation": "Chapter 9, section 9.5, distinguishes solving linear BVPs using the Finite Difference Method, contrasting it with the methods used for initial value problems (IVPs)."
+          },
+          {
+            "question": "Which category of numerical methods is characterized by starting with an initial guess and refining it until a convergence criterion is met?",
+            "options": [
+              "Bracketing methods",
+              "Direct linear solvers",
+              "Iterative methods",
+              "Polynomial interpolation methods"
+            ],
+            "correctIndex": 2,
+            "explanation": "Chapter 7, which covers solvers like Jacobi and Gauss-Seidel, establishes that iterative methods rely on convergence criteria to determine the accuracy of the solution compared to direct methods."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778577307452,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary objective of numerical methods?",
+            "back": "Numerical methods are devised to perform mathematical computations on computers to solve science and engineering problems."
+          },
+          {
+            "front": "In the context of numerical analysis, what are 'significant figures'?",
+            "back": "Significant figures are the digits in an approximate number used to express its value meaningfully and denote its degree of precision."
+          },
+          {
+            "front": "Which digits are considered significant in an approximate number?",
+            "back": "All nonzero digits are significant. Zeros between nonzero digits are significant. Leading zeros (left of the first nonzero digit) are not significant."
+          },
+          {
+            "front": "What are the two main types of errors discussed in Chapter 1?",
+            "back": "The round-off error and the truncation error."
+          },
+          {
+            "front": "Name two bracketing methods for finding the root of a nonlinear equation.",
+            "back": "The Bisection Method (Bolzano Method) and The False-Position Method (Regula-Falsi Method)."
+          },
+          {
+            "front": "List three 'Open Methods' for solving nonlinear equations.",
+            "back": "Fixed-Point Iteration Method, Newton-Raphson Method, and Secant Method."
+          },
+          {
+            "front": "What are the three main types of Spline Interpolation mentioned in the text?",
+            "back": "Linear Spline, Quadratic Spline, and Cubic Spline."
+          },
+          {
+            "front": "What are three common methods for solving linear systems (AX=B) using LU factorization?",
+            "back": "Doolittle's Method, Crout's Method, and Cholesky's Method."
+          },
+          {
+            "front": "What are three iterative methods used for solving linear systems?",
+            "back": "The Jacobi Method, The Gauss-Seidel Method, and the SOR (Successive Over-Relaxation) Method."
+          },
+          {
+            "front": "Name three common single-step methods for solving Ordinary Differential Equations (ODEs).",
+            "back": "The Euler Method, The Mid-point Method (RK2), and the RK Method of order 4 (RK4)."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-gen-numerical-methods_2",
+      "slides": [
+        {
+          "title": "Numerical Recipes in Python",
+          "bullets": [
+            "Practical manual for implementing numerical methods using Python",
+            "Companion resource to 'Simplified Numerical Analysis' (4th Edition)"
+          ],
+          "notes": "This lesson introduces our laboratory manual, bridging theoretical concepts with computational implementation in Python.",
+          "page_range": "1-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Chapter 1: Preliminary Concepts",
+          "bullets": [
+            "Introduction to numerical analysis foundations",
+            "Understanding number systems and representations",
+            "Analysis of round-off and truncation errors",
+            "Overview of essential computing resources"
+          ],
+          "notes": "We begin by establishing the fundamental constraints of digital arithmetic, specifically focusing on how numerical approximations inherently involve error.",
+          "page_range": "1-8",
+          "image_prompt": ""
+        },
+        {
+          "title": "Chapter 2: Nonlinear Equations",
+          "bullets": [
+            "Bracketing methods: Bisection and False-Position",
+            "Open methods: Fixed-point, Newton-Raphson, and Secant",
+            "Convergence analysis of iterative solvers",
+            "Hands-on implementation of root-finding algorithms"
+          ],
+          "notes": "This chapter explores techniques for finding roots of nonlinear functions, moving from robust bracketing to faster open methods.",
+          "page_range": "9-36",
+          "image_prompt": ""
+        },
+        {
+          "title": "Focus: Newton-Raphson Method",
+          "bullets": [
+            "Uses the function's tangent to approximate roots iteratively",
+            "Requires initial guess $x_0$ and derivative $f'(x)$",
+            "Formula: $x_k = x_{k-1} - f(x_{k-1}) / f'(x_{k-1})$",
+            "Perform fixed iterations to reach desired convergence"
+          ],
+          "notes": "The Newton-Raphson method is a powerful tool that leverages calculus to zoom in on roots efficiently via successive linear approximations.",
+          "page_range": "21-23",
+          "image_prompt": ""
+        },
+        {
+          "title": "Chapter 3: Polynomial Interpolation",
+          "bullets": [
+            "Newton’s divided difference method",
+            "Lagrange interpolation formulas",
+            "Hermite and Spline interpolation techniques",
+            "Error analysis for interpolating functions"
+          ],
+          "notes": "Moving beyond single roots, we now investigate how to construct polynomials that pass through a specific set of data points.",
+          "page_range": "37-48",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 3 — Numerical Recipes in Python - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778577307351,
+      "pdfName": "Numerical Recipes in Python"
+    }
+  ],
+  "sourceHash": "e572956d268036bb"
+}

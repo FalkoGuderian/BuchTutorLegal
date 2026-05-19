@@ -1,0 +1,389 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Religious Classics — Plato, Marcion, Sufism - Lesson 2 — Marcion",
+    "pdfName": "Marcion",
+    "createdAt": 1778572854749,
+    "exportedAt": "2026-05-12T08:00:54.750Z",
+    "meta": {
+      "courseId": "course-en-religion-classics-deep",
+      "lessonIndex": 1,
+      "courseTitle": "Religious Classics — Plato, Marcion, Sufism",
+      "lessonObjective": "Early Christian heresiarch and canon.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-marcion",
+            "title": "Marcion",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Marcion"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_03530f0bf05f",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-4",
+          "chapterTitle": "Introduction and Installation",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-7",
+          "chapterTitle": "Dictionary Usage and Features",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "8-11",
+          "chapterTitle": "Library and Transliteration Tools",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "12-16",
+          "chapterTitle": "Script and Character Tables",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "17-17",
+          "chapterTitle": "Support and External Resources",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778572854749,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: Marcion Software (Bible-Study Tool)\n\n**Overview**\nMarcion is a comprehensive multi-platform software application designed for the study of Coptic, Greek, and other ancient religious texts (p. 1). It serves as both a linguistic dictionary and a robust research library for biblical and early Christian scholarship, including the Nag Hammadi Library (p. 1, p. 10).\n\n**Key Features**\n*   **Dictionary Tools:** Includes a digitized version of Crum’s Coptic Dictionary. It allows for advanced searching using exact matches, regular expressions, and indexed lookups (p. 5, p. 6).\n*   **Library & Canon Module:** Maintains a organized collection of primary texts, including the New Testament (Coptic and Greek), Gnostic texts, and the Septuagint. It supports cross-referencing and advanced logical queries (e.g., using \"AND\" operators to find phrases across verses) (p. 9, p. 10).\n*   **Transliteration & Scripts:** The software manages four distinct scripts: Latin, Greek, Coptic, and Hebrew, providing tools for conversion and text processing to assist in scholarly research (p. 8, p. 12–16).\n*   **Technical Integration:** Built using C++, Qt4, and MySQL, the application is designed to be highly customizable, allowing users to import/export data, create custom indices for collection searching, and integrate various font sets like \"New Athena Unicode\" (p. 1, p. 5, p. 9).\n\n**Usage & Support**\n*   **Navigation:** Features a specialized \"BookReader\" component and graphical interfaces for dictionary navigation and library searches (p. 5, p. 17).\n*   **Development:** The software is open-source, with support forums and instructional videos available for users who encounter technical difficulties or wish to contribute to its development (p. 17).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572854749,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-religion-classics-deep_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 2 — Marcion - Presentation</span><span class=\"pm-chat-count\">6 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Marcion: Digital Tools for Early Christian Studies</div><ul class=\"pm-chat-slide-bullets\"><li>Introduction to the Marcion RC3 software suite.</li><li>A platform for exploring Coptic, Greek, and Hebrew scholarship.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778572854750,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of the Marcion Software Project\n\n**Overview**\nMarcion is a Coptic-English/Czech dictionary application developed in C++ with a Qt4 graphical interface. It functions as a comprehensive Bible-study tool, incorporating various Coptic texts, grammars, Greek sources (including a Liddel-Scott lexicon), and specific fonts (SP Tiberian and SP Achmim) [S.1].\n\n**Installation and Setup**\n*   **Binary Execution:** For Linux, users should extract the `tar.bz2` file and run the executable. If Qt libraries are not in the system path, users must configure `LD_LIBRARY_PATH` or `/etc/ld.so.conf` [S.1]. Windows users can run the provided `marcion.exe` from the unpacked zip archive [S.1].\n*   **Post-Installation:** It is recommended to install the provided fonts and disable \"load internal fonts at startup\" via the application settings [S.1].\n\n**Building from Source**\nThere are two primary methods for compiling the software:\n\n*   **Using Scons:** Requires dependencies such as `qt4` ($\\geq 4.6.0$), `djvulibre`, `mysql`, `libbzip2`, and `glibc`. Users must specify paths for libraries and headers, such as $qt4lib$ and $qt4inc$, when running the build command [S.2, S.3].\n*   **Using CMake (via SVN):** This branch requires checking out the source tree, downloading the necessary MySQL binaries and data files (`mdata.tar.bz2`) into a dependencies directory, and configuring the build via `cmake` [S.3, S.4].\n\n**Environment Configuration**\nWhen using CMake, users can define parameters such as $M\\_EXTRA\\_MYSQL\\_INC$ and $CMAKE\\_INSTALL\\_PREFIX$ to point to custom directory locations. Once configured, final installation is performed using the $bash \\> make$ and $bash \\> make\\ install$ commands [S.4].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572854759,
+      "channel": "plan_pipe_03530f0bf05f",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines the features and operational instructions for a software tool designed to manage and query the Coptic dictionary by Crum. Below is a structured summary of the key points from sections [S.5], [S.6], and [S.7]:\n\n**Software Overview and Tools**\nThe software functions as a Coptic dictionary interface that supports both visual browsing (via DjView) and a dedicated query GUI. Users can navigate the dictionary using an editable combobox or perform complex database searches. Technical maintenance, such as importing data from .sql files or exporting to .csv, is handled through the database menu. It is essential to rebuild the index after any data import to ensure full query functionality [S.5, S.7].\n\n**Search Functionality**\nQueries can be performed directly or via an index, with the latter being the recommended method for faster results. The GUI includes several advanced features:\n- Filtering options for dialects, word classes, and morphological parsing [S.6, S.7].\n- Pattern matching support, including exact matches, wildcard operators (using $\\%$ and _), and full regular expression support [S.6, S.7].\n- Multilingual search capabilities, allowing users to search by Coptic, Greek, English, or Czech [S.6, S.7].\n\n**Operational Details**\n- When searching, non-word characters and spaces are removed if the exact match option is enabled [S.7].\n- The index is designed to handle word combinations effectively, such as compound verbs or prepositional phrases [S.7].\n- The software includes additional pedagogical resources, such as grammar modules for Coptic and Egyptian languages (Plumley, Tattam), and integration with external dictionary references like the LSJ [S.7].\n- To ensure optimal performance, the user should be familiar with database index rebuilding and the use of the provided command-line tools like cmake [S.5, S.7].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572854760,
+      "channel": "plan_pipe_03530f0bf05f",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 7
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The Tattam library is a specialized software tool designed for linguistic and textual analysis across four scripts: Latin, Greek, Coptic, and Hebrew. The system functionality is categorized into three primary areas:\n\nText Processing and Transliteration\nThe Translit widget supports scripts including Latin, Greek, Coptic, and Hebrew. Users can input and output text through editable fields, convert between scripts, and perform cleanup tasks such as removing non-word characters. The library hierarchy is structured into four levels: script, language, collection, and book [S.8].\n\nLibrary Management and Indexing \nUsers can manage textual data by importing collections from `.sql` or `.sql.bz2` files found in the 'data/backup' or 'texts' directories. To enable searching, users must create an index for a collection [S.9]. There are two types of indexing:\n1. Simple: Indexes all words of a verse and the entire verse [S.9].\n2. Extended: Indexes words and verses, including cross-verse combinations (linking the last word of one verse to the first of the next) [S.10].\nIndices are stored without diacritics, and deleting a collection automatically removes its corresponding index [S.9].\n\nSearch Functionality\nThe search interface allows users to filter by script, language, and collection. It offers two search modes:\n- Simple: Searches for a single word or phrase [S.9].\n- Extended: Supports logical operators (e.g., AND) and regular expressions to perform complex queries. Searches are case-insensitive and ignore diacritics [S.10].\n\nExamples of search syntax include:\n- Word search: ^ou(ae|oe|o)in$ to match specific variations [S.10].\n- Phrase search: ui.+ anqrwp to find occurrences of two words in sequence [S.10].\n\nThe library supports a variety of historical and religious texts, including the New Testament, the Nag Hammadi Library, and the Septuagint, provided that the New Athena Unicode and Ezra SIL fonts are installed [S.10, S.11].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572854761,
+      "channel": "plan_pipe_03530f0bf05f",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 8,
+        "end": 11
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text serves as a reference table for character sets across three distinct scripts: Coptic, Greek, and Hebrew. The content is organized by mapping characters to their corresponding letters or phonetic equivalents.\n\nSummary of character mappings:\n\n1. Coptic and Greek Scripts ([S.12], [S.13]): These pages establish a direct correspondence between Coptic characters and Greek letters, including standard alphabetical order from alpha to omega. Additionally, sections [S.13] and [S.14] outline unique Coptic characters that do not have direct Greek equivalents, such as S (ϣ), F (ϥ), H (ϩ), K (ϧ), Q (ⳉ), J (ϫ), G (ϭ), T (ϯ), and V (ⲋ).\n\n2. Hebrew Script ([S.15], [S.16]): These pages list Hebrew letters along with their transliterated equivalents. Page [S.15] covers standard initials, while page [S.16] provides the remaining letters, specifically noting the distinct forms of final letters (sofit) such as $K$ (ך), $C$ (ץ), $P$ (ף), $M$ (ם), and $N$ (ן).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572854762,
+      "channel": "plan_pipe_03530f0bf05f",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 12,
+        "end": 16
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Marcion RC3 Resources\n\nThis document provides an overview of technical updates and support channels for the Marcion RC3 software project.\n\n**Instructional Content**\nThe project offers three primary instructional videos detailing specific features:\n1. Import collection functionality.\n2. Updates for the Coptic dictionary.\n3. The BookReader component.\n\n**Support and Community**\nUsers can address technical issues, ask questions, or propose enhancements through dedicated forums hosted on SourceForge:\n* Help and troubleshooting forum.\n* Open discussion forum for general queries and suggestions.\n\n**Project Links**\n* Official Home Page: http://marcion.sourceforge.net/\n* SourceForge Project Pages: Marcion and Mani.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572854763,
+      "channel": "plan_pipe_03530f0bf05f",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 17,
+        "end": 17
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778572854849,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "What is the primary function of the 'Marcion' software tool described in the text?",
+            "options": [
+              "It is a Coptic-English/Czech dictionary and Bible-study tool.",
+              "It is a text editor designed for writing ancient historical manuscripts.",
+              "It is a dedicated operating system for managing MySQL databases.",
+              "It is a web-based browser for viewing the Nag Hammadi Library online."
+            ],
+            "correctIndex": 0,
+            "explanation": "The text defines 'Marcion' as a Coptic - English/Czech dictionary tool designed for Bible study, containing various texts, grammars, and lexicons."
+          },
+          {
+            "question": "When searching in the Coptic dictionary component, what happens if the 'exact' option is enabled?",
+            "options": [
+              "It allows for partial word matches including middle-of-word substrings.",
+              "Non-word characters and spaces are removed after the query.",
+              "It performs a literal translation using the Liddell-Scott lexicon.",
+              "The software automatically switches dialect to Bohairic for better results."
+            ],
+            "correctIndex": 1,
+            "explanation": "According to the 'Usage' section, when the 'exact' option is enabled, non-word characters and spaces are removed after the query, ensuring only complete word matches are retrieved."
+          },
+          {
+            "question": "In the library search component, what is the difference between 'simple' and 'extended' indices?",
+            "options": [
+              "Simple uses Latin characters, while extended uses only Coptic Unicode characters.",
+              "Simple indexes only entire verses, while extended indexes the whole library.",
+              "Extended indexes combinations of words across adjacent verses, unlike simple.",
+              "Simple is for searching phrases, while extended is strictly for database configuration."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text explains that the 'extended' index includes index items for adjacent verses and combinations of words between the end of one verse and the start of another."
+          },
+          {
+            "question": "If you want to use the library search functionality in Marcion, what must you do first?",
+            "options": [
+              "Install all system fonts from the internal folder.",
+              "Download the entire Nag Hammadi Library as a PDF.",
+              "Ensure an index has been built for the specific collection.",
+              "Edit the MySql database in the source code directly."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text states that a collection can only be searched if its index has been built; collections without an index are inactive and cannot be selected."
+          },
+          {
+            "question": "Which of the following describes the 'Transliteration' component behavior within the library?",
+            "options": [
+              "It auto-corrects spelling errors based on the Crum dictionary.",
+              "It converts input text into Latin and replaces the output content.",
+              "It creates an audio pronunciation file for the selected script.",
+              "It permanently deletes non-word characters from the database."
+            ],
+            "correctIndex": 1,
+            "explanation": "The Translit widget component functions include an 'update' feature which specifically converts the input text into Latin and replaces the content of the output text field."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778572854850,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is Marcion (software)?",
+            "back": "A Coptic-English/Czech dictionary and Bible-study tool based on Crum's Coptic dictionary, MySQL, and Qt4 GUI."
+          },
+          {
+            "front": "What are the core technical prerequisites for building Marcion from source?",
+            "back": "Qt4 >= 4.6.0, djvulibre >= 3.5.22, mysql 5.1.41, libbzip2 >= 1.0.5, glibc >= 2.9, and the build tool scons >= 1.2.0."
+          },
+          {
+            "front": "In the Marcion software, what is the 'Crum' component used for?",
+            "back": "It acts as a dictionary viewer (via DjView) and a query tool for searching words in Crum's Coptic Dictionary."
+          },
+          {
+            "front": "What is the primary function of the '(re)create index of coptic tables' menu option?",
+            "back": "It rebuilds the word index for dictionary searching, which must be performed after importing new dictionary data (.sql files)."
+          },
+          {
+            "front": "In the Marcion dictionary search, what do the symbols '%' and '_' represent in 'like' mode?",
+            "back": "'%' stands for any group of characters (including empty), and '_' stands for exactly one character."
+          },
+          {
+            "front": "What is the library component in Marcion designed to do?",
+            "back": "It allows for searching across various text collections (e.g., New Testament, Nag Hammadi Library) using scripts like Coptic, Greek, Hebrew, and Latin."
+          },
+          {
+            "front": "Name the two types of index search supported by the library component.",
+            "back": "Simple index (all words and entire verses) and extended index (all words, entire verses, entire next verse, and word combinations between verses)."
+          },
+          {
+            "front": "What role does the Translit widget play in Marcion?",
+            "back": "It functions as a transcription component allowing input/output text conversion across Latin, Greek, Coptic, and Hebrew scripts."
+          },
+          {
+            "front": "Which specific fonts should be installed for Marcion to display Coptic and Hebrew correctly?",
+            "back": "SP Tiberian, SP Achmim, New Athena Unicode, and Ezra SIL."
+          },
+          {
+            "front": "How do you search for exact matches in the Coptic dictionary component?",
+            "back": "Enable the 'exact' option, which removes non-word characters and spaces from the query before conversion into Latin."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-religion-classics-deep_1",
+      "slides": [
+        {
+          "title": "Marcion: Digital Tools for Early Christian Studies",
+          "bullets": [
+            "Introduction to the Marcion RC3 software suite.",
+            "A platform for exploring Coptic, Greek, and Hebrew scholarship."
+          ],
+          "notes": "Marcion RC3 serves as a comprehensive tool for academic Bible study and Coptic lexicography. This lesson covers its installation and features.",
+          "page_range": "1-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Installation and Environment",
+          "bullets": [
+            "Compatible with Linux and Windows systems.",
+            "Requires Qt, CMake, MySQL, and DjVuLibre libraries.",
+            "Build from source using scons or CMake.",
+            "Ensure proper headers are installed for all dependencies."
+          ],
+          "notes": "Setting up Marcion requires preparing the correct environment variables and library paths to ensure all components communicate effectively.",
+          "page_range": "1-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Dictionary Usage and Features",
+          "bullets": [
+            "Integrates Crum’s Coptic Dictionary via DjView.",
+            "Supports direct and index-based searching.",
+            "Facilitates data export and import for SQL/CSV.",
+            "Includes LSJ Greek lexicon and Plumley grammar integration."
+          ],
+          "notes": "The dictionary module is the core of the tool, allowing users to perform complex linguistic queries across vast Coptic texts.",
+          "page_range": "5-7",
+          "image_prompt": ""
+        },
+        {
+          "title": "Library and Search Capabilities",
+          "bullets": [
+            "Organized by script, language, collection, and book.",
+            "Enables complex logical queries across texts.",
+            "Includes Nag Hammadi and various Biblical manuscripts.",
+            "Transliteration widget handles four primary ancient scripts."
+          ],
+          "notes": "The library component transforms the software from a simple dictionary into a powerful research database for primary source examination.",
+          "page_range": "8-11",
+          "image_prompt": ""
+        },
+        {
+          "title": "Script and Character Tables",
+          "bullets": [
+            "Standardized mappings for Coptic, Greek, and Hebrew.",
+            "Comprehensive lists for accurate character input.",
+            "Refers to phonetic requirements for ancient languages.",
+            "Tables support efficient database lookups."
+          ],
+          "notes": "Accurate character mapping is essential for the software's search and conversion functions when dealing with multiple ancient alphabets.",
+          "page_range": "12-16",
+          "image_prompt": ""
+        },
+        {
+          "title": "Support and Resources",
+          "bullets": [
+            "Tutorial videos demonstrate key software workflows.",
+            "Active forums available for troubleshooting issues.",
+            "Open-source development hosted on SourceForge.",
+            "Extensive external links for auxiliary documentation."
+          ],
+          "notes": "To resolve issues or extend functionality, users are encouraged to utilize the community forums and official project documentation.",
+          "page_range": "17",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 2 — Marcion - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778572854749,
+      "pdfName": "Marcion"
+    }
+  ],
+  "sourceHash": "f1b7e2b8085ee926"
+}

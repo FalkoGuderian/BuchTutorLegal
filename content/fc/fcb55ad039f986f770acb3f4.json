@@ -1,0 +1,476 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Linux Sysadmin and LPI Certification - Lesson 4 — AWK",
+    "pdfName": "AWK",
+    "createdAt": 1778576785098,
+    "exportedAt": "2026-05-12T09:06:25.099Z",
+    "meta": {
+      "courseId": "course-en-linux-sysadmin-cert",
+      "lessonIndex": 3,
+      "courseTitle": "Linux Sysadmin and LPI Certification",
+      "lessonObjective": "Bourne shell, awk, productive automation.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-awk",
+            "title": "AWK",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/AWK"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_de80033ff458",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Introduction and Basic Syntax",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Patterns and Booleans",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-6",
+          "chapterTitle": "Variables and Data Handling",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "7-8",
+          "chapterTitle": "Arrays and Sorting",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "9-10",
+          "chapterTitle": "Code Generation and Grand Example",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "11-12",
+          "chapterTitle": "Advanced Features and Options",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "13-14",
+          "chapterTitle": "Libraries and One-Liner Examples",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "15-16",
+          "chapterTitle": "Limitations and External Resources",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576785098,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Lesson 4: Introduction to AWK\n\nAWK is a powerful text-processing language widely used in UNIX/Linux environments for data extraction, manipulation, and report generation. It operates record-by-record (typically line-by-line) and is an essential tool for system administration and automation.\n\n#### 1. Core Concepts\n*   **Structure:** An AWK program consists of `pattern { action }` blocks. If the pattern is omitted, the action applies to all lines; if the action is omitted, the default is to print the record.\n*   **Records and Fields:** AWK treats input as a sequence of records (lines). Each record is divided into fields, accessible via `$1, $2, ... $n`, while `$0` represents the entire record.\n*   **Field Separator:** By default, fields are separated by whitespace. You can change this using the `-F` flag (e.g., `-F:` for `/etc/passwd`) (p. 2, 5).\n\n#### 2. Pattern Matching and Logic\n*   **Patterns:** You can use conditional expressions (e.g., `$1 > $2`), string matching with regular expressions (e.g., `/pattern/`), or the \"contains\" operator (`~`).\n*   **Booleans:** Standard logic (`&&`, `||`, `!`) can be used to create complex filters (p. 3).\n*   **Special Patterns:** `BEGIN` and `END` blocks allow for execution before the first line is read and after the last line is processed, respectively (p. 4).\n\n#### 3. Variables and Arrays\n*   **Variables:** AWK variables are loosely typed (string or numeric) and initialized to 0 or an empty string automatically (p. 5).\n*   **Built-in Variables:** Important variables include `NR` (current record number), `NF` (number of fields in the current record), and `FS` (field separator) (p. 5).\n*   **Associative Arrays:** AWK primarily uses associative arrays (indexed by strings). This makes it excellent for tasks like counting word frequency (p. 6).\n\n#### 4. Execution and Best Practices\n*   **Command Line:** Wrap programs in single quotes (`'...'`) to prevent the shell from interpreting special characters (p. 1).\n*   **Scripts:** For complex logic, scripts can be saved to a file (`giant.awk`) and executed using `awk -f giant.awk filename`. Adding `#!/usr/bin/awk -f` and setting `chmod u+x` allows for direct execution (p. 4).\n*   **Debugging:** If you encounter syntax errors, using `gawk` often provides more helpful error messages than traditional `awk` (p. 2).\n\n#### 5. Productivity Tips\n*   **Formatting:** Use `printf` for fine-grained control over output, similar to the C programming language (p. 6).\n*   **One-Liners:** AWK is highly effective for one-line operations, such as summing columns, replacing text (via `gsub`), or filtering lines by numerical ranges (p. 13, 14).\n*   **Operations:** AWK supports standard arithmetic, math functions (e.g., `sin`, `sqrt`), and even allows code generation for other languages (p. 2, 9).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576785098,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-linux-sysadmin-cert_3\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 4 — AWK - Presentation</span><span class=\"pm-chat-count\">8 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Mastering AWK for Automation</div><ul class=\"pm-chat-slide-bullets\"><li>Process text data efficiently within Unix environments.</li><li>Leverage powerful pattern scanning and processing capabilities.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778576785099,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of AWK Documentation\n\n**Overview and Versions**\nAWK is a utility for text processing available on Linux, macOS, and Windows. There are several versions, including the original *awk*, *nawk*, and *gawk* (GNU awk), with *nawk* and *gawk* offering the most compatibility [S.1]. Users are advised to use *gawk* for better error messaging during development [S.2].\n\n**Operational Basics**\n*   **Encapsulation:** AWK programs should be enclosed in single quotes to prevent shell interference [S.1].\n*   **Data Structure:** AWK processes text files line-by-line. Each line is a \"record,\" which is further divided into \"fields\" (defaulting to space or tab separation) [S.2].\n*   **Referencing:** Fields are accessed via variables like $1$, $2$, etc., while $0$ represents the entire record [S.2].\n*   **Scope:** AWK is intended strictly for text files; it is not suitable for binary files [S.1].\n\n**Syntax and Functionality**\nA typical AWK command follows the pattern `pattern {action}` [S.2]. If the pattern is omitted, the action is applied to every record [S.2].\n\n*   **Expressions:** AWK supports standard mathematical functions (e.g., sine) and comparison operators (e.g., $==$, $!=$, $>$, $<$) [S.2].\n*   **Examples:**\n    *   To swap the first two fields: `awk '{print $2,$1}' filename` [S.2].\n    *   To apply logic based on a condition: `awk '$1 > $2 {print $1,$2,$1-$2}' filename` [S.2].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576785108,
+      "channel": "plan_pipe_de80033ff458",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the core functionality of the `awk` command as described in the provided document (pp. [S.3]-[S.4]).\n\n### Pattern-Action Logic\n`awk` operates on the principle of pattern-action pairs. If a pattern is omitted, the action applies to every line; if the action is omitted, the default is to print the entire line ($0$).\n*   Comparison: Fields can be treated as numbers or strings (e.g., $1 == \"foo\"$).\n*   Regular Expressions: Patterns can search for matches using regex. The operator `~` checks if a field contains a pattern, while `!~` checks if it does not.\n*   Boolean Logic: Complicated patterns can be built using $!$, $&&$, and $||$.\n*   Range Patterns: A range of lines can be selected using a start and end pattern (e.g., `/foo/,/bar/`).\n\n### BEGIN and END Patterns\nSpecial patterns allow for execution outside of standard line-by-line processing:\n*   BEGIN: Actions execute before processing any lines.\n*   END: Actions execute after all lines have been processed.\n\n### Program Execution and Variables\n*   Execution Methods: Programs can be defined as one-liners, stored in a file and called with the `-f` flag, or scripted to run independently by including a shebang line (e.g., `#!/usr/bin/awk -f`) and setting execution permissions via `chmod`.\n*   Variables: `awk` supports variables that store numbers or strings. They are useful for tracking values across rows, such as calculating running totals: $\\{print x+=\\$5, \\$0 \\}$.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576785109,
+      "channel": "plan_pipe_de80033ff458",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document provides an overview of advanced variable manipulation and control structures in the awk programming language based on sections [S.5] and [S.6].\n\nVariables and Initialization\nAwk variables are initialized to either zero or an empty string based on usage context. Special variables provide built-in metadata: $NF$ represents the number of fields in a record, $NR$ tracks the current record number, and $FS$ defines the field separator used to parse input. Users may assign values directly to fields to modify record content, such as clearing a field or reordering data.\n\nControl Structures and Logic\nAwk mirrors many C-style programming constructs, including if, while, do-while, and for loops. For formatted output, the printf function provides greater control than the standard print statement, allowing for specific field formatting and explicit newline management. Multiple statements can be concatenated using semicolons.\n\nAssociative Arrays\nUnlike traditional C arrays, awk utilizes associative arrays indexed by strings. These are naturally suited for tasks like frequency distribution:\n$$freq[$i]++$$\nTo process these arrays, awk employs a special for-loop construct that iterates over the indices. Because the order of iteration in these loops is not inherently sorted, piped output through external utilities like sort is often required for structured data analysis.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576785110,
+      "channel": "plan_pipe_de80033ff458",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text outlines advanced features and syntax for the AWK programming language, specifically focusing on multi-dimensional arrays, sorting, and script formatting.\n\n**Multi-dimensional Arrays**\nAWK implements multi-dimensional arrays by concatenating indices into a single string using a special separator stored in the variable `SUBSEP`. By default, this is a character that may not be easily readable. Users can redefine `SUBSEP` (e.g., as a space or an empty string) to manage how these indices are stored. To access individual indices later, the `split` function must be used to break the concatenated string back into an array `[S.7]`.\n\n**Sorting**\nStandard AWK does not include built-in array sorting functions. However, `gawk` provides `asort` (to sort by values, which discards original keys) and `asorti` (to sort by indices or keys) `[S.7]`.\n\n**Scripting and Punctuation**\nAWK scripts can be split across multiple lines for better readability, and comments are designated using the `#` character. AWK is effective for generating mathematical tables and processing text, often utilizing the `BEGIN` block to initialize variables or loop through a set range of values before processing input `[S.8]`.\n\n**Key Syntax Summary**\n*   **Logical and Comparison:** Operators for comparison include `==`, `!=`, `<`, `>`, `<=`, and `>=`. The contains operator is `~` and does not contain is `!~` `[S.8]`.\n*   **Variables:** Fields are denoted by `$`, where `$1` is the first field and `$0` is the entire record `[S.8]`.\n*   **Grouping:** Curly braces `{}` are used to enclose actions and group statements, while semicolons `;` separate individual statements `[S.8]`.\n*   **Boolean Logic:** The `&&` operator is used for Boolean AND operations `[S.8]`.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576785111,
+      "channel": "plan_pipe_de80033ff458",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 7,
+        "end": 8
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This text illustrates the versatility of the Awk programming language through two primary applications: code generation and statistical analysis.\n\n**Code Generation**\nAwk is highly efficient for automating the creation of repetitive programming code. The document provides a script example that generates a manual $3 \\times 3$ matrix multiplication routine by utilizing nested loops and the `printf` function to structure the output (p. 9).\n\n**Statistical Analysis**\nThe provided Awk program (`stat_2o1.awk`) performs a comprehensive statistical examination of two variables derived from a data stream. Key features of this analysis include:\n\nData Filtering: The script processes input line-by-line while ignoring blank lines, comment lines (starting with `#`), and lines with missing fields (p. 9).\n\nOne-Pass Calculation: The script calculates essential summary statistics in a single pass through the data, including:\n- Basic counts: $N$, minimums, and maximums (p. 9).\n- Central tendency and dispersion: Mean, variance (both biased and unbiased), and standard deviation for both variables (p. 10).\n- Relationships: It calculates the correlation coefficient $r$ and the Student's T statistic to assess the significance of the correlation (p. 10).\n- Linear Regression: It determines the y-intercept $a$ and slope $b$ for the linear equation $y = a + bx$. It also calculates the unbiased estimator for the variance $\\sigma^2$ (labeled as $ss$) and provides the radii for confidence intervals for $a$ and $b$ (p. 10).\n\nThe script is designed to be flexible, allowing users to define which fields to analyze via command-line arguments (e.g., `F=2 G=3`) (p. 9).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576785112,
+      "channel": "plan_pipe_de80033ff458",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 9,
+        "end": 10
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This documentation provides an overview of the `awk` programming language, focusing on command-line operations, arithmetic capabilities, and program structure.\n\n### Command-Line Options\n`awk` utilizes several switches to control input processing. Standard options include `-F` (field separator), `-f` (source file), and `-v` (variable assignment). Beyond basic `awk`, `gawk` (GNU awk) provides extensions such as `-i` for library inclusion and various `-W` options (S.11, S.12).\n\n### Arithmetic and Functions\nThe language supports standard operators ($+, -, *, /, \\%, \\wedge$) and various built-in math functions like $\\text{sqrt}$, $\\text{sin}$, and $\\log$. While `gawk` supports the exponentiation operator $**$ and bitwise functions (e.g., $\\text{and}$, $\\text{lshift}$), these are not present in traditional POSIX `awk` (S.11, S.12).\n\n### User-Defined Functions and Recursion\nFunctions are defined using the `function` keyword, though some implementations allow the abbreviation `func`. Recursion is natively supported for complex tasks, such as calculating factorials (S.11, S.12).\n\n### Library Inclusion\nTraditional `awk` lacks a formal import mechanism, requiring multiple `-f` flags to load external files. `gawk` upgrades this functionality via the `@include` keyword and the `-i` option. Library lookup can be managed through the $\\text{AWKPATH}$ environment variable, which defines the directories searched for external scripts (S.12).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576785113,
+      "channel": "plan_pipe_de80033ff458",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 11,
+        "end": 12
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section provides an overview of the AWK programming language, focusing on library resources and practical one-liner command examples.\n\n**External Resources**\nAWK libraries and documentation links are provided to assist in project development, including the GNU Awk User's Guide, which covers file inclusion, path settings, and function libraries. Permissively licensed libraries are available on GitHub, such as \"Many AWK\" and \"awk-libs\" (p. 13).\n\n**Core AWK Functionality**\nAWK operates on data streams, allowing users to filter, modify, and process text based on patterns and field operations:\n- Regular Expressions and Fields: Commands can match patterns similar to grep, print specific fields using whitespace or custom delimiters ($ -F $), and manipulate strings using functions like $toupper$ or $tolower$ (p. 13).\n- Logic and Computation: Users can apply logical conditions ($ && $, $ || $) and process data based on line numbers ($ NR $) or field counts ($ NF $). Advanced tasks include arithmetic calculations, calculating moving averages, and defining custom functions using ternary operators (p. 13, 14).\n- Control Structures: AWK supports standard C-style syntax for $for$ loops and associative arrays, which function as dictionaries. The $BEGIN$ and $END$ blocks allow for initialization and final summary actions, such as printing the total sum of a column (p. 14).\n- Extended Features: AWK can execute external system commands and utilizes $printf$ for formatted output, offering high flexibility for data reporting and text processing (p. 14).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576785114,
+      "channel": "plan_pipe_de80033ff458",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 13,
+        "end": 14
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided documents offer an overview of the AWK programming language, specifically focusing on its limitations and resources for further learning.\n\n**Key Limitations of AWK**\n\nTraditional AWK implementations have several functional constraints compared to modern scripting languages:\n\n* Data Structures: AWK does not support standard arrays or lists. It relies exclusively on associative arrays, which do not support nesting or true multidimensional indexing (multidimensionality is simulated by joining indices).\n* Feature Sets: Standard AWK lacks built-in sorting functions and bitwise operators, though these are available in gawk.\n* Modularity: There is no native support for libraries or modular code reuse in traditional AWK, although gawk provides an @include mechanism.\n* Scope: The language is not intended for graphical user interface (GUI) development.\n\n**Resources and Documentation**\n\nMultiple external resources are available for developers looking to master or explore AWK:\n\n* Online Environments: AWK can be tested directly in a browser via http://awk.js.org/ [S.15].\n* Source Code: Versions including Brian Kernighan’s awk, mawk, and gawk are available via GitHub and Savannah repositories [S.15].\n* Documentation: Essential references include The GNU Awk User’s Guide, the POSIX specification for awk, and foundational texts like \"The AWK Programming Language\" (1988) [S.16].\n* Community: Support and examples can be found via resources such as Rosetta Code and the comp.lang.awk newsgroup [S.16].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576785115,
+      "channel": "plan_pipe_de80033ff458",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 15,
+        "end": 16
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576785198,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why is it recommended to enclose an AWK program in single quotes when running it from the command line?",
+            "options": [
+              "To improve execution speed by pre-compiling the script",
+              "To protect the commands and syntax from being interpreted/parsed by the shell",
+              "To allow the use of double quotes inside the AWK script without escaping",
+              "To ensure the script works across all versions including nawk and gawk"
+            ],
+            "correctIndex": 1,
+            "explanation": "Single quotes protect the contents of the script from the shell's parser, preventing it from interpreting characters like '$' or special shell operators."
+          },
+          {
+            "question": "What is the result of using 'print' without any arguments within an AWK action block?",
+            "options": [
+              "An error is thrown indicating missing arguments",
+              "The entire current record ($0) is printed",
+              "Only the first field ($1) is printed",
+              "Nothing is printed, but the line count is incremented"
+            ],
+            "correctIndex": 1,
+            "explanation": "In AWK, if 'print' is used alone, it automatically prints the entire content of the current record, equivalent to 'print $0'."
+          },
+          {
+            "question": "When defining patterns in AWK, what is the functional difference between the BEGIN pattern and other patterns?",
+            "options": [
+              "BEGIN patterns cannot contain print statements",
+              "BEGIN patterns process files in reverse order",
+              "BEGIN patterns execute their associated actions before any input records are read",
+              "BEGIN patterns are the only patterns that support regular expressions"
+            ],
+            "correctIndex": 2,
+            "explanation": "The BEGIN pattern executes once before the input processing loop begins, whereas standard patterns (without BEGIN/END) are applied to every line/record as it is read."
+          },
+          {
+            "question": "If you need to process a colon-separated file like '/etc/passwd', which command-line option is most appropriate for setting the field separator?",
+            "options": [
+              "-v FS=':'",
+              "-s:",
+              "-F:",
+              "--sep ':'"
+            ],
+            "correctIndex": 2,
+            "explanation": "The -F option is the standard way to specify a custom field separator (regular expression) for AWK."
+          },
+          {
+            "question": "What is the primary characteristic of associative arrays in AWK?",
+            "options": [
+              "They are indexed exclusively by consecutive integer values starting from 0",
+              "They are fixed-size and must be declared with a maximum capacity",
+              "They are indexed by strings, rather than numerical indices",
+              "They can only store numeric values and cannot store strings"
+            ],
+            "correctIndex": 2,
+            "explanation": "AWK's associative arrays are indexed by strings, providing a flexible way to map keys to values, unlike traditional arrays in languages like C."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778576785199,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Why is it recommended to enclose AWK programs in single quotes when running them from the shell?",
+            "back": "The single quotes protect special characters in the program code from being interpreted or expanded by the shell's parser."
+          },
+          {
+            "front": "In AWK, what is the default behavior regarding records and fields?",
+            "back": "A record is by default a single line of a file, and fields are by default separated by any number of spaces or tabs."
+          },
+          {
+            "front": "In AWK, what do the variables '$0', '$1', and 'NF' represent?",
+            "back": "$0 represents the entire current record (line), $1 is the first field, and NF is the total number of fields in the current record."
+          },
+          {
+            "front": "What does the 'BEGIN' and 'END' pattern do in an AWK script?",
+            "back": "The 'BEGIN' pattern executes an action before any input lines are processed; the 'END' pattern executes an action after all lines have been processed."
+          },
+          {
+            "front": "How do you apply an AWK script stored in a file named 'script.awk' to an input file?",
+            "back": "Run: awk -f script.awk filename"
+          },
+          {
+            "front": "What is the difference between the '~' and '!~' operators in AWK?",
+            "back": "~ is the 'contains' (matches) operator for regular expressions, and !~ is the 'does not contain' operator."
+          },
+          {
+            "front": "How can you change the field separator in an AWK command?",
+            "back": "Use the -F option followed by the separator (e.g., awk -F: '{...}' /etc/passwd)."
+          },
+          {
+            "front": "What does the special variable 'NR' keep track of in AWK?",
+            "back": "NR (Number of Records) tracks the count of records processed so far, effectively providing the current line number."
+          },
+          {
+            "front": "How are associative arrays, such as a frequency counter, typically printed in an AWK script?",
+            "back": "Use a specialized 'for' loop (e.g., 'for (item in array)') to iterate over the indices of the array."
+          },
+          {
+            "front": "How can you use AWK for simple arithmetic or generating text without an input file?",
+            "back": "Use 'BEGIN' blocks and redirect input from '/dev/null' or omit the input file if the script generates data via print/printf statements."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-linux-sysadmin-cert_3",
+      "slides": [
+        {
+          "title": "Mastering AWK for Automation",
+          "bullets": [
+            "Process text data efficiently within Unix environments.",
+            "Leverage powerful pattern scanning and processing capabilities."
+          ],
+          "notes": "AWK is a versatile scripting language specifically designed for text processing. This lesson introduces its syntax and power for productive automation.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Getting Started with AWK",
+          "bullets": [
+            "Works on records (default: lines) and fields (columns).",
+            "Field access via $1, $2, or $0 for entire record.",
+            "Basic syntax: awk '{action}' filename.",
+            "Use single quotes to protect programs from shell parsing."
+          ],
+          "notes": "AWK treats input as records and fields, allowing for quick, column-based data manipulation. Always wrap your scripts in single quotes to avoid shell interference.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Patterns and Booleans",
+          "bullets": [
+            "Patterns control which lines the action applies to.",
+            "Use regular expressions to filter text (p. 3).",
+            "Operators include ~ (contains) and !~ (does not contain).",
+            "Combine logic with &&, ||, and ! operators."
+          ],
+          "notes": "You can go beyond simple printing by adding patterns, which act as filters. Regular expressions and boolean operators provide granular control over which lines you process.",
+          "page_range": "3-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "BEGIN, END, and Variables",
+          "bullets": [
+            "BEGIN processes actions before file input begins.",
+            "END processes actions after file input completes.",
+            "Variables can store intermediate values or totals.",
+            "Run scripts via -f or by making files executable."
+          ],
+          "notes": "BEGIN and END blocks are essential for setup and final summary tasks. You can manage complex scripts by saving them into files or making them executable scripts.",
+          "page_range": "4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Variables and Data Handling",
+          "bullets": [
+            "NF provides total fields; NR provides current record number.",
+            "FS defines the field separator (default: whitespace).",
+            "Assign variables to perform calculations during processing.",
+            "Modify fields directly to transform your data structure."
+          ],
+          "notes": "Built-in variables help you track position and structure. Setting FS allows you to parse non-standard formats like CSV or colon-delimited files.",
+          "page_range": "5-6",
+          "image_prompt": ""
+        },
+        {
+          "title": "Control Flow and Arrays",
+          "bullets": [
+            "Supports C-style if, while, and for constructs.",
+            "printf provides fine-grained output formatting (p. 6).",
+            "Associative arrays act as powerful maps or dictionaries.",
+            "Loop over array values using the 'for (key in array)' syntax."
+          ],
+          "notes": "AWK's control structures and associative arrays bring it closer to general-purpose programming. These features make it ideal for tasks like word frequency counting.",
+          "page_range": "6-7",
+          "image_prompt": ""
+        },
+        {
+          "title": "Advanced Features",
+          "bullets": [
+            "Simulate multi-dimensional arrays via joined indices.",
+            "User-defined functions allow for code reuse.",
+            "gawk extensions provide bitwise operators and library support.",
+            "Use @include to organize and import code modules."
+          ],
+          "notes": "While traditional AWK is limited, modern implementations like GNU awk (gawk) add extensive features like library inclusion and advanced array sorting.",
+          "page_range": "7-8, 11-12",
+          "image_prompt": ""
+        },
+        {
+          "title": "Code Generation and Examples",
+          "bullets": [
+            "Use AWK to generate repetitive C or shell code.",
+            "Leverage one-liners for quick data filtering and math.",
+            "Perform complex statistics or text processing in one pass.",
+            "Explore online REPLs like awk.js.org to practice."
+          ],
+          "notes": "AWK is a stellar tool for code generation and one-off text manipulation. Its performance and succinct syntax make it a staple in any Unix toolkit.",
+          "page_range": "9-10, 13-15",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 4 — AWK - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576785098,
+      "pdfName": "AWK"
+    }
+  ],
+  "sourceHash": "c5ac911013d43c8d"
+}

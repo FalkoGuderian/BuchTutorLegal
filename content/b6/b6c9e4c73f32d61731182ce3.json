@@ -1,0 +1,344 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Time Series Analysis and Classification Methods - Lesson 2 — RTG Classification Methods",
+    "pdfName": "RTG: Classification Methods",
+    "createdAt": 1778512773039,
+    "exportedAt": "2026-05-11T15:19:33.040Z",
+    "meta": {
+      "courseId": "course-en-time-series-and-classification",
+      "lessonIndex": 1,
+      "courseTitle": "Time Series Analysis and Classification Methods",
+      "lessonObjective": "RTG Classification Methods",
+      "licensing": {
+        "effective_license": "CC-BY-4.0",
+        "sources": [
+          {
+            "content_id": "local-newbooks-8d90f61dcaaa071f",
+            "title": "RTG Classification Methods",
+            "source": "local-newbooks",
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "url": "local://newbooks/2026-05-13/Time Series Analysis and Classification Methods/Lesson 2 RTG Classification Methods.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_5365f97dd46c",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Basic Background of SVM",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-3",
+          "chapterTitle": "Hard Margin Optimization",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Soft Margin",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-5",
+          "chapterTitle": "Kernel Method",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778512773039,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "This summary covers the fundamentals of Support Vector Machines (SVM) as detailed in the provided document.\n\n### **1. Hard Margin SVM**\nThe objective of SVM is to find a hyperplane ($w^Tx + b = 0$) that separates two classes ($y \\in \\{-1, 1\\}$) while maximizing the margin (the distance from the hyperplane to the nearest observations).\n*   **Optimization:** The problem is formulated to maximize the margin, equivalent to minimizing $\\frac{1}{2}w^Tw$ subject to $y_i(w^Tx_i + b) \\geq 1$ (p. 1-2).\n*   **Dual Solution:** By using Lagrange multipliers ($\\alpha$), the problem is transformed into a dual objective function dependent only on the inner products of the input vectors (p. 2).\n\n### **2. Soft Margin SVM**\nTo handle real-world data that is not perfectly separable, the \"Soft Margin\" approach introduces slack variables ($\\varepsilon_i$) and a tuning parameter ($C$) (p. 3).\n*   **Trade-off:** The parameter $C$ controls the trade-off between maximizing the margin and minimizing misclassification (p. 3).\n*   **Dual Constraints:** The dual optimization remains similar to the hard margin case, but with an added upper-bound constraint on the Lagrange multipliers: $0 \\leq \\alpha_i \\leq C$ (p. 4).\n\n### **3. The Kernel Method**\nWhen data is not linearly separable, SVM projects data into a higher-dimensional space using a feature mapping function $\\phi(x)$ (p. 4).\n*   **Kernel Trick:** Because calculating the inner product in high-dimensional space is computationally expensive, a Kernel function $K(x_i, x_j) = \\langle\\phi(x_i), \\phi(x_j)\\rangle$ is used to compute the inner product directly in the original space (p. 4-5).\n*   **Common Kernels:**\n    *   **Polynomial Kernel:** $K(x_i, x_j) = (x_i^Tx_j)^d$ (p. 5)\n    *   **Gaussian (RBF) Kernel:** $K(x_i, x_j) = \\exp(-\\frac{||x_i - x_j||^2}{2\\sigma^2})$ (p. 5)\n\n### **Key Takeaway**\nSVM models provide a powerful framework for classification by focusing on the \"support vectors\"—those observations that define the boundary. By utilizing dual variables and kernel functions, SVMs can efficiently find optimal decision boundaries even in complex, non-linear feature spaces (p. 2-5).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778512773039,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-time-series-and-classification_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 2 — RTG Classification Methods - Presentation</span><span class=\"pm-chat-count\">4 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">RTG Classification Methods</div><ul class=\"pm-chat-slide-bullets\"><li>Introduction to Support Vector Machines (SVM).</li><li>Core principles of geometric data separation.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778512773040,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "The Support Vector Machine (SVM) aims to find a hyperplane $w^Tx+b=0$ that separates two classes ($y_i \\in \\{-1, 1\\}$) while maximizing the distance (margin) between the hyperplane and the nearest observations ([S.1]).\n\n**Key Optimization Steps:**\n\n1. **Primal Formulation:** The goal is to maximize the margin, which leads to the equivalent constrained optimization problem: \nMinimize $\\frac{1}{2}w^Tw$ subject to $y_i(w^Tx_i+b) \\geq 1$ for all $i$ ([S.1], [S.2]).\n\n2. **Dual Formulation:** To solve this efficiently, the method of Lagrange multipliers is used to convert the primal problem into a dual problem. By introducing multipliers $\\alpha_i \\geq 0$, we formulate the Lagrangian $L(w,b,\\alpha) = \\frac{1}{2}w^Tw - \\sum \\alpha_i[y_i(w^Tx_i+b) - 1]$ ([S.2]).\n\n3. **Solving the Dual:** By setting the partial derivatives of $L$ with respect to $w$ and $b$ to zero, we derive:\n$w = \\sum_{i=1}^{n} \\alpha_i y_i x_i$ and $\\sum_{i=1}^{n} \\alpha_i y_i = 0$ ([S.2]).\n\n4. **Simplified Dual Problem:** Substituting these back yields the final dual objective function to maximize:\nMaximize $W(\\alpha) = \\sum_{i=1}^{n} \\alpha_i - \\frac{1}{2} \\sum_{i,j=1}^{n} y_i y_j \\alpha_i \\alpha_j \\langle x_i, x_j \\rangle$ subject to $\\sum \\alpha_i y_i = 0$ and $\\alpha_i \\geq 0$ ([S.2]).\n\nThis convex optimization problem is typically solved using the SMO algorithm to determine the values for $\\alpha$, which subsequently allow for the calculation of the optimal $w$ and $b$ ([S.2]).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778512773049,
+      "channel": "plan_pipe_5365f97dd46c",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text details the derivation of Support Vector Machines (SVM), covering both Hard Margin and Soft Margin formulations [S.2, S.3].\n\nHard Margin SVM\nThe goal is to find an optimal hyperplane that maximizes the margin between binary classes, which is equivalent to solving the following optimization problem [S.2]:\nMinimize: $\\frac{1}{2}w^Tw$\nSubject to: $y_i(w^Tx_i+b) \\geq 1, i = 1, \\ldots, n$\n\nBy using Lagrange multipliers, this primal problem is converted into a dual problem to simplify computation [S.2]:\nMaximize: $W(\\alpha) = \\sum_{i = 1}^{n}\\alpha_i - \\frac{1}{2}\\sum_{i,j=1}^{n}y_iy_j\\alpha_i\\alpha_j\\langle x_i,x_j \\rangle$\nSubject to: $\\sum_{i = 1}^{n}\\alpha_iy_i = 0$ and $\\alpha_i \\geq 0$\n\nSoft Margin SVM\nTo handle data that cannot be perfectly separated, slack variables $\\varepsilon_i$ and a cost parameter $C$ are introduced to allow for misclassifications [S.3]. The primal optimization problem becomes:\nMinimize: $\\frac{1}{2}w^Tw + C\\sum_{i = 1}^{n}\\varepsilon_i$\nSubject to: $y_i(w^Tx_i+b) \\geq 1 - \\varepsilon_i$ and $\\varepsilon_i \\geq 0$\n\nIn this formulation, $C$ serves as a tuning parameter to balance the maximization of the margin against the penalty incurred by misclassified points [S.3]. Similar to the hard margin case, this is solved via the dual space using the Karush-Kuhn-Tucker (KKT) conditions, where the gradient is set to zero to derive optimal parameters [S.3].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778512773050,
+      "channel": "plan_pipe_5365f97dd46c",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This text covers the mathematical formulation of Soft Margin Support Vector Classifiers and the introduction of the Kernel Method.\n\n**Soft Margin Optimization**\nWhen data is not perfectly linearly separable, slack variables $\\varepsilon_i$ are introduced to allow for some misclassifications. The model minimizes a cost function consisting of the norm of the weights and a penalty term for misclassification, controlled by the tuning parameter $C$:\n\n$$\\text{minimize } \\frac{1}{2}w^Tw + C\\sum_{i=1}^{n}\\varepsilon_i$$\n\nSubject to the constraints $y_i(w^Tx_i+b) \\geq 1 - \\varepsilon_i$ and $\\varepsilon_i \\geq 0$ (p. 3). By converting this to the dual problem using Lagrange multipliers, the optimization simplifies to solving for $\\alpha_i$ (p. 3-4):\n\n$$\\text{maximize } \\sum\\limits_{i=1}^{n} \\alpha_{i} - \\frac{1}{2}\\sum\\limits_{i=1}^{n}\\sum\\limits_{j=1}^{n} \\alpha_{i}\\alpha_{j}y_{i}y_{j}{x}_{i}^T{x}_{j}$$\n\nSubject to $\\sum y_i \\alpha_i = 0$ and $0 \\leq \\alpha_i \\leq C$ (p. 4).\n\n**Kernel Method**\nWhen data is not linearly separable even with a soft margin, a feature mapping $\\phi: \\mathbb{R}^p \\to \\mathbb{R}^m$ is used to project the data into a higher-dimensional space where a linear hyperplane can separate the classes (p. 4). Because the optimization depends only on the pairwise inner products of the data, the computation can be simplified by replacing the standard inner product with a kernel function that calculates the inner product in the mapped space without needing to explicitly compute $\\phi(x)$ (p. 4).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778512773051,
+      "channel": "plan_pipe_5365f97dd46c",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document explains the transition from linear Support Vector Machines (SVM) to the Kernel Method for classifying non-linearly separable data.\n\n**The Dual Optimization Problem**\nWhen solving for the optimal hyperplane, the problem is expressed in its dual Lagrangian form. The goal is to maximize the objective function involving pairwise inner products of data points $x_i$ and $x_j$, subject to constraints on the Lagrange multipliers $\\alpha_i$ (p. 4).\n\n**The Kernel Trick**\nWhen data is not linearly separable, it can be projected into a higher-dimensional feature space using a mapping function $\\phi(x)$. Mapping data allows for linear separation in the new space. However, explicitly computing $\\phi(x)$ for high-dimensional spaces is computationally expensive. The Kernel Method avoids this by substituting the inner product of mapped features with a Kernel function $K(x_i, x_j) = \\langle\\phi(x_i), \\phi(x_j)\\rangle$ (p. 4, 5).\n\n**Hyperplane and Decision Rules**\nUsing the kernel function, the hyperplane weight vector is represented as $w = \\sum_{i=1}^{n}\\alpha_iy_i\\phi(x_i)$. The decision rule for classifying a new observation $x$ is determined by the sign of the result: \n$g(x) = \\sum_{i=1}^{n}\\alpha_iy_i K(x_i, x) + b$ (p. 5).\n\n**Common Kernels**\nTwo widely used kernel functions for mapping data into different spaces are:\n1. Polynomial Kernel: $K(x_i, x_j) = (x_i^Tx_j)^d$\n2. Gaussian Kernel: $K(x_i, x_j) = \\exp{-\\frac{||x_i- x_j||^2}{2\\sigma^2}}$ (p. 5)",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778512773052,
+      "channel": "plan_pipe_5365f97dd46c",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778512773139,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "In the context of the Hard Margin SVM, what is the primary geometric motivation behind the optimization problem?",
+            "options": [
+              "To ensure that the hyperplane passes through as many data points as possible.",
+              "To minimize the total number of dimensions in the input space.",
+              "To find a hyperplane that maximizes the minimum distance of observations to that plane.",
+              "To minimize the sum of squared errors between predictions and actual labels."
+            ],
+            "correctIndex": 2,
+            "explanation": "The Hard Margin SVM aims to define an optimal hyperplane that maximizes the margin (the minimum distance) between the hyperplane and the closest data points from either class."
+          },
+          {
+            "question": "What is the role of the tuning parameter 'C' in the Soft Margin SVM optimization, and how does it affect the final model?",
+            "options": [
+              "It is a Lagrange multiplier used to calculate the bias term 'b'.",
+              "It is a penalty term that balances the trade-off between maximizing the margin and minimizing the sum of misclassifications.",
+              "It represents the number of support vectors; a higher C forces the model to have more support vectors.",
+              "It determines the degree of the kernel function used for non-linear mapping."
+            ],
+            "correctIndex": 1,
+            "explanation": "The parameter C acts as a cost on misclassifications (slack variables). A large C places a higher penalty on errors, seeking to minimize misclassifications at the expense of a potentially smaller margin."
+          },
+          {
+            "question": "Why are kernel functions used in SVMs?",
+            "options": [
+              "They transform the binary target labels from {-1, 1} to a continuous range for regression.",
+              "They are mandatory for all support vector calculations to ensure the bias 'b' is always zero.",
+              "They allow SVMs to perform linear classification in low-dimensional spaces.",
+              "They provide a way to compute the inner product of observations in high-dimensional feature spaces without explicitly mapping the data points."
+            ],
+            "correctIndex": 3,
+            "explanation": "Kernel functions efficiently compute inner products in a high-dimensional feature space using the original input data, avoiding the computational expense of explicitly calculating high-dimensional mapped features."
+          },
+          {
+            "question": "When solving the Soft Margin SVM, what condition distinguishes a 'support vector' that is on the boundary from one that may be misclassified?",
+            "options": [
+              "The value of the slack variable epsilon_i indicates whether a support vector is correctly classified (epsilon_i < 1) or misclassified (epsilon_i > 1).",
+              "If the bias term 'b' is equal to zero.",
+              "If alpha_i equals zero, the point is guaranteed to be a support vector.",
+              "Support vectors are only those points where the inner product of the mapped features is negative."
+            ],
+            "correctIndex": 0,
+            "explanation": "In the Soft Margin SVM, the slack variable epsilon_i measures the degree of violation. For support vectors, if 0 < alpha_i < C, the point is within the margin (epsilon_i=0), but if epsilon_i > 1, the point falls on the wrong side of the hyperplane."
+          },
+          {
+            "question": "In the dual formulation of the SVM optimization, what does the constraint sum_{i=1}^{n} alpha_i y_i = 0 imply?",
+            "options": [
+              "It forces all observations to be classified correctly.",
+              "It is an artifact of the Lagrangian that must be ignored during final classification.",
+              "It indicates that the margin distance is fixed at a constant value of zero.",
+              "It ensures that the weighted sum of the labels of the support vectors is balanced."
+            ],
+            "correctIndex": 3,
+            "explanation": "This constraint arises from the derivative of the Lagrangian with respect to the bias term 'b', ensuring that the resulting hyperplane respects the balance of the two classes represented by the support vectors."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778512773140,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary objective of a Support Vector Machine (SVM) when separating two classes?",
+            "back": "To find a hyperplane that separates observations based on their classes while maximizing the minimum distance (margin) from the observations to that hyperplane."
+          },
+          {
+            "front": "In the SVM optimization problem, why do we minimize (1/2)||w||² instead of maximizing the margin directly?",
+            "back": "Maximizing the margin M is mathematically equivalent to minimizing the inverse of the norm ||w|| scaled by M. Solving for (1/2)||w||² is a standard, convex quadratic programming problem."
+          },
+          {
+            "front": "What role does the Lagrange multiplier α play in SVM optimization?",
+            "back": "α is used to convert the constrained primal optimization problem into its dual form, allowing the solution for the hyperplane to depend only on the inner products of support vectors."
+          },
+          {
+            "front": "What is the KKT (Karush-Kuhn-Tucker) condition in the context of SVM?",
+            "back": "The KKT conditions are optimality conditions that ensure the primal and dual problems are solved consistently, specifically relating the weights w to the support vectors and multipliers α."
+          },
+          {
+            "front": "What is the purpose of the 'Soft Margin' SVM approach?",
+            "back": "To allow for some misclassifications in non-linearly separable data by introducing slack variables (εi) and a penalty tuning parameter (C) to balance margin maximization and classification error."
+          },
+          {
+            "front": "What does the tuning parameter C represent in Soft Margin SVM?",
+            "back": "C controls the trade-off between maximizing the margin and minimizing the penalty term for misclassified observations."
+          },
+          {
+            "front": "Why is the Kernel Method used in SVM?",
+            "back": "It allows the SVM to find a hyperplane in a high-dimensional feature space (mapped by φ) without explicitly computing the coordinate transformations, by using a kernel function K(xi, xj) = <φ(xi), φ(xj)>."
+          },
+          {
+            "front": "What is the benefit of using a kernel function versus actual feature mapping?",
+            "back": "Computing inner products in very high-dimensional space can be computationally expensive or impossible; the kernel function computes these inner products efficiently using the original feature space."
+          },
+          {
+            "front": "Define the Polynomial and Gaussian kernels.",
+            "back": "Polynomial Kernel: K(xi, xj) = (xiᵀxj)^d. Gaussian Kernel: K(xi, xj) = exp(-||xi - xj||² / 2σ²)."
+          },
+          {
+            "front": "In Soft Margin SVM, what does the condition 0 < αi < C signify?",
+            "back": "It indicates that the corresponding observation xi is a support vector and is correctly classified on the margin (εi = 0)."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-time-series-and-classification_1",
+      "slides": [
+        {
+          "title": "RTG Classification Methods",
+          "bullets": [
+            "Introduction to Support Vector Machines (SVM).",
+            "Core principles of geometric data separation."
+          ],
+          "notes": "In this lesson, we explore SVMs, a fundamental method for binary classification. We will examine how to define, optimize, and extend these models to handle complex data.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Hard Margin Optimization",
+          "bullets": [
+            "Aims to maximize the minimum distance (margin) to the hyperplane.",
+            "Requires y_i(w^Tx_i + b) ≥ 1 for accurate separation.",
+            "Solved efficiently through the Dual Lagrangian formulation.",
+            "Final hyperplane parameters found via KKT conditions (p. 2)."
+          ],
+          "notes": "The hard margin approach seeks the optimal hyperplane that perfectly separates classes. By transforming this into a dual problem, we can solve for Lagrange multipliers using the SMO algorithm.",
+          "page_range": "2-3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Soft Margin Classifier",
+          "bullets": [
+            "Introduces slack variables ζ_i for non-linearly separable data.",
+            "Tuning parameter C controls the trade-off between margin and errors.",
+            "Dual optimization adds constraints: 0 ≤ α_i ≤ C.",
+            "Support vectors are defined where 0 < α_i < C."
+          ],
+          "notes": "Real-world data is rarely perfectly separable. Soft margin classifiers allow for some misclassifications, balancing margin maximization with training error.",
+          "page_range": "3-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Kernel Method for Non-Linearity",
+          "bullets": [
+            "Maps input vectors to higher-dimensional feature spaces via φ(x).",
+            "Uses Kernel functions K(x_i, x_j) to compute inner products efficiently.",
+            "Eliminates the need to explicitly calculate high-dimensional coordinates.",
+            "Common kernels: Polynomial and Gaussian (RBF) functions."
+          ],
+          "notes": "When data isn't linearly separable, we map it into a higher-dimensional space. Kernel functions allow this without the computational burden of explicitly mapping every point.",
+          "page_range": "4-5",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 2 — RTG Classification Methods - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778512773039,
+      "pdfName": "RTG: Classification Methods"
+    }
+  ],
+  "sourceHash": "8de030d27bdbf42f"
+}

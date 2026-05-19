@@ -1,0 +1,377 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Neural Networks - Lesson 1: Advances in Memristor Neural Networks",
+    "pdfName": "Advances in Memristor Neural Networks",
+    "createdAt": 1778786799093,
+    "exportedAt": "2026-05-14T19:26:39.093Z",
+    "meta": {
+      "courseId": "course-en-gen-neural-networks",
+      "lessonIndex": 0,
+      "courseTitle": "Neural Networks",
+      "lessonObjective": "Selection on \"neural networks\"",
+      "licensing": {
+        "effective_license": "unknown",
+        "sources": [
+          {
+            "content_id": "doab-advances-in-memristor-neural-networks",
+            "title": "Advances in Memristor Neural Networks",
+            "source": "doab",
+            "license": "unknown",
+            "license_url": "",
+            "url": "https://directory.doabooks.org/handle/20.500.12854/130494"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_bf4381363fcd",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-12",
+          "chapterTitle": "Front Matter",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "13-22",
+          "chapterTitle": "Section 1: Memristor Artificial Synapsis for Neural Networks",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "23-64",
+          "chapterTitle": "Section 2: Memristor Neuromorphic Technologies for Computing Architecture",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "65-88",
+          "chapterTitle": "Section 3: New Materials Based on Memristor Properties",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "89-128",
+          "chapterTitle": "Section 4: Pattern Recognition Using Memristor Models",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778786799093,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: Advances in Memristor Neural Networks\n\nThis text serves as an introduction to the collective research presented in *Advances in Memristor Neural Networks – Modeling and Applications*. It highlights the shift from traditional Von Neumann architectures toward neuromorphic computing systems designed to emulate the efficiency and structural complexity of the human brain.\n\n#### **Key Points:**\n\n*   **The Bottleneck of Traditional Computing:** Conventional computers (based on CMOS technology) struggle with \"big data\" due to the physical separation of memory and processing, which creates latency and energy inefficiency. In contrast, biological brains combine storage and computation, offering massive parallelism and low-power operation.\n*   **The Role of Memristors:** Identified as the fourth fundamental passive circuit element, the memristor is a nanodevice capable of \"remembering\" its history based on past current flow. This makes it an ideal candidate for building hardware that mimics biological synapses.\n*   **Synaptic Plasticity:** The text emphasizes the importance of *Synaptic Plasticity*—the ability of synapses to change their connection strength (weight) through neural activity. This is the physiological basis for learning and memory. Key mechanisms include:\n    *   **STDP (Spike-Timing-Dependent Plasticity):** A learning rule where synaptic strength is adjusted based on the precise timing of presynaptic and postsynaptic spikes.\n    *   **Analog Modulation:** Memristors allow for the gradual adjustment of resistance (conductance), enabling the fine-tuning of artificial synaptic weights similarly to biological systems.\n*   **Metal Oxide-Based Implementation:** Research is heavily focused on using metal oxide thin films (such as $\\text{TiO}_x, \\text{WO}_x, \\text{HfO}_x$, and $\\text{TaO}_x$) to create memristive devices. These materials exhibit resistive switching (RS) characteristics, where oxygen vacancy migration allows for binary (High/Low resistance) or multilevel conductance states.\n*   **Future Applications:** The integration of these memristive synapses into deep neural networks is expected to support advanced AI tasks, including real-time pattern recognition (speech/video), navigation, and self-organizing systems that are both scalable and energy-efficient.\n\n#### **Core Objective:**\nTo bridge the gap between biological neural network functionality and artificial hardware by utilizing memristive circuits as physical, autonomous synaptic elements.\n\n***\n\n**Source Reference:** [S.1], [S.9], [S.11], [S.15], [S.16], [S.17], [S.18], [S.19], [S.20], [S.21], [S.22].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778786799093,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-gen-neural-networks_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 1: Advances in Memristor Neural Networks - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Advances in Memristor Neural Networks</div><ul class=\"pm-chat-slide-bullets\"><li>Integrating memristors for neuromorphic computing</li><li>Overcoming traditional Von Neumann architectural bottlenecks</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778786799094,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "### Summary: Advances in Memristor Neural Networks – Modeling and Applications\n\nThis book, edited by Dr. Calin Ciufudean, explores the integration of memristive models into neural network architectures to address complex challenges in artificial intelligence and biological system analysis [S.1, S.11].\n\n**Key Focal Areas:**\nThe text is organized into four primary technical sections:\n1. **Memristor Artificial Synapsis:** Examines synaptic behaviors specifically within metal oxide-based memristors [S.9].\n2. **Neuromorphic Computing Architecture:** Discusses the development of three-dimensional memristive computing systems and the production and application of memristive anodic oxides [S.9].\n3. **Advanced Materials:** Focuses on the properties of two-dimensional materials applied in memristive systems [S.9].\n4. **Pattern Recognition:** Details the use of specific models, such as charge-controlled memristor grids, for technical applications like edge detection [S.9].\n\n**Scientific Context and Motivation:**\nThe publication addresses the current struggle to fully analyze the complex parameters found in hierarchical layered neural networks [S.11]. By leveraging the stochastic nature and live dynamics of memristive models, researchers aim to create more efficient processing systems [S.11]. The book emphasizes that memristors are essential for developing intelligent hybrid bio-structures and physical models of spiking neural networks that feature self-organization [S.11].\n\n**Editor Background:**\nDr. Calin Ciufudean, an Associate Professor at the “Stefan cel Mare” University of Suceava, serves as the editor. He holds significant academic standing, with over 160 scientific papers, 17 authored/co-authored books, and 32 inventions [S.7]. The book reflects a collaborative effort involving various international contributors from academic institutions [S.4].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778786799103,
+      "channel": "plan_pipe_bf4381363fcd",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 12
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document discusses the evolution of neuromorphic computing and the role of metal oxide-based memristors as artificial synapses. Below is a structured summary of the provided text:\n\n### The Need for Neuromorphic Computing\nTraditional Von Neumann architectures face significant bottlenecks in processing big data due to the physical separation of memory and computation, which causes intrinsic delays and high energy consumption. In contrast, the human brain functions as a compact, energy-efficient system that combines storage and computation, allowing for massive parallelism and self-learning. Neuromorphic systems aim to mimic these biological capabilities.\n\n### Biological Synapses and Plasticity\nSynapses are the 20–40 nm junctions between neurons where information transmission occurs. Synaptic plasticity—the change in connection strength between neurons—is widely considered the fundamental mechanism for learning and memory. A primary learning rule is Spike-Timing-Dependent Plasticity (STDP), where the weight change ($\\Delta w_i$) of a synapse is determined by the relative timing of presynaptic and postsynaptic spikes. One acceptable functional form for this relationship is:\n\n$W(x) = \\begin{cases} A^+ \\exp(-x / \\tau^+), & x > 0 \\\\ -A^- \\exp(x / \\tau^-), & x < 0 \\end{cases}$\n\n### Memristors as Artificial Synapses\nThe memristor is the fourth fundamental circuit element, capable of \"remembering\" its past electrical state. Since the realization of nanoscale titanium dioxide memristors in 2008, these devices have become leading candidates for building bionic hardware. \n\nKey characteristics of these devices include:\n* Resistive Switching (RS): Memristors transition between a High Resistance State (HRS) and a Low Resistance State (LRS) based on the history of applied voltage and current.\n* Mechanisms: In metal oxide memristors (such as $TiO_x$, $WO_x$, $HfO_2$, and $TaO_x$), switching is often driven by the migration of oxygen vacancies and the formation of conductive filaments or stoichiometric changes.\n* Advantages: They offer scalability, nonvolatility, and the ability to perform analog computing, making them ideal for mimicking synaptic weight adjustments in artificial neural networks.\n\n### Current Status\nResearch has expanded to a wide variety of binary, ternary, and heterostructure oxide-based memristors. While data storage (RRAM) has benefited from these developments, the field is increasingly focused on harnessing the analog synaptic behavior of these devices to enable real-time processing of unstructured data, such as image and voice recognition.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778786799104,
+      "channel": "plan_pipe_bf4381363fcd",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 13,
+        "end": 22
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary synthesizes the research on metal oxide-based memristive synaptic devices as described in sections [S.23] through [S.26].\n\n**Overview of Material Candidates**\n- Titanium Oxide ($TiO_x$): Frequently researched, though often utilized in multi-layer stacks to optimize performance. Devices using hybrid pulse modes have demonstrated improved pattern recognition accuracy.\n- Tungsten Oxide ($WO_x$): Highly regarded for CMOS compatibility, high endurance, and learning capabilities. Its performance, such as resistance switching and synaptic behavior, is significantly influenced by atmosphere (humidity) and temperature.\n- Other Materials: $NiO_x$, $AlO_x$, and $VO_x$ have been explored. $NiO_x$ is noted for its early discovery but limited by poor uniformity. $AlO_x$ is useful for its low current requirements. $VO_x$ is primarily investigated as a selector device to mitigate \"sneak-path\" currents in neural network arrays.\n\n**Resistive Switching (RS) Mechanisms**\n- Ionic Drift and Diffusion: Under an applied electric field, conductive filaments form or rupture due to the migration of oxygen vacancies or metal ions. For inert electrodes, concentration gradients of oxygen vacancies drive the switching between high and low resistance states; for non-inert electrodes, oxidation processes influence filament formation.\n- Thermal Effects: Joule heating plays a critical role in both unipolar and bipolar switching. However, excessive current must be managed to prevent permanent device failure caused by melting the conductive filaments.\n\n**Synaptic Behavior and Future Outlook**\n- Functional Mimicry: These devices successfully replicate biological synaptic functions, including Long-Term Potentiation (LTP), Long-Term Depression (LTD), and Spike-Timing-Dependent Plasticity (STDP). Some models show a transition from Short-Term Memory (STM) to Long-Term Memory (LTM) through repeated stimuli.\n- Challenges: While metal oxide memristors offer high connectivity, density, and low energy consumption, the primary technical hurdles remain the improvement of spatial and temporal uniformity and the long-term reliability of these devices within large-scale neuromorphic architectures.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778786799105,
+      "channel": "plan_pipe_bf4381363fcd",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 23,
+        "end": 64
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Section 3, covering pages 65–88, focuses on the integration of advanced materials into memristor-based architectures. The primary content includes:\n\n1. Overview of Two-Dimensional Materials: Chapter 4 explores the application of two-dimensional (2D) materials in memristive systems. These materials offer unique electrical and structural properties that are highly advantageous for scaling down electronic devices and enhancing performance in neuromorphic computing.\n\n2. Material Properties and Mechanisms: The discussion highlights how the atomic-level characteristics of 2D materials enable efficient resistive switching, which is crucial for emulating the synaptic plasticity required for advanced artificial neural networks.\n\n3. Technological Significance: The section underscores the shift toward finding novel material substrates to overcome limitations inherent in traditional CMOS-based technology, aiming to create more compact, low-energy, and high-density memory and processing units. \n\nBy leveraging the physics of 2D structures, researchers aim to optimize the density and functionality of hardware-based neural networks, facilitating the development of systems that more closely replicate biological efficiency.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778786799106,
+      "channel": "plan_pipe_bf4381363fcd",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 65,
+        "end": 88
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the final section of the book, which focuses on practical modeling and applications for memristor systems.\n\nSection Summary: Pattern Recognition Using Memristor Models (p. 89)\n\nKey content:\nThe text presents Chapter 5, titled \"Charge-Controlled Memristor Grid for Edge Detection,\" authored by Arturo Sarmiento-Reyes and Yojanes Rodríguez Velásquez.\n\nThe chapter explores the application of memristor technology in image processing, specifically focusing on the implementation of edge detection algorithms using a grid of charge-controlled memristors. By leveraging the unique non-linear characteristics of these components, the authors propose a hardware-based solution for identifying boundaries within image data.\n\nCore concepts:\n1. Utilization of memristor grids: Designing integrated circuits that mimic the behavior of neural networks to process visual information.\n2. Computational efficiency: Addressing the challenge of processing complex, hierarchical data in layered neural networks by replacing software-heavy approaches with hardware-native solutions.\n3. Edge detection: Providing a physical model capable of distinguishing features within a dataset, which serves as a foundational step for higher-level tasks like pattern recognition.\n\nBroad implications:\nThe section emphasizes that memristors are critical not only for memory storage but for active computing. Because memristive models possess live dynamics and stochastic properties, they allow for the development of intelligent hybrid biostructures. These systems are designed to overcome the limitations of traditional Von Neumann architectures, which struggle with the energy consumption and parallel processing demands of modern artificial intelligence applications.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778786799107,
+      "channel": "plan_pipe_bf4381363fcd",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 89,
+        "end": 128
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778786799193,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why do researchers aim to replace traditional Von Neumann architecture with neuromorphic computing systems for neural network applications?",
+            "options": [
+              "Traditional computers cannot process any form of data.",
+              "The physical separation of memory and processing units in traditional computers creates a bottleneck due to data transfer requirements.",
+              "Traditional computers are physically too large to be transported.",
+              "Neuromorphic systems are the only systems capable of performing basic mathematical calculations."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text highlights that the separation of memory and processor in Von Neumann architecture generates intrinsic delay and inefficiency, which is a major bottleneck for CMOS-based neural networks."
+          },
+          {
+            "question": "In the context of the biological brain and its neural functions, what is the primary role of a synapse?",
+            "options": [
+              "To serve as a storage unit for long-term physiological data.",
+              "To physically prevent electrical signals from moving between neurons.",
+              "To act as a junction allowing the transmission of signals between a presynaptic neuron and a postsynaptic cell.",
+              "To generate the action potentials that originate in the soma."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text defines a synapse as a 20–40 nm junction between the axon and the dendrites that permits a neuron to pass an electrical or chemical signal to another neuron or target cell."
+          },
+          {
+            "question": "What is the core significance of 'synaptic plasticity' in both biological and artificial neural networks?",
+            "options": [
+              "It represents the ability of synapses to change connection strength, which is essential for learning and memory.",
+              "It refers to the physical flexibility of the brain's neural structures.",
+              "It is the process by which neurons generate new dendrites over time.",
+              "It describes the cooling capacity required for high-performance computing clusters."
+            ],
+            "correctIndex": 0,
+            "explanation": "The text explains that synaptic plasticity—the changing of connection strength as a result of neuronal activity—is the key mechanism for learning and memorizing."
+          },
+          {
+            "question": "According to the spike-timing-dependent plasticity (STDP) rule, how is the synaptic weight typically affected?",
+            "options": [
+              "The weight change is constant regardless of time.",
+              "The weight increases if repeated presynaptic spikes arrive shortly before postsynaptic spikes.",
+              "The weight decreases only when the neuron is at rest.",
+              "The weight increases only if the postsynaptic spike occurs significantly later than the presynaptic spike."
+            ],
+            "correctIndex": 1,
+            "explanation": "STDP theory posits that the synapse is excited or strengthened if presynaptic spikes arrive a few milliseconds before postsynaptic spikes, and inhibited if they arrive after."
+          },
+          {
+            "question": "Why are memristors considered 'exceptional candidates' for building artificial neural networks compared to traditional CMOS circuits?",
+            "options": [
+              "They are the only components that can be printed on paper.",
+              "They eliminate the need for electricity in computing.",
+              "They allow for parallel processing and the combination of memory and computation in a compact form.",
+              "They are significantly cheaper to manufacture than any other electronic component."
+            ],
+            "correctIndex": 2,
+            "explanation": "Memristors allow for localized storage and computing, supporting parallel processing, scalability, and energy efficiency, mirroring the advantages of the biological brain."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778786799194,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is a memristor and why is it significant for neuromorphic computing?",
+            "back": "A memristor is a nanodevice representing a fourth fundamental electronic element. It is significant because its capacity to emulate artificial synapses allows for the construction of bionic hardware with self-learning, adaptivity, and low power consumption."
+          },
+          {
+            "front": "What is the primary architectural limitation of traditional Von Neumann computers in neural network applications?",
+            "back": "The bottleneck is the physical separation between the memory (storing data) and the processor (computing), which requires constant data transfer, leading to intrinsic delays and energy inefficiency."
+          },
+          {
+            "front": "What are the three main parts of a biological neuron?",
+            "back": "A soma, dendrites, and an axon."
+          },
+          {
+            "front": "What is synaptic plasticity as related to neuroscience?",
+            "back": "Synaptic plasticity is the biological process where synapses change their connection strength as a result of neuronal activity, serving as the key mechanism for learning and memorizing in the brain."
+          },
+          {
+            "front": "What is Spike-Timing-Dependent Plasticity (STDP)?",
+            "back": "STDP is a synaptic learning rule where the change in synaptic weight (plasticity) depends on the exact relative timing of pre- and postsynaptic action potentials within a window of tens of milliseconds."
+          },
+          {
+            "front": "According to Hebbian theory and STDP, how does synaptic weight change based on spike timing?",
+            "back": "If repeated presynaptic spikes arrive shortly before postsynaptic spikes, the synapse is potentiated (weight increases). If spikes arrive after, the synapse is inhibited (weight decreases)."
+          },
+          {
+            "front": "Why is the human brain considered more efficient than a supercomputer like Watson?",
+            "back": "The brain operates with massive parallelism, localized storage, and extreme power efficiency (approx. 10 W), whereas supercomputers like Watson require tens of kilowatts and massive cooling systems to perform similar complex tasks."
+          },
+          {
+            "front": "What functions occur at the synapse during neuronal communication?",
+            "back": "The presynaptic neuron releases neurotransmitters into the synaptic junction, which bind to receptors on the postsynaptic neuron, triggering ion diffusion that can lead to membrane potential changes and potential spiking."
+          },
+          {
+            "front": "What material category is the focus for many memristor-based synaptic devices?",
+            "back": "Metal oxides (examples include TiO_x, WO_x, HfO_x, TaO_x, and NiO_x)."
+          },
+          {
+            "front": "What is the primary advantage of combining memory and computation in a single device?",
+            "back": "It eliminates the bottleneck caused by moving data between a separate memory unit and a processor, resulting in improved performance, reduced power consumption, and increased speed in neural network hardware."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-gen-neural-networks_0",
+      "slides": [
+        {
+          "title": "Advances in Memristor Neural Networks",
+          "bullets": [
+            "Integrating memristors for neuromorphic computing",
+            "Overcoming traditional Von Neumann architectural bottlenecks"
+          ],
+          "notes": "This lecture explores how memristor technology mimics biological brain structures to create more efficient computing paradigms. We will examine the transition from traditional architectures to hardware that physically integrates memory and processing.",
+          "page_range": "1-12",
+          "image_prompt": ""
+        },
+        {
+          "title": "Biological Inspiration",
+          "bullets": [
+            "Brain performs massive parallel processing",
+            "Combines memory and computation efficiently",
+            "Low power consumption compared to digital",
+            "Self-learning and adaptive capabilities"
+          ],
+          "notes": "Biological systems handle complex, real-time tasks with minimal energy. Current digital computers struggle with these tasks due to data transfer delays between memory and processors.",
+          "page_range": "15-16",
+          "image_prompt": ""
+        },
+        {
+          "title": "Memristors as Artificial Synapses",
+          "bullets": [
+            "Electronic synapses mimic biological neural activities",
+            "Memristors offer critical synaptic plasticity",
+            "Enables high-density, low-power neural networks",
+            "Overcomes limitations of CMOS-based integration"
+          ],
+          "notes": "Memristors are ideal candidates for electronic synapses. They provide the necessary adaptability and localized storage required to construct true bionic neuromorphic systems.",
+          "page_range": "15-16",
+          "image_prompt": ""
+        },
+        {
+          "title": "Tungsten Oxide (WOx) Memristors",
+          "bullets": [
+            "Features high endurance and CMOS compatibility",
+            "Exhibits multilevel storage via conductive filaments",
+            "Learns from voltage history (potentiation/depression)",
+            "Mimics transition from short to long-term memory"
+          ],
+          "notes": "WOx is a promising material due to its robust performance and standard manufacturing compatibility. It displays synaptic behaviors that closely resemble biological memory processes.",
+          "page_range": "23-24",
+          "image_prompt": ""
+        },
+        {
+          "title": "Alternative Material Systems",
+          "bullets": [
+            "NiOx: High endurance but challenges in uniformity",
+            "AlOx: Large band gap with low current requirements",
+            "Stacking materials to optimize synaptic performance",
+            "Diversity in materials drives future scalability"
+          ],
+          "notes": "Various materials like NiOx and AlOx are being investigated to refine synaptic device behavior. Material selection is key to balancing endurance, power efficiency, and architectural consistency.",
+          "page_range": "24",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 1: Advances in Memristor Neural Networks - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778786799093,
+      "pdfName": "Advances in Memristor Neural Networks"
+    }
+  ],
+  "sourceHash": "8d80a87147f7b612"
+}

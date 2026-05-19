@@ -1,0 +1,482 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Excel und VBA für die Praxis - Lektion 2 — SAS Programmierung Anfänger",
+    "pdfName": "SAS Programmierung Anfänger",
+    "createdAt": 1778514435692,
+    "exportedAt": "2026-05-11T15:47:15.693Z",
+    "meta": {
+      "courseId": "course-de-cs-excel-vba-praxis",
+      "lessonIndex": 1,
+      "courseTitle": "Excel und VBA für die Praxis",
+      "lessonObjective": "Daten einlesen, transformieren, ausgeben.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-sas-programmierung-anf-nger",
+            "title": "SAS Programmierung Anfänger",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/SAS_Programmierung_Anf%C3%A4nger"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_2b8dd75a5de1",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-5",
+          "chapterTitle": "Einleitung und Grundlagen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "6-18",
+          "chapterTitle": "Benutzeroberfläche und Display Manager",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "19-27",
+          "chapterTitle": "SAS-Programme und Struktur",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "28-36",
+          "chapterTitle": "SAS-Tabellen und Datenbibliotheken",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "37-42",
+          "chapterTitle": "ODS, Optionen und Online-Hilfe",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "43-68",
+          "chapterTitle": "Grundlagen des Datenschritts",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "69-76",
+          "chapterTitle": "Verknüpfung von SAS-Tabellen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "77-102",
+          "chapterTitle": "Prozedurschritt und Dokumentation",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "103-106",
+          "chapterTitle": "Grafikprozeduren und Übungen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "107-128",
+          "chapterTitle": "Lösungsvorschläge und Anwendungsbeispiele",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778514435692,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung basiert auf dem bereitgestellten Dokument „Einführung in das Programmieren mit Base SAS unter Windows“ und deckt die Grundlagen für den Einstieg in die SAS-Programmierung ab.\n\n### Zusammenfassung: Einführung in die SAS-Programmierung\n\n#### 1. Benutzeroberfläche und Arbeitsweise\n*   **Architektur:** SAS ist kommandozeilenorientiert, kann aber unter Windows über Menüs, Icons und Tastenkombinationen (Shortcuts) gesteuert werden (S. 10).\n*   **Wichtige Fenster:**\n    *   **Enhanced Editor:** Zum Schreiben und Verwalten von SAS-Code („SAS-Programme“, Endung `*.sas`) (S. 10, 11).\n    *   **Protokollfenster (Log):** Zentrale Instanz zur Überprüfung der Programmausführung (Hinweise, Warnungen, Fehlermeldungen) (S. 15).\n    *   **Listenfenster (Output):** Zeigt die inhaltlichen Ergebnisse (Listen, Tabellen) an (S. 15).\n    *   **Results- & Explorer-Fenster:** Zur Verwaltung von erzeugten Ergebnissen und SAS-Bibliotheken/Tabellen (S. 13, 14).\n\n#### 2. Aufbau von SAS-Programmen\n*   **Sprachelemente:** Programme bestehen aus **Anweisungen**, die zwingend mit einem Semikolon (`;`) abgeschlossen werden müssen (S. 10).\n*   **Programmablauf:** Ein Programm besteht im Wesentlichen aus zwei Schritten (S. 7):\n    *   **Datenschritt (DATA STEP):** Zuständig für das Einlesen, Aufbereiten und Verknüpfen von Daten (S. 4, 11).\n    *   **Prozedurschritt (PROC STEP):** Zuständig für die Auswertung und Analyse der Daten (z. B. `PROC PRINT` für Ausgaben, `PROC MEANS` für Statistiken) (S. 5, 7).\n\n#### 3. Datenmanagement\n*   **SAS-Tabellen (Data Sets):** Dies sind Binärdateien im SAS-spezifischen Format (S. 11).\n*   **Datenquellen:** Daten können aus externen ASCII-Dateien oder Microsoft Excel (via DDE) eingelesen werden (S. 5).\n*   **Variablensteuerung:** Das Dokument behandelt Techniken zur Manipulation von Daten, wie das Festlegen von Variablenlängen (`LENGTH`), Formaten (`FORMAT`), Labeln (`LABEL`) sowie die Selektion oder Umbenennung von Feldern (`KEEP`, `DROP`, `RENAME`) (S. 4).\n\n#### 4. Wichtige methodische Hinweise\n*   **Log-Kontrolle:** Nach jeder Programmausführung muss zwingend das Log-Fenster auf Fehler (`ERROR`) oder Warnungen (`WARNING`) geprüft werden (S. 15).\n*   **Hilfestellung:** Die integrierte Online-Hilfe sowie ergänzende Handbücher (z. B. \"The Little SAS Book\") bilden die Basis für die selbstständige Problemlösung (S. 8, 9).\n\n*Hinweis: Da die Lernziele laut Ihrer Vorgabe auch VBA und Excel-Automatisierung beinhalten, beachten Sie bitte, dass dieses SAS-Skript als separate Statistik-Software fungiert und keinen direkten Bezug zu VBA-Programmierung aufweist, jedoch komplementär für komplexe Datenanalysen genutzt werden kann (S. 7).*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778514435692,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-cs-excel-vba-praxis_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 2 — SAS Programmierung Anfänger - Präsentation</span><span class=\"pm-chat-count\">5 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lektion 2: Einstieg in die SAS Programmierung</div><ul class=\"pm-chat-slide-bullets\"><li>Grundlagen der SAS-Programmierung: Einlesen, Transformieren und Ausgeben von Daten.</li><li>Einführung in die Arbeit mit dem SAS Display Manager unter Windows.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778514435693,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Das Dokument stellt eine Einführung in die Programmierung mit Base SAS unter Windows dar, verfasst von Heinrich Stürzl (S. 1, 3). Die Inhalte lassen sich wie folgt zusammenfassen:\n\nGrundlagen und Benutzeroberfläche\nDas Tutorium erläutert die verschiedenen Komponenten des SAS Display Managers, wie das Results-Fenster, den SAS Explorer, das Listenfenster (Output), das Protokollfenster (Log) sowie den Enhanced Editor (S. 3). Neben Hinweisen zur Programmstruktur und Namenskonventionen wird die Verwaltung von SAS-Tabellen (Data Sets) sowie Datenbibliotheken (Data Library) thematisiert (S. 3, 4). Ergänzend werden das Output Delivery System (ODS), Systemoptionen und die Nutzung der SAS Online-Hilfe eingeführt (S. 4).\n\nDatenverarbeitung (DATA STEP)\nEin wesentlicher Schwerpunkt liegt auf dem Datenschritt, der in eine Kompilierungs- und eine Ausführungsphase unterteilt ist (S. 4). Behandelt werden dabei:\n- Variablendefinitionen, Formate (INFORMAT/FORMAT), Label-Vergabe sowie Selektion und Umbenennung (S. 4).\n- Der Einsatz von Funktionen und bedingten Anweisungen (IF/THEN, SELECT) (S. 4).\n- Die Selektion von Beobachtungen mithilfe von IF-, WHERE- und DELETE-Anweisungen (S. 5).\n- Methoden zum Einlesen externer Daten (ASCII, Excel via DDE) sowie die Verknüpfung von Tabellen mittels SET und MERGE (S. 5).\n\nProzedurschritt (PROC STEP)\nDer abschließende Teil widmet sich dem Prozedurschritt, der für Analysen und Datenmanagement genutzt wird (S. 5). Vorgestellt werden unter anderem:\n- Dokumentationsmöglichkeiten via PROC CONTENTS (S. 5).\n- Definition eigener Formate mit PROC FORMAT (S. 5).\n- Statistische und vorbereitende Verfahren wie PROC SORT (Sortieren), PROC PRINT (Listenausgabe), PROC FREQ (Häufigkeitstabellen), PROC MEANS (deskriptive Statistik) und PROC UNIVARIATE (Analyse einzelner Merkmale) (S. 5).\n\nLizenzhinweis\nDas Material steht unter der Lizenz CC BY-SA 4.0, die eine freie Verwendung und Bearbeitung unter Namensnennung und Weitergabe unter gleichen Bedingungen ermöglicht (S. 2).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514435702,
+      "channel": "plan_pipe_2b8dd75a5de1",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Abschnitte (S. 6-15):\n\n**Grundlagen und Struktur von SAS**\nSAS ist ein System zur statistischen Datenanalyse, das aus verschiedenen Modulen besteht. Das Modul Base SAS bildet die Grundlage und umfasst die SAS-Sprache, Standardprozeduren und die Makrolanguage (S. 7). Ein SAS-Programm besteht aus Aussagen (Statements), die zwingend mit einem Semikolon abgeschlossen werden müssen (S. 10). Dabei wird zwischen zwei Dateitypen unterschieden: SAS-Programmdateien (*.sas, ASCII-Format) und SAS-Datendateien (binäre Tabellen/Data Sets) (S. 11).\n\n**Benutzeroberfläche (Display Manager)**\nDie Steuerung des Systems erfolgt über Menüs, Funktionstasten, Short-Cuts oder direkte Kommandoeingaben (S. 10). Beim Start werden typischerweise fünf Hauptfenster geladen:\n\n1. Results Fenster: Verwaltet die Ergebnisse in einer Baumstruktur als Inhaltsverzeichnis (S. 13).\n2. SAS Explorer: Dient zur Verwaltung von Bibliotheken und Dateien, ähnlich dem Windows Explorer (S. 14).\n3. Output Fenster: Enthält die Ergebnisse der Programmausführung in Listenform (S. 15).\n4. Log Fenster: Protokolliert jeden ausgeführten Quellcode und ist für die Fehleranalyse essenziell (S. 15).\n5. Enhanced Editor: Hier wird der SAS-Programmcode erstellt und bearbeitet (S. 10).\n\n**Arbeitsweise**\nDie Fenster sind kontextabhängig, das heißt, Menüs und Symbolleisten passen sich der jeweils aktiven Fensteranwendung an (S. 10, S. 12). Ergebnisse im Output-Fenster können über das Results-Fenster gezielt verwaltet, gedruckt oder gelöscht werden (S. 13, S. 15). Zudem wird empfohlen, das Output-Fenster regelmäßig zu leeren, um die Übersichtlichkeit zu wahren (S. 15).\n\n**Weiterführende Ressourcen**\nFür ein tieferes Verständnis verweist das Skript auf offizielle englischsprachige Handbücher des SAS Institute (z. B. SAS Language Reference) sowie auf ergänzende Literatur wie \"The Little SAS Book\" oder den deutschsprachigen Kurs von Carina Ortseifen (S. 8-9).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514435703,
+      "channel": "plan_pipe_2b8dd75a5de1",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 18
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine zusammenfassende Übersicht der Grundlagen zur SAS-Programmierung und Benutzeroberfläche basierend auf den Seiten 19 bis 27:\n\n**Benutzeroberfläche und Editor (S. 19, 21-23)**\nDer SAS Display Manager bietet Werkzeuge zur Effizienzsteigerung, wie Textbausteine (Abkürzungen via Strg+Shift+A) und Tastaturmakros (Strg+Shift+M). Der Enhanced Editor verfügt über eine eigene Tastaturbelegung (Shortcuts), die Vorrang vor den allgemeinen Display Manager Keys (DMKEYS) hat. Wesentliche Funktionen umfassen Code-Faltung, Navigation, Selektionsbefehle sowie Bearbeitungsfunktionen wie Undo/Redo.\n\n**Listenoutput und Drucken (S. 20)**\nDie Qualität des Listenoutputs hängt von den Systemoptionen $linesize$ und $pagesize$ ab. Diese werden bei der Druckereinrichtung (File > Print Setup) automatisch festgelegt. Es wird empfohlen, das Seitenlayout vor Programmstart zu wählen und die Anpassungen danach nicht mehr im Programm zu verändern, um fehlerhafte Ausdrucke zu vermeiden.\n\n**Struktur von SAS-Programmen (S. 25-26)**\nEin SAS-Programm besteht aus einer Abfolge logischer Schritte, die jeweils mit einem Semikolon abgeschlossen werden müssen:\n1. Globale Anweisungen: Festlegung allgemeiner Optionen.\n2. Datenschritt (DATA Step): Erstellung und Verarbeitung von SAS-Tabellen.\n3. Prozedurschritt (PROC Step): Analyse und Auswertung von Daten mittels vordefinierter Prozeduren.\n\nSchritte dürfen nicht geschachtelt werden. Ein guter Programmierstil beinhaltet den Einsatz von Dokumentationsköpfen, Einrückungen zur Visualisierung der Schrittgrenzen, regelmäßige RUN-Anweisungen, Kommentare ($* ...;$ oder $/* ... */$) sowie sprechende Bezeichnungen.\n\n**Namenskonventionen (S. 27)**\nSelbst definierte Bezeichnungen (Variablen, Tabellen etc.) können bis zu 32 Zeichen lang sein (Ausnahme: Bibliotheks- und Dateireferenzen sind auf 8 Zeichen begrenzt). Sie müssen aus Buchstaben, Ziffern oder Unterstrichen bestehen, dürfen jedoch nicht mit einer Ziffer beginnen. Die Groß- und Kleinschreibung ist funktional nicht relevant.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514435704,
+      "channel": "plan_pipe_2b8dd75a5de1",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 19,
+        "end": 27
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine Zusammenfassung der Lerninhalte aus dem Kapitel Grundlagen der SAS-Programmierung:\n\n**1. Gültige SAS-Namen und Programmstrukturen**\nSAS-Namen müssen bestimmten Konventionen folgen, um als Variablenbezeichnungen akzeptiert zu werden. Programme bestehen aus einer Abfolge von Anweisungen, die stets mit einem Semikolon enden (S. 29). Kommentare verbessern die Lesbarkeit und Dokumentation des Codes (S. 28).\n\n**2. Arten von SAS-Anweisungen**\nSAS-Anweisungen lassen sich in drei Kategorien unterteilen (S. 29-30):\n- Globale Anweisungen: Diese steuern allgemeine Einstellungen (z. B. TITLE, FOOTNOTE, OPTIONS, LIBNAME) und gelten für die gesamte Sitzung, bis sie überschrieben oder gelöscht werden (S. 29).\n- Datenschritt-Anweisungen: Sie dienen der Manipulation und Verarbeitung von Daten. Man unterscheidet deklarative Anweisungen (gelten für den gesamten Schritt, z. B. LENGTH) und ausführbare Anweisungen (werden zeilenweise zur Laufzeit abgearbeitet, z. B. INPUT oder OUTPUT) (S. 30).\n- Prozedur-Anweisungen: Diese sind spezifisch für einzelne Prozeduren (z. B. PROC PRINT, PROC MEANS) und steuern die Analyse oder Ausgabe der Daten (S. 30).\n\n**3. Programmentwicklung und Datenverarbeitung**\nEin typischer Datenschritt kann genutzt werden, um Daten einzulesen (INFILE), neue Variablen durch Berechnungen zu erzeugen oder Tabellen umzustrukturieren. Mathematische Zusammenhänge, wie etwa zur BMI-Berechnung, werden wie folgt formuliert:\n$BMI = \\frac{\\text{gewicht}}{\\text{laenge}^{2}}$ \nDurch die OUTPUT-Anweisung lässt sich der Prozess der Datenerstellung gezielt steuern, beispielsweise um eine Umrechnungstabelle zu generieren (S. 28).\n\n**4. Hilfestellung und Dokumentation**\nFür den korrekten Syntax-Gebrauch empfiehlt das Skript den Einsatz der SAS-Hilfe (F1-Taste im Editor) sowie das Nachschlagen im \"SAS Language Dictionary\" oder im \"SAS Procedures Guide\" (S. 30). Eine saubere Programmierung erfordert die bewusste Nutzung von Kommentaren und die richtige Platzierung globaler Anweisungen am Programmanfang (S. 29).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514435705,
+      "channel": "plan_pipe_2b8dd75a5de1",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 28,
+        "end": 36
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine zusammenfassende Übersicht der Abschnitte 5 bis 7 (S. 37–42):\n\nDas ODS (Output Delivery System) bildet die Schnittstelle zur Steuerung der Ausgabe von SAS-Prozeduren (S. 37). Es ermöglicht dem Anwender, die Darstellung und das Format der Ergebnisse flexibel zu gestalten.\n\nDie Systemoptionen sind ein zentrales Konfigurationselement, mit dem das Verhalten der SAS-Umgebung individuell angepasst werden kann (S. 40). Diese Einstellungen beeinflussen die Verarbeitung des Programmcodes und die Interaktion mit dem Betriebssystem.\n\nZur Unterstützung bei der Arbeit bietet SAS eine umfassende Online-Hilfe an (S. 41). Diese ist in zwei wesentlichen Formaten verfügbar:\n- SAS Help and Documentation (Version 9): Die integrierte Hilfefunktion direkt in der Software (S. 41).\n- SAS OnlineDoc 9.1 for the Web: Eine webbasierte Dokumentationsressource, die ebenfalls zur Fehlerbehebung oder als Referenz für Syntaxfragen herangezogen werden kann (S. 42).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514435706,
+      "channel": "plan_pipe_2b8dd75a5de1",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 37,
+        "end": 42
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Der Bereich von Seite 43 bis 68 des vorliegenden Dokuments behandelt die Programmierung mit dem SAS-Datenschritt (DATA STEP) und das Einlesen externer Daten. Im Folgenden sind die wesentlichen Aspekte zusammengefasst:\n\nGrundlagen des Datenschritts\nDer Datenschritt unterteilt sich in eine Kompilierungsphase [S. 44], in der die Syntax geprüft wird, und eine Ausführungsphase [S. 45], in der die Daten pro Beobachtung verarbeitet werden. Die Befehle OUTPUT und DELETE steuern dabei explizit die Ausgabe oder das Löschen von Beobachtungen [S. 46].\n\nVariablenbearbeitung\nDie Gestaltung von Daten erfolgt durch die Definition von Variablenlängen (LENGTH) [S. 48], die Zuweisung von Formaten für Ein- und Ausgabe (INFORMAT, FORMAT) [S. 50] sowie die Vergabe von Labels zur besseren Lesbarkeit [S. 53]. Zudem ermöglicht der Datenschritt die Selektion (KEEP, DROP) [S. 54] und die Umbenennung (RENAME) [S. 55] von Variablen.\n\nDatenmanipulation und Verknüpfung\nZur Berechnung und Transformation stehen Funktionen bereit [S. 57], während bedingte Anweisungen wie IF/THEN oder SELECT [S. 61] sowie spezifische Selektionsbefehle (WHERE, DELETE) [S. 62] die Datenmenge begrenzen. Zur Tabellenverknüpfung bietet SAS die Befehle SET (für das Hintereinanderschreiben) [S. 70] und MERGE (für das horizontale Zusammenführen) [S. 73].\n\nEinlesen externer Daten\nDas Skript erläutert das Einlesen von ASCII-Daten mittels INFILE und INPUT [S. 65] sowie die Anbindung von Microsoft Excel-Tabellen über DDE [S. 68]. Ergänzt wird dies durch die Nutzung von Tabellenoptionen zur flexibleren Datenschnittstelle [S. 74].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514435707,
+      "channel": "plan_pipe_2b8dd75a5de1",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 43,
+        "end": 68
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Seiten 69 bis 76 des Dokuments behandeln die Methoden zur Verknüpfung von SAS-Tabellen sowie den Einsatz von Tabellenoptionen, um Daten effizient zu kombinieren und anzupassen.\n\nKernaussagen der Abschnitte:\n\n1. Verknüpfung von Tabellen (SET und MERGE):\nZur Zusammenführung von Daten in SAS stehen primär zwei Anweisungen zur Verfügung. Die SET-Anweisung wird genutzt, um Tabellen untereinander zu verknüpfen (Aneinanderhängen von Beobachtungen). Im Gegensatz dazu dient die MERGE-Anweisung dazu, Tabellen nebeneinander zu verknüpfen, was üblicherweise auf Basis von gemeinsamen Variablen geschieht (S. 69, 70, 73).\n\n2. Tabellenoptionen (Data Set Options):\nTabellenoptionen erlauben es, SAS-Funktionen direkt bei der Verarbeitung einer Tabelle zu steuern, ohne den gesamten Datensatz vorab verändern zu müssen. Diese Optionen werden in Klammern direkt hinter den Tabellennamen im Programmcode gesetzt (S. 74).\n\n3. Praxisanwendung:\nDas Kapitel schließt mit einer Übung (Übung 8) ab, die das praktische Verknüpfen von Tabellen, das Erstellen neuer Datensätze sowie den gezielten Einsatz der besprochenen Tabellenoptionen umfasst, um ein besseres Verständnis für die Datenmanipulation zu vermitteln (S. 76).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514435708,
+      "channel": "plan_pipe_2b8dd75a5de1",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 69,
+        "end": 76
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Seiten 77 bis 102 des Dokuments behandeln den Prozedurschritt (PROC STEP) in SAS, der für die Analyse und Verarbeitung von Daten genutzt wird. Hier ist die strukturierte Zusammenfassung:\n\nGrundlagen des Prozedurschritts\nDer Prozedurschritt (S. 77) dient zur Ausführung vordefinierter Analyse- und Verarbeitungsroutinen. Im Gegensatz zum Datenschritt, der Daten manipuliert, führen Prozeduren spezifische Aufgaben wie Berechnungen, Sortierungen oder Ausgaben auf bestehenden SAS-Tabellen aus.\n\nDokumentation und Formatierung\nPROC CONTENTS (S. 79) liefert detaillierte Informationen über die Struktur einer SAS-Tabelle (Metadaten). PROC FORMAT (S. 81) ermöglicht die Erstellung benutzerdefinierter Formate, wobei zwischen temporären und permanenten Formaten (S. 82) unterschieden wird.\n\nDatenmanipulation\nPROC SORT (S. 83) dient dem Sortieren von Beobachtungen innerhalb einer SAS-Tabelle, was eine notwendige Voraussetzung für viele statistische Analysen darstellt.\n\nStatistische Analysen und Ausgaben\nFür die Datenpräsentation und Analyse werden verschiedene Prozeduren eingesetzt:\n- PROC PRINT (S. 84): Erzeugt eine tabellarische Listenausgabe der Daten.\n- PROC FREQ (S. 88): Erstellt Häufigkeitstabellen für kategoriale Merkmale.\n- PROC MEANS (S. 92): Berechnet deskriptive Statistiken (z.B. Mittelwert oder Summe) für numerische Variablen.\n- PROC UNIVARIATE (S. 95): Bietet eine detaillierte Analyse einzelner Merkmale, inklusive umfangreicher statistischer Kennzahlen.\n\nGrafische Aufbereitung\nZusätzlich werden allgemein Grafikprozeduren (S. 103) aufgeführt, die zur visuellen Darstellung der Daten dienen. Alle genannten Werkzeuge bilden die Grundlage, um mit Base SAS effiziente Auswertungen durchzuführen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514435709,
+      "channel": "plan_pipe_2b8dd75a5de1",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 77,
+        "end": 102
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts (S. 104-106):\n\nDer Abschnitt behandelt die Anwendung von Grafikprozeduren in SAS. Als praktische Anwendung folgt auf die theoretischen Grundlagen eine zusammenfassende Übung (\"Übung 9: Prozeduren\"), die das Ziel hat, das erlernte Wissen über die verschiedenen Prozedurschritte praktisch anzuwenden (S. 105).\n\nZum Abschluss werden weiterführende Ressourcen bereitgestellt:\n- Links: Hinweise auf weiterführende Informationsquellen zum Thema (S. 106).\n- Lösungsvorschläge: Hier finden sich detaillierte Ausarbeitungen zu den vorangegangenen Übungen. Dies umfasst sowohl die Korrektur von Syntax- und logischen Fehlern als auch Anleitungen zur Datentypkonvertierung, zum korrekten Einlesen von ASCII-Dateien, zur Tabellenverknüpfung und zur Arbeit mit dem Datensatz der Schauspieler (S. 106).\n\nZusätzlich enthält der Anhang eine interaktive Einführung, die anhand konkreter Anwendungsbeispiele die Analyse von Körpermerkmalen verdeutlicht:\n- Anwendungsbeispiel 1: Analyse der Körperlänge zufälliger Probanden (S. 106).\n- Anwendungsbeispiel 2: Untersuchung von Alter, Körperlänge und Gewicht am Beispiel des fiktiven Schülersatzes SASHELP.CLASS (S. 106).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514435710,
+      "channel": "plan_pipe_2b8dd75a5de1",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 103,
+        "end": 106
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Bereichs ab Seite 107 (entsprechend der Dokument-Struktur, beginnend unter der Überschrift \"Lösungsvorschläge\"):\n\nDer Abschnitt ab Seite 107 dient als praktischer Ergänzungsteil zum Skript und fokussiert sich auf die Anwendung des Gelernten.\n\nZentraler Inhalt:\n\n1. Lösungsvorschläge: Es werden konkrete Lösungshinweise für die im Skript gestellten Übungen aufgeführt. Dies umfasst die Überprüfung gültiger SAS-Namenskonventionen [S. 108], die Programmierung einfacher Routinen (wie die Umrechnung von Währungen) [S. 108] sowie den Umgang mit Fehlerarten, wobei zwischen Syntaxfehlern und logischen Fehlern unterschieden wird [S. 109].\n\n2. Datentransformation: Ein wesentlicher Teil befasst sich mit der Konvertierung von Datentypen [S. 109] und der professionellen Verarbeitung von Daten, etwa durch das Einlesen externer ASCII-Dateien [S. 110] sowie das Verknüpfen und Erstellen neuer SAS-Tabellen unter Nutzung spezifischer Tabellenoptionen [S. 111].\n\n3. Praktische Anwendungsbeispiele: Der letzte Teil des Dokuments bietet zwei interaktive Fallstudien an, um das Verständnis zu vertiefen:\n- Beispiel 1: Analyse von Körpermaßen zufälliger Probanden [S. 117].\n- Beispiel 2: Statistische Auswertung des Datensatzes SASHELP.CLASS (Alter, Körperlänge und Gewicht von Schülern) [S. 120].\n\nDas Ziel dieses Teils ist die Festigung der erlernten SAS-Syntax durch die praktische Anwendung auf reale oder fiktive Datensätze.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514435711,
+      "channel": "plan_pipe_2b8dd75a5de1",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 107,
+        "end": 128
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778514435792,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Was zeichnet den Aufbau eines SAS-Programms in Bezug auf die Syntax aus?",
+            "options": [
+              "SAS-Anweisungen unterscheiden strikt zwischen Groß- und Kleinschreibung bei den Schlüsselwörtern.",
+              "Jedes Programm muss zwingend mit einem Kommentar beginnen.",
+              "Anweisungen werden durch ein Semikolon (;) abgeschlossen.",
+              "Alle Anweisungen müssen zwingend auf einer einzigen Zeile stehen."
+            ],
+            "correctIndex": 2,
+            "explanation": "SAS-Anweisungen werden im Editor eingegeben und müssen immer durch ein Semikolon abgeschlossen werden. Die Groß-/Kleinschreibung spielt für die Funktionalität der Schlüsselwörter keine Rolle."
+          },
+          {
+            "question": "Was passiert während der Kompilierungsphase eines SAS-Datenschritts?",
+            "options": [
+              "SAS führt die statistischen Prozeduren aus.",
+              "Das Programm wird auf Syntaxfehler geprüft und die Struktur (z.B. Variablen) wird festgelegt.",
+              "Die Daten werden bereits zeilenweise eingelesen und verarbeitet.",
+              "Die berechneten Ergebnisse werden direkt in eine externe Textdatei geschrieben."
+            ],
+            "correctIndex": 1,
+            "explanation": "Der Datenschritt besteht aus zwei Phasen: Die Kompilierungsphase prüft Syntax und definiert die Datenstruktur, während die Ausführungsphase die eigentliche Verarbeitung der Daten vornimmt."
+          },
+          {
+            "question": "Wozu dient eine 'SAS Library' (Datenbibliothek)?",
+            "options": [
+              "Sie ist ein rein temporäres Fenster, das keine Daten speichert.",
+              "Sie ist ein Ordner im Windows-Betriebssystem, der zur Speicherung und Verwaltung von SAS-Tabellen dient.",
+              "Sie dient nur der grafischen Darstellung von Ergebnissen in einem Bericht.",
+              "Sie speichert ausschließlich den Programm-Code (log-Dateien)."
+            ],
+            "correctIndex": 1,
+            "explanation": "SAS Bibliotheken fungieren als Verknüpfung zu Speicherorten, an denen SAS-Dateien (Tabellen/Data sets) organisiert und verwaltet werden."
+          },
+          {
+            "question": "Was ist der Hauptunterschied zwischen einem DATA STEP und einem PROC STEP?",
+            "options": [
+              "Der DATA STEP dient primär der Datenmanipulation und -aufbereitung, während der PROC STEP vordefinierte Auswerteroutinen ausführt.",
+              "Der DATA STEP benötigt keine Semikolons, der PROC STEP hingegen schon.",
+              "Man darf nur einen DATA STEP pro Programm verwenden.",
+              "Der PROC STEP ist nur für temporäre Daten geeignet."
+            ],
+            "correctIndex": 0,
+            "explanation": "Der Datenschritt (DATA STEP) wird genutzt, um Daten einzulesen und zu transformieren, während der Prozedurschritt (PROC STEP) fertige Analyseroutinen (wie Mittelwerte oder Häufigkeiten) auf die Daten anwendet."
+          },
+          {
+            "question": "Warum ist das ODS (Output Delivery System) in SAS relevant?",
+            "options": [
+              "Es ermöglicht die Ausgabe der Ergebnisse in unterschiedliche Formate (z.B. HTML, RTF).",
+              "Es ersetzt die Notwendigkeit von Prozeduren wie PROC MEANS.",
+              "Es ist notwendig, um Variablen in einer SAS-Tabelle umzubenennen.",
+              "Es dient ausschließlich zur Steuerung des automatischen Speicherns des Programm-Codes."
+            ],
+            "correctIndex": 0,
+            "explanation": "Das Output Delivery System (ODS) ist ein leistungsfähiges System, um die Ausgaben von SAS-Prozeduren flexibel in verschiedene Formate zu leiten und zu gestalten."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778514435793,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Woraus besteht ein SAS-Programm primär?",
+            "back": "Ein SAS-Programm besteht aus einer Folge von SAS-Anweisungen (Statements)."
+          },
+          {
+            "front": "Wie wird eine SAS-Anweisung korrekt beendet?",
+            "back": "Jede SAS-Anweisung muss zwingend mit einem Semikolon (;) abgeschlossen werden."
+          },
+          {
+            "front": "Was sind die zwei Hauptbausteine der SAS-Programmierung?",
+            "back": "Der Datenschritt (DATA STEP) zum Einlesen und Verarbeiten von Daten sowie der Prozedurschritt (PROC STEP) zur Analyse und Ausgabe."
+          },
+          {
+            "front": "Welches Zeichen kennzeichnet den Abschluss einer SAS-Anweisung?",
+            "back": "Das Semikolon (;)."
+          },
+          {
+            "front": "Was ist die Funktion des DATA-Schritts?",
+            "back": "Der DATA-Schritt dient dazu, Daten einzulesen, zu transformieren und in SAS-Tabellen (Data Sets) zu speichern."
+          },
+          {
+            "front": "Was ist die Funktion des PROC-Schritts?",
+            "back": "Der PROC-Schritt (Prozedurschritt) wird genutzt, um Daten zu analysieren, auszuwerten oder (Listen-)Ausgaben zu erzeugen."
+          },
+          {
+            "front": "Was sind SAS-Bibliotheken (Data Libraries)?",
+            "back": "Dateispeicherorte, in denen SAS-Tabellen (Data Sets) organisiert und verwaltet werden."
+          },
+          {
+            "front": "Unterscheiden SAS-Anweisungen zwischen Groß- und Kleinschreibung?",
+            "back": "Nein, ein funktionaler Unterschied zwischen Groß- und Kleinschreibung besteht bei SAS-Anweisungen nicht (Ausnahme: Definition von Variablennamen)."
+          },
+          {
+            "front": "Welche Rolle spielt das Protokollfenster (Log) in SAS?",
+            "back": "Es dokumentiert die Verarbeitungsschritte, Fehlermeldungen und Hinweise zur Programmausführung."
+          },
+          {
+            "front": "Wofür steht die Abkürzung ODS in SAS?",
+            "back": "ODS steht für Output Delivery System, welches zur Steuerung von Formatierung und Zielen der Programmausgabe verwendet wird."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-cs-excel-vba-praxis_1",
+      "slides": [
+        {
+          "title": "Lektion 2: Einstieg in die SAS Programmierung",
+          "bullets": [
+            "Grundlagen der SAS-Programmierung: Einlesen, Transformieren und Ausgeben von Daten.",
+            "Einführung in die Arbeit mit dem SAS Display Manager unter Windows."
+          ],
+          "notes": "Willkommen zu Lektion 2. Heute legen wir den Grundstein für die Datenverarbeitung mit SAS.",
+          "page_range": "1-3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Die Syntax der SAS-Sprache",
+          "bullets": [
+            "Alle Anweisungen (Statements) enden zwingend mit einem Semikolon.",
+            "Die Formatierung ist frei; Groß- und Kleinschreibung spielt keine Rolle.",
+            "Anweisungen können sich über mehrere Zeilen erstrecken.",
+            "Mehrere Anweisungen sind in einer einzigen Zeile zulässig."
+          ],
+          "notes": "SAS ist sehr flexibel bei der Formatierung, solange Sie das Semikolon nicht vergessen.",
+          "page_range": "29",
+          "image_prompt": ""
+        },
+        {
+          "title": "Kategorien von SAS-Anweisungen",
+          "bullets": [
+            "Globale Anweisungen: Steuern Einstellungen wie TITEL oder Fußnoten (S. 29).",
+            "Datenschritt-Anweisungen: Deklarativ für Informationen oder ausführbar für Datenmanipulation.",
+            "Prozedurschritt-Anweisungen: Spezifisch für einzelne Prozeduren (z.B. PROC FREQ).",
+            "Hilfe zu Prozeduren direkt über F1-Taste im Editor abrufbar."
+          ],
+          "notes": "Wir unterscheiden zwischen globalen Einstellungen, der Datenverarbeitung und den statistischen Prozeduren.",
+          "page_range": "29-30",
+          "image_prompt": ""
+        },
+        {
+          "title": "Der SAS-Datenschritt: Daten transformieren",
+          "bullets": [
+            "Daten werden mittels DATA-Schritts eingelesen oder modifiziert.",
+            "Variablenzuweisungen und Berechnungen erfolgen innerhalb des DATA-Blocks.",
+            "Die Anweisung OUTPUT schreibt den aktuellen Datensatz in die Tabelle.",
+            "Logische Abläufe (wie DO-Schleifen) steuern den Transformationsprozess gezielt."
+          ],
+          "notes": "Im Datenschritt bereiten wir unsere Daten vor. Ein Beispiel ist die Umrechnung von Währungen.",
+          "page_range": "28",
+          "image_prompt": ""
+        },
+        {
+          "title": "Grundlagen der Output-Gestaltung",
+          "bullets": [
+            "TITEL und FOOTNOTE definieren bis zu 10 Zeilen für Auswertungen.",
+            "Unbenutzte Titelzeilen werden beim Setzen höherer Indizes automatisch gelöscht.",
+            "Der Befehl 'TITLE;' ohne Parameter löscht alle definierten Titel.",
+            "Die Seitengröße (linesize/pagesize) richtet sich nach dem Drucker-Layout."
+          ],
+          "notes": "Saubere Dokumentation durch Titel und Fußnoten ist essenziell für lesbare Ausgaben.",
+          "page_range": "29-30",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 2 — SAS Programmierung Anfänger - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778514435692,
+      "pdfName": "SAS Programmierung Anfänger"
+    }
+  ],
+  "sourceHash": "d79d84c3ec33351d"
+}

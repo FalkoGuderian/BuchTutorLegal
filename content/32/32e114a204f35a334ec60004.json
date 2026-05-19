@@ -1,0 +1,419 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Game and Graphics Programming - Lesson 1 — OpenGL Programming",
+    "pdfName": "OpenGL Programming",
+    "createdAt": 1778572756687,
+    "exportedAt": "2026-05-12T07:59:16.688Z",
+    "meta": {
+      "courseId": "course-en-game-and-graphics-programming",
+      "lessonIndex": 0,
+      "courseTitle": "Game and Graphics Programming",
+      "lessonObjective": "Pipeline, buffers, transformations.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-opengl-programming",
+            "title": "OpenGL Programming",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/OpenGL_Programming"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_aed469c2277c",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Introduction to OpenGL Programming",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-3",
+          "chapterTitle": "The Lighting and Texturing Arcs",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-6",
+          "chapterTitle": "Scientific and Selected Topics",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "6-7",
+          "chapterTitle": "Advanced Rendering Techniques: Portals and Voxels",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "7-8",
+          "chapterTitle": "Accumulation Buffer and Advanced Shaders",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "9-10",
+          "chapterTitle": "Legacy OpenGL 1.x and Basics",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "10-12",
+          "chapterTitle": "Further Reading and External Resources",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778572756687,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: OpenGL Programming Fundamentals\n\nThis section provides an overview of the \"OpenGL Programming\" wikibook, which serves as a comprehensive guide for utilizing OpenGL to create 3D graphics through hardware-accelerated rendering.\n\n#### **Key Concepts**\n*   **API Usage:** OpenGL is an API—typically used with C or C++—for interacting with a GPU; it is not a programming language itself.\n*   **Modern vs. Legacy:** \n    *   **\"Modern\" OpenGL (2.1+):** Focuses on a programmable pipeline utilizing GLSL shaders.\n    *   **\"Legacy\" OpenGL (1.x):** Features a fixed-function pipeline without shaders.\n*   **Core Technical Components:**\n    *   **Shaders:** The introduction to the programmable pipeline, including attributes, varying/uniform variables, and vertex processing.\n    *   **Graphics Pipeline:** The sequence of operations from geometry processing to rendering.\n    *   **Buffers & Transformations:** Includes the use of Vertex Buffer Objects (VBOs), transformation matrices for positioning/rotating objects in 3D space, and the use of the stencil buffer for advanced effects.\n    *   **Interactivity:** Techniques for 3D navigation, object selection (unprojecting coordinates), and creating camera controls.\n\n#### **Advanced Functionality** \nThe text highlights several specialized areas for implementing complex graphical features:\n*   **Texturing:** Covering everything from basic textures and alpha blending to normal mapping and parallax mapping for detailed surfaces ([S.3], [S.4]).\n*   **Lighting:** Techniques for per-vertex and per-pixel lighting, diffuse/specular highlights, and light attenuation ([S.2], [S.4]).\n*   **Advanced Rendering:** Includes voxel-based rendering (similar to *Minecraft*), post-processing effects (motion blur, depth of field), and portals ([S.6], [S.7]).\n*   **Geometry & Tessellation:** Use of newer shader stages (Geometry, Tessellation) available in OpenGL 3.x/4.x for dynamic mesh generation and detail ([S.8]).\n\n#### **Learning Resources**\nThe wikibook functions as a collaborative platform, encouraging contributions and providing links to official documentation, code repositories (SDL2/GLUT/WebGL), and external tutorials for further study ([S.1], [S.10], [S.11]).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572756687,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-game-and-graphics-programming_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 1 — OpenGL Programming - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Introduction to OpenGL Programming</div><ul class=\"pm-chat-slide-bullets\"><li>Industry-standard API for high-performance 3D graphics.</li><li>Interfaces with the GPU for hardware-accelerated rendering.</li><li>Not a language itself; typically implemented in C/C++.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778572756688,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as an introduction to the OpenGL Programming wikibook, a resource dedicated to using the OpenGL API for hardware-accelerated 3D graphics rendering [S.1].\n\n**Key Points:**\n\n*   **Definition:** OpenGL is an API designed for creating realistic 3D graphics, typically utilized within C or C++ applications to interface with a GPU [S.1].\n*   **Philosophy:** This resource is provided as free documentation, actively encouraging community contributions, sharing, and academic use [S.1].\n*   **Scope:** The content emphasizes \"Modern\" OpenGL, which encompasses versions 2.1+ and ES 2.0+, focusing on the use of programmable pipelines and shaders [S.1].\n*   **Practical Guidance:** The book provides instructions for installing OpenGL across various platforms, including Windows, GNU/Linux, Macintosh, Android, and iPhone [S.1].\n*   **Educational Arc:** The curriculum is divided into two primary arcs:\n    *   **The basics arc:** Covers foundational concepts ranging from introductory shaders and transparency to advanced topics like texture mapping and object manipulation in 3D space [S.1, S.2].\n    *   **The lighting arc:** A C++ port of the GLSL wikibook that explores techniques such as diffuse reflection, specular highlights, two-sided surfaces, and smooth lighting effects [S.2].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572756697,
+      "channel": "plan_pipe_aed469c2277c",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines a series of C++ structured tutorials ported from GLSL wikibooks, focusing on 3D graphics programming. The content is organized into three primary educational tracks:\n\nCore Fundamentals ([S.2]): This sequence covers the essential technical building blocks, including shader integration, passing data (attributes, uniforms, and varyings), coordinate transformations, 3D structure implementation, texturing, model loading (OBJ format), and navigation systems.\n\nLighting Arc ([S.2], [S.3]): This series explores illumination techniques, advancing from per-vertex diffuse and specular lighting to more sophisticated per-pixel methods. It also covers handling multiple light sources and implementing lighting on two-sided surfaces.\n\nTexturing and Bump Mapping ([S.3]): This final curriculum focuses on applying textures to 3D geometry, including lighting textured surfaces, gloss mapping, alpha-based transparency, and multitexturing. The advanced portion of this track covers surface detail techniques such as normal mapping and parallax mapping.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572756698,
+      "channel": "plan_pipe_aed469c2277c",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines a series of tutorials for OpenGL and GLSL development, categorized into specific thematic \"arcs.\"\n\n**Key Tutorial Themes**\n\n*   **Lighting and Texturing (p. 4):** Covers advanced techniques such as projective texture mapping for light shaping and projectors, as well as light attenuation methods using lookup tables.\n*   **Scientific Visualization (p. 4):** A series focused on graphing techniques, ranging from simple functions using vertex buffer objects to complex 3D surfaces with hidden line removal and axis plotting.\n*   **Utility and Interaction (p. 5):** Provides foundational tools for 3D applications, including virtual trackballs for rotation, bounding box rendering for debugging, hardware-accelerated 2D overlays, and object selection techniques utilizing the stencil buffer. \n*   **Advanced Graphics and Effects (p. 5-6):** Includes geometric and text rendering techniques such as Bézier surface generation, quadrics, and optimized typography via texture atlases. This section also explores anti-aliasing and particle systems.\n*   **Post-Processing and Portals (p. 6):** Details the implementation of full-screen post-processing effects and a comprehensive series on creating recursive, optimized teleportation portals similar to those found in Valve's Portal.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572756699,
+      "channel": "plan_pipe_aed469c2277c",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines several technical series regarding OpenGL implementation:\n\n**Graphics Techniques and Effects ([S.6], [S.7])**\nThe documentation covers various advanced rendering and post-processing topics:\n- Post-Processing: Techniques include full-screen effects, animated waves, motion blur, supersampling anti-aliasing, depth of field, and order-independent transparency.\n- Anti-Aliasing and Particles: Specific modules address line smoothing and diverse particle system architectures.\n\n**Portal Rendering System ([S.6])**\nA step-by-step implementation of a teleportation system inspired by Portal is detailed, covering:\n- Creating a functional see-through portal.\n- Managing smooth camera transitions.\n- Implementing recursive rendering (portals within portals).\n- Applying optimization techniques using scissor tests.\n\n**Voxel World Engine ([S.7])**\nThe series titled \"Glescraft\" provides a guide to building a Minecraft-like voxel engine. Key technical stages include:\n- Establishing basic voxel rendering and identifying visible faces.\n- Implementing engine features: texturing, lighting, fog, transparency, and first-person controls.\n- Optimization strategies: occlusion culling (drawing only what is on screen) and utilizing geometry shaders.\n- Dynamic interaction: adding and removing voxels within the world.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572756700,
+      "channel": "plan_pipe_aed469c2277c",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 7
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document provides a comprehensive guide to learning OpenGL rendering techniques through the \"Glescraft\" series and various advanced tutorials. The content is structured as follows:\n\n**Voxel Rendering and Glescraft Series**\nThe Glescraft series teaches users how to build a Minecraft-style engine. Topics progress from basic voxel rendering and face culling (S.7) to advanced implementations including texturing, lighting, fog, and transparency (S.7). Later modules cover camera controls, frustum culling (drawing only what is visible), voxel manipulation, and the use of geometry shaders for procedural geometry (S.7).\n\n**Advanced Rendering Techniques**\nBeyond voxel engines, the text offers tutorials on post-processing effects and rendering quality, including:\n* Motion blur and full-screen supersampling anti-aliasing (S.7).\n* Depth of field and order-independent transparency (S.7).\n* Techniques utilizing the accumulation buffer (S.7).\n\n**Modern OpenGL and Optimization**\nFor users targeting modern hardware (OpenGL 3.x/4.x), the text covers advanced shader types such as Geometry, Tessellation, and Compute shaders (S.8). It also provides critical support resources, including:\n* Troubleshooting: Practical tips for debugging OpenGL code and measuring application performance (S.8).\n* Migration and Reference: Guides on upgrading from legacy OpenGL 1.x to 2.x and transitioning to Embedded Systems (ES) 2.0 (S.8).\n* Academic References: A glossary of industry acronyms, a deep dive into GLSL (OpenGL Shading Language), and a comprehensive shader input/output reference (S.8).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572756701,
+      "channel": "plan_pipe_aed469c2277c",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 7,
+        "end": 8
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as a guide for learning OpenGL, covering both \"Legacy\" (1.x) and modern (GLSL-based) approaches.\n\n**Legacy OpenGL Tutorials**\nThe text defines \"Legacy\" OpenGL as 1.x versions featuring a fixed pipeline without shaders [S.9]. The curriculum progresses through:\nInitial setup and environment configuration [S.9].\nTechniques for drawing primitives, including immediate mode, display lists, and vertex arrays [S.9].\nFundamental operations such as translation, rotation, and scaling [S.9].\nPractical application development, including 2D shapes, 3D objects, lighting, textures, and tessellation [S.9].\n\n**Advanced Topics and Resources**\nThe document highlights that modern graphics programming relies heavily on GLSL (OpenGL Shading Language) [S.10]. Advanced chapters cover:\nOptimization techniques, shadow generation, and environmental geometry like quadrics and curves [S.10].\nMathematical foundations, specifically coordinate transformations and transformation matrices, which are essential for 3D rendering [S.10].\nGuidelines for migrating older codebases from 1.x to 2.x and above [S.10].\n\n**Supportive Materials**\nA central Git repository provides the main SDL2 tutorials alongside ports for GLUT, WebGL, and LWJGL [S.9, S.10]. Additionally, the text recommends external resources such as the \"GLSL Programming\" Wikibook and tools like Shadertoy and Fragmentarium for exploring GPU-based graphics [S.10].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572756702,
+      "channel": "plan_pipe_aed469c2277c",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 9,
+        "end": 10
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided sections offer a comprehensive collection of resources for learning OpenGL, ranging from fundamental concepts to modern shader-based programming.\n\n**Core Learning Resources**\nThe documentation includes links to the Wikibook on GLSL programming and general OpenGL tutorials. These cover essential topics such as coordinate transformations, transformation matrices, ambient occlusion, and migration strategies from legacy 1.x versions to modern OpenGL [S.10].\n\n**Platform-Specific and Advanced Tutorials**\n*   Modern OpenGL: Resources like \"Learning Modern 3D Graphics Programming\" and the \"OpenGL Samples Pack\" focus on version 3.3 and higher, emphasizing the \"core profile\" [S.11].\n*   Web and Mobile: WebGL basics are covered by the Mozilla Developer Network and Gregg Tavares’ articles, while OpenGL ES 2.0 is supported by \"Learn OpenGL ES\" for Android development [S.11].\n*   Legacy Support: Various resources from NeHe and others provide foundational knowledge for OpenGL 1.x [S.12].\n\n**Code Repositories and Practical Tools**\nDevelopers can access official code repositories for the Wikibook tutorials, which include ports for SDL2, GLUT, and WebGL [S.10]. There are also specific tools for exploring GPU-based graphics, such as Fragmentarium and Shadertoy, alongside frameworks like three.js [S.10, S.11].\n\n**Literature and Official Documentation**\nKey references include the official OpenGL Programming Guide and the OpenGL Reference Manual. Additionally, the official OpenGL website and Mesa provide ongoing support and library implementation details [S.12]. \n\nCalculations involving matrix operations in these graphics pipelines often rely on the standard transformation, where a vertex position $v$ is transformed by a matrix $M$ to produce a new coordinate $v' = Mv$ [S.10].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572756703,
+      "channel": "plan_pipe_aed469c2277c",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 10,
+        "end": 12
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778572756787,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "What is the fundamental difference between 'Legacy' OpenGL (1.x) and 'Modern' OpenGL (2.1+)?",
+            "options": [
+              "Modern OpenGL requires a different C++ compiler than Legacy OpenGL.",
+              "Modern OpenGL utilizes a programmable pipeline with shaders, whereas Legacy OpenGL uses a fixed-function pipeline.",
+              "Legacy OpenGL is designed for GPUs, while Modern OpenGL is designed for CPUs.",
+              "Modern OpenGL is a programming language, while Legacy OpenGL is an API."
+            ],
+            "correctIndex": 1,
+            "explanation": "Modern OpenGL is defined by its use of a programmable pipeline and shaders, distinguishing it from the fixed-function pipeline of the Legacy OpenGL 1.x era."
+          },
+          {
+            "question": "Which of the following best describes the role of OpenGL in an application?",
+            "options": [
+              "It is a programming language used to define 3D geometry.",
+              "It is an API that enables interaction with the GPU for hardware-accelerated rendering.",
+              "It is an operating system component that replaces the need for C++ code.",
+              "It is a software library that automatically renders 3D scenes without any GPU interaction."
+            ],
+            "correctIndex": 1,
+            "explanation": "OpenGL is not a language; it is an API used to communicate with the GPU to perform hardware-accelerated rendering of 3D graphics."
+          },
+          {
+            "question": "In the context of Modern OpenGL, what is the purpose of shaders?",
+            "options": [
+              "To replace the C++ compiler in the application development process.",
+              "To provide a hard-coded, fixed method for processing pixels.",
+              "To allow developers to write custom code for the programmable pipeline.",
+              "To serve as an alternative to using Vertex Buffer Objects."
+            ],
+            "correctIndex": 2,
+            "explanation": "Shaders are programs that run on the GPU within the programmable pipeline, allowing developers to execute custom code for rendering tasks."
+          },
+          {
+            "question": "If you are developing an application aimed at modern GPUs using OpenGL 4.x, which feature set is available to you that was not present in the original OpenGL 1.x?",
+            "options": [
+              "The use of Geometry, Tessellation, and Compute shaders.",
+              "The ability to write code in a language other than C or C++.",
+              "The use of Immediate Mode rendering for all 3D objects.",
+              "The elimination of the need for transformation matrices."
+            ],
+            "correctIndex": 0,
+            "explanation": "OpenGL 4.x introduced advanced shader types like Geometry, Tessellation, and Compute shaders, which were not part of the original, fixed-function OpenGL 1.x specification."
+          },
+          {
+            "question": "Why is it important to distinguish between 'Legacy' and 'Modern' tutorials when learning OpenGL?",
+            "options": [
+              "Legacy tutorials use shaders, but their syntax is incompatible with modern GPU drivers.",
+              "Legacy OpenGL relies on a fixed pipeline that is largely obsolete and conceptually different from the modern programmable approach.",
+              "Modern tutorials are written in different programming languages than Legacy tutorials.",
+              "Legacy code is faster because it does not require the overhead of a graphics driver."
+            ],
+            "correctIndex": 1,
+            "explanation": "Legacy OpenGL uses a fixed-function pipeline that is entirely different from the modern programmable pipeline approach; learning one does not directly translate to the specific mechanics of the other."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778572756788,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is OpenGL?",
+            "back": "An API used for drawing 3D graphics, typically written in C or C++ to interact with a GPU for hardware-accelerated rendering."
+          },
+          {
+            "front": "What characterizes 'Modern' OpenGL?",
+            "back": "It refers to OpenGL 2.1+ and OpenGL ES 2.0+ (including WebGL), utilizing a programmable pipeline and shaders."
+          },
+          {
+            "front": "What defines 'Legacy' OpenGL?",
+            "back": "It refers to OpenGL 1.x and OpenGL ES 1.x, which use a fixed-function pipeline and no shaders."
+          },
+          {
+            "front": "What are shaders in OpenGL?",
+            "back": "Small programs that run on the GPU, used in the programmable pipeline to perform rendering tasks, introduced in modern OpenGL."
+          },
+          {
+            "front": "Which language is used for writing OpenGL shaders?",
+            "back": "GLSL (OpenGL Shading Language)."
+          },
+          {
+            "front": "What is the primary role of a GPU in OpenGL applications?",
+            "back": "To execute hardware-accelerated rendering of graphics."
+          },
+          {
+            "front": "What does the OpenGL fixed-function pipeline restrict compared to the programmable pipeline?",
+            "back": "It does not support user-defined shaders, limiting transformations and lighting to pre-defined, non-customizable methods."
+          },
+          {
+            "front": "What are new shader types introduced in OpenGL 3.x/4.x?",
+            "back": "Geometry shaders, Tessellation Control shaders, Tessellation Evaluation shaders, and Compute shaders."
+          },
+          {
+            "front": "What is the purpose of the stencil buffer in OpenGL?",
+            "back": "It is used for masking and combining graphics, often for effects like object selection or specific rendering constraints."
+          },
+          {
+            "front": "Are OpenGL and GLSL the same thing?",
+            "back": "No. OpenGL is an API for graphics rendering, while GLSL is the specific shading language used to program the GPU in modern OpenGL."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-game-and-graphics-programming_0",
+      "slides": [
+        {
+          "title": "Introduction to OpenGL Programming",
+          "bullets": [
+            "Industry-standard API for high-performance 3D graphics.",
+            "Interfaces with the GPU for hardware-accelerated rendering.",
+            "Not a language itself; typically implemented in C/C++."
+          ],
+          "notes": "OpenGL provides a powerful interface for 3D graphics, leveraging the GPU for efficiency. It is language-agnostic but most commonly used with C++ applications.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Modern vs. Legacy Pipeline",
+          "bullets": [
+            "Modern OpenGL (2.1+): Focuses on programmable pipelines and shaders.",
+            "Legacy OpenGL (1.x): Utilizes a fixed function pipeline.",
+            "Shaders offer greater flexibility for rendering and effects."
+          ],
+          "notes": "We distinguish between legacy fixed-function pipelines and modern programmable pipelines. Modern development relies on shaders for custom, powerful graphic effects.",
+          "page_range": "1, 9",
+          "image_prompt": ""
+        },
+        {
+          "title": "Core Modern Pipeline Concepts",
+          "bullets": [
+            "Shaders handle per-vertex and per-pixel operations.",
+            "Uniforms, attributes, and varyings manage data flow to shaders.",
+            "Transformation matrices control object positioning and rotation.",
+            "Texturing and buffers enable complex, detailed 3D scenes."
+          ],
+          "notes": "The pipeline relies on passing data effectively to shaders using uniforms and attributes. Mastering these concepts is essential for building dynamic 3D environments.",
+          "page_range": "2-3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Advanced Rendering Techniques",
+          "bullets": [
+            "Includes lighting models like diffuse and specular highlights.",
+            "Supports complex effects: normals, parallax, and shadows.",
+            "Enables advanced concepts like portals and voxel worlds.",
+            "Utilizes stencil buffers and accumulation buffers for composition."
+          ],
+          "notes": "Advanced rendering expands on basics with lighting, depth, and spatial optimizations. We use varied buffers to achieve realistic and specialized graphical results.",
+          "page_range": "4-8",
+          "image_prompt": ""
+        },
+        {
+          "title": "Further Learning and Resources",
+          "bullets": [
+            "Access code repositories for hands-on SDL2/GLUT tutorials.",
+            "Explore the official OpenGL website for reference documentation.",
+            "Utilize external libraries like GLSL to expand functionality.",
+            "Community tutorials offer alternatives for Java or Python."
+          ],
+          "notes": "Continuous learning is supported by extensive documentation and open-source tutorials. These resources provide the roadmap for mastering advanced graphics topics.",
+          "page_range": "10-12",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 1 — OpenGL Programming - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778572756687,
+      "pdfName": "OpenGL Programming"
+    }
+  ],
+  "sourceHash": "0004c1084ffdb234"
+}

@@ -1,0 +1,378 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Robotics and Embedded Engineering - Lesson 1 — Robotics",
+    "pdfName": "Robotics",
+    "createdAt": 1778576776428,
+    "exportedAt": "2026-05-12T09:06:16.429Z",
+    "meta": {
+      "courseId": "course-en-robotics-embedded",
+      "lessonIndex": 0,
+      "courseTitle": "Robotics and Embedded Engineering",
+      "lessonObjective": "Kinematics, sensors, planning.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-robotics",
+            "title": "Robotics",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Robotics"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_f25b414186d3",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-1",
+          "chapterTitle": "Introduction to Robotics and Physical Design",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-2",
+          "chapterTitle": "Robot Control and Construction Techniques",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-3",
+          "chapterTitle": "Robot Components and Computer Control",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-4",
+          "chapterTitle": "Sensors, Navigation, and Exotic Robots",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-5",
+          "chapterTitle": "Learning Resources and References",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576776428,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Based on the provided text, here is a concise summary of the foundations of robotics:\n\n### **Overview of Robotics**\nRobotics is a multidisciplinary field that integrates several core engineering areas to create autonomous or semi-autonomous systems:\n*   **Mechanical Design:** Involves metalworking, construction of frames, and balancing the body with wheels, axles, and motors.\n*   **Electronics:** Focuses on powering components, connecting sensors, and utilizing controllers (e.g., microcontrollers) to manage robot functions.\n*   **Software & Control:** The \"brain\" of the robot. This includes programming sensors, navigation, and implementing diverse control algorithms (ranging from basic servo control to advanced neural and fuzzy logic systems).\n\n### **Key Components**\n*   **Sensors:** Categorized into:\n    *   *Environment Sensors:* Detect surroundings (thermal, pressure, ranging, touch).\n    *   *Feedback Sensors:* Monitor the robot's internal status and performance.\n    *   *Communication Sensors:* Facilitate interactions with humans or external computers.\n*   **Actuation:** Diverse mechanisms for movement, including motors, stepper motors, pneumatics, hydraulics, and shape memory alloys [S.3].\n*   **Control/Computing:** Systems range from simple reactive architectures to complex \"Sense-Plan-Act\" models, managed via PCs, single-board computers, or microcontrollers [S.3].\n\n### **Planning and Navigation**\nSuccessful robotics requires specific algorithmic approaches to handle real-world imperfection, including:\n*   **Localization & Mapping:** Determining the robot's position and environment [S.4].\n*   **Collision Avoidance & Exploration:** Safely navigating dynamic spaces [S.4].\n*   **Trajectory Planning:** Calculating precise movement paths [S.4].\n\n### **Design Philosophy**\nBuilding robots is often unique to the project; therefore, exact values are less important than understanding the function and \"resourcefulness\" of the components used [S.1, S.2]. Design must account for the reality that sensors are imperfect and that software must be robust enough to handle noise or misreadings [S.4].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576776428,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-robotics-embedded_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 1 — Robotics - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Introduction to Robotics</div><ul class=\"pm-chat-slide-bullets\"><li>Robotics integrates mechanics, electronics, and software engineering.</li><li>Projects require interdisciplinary skills for physical and logic design.</li><li>Most designs prioritize flexibility over exact engineering values.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778576776429,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This text acts as an introductory overview of robotics as a multidisciplinary hobby. Below is a summary of the key areas and design philosophies described:\n\n**Core Disciplines**\nRobotics integrates four primary engineering fields:\n1. Metalworking: Constructing the physical body of the robot.\n2. Mechanics: Managing mobility, such as wheel mounting, motor connectivity, and structural balance.\n3. Electronics: Handling power distribution and interfacing sensors with controllers.\n4. Software: Developing the logic required to process sensor data and control movement.\n\n**Design Philosophy**\nThe book focuses on a flexible approach to construction. Because robot projects are highly individualized and depend on available materials, the text avoids providing universal \"exact\" values. Instead, it utilizes relative descriptors (e.g., small, heavy) to encourage experimentation and engineering freedom.\n\n**Key Topics Covered**\nThe guide is structured to help hobbyists navigate the basics of robot development, specifically covering:\n- Essential knowledge and design software.\n- Tools, equipment, and building materials.\n- Categorization of electronic and mechanical components.\n- Fundamental programming principles for robot operation.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576776438,
+      "channel": "plan_pipe_f25b414186d3",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 1
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section provides a technical overview of robot development, divided into physical construction and control systems.\n\n1. Physical Construction\nThe foundation of robot development involves three primary focus areas: the mechanical platform, specific construction techniques, and the resourcefulness required to integrate these components effectively.\n\n2. Robot Control Systems\nThe text categorizes control methods into several core frameworks:\n\nBasic Principles and Servo Systems: Focuses on the fundamental theories of control and the implementation of servo systems.\n\nPosition Control: Covers the modeling of DC drive systems and the structural design of controllers for both single-joint and multi-joint robots.\n\nCompliance Control: Examines the concept of supple movement. This includes active impedance control, hybrid force/position control, and the integration of displacement and force.\n\nDecomposition of Motion: Analyzes control by breaking down motion into its constituent parts, specifically focusing on velocity, acceleration, and motility.\n\nVariable Structure Control: Discusses advanced control theories, with an emphasis on Sliding Mode Control and practical variable structure samples.\n\nAdaptive Control: Addresses systems that adjust to changes in the environment or model. This includes model reference adaptive controllers, self-tuning controllers, and linear perturbation controllers.\n\nAdvanced/Intelligent Control: The section concludes by identifying higher-level methodologies, including hierarchical, fuzzy, neural, learning, and evolutionary control strategies.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576776439,
+      "channel": "plan_pipe_f25b414186d3",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Intelligent Robot Control and Components\n\nThis document outlines the theoretical and practical framework for robotic systems, categorized into three primary areas:\n\n**1. Intelligent Robot Control**\nThis field explores advanced methodologies for autonomous machine operation. Key areas include:\n* Adaptive Fuzzy Control and Multi-fingered hand neural control.\n* Hierarchical assembly systems.\n* The evolution of autonomous navigation for mobile robots and the classification of intelligent control architectures.\n\n**2. Robotic Hardware and Components**\nRobots require a variety of physical systems to operate effectively:\n* Power Sources: General energy supply systems.\n* Actuation Devices: Mechanisms to produce motion, including motors (standard and stepper), shape memory alloys, air muscles, linear electromagnetic solutions, piezoelectric actuators, pneumatic/hydraulic systems, and miniature internal combustion engines.\n* End-Effectors and Media: Specialized grippers for interaction, as well as integrated audio and video systems for environment sensing.\n\n**3. Computer Control and Interfacing**\nTo manage the hardware, robots employ specific control strategies and computational interfaces:\n* Control Architectures: Strategies for processing information, such as Reactive Systems, the Sense-Plan-Act paradigm, Brooks' Subsumption Architecture, Hybrid Systems, and Swarm Robotics.\n* Interface Hardware: The physical links between the controller and the robot, ranging from Personal Computers and Single Board Computers to Microcontrollers, remote control modules, and network connections.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576776440,
+      "channel": "plan_pipe_f25b414186d3",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Robot Systems and Sensors\n\nThe provided text outlines the fundamental components and classifications involved in robotics, focusing primarily on sensor integration and system applications.\n\n**1. Sensor Classification**\nRobotic sensors are categorized into three primary functional groups:\n* Environment Sensors: Monitor external conditions (e.g., thermal, pressure, ranging, and touch sensors).\n* Feedback Sensors: Monitor the internal state and actions of the robot.\n* Communication Sensors: Facilitate data exchange between the robot and humans or external computer systems.\n\n**2. Sensor Reliability**\nSensors are prone to inaccuracies, such as false positives or missed detections. Success in robotics relies heavily on understanding the specific functionality and measurement limitations of the sensors being employed.\n\n**3. Navigational Applications**\nSensors serve as the foundation for critical navigation tasks, including:\n* Localization and Mapping.\n* Collision Avoidance.\n* Exploration and Trajectory Planning.\n* Digital Image Acquisition.\n\n**4. Robotic Diversity**\nThe field encompasses a wide array of specialized robot types and architectures, including:\n* Mechanical configurations such as wheeled, tracked, legged, and robotic arms.\n* Application-specific designs for contests, entertainment, and hazardous environments.\n* Advanced research areas such as BEAM robotics, cooperative systems, modular/fractal robots, and the LEGO Mindstorms educational ecosystem.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576776441,
+      "channel": "plan_pipe_f25b414186d3",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document provides a brief overview of the learning materials available regarding robotics. Here are the key points:\n\n1. Educational Content: Wikiversity hosts resources and materials specifically focused on the study of robotics.\n\n2. RCX Focus: The curriculum includes an introduction to the RCX platform as well as detailed guides on programming the RCX.\n\n3. Context and Research: The documentation places robotics within the broader scope of the computer revolution and artificial intelligence, while providing links to various academic papers and additional external resources for further study.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576776442,
+      "channel": "plan_pipe_f25b414186d3",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576776528,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why does this robotics text utilize vague descriptors like 'small' or 'heavy' rather than providing precise numerical specifications?",
+            "options": [
+              "Because robot projects are unique and allow for freedom in component selection.",
+              "Because the exact values depend entirely on the specific programming language used.",
+              "Because industrial robots are too complex to be defined by standardized metrics.",
+              "Because sensor accuracy is too inconsistent to permit exact mathematical representation."
+            ],
+            "correctIndex": 0,
+            "explanation": "The text explains that exact values are rarely used because most hobbyist robot projects are unique, allowing the builder freedom in choosing materials and components."
+          },
+          {
+            "question": "A robot encounters an obstacle that it fails to detect, or it detects an obstacle where none exists. According to the text, what is the most important step for a roboticist to take in response?",
+            "options": [
+              "Switch to a more advanced, high-precision industrial-grade sensor.",
+              "Implement a secondary navigation algorithm to override the sensor data.",
+              "Deeply understand the sensor's functionality and what it is physically measuring.",
+              "Increase the sensitivity settings to ensure all environmental changes are captured."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text states that sensors are not perfect and will act 'funny,' and the key to successful use is knowing how they function and what they actually measure."
+          },
+          {
+            "question": "In the context of the three categories of sensors, what is the primary distinction between an 'Environment' sensor and a 'Feedback' sensor?",
+            "options": [
+              "Environment sensors operate autonomously, while feedback sensors require human input.",
+              "Environment sensors observe the surroundings, whereas feedback sensors monitor the robot's internal actions.",
+              "Feedback sensors are used for path planning, while environment sensors are used for collision avoidance.",
+              "Environment sensors measure physical forces, whereas feedback sensors measure digital data."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text defines environment sensors as tools that tell the robot what is happening around it, while feedback sensors tell the robot what it is actually doing."
+          },
+          {
+            "question": "Which of the following best describes the role of 'control' methods in robotics as outlined in the content?",
+            "options": [
+              "Control methods are mainly concerned with the structural integrity of the robot's physical frame.",
+              "Control methods focus exclusively on the communication interface between the robot and a human operator.",
+              "Control methods encompass a wide range of algorithms to manage motion, such as position, torque, and impedance control.",
+              "Control methods are strictly limited to the 'Sense-Plan-Act' architecture to reduce computational overhead."
+            ],
+            "correctIndex": 2,
+            "explanation": "The section on robot control lists various complex methods such as position control, torque control, compliance control, and adaptive control, which are used to analyze and drive the robot's movement."
+          },
+          {
+            "question": "If a developer chooses to use a 'Subsumption Architecture' for a robot, which category of robotics design are they primarily addressing?",
+            "options": [
+              "Physical assembly and material selection.",
+              "Control architectures for computer-based robot management.",
+              "Sensor calibration techniques for environmental mapping.",
+              "Hydraulic and pneumatic actuation systems."
+            ],
+            "correctIndex": 1,
+            "explanation": "Brooks' Subsumption Architecture is listed under 'Control Architectures' within the 'Computer Control' section of the text."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778576776529,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What are the four primary engineering fields involved in building a robot?",
+            "back": "Metalworking (body), mechanics (motion/balance), electronics (power/sensors), and software (control)."
+          },
+          {
+            "front": "What are the three general categories of robot sensors?",
+            "back": "Environment sensors, feedback sensors, and communication sensors."
+          },
+          {
+            "front": "What is the core function of a 'feedback sensor' in robotics?",
+            "back": "It informs the robot about its own internal state or what the robot is actually doing."
+          },
+          {
+            "front": "Name three common robotic control architectures mentioned in the text.",
+            "back": "Reactive Systems, Sense-Plan-Act, and Brooks' Subsumption Architecture."
+          },
+          {
+            "front": "What are the five main components of robot navigation mentioned in the text?",
+            "back": "Localization, Collision Avoidance, Exploration, Mapping, and Trajectory Planning."
+          },
+          {
+            "front": "Why does the text generally avoid using \"exact\" values for robot construction?",
+            "back": "Because most projects are unique, allow for significant freedom in design, and use varying materials."
+          },
+          {
+            "front": "Name three types of actuation devices listed for robotics.",
+            "back": "Motors, stepper motors, shaped memory alloys, air muscles, linear electromagnets, or piezoelectric actuators."
+          },
+          {
+            "front": "What is the purpose of 'Environment sensors' in a robot?",
+            "back": "They tell the robot what is happening in the world around it."
+          },
+          {
+            "front": "What does the study of 'robot control' typically encompass?",
+            "back": "The analysis of control methods like position, torque, force, adaptive, fuzzy, and intelligent control."
+          },
+          {
+            "front": "What are two distinct types of interfaces used for robot control?",
+            "back": "Microcontrollers and personal computers (or single board computers/remote control/networks)."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-robotics-embedded_0",
+      "slides": [
+        {
+          "title": "Introduction to Robotics",
+          "bullets": [
+            "Robotics integrates mechanics, electronics, and software engineering.",
+            "Projects require interdisciplinary skills for physical and logic design.",
+            "Most designs prioritize flexibility over exact engineering values."
+          ],
+          "notes": "Robotics is a multidisciplinary field that combines mechanical construction with sensory and software control. This course explores how these components integrate into functional autonomous systems.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Physical Construction and Control",
+          "bullets": [
+            "Construction relies on resourceful hardware and structural platforms.",
+            "Control systems range from simple position to complex adaptive logic.",
+            "Advanced control includes fuzzy, neural, and evolutionary approaches.",
+            "Kinematics is managed through joint controller architectures."
+          ],
+          "notes": "Physical construction provides the robot's body, while sophisticated control algorithms manage motion, force, and impedance to enable precise behavior.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Robot Components and Architecture",
+          "bullets": [
+            "Actuation includes motors, pneumatics, and piezoelectric devices.",
+            "Control architectures define reactive vs. planning-based behavior.",
+            "Subsumption and hybrid systems bridge sensing and action.",
+            "Interface options range from microcontrollers to network integration."
+          ],
+          "notes": "A robot's capability depends on its actuators and how its control architecture processes information and executes tasks.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Sensors and Navigation",
+          "bullets": [
+            "Sensors classify into environment, feedback, and communication types.",
+            "Navigation requires localization, mapping, and trajectory planning.",
+            "Robustness is key because sensors are prone to real-world errors.",
+            "Diverse forms include wheeled, legged, and modular robotic platforms."
+          ],
+          "notes": "Sensors allow robots to perceive their surroundings, but understanding their limitations is crucial for successful navigation and collision avoidance in real-world settings.",
+          "page_range": "4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Resources and Further Study",
+          "bullets": [
+            "Leverage Wikiversity for deeper dives into robotics programming.",
+            "Study specific systems like the RCX for hands-on learning.",
+            "Explore historical and technical papers for academic depth.",
+            "Apply knowledge through diverse real-world robot project applications."
+          ],
+          "notes": "Continual learning through supplemental resources and practical experience is essential to mastering the rapidly changing field of robotics.",
+          "page_range": "5",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 1 — Robotics - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576776428,
+      "pdfName": "Robotics"
+    }
+  ],
+  "sourceHash": "327f1af23bd16915"
+}

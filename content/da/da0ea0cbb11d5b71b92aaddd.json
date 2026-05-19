@@ -1,0 +1,310 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Digitale Sicherheit und Datenschutz - Lektion 3 — Datenkompression",
+    "pdfName": "Datenkompression",
+    "createdAt": 1778572293885,
+    "exportedAt": "2026-05-12T07:51:33.885Z",
+    "meta": {
+      "courseId": "course-de-digitale-sicherheit",
+      "lessonIndex": 2,
+      "courseTitle": "Digitale Sicherheit und Datenschutz",
+      "lessonObjective": "Wie Daten komprimiert und integer gespeichert werden.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-datenkompression",
+            "title": "Datenkompression",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Datenkompression"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_5c391477e767",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Einleitung und theoretische Grundlagen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Verlustfreie und verlustbehaftete Verfahren",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778572293885,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hallo! Als dein Tutor helfe ich dir sehr gerne dabei, die Grundlagen der Datenkompression strukturiert aufzubereiten. Hier ist eine prägnante Zusammenfassung der bereitgestellten Unterlagen:\n\n### Zusammenfassung: Grundlagen der Datenkompression\n\nDie Datenkompression dient dazu, Daten effizienter zu speichern oder zu übertragen. Das vorliegende Lehrmaterial gliedert sich in folgende Kernaussagen:\n\n**1. Fundamentalprinzipien (S. 1)**\n*   **Redundanzreduktion:** Entfernen von mehrfach vorhandenen oder vorhersagbaren Informationen (ohne Informationsverlust).\n*   **Irrelevanzreduktion:** Entfernen von Informationen, die für den Empfänger (z. B. das menschliche Auge oder Ohr) nicht wahrnehmbar oder wichtig sind (mit Informationsverlust).\n\n**2. Theoretische Basis (S. 2)**\n*   Die **Informationstheorie** bildet das wissenschaftliche Rückgrat. Sie befasst sich mit der Charakterisierung von Nachrichtenquellen (gedächtnisfrei vs. gedächtnisbehaftet) und der Entropie als Maß für den Informationsgehalt.\n\n**3. Qualitätskriterien (S. 2)**\nBei der Bewertung eines Kompressionsverfahrens spielen verschiedene Faktoren eine Rolle:\n*   **Objektive Kriterien:** Codier- und Decodiergeschwindigkeit, Codiergewinn (Kompressionsrate) sowie der temporäre Speicherbedarf.\n*   **Subjektive Kriterien:** Speziell bei verlustbehafteten Verfahren entscheidend für die wahrgenommene Qualität von Audio-, Bild- oder Videodaten.\n\n**4. Kompressionsverfahren (S. 2, 3, 4)**\n*   **Verlustfreie Verfahren:** \n    *   *Statistische Verfahren:* Nutzen die Häufigkeitsverteilung von Daten (z. B. Huffman-Codierung, Arithmetische Codierung).\n    *   *Wörterbuchbasierte Verfahren:* Ersetzen längere Zeichenfolgen durch kurze Verweise (z. B. die LZ-Familie wie LZ77, LZ78, LZW).\n*   **Verlustbehaftete Verfahren:** Nutzen unter anderem die Quantisierung (skalar oder vektoriell) und Schätzverfahren (S. 3).\n*   **Hybride Verfahren:** Kombinieren verschiedene Ansätze, um eine optimale Balance zwischen Kompressionsrate und Fehlerverhalten zu erreichen (S. 4).\n\n**5. Anwendungsbereiche (S. 2)**\nDie Techniken werden spezifisch für verschiedene Medientypen angewandt, insbesondere in den Bereichen Text-, Audio-, Sprach-, Bild- und Videokompression.\n\nDiese Lektion legt damit das theoretische und methodische Fundament, um später auch komplexe Verschlüsselungs- und Sicherungsstrategien (Backups) besser zu verstehen, da Datenkompression oft ein integraler Teil digitaler Speicheroptimierung ist.\n\nHast du zu einem dieser Unterpunkte – etwa zu den statistischen oder den wörterbuchbasierten Verfahren – spezielle Fragen?",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778572293885,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-digitale-sicherheit_2\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 3 — Datenkompression - Präsentation</span><span class=\"pm-chat-count\">5 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lektion 3: Grundlagen der Datenkompression</div><ul class=\"pm-chat-slide-bullets\"><li>Einführung in die effiziente Speicherung und Kompression von Daten.</li><li>Kernziele: Redundanzreduktion und gezielte Irrelevanzreduktion von Informationen.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778572293886,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Das vorliegende Dokument bietet eine strukturierte Einführung in die Grundlagen der Datenkompression. Die Inhalte lassen sich wie folgt zusammenfassen:\n\nEinleitung und Grundlagen\nDas Werk beginnt mit einer kritischen Reflexion über die technologische Entwicklung (S.1). Zentral für die Datenkompression sind die Mechanismen der Redundanz- und Irrelevanzreduktion sowie deren Kombination (S.1). Ein wesentlicher theoretischer Rahmen bildet die Informationstheorie, welche sowohl verlustfreie als auch verlustbehaftete Verfahren sowie die fehlerfreie Kommunikation abdeckt (S.1, S.2).\n\nQualitätskriterien und Anwendungsbereiche\nZur Bewertung von Kompressionsverfahren werden verschiedene Kriterien herangezogen, darunter Codiergewinn, Verarbeitungsgeschwindigkeiten sowie der temporäre Speicherbedarf (S.2). Zudem wird zwischen objektiven und subjektiven Qualitätskriterien unterschieden. Die Anwendungsgebiete sind breit gefächert und umfassen neben allgemeinen Text- und Datenformaten auch spezialisierte Bereiche wie Audio-, Sprach-, Bild- und Videokompression (S.2).\n\nTheoretische Fundierung und Algorithmen\nDas Dokument führt in die statistischen Grundlagen der Nachrichtenquellen ein, wobei zwischen gedächtnisfreien und gedächtnisbehafteten Quellen differenziert wird (S.2). Ein Schwerpunkt liegt auf der Entropie als zentrales Maß der Informationstheorie (S.2). Abschließend werden praktische Ansätze skizziert, angefangen bei einfachen Verfahren bis hin zu verlustfreien, statistischen Algorithmen wie dem Morse Code, der Huffman-Codierung oder der arithmetischen Codierung (S.2).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572293895,
+      "channel": "plan_pipe_5c391477e767",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung bezieht sich auf den Inhalt der Seiten 3 und 4 und bietet einen Überblick über verschiedene Kategorien der Datenkompression:\n\nVerlustfreie Kompressionsverfahren (S. 3)\nDer Text unterteilt diese in statistische und wörterbuchbasierte Verfahren. Zu den statistischen Methoden zählen unter anderem die Quasiarithmetische Codierung, CABAC, die Dynamische Markov Codierung, PPM sowie die Burrows-Wheeler-Transformation (BWT) inklusive des BWCA-Algorithmus. Der Großteil der Aufzählung entfällt auf wörterbuchbasierte Verfahren, die maßgeblich durch die LZ-Familie geprägt sind. Dazu gehören die klassischen Algorithmen LZ77, LZ78, LZSS und LZW, ergänzt durch zahlreiche spezifische Varianten wie LZP, LZO oder LZY. Abschließend wird die Transformationscodierung erwähnt.\n\nVerlustbehaftete Kompressionsverfahren (S. 3–4)\nDieser Bereich konzentriert sich primär auf die Quantisierung und Schätzverfahren (S. 3). Die Quantisierung wird weiter in skalare (unterteilt in gleichförmige, ungleichförmige, optimale und logarithmische Varianten), veränderliche sowie vektorielle Quantisierung differenziert. Ergänzend werden Schätzverfahren und die Transformationscodierung genannt (S. 3–4).\n\nHybride Kompressionsverfahren (S. 4)\nDas Dokument behandelt zudem hybride Datenkompressionsverfahren, wobei hier insbesondere die Architektur und das Fehlerverhalten dieser kombinierten Ansätze thematisiert werden.\n\nStatus des Dokuments (S. 4)\nDas Wiki-Buch zum Thema Datenkompression ist laut den Angaben zu etwa 30 % fertiggestellt. Die Seite enthält zudem Hinweise zu Autorenschaft, Projektleitung und dem Zugriff auf Aufgabenlösungen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572293896,
+      "channel": "plan_pipe_5c391477e767",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778572293985,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Was unterscheidet primär die Redundanzreduktion von der Irrelevanzreduktion bei der Datenkompression?",
+            "options": [
+              "Redundanzreduktion entfernt nur für Menschen unwichtige Informationen; Irrelevanzreduktion entfernt mathematisch Vorhersagbares.",
+              "Redundanzreduktion ist immer verlustbehaftet, während Irrelevanzreduktion verlustfrei arbeitet.",
+              "Redundanzreduktion entfernt mehrfach vorhandene, statistisch überflüssige Daten; Irrelevanzreduktion entfernt Informationen, die für den Empfänger (z. B. das menschliche Auge/Ohr) nicht wahrnehmbar sind.",
+              "Irrelevanzreduktion verkürzt die Codewortlänge durch Wörterbücher, während Redundanzreduktion die Abtastrate ändert."
+            ],
+            "correctIndex": 2,
+            "explanation": "Redundanz betrifft die statistische Vorhersagbarkeit von Daten, während Irrelevanz die subjektive oder objektive Wahrnehmbarkeit von Informationen für den Empfänger betrifft."
+          },
+          {
+            "question": "Warum ist die Entropie eine zentrale Kenngröße in der Informationstheorie für die Datenkompression?",
+            "options": [
+              "Sie gibt an, wie schnell ein Algorithmus Daten dekomprimieren kann.",
+              "Sie definiert die Untergrenze der durchschnittlichen Codewortlänge für eine verlustfreie Kompression.",
+              "Sie bestimmt, wie viel Speicherplatz ein hybrider Algorithmus im RAM belegt.",
+              "Sie legt fest, wie stark ein Bild bei der Quantisierung verfälscht werden darf."
+            ],
+            "correctIndex": 1,
+            "explanation": "Die Entropie nach Shannon beschreibt den optimalen, theoretisch kleinsten Speicherbedarf einer Nachricht, unterhalb dessen bei verlustfreier Kompression keine Darstellung möglich ist."
+          },
+          {
+            "question": "Was kennzeichnet ein Wörterbuch-basiertes Verfahren (wie LZ77 oder LZW) im Vergleich zu statistischen Verfahren?",
+            "options": [
+              "Es muss zwingend ein mathematisches Modell der Wahrscheinlichkeiten jeder Quelle vorliegen.",
+              "Es ersetzt häufig auftretende Zeichenfolgen durch Verweise auf einen Eintrag in einer Tabelle oder einem Wörterbuch.",
+              "Es arbeitet ausschließlich nach dem Prinzip der Quantisierung.",
+              "Es kann nur verlustbehaftet komprimieren, da Wörterbücher Speicherplatz im temporären Arbeitsspeicher verbrauchen."
+            ],
+            "correctIndex": 1,
+            "explanation": "Wörterbuchbasierte Verfahren wie LZ77 ersetzen sich wiederholende Sequenzen durch Referenzen, anstatt mit Wahrscheinlichkeitsverteilungen der einzelnen Symbole zu rechnen."
+          },
+          {
+            "question": "Inwiefern ist die Quantisierung (Kapitel 6.1) essenziell für die verlustbehaftete Kompression?",
+            "options": [
+              "Sie erhöht die Redundanz, um Fehler bei der Übertragung besser zu korrigieren.",
+              "Sie reduziert die Anzahl der möglichen Werte eines Datensignals, was zu Informationsverlust führt, aber den Speicherbedarf massiv senkt.",
+              "Sie ist der einzige Prozess, der eine perfekte Rekonstruktion (Bit-Identität) der Originaldaten garantiert.",
+              "Sie transformiert Audio-Signale in sprachbasierte Algorithmen, um die Sprachkompression zu optimieren."
+            ],
+            "correctIndex": 1,
+            "explanation": "Durch Quantisierung werden Wertebereiche auf weniger Werte abgebildet. Dies führt zu einem Informationsverlust, macht die Datenmenge aber wesentlich kleiner."
+          },
+          {
+            "question": "Was charakterisiert ein 'hybrides' Kompressionsverfahren?",
+            "options": [
+              "Es kombiniert statische Huffman-Codierung mit einer rein hardwarebasierten Speicherverwaltung.",
+              "Es ist ausschließlich für die Kombination von Text und Bild optimiert.",
+              "Es nutzt verschiedene Verfahren (z.B. Transformation plus Quantisierung oder statistische Codierung), um die jeweiligen Stärken unterschiedlicher Ansätze zu vereinen.",
+              "Es verwendet zwei verschiedene Wörterbücher gleichzeitig, um die Codiergeschwindigkeit zu verdoppeln."
+            ],
+            "correctIndex": 2,
+            "explanation": "Hybride Verfahren nutzen typischerweise eine Kombination aus Techniken, zum Beispiel eine Transformation gefolgt von einer Quantisierung und anschließender statistischer Entropiecodierung."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778572293986,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was sind die zwei Fundamentalprinzipien der Datenkompression?",
+            "back": "Redundanzreduktion (Entfernen wiederholter Daten) und Irrelevanzreduktion (Entfernen von für den Empfänger nicht wahrnehmbaren oder notwendigen Informationen)."
+          },
+          {
+            "front": "Welches Qualitätskriterium beschreibt, wie stark die Datenmenge durch Kompression reduziert wurde?",
+            "back": "Der Codiergewinn (oft ausgedrückt als Kompressionsfaktor oder -rate)."
+          },
+          {
+            "front": "Was ist der Hauptunterschied zwischen verlustfreier und verlustbehafteter Kompression?",
+            "back": "Bei der verlustfreien Kompression können die Originaldaten exakt rekonstruiert werden. Bei der verlustbehafteten Kompression gehen Informationen verloren, um die Datenrate stärker zu senken."
+          },
+          {
+            "front": "Was misst die 'Entropie' in der Informationstheorie?",
+            "back": "Die Entropie ist ein Maß für den mittleren Informationsgehalt oder die durchschnittliche Unbestimmtheit einer Nachrichtenquelle."
+          },
+          {
+            "front": "Nennen Sie drei bekannte statistische Verfahren der verlustfreien Kompression.",
+            "back": "Morse Code, Huffman-Codierung und Arithmetische Codierung."
+          },
+          {
+            "front": "Was ist das Grundprinzip von wörterbuchbasierten Kompressionsverfahren (z. B. LZ77, LZW)?",
+            "back": "Sie ersetzen wiederkehrende Zeichenfolgen durch Verweise (Pointer) auf ein Wörterbuch oder auf bereits zuvor im Datenstrom aufgetretene Zeichenfolgen."
+          },
+          {
+            "front": "Was versteht man in der verlustbehafteten Kompression unter Quantisierung?",
+            "back": "Die Abbildung eines kontinuierlichen Wertebereichs oder einer großen Menge von Werten auf eine kleinere, diskrete Menge von Werten (oft verbunden mit einem Informationsverlust)."
+          },
+          {
+            "front": "Was ist der Unterschied zwischen gedächtnisfreien und gedächtnisbehafteten Nachrichtenquellen?",
+            "back": "Bei gedächtnisfreien Quellen hängen die Symbole statistisch nicht voneinander ab. Bei gedächtnisbehafteten Quellen beeinflussen vorherige Symbole die Wahrscheinlichkeit der nächsten Symbole."
+          },
+          {
+            "front": "Was ist der Vorteil einer hybriden Kompressionsarchitektur?",
+            "back": "Sie kombiniert verschiedene Techniken (z. B. Transformationscodierung, Quantisierung und Entropiecodierung), um die Stärken der einzelnen Verfahren optimal zu nutzen."
+          },
+          {
+            "front": "Warum sind objektive Qualitätskriterien bei der Kompression oft problematisch?",
+            "back": "Weil sie die Daten mathematisch bewerten, aber nicht berücksichtigen, ob das Ergebnis für den Menschen (subjektiv) noch gut oder angenehm klingt bzw. aussieht."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-digitale-sicherheit_2",
+      "slides": [
+        {
+          "title": "Lektion 3: Grundlagen der Datenkompression",
+          "bullets": [
+            "Einführung in die effiziente Speicherung und Kompression von Daten.",
+            "Kernziele: Redundanzreduktion und gezielte Irrelevanzreduktion von Informationen."
+          ],
+          "notes": "Willkommen zu Lektion 3. Heute betrachten wir, wie wir Daten ohne Informationsverlust oder durch gezielte Reduktion effizienter speichern können.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Theoretische Fundamente",
+          "bullets": [
+            "Die Informationstheorie bildet das mathematische Gerüst für Kompressionsverfahren (S. 1-2).",
+            "Trennung in verlustfreie und verlustbehaftete Kompressionsmethoden.",
+            "Analyse von Nachrichtenquellen und entropiebasierten Wahrscheinlichkeiten."
+          ],
+          "notes": "Alles beginnt mit der Informationstheorie, die uns hilft zu verstehen, wie viel Information eine Nachricht eigentlich enthält.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Verlustfreie Verfahren",
+          "bullets": [
+            "Statistische Verfahren wie Huffman oder arithmetische Codierung.",
+            "Wörterbuchbasierte Methoden: Bekannte LZ-Familie (z. B. LZ77, LZW).",
+            "Transformationen wie Burrows-Wheeler zur effizienten Datenumwandlung."
+          ],
+          "notes": "Bei verlustfreien Verfahren wie den Lempel-Ziv-Algorithmen bleibt jedes Bit beim Dekodieren exakt erhalten.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Verlustbehaftete Verfahren",
+          "bullets": [
+            "Gezielte Reduktion durch Quantisierung (skalar und vektoriell).",
+            "Einsatz in Audio-, Bild- und Videokompression zur Speicherersparnis.",
+            "Qualitätsabwägung zwischen Kompression und subjektiver Wahrnehmung."
+          ],
+          "notes": "Wenn wir Daten stärker verkleinern müssen, nutzen wir verlustbehaftete Verfahren, bei denen wir weniger wichtige Details entfernen.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Hybride Ansätze und Abschluss",
+          "bullets": [
+            "Kombination verschiedener Verfahren für optimale Ergebnisse.",
+            "Architektur und Fehlerverhalten stehen im Fokus komplexer Systeme.",
+            "Ausblick auf die praktische Implementierung und Projektaufgaben."
+          ],
+          "notes": "Moderne Standards kombinieren oft verschiedene Ansätze zu hybriden Verfahren, um maximale Effizienz in der Datenübertragung zu erreichen.",
+          "page_range": "4",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 3 — Datenkompression - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778572293885,
+      "pdfName": "Datenkompression"
+    }
+  ],
+  "sourceHash": "1aa52620e09d7851"
+}

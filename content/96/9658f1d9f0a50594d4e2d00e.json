@@ -1,0 +1,482 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Excel und VBA für die Praxis - Lektion 3 — SAS Fortgeschrittene",
+    "pdfName": "SAS Programmierung Fortgeschrittene I",
+    "createdAt": 1778514464134,
+    "exportedAt": "2026-05-11T15:47:44.134Z",
+    "meta": {
+      "courseId": "course-de-cs-excel-vba-praxis",
+      "lessonIndex": 2,
+      "courseTitle": "Excel und VBA für die Praxis",
+      "lessonObjective": "Statistische Prozeduren und Visualisierung.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-sas-programmierung-fortgeschrittene-i",
+            "title": "SAS Programmierung Fortgeschrittene I",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/SAS_Programmierung_Fortgeschrittene_I"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_bec2a63419ab",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-7",
+          "chapterTitle": "Vorwort und Einleitung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "8-15",
+          "chapterTitle": "Grundlagen des Datenschritts",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "16-17",
+          "chapterTitle": "Tabellenoptionen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "18-23",
+          "chapterTitle": "Selektion von Beobachtungen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "24-26",
+          "chapterTitle": "Einlesen von Daten aus externen Dateien",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "27-30",
+          "chapterTitle": "Einlesen von Daten aus Microsoft Excel Tabellen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "31-42",
+          "chapterTitle": "Verknüpfung von Tabellen (SET, MERGE)",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "43-45",
+          "chapterTitle": "Arrays",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "46-58",
+          "chapterTitle": "Vertikalisierung und Horizontalisierung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "59-95",
+          "chapterTitle": "Dictionary Tables und SAS Hilfe",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778514464134,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Auf Basis der bereitgestellten Dokumente zur **SAS Programmierung für Fortgeschrittene I** lässt sich der Inhalt des aktuellen Abschnitts zur DATA-STEP-Programmierung wie folgt prägnant zusammenfassen:\n\n### Zusammenfassung: Grundlagen des SAS-Datenschritts\n\nDer DATA STEP bildet das Kernwerkzeug, um SAS-Tabellen zu erstellen und Daten zu verarbeiten. Der Prozess gliedert sich in zwei Phasen:\n\n**1. Kompilierungsphase (S. 9)**\n*   **Syntaxprüfung:** Der Code wird auf Fehler geprüft und in Maschinensprache übersetzt.\n*   **Deklaration:** Variablen, deren Eigenschaften (Name, Typ, Länge, Format) und der *Program Data Vector* (PDV) werden definiert.\n*   **Initialisierung:** Automatisierte Verwaltung von Spezialvariablen wie `_N_` (Beobachtungszähler) und `_ERROR_` (Fehlerflag).\n\n**2. Ausführungsphase (S. 11)**\n*   **Implizite DO-Schleife:** SAS verarbeitet die Quelldaten automatisiert Beobachtung für Beobachtung.\n*   **Ablauf:** \n    1. Initialisierung der Variablen im PDV.\n    2. Einlesen einer Datenzeile (via `SET`, `MERGE` oder `INPUT`).\n    3. Ausführung der programmierten Anweisungen.\n    4. Schreiben des Ergebnisses (`OUTPUT`).\n\n**Wichtige Steuerungselemente und Techniken:**\n*   **Datensteuerung:** Mit `OUTPUT` kann das Schreiben von Daten erzwungen werden; `DELETE` dient zum Ausfiltern von Beobachtungen (S. 12).\n*   **Wertspeicherung:** `RETAIN` verhindert die automatische Rücksetzung von Werten auf „Missing“ beim Übergang zur nächsten Beobachtung (S. 16).\n*   **Summenbildung:** Die `SUM`-Anweisung (`variable + ausdruck;`) ermöglicht eine einfache Addition von Werten über Beobachtungen hinweg, wobei *Missing Values* ignoriert werden (S. 16).\n*   **Debugging:** Über die Option `/ DEBUG` bei der `DATA`-Anweisung kann der Ablauf schrittweise analysiert und Variableninhalte im PDV überwacht werden (S. 15).\n\n---\n*Hinweis: Das vorliegende Dokument konzentriert sich primär auf die effiziente Strukturierung von DATA-Steps. Spezifische Inhalte zu \"Statistischen Prozeduren und Visualisierung\" oder \"Excel-Makros/VBA\" sind in den bereitgestellten Seiten nicht enthalten, da das Dokument primär die Base SAS Programmierung behandelt (S. 5).*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778514464134,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-cs-excel-vba-praxis_2\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 3 — SAS Fortgeschrittene - Präsentation</span><span class=\"pm-chat-count\">5 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">SAS Fortgeschrittene: Statistik &amp; Visualisierung</div><ul class=\"pm-chat-slide-bullets\"><li>Fokus auf fortgeschrittene Techniken für Datenanalyse und Auswertung.</li><li>Beherrschung statistischer Prozeduren und effizienter Visualisierungsmethoden.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778514464135,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Das vorliegende Dokument umfasst das Skript „SAS Programmierung für Fortgeschrittene I“ von Heinrich Stürzl. Es dient als weiterführende Lernunterlage für Anwender, die bereits über Grundkenntnisse im Umgang mit dem SAS-System verfügen.\n\nKernaussagen und Struktur:\n\nZielsetzung: Der Kurs vermittelt ein tiefgreifendes Verständnis des SAS DATA STEP sowie effiziente Programmiertechniken für Aufgaben mittlerer bis hoher Komplexität. Es wird dabei ein betriebssystemunabhängiger Ansatz verfolgt, abgesehen von speziellen Excel-Import-Methoden (S. 5).\n\nInhaltliche Schwerpunkte:\nDer Kurs behandelt die Funktionsweise des DATA STEP (Kompilierung, Ausführung, Debugging) sowie diverse Operationen wie die Selektion von Beobachtungen (IF, WHERE), die Datenverknüpfung (SET, MERGE) und die Arbeit mit Arrays. Zudem werden Themen wie Datenimport, Tabellenoptionen, Dictionary Tables sowie Techniken zur Vertikalisierung und Horizontalisierung von Tabellen abgedeckt (S. 3, 4).\n\nMethodik und Hilfe:\nDas Skript bietet neben praktischen Anleitungen einen Überblick über Support-Ressourcen, darunter die offizielle SAS-Dokumentation, Online-Hilfen, Diskussionsforen und Listserver. Für den effizienten Lernprozess wird eine Liste empfohlener Fachliteratur bereitgestellt, die von Grundlagenwerken bis zu spezialisierten Tipps reicht (S. 3, 4, 6, 7).\n\nLizenzierung:\nDas Werk ist unter der Creative Commons Lizenz CC BY-SA 4.0 veröffentlicht. Dies erlaubt unter Einhaltung der Namensnennung und der Weitergabe unter gleichen Bedingungen die freie Vervielfältigung, Verbreitung und Bearbeitung des Materials, auch zu kommerziellen Zwecken (S. 2).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514464144,
+      "channel": "plan_pipe_bec2a63419ab",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 7
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der Grundlagen zur DATA STEP Programmierung auf Basis der Seiten 8 bis 15:\n\n**1. Funktionsweise und Aufbau des Datenschritts**\nEin Datenschritt (DATA STEP) dient der Erzeugung oder Verarbeitung von SAS-Tabellen. Er beginnt mit dem Schlüsselwort DATA und endet mit einer RUN-Anweisung (S. 8). Der Prozess gliedert sich in zwei Phasen:\n*   Kompilierungsphase: Überprüfung der Syntax, Deklaration von Variablen und Vorbereitung des Program Data Vector (PDV) im Arbeitsspeicher (S. 9).\n*   Ausführungsphase: Eine implizite Schleife verarbeitet die Daten Beobachtung für Beobachtung (S. 11).\n\n**2. Der Datenverarbeitungsprozess**\nIm PDV werden neben Nutzerdaten zwei temporäre Variablen geführt: $_N_$ für die laufende Nummer der Beobachtung und $_ERROR_$ als Fehlerflag (S. 9). Die Daten können aus externen Dateien (INPUT), existierenden SAS-Tabellen (SET, MERGE, UPDATE) oder durch direkte Generierung stammen (S. 8).\n\nDie Ausführung einer impliziten Schleife umfasst pro Beobachtung:\n*   Initialisierung der Variablen (Ausnahme bei SET/MERGE: autoretain).\n*   Einlesen der Daten.\n*   Abarbeitung der ausführbaren Anweisungen.\n*   Speichern der Beobachtung (automatisches OUTPUT) (S. 11).\n\n**3. Steuerung der Datenausgabe**\nDas Standard-OUTPUT kann durch gezielte Anweisungen beeinflusst werden:\n*   OUTPUT: Erzwingt das Schreiben einer Beobachtung zu einem bestimmten Zeitpunkt, was die Erstellung mehrerer Tabellen ermöglicht (S. 12).\n*   DELETE: Bricht die Verarbeitung der aktuellen Beobachtung ab, sodass diese nicht in die Tabelle geschrieben wird (S. 12).\n\n**4. Besondere Programmiertechniken**\n*   Automatisierte Generierung: Ohne INPUT/SET-Anweisungen wird der Datenschritt nur einmal durchlaufen, sofern keine explizite DO-Schleife definiert ist (S. 13-14).\n*   Berechnungen: Mathematische Operationen wie die Altersberechnung können mittels Funktionen präzise gesteuert werden, etwa:\n$Alter = \\text{FLOOR}((\\text{INTCK}('MONTH', \\text{gebdatum}, \\text{TODAY}()) - (\\text{DAY}(\\text{TODAY}()) < \\text{DAY}(\\text{gebdatum})) )/12);$ (S. 10).\n*   Debugging: Der integrierte Data Step Debugger ermöglicht eine schrittweise Analyse der Variableninhalte und Programmausführung mittels Befehlen wie E (examine), W (watch) oder B (break) (S. 15).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514464145,
+      "channel": "plan_pipe_bec2a63419ab",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 8,
+        "end": 15
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die zusammenfassende Übersicht zu den DATA Step-Funktionen RETAIN und SUM (S. 16-17):\n\n**Kernfunktionen von RETAIN**\nDie RETAIN-Anweisung verhindert, dass Variablenwerte zu Beginn eines neuen Beobachtungsdurchlaufs automatisch auf einen fehlenden Wert (missing value) zurückgesetzt werden. Stattdessen wird der Wert der vorangegangenen Beobachtung für den nächsten Durchgang beibehalten, bis er explizit überschrieben wird (S. 16). Ein weiterer Anwendungszweck ist die Festlegung der Reihenfolge von Variablen in einem Datensatz, da RETAIN die gelisteten Variablen im Datensatz an die erste Position verschiebt (S. 17).\n\n**Die SUM-Anweisung**\nDie SUM-Anweisung dient der Aufsummierung von Werten über Beobachtungen hinweg. Sie arbeitet nach der Syntax $\\text{variable} + \\text{ausdruck}$ (bzw. bei Subtraktion mit einem negativen Ausdruck). Die Besonderheiten sind (S. 16):\n- Die betroffene Variable wird automatisch mit 0 initialisiert.\n- Sie verfügt über ein permanentes, internes RETAIN.\n- Fehlende Werte (missing values) werden bei der Berechnung ignoriert, was sie robuster als eine manuelle Addition der Form $\\text{variable} = \\text{variable} + \\text{ausdruck}$ macht (S. 17).\n\n**Praktische Anwendungsbeispiele**\n- LOCF (Last Observation Carry Forward): Durch Kombination von RETAIN mit einer IF-Bedingung, die nur bei Vorhandensein gültiger Daten den Wert aktualisiert, lässt sich der letzte nicht-fehlende Wert fortschreiben (S. 17).\n- Variablenreihenfolge: Durch die Nennung der Variablennamen in der RETAIN-Anweisung kann die Spaltenreihenfolge innerhalb der Zieltabelle definiert werden, ohne dass eine Zuweisung zwingend erforderlich ist (S. 17).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514464146,
+      "channel": "plan_pipe_bec2a63419ab",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 16,
+        "end": 17
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine zusammenfassende Übersicht der Abschnitte S.18 bis S.23:\n\n**1. Funktionen zur Wertverarbeitung (S.18)**\nDie Funktionen LAGn und DIFn ermöglichen den Zugriff auf Datenwerte vergangener Beobachtungen. LAGn(variable) liefert den Wert der Variable n Beobachtungen zuvor. DIFn(variable) berechnet die Differenz zwischen dem aktuellen Wert und dem Wert von vor n Beobachtungen, definiert als: \n$DIF_n(\\text{variable}) = \\text{variable} - LAG_n(\\text{variable})$\nBei der Verwendung ist Vorsicht bei bedingten Anweisungen geboten, da die Funktionen hier ihr internes Array nur bei Ausführung aktualisieren.\n\n**2. Tabellenoptionen (S.20-21)**\nTabellenoptionen modifizieren SAS-Tabellen direkt bei der Verarbeitung. Sie werden in runden Klammern hinter dem Tabellennamen angegeben. Wichtige Optionen sind:\n- KEEP= / DROP=: Auswahl oder Ausschluss von Variablen.\n- RENAME=: Umbenennung von Variablennamen.\n- WHERE=: Vorselektion von Zeilen.\n- FIRSTOBS= / OBS=: Einschränkung des Beobachtungsbereichs.\nDie Abarbeitungsreihenfolge ist festgelegt: KEEP/DROP vor RENAME, und diese Optionen vor der Zeilenselektion (WHERE/FIRSTOBS/OBS).\n\n**3. Selektion von Beobachtungen (S.22-23)**\nZur Untergruppenbildung stehen verschiedene Methoden zur Verfügung:\n- Subsetting IF: Eine ausführbare Anweisung, die alle nachfolgenden Schritte nur für Datensätze ausführt, bei denen die Bedingung wahr ist (Wert ungleich 0 oder Missing).\n- DELETE: Löscht definierte Beobachtungen und überspringt für diese den Rest des DATA-Steps.\n- WHERE-Anweisung: Eine deklarative Anweisung, die Daten vor der Verarbeitung im PDV (Program Data Vector) selektiert. Sie ist performanter als ein Subsetting IF, kann aber keine temporären Variablen wie _N_ oder BY-Gruppen-Variablen (FIRST./LAST.) verwenden.\n\n**Formulierung von Bedingungen (S.23)**\nBedingungen können komplex aus Vergleichen, logischen Operatoren (NOT, AND, OR) und Funktionen aufgebaut werden. Logische Operatoren folgen klaren Prioritäten (NOT vor AND vor OR). Besondere Operatoren wie IN, Index, oder die Prüfung auf Missing Values (MISSING()) erleichtern die Datenbereinigung erheblich. Bei der Verwendung von FIRST.Variablen zur Gruppenidentifikation ist zwingend eine vorherige Sortierung mittels BY-Anweisung erforderlich.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514464147,
+      "channel": "plan_pipe_bec2a63419ab",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 18,
+        "end": 23
+      }
+    },
+    {
+      "role": "bot",
+      "content": "In den bereitgestellten Seiten [S.24–26] wird die Arbeit mit Operatoren, Auswahlbedingungen und booleschen Werten innerhalb der SAS-DATA-STEP-Programmierung erläutert.\n\n**Logische und arithmetische Operatoren**\nSAS definiert eine strikte Auswertungsreihenfolge (Priorität) für Operatoren, angefangen bei der Potenzierung (I) über Multiplikation/Division (II), Addition/Subtraktion (III), Zeichenkettenverknüpfung (IV) bis hin zu Vergleichs- (V) und Logikoperatoren (VI: AND, VII: OR) (S.24). Für WHERE-Anweisungen existieren spezielle Operatoren wie `IS MISSING` für Leerwerte, `BETWEEN` für Intervalle, `CONTAINS` (?) für Teilzeichenketten sowie `LIKE` für Mustervergleiche mit Platzhaltern Prozentzeichen (%) und Unterstrich (_) (S.24). Auch phonetische Vergleiche mittels `=*` sind möglich (S.24).\n\n**Boolesche Logik**\nSAS arbeitet mit Booleschen Werten, wobei 0 für „falsch“ und 1 für „wahr“ steht (S.25).\n- Rechenoperationen: Vergleiche liefern direkt 1 oder 0 zurück, was das Summieren von Ereignissen erlaubt, z. B. $summe = (x1=0) + (x2=0) + (x3=0)$ (S.25).\n- Automatisierte Variablen: Variablen wie `_ERROR_`, `FIRST.`, `LAST.`, `IN=` oder `END=` dienen der Steuerung im Data Step (S.25).\n- Numerische Interpretation: Im logischen Kontext gilt jede Zahl ungleich 0 oder Missing als „wahr“. Daher ermöglicht `IF variable THEN ...` eine kompakte Prüfung auf Nicht-Null-Werte, was äquivalent zu `IF variable NOT IN (. 0)` ist (S.26).\n- Umwandlung: Ein numerischer Wert kann durch doppelte Negation in einen reinen 0/1-Booleschen Wert gewandelt werden: $x = \\text{NOT}(\\text{NOT}(x))$ (S.26).\n\n**Hinweise zu Effizienz und Syntax**\n- Zeichenkettenvergleiche können durch einen Doppelpunkt hinter einem Vergleichsoperator auf die ersten Zeichen begrenzt werden (S.24).\n- Bei der Speicherung von Booleschen Werten wird aus Speicherplatzgründen eine minimale Länge (z. B. 3 Byte unter Windows) empfohlen (S.25).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514464148,
+      "channel": "plan_pipe_bec2a63419ab",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 24,
+        "end": 26
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Diese Zusammenfassung behandelt die Selektion von Beobachtungen sowie das Einlesen von externen Daten im SAS DATA STEP.\n\n### 1. Selektion von Beobachtungen (S. 27)\n\nFür die Auswahl von Datensätzen stehen primär die Anweisungen IF, WHERE und DELETE zur Verfügung:\n- Die WHERE-Anweisung filtert Beobachtungen bereits während des Einlesevorgangs. Eine häufige Fehlerquelle bei der Verwendung von WHERE ist die Kombination mit dem automatischen Zähler $\\text{\\_N\\_}$, da dieser für die WHERE-Bedingung nicht wie erwartet zur Verfügung steht (S. 27).\n- Die ELSE-Logik und Verneinungen (z. B. bei IF-Bedingungen) ermöglichen eine flexible Steuerung der Datenselektion.\n- Mustervergleiche und Zeichenkettenabfragen können effizient über Operatoren wie $=:$ realisiert werden (S. 27).\n\n### 2. Einlesen von Daten (S. 28-30)\n\nSAS bietet vielseitige Methoden, um externe Dateien (vornehmlich im ASCII-Format) einzulesen:\n\n- Grundlegende Anweisungen: Mit INFILE wird die Quelldatei spezifiziert und mit INPUT das Einleseschema definiert. Alternativ können kleine Datenmengen direkt über DATALINES/CARDS im Quellcode verankert werden (S. 28).\n- Einlesearten:\n  - Column Input: Daten werden über definierte Spaltenpositionen eingelesen.\n  - Formatted Input: Einleseformate (Informaten) steuern die Interpretation der Daten, wobei der Pointer mit @ präzise positioniert werden kann.\n  - List Input: Daten werden anhand eines Trennzeichens (Default: Leerzeichen) unterschieden. Dies ist die flexibelste Methode, erfordert jedoch eine konsistente Anordnung der Felder (S. 29).\n- Besonderheiten:\n  - Der Pointer-Operator @ ermöglicht es, Zeilen mehrfach zu lesen oder Bedingungen basierend auf eingelesenen Werten zu prüfen („Conditional Input“) (S. 29).\n  - Bei komplexen Dateistrukturen wie Verzeichnislisten (aus einem DOS-DIR-Befehl) müssen die Daten oft durch Kombination von Pointer-Steuerung und spezifischen Formaten in eine strukturierte Tabelle überführt werden (S. 30).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514464149,
+      "channel": "plan_pipe_bec2a63419ab",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 27,
+        "end": 30
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Das vorliegende Dokument beschreibt zwei methodische Ansätze zum Einlesen von Microsoft Excel-Daten in SAS (S. 31, S. 32).\n\nMethodenübersicht\nEs existieren zwei grundlegend verschiedene Wege für den Datentransfer aus Excel:\n\n1. Import eines vollständigen Tabellenblatts (S. 31)\nDiese Methode nutzt vorzugsweise `PROC IMPORT` oder eine `LIBNAME`-Anweisung mit der Excel-Engine. Sie eignet sich für einheitlich strukturierte Tabellen, bei denen Spaltenüberschriften als Variablennamen übernommen werden können. Vorteile sind die hohe Genauigkeit der unformatierten Werte und die Unabhängigkeit von lokalen Excel-Einstellungen (Sprache, Dezimaltrenner). Voraussetzung ist eine Lizenz für das Modul \"SAS/ACCESS to PC file formats\".\n\n2. Einlesen per DDE (S. 31)\nHierbei wird ein rechteckiger Zellbereich aus einer geöffneten Excel-Datei gelesen. Diese Methode ist für beliebig strukturierte Blätter geeignet und in Base SAS enthalten. Nachteilig ist die direkte Abhängigkeit von der Formatierung in Excel sowie der aktuellen Sprachversion. Eine Übernahme von Spaltenüberschriften ist hier nicht möglich.\n\nWichtige technische Details zu PROC IMPORT (S. 31)\nDie `PROC IMPORT` bietet verschiedene Steuerungsoptionen:\n- GETNAMES: Steuert die Übernahme von Spaltenüberschriften.\n- MIXED: Definiert den Umgang mit Spalten, die sowohl Zahlen als auch Text enthalten.\n- TEXTSIZE und SCANTEXT: Legen die Länge und die Bestimmung von Charactervariablen fest.\n- SCANTIME und USEDATE: Bestimmen das Format für Zeit- und Datumsangaben.\n\nLIBNAME-Anweisung (S. 32)\nDie `LIBNAME`-Anweisung mit der Engine EXCEL ermöglicht einen lesenden und schreibenden Zugriff auf eine Excel-Datei (ab Version 9). Die Tabellenblätter werden dabei über eine definierte Libref angesprochen, wobei deren Name im SAS-Code mit einem Dollarzeichen am Ende (z. B. \"tabelle1$\") ergänzt wird. Nach Abschluss der Operationen sollte die Verbindung zur Bibliothek mit einem `CLEAR`-Befehl gelöst werden.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514464150,
+      "channel": "plan_pipe_bec2a63419ab",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 31,
+        "end": 42
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Seiten 43 bis 45 des Dokuments behandeln das Thema \"Arrays\" innerhalb der SAS-Programmierung. Hier ist die strukturierte Zusammenfassung:\n\nKernaussagen zum Einsatz von Arrays\n\nDefinition und Zweck\nArrays in SAS dienen dazu, eine Gruppe von Variablen unter einem gemeinsamen Namen zusammenzufassen. Dies ermöglicht eine effiziente Verarbeitung mehrerer Variablen mit identischen Bearbeitungsregeln, ohne für jede Variable einzeln Code schreiben zu müssen. Der Zugriff auf die Elemente erfolgt über einen Index (die Position in der Liste).\n\nFunktionsweise der Indexierung\nArrays bieten eine flexible Adressierung. Ein Array kann durch eine explizite Liste von Variablennamen oder durch Kurzschreibweisen definiert werden. Innerhalb von SAS-Programmen werden Arrays typischerweise in Verbindung mit DO-Schleifen genutzt, um Operationen iterativ auf eine Reihe von Variablen anzuwenden.\n\nVorteile der Nutzung\nDurch den Einsatz von Arrays lässt sich der Programmcode deutlich verkürzen und übersichtlicher gestalten. Dies reduziert die Fehleranfälligkeit bei der Wartung, da Änderungen an der Logik zentral am Array-Konstrukt vorgenommen werden können.\n\nTechnische Anwendung\nDie Array-Definition beginnt mit dem Schlüsselwort ARRAY, gefolgt vom Namen des Arrays, der Dimension (Anzahl der Elemente) und der Liste der betroffenen Variablen. Ein beispielhafter Zugriff erfolgt über die Indizierung in geschweiften Klammern:\n\n$ArrayName \\{i\\}$ \n\nHierbei steht $i$ für den aktuellen Zählerwert innerhalb einer Schleife, um die Elemente des Arrays nacheinander zu adressieren. Die Struktur unterstützt sowohl die einfache Verarbeitung bestehender Variablen als auch die Erstellung neuer Variablen innerhalb des DATA STEPs, sofern diese im Array-Statement nicht explizit benannt sind.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514464151,
+      "channel": "plan_pipe_bec2a63419ab",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 43,
+        "end": 45
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts zur Strukturierung von SAS-Tabellen (S. 46–58):\n\n**Vertikalisierung und Horizontalisierung von SAS-Tabellen**\n\nDieser Abschnitt thematisiert die Transformation von Datensatzstrukturen, um Daten effizienter auswerten oder verknüpfen zu können.\n\n**Vertikalisierung (S. 48)**\nDie Vertikalisierung beschreibt den Übergang von einem breiten Datensatz (viele Spalten) zu einem langen Datensatz (viele Beobachtungen). Dabei werden mehrere Variablen, die thematisch zusammengehören, in eine einzelne Variable überführt, während die ursprünglichen Spaltennamen als Identifikationsmerkmal in einer neuen Spalte gespeichert werden. Dies ist häufig für statistische Analysen in Prozeduren erforderlich, die ein langes Datenformat erwarten.\n\n**Horizontalisierung (S. 50)**\nBei der Horizontalisierung wird der umgekehrte Weg beschritten (Long-to-Wide). Beobachtungen, die untereinander stehen, werden in eine einzige Beobachtung (Zeile) zusammengeführt, wodurch die Anzahl der Spalten im Datensatz zunimmt. Dies dient oft der Vorbereitung von Berichten oder dem direkten Vergleich von Messwerten innerhalb eines Objekts.\n\n**Dictionary Tables (S. 59)**\nAb Seite 59 (bis 59) wird zudem kurz auf die sogenannten Dictionary Tables eingegangen. Dabei handelt es sich um spezielle, schreibgeschützte SAS-Tabellen, die Metadaten über alle innerhalb der SAS-Session existierenden Bibliotheken, Datensätze, Spalten, Indizes und Systemoptionen enthalten. Sie dienen zur automatisierten Abfrage der Datenstruktur, um beispielsweise dynamisch auf Spaltennamen oder Dateieigenschaften zuzugreifen, ohne diese manuell im Programmcode festlegen zu müssen.\n\n*Hinweis: Der Bereich 52–58 enthält laut Dokument keinen expliziten Textinhalt mehr bzw. leitet zur Sektion der Dictionary Tables über.*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514464152,
+      "channel": "plan_pipe_bec2a63419ab",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 46,
+        "end": 58
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Das bereitgestellte Dokument umfasst insgesamt 5 Seiten (PDF-Zählung) und endet vor Erreichen des angefragten Bereichs. Der Inhalt des bereitgestellten Textes endet auf der PDF-Seite 5.\n\nHier ist die Zusammenfassung der verfügbaren Inhalte:\n\nDas Dokument \"SAS Programmierung für Fortgeschrittene I\" von Heinrich Stürzl ist ein begleitendes Skript für einen Kurs, der auf SAS-Grundkenntnissen aufbaut. Ziel ist die Vermittlung tiefergehender Techniken zur effizienten Gestaltung des DATA STEPs [S. 1].\n\nKernaussagen und Struktur:\n\n1. Fokus auf den DATA STEP: Der Kurs behandelt detailliert die Funktionsweise des DATA STEPs, inklusive Kompilierungs- und Ausführungsphasen, den Einsatz von Anweisungen wie RETAIN, SUM, LAG und DIF sowie die gezielte Steuerung durch OUTPUT und DELETE [S. 1].\n\n2. Datenmanagement: Ein wesentlicher Teil befasst sich mit dem Einlesen externer Daten (ASCII, Excel-Anbindung via IMPORT, LIBNAME oder DDE), der Verknüpfung von Tabellen (SET, MERGE) sowie der Transformation von Tabellenstrukturen (Vertikalisierung/Horizontalisierung) [S. 1, 2].\n\n3. Werkzeuge und Arrays: Neben der Verwendung von Arrays zur effizienten Programmierung wird der Einsatz von Dictionary Tables thematisiert [S. 2].\n\n4. Ressourcen und Hilfe: Das Dokument bietet einen Überblick über verschiedene SAS-Hilfequellen, darunter SAS-Online-Dokumentationen, Diskussionsforen (z. B. SAS-L, Deutsches SAS-Forum) und User-Gruppen, um den Austausch unter Programmierern zu fördern [S. 2].\n\nDie Inhalte sind weitgehend betriebssystemunabhängig, wobei spezifische Windows-Kapitel zum Datenimport explizit gekennzeichnet sind [S. 1]. Rechtlich unterliegt das Material der Creative-Commons-Lizenz CC BY-SA 4.0, die eine freie Weitergabe und Bearbeitung unter Namensnennung und gleichen Bedingungen erlaubt [S. 1].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778514464153,
+      "channel": "plan_pipe_bec2a63419ab",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 59,
+        "end": 95
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778514464234,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Was passiert während der Kompilierungsphase eines SAS-Datenschritts primär?",
+            "options": [
+              "Die SAS-Tabelle wird permanent auf der Festplatte gespeichert.",
+              "Die Daten werden zeilenweise gelesen und verarbeitet.",
+              "Die implizite DO-Schleife wird gestartet, um Beobachtungen zu transformieren.",
+              "Der Programmcode wird auf Syntaxfehler geprüft und der Program Data Vector (PDV) wird erstellt."
+            ],
+            "correctIndex": 3,
+            "explanation": "Während der Kompilierung wird der Code geprüft, Variablen deklariert, Eigenschaften festgelegt und der PDV im Arbeitsspeicher reserviert. Die eigentliche Verarbeitung (Ausführungsphase) findet erst danach statt."
+          },
+          {
+            "question": "Welche der folgenden Aussagen zum Program Data Vector (PDV) ist korrekt?",
+            "options": [
+              "Der PDV speichert dauerhaft alle Variablenwerte für zukünftige Datenschritte.",
+              "Der PDV wird erst bei der 'RUN'-Anweisung erstellt.",
+              "Variablen wie _N_ und _ERROR_ werden im PDV gespeichert und später permanent in die SAS-Tabelle geschrieben.",
+              "Der PDV ist ein Bereich im Arbeitsspeicher, in dem Variablen während der Datenschritt-Ausführung verwaltet werden."
+            ],
+            "correctIndex": 3,
+            "explanation": "Der PDV ist der Arbeitsspeicher-Bereich für die Verarbeitung. _N_ und _ERROR_ sind temporär und werden nicht in der resultierenden SAS-Tabelle gespeichert."
+          },
+          {
+            "question": "Was bewirkt die Verwendung von 'DATA _NULL_;'?",
+            "options": [
+              "Es löscht den Inhalt der aktuell bearbeiteten SAS-Tabelle.",
+              "Es startet einen Datenschritt, ohne eine physische SAS-Tabelle auf dem Datenträger zu erzeugen.",
+              "Es beendet die Kompilierungsphase vorzeitig.",
+              "Es erzeugt eine leere SAS-Tabelle, die keine Variablen enthält."
+            ],
+            "correctIndex": 1,
+            "explanation": "_NULL_ ist ein spezieller Name, der SAS anweist, keinen Beobachtungs-Output in eine Tabelle zu schreiben. Dies ist nützlich für Berechnungen oder Berichte, bei denen keine Datendatei benötigt wird."
+          },
+          {
+            "question": "Wie interpretiert SAS beim Einlesen von Daten eine zweistellige Jahreszahl (z. B. '02') bei der Einstellung 'YEARCUTOFF=1920'?",
+            "options": [
+              "Sie wird immer als 1902 interpretiert.",
+              "Sie wird als 1902 interpretiert, sofern keine andere Logik greift; der Bereich 20-99 gehört zu 19xx, 00-19 zu 20xx.",
+              "Sie erzeugt eine Fehlermeldung, da das Jahrhundert fehlt.",
+              "Sie wird als das Jahr 2002 interpretiert."
+            ],
+            "correctIndex": 1,
+            "explanation": "Die Option YEARCUTOFF definiert einen 100-Jahres-Zeitraum. Bei 1920 bedeutet dies: 20-99 fallen in das 20. Jahrhundert (1920-1999), 00-19 fallen in das 21. Jahrhundert (2000-2019)."
+          },
+          {
+            "question": "Was ist der Hauptunterschied zwischen Deklarationsanweisungen (z. B. LENGTH, ARRAY) und ausführbaren Anweisungen im Datenschritt?",
+            "options": [
+              "Deklarationsanweisungen verarbeiten Daten, während ausführbare Anweisungen nur Metadaten ändern.",
+              "Es gibt keinen Unterschied, da alle Anweisungen in einer festen Reihenfolge abgearbeitet werden.",
+              "Ausführbare Anweisungen werden nur einmal ausgeführt, Deklarationsanweisungen bei jeder Beobachtung.",
+              "Deklarationsanweisungen werden nur in der Kompilierungsphase wirksam, ausführbare Anweisungen werden in der Ausführungsphase pro Beobachtung durchlaufen."
+            ],
+            "correctIndex": 3,
+            "explanation": "Deklarationsanweisungen definieren den Rahmen (z. B. Speicherplatz, Variablentypen) während der Kompilierung, während ausführbare Anweisungen die eigentliche Logik pro Beobachtung während der Ausführung enthalten."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778514464235,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist der Hauptzweck eines DATA STEPs?",
+            "back": "Ein DATA STEP dient dazu, eine oder mehrere SAS-Tabellen (data sets) zu erzeugen, Daten einzulesen, zu transformieren und zu verarbeiten."
+          },
+          {
+            "front": "Was passiert in der Kompilierungsphase eines DATA STEPs?",
+            "back": "Syntaxprüfung, Erstellung des Program Data Vector (PDV), Reservierung von Speicherplatz für Variablen und Deklaration von Variablenattributen."
+          },
+          {
+            "front": "Was ist der Program Data Vector (PDV)?",
+            "back": "Ein logischer Bereich im Arbeitsspeicher, in dem SAS Daten während der Ausführungsphase verarbeitet. Hier werden Variablenwerte für die aktuelle Beobachtung gehalten."
+          },
+          {
+            "front": "Wofür stehen die automatischen Variablen _N_ und _ERROR_?",
+            "back": "_N_ zählt die Anzahl der Iterationen (Beobachtungen), _ERROR_ fungiert als Fehlerflag (0 = fehlerfrei, 1 = Fehler)."
+          },
+          {
+            "front": "Was bewirkt die Anweisung DATA _NULL_;?",
+            "back": "Sie führt den DATA STEP ohne das Erstellen einer physischen SAS-Ausgabetabelle durch, was z. B. zum Lesen von Daten oder Testzwecken nützlich ist."
+          },
+          {
+            "front": "Was ist der Unterschied zwischen SET und MERGE?",
+            "back": "SET verbindet Tabellen vertikal (aneinanderhängen), während MERGE Tabellen horizontal basierend auf gemeinsamen Variablen (by-processing) verknüpft."
+          },
+          {
+            "front": "Welche Funktion hat die RETAIN-Anweisung?",
+            "back": "Sie verhindert, dass eine Variable beim Start einer neuen Iteration im DATA STEP automatisch auf 'missing' gesetzt wird; der Wert aus der vorherigen Iteration bleibt erhalten."
+          },
+          {
+            "front": "Was bewirkt die Option YEARCUTOFF=1920?",
+            "back": "Sie legt eine 100-Jahres-Spanne fest, um zweistellige Jahreszahlen korrekt zu interpretieren (z. B. 20-99 als 1920-1999, 00-19 als 2000-2019)."
+          },
+          {
+            "front": "Wie werden externe ASCII-Daten im DATA STEP eingelesen?",
+            "back": "Durch die Kombination der INFILE-Anweisung (Pfad zur Datei) mit der INPUT-Anweisung (Variablendefinition)."
+          },
+          {
+            "front": "Was versteht man unter 'Vertikalisierung' und 'Horizontalisierung'?",
+            "back": "Vertikalisierung wandelt Spalten in Zeilen um (z. B. eine Variable pro Spalte auf eine Spalte reduziert), Horizontalisierung wandelt Zeilen in Spalten um."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-cs-excel-vba-praxis_2",
+      "slides": [
+        {
+          "title": "SAS Fortgeschrittene: Statistik & Visualisierung",
+          "bullets": [
+            "Fokus auf fortgeschrittene Techniken für Datenanalyse und Auswertung.",
+            "Beherrschung statistischer Prozeduren und effizienter Visualisierungsmethoden."
+          ],
+          "notes": "Willkommen zu Lektion 3. Heute vertiefen wir unsere SAS-Kenntnisse, um Daten nicht nur zu verarbeiten, sondern fundiert statistisch auszuwerten und aussagekräftig zu visualisieren.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Grundlagen des Datenschritts",
+          "bullets": [
+            "Kompilierung prüft Syntax und erstellt den Program Data Vector (PDV).",
+            "Die Ausführungsphase durchläuft implizit alle Beobachtungen.",
+            "Tools: RETAIN bewahrt Werte, SUM addiert über Zeilen hinweg (S. 16).",
+            "LAG-Funktion ermöglicht einfache Vergleiche mit Vorgängerwerten (S. 18)."
+          ],
+          "notes": "Der Datenschritt ist das Herzstück. Wir verstehen nun den PDV im Kompilierungsschritt und nutzen Werkzeuge wie RETAIN oder LAG, um Abhängigkeiten zwischen Beobachtungen präzise abzubilden.",
+          "page_range": "9-18",
+          "image_prompt": ""
+        },
+        {
+          "title": "Tabellenoptionen für den Datenzugriff",
+          "bullets": [
+            "Effiziente Steuerung direkt im Tabellennamen mittels Klammersyntax.",
+            "KEEP= und DROP= filtern Variablenmengen performant (S. 20).",
+            "RENAME= strukturiert Datensätze bei der Übergabe um (S. 20).",
+            "WHERE= ermöglicht gezielte Selektion vor der eigentlichen Verarbeitung (S. 20-21)."
+          ],
+          "notes": "Statt zeitaufwendiger Zwischenschritte nutzen wir Tabellenoptionen, um den Datenstrom direkt bei der Einlesung zu filtern, umzubenennen oder auf relevante Untergruppen einzugrenzen.",
+          "page_range": "20-21",
+          "image_prompt": ""
+        },
+        {
+          "title": "Selektion und Filterung in SAS",
+          "bullets": [
+            "Boolesche Werte (0/1) steuern logische Programmabläufe effizient.",
+            "WHERE-Operatoren: BETWEEN, CONTAINS und LIKE für komplexe Muster.",
+            "Phonetische Suche mit =* (SOUNDS LIKE) für Namensvergleiche (S. 24).",
+            "Logische Verknüpfungen (AND, OR, NOT) ermöglichen komplexe Filterkriterien."
+          ],
+          "notes": "Die Selektion ist essenziell für die Analyse. Wir nutzen spezifische Operatoren und Boolesche Algebra, um selbst komplexe Bedingungen oder Fehlertoleranzen bei Texteingaben abzufangen.",
+          "page_range": "24-26",
+          "image_prompt": ""
+        },
+        {
+          "title": "Datenimport: ASCII und Excel",
+          "bullets": [
+            "Input-Varianten: Column, Formatted und List-Input nach Bedarf (S. 28-29).",
+            "PROC IMPORT für unkomplizierten Excel-Datenzugriff (S. 31).",
+            "LIBNAME-Engine für flexiblen, bidirektionalen Excel-Zugriff (S. 32).",
+            "Getrennte Steuerung von Formatierung und Einleselogik durch Optionen."
+          ],
+          "notes": "Daten liegen selten perfekt vor. Wir beherrschen den Import aus ASCII-Quellen durch präzise Input-Steuerung sowie den direkten, professionellen Zugriff auf Excel-Dateien über Prozeduren oder Libname-Engines.",
+          "page_range": "28-32",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 3 — SAS Fortgeschrittene - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778514464134,
+      "pdfName": "SAS Programmierung Fortgeschrittene I"
+    }
+  ],
+  "sourceHash": "90ccba26a5caaf8f"
+}

@@ -1,0 +1,453 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Fahrrad-Werkstatt — von Kette bis Motor - Lektion 3 — Transformatoren",
+    "pdfName": "Transformatoren",
+    "createdAt": 1778513800612,
+    "exportedAt": "2026-05-11T15:36:40.613Z",
+    "meta": {
+      "courseId": "course-de-fahrrad-werkstatt",
+      "lessonIndex": 2,
+      "courseTitle": "Fahrrad-Werkstatt — von Kette bis Motor",
+      "lessonObjective": "Strom-Wandlung im Alltag.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-transformatoren",
+            "title": "Transformatoren",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Transformatoren"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_bb170c6ffb01",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "2-4",
+          "chapterTitle": "Zweck und Grundlagen von Transformatoren",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-9",
+          "chapterTitle": "Primär- und Sekundärwicklung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "10-15",
+          "chapterTitle": "Betrieb mit einer Dreieckspannung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "16-21",
+          "chapterTitle": "Betrieb mit einer Rechteckspannung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "22-23",
+          "chapterTitle": "Betrieb mit einer Sinusspannung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "24-31",
+          "chapterTitle": "Der Eisenkern",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "32-33",
+          "chapterTitle": "Widerstandstransformation",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "35-45",
+          "chapterTitle": "Anhang, Autoren und Lizenzen",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778513800612,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der physikalischen Grundlagen von Transformatoren, basierend auf dem bereitgestellten Dokument:\n\n### Zusammenfassung: Funktionsweise von Transformatoren\n\nEin Transformator dient dazu, Wechselspannungen zu verändern (hoch- oder heruntertransformieren) oder eine galvanische Trennung zwischen Stromkreisen zu ermöglichen (S. 4).\n\n#### 1. Die Rolle des Stroms und der magnetischen Flussdichte\n*   **Magnetfelderzeugung:** Ein durch die Primärwicklung fließender Strom erzeugt im Spulenkern ein Magnetfeld. Die magnetische Flussdichte $B$ ist dabei abhängig von der Windungszahl, der Stromstärke und den Materialeigenschaften des Kerns ($\\mu_r$) (S. 5).\n*   **Betriebsarten:** \n    *   **Eingeprägte Spannung:** Die gängige Methode (z. B. Netzspannung). Die Spannung gibt die Kurvenform vor, der Strom passt sich an (S. 6, S. 12).\n    *   **Eingeprägter Strom:** Ein Sonderfall (z. B. Stromwandler). Hier bleibt der Strom nahezu konstant, während die Spannung stark schwanken kann (S. 6).\n\n#### 2. Das Induktionsgesetz\n*   Die Sekundärspannung entsteht durch die zeitliche Änderung des Magnetfeldes ($dB/dt$). Die induzierte Spannung ist umso höher, je schneller sich der Primärstrom ändert (S. 7, S. 9).\n*   **Einschränkung:** Ein Transformator benötigt zwingend eine Änderung des Magnetfeldes. Daher können Transformatoren **keinen Gleichstrom** übertragen (S. 9).\n\n#### 3. Einfluss des Eisenkerns\n*   **Vorteil:** Eisenkerne mit hoher Permeabilität ($\\mu_r$) erhöhen die Induktivität, was besonders bei tiefen Frequenzen (z. B. Netzfrequenz) notwendig ist (S. 10, S. 12).\n*   **Nachteil:** Eisenkerne können in die **Sättigung** geraten. Ist der Kern gesättigt, kann das Magnetfeld nicht weiter ansteigen ($dB \\approx 0$), wodurch die Induktion in der Sekundärspule zum Erliegen kommt (S. 13, S. 17).\n\n#### 4. Übertragungsverhalten\n*   Das Verhalten des Transformators hängt maßgeblich von der Frequenz ab:\n    *   **Tiefe Frequenzen:** Wirken oft wie Stromquellen; die Spule differenziert das Signal (S. 13, S. 15).\n    *   **Hohe Frequenzen:** Hier gewinnen parasitäre Kapazitäten an Bedeutung, die zusammen mit der Spule Schwingkreise bilden können (S. 16).\n*   Für eine korrekte Funktion ist die Dimensionierung (Windungszahl, Kernfläche) entscheidend, um Spannungszeitflächen korrekt zu verarbeiten und frühzeitige Sättigung zu vermeiden (S. 17, S. 18).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778513800612,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-fahrrad-werkstatt_2\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 3 — Transformatoren - Präsentation</span><span class=\"pm-chat-count\">6 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lektion 3: Transformatoren im Alltag</div><ul class=\"pm-chat-slide-bullets\"><li>Grundlagen der Spannungs- und Stromwandlung.</li><li>Vom Eisenkern bis zur galvanischen Trennung.</li><li>Anwendungsorientiertes Wissen für moderne Technik.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778513800613,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Dokumentseiten:\n\n**Projektübersicht und rechtlicher Rahmen (S. 2)**\nDas Dokument stellt ein Wikibook-Projekt zu Transformatoren dar, welches unter der Creative Commons Attribution-ShareAlike 3.0 Lizenz steht. Es wurde mittels LaTeX erstellt; der entsprechende Quellcode ist als Anhang in die PDF-Datei eingebettet. Zusätzlich werden Lizenzen wie GPL und GFDL als Referenz für die verwendeten Inhalte aufgeführt.\n\n**Zielsetzung und Zielgruppe (S. 4)**\nDas Buch richtet sich an technisch versierte Personen mit Vorkenntnissen in Mathematik und Physik. Das primäre Ziel ist die Vermittlung fundierten Detailwissens über den Betrieb, die Dimensionierung und die physikalischen Grenzen von Transformatoren. Das Projekt fokussiert sich auf Breitbandtransformatoren verschiedenster Bauweisen, schließt jedoch spezielle Resonanztransformatoren aus.\n\n**Technische Kerninhalte (S. 3-4)**\nDie inhaltliche Ausarbeitung deckt folgende Schwerpunkte ab:\n- Einsatzgebiete: Spannungsanpassung (Hoch-/Heruntertransformieren) bei geringen Verlusten sowie die galvanische Trennung bei hohen Potenzialunterschieden (S. 4).\n- Spannungsformen: Untersuchung des Verhaltens bei verschiedenen Kurvenformen wie Sinus-, Rechteck- und Dreieckspannungen (S. 3-4).\n- Bauteile: Analyse der Funktion des Eisenkerns, wobei sowohl Vor- als auch Nachteile im Betrieb beleuchtet werden (S. 4).\n- Transformation: Behandlung von Widerstandstransformationen sowie Bemessungsgrundlagen für unterschiedliche Frequenzbereiche (S. 3-4).\n\nDas Projekt folgt dabei der Maxime des soliden Standardwissens, welches direkt aus den Induktionsgesetzen abgeleitet wird (S. 4).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513800622,
+      "channel": "plan_pipe_bb170c6ffb01",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Abschnitte auf den Seiten 5 bis 9:\n\n**Grundlagen der Primärwicklung**\nDie magnetische Flussdichte $B$ in einer Spule wird durch die Formel $B = \\mu_r \\cdot \\mu_0 \\cdot \\frac{N_{prim}}{L} \\cdot J_{prim}$ bestimmt, wobei der Primärstrom $J_{prim}$ für die Erzeugung des Magnetfeldes verantwortlich ist (S. 5). In der Praxis wird zwischen eingeprägter Spannung (konstante Spannung, z. B. Netzanschluss) und eingeprägtem Strom (konstanter Strom, z. B. spezielle Labornetzgeräte) unterschieden (S. 6).\n\n**Betrieb an einer Spannungsquelle**\nWird eine Primärspule mit einer eingeprägten Spannung $U_{prim}$ betrieben, so reagiert sie über das Induktionsgesetz: $U_{ind} = -A \\cdot \\frac{dB}{dt}$. Die induzierte Spannung wirkt dabei als Rückmeldung, da die Spule versucht, das vorhandene Magnetfeld aufrechtzuerhalten (Lenzsche Regel) (S. 7). Bei einer Spannungsquelle fungiert das Magnetfeld als Stellgröße, um den zeitlichen Verlauf der Flussänderung $\\frac{dB}{dt}$ in Übereinstimmung mit der treibenden Spannung zu halten (S. 8). Dies führt dazu, dass $U_{prim}$ und $B$ phasenverschoben sind: Bei Sinusspannung ist das Magnetfeld cosinusförmig (S. 8).\n\n**Sekundärwicklung und Induktionsvorgänge**\nEine Transformation von Gleichstrom ist nicht möglich, da ein unveränderliches Magnetfeld keine Induktion hervorruft (S. 9). Die in der Sekundärspule induzierte Spannung hängt von der zeitlichen Änderung des Primärstroms ab: $U_{ind} = N_{sek} \\cdot \\mu_r \\cdot \\mu_0 \\cdot A \\cdot \\frac{N_{prim}}{L} \\cdot \\frac{dJ_{prim}}{dt}$ (S. 9).\n\n**Technische Schlussfolgerungen**\nHohe Spannungen werden insbesondere durch eine schnelle Änderung des Primärstroms ($\\frac{dJ_{prim}}{dt}$ groß) erzeugt, was bei Anwendungen wie Zündspulen durch abruptes Abschalten genutzt wird (S. 8, S. 9). Der Eisenkern dient hierbei durch seine Permeabilitätszahl $\\mu_r$ als wesentlicher Verstärker des Magnetfeldes (S. 5).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513800623,
+      "channel": "plan_pipe_bb170c6ffb01",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 9
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Abschnitte auf den Seiten 10 bis 15:\n\nGrundlagen und Eisenkerne\nTransformatoren dienen der Änderung von Kurvenform oder Phase von Wechselstrom. Eisenkerne kommen bei tiefen Frequenzen zum Einsatz, um die Induktivität zu erhöhen. Ihr Nachteil ist die stromabhängige Änderung der relativen Permeabilität, die bei Sättigung den Wert 1 erreichen kann, wodurch die induzierte Spannung auf Null sinkt (S. 10, 13).\n\nBetrieb mit Dreieckspannung\nDas Übertragungsverhalten hängt maßgeblich vom Verhältnis zwischen induktivem und ohmschem Widerstand ab:\n\n1. Betrieb mit eingeprägtem Strom (S. 12-13):\nDies tritt ein, wenn der induktive Widerstand viel kleiner als der ohmsche Widerstand ist (z. B. durch einen hohen Vorwiderstand). Der Trafo wirkt hierbei als Differenzierer: Aus einer Dreieckspannung wird sekundär eine Rechteckspannung. Es gilt die Proportionalität $U_{\\text{primär}} \\approx I_{\\text{primär}} \\approx B \\approx \\Phi$. Da Gleichströme keine Änderung des Magnetfeldes ($dB = 0$) bewirken, können diese nicht gemessen werden.\n\n2. Betrieb mit eingeprägter Spannung (S. 14-15):\nDies tritt ein, wenn der induktive Widerstand viel größer als der ohmsche Widerstand ist. Über die Lenzsche Regel entsteht eine Gegenspannung, die sich mit der angelegten Spannung im dynamischen Gleichgewicht befindet. Dadurch wird die Kurvenform weitgehend originalgetreu übertragen. Es gilt das bekannte Übersetzungsverhältnis:\n$\\frac{U_{p}}{U_{s}} = \\frac{n_{p}}{n_{s}}$\n\nFrequenzgemisch und Bandbreite\nBreitbandtransformatoren müssen ein Frequenzgemisch übertragen (z. B. 50 Hz bis 20 kHz). Bei tiefen Frequenzen dominiert der ohmsche Widerstand (differentielles Verhalten, Phasenverschiebung ca. 90°), während bei hohen Frequenzen der induktive Anteil überwiegt (S. 15).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513800624,
+      "channel": "plan_pipe_bb170c6ffb01",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 10,
+        "end": 15
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Informationen (S. 16–21):\n\n**Transformatorbetrieb bei verschiedenen Frequenzen**\nBei niedrigen Frequenzen ist eine hohe Windungszahl zur Sicherstellung der Impedanz erforderlich (S. 16). Bei mittleren Frequenzen erfolgt eine ideale Übertragung der Kurvenform (S. 16). Hohe Frequenzen verursachen abnehmende Effizienz durch Wicklungskapazitäten, die mit der Spule einen schmalen Schwingkreis bilden können (S. 16). Breitbandübertrager sind aufgrund dieser widersprüchlichen Anforderungen schwierig herzustellen (S. 16).\n\n**Betrieb mit Rechteckspannung (Schaltnetzteile)**\nSchaltnetzteile nutzen Rechteckspannungen, um die Verlustleistung in Transistoren zu minimieren (S. 17). Dabei muss der Stromfluss frühzeitig unterbrochen werden, um eine Sättigsmagnetisierung des Eisenkerns und eine damit verbundene Aufhebung der induzierten Spannung zu vermeiden (S. 17, 18).\n\n**Sperrwandler**\nDer Sperrwandler speichert Energie während der Einschaltphase des Transistors als magnetische Feldenergie in einer Drossel mit Luftspalt (S. 19, 20). Nach dem Abschalten wird diese Energie an den Sekundärkreis abgegeben (S. 19). Es gibt kein festes Spannungsübersetzungsverhältnis, da die Spannung schlagartig auf den Wert der angeschlossenen Kapazität springt (S. 20).\nDie Energieberechnung folgt $E = 0{,}5 \\cdot L \\cdot I^2$ (S. 18) sowie der Flussänderung $\\Delta E = C \\cdot U \\cdot \\Delta U$ (S. 20). Im Dauerbetrieb muss die Spannungszeitfläche der Einschalt- und Entladephase identisch sein (S. 20).\n\n**Durchflusswandler**\nIm Gegensatz zum Sperrwandler findet hier keine Zwischenspeicherung im Eisenkern statt; Energie wird direkt während der Einschaltphase übertragen. Der Kern darf keinen Luftspalt besitzen (S. 20). Hier gilt das klassische Übersetzungsverhältnis $ü = \\frac{N_s}{N_p} = \\frac{U_s}{U_p}$ (S. 20).\n\n**Einfluss von Skin- und Proximity-Effekt**\nBei hohen Frequenzen wird der Stromfluss durch den Skin-Effekt auf das Äußere des Leiters verdrängt, was auf Felddiffusion statt auf Wirbelströme zurückzuführen ist (S. 21). Der Proximity-Effekt reduziert den effektiven Leiterquerschnitt durch die Wechselwirkung mit Feldern benachbarter Leiter (S. 21). Diesen Effekten kann durch den Einsatz von HF-Litze entgegengewirkt werden (S. 21).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513800625,
+      "channel": "plan_pipe_bb170c6ffb01",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 16,
+        "end": 21
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die vorliegenden Textabschnitte auf den Seiten 22 und 23 thematisieren die Funktionsweise von Transformatoren unter sinusförmiger Wechselspannung.\n\nDie Kernaussagen lassen sich wie folgt strukturieren:\n\nKritik an vereinfachten Modellen:\nDie Erklärung, dass ein primärseitiger Strom $I$ lediglich durch die Windungszahl $N$ bestimmt wird, ist unzureichend (S. 22). Sie ignoriert, dass Transformatoren mit einer festen Spannung (z. B. 230 V) betrieben werden, nicht mit eingeprägtem Strom. Zudem liefert dieses Modell keine Erklärung für die Notwendigkeit eines Eisenkerns oder die belastungsabhängige Stromaufnahme (S. 23).\n\nDie Rolle der Selbstinduktion:\nDer entscheidende Faktor für das Betriebsverhalten eines Transformators ist die Selbstinduktion (S. 23). Im eingeschwungenen Zustand erzeugt das durch die Primärspule verursachte magnetische Wechselfeld eine Gegenspannung $U_{\\text{induziert}}$.\n\nDas Prinzip des stabilen Gleichgewichts:\nDie Selbstinduktion erzeugt eine Gegenspannung, die fast so groß wie die angelegte Netzspannung $U_{\\text{Netz}}$ ist. Die Differenz aus $U_{\\text{Netz}} - U_{\\text{induziert}}$ ist minimal und fällt am ohmschen Widerstand der Spule ab, weshalb der Strom im Leerlauf sehr gering bleibt (S. 23). Steigt der Strombedarf auf der Sekundärseite, reguliert das System über das magnetische Feld ein dynamisch stabiles Gleichgewicht, wodurch die induzierte Spannung der Netzspannung folgt (S. 23).\n\nBegründung des Übersetzungsverhältnisses:\nDa die Gegenspannung in der Primärspule nahezu $U_{p}$ entspricht, lässt sich das Verhältnis der Windungszahlen direkt auf das Spannungsverhältnis übertragen:\n\n$$\\frac{U_{p}}{U_{s}} = \\frac{n_{p}}{n_{s}}$$\n\nDies erklärt, warum die Sekundärspannung proportional zum Verhältnis der Windungszahlen steht, ungeachtet der räumlichen Anordnung der Spulen, solange sie vom gleichen magnetischen Fluss durchdrungen werden (S. 23).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513800626,
+      "channel": "plan_pipe_bb170c6ffb01",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 22,
+        "end": 23
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts zum Thema Eisenkern und Transformatoren:\n\nDer Eisenkern spielt eine entscheidende Rolle für die Effizienz von Transformatoren, da er die notwendige Windungszahl der Spulen drastisch reduziert (S. 25). Ohne Eisenkern wären für einen 100-W-Netztrafo etwa 31.000 Windungen und ein Gewicht von rund 9.000 kg erforderlich. Durch den Einsatz eines Eisenkerns mit einer hohen Permeabilitätszahl ($\\mu_r \\approx 2000$) kann die Windungszahl auf 700 gesenkt und das Gewicht massiv reduziert werden (S. 25).\n\nWichtige Kernpunkte zur Funktionsweise und Problematik:\n\n1. Materialien und Sättigung: Eisenkerne bestehen aus sogenannten Weiss-Bezirken, die sich bei Anlegen eines Magnetfeldes ausrichten (S. 27). Die Sättigung tritt ein, wenn fast alle Bereiche ausgerichtet sind und der Magnetfluss $\\Phi$ bei steigendem Strom nicht weiter zunimmt. Dieser Zustand verursacht Verzerrungen, einen schlechten Wirkungsgrad und hohe Stromspitzen (S. 25, 26).\n\n2. Physikalische Limitierung: Die Induktionsspannung folgt der Gleichung $U = \\frac{d\\Phi}{dt}$. Da die Fläche $A$ des Kerns beim Trafobau konstant ist, muss das Magnetfeld $B$ geändert werden. Erreicht der Kern die magnetische Sättigung, bricht die Gegenspannung zusammen, was ohne Begrenzung zu massiven Stromanstiegen und zur thermischen Zerstörung der Primärspule führen kann (S. 26-28).\n\n3. Frequenzabhängigkeit: Um Wirbelstromverluste zu minimieren, werden geschichtete Dynamobleche statt massiver Eisenkerne verwendet (S. 25). Die Baugröße eines Trafos hängt stark von der Frequenz ab. Höhere Frequenzen erlauben kleinere Kerne und weniger Windungen, was das Gesamtvolumen und die Masse drastisch senkt. Dies ist der Grund, warum moderne Schaltnetzteile bei 50 kHz deutlich leichter sind als 50-Hz-Netztrafos (S. 28, 29).\n\n4. Streufluss: Neben dem nutzbaren Fluss kann es zu einem Streufluss kommen, bei dem das Magnetfeld nicht vollständig durch die Sekundärspule geführt wird, was die Effizienz der Energieübertragung beeinträchtigt (S. 30, 31).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513800627,
+      "channel": "plan_pipe_bb170c6ffb01",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 24,
+        "end": 31
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des bereitgestellten Abschnitts:\n\n**Magnetischer Streufluss bei Transformatoren**\n\nBei einem idealen Transformator wird der gesamte magnetische Fluss der Primärspule auch von der Sekundärspule erfasst. In der Realität treten jedoch Streuflüsse auf, bei denen Magnetfeldlinien den Kern verlassen (S. 32). Dies geschieht vor allem bei unzureichendem Magnetwerkstoff (geringe Permeabilität) oder unter hoher Belastung. Die Folgen sind:\n* Verringerte Effizienz des Transformators.\n* Abweichungen vom idealen Übersetzungsverhältnis $N_p / N_s = U_p / U_s$ (S. 32).\n* Entstehung störender Magnetfelder, die z. B. Oszilloskope beeinflussen können und eine Abschirmung erforderlich machen (S. 32).\n\nUm Streuverluste zu minimieren, werden Primär- und Sekundärspulen räumlich nah beieinander platziert und möglichst eng mit dem Eisenkern gekoppelt (S. 32).\n\n**Gezielte Nutzung von Streufeldern**\n\nIn manchen Anwendungen ist ein Streufeld durchaus erwünscht, etwa bei Schweißgeräten oder als Vorschaltgerät für Leuchtstoffröhren (S. 33). Hierbei werden gezielt Luftspalte im Eisenkern genutzt, wodurch der Transformator gleichzeitig als strombegrenzende Drossel fungiert (S. 33).\n\n**Effizienzsteigerung**\n\nZur Reduzierung von Energieverlusten, die durch Wirbelströme im Eisenkern entstehen (S. 33), werden in der Elektrotechnik laminierte Blechpakete anstelle massiver Eisenblöcke verwendet (S. 33).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513800628,
+      "channel": "plan_pipe_bb170c6ffb01",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 32,
+        "end": 33
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des bereitgestellten Abschnitts (S.35):\n\nDie Widerstandstransformation durch einen Transformator\nDer Transformator ermöglicht es, Widerstände an bestehende Impedanzen anzupassen. Dies basiert auf den Beziehungen zwischen Spannung ($U$), Stromstärke ($I$) und Windungszahl ($N$).\n\nGrundlagen der Berechnung\nDas Übersetzungsverhältnis der Windungszahlen beeinflusst das Widerstandsverhältnis im Quadrat (S.35):\n$ \\frac{R_p}{R_s} = \\left( \\frac{N_p}{N_s} \\right)^2 $\nDaraus ergibt sich, dass ein Windungszahlverhältnis von 1:2 eine Widerstandstransformation von 1:4 zur Folge hat (S.35).\n\nPraktische Anwendungsbeispiele\n1. Mikrofontechnik: Um den sehr geringen Innenwiderstand eines Bändchenmikrofons (0,2 $\\Omega$) an eine störungsarme Übertragung (180 $\\Omega$) anzupassen, ist ein Übersetzungsverhältnis von 30 erforderlich. Der Nebeneffekt ist eine gleichzeitige Erhöhung der induzierten Mikrofonspannung um den Faktor 30 (S.35).\n\n2. Lautsprecheranpassung: Zur Anpassung eines 4 $\\Omega$ Lautsprechers an eine Röhrenendstufe mit 2000 $\\Omega$ Impedanz wird ein Transformator mit einem Übersetzungsverhältnis von $a = \\sqrt{\\frac{2000}{4}} = 22$ benötigt. Ein weiterer Vorteil ist hierbei die galvanische Trennung, die verhindert, dass Gleichstrom durch den Lautsprecher fließt (S.35).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778513800629,
+      "channel": "plan_pipe_bb170c6ffb01",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 35,
+        "end": 45
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778513800712,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Warum lässt sich ein Transformator nicht mit einem konstanten Gleichstrom betreiben?",
+            "options": [
+              "Weil die Permeabilitätszahl von Eisen bei Gleichstrom auf Null sinkt.",
+              "Weil der ohmsche Widerstand der Spule bei Gleichstrom unendlich groß wird.",
+              "Weil der Eisenkern bei Gleichstrom sofort schmilzt.",
+              "Weil zur Induktion einer Sekundärspannung eine Änderung des Magnetfeldes erforderlich ist."
+            ],
+            "correctIndex": 3,
+            "explanation": "Das Induktionsgesetz besagt, dass die induzierte Spannung proportional zur zeitlichen Änderung des magnetischen Flusses (dB/dt) ist. Bei konstantem Gleichstrom ändert sich das Magnetfeld nicht, weshalb keine Spannung induziert wird."
+          },
+          {
+            "question": "Was versteht man unter einer 'eingeprägten Spannung'?",
+            "options": [
+              "Eine Spannung, die nur in Luftkern-Transformatoren vorkommt.",
+              "Eine Spannung, die weitgehend unabhängig vom fließenden Strom konstant bleibt.",
+              "Eine Spannung, die proportional zum Strom ansteigt.",
+              "Eine Spannung, die im Leerlauf kurzschließt."
+            ],
+            "correctIndex": 1,
+            "explanation": "Eine Spannungsquelle wie das Stromnetz oder ein Labornetzteil gibt eine Spannung ab, die durch den Lastwiderstand (und damit den Stromfluss) kaum beeinflusst wird. Der Innenwiderstand dieser Quellen ist sehr gering."
+          },
+          {
+            "question": "Welche Wirkung hat das Minuszeichen im Induktionsgesetz (Lenzsche Regel) bei der Primärspule?",
+            "options": [
+              "Es bewirkt, dass die Spule eine Gegenspannung erzeugt, die Stromänderungen entgegenwirkt.",
+              "Es beschreibt die Energieverluste durch Wärme im Kern.",
+              "Es führt dazu, dass die Spule das Magnetfeld bei Stromänderungen aktiv verstärkt.",
+              "Es zeigt an, dass der Transformator nur für Gleichstrom geeignet ist."
+            ],
+            "correctIndex": 0,
+            "explanation": "Die Lenzsche Regel besagt, dass eine induzierte Spannung immer so gerichtet ist, dass sie ihrer Ursache (der Änderung des magnetischen Flusses) entgegenwirkt. Dies äußert sich als Gegenspannung bei Stromanstieg."
+          },
+          {
+            "question": "Warum wird bei Impulstrafos oder Zündspulen ein schnelles Abschalten des Stroms genutzt?",
+            "options": [
+              "Um den Stromfluss physikalisch zu stoppen, damit kein Magnetfeld entsteht.",
+              "Um den Quotienten dJ/dt zu maximieren und dadurch eine hohe Induktionsspannung zu erzeugen.",
+              "Um den Eisenkern vor Entmagnetisierung zu schützen.",
+              "Um den ohmschen Widerstand der Primärspule zu reduzieren."
+            ],
+            "correctIndex": 1,
+            "explanation": "Da die induzierte Spannung proportional zur zeitlichen Stromänderung (dJ/dt) ist, führt ein extrem schnelles Abschalten zu einer sehr großen zeitlichen Ableitung, was eine entsprechend hohe Induktionsspannung zur Folge hat."
+          },
+          {
+            "question": "Welche Eigenschaft hat der Eisenkern in Bezug auf die Permeabilitätszahl und die Transformator-Funktion?",
+            "options": [
+              "Er ermöglicht hohe Induktionsspannungen bei niedrigen Frequenzen durch ein hohes, aber schwankendes mü-r.",
+              "Er ist nur bei Hochfrequenz-Transformatoren notwendig, um den Widerstand zu senken.",
+              "Er sorgt für eine konstante Permeabilitätszahl von exakt 1.",
+              "Er verhindert die Phasenverschiebung zwischen Spannung und Magnetfeld vollständig."
+            ],
+            "correctIndex": 0,
+            "explanation": "Ein Eisenkern erhöht die magnetische Flussdichte drastisch (hohes mü-r), was bei tiefen Frequenzen notwendig ist. Ein Nachteil ist jedoch, dass dieses mü-r nicht konstant ist, sondern vom Betriebszustand abhängt."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778513800713,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist die Hauptaufgabe eines Transformators?",
+            "back": "Einen Wechselspannungswert zu vergrößern oder zu verkleinern, wobei nur geringe Leistungsverluste auftreten."
+          },
+          {
+            "front": "Welches Bauteil wird genutzt, um Primär- und Sekundärseite elektrisch zu trennen?",
+            "back": "Der Transformator (galvanische Trennung)."
+          },
+          {
+            "front": "Wovon hängt die magnetische Flussdichte B im Inneren der Primärspule ab?",
+            "back": "Von der Permeabilitätszahl (μr), der magnetischen Feldkonstante (μ0), dem Primärstrom (J) und der Windungszahl (N) pro Länge (L)."
+          },
+          {
+            "front": "Was ist eine 'eingeprägte Spannung'?",
+            "back": "Eine Spannung, die annähernd konstant bleibt, unabhängig vom angeschlossenen Lastwiderstand (z.B. Netzspannung oder Labornetzteil)."
+          },
+          {
+            "front": "Was ist eine 'eingeprägte Stromquelle'?",
+            "back": "Ein Gerät, das einen konstanten Strom liefert, unabhängig vom Lastwiderstand. Der Kurzschluss ist hier der Grundzustand."
+          },
+          {
+            "front": "Warum kann man Gleichstrom nicht direkt mit einem Transformator übertragen?",
+            "back": "Da sich ein Gleichstrommagnetfeld nicht zeitlich ändert, wird in der Sekundärspule keine Spannung induziert (Induktionsgesetz: es wird eine Änderung des magnetischen Flusses benötigt)."
+          },
+          {
+            "front": "Welche Rolle spielt die Lenzsche Regel bei Transformatoren?",
+            "back": "Sie besagt, dass die Induktionsspannung der Ursache ihrer Entstehung entgegenwirkt, was die Primärspule wie ein konservatives Element wirken lässt."
+          },
+          {
+            "front": "Wie verhalten sich Spannung und magnetische Flussdichte (B) bei einem sinusförmigen Signal?",
+            "back": "Sie sind um 90° phasenverschoben. Wenn die Spannung sinusförmig ist, ist der Verlauf von B cosinusförmig."
+          },
+          {
+            "front": "Welchen Vorteil bietet ein Eisenkern im Transformator?",
+            "back": "Er erhöht die Permeabilitätszahl (μr) massiv, was bei tiefen Frequenzen für eine hohe induzierte Spannung notwendig ist."
+          },
+          {
+            "front": "Wann verzichtet man bei Transformatoren auf einen Eisenkern?",
+            "back": "Bei Transformatoren für sehr hohe Frequenzen, da der Eisenkern dort Nachteile bietet und μr in Luft (bzw. ohne Eisen) ausreicht."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-fahrrad-werkstatt_2",
+      "slides": [
+        {
+          "title": "Lektion 3: Transformatoren im Alltag",
+          "bullets": [
+            "Grundlagen der Spannungs- und Stromwandlung.",
+            "Vom Eisenkern bis zur galvanischen Trennung.",
+            "Anwendungsorientiertes Wissen für moderne Technik."
+          ],
+          "notes": "Willkommen zur Lektion über Transformatoren. Wir untersuchen heute, wie diese Bauteile unsere Spannung im Alltag transformieren.",
+          "page_range": "2-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Funktionsweise: Primär- und Sekundärseite",
+          "bullets": [
+            "Primärspule wandelt Strom in Magnetfeld.",
+            "Magnetisches Wechselfeld induziert Spannung sekundär.",
+            "Lenzsche Regel als stabilisierender Faktor.",
+            "Eingeprägte Spannung vs. eingeprägter Strom."
+          ],
+          "notes": "Das Herzstück bildet die elektromagnetische Induktion. Über die Primärspule bauen wir ein Feld auf, das die Sekundärspannung erzeugt.",
+          "page_range": "5-9",
+          "image_prompt": ""
+        },
+        {
+          "title": "Die Dreieckspannung als Basis",
+          "bullets": [
+            "Leichteres Verständnis physikalischer Zusammenhänge.",
+            "Unterscheidung nach induktivem Widerstand.",
+            "Differenzierverhalten bei eingeprägtem Strom.",
+            "Sekundär resultierende Rechteckspannung bei Dreieck-Eingang."
+          ],
+          "notes": "Testsignale wie Dreieckspannungen helfen uns, das Übertragungsverhalten der Induktivität mathematisch klarer zu durchschauen.",
+          "page_range": "10-15",
+          "image_prompt": ""
+        },
+        {
+          "title": "Rechteckspannung in Schaltnetzteilen",
+          "bullets": [
+            "Hoher Wirkungsgrad durch minimalen Schalterverlust.",
+            "Sättigungseffekte im Kern bei Einschaltdauer beachten.",
+            "Sperrwandler-Prinzip: Energiezwischenspeicherung im Kern.",
+            "Schlagartige Entladung in die Sekundärlast."
+          ],
+          "notes": "In modernen Netzteilen nutzen wir Rechtecksignale. Hier ist das Timings-Design entscheidend, um Kernsättigung zuverlässig zu vermeiden.",
+          "page_range": "16-21",
+          "image_prompt": ""
+        },
+        {
+          "title": "Sinusspannung und Eisenkern",
+          "bullets": [
+            "Stabiles Gleichgewicht durch Gegenspannung (Lenz).",
+            "Proportionale Stromaufnahme bei Laständerung.",
+            "Eisenkern notwendig bei tiefen Frequenzen.",
+            "Vermeidung des massiven Gewichts ohne Kern."
+          ],
+          "notes": "Bei der klassischen Sinusspannung reguliert sich der Trafo durch das dynamische Gleichgewicht. Der Kern spart uns dabei enorme Mengen an Wicklungsmaterial.",
+          "page_range": "22-26",
+          "image_prompt": ""
+        },
+        {
+          "title": "Widerstandstransformation",
+          "bullets": [
+            "Anpassung unterschiedlicher Impedanzen durch Windungswahl.",
+            "Quadratisches Verhältnis der Widerstandsanpassung (S. 32).",
+            "Beispiel: Optimale Ansteuerung von Mikrofonen.",
+            "Zusatzvorteil: Effektive galvanische Trennung."
+          ],
+          "notes": "Zum Abschluss sehen wir, wie Transformatoren Impedanzen angleichen, etwa um Signale verlustfrei oder leistungsoptimal zu übertragen.",
+          "page_range": "30-33, 35",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 3 — Transformatoren - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778513800612,
+      "pdfName": "Transformatoren"
+    }
+  ],
+  "sourceHash": "abf4b684f9bc2e24"
+}

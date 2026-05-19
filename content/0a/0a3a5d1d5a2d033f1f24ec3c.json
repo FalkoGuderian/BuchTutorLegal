@@ -1,0 +1,530 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Web Fullstack: JavaScript, PHP, Databases - Lesson 4: MySQL",
+    "pdfName": "MySQL",
+    "createdAt": 1778787203588,
+    "exportedAt": "2026-05-14T19:33:23.588Z",
+    "meta": {
+      "courseId": "course-en-web-fullstack",
+      "lessonIndex": 3,
+      "courseTitle": "Web Fullstack: JavaScript, PHP, Databases",
+      "lessonObjective": "Server-side scripting plus database integration.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-mysql",
+            "title": "MySQL",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/MySQL"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_7a9e3b12f95c",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "8-11",
+          "chapterTitle": "Introduction",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "12-19",
+          "chapterTitle": "Practical Guide",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "20-27",
+          "chapterTitle": "Databases manipulation",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "28-32",
+          "chapterTitle": "Browsing the databases",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "34-36",
+          "chapterTitle": "Specifying table names and Definitions",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "38-40",
+          "chapterTitle": "User Variables and Aliases",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "41-44",
+          "chapterTitle": "Data Types and Table manipulation",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "45-60",
+          "chapterTitle": "Data manipulation and Queries",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "61-76",
+          "chapterTitle": "NULL, Operators and Import/Export",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "77-182",
+          "chapterTitle": "Functions, Stored Programs and Admin",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778787203588,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Based on the provided document, here is a concise summary of the key concepts for working with MySQL:\n\n### **1. Getting Started with MySQL**\n*   **Installation:** MySQL is often deployed as part of a bundle (e.g., LAMP/XAMP) containing Apache and PHP. On Linux, the standard approach involves using the shell to install `mysql-server` and `mysql-client` (p. 13).\n*   **Security:** After installation, run `mysql_secure_installation` to set a root password and remove insecure defaults (p. 13).\n*   **Account Management:** Use `CREATE DATABASE` to create a new database and `GRANT ALL ON name.* TO 'user'@'localhost' IDENTIFIED BY 'password';` to set up user privileges (p. 14).\n\n### **2. Core Database Operations**\n*   **Data Structures:** Data is stored in tables consisting of rows and columns.\n*   **Defining Tables:** Use `CREATE TABLE` to define structures. Columns require a data type (e.g., `int` for integers, `varchar` for strings) and constraints (e.g., `not null`, `auto_increment`). \n*   **Primary Keys:** A unique identifier (typically an `auto_increment` integer) is recommended for every table to prevent duplication (p. 15).\n*   **Commands:**\n    *   `USE [database_name];` switches the current database (p. 14).\n    *   `DESCRIBE [table_name];` displays table properties (p. 16).\n    *   `INSERT INTO [table] (...) VALUES (...);` adds records to the table (p. 16).\n    *   `SELECT * FROM [table];` retrieves stored data (p. 16).\n\n### **3. Managing Data and Files**\n*   **Input Streams:** Because manual entry is inefficient for large datasets, you can save SQL commands in a `.sql` file and execute them to seed your database (p. 16).\n*   **Interface Tools:** Tools like **phpMyAdmin** are available for managing databases via a web interface (p. 3).\n*   **Environment:** MySQL supports a wide range of functionality, including user variables, complex Joins, Subqueries, Stored Programs (Triggers/Events), and Spatial Databases for location-based data (p. 4-5).\n\n### **4. Forks and Alternatives**\n*   **MariaDB:** A community-driven fork created by MySQL’s founder to improve stability, performance, and contribution speed after Oracle's acquisition (p. 9).\n*   **Other Forks:** Specialized versions include **Drizzle** (modular for multi-CPU systems), **OurDelta** (optimized for specific Linux distributions), and **Percona Server** (enhanced for performance) (p. 10).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787203588,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-web-fullstack_3\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 4: MySQL - Presentation</span><span class=\"pm-chat-count\">9 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lesson 4: MySQL</div><ul class=\"pm-chat-slide-bullets\"><li>Introduction to Structured Query Language (SQL)</li><li>Essential concepts for database integration</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778787203589,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of SQL and MySQL\n\n**Introduction to SQL**\nSQL (Structured Query Language) is a third-generation language designed for relational databases. Developed from the relational model proposed by Dr. E. F. Ted Codd in 1970, it was standardized as SQL-92 by ANSI in 1992 (p. 3).\n\n**Why Choose MySQL?**\nMySQL remains one of the most popular database systems due to several key factors:\n*   **Cost and License:** It is free and open-source under a dual-licensing scheme (GPLv2 and commercial options) (p. 3-4).\n*   **Performance:** Known for high speed, scalability, and efficiency with both small and massive datasets (p. 3).\n*   **Compatibility:** It supports most ANSI SQL commands and offers high portability with other systems like Excel (p. 3).\n*   **Management:** Includes robust features for permission control and requires less training due to ease of use (p. 3).\n\n**MySQL Forks and Derivatives**\nDue to the open nature of MySQL and changes in ownership (Sun Microsystems and subsequently Oracle), several forks have emerged:\n\n*   **MariaDB:** Initiated by MySQL founder Monty Widenius, it focuses on enhanced stability, code refinement, new storage engines (such as Aria and XtraDB), and community-driven features (p. 4).\n*   **Drizzle:** A modular, stripped-down fork optimized for modern multi-core, 64-bit systems, focusing on essential functionality through plugins (p. 5).\n*   **OurDelta:** Maintained by Open Query, this project provides pre-packaged builds for specific Linux distributions containing community-developed patches (p. 5).\n*   **Percona Server:** Focused on performance optimizations and the inclusion of the XtraDB storage engine (p. 5).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787203598,
+      "channel": "plan_pipe_7a9e3b12f95c",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 8,
+        "end": 11
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This guide outlines the practical implementation and management of MySQL databases. The key topics covered from pages [S.12] through [S.19] are summarized below:\n\n**Installation and Configuration**\nFor local development, \"all-in-one\" bundles are recommended. Linux users typically utilize LAMP or XAMP, while Windows users employ XAMP, WAMP, or EasyPHP. On Windows 10, issues related to IIS port conflicts (port 80/888) or missing DLL files may require manual service management or custom startup scripts. For direct Terminal use on Linux/Ubuntu, packages such as mysql-server and mysql-client are installed via apt-get, followed by running $mysql\\_secure\\_installation$ to harden security.\n\n**Database and User Management**\nUsers interact with MySQL via command-line tools. After logging in as root, new databases are created using $CREATE DATABASE databaseName;$. To grant access, the $GRANT$ command assigns all rights to a specific user on a database, restricted by a password. Once inside a specific database, the $USE$ command or the $\\u$ shortcut selects the working environment.\n\n**Table Operations**\nTables store data in columns and rows. When creating a table (e.g., $CREATE TABLE tableName (columns);$), developers must define data types such as $int$ for integers and $varchar$ for character strings. The primary key (e.g., $peopleID$) should be defined with $auto\\_increment$ to ensure unique identity. Data is populated using $INSERT INTO tableName (columns) VALUES (data);$. For bulk data entry, SQL scripts saved in $.sql$ files can be imported directly from the shell using the input redirection operator: $mysql -u user -p database < file.sql$.\n\n**Data Manipulation and Backup**\nUsers filter query results using $SELECT$ statements combined with conditions like $WHERE$, including operators such as $=, <>, >, <, >=, <=$ and the $LIKE$ operator for pattern matching. To remove a table, the command $DROP TABLE tableName;$ is used. \n\nFor backing up databases, $mysqldump$ is a standard tool, executed via $mysqldump -u user -p database > backupfile.sql$. However, for production environments with large datasets, the guide notes that binary-based solutions like LVM snapshots or XtraBackup are preferred over $mysqldump$ to avoid long downtime and locking issues. Finally, interfaces like phpMyAdmin provide a graphical alternative for generating SQL code.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787203599,
+      "channel": "plan_pipe_7a9e3b12f95c",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 12,
+        "end": 19
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document provides an overview of database manipulation within MySQL, covering essential management operations and integration with external tools (pp. 15-22).\n\n### Database Management\n*   Creation and Deletion: Databases are created using `CREATE DATABASE database;` and removed using `DROP DATABASE database;`. Both operations require appropriate privileges (p. 15).\n*   Renaming: There is no native `RENAME` command that avoids potential data loss. Recommended practice involves exporting the database with `mysqldump`, creating a new database, importing the data, and dropping the original (pp. 15-16).\n*   Copying and Restoration: Direct copying is performed by piping `mysqldump` output into `mysql`. Restoration is executed via `mysql -h localhost -u root database_name < file.sql`, which supports large files efficiently (pp. 16-17).\n\n### Migration and Modeling\n*   Modeling Tools: Historically, DB Designer 4 was used but often requires manual configuration of shared libraries to connect to modern MySQL servers. MySQL Workbench is the designated successor project (p. 18).\n*   ODBC Connectivity: Connecting external applications like OpenOffice Base to a remote MySQL server requires the `mysql-connector-odbc` and `unixODBC` packages. Configuration involves defining a Data Source Name (DSN) in `/etc/odbc.ini` or `~/.odbc.ini` (pp. 19-21).\n\n### Automation and Requirements\n*   Backups: Database automation can be managed via Linux cron jobs. For instance, a daily backup at midnight can be automated using:\n    $0\\ 0\\ *\\ *\\ *\\ /usr/local/bin/mysqldump\\ -uLOGIN\\ -PPORT\\ -hHOST\\ -pPASS\\ base1\\ |\\ gzip\\ -c\\ >\\ \\`date\\ “+\\\\%Y-\\\\%m-\\\\%d”\\`.gz$ (p. 16).\n*   Java Dependencies: Certain wizards in OpenOffice Base (forms, reports, queries, and tables) require a Java Runtime Environment (JRE) to function correctly (p. 21).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787203600,
+      "channel": "plan_pipe_7a9e3b12f95c",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 20,
+        "end": 27
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers methods for browsing and retrieving metadata from MySQL databases.\n\n### The INFORMATION_SCHEMA\nThe $information\\_schema$ is a virtual database containing server and database metadata. While $SHOW$ commands are faster for simple tasks, $information\\_schema$ offers more flexibility for complex queries. You cannot modify the structure or data of this schema.\n\n### Browsing Databases\n* To list all databases, use $SHOW DATABASES;$ (or $SCHEMAS$).\n* You can filter results using the $LIKE$ operator for patterns or the $WHERE$ clause for more complex conditions.\n* Access depends on your server privileges and configuration (e.g., the --skip-all-databases option).\n\n### Browsing Tables and Views\n* Display tables with $SHOW TABLES$ or $SHOW TABLES FROM `database`;$.\n* Use $SHOW FULL TABLES$ to include a $Table\\_type$ column, which identifies if an entry is a 'BASE TABLE', 'VIEW', or 'SYSTEM VIEW'.\n* $SHOW OPEN TABLES$ displays non-temporary, open tables currently in the cache.\n\n### Browsing Fields (Columns)\nTo inspect column details, you can use several synonymous commands:\n* $DESCRIBE `table`;$ (shortcut: $DESC$)\n* $EXPLAIN `table`;$\n* $SHOW FIELDS FROM `table`;$\n* $SHOW COLUMNS FROM `table`;$\n* Adding the $FULL$ keyword provides additional metadata such as collation, privileges, and comments. You can filter these commands using $LIKE$ or $WHERE$ clauses.\n\n### Listing Indexes\nUse $SHOW INDEX FROM `table`;$ (or $KEYS$) to list index information. The provided output includes details like $Key\\_name$, $Column\\_name$, and $Index\\_type$. Note that creating redundant indexes can negatively impact performance. Indexes are removed using $DROP INDEX$.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787203601,
+      "channel": "plan_pipe_7a9e3b12f95c",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 28,
+        "end": 32
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of MySQL Identifiers and SQL Language Categories\n\n**Specifying Table Names (p. 34)**\n*   **Backquotes:** MySQL allows the use of backquotes (`) to enclose identifiers like table or field names. While often optional, this practice provides clearer error messages and allows the use of reserved words or illegal characters as names.\n*   **Portability:** While the SQL standard recommends double quotes (\"), the author suggests avoiding quotes entirely if portability across different SQL systems is a priority.\n\n**SQL Language Definitions (p. 36)**\nSQL commands are categorized based on their functional purpose:\n\n*   **Data Definition Language (DDL):** Involves `CREATE`, `ALTER`, and `DROP` commands. It focuses on metadata by defining or modifying the logical structures of the database (e.g., tables, keys, views).\n*   **Data Manipulation Language (DML):** Involves `INSERT`, `UPDATE`, and `DELETE` commands. It is used to interact directly with the stored data.\n*   **Data Query Language (DQL):** Involves `SELECT`, `SHOW`, and `HELP`. This category is primary for retrieving data or inspecting database metadata.\n*   **Data Control Language (DCL):** Involves `GRANT` and `REVOKE`. These commands manage security and user permissions within the database.\n*   **Data Transaction Language (DTL):** Involves `START TRANSACTION`, `SAVEPOINT`, `COMMIT`, and `ROLLBACK`. These manage atomic operations to ensure that groups of instructions either succeed together or fail, maintaining data integrity.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787203602,
+      "channel": "plan_pipe_7a9e3b12f95c",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 34,
+        "end": 36
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers sections 7 and 8 regarding variables and aliases in MySQL.\n\n### 1. Variables\nMySQL utilizes three types of variables to store data:\n\n**Local Variables**\nThese variables are limited to the scope where they are defined, such as within a function or stored procedure, and cannot be accessed externally (p. 38). They are declared using the DECLARE statement (p. 38).\n\n**Session (User) Variables**\nThese variables last for the duration of a database thread. They are assigned using the assignment operator ($:=$) or the SET statement (p. 38).\n* Key characteristics: They can be set in a SELECT statement but cannot be used as conditions in a WHERE clause (p. 38).\n* Usage: They are particularly useful for command-line tasks (p. 38).\n\n**Global Variables**\nThese variables are visible to all users and affect configuration settings. Modifications can be designated as temporary or permanent using the SET SESSION or SET GLOBAL keywords, respectively (p. 39). \n* Example: $$SET @@global.max\\_connections = 1000;$$ (p. 39).\n\n### 2. Aliases\nAliases provide a way to rename columns, expressions, or tables to simplify queries or improve readability (p. 40).\n* Columns and Expressions: Use the AS keyword (or omit it) to define an alias. These can be referenced in ORDER BY, GROUP BY, and HAVING clauses, but they should not be used in the WHERE clause (p. 40).\n* Table Aliasing: Tables can be renamed for easier identification, which is particularly essential when performing self-joins (p. 40).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787203603,
+      "channel": "plan_pipe_7a9e3b12f95c",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 38,
+        "end": 40
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the provided documentation regarding MySQL data types.\n\n### String Data Types\n* **VARCHAR(n)**: Stores variable-length strings up to 65,535 characters. Storage equals the actual data length plus 1 or 2 bytes for length metadata. It is space-efficient compared to CHAR(n), which uses fixed-length storage but offers roughly 20% faster search performance when indexed (p. 42).\n* **TEXT and BLOB**: Used for large data up to 65,535 characters. These are stored outside the main table data file, which improves performance for standard records but slows down operations involving the text/blob fields directly (p. 42).\n\n### Numeric Data Types\n* **Integer**: The display width (n) does not affect storage capacity. Signed integers support negative values. If a number exceeds standard limits, use BIGINT. Booleans are represented using tinyint(1) (p. 42-43).\n* **DECIMAL(n,m)**: Defines total digits (n) and the number of digits reserved for the fractional part (m). For example, DECIMAL(4,2) stores values up to 99.99 (p. 43).\n\n### Date and Time Types\n* **DATE**: Stores only 'YYYY-MM-DD' (p. 43).\n* **DATETIME**: Stores both date and time (p. 43).\n* **TIMESTAMP**: Similar to DATETIME but limited to the range 1970–2037 (p. 43).\n* **TIME**: Stores time of day or time intervals in $HH:MM:SS$ format, ranging from $-838:59:59$ to $838:59:59$ (p. 43).\n* **YEAR**: Stores only the year number (p. 43).\n\n*Note: When manipulating dates, the full date must be specified, as MySQL does not automatically default to the current date (p. 43).*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787203604,
+      "channel": "plan_pipe_7a9e3b12f95c",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 41,
+        "end": 44
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Based on the document provided, here is a summary of the contents covering pages 45 through 60:\n\n**Data Manipulation (p. 45–48)**\nThis section outlines the core commands used to manage data within tables:\n* INSERT: Used for adding new rows of data.\n* UPDATE: Modifies existing records within a table.\n* REPLACE: Functions as a method to swap or overwrite existing data.\n* IGNORE: Used to bypass specific errors during data operations.\n* DELETE and TRUNCATE: These commands are used to remove data from tables, with DELETE allowing for specific conditional removal and TRUNCATE typically resetting a table.\n\n**Queries (p. 49–60)**\nThe document details how to retrieve and interact with data using the SQL language:\n* SELECT: The primary command for data retrieval. It covers specifying columns and rows, and using various filters.\n* Joins: Describes methods for combining rows from two or more tables based on related columns.\n* Subqueries: Explains the use of nested queries, where a query is embedded within another SQL statement.\n* Usage of NULL: Provided on pages 61-62, this area establishes the foundational logic for handling missing or unknown data values during query operations.\n\n**Mathematical Concepts in Queries**\nWhen performing calculations within these data operations, standard arithmetic operators are applied as follows:\nAddition: $a + b$\nSubtraction: $a - b$\nMultiplication: $a * b$\nDivision: $a / b$",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787203605,
+      "channel": "plan_pipe_7a9e3b12f95c",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 45,
+        "end": 60
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided document covers several core functional aspects of MySQL management between pages 61 and 76. Below is a concise summary of these topics:\n\nDealing with NULL (pp. 61-62)\nNULL represents a missing or unknown value. Understanding how to handle NULL is critical because it behaves differently than empty strings or zero values. The text notes that specific logic is required when querying or filtering data that may contain these entries.\n\nOperators (pp. 65-73)\nMySQL provides a comprehensive suite of operators to manipulate and evaluate data:\n* Comparison: Used to test relationships between values (e.g., equality, greater than, less than).\n* Logical: Allows the combination of multiple conditions using operators like AND, OR, and NOT.\n* Arithmetic: Performs mathematical calculations (addition, subtraction, multiplication, division).\n* Text: Specialized tools for handling and concatenating strings.\n* Bitwise: Manipulates individual bits within integer values.\n* Conditions and Assignment: These determine flow control and value assignment within queries and statements.\n* Precedence: Defines the order in which these operators are evaluated during the execution of an expression ($A + B * C$ follows standard mathematical precedence).\n\nImport and Export (pp. 75-76)\nData exchange is facilitated through import and export utilities. These allow users to move data into or out of a MySQL database, typically using formats compatible with other systems. Users must be aware of content specifications to ensure data integrity during these transitions.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787203606,
+      "channel": "plan_pipe_7a9e3b12f95c",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 61,
+        "end": 76
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the provided content from page 77 to the end of the text.\n\n**Functions and Computation**\nThe text details SQL functions (p. 77), categorizing them into general functions, date and time handling, and aggregate functions. It also explains the syntax requirements for invoking these functions (p. 77).\n\n**Stored Programs and Automation**\nA significant portion is dedicated to programmatic database features (p. 85), including:\n- Triggers: Automated actions that respond to specific database events (p. 85).\n- Events: Scheduled database tasks (p. 88).\n- Stored Routines: Reusable blocks of SQL code (p. 94).\n- Procedural extensions: Additions to standard SQL to handle complex operations (p. 95).\n\n**Specialized Database Features**\n- Spatial Databases: Concepts and requests related to handling spatial data (p. 99).\n- Pivot Tables: Methods for reorganizing and summarizing data sets (p. 105).\n- Storage Engines: Definitions of different table types and engines, including methods for viewing metadata and altering the engine associated with a table (p. 111).\n\n**Resources and Licensing**\nThe document concludes with supporting technical materials:\n- Exercises: Practical examples to reinforce learning of SELECT queries (p. 101).\n- Contributors: A list of individuals who contributed to the document (p. 167).\n- Figures: References and license information for figures used throughout the work (p. 171).\n- Licensing: Full details on the GPL, LGPL, and GFDL licenses applicable to the work (p. 175).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778787203607,
+      "channel": "plan_pipe_7a9e3b12f95c",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 77,
+        "end": 182
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778787203688,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why does the text mention that the term 'commercial' is misleading when applied to the MySQL license?",
+            "options": [
+              "Because the GNU GPL license can be used in commercial projects, provided they are not proprietary.",
+              "Because MySQL is entirely free and has no commercial options available whatsoever.",
+              "Because the term 'commercial' actually refers to the software's speed rather than its cost.",
+              "Because Oracle does not actually sell licenses for MySQL."
+            ],
+            "correctIndex": 0,
+            "explanation": "The text notes that calling the paid license 'commercial' is misleading because the GNU GPL can also be used in commercial projects, as long as they are not proprietary."
+          },
+          {
+            "question": "What is the primary motivation mentioned for the creation of the MariaDB fork?",
+            "options": [
+              "To discontinue support for the Aria storage engine.",
+              "To restrict the database usage to only proprietary systems.",
+              "A desire to increase speed and stability while incorporating community contributions.",
+              "To ensure that only Oracle-approved code is included in the project."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text states that MariaDB was created to improve stability, clean up code, improve performance, and add more features/community contributions due to concerns about the development process after the Oracle acquisition."
+          },
+          {
+            "question": "How does the Drizzle fork differ in its design philosophy compared to standard MySQL?",
+            "options": [
+              "It focuses on adding as many new features as possible to the core.",
+              "It is designed to only run on 32-bit legacy hardware.",
+              "It removes non-essential features, making the architecture modular through plugins.",
+              "It is intended to replace all proprietary database systems globally."
+            ],
+            "correctIndex": 2,
+            "explanation": "Drizzle is described as having removed non-essential features from the core code, adopting a modular approach where features are implemented as plugins and optimized for multi-CPU/64-bit machines."
+          },
+          {
+            "question": "Which of the following describes the purpose of the 'FLOSS Exception' associated with the MySQL license?",
+            "options": [
+              "It forces all applications connecting to MySQL to be released under the GPL.",
+              "It ensures that MySQL cannot be used with the PHP programming language.",
+              "It allows non-GPL'd but free applications to connect to a MySQL server.",
+              "It grants users the right to sell MySQL as their own software without modification."
+            ],
+            "correctIndex": 2,
+            "explanation": "The FLOSS Exception allows non-GPL'd but free (FLOSS) applications to connect to a MySQL server without the requirement of being licensed under the GPL themselves."
+          },
+          {
+            "question": "In the context of the 'Practical Guide', why might a user on Windows 10 need to change the Apache port (e.g., from 80 to 888)?",
+            "options": [
+              "Because the MySQL server is already using port 80 by default.",
+              "Because the Windows IIS server is launched by default and occupies port 80.",
+              "Because port 80 is reserved exclusively for the 7-zip extraction tool.",
+              "Because the LaTeX typesetting software prevents port 80 from being used."
+            ],
+            "correctIndex": 1,
+            "explanation": "The guide notes that on Windows 10, the IIS server is launched by default, which conflicts with Apache on port 80, necessitating a port change."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778787203689,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What does the acronym SQL stand for?",
+            "back": "Structured Query Language."
+          },
+          {
+            "front": "What role did Dr. E. F. Ted Codd play in database history?",
+            "back": "He described the relational model for databases in 1970 while working for IBM."
+          },
+          {
+            "front": "What is the primary license under which MySQL is released?",
+            "back": "The GNU General Public License (GPL), version 2."
+          },
+          {
+            "front": "What is the 'FLOSS Exception' in MySQL licensing?",
+            "back": "It allows non-GPL'd but Free applications (like PHP) to connect to a MySQL server without requiring the application itself to be released under the GPL."
+          },
+          {
+            "front": "Who created the MySQL fork MariaDB and why?",
+            "back": "Monty Widenius (MySQL's founder) created it in 2009 to prioritize community contributions, code stability, and improved performance features after Oracle acquired MySQL."
+          },
+          {
+            "front": "What is the primary design focus of the Drizzle fork of MySQL?",
+            "back": "It is a modular, high-performance fork optimized for multi-CPU and multi-core 64-bit systems, with a focus on stripped-down, essential features implemented as plugins."
+          },
+          {
+            "front": "What is the primary purpose of the Percona Server fork?",
+            "back": "It focuses on improving performance and includes the XtraDB storage engine, a fork of InnoDB."
+          },
+          {
+            "front": "What are common 'all-in-one' software stacks used to install MySQL?",
+            "back": "Linux: LAMP or XAMP. Windows: XAMP, WAMP, or EasyPHP."
+          },
+          {
+            "front": "What is the purpose of the 'dual-licensing' scheme for MySQL?",
+            "back": "It allows the software to be free for GPL projects while requiring a paid, commercial license for companies wanting to integrate MySQL into proprietary applications without following GPL constraints."
+          },
+          {
+            "front": "What are some key advantages of using MySQL?",
+            "back": "It is free, fast, supports most ANSI SQL standards, is portable (import/export), is highly scalable, and features robust user permission controls."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-web-fullstack_3",
+      "slides": [
+        {
+          "title": "Lesson 4: MySQL",
+          "bullets": [
+            "Introduction to Structured Query Language (SQL)",
+            "Essential concepts for database integration"
+          ],
+          "notes": "This lesson covers the fundamentals of MySQL, from installation to data manipulation. We will explore why MySQL is a leading choice for database management.",
+          "page_range": "8-11",
+          "image_prompt": ""
+        },
+        {
+          "title": "Why MySQL?",
+          "bullets": [
+            "Open-source and cost-effective",
+            "High speed and scalability",
+            "Robust support and community resources",
+            "ANSI SQL compatibility for portability"
+          ],
+          "notes": "MySQL is favored for its performance, ease of use, and scalability across small and large-scale applications.",
+          "page_range": "8",
+          "image_prompt": ""
+        },
+        {
+          "title": "MySQL Forks and Ecosystem",
+          "bullets": [
+            "MariaDB: Focused on stability and community features",
+            "Drizzle: Modular, optimized for multi-core systems",
+            "Percona Server: Performance-optimized storage engines",
+            "Community-driven development sustains innovation"
+          ],
+          "notes": "The open-source nature of MySQL has led to several notable forks, each tailoring functionality for specific performance or architectural needs.",
+          "page_range": "9-10",
+          "image_prompt": ""
+        },
+        {
+          "title": "Installation and Setup",
+          "bullets": [
+            "Utilize all-in-one stacks like XAMP or LAMP",
+            "Secure installation via mysql_secure_installation",
+            "Access via command line as root",
+            "Create databases and dedicated user accounts"
+          ],
+          "notes": "Setting up MySQL correctly is crucial. We prioritize using comprehensive bundles for easier configuration and immediate security hardening.",
+          "page_range": "12-14",
+          "image_prompt": ""
+        },
+        {
+          "title": "Database Manipulation",
+          "bullets": [
+            "Standard commands: CREATE, DROP, RENAME",
+            "Data backup using mysqldump",
+            "Automated backups via crontab (p. 21)",
+            "Tools for migration and data modeling"
+          ],
+          "notes": "Managing the lifecycle of a database involves more than creation; it requires systematic maintenance, backup, and the use of modeling tools.",
+          "page_range": "20-23",
+          "image_prompt": ""
+        },
+        {
+          "title": "Browsing Databases",
+          "bullets": [
+            "INFORMATION_SCHEMA for database metadata",
+            "Use SHOW commands to list objects",
+            "Filter queries with LIKE and WHERE",
+            "DESCRIBE to view table structure and fields"
+          ],
+          "notes": "Effective browsing allows you to inspect server state and metadata, which is essential for debugging and schema exploration.",
+          "page_range": "28-32",
+          "image_prompt": ""
+        },
+        {
+          "title": "SQL Categories",
+          "bullets": [
+            "DDL: Defines schema (CREATE, ALTER, DROP)",
+            "DML: Manages data (INSERT, UPDATE, DELETE)",
+            "DQL: Queries metadata and data (SELECT, SHOW)",
+            "DCL & DTL: Controls security and transactions"
+          ],
+          "notes": "Understanding the taxonomy of SQL commands helps in organizing your interactions with the database systematically.",
+          "page_range": "36",
+          "image_prompt": ""
+        },
+        {
+          "title": "User Variables and Aliases",
+          "bullets": [
+            "Session variables store data for the thread",
+            "Global variables influence server configuration",
+            "Aliases simplify complex query readability",
+            "Backquotes map identifiers for clarity"
+          ],
+          "notes": "Variables and aliases enhance the flexibility of queries, particularly when performing complex calculations or self-joins.",
+          "page_range": "38-40",
+          "image_prompt": ""
+        },
+        {
+          "title": "Data Types",
+          "bullets": [
+            "Strings: VARCHAR vs CHAR efficiency",
+            "Large data: TEXT and BLOB storage cost",
+            "Numbers: Integer types and decimal precision",
+            "Temporal: DATE, TIME, and TIMESTAMP formats"
+          ],
+          "notes": "Choosing the correct data type is foundational for storage optimization, search speed, and the accuracy of your application logic.",
+          "page_range": "42-43",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 4: MySQL - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778787203588,
+      "pdfName": "MySQL"
+    }
+  ],
+  "sourceHash": "f460544b7a141ccd"
+}

@@ -1,0 +1,433 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Mathematik-Aufbau — Komplexe Zahlen, Funktionentheorie, Lineare Algebra - Lektion 1 — Imaginäre und komplexe Zahlen",
+    "pdfName": "Imaginäre und komplexe Zahlen",
+    "createdAt": 1778576693272,
+    "exportedAt": "2026-05-12T09:04:53.273Z",
+    "meta": {
+      "courseId": "course-de-mathematik-aufbau",
+      "lessonIndex": 0,
+      "courseTitle": "Mathematik-Aufbau — Komplexe Zahlen, Funktionentheorie, Lineare Algebra",
+      "lessonObjective": "Eulersche Identität, Polarform, Anwendungen.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-imagin-re-und-komplexe-zahlen",
+            "title": "Imaginäre und komplexe Zahlen",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Imagin%C3%A4re_und_komplexe_Zahlen"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_2189c3668016",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Grundlagen der reellen und imaginären Zahlen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Definition und Eigenschaften komplexer Zahlen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-6",
+          "chapterTitle": "Lösung quadratischer Gleichungen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "7-8",
+          "chapterTitle": "Darstellung in der komplexen Zahlenebene",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "9-10",
+          "chapterTitle": "Rechnen mit komplexen Zahlen: Summe, Differenz und Produkt",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "11-12",
+          "chapterTitle": "Potenzen und der binomische Lehrsatz",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "13-15",
+          "chapterTitle": "Wurzeln aus komplexen Zahlen",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576693272,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung zur Einführung in die imaginären und komplexen Zahlen basierend auf den bereitgestellten Unterlagen:\n\n### 1. Erweiterung des Zahlbereichs\n*   **Motivation:** Die Menge der reellen Zahlen ist zwar ein geordneter Körper, aber \"unvollständig\" in Bezug auf Gleichungen wie $x^2 = -1$ (S. 2).\n*   **Imaginäre Einheit:** Einführung von $i$, definiert durch $i^2 = -1$. Damit lassen sich rein quadratische Gleichungen lösen (S. 2).\n*   **Komplexe Zahlen:** Jede komplexe Zahl hat die Form $z = a + bi$ ($a, b \\in \\mathbb{R}$), wobei $a$ der Realteil und $b$ der Imaginärteil ist (S. 3, S. 6).\n\n### 2. Darstellungsformen\nKomplexe Zahlen lassen sich in der komplexen Zahlenebene auf drei Arten darstellen (S. 7, S. 8):\n1.  **Arithmetische Form:** $z = a + bi$\n2.  **Goniometrische/Trigonometrische Form:** $z = r(\\cos \\varphi + i \\sin \\varphi)$\n3.  **Exponentialform:** $z = r \\cdot e^{i\\varphi}$ (basierend auf der Eulerschen Formel, S. 8)\n\n*   **Betrag und Phase:** $r$ (Betrag) entspricht der Zeigerlänge, $\\varphi$ (Argument/Phase) dem Winkel zur reellen Achse (S. 7).\n\n### 3. Rechenregeln\n*   **Grundrechenarten:** Addition und Subtraktion erfolgen komponentenweise (wie bei Vektoren) (S. 9).\n*   **Multiplikation & Division:** \n    *   In arithmetischer Form: Behandlung von $i$ wie eine Variable, wobei $i^2 = -1$ substituiert wird (S. 2).\n    *   In Polarform: Beträge werden multipliziert/dividiert, Argumente werden addiert/subtrahiert (S. 10).\n*   **Konjugiert-komplexe Zahl:** $\\bar{z} = a - bi$. Das Produkt $z \\cdot \\bar{z} = a^2 + b^2$ ist stets eine reelle, nicht-negative Zahl, was die Division durch komplexe Zahlen ermöglicht (S. 3).\n\n### 4. Potenzierung und Wurzeln\n*   **Moivresche Formeln:** Sie verbinden Potenzen mit trigonometrischen Funktionen (S. 12).\n*   **n-te Wurzeln:** Eine komplexe Zahl besitzt $n$ verschiedene $n$-te Wurzeln. Geometrisch betrachtet bilden diese Punkte in der komplexen Zahlenebene die Ecken eines regelmäßigen $n$-Ecks auf einem Kreis um den Nullpunkt (S. 13, S. 14).\n*   **Fundamentalsatz der Algebra:** Jedes Polynom über den komplexen Zahlen zerfällt in Linearfaktoren; der Körper ist somit algebraisch abgeschlossen (S. 7).\n\n### 5. Anwendungshinweis\nFür Berechnungen mit beliebigen reellen Exponenten bei komplexen Zahlen gilt Vorsicht: Die herkömmlichen Potenzgesetze sind in dieser allgemeinen Form nicht mehr uneingeschränkt anwendbar (S. 15).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778576693272,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-mathematik-aufbau_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 1 — Imaginäre und komplexe Zahlen - Präsentation</span><span class=\"pm-chat-count\">6 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Einführung in die komplexen Zahlen</div><ul class=\"pm-chat-slide-bullets\"><li>Reelle Zahlen bilden ein lückenloses, geordnetes System auf einer Geraden.</li><li>Quadratische Gleichungen wie x² = -1 sind im Reellen unlösbar.</li><li>Die imaginäre Einheit i (i² = -1) erweitert den Zahlenbereich sinnvoll.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778576693273,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der bereitgestellten Abschnitte:\n\nDie reellen Zahlen bilden ein System, das rationale Zahlen (als Brüche darstellbar) und irrationale Zahlen umfasst. Sie bilden einen geordneten Zahlenkörper, in dem jeder Punkt auf der Zahlengeraden genau einer reellen Zahl entspricht (S. 1, S. 2). Dennoch ist das System insofern unvollständig, als Gleichungen wie $x^2 = -1$ innerhalb der reellen Zahlen keine Lösung besitzen (S. 2).\n\nUm dieses Problem zu lösen, wird die imaginäre Einheit $i$ eingeführt, für die $i^2 = -1$ gilt (S. 2). Durch die Erweiterung der reellen Zahlen um $i$ entstehen die komplexen Zahlen, die sich in der allgemeinen Form $a + bi$ darstellen lassen, wobei $a, b \\in \\mathbb{R}$ sind (S. 2). Mit diesen Zahlen kann unter Anwendung der bekannten Rechengesetze operiert werden, indem $i^2$ konsequent durch $-1$ ersetzt wird (S. 2).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576693282,
+      "channel": "plan_pipe_2189c3668016",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung der bereitgestellten Abschnitte:\n\n**Mathematische Grundlage der komplexen Zahlen**\nKomplexe Zahlen werden formell als Paare reeller Zahlen $(a, b)$ eingeführt, wobei die Multiplikation durch die Regel $(a, b) \\cdot (c, d) = (ac - bd, ad + bc)$ definiert ist (S. 3). Diese Struktur bildet einen bewerteten Körper, in dem die üblichen Rechengesetze (Kommutativ-, Assoziativ- und Distributivgesetz) gelten (S. 3). Da Quadrate in den komplexen Zahlen nicht zwingend nicht-negativ sind, existiert dort keine mit den Rechenoperationen verträgliche Kleiner-als-Relation (S. 3).\n\n**Struktur und Darstellung**\nDie komplexen Zahlen lassen sich in einen Realteil und einen Imaginärteil unterteilen (S. 3). Durch eine senkrechte Anordnung der reellen und der imaginären Zahlengerade entsteht die komplexe Zahlenebene (S. 4). Die zu einer komplexen Zahl $z$ konjugiert-komplexe Zahl $\\bar{z}$ ermöglicht es, Divisionen durchzuführen, indem der Bruch mit $\\bar{z}$ erweitert wird, da das Produkt $z \\cdot \\bar{z}$ stets reell und positiv ist (S. 3).\n\n**Rechnen mit imaginären Zahlen**\nImaginäre Zahlen entstehen als Produkte reeller Zahlen mit der Einheit $i$ (S. 3). Dies erlaubt die Lösung rein quadratischer Gleichungen der Form $x^2 = -a$ (mit $a$ reell) über die Formel $x = \\pm i\\sqrt{a}$ (S. 4). Bei der Multiplikation und Division rein imaginärer Zahlen sind die Identitäten $i^2 = -1$ sowie $\\frac{1}{i} = -i$ grundlegend (S. 4). Die Addition und Subtraktion folgen dabei den gewohnten algebraischen Regeln (S. 4).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576693283,
+      "channel": "plan_pipe_2189c3668016",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung der Inhalte aus den Seiten 5 und 6:\n\nGrundlagen zu imaginären und komplexen Zahlen\n\nWirkungsweise imaginärer Zahlen: Das Produkt sowie der Quotient zweier imaginärer Zahlen ergeben reelle Zahlen (S. 5). Die Potenzen der imaginären Einheit $i$ folgen einem wiederkehrenden Muster für positive und negative ganzzahlige Exponenten (S. 5).\n\nDefinition komplexer Zahlen: Komplexe Zahlen entstehen als Summe aus einem reellen und einem imaginären Teil. Die allgemeine Form lautet $z = a + bi$, wobei $a$ und $b$ reelle Zahlen sind (S. 6).\n\nAnwendung bei quadratischen Gleichungen: Durch die Erweiterung auf komplexe Zahlen können gemischt quadratische Gleichungen uneingeschränkt gelöst werden (S. 6). Bei einer negativen Diskriminante ($p^2 - 4q < 0$) entstehen Lösungen in der Form $a \\pm \\text{bi}$ (S. 6). Diese Lösungen werden als \"konjugiert komplex\" bezeichnet, da sie sich lediglich im Vorzeichen ihres imaginären Anteils unterscheiden (S. 6). Für reelle Lösungen bei quadratischen Gleichungen gelten die bekannten Bedingungen bezüglich der Diskriminante (S. 6).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576693284,
+      "channel": "plan_pipe_2189c3668016",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der Abschnitte auf den Seiten 7 und 8:\n\n**Der Körper der komplexen Zahlen**\nDas Problem der Lösung quadratischer Gleichungen bei reellen Koeffizienten ist durch die komplexen Zahlen gelöst. Gemäß dem Fundamentalsatz der Algebra zerfällt jedes Polynom über den komplexen Zahlen in Linearfaktoren, wodurch der Körper der komplexen Zahlen algebrisch-abgeschlossen ist. Eine Erweiterung zu einem noch größeren Zahlkörper nach dem bisherigen Prinzip ist daher nicht möglich (S. 7).\n\n**Darstellungsmöglichkeiten komplexer Zahlen**\nKomplexe Zahlen $z = a + bi$ können in der komplexen Zahlenebene entweder als Punkt $P(a, b)$ oder als Zeiger vom Ursprung zum Punkt $P$ dargestellt werden (S. 7). Es existieren drei wesentliche Darstellungsformen:\n\n1. Arithmetische Form: $z = a + bi$ (S. 8).\n2. Goniometrische (trigonometrische) Form: Mithilfe des Betrages $r$ und des Arguments $\\varphi$ kann die Zahl beschrieben werden als $z = r(\\cos\\varphi + i\\sin\\varphi)$. Der Hauptwert des Arguments $\\varphi$ ergibt sich aus $\\tan\\varphi = \\frac{b}{a}$, wobei alle weiteren Werte durch Addition von $k \\cdot 2\\pi$ erreicht werden können (S. 7-8).\n3. Exponentialform: Unter Verwendung der Eulerschen Formel lässt sich die Zahl als $z = re^{i\\varphi}$ schreiben (S. 8).\n\nDa der Beweis der Eulerschen Formel erst zu einem späteren Zeitpunkt erfolgt, wird die Exponentialform in diesem Kontext nicht für Beweise verwendet (S. 8).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576693285,
+      "channel": "plan_pipe_2189c3668016",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 7,
+        "end": 8
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts (S. 9-10):\n\n**1. Addition und Subtraktion**\nDie Summe und Differenz komplexer Zahlen erfolgt analog zur algebraischen Behandlung der Variable $i$, wobei sich die Ergebnisse wie bei der Addition und Subtraktion von Vektoren verhalten (S. 9).\n\n**2. Multiplikation und Division**\nDie Multiplikation in kartesischen Koordinaten hat keine unmittelbare anschauliche Bedeutung. In Polarkoordinaten hingegen gilt für das Produkt komplexer Zahlen: Der Betrag des Produkts ist das Produkt der Beträge, und das Argument des Produkts ist die Summe der Argumente (S. 9-10). Dieser Grundsatz lässt sich auf mehr als zwei Faktoren übertragen (S. 10). Analog dazu ergibt sich für die Division, dass die Beträge dividiert und die Argumente subtrahiert werden (S. 10).\n\n**3. Kehrwert und Potenzen**\nFür den Kehrwert einer komplexen Zahl gilt:\n$$\\frac{1}{z} = \\frac{1}{|z|} \\cdot (\\cos(-\\varphi) + i \\sin(-\\varphi))$$\nDies führt speziell für $z = i$ zu einem entsprechenden Ergebnis (S. 10). \nPotenzen einer komplexen Zahl werden für positive ganzzahlige Werte von $n$ als Produkt aus $n$ gleichen Faktoren definiert (S. 10).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576693286,
+      "channel": "plan_pipe_2189c3668016",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 9,
+        "end": 10
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die zusammenfassende Übersicht basierend auf den Seiten 11 und 12:\n\nDer Text behandelt die Anwendung mathematischer Sätze auf komplexe Zahlen:\n\nPotenzen und binomischer Lehrsatz\nFür aufeinanderfolgende Potenzen komplexer Zahlen gelten die bekannten Potenzgesetze, welche auch für negative ganzzahlige Exponenten gültig sind (S. 11). Zudem lässt sich der binomische Lehrsatz für positive ganzzahlige Exponenten direkt auf komplexe Zahlen übertragen (S. 11).\n\nDie Moivreschen Formeln\nDurch den Vergleich der Anwendung des binomischen Lehrsatzes mit der Potenzdarstellung komplexer Zahlen lassen sich die Moivreschen Formeln herleiten (S. 12). Diese setzen die Real- und Imaginärteile in Beziehung:\n$\\cos(n\\phi) = \\sum_{k=0, 2, ...} \\binom{n}{k} (-1)^{\\frac{k}{2}} \\cos^{n-k}(\\phi) \\sin^k(\\phi)$\n$\\sin(n\\phi) = \\sum_{k=1, 3, ...} \\binom{n}{k} (-1)^{\\frac{k-1}{2}} \\cos^{n-k}(\\phi) \\sin^k(\\phi)$\n(S. 12).\n\nWurzeln aus komplexen Zahlen\nDie Lösungen der Gleichung $w^n = z$ werden als die $n$-ten Wurzeln der komplexen Zahl $z$ bezeichnet (S. 12). Ein konkreter Lösungsansatz erfolgt hierbei über die Definition von $z$ durch dessen Betrag und Argument (S. 12).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576693287,
+      "channel": "plan_pipe_2189c3668016",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 11,
+        "end": 12
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine Zusammenfassung der Kernaussagen aus den Seiten 13 bis 15:\n\n**Berechnung der n-ten Wurzeln komplexer Zahlen**\nDa das Argument $\\phi$ einer komplexen Zahl periodisch mit $2\\pi$ ist, ergeben sich bei der Division durch $n$ genau $n$ verschiedene Werte für eine $n$-te Wurzel. Die Formel hierfür lautet:\n$\\psi_k = \\frac{\\phi + 2k\\pi}{n}$ für $k = 0, 1, \\dots, n-1$ (S. 13).\nDiese $n$ Werte werden als $\\sqrt[n]{z}$ bezeichnet. Geometrisch betrachtet bilden die zugehörigen Punkte in der komplexen Zahlenebene stets die Ecken eines regulären $n$-Ecks, welches auf einem Kreis um den Nullpunkt liegt (S. 14).\n\n**Potenzen mit rationalen Exponenten**\nPotenzen mit rationalen Exponenten $\\frac{m}{n}$ werden definiert, indem man die bekannten Regeln der reellen Zahlen auf komplexe Zahlen überträgt (S. 14).\n\n**Potenzen mit reellen Exponenten**\nFür eine von Null verschiedene komplexe Zahl $z$ (mit $z = r \\cdot e^{i\\phi}$) und einen beliebigen reellen Exponenten $\\nu$ werden die Potenzen $z^\\nu$ wie folgt definiert:\n$z^\\nu = r^\\nu \\cdot e^{i\\nu(\\phi + 2k\\pi)}$ (S. 15).\n\n**Wichtiger Hinweis zu den Rechenregeln**\nEs ist zu beachten, dass für die allgemein definierten Potenzen komplexer Zahlen die üblichen Grundregeln der Potenzrechnung im Allgemeinen keine Gültigkeit mehr besitzen (S. 15).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778576693288,
+      "channel": "plan_pipe_2189c3668016",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 13,
+        "end": 15
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576693372,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Warum wird das System der reellen Zahlen in der Lektion als 'unvollständig' bezeichnet?",
+            "options": [
+              "Weil es keine negativen Zahlen enthält.",
+              "Weil manche quadratische Gleichungen, wie x² = -1, innerhalb der reellen Zahlen keine Lösung besitzen.",
+              "Weil es keine Verbindung zwischen rationalen und irrationalen Zahlen herstellt.",
+              "Weil die Grundrechenarten nur eingeschränkt ausführbar sind."
+            ],
+            "correctIndex": 1,
+            "explanation": "Das System der reellen Zahlen ist insofern unvollständig, als es für bestimmte einfache quadratische Gleichungen wie x² = -1 keine Lösung im Bereich der reellen Zahlen gibt."
+          },
+          {
+            "question": "Welche Eigenschaft besitzen komplexe Zahlen im direkten Vergleich zu reellen Zahlen hinsichtlich ihrer Ordnung?",
+            "options": [
+              "Sie lassen sich, wie die reellen Zahlen, mit einer mit Addition und Multiplikation verträglichen Kleiner-als-Relation ordnen.",
+              "Sie können nur in einer Dimension geordnet werden.",
+              "Es gibt keine mit Addition und Multiplikation verträgliche Kleiner-als-Relation auf den komplexen Zahlen.",
+              "Sie sind nur im Bereich der imaginären Zahlen geordnet."
+            ],
+            "correctIndex": 2,
+            "explanation": "Im Gegensatz zu den reellen Zahlen gibt es bei den komplexen Zahlen keine mit den Körperoperationen verträgliche Kleiner-als-Relation, da sonst jedes Quadrat als nicht-negativ definiert sein müsste."
+          },
+          {
+            "question": "Was geschieht bei der Multiplikation zweier komplexer Zahlen mit ihren Beträgen und Argumenten (Phasen), wenn man die Polarform verwendet?",
+            "options": [
+              "Die Beträge werden multipliziert und die Argumente werden addiert.",
+              "Beide, Beträge und Argumente, werden miteinander multipliziert.",
+              "Die Beträge werden addiert und die Argumente bleiben gleich.",
+              "Die Beträge bleiben unverändert und die Argumente werden multipliziert."
+            ],
+            "correctIndex": 0,
+            "explanation": "Bei der Multiplikation in der Polarform multipliziert man die Beträge (r1 * r2) und addiert die Phasenwinkel (φ1 + φ2)."
+          },
+          {
+            "question": "Was besagt der 'Fundamentalsatz der Algebra' in Bezug auf komplexe Zahlen?",
+            "options": [
+              "Jedes komplexe Polynom hat immer mindestens eine reelle Nullstelle.",
+              "Jedes Polynom über den komplexen Zahlen lässt sich vollständig in Linearfaktoren zerlegen.",
+              "Komplexe Zahlen können nicht zur Lösung von Polynomen verwendet werden.",
+              "Der Körper der komplexen Zahlen ist nicht abgeschlossen."
+            ],
+            "correctIndex": 1,
+            "explanation": "Der Fundamentalsatz der Algebra stellt sicher, dass jedes Polynom über dem Körper der komplexen Zahlen in Linearfaktoren zerfällt, was bedeutet, dass der Körper algebraisch abgeschlossen ist."
+          },
+          {
+            "question": "Wie liegen die n-ten Wurzeln einer komplexen Zahl z in der komplexen Zahlenebene grafisch verteilt?",
+            "options": [
+              "Sie liegen alle auf der reellen Achse.",
+              "Sie bilden eine zufällige Punktwolke um den Nullpunkt.",
+              "Sie liegen auf einem Kreis um 0 und bilden die Ecken eines regulären n-Ecks.",
+              "Sie verteilen sich linear vom Nullpunkt nach außen."
+            ],
+            "correctIndex": 2,
+            "explanation": "Die n-ten Wurzeln einer komplexen Zahl haben alle denselben Betrag und sind symmetrisch auf einem Kreis mit Radius r^(1/n) angeordnet, wodurch sie die Eckpunkte eines regulären n-Ecks bilden."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778576693373,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist die imaginäre Einheit i?",
+            "back": "Die imaginäre Einheit i ist eine Zahl, deren Quadrat gleich -1 ist (i² = -1)."
+          },
+          {
+            "front": "Wie ist die allgemeine Form einer komplexen Zahl?",
+            "back": "Die allgemeine (arithmetische) Form lautet z = a + bi, wobei a der Realteil und b der Imaginärteil ist (a, b sind reelle Zahlen)."
+          },
+          {
+            "front": "Was versteht man unter einer konjugiert-komplexen Zahl?",
+            "back": "Die konjugiert-komplexe Zahl zu z = a + bi ist definiert als ẑ = a - bi. Sie unterscheidet sich von z nur durch das Vorzeichen des Imaginärteils."
+          },
+          {
+            "front": "Welche drei Darstellungsformen gibt es für komplexe Zahlen?",
+            "back": "1. Arithmetische Form (a + bi), 2. Goniometrische/Trigonometrische Form (r(cos φ + i sin φ)), 3. Exponentialform (r * e^(iφ))."
+          },
+          {
+            "front": "Was bedeuten r und φ in der komplexen Zahlenebene?",
+            "back": "r ist der Betrag der komplexen Zahl (Abstand zum Ursprung) und φ ist das Argument bzw. die Phase (der Winkel zur reellen Achse)."
+          },
+          {
+            "front": "Wie addiert oder subtrahiert man komplexe Zahlen graphisch?",
+            "back": "Komplexe Zahlen werden in der komplexen Zahlenebene wie Vektoren addiert und subtrahiert."
+          },
+          {
+            "front": "Wie verändert sich Multiplikation bei komplexen Zahlen in Polarform?",
+            "back": "Beim Multiplizieren werden die Beträge (r) multipliziert und die Argumente (φ) addiert."
+          },
+          {
+            "front": "Was besagt der Fundamentalsatz der Algebra hinsichtlich komplexer Zahlen?",
+            "back": "Jedes Polynom über den komplexen Zahlen zerfällt in Linearfaktoren; der Körper der komplexen Zahlen ist algebraisch abgeschlossen."
+          },
+          {
+            "front": "Was sind die Moivreschen Formeln?",
+            "back": "Sie beschreiben die Potenzen komplexer Zahlen: (cos φ + i sin φ)^n = cos(nφ) + i sin(nφ)."
+          },
+          {
+            "front": "Wo liegen die n-ten Wurzeln einer komplexen Zahl z in der Zahlenebene?",
+            "back": "Die n Wurzeln liegen alle auf einem Kreis um den Ursprung mit dem Radius ⁿ√r und bilden die Ecken eines regulären n-Ecks."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-mathematik-aufbau_0",
+      "slides": [
+        {
+          "title": "Einführung in die komplexen Zahlen",
+          "bullets": [
+            "Reelle Zahlen bilden ein lückenloses, geordnetes System auf einer Geraden.",
+            "Quadratische Gleichungen wie x² = -1 sind im Reellen unlösbar.",
+            "Die imaginäre Einheit i (i² = -1) erweitert den Zahlenbereich sinnvoll.",
+            "Komplexe Zahlen entstehen als Summe: a + bi."
+          ],
+          "notes": "Wir starten bei den vertrauten reellen Zahlen und entdecken die Notwendigkeit einer Erweiterung, um mathematische Lücken, wie die negative Wurzel, zu schließen.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Struktur und Rechenregeln",
+          "bullets": [
+            "Komplexe Zahlen bilden einen algebraisch konsistenten, bewerteten Körper.",
+            "Addition und Subtraktion erfolgen komponentenweise für Real- und Imaginärteil.",
+            "Keine natürliche Anordnung (Kleiner-als-Relation) wie bei reellen Zahlen möglich.",
+            "Die konjugiert-komplexe Zahl z* dient als wichtiges Werkzeug zur Division."
+          ],
+          "notes": "Die Einführung erfolgt über Zahlenpaare, um Widerspruchsfreiheit zu garantieren. Wir sehen, dass komplexe Zahlen zwar wie gewohnt addiert, aber anders bewertet werden.",
+          "page_range": "3-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Lösung quadratischer Gleichungen",
+          "bullets": [
+            "Gemischt quadratische Gleichungen werden durch quadratische Ergänzung lösbar.",
+            "Lösungen treten oft als konjugiert-komplexe Paare auf.",
+            "Der Fundamentalsatz der Algebra garantiert die Zerlegbarkeit jedes Polynoms.",
+            "Der Körper der komplexen Zahlen ist somit algebraisch abgeschlossen."
+          ],
+          "notes": "Keine Gleichung bleibt mehr ungelöst: Komplexe Zahlen bilden den Endpunkt der Erweiterung, da jedes Polynom hier in Linearfaktoren zerfällt.",
+          "page_range": "5-7",
+          "image_prompt": ""
+        },
+        {
+          "title": "Darstellung in der Zahlenebene",
+          "bullets": [
+            "Punkte in der Ebene (a, b) repräsentieren komplexe Zahlen.",
+            "Darstellung via Betrag r und Phase φ (Polarkoordinaten).",
+            "Arithmetische Form: z = a + bi.",
+            "Etablierung der Exponentialform (Eulersche Formel) als dritte Darstellungsweise."
+          ],
+          "notes": "Die visuelle Ebene ist der Schlüssel zum Verständnis. Wir verbinden algebraische Ausdrücke mit geometrischen Vektoren und Winkeln.",
+          "page_range": "7-8",
+          "image_prompt": ""
+        },
+        {
+          "title": "Multiplikation und Polarform",
+          "bullets": [
+            "Produktbildung: Beträge multiplizieren sich, Phasen addieren sich.",
+            "Division erfolgt analog durch Subtraktion der Phasen.",
+            "Exponentialdarstellung vereinfacht komplexe Berechnungen massiv.",
+            "Kehrwerte lassen sich elegant über Phasen und Beträge definieren."
+          ],
+          "notes": "Hier wird die Stärke der Polarform spürbar: Statt komplizierter Klammerrechnung nutzen wir einfache Addition der Winkel.",
+          "page_range": "9-10",
+          "image_prompt": ""
+        },
+        {
+          "title": "Potenzen und Wurzeln",
+          "bullets": [
+            "Binomischer Lehrsatz gilt auch im Komplexen vollumfänglich.",
+            "Moivresche Formeln erlauben effiziente Potenzierung und Wurzelziehung.",
+            "n-te Wurzeln bilden ein reguläres n-Eck in der Zahlenebene.",
+            "Einführung rationaler und irrationaler Exponenten erweitert den Anwendungsbereich."
+          ],
+          "notes": "Zum Abschluss sehen wir, wie Potenzen und Wurzeln geometrische Muster in der Ebene erzeugen, was das Potenzieren komplexer Zahlen ästhetisch und mathematisch greifbar macht.",
+          "page_range": "11-15",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 1 — Imaginäre und komplexe Zahlen - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576693272,
+      "pdfName": "Imaginäre und komplexe Zahlen"
+    }
+  ],
+  "sourceHash": "8f2fe6b5191cfca9"
+}

@@ -1,0 +1,389 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Game and Graphics Programming - Lesson 3 — NES Programming",
+    "pdfName": "NES Programming",
+    "createdAt": 1778572755468,
+    "exportedAt": "2026-05-12T07:59:15.468Z",
+    "meta": {
+      "courseId": "course-en-game-and-graphics-programming",
+      "lessonIndex": 2,
+      "courseTitle": "Game and Graphics Programming",
+      "lessonObjective": "Retro 6502 game development.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-nes-programming",
+            "title": "NES Programming",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/NES_Programming"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_78cfa0b5c9f1",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-1",
+          "chapterTitle": "NES Hardware Specifications",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-2",
+          "chapterTitle": "NES Memory Map",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-3",
+          "chapterTitle": "PPU Video Control",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-4",
+          "chapterTitle": "Sound Channels and I/O Registers",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-5",
+          "chapterTitle": "Joysticks and Development Resources",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778572755468,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Lesson Summary: NES Architecture and Programming\n\nThis lesson provides an introduction to the hardware specifications and memory structure of the Nintendo Entertainment System (NES), essential for developing retro-style games using the 6502 assembly language.\n\n#### **1. Core Hardware Specifications**\n*   **CPU:** Ricoh 2A03 (a version of the MOS 6502).\n*   **Video (PPU):** Ricoh 2C02 with a resolution of 256x240 pixels. It supports 4 background palettes and 4 sprite palettes, rendering tiles (8x8) and sprites (8x8 or 8x16).\n*   **Sound:** Features 5 channels: 2 Pulse waves, 1 Triangle wave, 1 Noise channel, and 1 DPCM channel.\n\n#### **2. Memory Map**\nThe NES utilizes a specific memory layout:\n*   **Internal RAM:** Allocated to Zero Page ($0000–$00FF), Stack memory ($0100–$01FF), and general RAM ($0200–$07FF).\n*   **Mirroring:** Addresses from $0800 to $1FFF mirror the internal RAM/Stack/Zero Page.\n*   **Storage & I/O:** Includes I/O registers ($2000–$2007, $4000–$401F), Expansion ROM ($4020–$5FFF), Save RAM ($6000–$7FFF), and PRG-ROM ($8000–$FFFF).\n*   **Interrupt Vectors:** The final bytes of memory ($FFFA–$FFFF) store addresses for NMI, Reset, and Break handler routines.\n\n#### **3. Input/Output (I/O) Control**\n*   **PPU Registers ($2000–$2007):** Used to control video settings, scrolling, and sprite/memory addressing.\n*   **Sound Registers ($4000–$4015):** Controls volume, wave patterns, frequencies, and channel enabling.\n*   **Joysticks ($4016–$4017):** Dedicated ports for controller input.\n\n#### **4. Development Resources**\nFor further study, the documents recommend:\n*   **NesDev (nesdev.com):** A hub for technical documentation and community tools.\n*   **P65 Assembler:** A Perl-based tool useful for 6502 architecture development.\n\n***\n\n**References:** [S.1], [S.2], [S.3], [S.4], [S.5]",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572755468,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-game-and-graphics-programming_2\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 3 — NES Programming - Presentation</span><span class=\"pm-chat-count\">6 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">NES Programming Fundamentals</div><ul class=\"pm-chat-slide-bullets\"><li>Introduction to 6502-based retro game development.</li><li>Overview of Ricoh 2A03 CPU and system specs.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778572755469,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Nintendo Entertainment System (NES) Hardware\n\nThe NES is powered by the Ricoh 2A03 CPU, which is custom-configured based on the MOS 6502 architecture with the decimal mode removed. It operates at different clock speeds depending on the region:\n\n*   **NTSC:** $1.789773 \\text{ MHz}$\n*   **PAL:** $1.773447 \\text{ MHz}$\n\n**Memory and Display**\nThe system includes $2 \\text{ KB}$ of internal memory and utilizes the Ricoh 2C02 Picture Processing Unit (PPU). Key visual specifications include:\n*   **Resolution:** A base resolution of $256 \\times 240$ pixels, though only $256 \\times 224$ pixels are visible in NTSC mode.\n*   **Color Palette:** A fixed set of 52 colors.\n*   **Graphics Handling:** Backgrounds are composed of $8 \\times 8$ pixel tiles. The system supports up to 64 sprites (either $8 \\times 8$ or $8 \\times 16$ pixels), with a hardware constraint of 8 sprites per scan-line.\n\n**Audio Capabilities**\nThe sound hardware features five distinct channels:\n*   2 Pulse wave channels\n*   1 Triangle wave channel\n*   1 Noise channel\n*   1 DPCM channel",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572755478,
+      "channel": "plan_pipe_78cfa0b5c9f1",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 1
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### NES Memory Map Summary\n\nThe memory architecture of the NES is organized into specific ranges, each serving dedicated functions for system operation, storage, and communication.\n\n**Primary Memory Regions**\n*   **Zero Page ($0000–$00FF):** Optimized memory providing faster access speeds for read and write operations.\n*   **Stack Memory ($0100–$01FF):** Reserved space for stack operations.\n*   **General RAM ($0200–$07FF):** Standard system RAM consisting of 1536 bytes.\n*   **Mirrored Memory ($0800–$1FFF):** Multiple ranges that mirror the primary Zero Page, Stack, and RAM regions.\n*   **Save RAM ($6000–$7FFF):** 8192 bytes of SRAM used for persistent data storage between sessions.\n*   **PRG-ROM ($8000–$FFFF):** The largest block of memory (32768 bytes), containing the game program code.\n\n**Input/Output and Expansion**\n*   **I/O Registers:** Located at $2000–$2007 and $4000–$401F, used for interfacing with hardware. The former is echoed multiple times throughout the $2008–$3FFF range.\n*   **Expansion ROM ($4020–$5FFF):** Reserved for custom hardware features, specifically used by the MMC5 mapper to enhance VRAM capabilities.\n\n**Interrupt Vectors**\nThe final bytes of the addressable space are reserved for critical system handler addresses:\n*   NMI Handler: $FFFA–$FFFB\n*   Power-on Reset Handler: $FFFC–$FFFD\n*   Break (BRK) Handler: $FFFE–$FFFF",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572755479,
+      "channel": "plan_pipe_78cfa0b5c9f1",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section outlines the hardware input/output (I/O) memory map for the NES, specifically detailing addresses related to the Picture Processing Unit (PPU) and the Square Wave sound channels.\n\nThe PPU I/O ports reside in the address range $\\$2000-\\$2007$:\n\n$\\$2000$: Write-only PPU Control Register 1.\n$\\$2001$: Write-only PPU Control Register 2.\n$\\$2002$: Read-only PPU Status Register.\n$\\$2003$: Write-only Sprite Memory Address.\n$\\$2004$: Read/Write Sprite Memory Data.\n$\\$2005$: Write-only Background Scroll register.\n$\\$2006$: Write-only PPU Memory Address for indexing.\n$\\$2007$: Read/Write PPU Memory Data for data access.\n\nThe Square Wave 1 sound channel occupies addresses $\\$4000-\\$4003$:\n\n$\\$4000$: Controls volume, envelope decay, looping, and duty cycle.\n$\\$4001$: Configures the frequency sweep parameters.\n$\\$4002$: Defines the lower 8 bits of the wavelength.\n$\\$4003$: Defines the upper 3 bits of the wavelength and the length counter load.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572755480,
+      "channel": "plan_pipe_78cfa0b5c9f1",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines the memory-mapped register configuration for audio channels and direct memory access on the NES/Famicom system.\n\n**Audio Channel Registers**\n\n- **Triangle Channel ($4008–$400B):** Register 1 ($4008) controls the linear counter and length counter clock disable. Registers 3 and 4 operate similarly to Square Wave 1.\n- **Noise Channel ($400C–$400F):** Register 3 ($400E) manages the playback sample rate and random number generation type. Registers 1 and 4 match Square Wave 1.\n- **DMC Channel ($4010–$4013):** Register 1 ($4010) sets the sample rate. Register 2 ($4011) controls volume. Register 3 ($4012) determines the voice table start address at $N \\times 0x40 + 0xc000$. Register 4 ($4013) defines the voice table size as $N \\times 16 + 1$.\n\n**System Control and Access**\n\n- **Sprite Memory:** Register $4014$ is a write-only register dedicated to DMA access for sprite memory.\n- **Sound Enable:** Register $4015$ is a read/write register used to toggle individual sound channels on or off.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572755481,
+      "channel": "plan_pipe_78cfa0b5c9f1",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of NES Programming Resources\n\nThis section provides technical guidance for Super NES development, focusing on hardware interaction and external community resources.\n\n**Key Technical Details**\n* Memory addresses $4016 and $4017 are designated for reading and writing data to Joystick 1 and Joystick 2, respectively.\n\n**Recommended Development Resources**\n* **Community Support:** The #nesdev channel on the EFnet IRC server is the primary hub for developer discussions.\n* **Documentation and Tools:** NesDev (nesdev.com) serves as the central repository for technical documentation, software tools, and code examples.\n* **Assembly Programming:** The P65 Assembler, a Perl-based tool, is available for developing software specifically for the 6502 processor family used in the NES.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572755482,
+      "channel": "plan_pipe_78cfa0b5c9f1",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778572755568,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why is the use of the 'Zero Page' ($0000–$00FF) significant for a developer programming on the Ricoh 2A03 CPU?",
+            "options": [
+              "It is the only memory safe from being mirrored at higher addresses.",
+              "It allows for faster memory read/write access using special addressing modes.",
+              "It is the only area of memory that persists after the console is powered off.",
+              "It provides the necessary extra bandwidth for DPCM sound processing."
+            ],
+            "correctIndex": 1,
+            "explanation": "The Zero Page is optimized for faster access in the 6502 architecture, making it the most efficient location for frequently accessed variables."
+          },
+          {
+            "question": "If a developer wants to update the graphics on the screen, why must they use registers $2006 and $2007?",
+            "options": [
+              "Because the PPU cannot access main system RAM directly.",
+              "Because $2006 is used to set the memory address inside the PPU, and $2007 is used to actually transfer the data.",
+              "Because the system requires two-step verification for all video memory writes to prevent bugs.",
+              "Because $2005 is strictly reserved for sprite coordinates and cannot handle background tiles."
+            ],
+            "correctIndex": 1,
+            "explanation": "$2006 is the PPU address register used to point to a specific location in PPU memory, and $2007 is the data register through which the data is written to or read from that location."
+          },
+          {
+            "question": "The CPU memory map shows several address ranges marked as 'Mirror of $0000–$07FF'. What does this imply for the programmer?",
+            "options": [
+              "Writing to $0800 automatically updates the data at $0000.",
+              "The hardware has 8KB of dedicated RAM separate from the Zero Page.",
+              "The mirror addresses are faster than the original addresses and should be preferred.",
+              "The mirror addresses are read-only to prevent accidental data corruption."
+            ],
+            "correctIndex": 0,
+            "explanation": "Because these addresses map to the same physical memory, writing to the mirror addresses ($0800, etc.) changes the same bytes as writing to the original range ($0000-$07FF)."
+          },
+          {
+            "question": "You are designing a scene with many moving entities. Given the hardware limitations of the NES, what is the constraint on sprites?",
+            "options": [
+              "You can have 64 sprites active in total, but only 8 can be displayed on any single scan-line.",
+              "You are limited to exactly 8 sprites total on the entire screen at once.",
+              "Sprites must be 8x16 pixels; 8x8 pixels is not supported by the hardware.",
+              "Only 64 sprites can be displayed per scan-line, but there is no limit on total sprites."
+            ],
+            "correctIndex": 0,
+            "explanation": "The NES supports up to 64 sprites in memory, but the PPU is hardware-limited to displaying only 8 sprites per scan-line."
+          },
+          {
+            "question": "What is the primary function of the memory addresses $FFFA through $FFFF?",
+            "options": [
+              "These are general-purpose RAM addresses for storing game score data.",
+              "They act as the primary I/O ports for the two joystick controllers.",
+              "They store the entry point addresses for specific system vectors like NMI, Reset, and BRK handlers.",
+              "They are used to communicate directly with the Ricoh 2A03's audio registers."
+            ],
+            "correctIndex": 2,
+            "explanation": "These addresses (vectors) tell the CPU which memory locations to jump to when specific system events occur, such as a hardware reset or an interrupt."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778572755569,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the CPU of the NES and how does it differ from a standard MOS 6502?",
+            "back": "The NES uses a Ricoh 2A03 CPU, which is essentially a MOS 6502 processor with its decimal mode removed."
+          },
+          {
+            "front": "Which NES memory range provides faster read/write access?",
+            "back": "$0000–$00FF (Zero Page)."
+          },
+          {
+            "front": "What are the addresses for the NMI, Power-on Reset, and BRK interrupt handler routines?",
+            "back": "NMI: $FFFA–$FFFB; Power-on Reset: $FFFC–$FFFD; BRK: $FFFE–$FFFF."
+          },
+          {
+            "front": "What is the PPU resolution of the NES?",
+            "back": "256 x 240 pixels (only 256 x 224 pixels are visible on NTSC)."
+          },
+          {
+            "front": "How many sprites can the NES display per scan-line?",
+            "back": "8 sprites."
+          },
+          {
+            "front": "What are the sound channel components of the NES?",
+            "back": "2 pulse wave channels, 1 triangle wave channel, 1 noise channel, and 1 DPCM channel."
+          },
+          {
+            "front": "Which I/O register address is used for DMA access to sprite memory?",
+            "back": "$4014."
+          },
+          {
+            "front": "What memory range is dedicated to PRG-ROM?",
+            "back": "$8000–$FFFF."
+          },
+          {
+            "front": "Which I/O register address allows reading from the joystick?",
+            "back": "Joystick 1 is $4016 and Joystick 2 is $4017."
+          },
+          {
+            "front": "What is the purpose of the $2006 register?",
+            "back": "$2006 is a write-only PPU Memory Address register used for indexing into PPU memory locations."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-game-and-graphics-programming_2",
+      "slides": [
+        {
+          "title": "NES Programming Fundamentals",
+          "bullets": [
+            "Introduction to 6502-based retro game development.",
+            "Overview of Ricoh 2A03 CPU and system specs."
+          ],
+          "notes": "Welcome to our third lesson on NES programming. We will start by exploring the core hardware architecture that powers these classic games.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "NES Hardware Specifications",
+          "bullets": [
+            "Ricoh 2A03 CPU with disabled decimal mode.",
+            "2 KB internal RAM and custom PPU graphics.",
+            "Display resolution of 256x240 (NTSC 256x224).",
+            "Audio: 2 pulse, 1 triangle, 1 noise, 1 DPCM."
+          ],
+          "notes": "The Ricoh 2A03 is our engine, restricted to integer arithmetic. We also have a PPU for graphics and four distinct sound channels.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Memory Map Overview",
+          "bullets": [
+            "$0000–$01FF hosts Zero Page and Stack RAM.",
+            "Addresses $2000–$401F access I/O registers.",
+            "$8000–$FFFF allocates 32KB for PRG-ROM code.",
+            "Interrupt vectors reside at $FFFA–$FFFF."
+          ],
+          "notes": "Understanding the memory map is crucial, as mapping your code and data correctly determines how the CPU interacts with the PPU and inputs.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "PPU Video Control",
+          "bullets": [
+            "$2000–$2001 set PPU control and rendering modes.",
+            "$2002 monitors PPU status via read access.",
+            "$2005 manages background scrolling offsets.",
+            "$2006–$2007 facilitate PPU memory addressing and I/O."
+          ],
+          "notes": "The PPU is controlled through specific I/O registers. These allow you to push graphics data and manipulate the screen state.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Sound and Advanced I/O",
+          "bullets": [
+            "Square waves use registers $4000–$4007.",
+            "Triangle and Noise channels utilize $4008–$400F.",
+            "$4014 enables high-speed DMA sprite transfers.",
+            "$4016 and $4017 capture standard joystick inputs."
+          ],
+          "notes": "Beyond visuals, the register set handles audio synthesis and controller polling, enabling the interactive nature of NES games.",
+          "page_range": "4-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Development Resources",
+          "bullets": [
+            "NesDev.com provides essential technical documentation.",
+            "Join the #nesdev IRC community for support.",
+            "Utilize P65 for 6502 assembly compilation.",
+            "External tools bridge modern code to hardware."
+          ],
+          "notes": "Wrap up your learning by leveraging these community resources and specialized assemblers for your development workflow.",
+          "page_range": "5",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 3 — NES Programming - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778572755468,
+      "pdfName": "NES Programming"
+    }
+  ],
+  "sourceHash": "b45645e92dca5209"
+}

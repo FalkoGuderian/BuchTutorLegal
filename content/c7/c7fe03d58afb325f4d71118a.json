@@ -1,0 +1,323 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Distillation and Process Engineering - Lesson 1 — Distillation Science",
+    "pdfName": "Distillation Science (Coleman)",
+    "createdAt": 1778572726352,
+    "exportedAt": "2026-05-12T07:58:46.352Z",
+    "meta": {
+      "courseId": "course-en-distillation-process-engineering",
+      "lessonIndex": 0,
+      "courseTitle": "Distillation and Process Engineering",
+      "lessonObjective": "Distillation theory and practice.",
+      "licensing": {
+        "effective_license": "CC-BY-4.0",
+        "sources": [
+          {
+            "content_id": "local-newbooks-c6ee3597ce0cb900",
+            "title": "Distillation Science",
+            "source": "local-newbooks",
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "url": "local://newbooks/2026-05-13/Distillation and Process Engineering/Lesson 1 Distillation Science.pdf"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_6f9f66e38daa",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-1",
+          "chapterTitle": "Distillation Science Overview and Prerequisites",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-2",
+          "chapterTitle": "Vapor Pressure Equations and Fundamental Properties",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-3",
+          "chapterTitle": "Advanced Thermodynamic Analysis and Computational Methods",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778572726352,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: Distillation Science (Part I)\n\nThis article series provides a bridge between academic distillation theory and the technical requirements of industrial process design. It focuses on the practical application of separation science for non-ideal, real-world fluids, particularly in the production of high-purity chemicals.\n\n#### **Key Objectives & Scope**\n*   **Industrial Focus:** Unlike basic academic texts, this series emphasizes commercial application, including systems that deviate from ideal behavior (e.g., mildly polar or hydrogenated compounds).\n*   **Target Applications:** While chlorosilanes—critical for silicon-based electronics and solar photovoltaics—are used as primary examples, the principles apply broadly to refrigerants, pharmaceutical precursors, and other industrial fluids.\n*   **Technical Prerequisites:** Readers are expected to have a foundational understanding of distillation, thermodynamics (VLE, vapor pressure, latent heat), and collegiate-level calculus.\n\n#### **Methodological Framework**\nThe series uses **dimensionless reduced units** ($T_r, P_r, V_r$) to generalize fluid behavior, where $T/T_c$, $P/P_c$, and $V/V_c$ equal 1 at the critical point.\n\n#### **Overview of the Series Structure**\nThe ten-part series is organized into a logical design workflow:\n1.  **Vapor Pressure & Properties (Parts II–IV):** Evaluation of pure component data, critical properties, and a new thermodynamically consistent vapor pressure equation.\n2.  **Equations of State & Mixtures (Parts V–VII):** Selection of Equations of State (EOS), evaluation of fugacity coefficients, and the application of liquid activity coefficients for binary mixtures.\n3.  **Analysis & Implementation (Parts VIII–X):** Methodologies for data validation, systemic error minimization, practical \"all-together\" calculation, and numerical convergence strategies.\n\n#### **Key System Parameters (Notation)**\n*   **Absolute Units:** Temperature in °K, Pressure in atmospheres (atm), and Molar Volume in cc/g-mol.\n*   **Gas Constant ($R$):** 82.057 atm-cc/mole-°K.\n*   **Core Variables:** Includes items such as the acentric factor ($\\omega$), liquid activity coefficients ($\\gamma$), and fugacity coefficients ($\\phi$), which are essential for characterizing non-ideal fluid behavior in industrial columns (p. 1, 2, 3).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572726352,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-distillation-process-engineering_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 1 — Distillation Science - Presentation</span><span class=\"pm-chat-count\">4 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Distillation Science: Industrial Fundamentals</div><ul class=\"pm-chat-slide-bullets\"><li>Advanced theory for industrial distillation column design.</li><li>Bridging the gap between academic basics and non-ideal fluid applications.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778572726353,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This article serves as the first in a ten-part series focused on the industrial application of distillation science. Below is a summary of the key points:\n\n**Objective and Scope**\nThe series bridges the gap between academic theory and the practical design requirements of industrial distillation columns. It transitions from ideal behavior assumptions to managing real-world fluids, particularly those that are mildly polar or hydrogenated.\n\n**Prerequisites**\nThe content assumes the reader possesses foundational knowledge in:\n* Chemical Engineering basics, including vapor-liquid equilibria (VLE) for binary and multi-component systems.\n* Fundamental thermodynamic properties such as molar units, mole fractions, vapor pressure, latent heat of vaporization, and critical points. \n* Introductory calculus (differentiation and integration).\n\n**Industry Focus**\nWhile applicable to various sectors, the series frequently utilizes chlorosilanes—ranging from silane ($SiH_4$) to silicon tetrachloride ($SiCl_4$)—as primary case studies. These compounds are essential for the production of high-purity silicon used in solar photovoltaics and semiconductors. \n\n**Technical Goal**\nThe series aims to provide the necessary depth for commercial-scale applications, covering processes ranging from bulk separations to high-reflux purification capable of reaching parts-per-billion quality levels.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572726362,
+      "channel": "plan_pipe_6f9f66e38daa",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 1
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as an overview of a series of articles dedicated to the technical aspects of Distillation Science. It focuses on the thermodynamics and mathematical frameworks required for industrial chemical processing.\n\n**Core Concepts and Methodology**\nThe text introduces the use of dimensionless reduced units to standardize the discussion of fluids:\n*   Temperature: $T_r = T/T_c$\n*   Pressure: $P_r = P/P_c$\n*   Molar Volume: $V_r = V/V_c$\n\nWhen these variables reach a value of 1, the fluid is at its critical point. The text emphasizes that absolute units are required for calculations, noting that pressure must be converted to atmospheres.\n\n**Summary of Article Components**\nThe series is structured into ten distinct parts covering the following key areas:\n\n*   Fundamental Relations: Parts II, III, and IV establish the foundations of vapor pressure, covering existing equations, the role of critical properties and the acentric factor, and the introduction of a new, thermodynamically consistent vapor pressure equation.\n*   System Modeling: Parts V, VI, and VII detail Equations of State (EOS), fugacity coefficients for binary mixtures, and liquid activity coefficients, which are essential for practical distillation applications.\n*   Data and Validation: Part VIII outlines methodologies for data collection and minimizing systemic errors in reactive fluids.\n*   Practical Integration: The final two sections (Parts IX and X) offer strategies for integrating these components into practical applications and provide convergence strategies for solving complex, non-intrinsic equations.\n\nThis approach provides a robust framework for dealing with varied non-organic fluids, including refrigerants and chemical precursors, by bridging the gap between theoretical chemical engineering and industrial requirement.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572726363,
+      "channel": "plan_pipe_6f9f66e38daa",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section outlines the standard notation, units, and thermodynamic parameters used in chemical engineering calculations, specifically regarding phase behavior and property estimation.\n\n### Key Units and Constants\nAll calculations in this text adhere to the following unit system:\n- Temperature: $$^\\circ K$$\n- Pressure: Atmospheres (absolute)\n- Molar Volume: $$cc/g-mol$$\n- Gas Constant ($$R$$): $$82.057 \\text{ atm-cc/mole-}^\\circ K$$\n- Molecular Weight and compressibility ($$Z$$): Dimensionless\n\n### Thermodynamic Parameters\nThe text defines several critical variables used to describe the state and behavior of substances:\n- Critical Properties: Includes critical temperature ($$T_c$$), pressure ($$P_c$$), and volume ($$V_c$$).\n- Reduced Properties: Defined as ratios relative to critical values, such as reduced temperature ($$T_r = T / T_c$$) and reduced pressure ($$P_r = P / P_c$$).\n- Phase Change Metrics: Parameters such as the latent heat of vaporization ($$\\Delta H_{vb}$$) and the change in compressibility during vaporization ($$\\Delta Z_{vap}$$).\n- Empirical and Interaction Derivatives: Various coefficients are used to characterize molecular behavior, including the acentric factor ($$\\omega$$), the Riedel derivative ($$\\alpha$$), the H-bonding parameter ($$k$$), and binary interaction coefficients ($$k_{ij}$$).\n- Fugacity and Activity: The fugacity coefficient ($$\\phi$$) and liquid activity coefficient ($$$\\gamma$$) are used to account for non-ideal behavior in mixtures.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572726364,
+      "channel": "plan_pipe_6f9f66e38daa",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778572726452,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why does this series on distillation science adopt a different organization than a typical academic textbook?",
+            "options": [
+              "To focus on theoretical derivations rather than practical applications.",
+              "To mirror the workflow and organization used in industrial process design of distillation columns.",
+              "To exclusively cover the separation of ideal fluids, which are easier to model mathematically.",
+              "To avoid the use of calculus and advanced mathematics in distillation modeling."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text states that the series is organized as it would be used for the industrial process design of distillation columns, noting that this differs from academic introductions."
+          },
+          {
+            "question": "What is the primary significance of using dimensionless reduced units (Tr, Pr, Vr) in this distillation study?",
+            "options": [
+              "They allow for calculations to be performed without knowing the critical properties of the fluid.",
+              "They ensure that all chemicals behave as ideal gases under industrial distillation conditions.",
+              "They normalize properties across different fluids by relating them to their critical point, which is 1 at that point.",
+              "They eliminate the need to convert temperature and pressure units into Kelvin and atmospheres."
+            ],
+            "correctIndex": 2,
+            "explanation": "Reduced units relate physical properties to their critical values (Tr = T/Tc, etc.), allowing for a generalized treatment of fluids that deviate from ideal behavior."
+          },
+          {
+            "question": "According to the overview, why is the study of chlorosilanes relevant to distillation science?",
+            "options": [
+              "They are natural byproducts that are easily separated using basic distillation.",
+              "They serve as ideal examples of substances that follow simple ideal gas laws under all conditions.",
+              "They are essential for high-purity applications like electronics, and their behavior as mildly polar compounds is applicable to other specialized fluids.",
+              "They are the only compounds currently manufactured using high-reflux processing techniques."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text explains that chlorosilanes are used as recurring examples because they are key to high-purity silicon manufacturing and represent mildly polar compounds, which are often ignored in standard theoretical texts."
+          },
+          {
+            "question": "When dealing with real fluids in commercial distillation, why is it necessary to go beyond basic textbook concepts?",
+            "options": [
+              "Because real fluids do not follow ideal behavior and existing basic models are limited.",
+              "Because standard college textbooks ignore the concepts of molar fractions and latent heat.",
+              "Because industrial distillation at high pressure makes molar units obsolete.",
+              "Because differentiation and integration cannot be applied to ideal fluids."
+            ],
+            "correctIndex": 0,
+            "explanation": "The objective of the series is to expand upon basics to the degree necessary for real-world fluids which, unlike ideal fluids, do not follow standard theoretical behavior."
+          },
+          {
+            "question": "In the context of the series, what is the role of 'Part VIII, VLE Analysis Methods'?",
+            "options": [
+              "To provide a list of pre-calculated liquid activity coefficients for common refrigerants.",
+              "To define the fundamental chemical bonding parameters for silanes.",
+              "To ensure data collection for binary systems minimizes systemic errors, especially with reactive or unstable substances.",
+              "To serve as a computer-science tutorial on writing code for distillation columns."
+            ],
+            "correctIndex": 2,
+            "explanation": "Part VIII covers methodology for collecting binary data and specifically addresses validation when dealing with reactive fluids that may disproportionate or dimerize."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778572726453,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "How does the industrial distillation design perspective differ from the academic one?",
+            "back": "Academic approaches introduce distillation principles, while industrial design focuses on commercial applications with real fluids that often deviate from ideal behavior."
+          },
+          {
+            "front": "What is the intended focus of the 'Distillation Science' series of articles?",
+            "back": "To expand basic conceptual knowledge into the practical, technical proficiency required for commercial-scale industrial distillation applications."
+          },
+          {
+            "front": "What are reduced units (Tr, Pr, Vr) in distillation science?",
+            "back": "Dimensionless units used to generalize properties: Tr = T/Tc, Pr = P/Pc, and Vr = V/Vc."
+          },
+          {
+            "front": "What is the defining condition for T_r, P_r, and V_r at the critical point?",
+            "back": "Tr = 1, Pr = 1, and Vr = 1 simultaneously."
+          },
+          {
+            "front": "What two standard units must temperatures and pressures be converted to for these distillation calculations?",
+            "back": "Temperatures must be in Kelvin (°K) and pressures must be in absolute atmospheres (atm)."
+          },
+          {
+            "front": "What is the significance of the acentric factor (ω) in this series?",
+            "back": "It is an important parameter used specifically in Part IV (New Vapor Pressure Equation) and Part VII (Liquid Activity Coefficients) for accurate modeling."
+          },
+          {
+            "front": "Why is 'Fugacity' discussed in Part VI of the series?",
+            "back": "To account for the departure of apparent pure-component vapor pressure when substances are part of a binary mixture."
+          },
+          {
+            "front": "What is the focus of the 'VLE Analysis Methods' (Part VIII)?",
+            "back": "Recommended methods for collecting binary system data, minimizing systemic errors, and validating data from reactive fluids that may dimerize or disproportionate."
+          },
+          {
+            "front": "What is the specific value of the gas constant (R) used in this series given the units of atm, cc, and mole?",
+            "back": "R = 82.057 atm-cc/mole-°K."
+          },
+          {
+            "front": "What is the purpose of the 'Convergence Strategy' (Part X)?",
+            "back": "To provide mathematical and computational methods, such as nested-loop iterations, for solving non-intrinsic equations in distillation science."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-distillation-process-engineering_0",
+      "slides": [
+        {
+          "title": "Distillation Science: Industrial Fundamentals",
+          "bullets": [
+            "Advanced theory for industrial distillation column design.",
+            "Bridging the gap between academic basics and non-ideal fluid applications."
+          ],
+          "notes": "This lecture series elevates basic chemical engineering concepts for real-world industrial practice, focusing on non-ideal behaviors and complex chemical systems.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Industrial Context and Scope",
+          "bullets": [
+            "Practical focus: commercial fluids like chlorosilanes.",
+            "Applications range from bulk separation to parts-per-billion purification.",
+            "Requires knowledge of VLE, molar units, and calculus.",
+            "Moves beyond ideal gas assumptions to real fluid behaviors."
+          ],
+          "notes": "We are specifically looking at industrial requirements that often exclude ideal theoretical treatments, applying these principles to high-purity, non-naturally occurring compounds.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Key Properties and Reduced Units",
+          "bullets": [
+            "Standardizes calculations using reduced units (Tr, Pr, Vr).",
+            "Critical state defined by Tr=1, Pr=1, and Vr=1.",
+            "Conversions to absolute atmospheres simplify diverse pressure units.",
+            "Essential for analyzing substances from refrigerants to pharmaceutical precursors."
+          ],
+          "notes": "Using reduced units is a vital analytical technique to normalize data across different fluids, ensuring accuracy from boiling point to the critical point.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Course Roadmap and Thermodynamics",
+          "bullets": [
+            "Series covers vapor pressures, fugacity, and activity coefficients.",
+            "Includes validation methods for non-ideal and reactive fluids.",
+            "Employs advanced strategies like non-intrinsic equation solving.",
+            "Standardizes metrics using K, atmospheres, and cc/gram-mole."
+          ],
+          "notes": "The curriculum is structured to build from pure-component vapor pressure equations all the way to complex system convergence strategies.",
+          "page_range": "2-3",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 1 — Distillation Science - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778572726352,
+      "pdfName": "Distillation Science (Coleman)"
+    }
+  ],
+  "sourceHash": "aad5418bbe4b4bb6"
+}

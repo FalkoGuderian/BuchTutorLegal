@@ -1,0 +1,322 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Applied Statistics with R and JASP - Lesson 3 — Biostatistics with R",
+    "pdfName": "Biostatistics with R",
+    "createdAt": 1778573247309,
+    "exportedAt": "2026-05-12T08:07:27.309Z",
+    "meta": {
+      "courseId": "course-en-statistics-with-r-jasp",
+      "lessonIndex": 2,
+      "courseTitle": "Applied Statistics with R and JASP",
+      "lessonObjective": "Statistics for biomedical research.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-biostatistics-with-r",
+            "title": "Biostatistics with R",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Biostatistics_with_R"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_b07c8a1c4ebc",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-1",
+          "chapterTitle": "Introduction to Biostatistics with R",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-2",
+          "chapterTitle": "Probability, Distributions, and Sampling",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Analysis, Regression, and Advanced Statistical Methods",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778573247309,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "This summary outlines the structure and purpose of the *Biostatistics with R* wikibook, which serves as a practical companion to Wayne W. Daniel’s *Biostatistics* (Tenth Edition).\n\n### **Overview and Purpose**\n*   **Bridge to R:** While Daniel’s textbook is a global standard for biostatistics, it traditionally utilizes MINITAB, SAS, and SPSS. This project translates those statistical methodologies into the R programming language.\n*   **Collaborative Design:** As an open-source, wiki-based project, it encourages contributions from the public to maintain and expand current biological and statistical knowledge.\n*   **Target Audience:** Ideal for learners in biomedical research, psychology, and the social sciences looking to transition from traditional statistical software to the R environment.\n\n### **Structure and Content**\n*   **Methodology:** Chapters 3 through 17 align directly with the chapters in Daniel’s *Biostatistics*. Each chapter includes:\n    *   **Formula Summaries:** A breakdown of the statistical concepts presented in Daniel’s text.\n    *   **R Implementation:** Practical instructions for executing these formulas using R.\n    *   **Practical Application:** Inclusion of examples and exercises derived directly from the primary textbook.\n*   **Scope of Analysis:** The text covers a comprehensive range of topics necessary for research, including:\n    *   **Foundational Statistics:** Descriptive statistics, probability distributions, and sampling distributions ([S.1], [S.2]).\n    *   **Inference:** Estimation, confidence intervals, and hypothesis testing ([S.2]).\n    *   **Advanced Modeling:** Analysis of Variance (ANOVA), linear and multiple regression, and logistic regression ([S.3]).\n    *   **Specialized Topics:** Chi-square tests, nonparametric statistics, survival analysis (e.g., Kaplan-Meier, Cox regression), and vital statistics ([S.3], [S.4]).\n\n### **Getting Started**\n*   **Data Resources:** The data sets required for the course are provided by the Wiley Web Site [S.1].\n*   **Foundational Instruction:** The book includes preparatory chapters covering R basics, such as data types, functions, and graphical representation, as well as instructions on importing external data [S.1].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778573247309,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-statistics-with-r-jasp_2\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 3 — Biostatistics with R - Presentation</span><span class=\"pm-chat-count\">4 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Biostatistics with R: Course Overview</div><ul class=\"pm-chat-slide-bullets\"><li>Companion to Wayne W. Daniel’s Biostatistics textbook.</li><li>Bridging classic statistical methods with R programming scripts.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778573247310,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document introduces a wikibook titled *Biostatistics with R*, which serves as an open-source, community-driven companion to Wayne W. Daniel's standard textbook, *Biostatistics* (10th Edition).\n\n**Key Points:**\n\n*   **Purpose:** The book aims to bridge the gap in Daniel’s text by providing R programming equivalents for the statistical examples traditionally demonstrated in MINITAB, SAS, and SPSS.\n*   **Structure:** From Chapter 3 through Chapter 17, the companion mirrors the organization of Daniel’s original textbook. Each chapter includes:\n    *   Summaries of relevant statistical formulas.\n    *   Guidance on implementing these formulas using R.\n    *   Step-by-step applications for the examples and exercises found in the original textbook.\n*   **Data Resources:** Readers can obtain the necessary data sets from the official Wiley website, and guidance on how to import this data into R is provided in Chapter 2.\n*   **Community Involvement:** As a wiki project, the book is open to contributions from the public. Anyone interested in expanding the content related to Biostatistics and R is encouraged to participate in its development. \n\nThe text also outlines foundational topics, beginning with an introduction to R programming, data types, functions, and graphics, followed by systematic coverage of descriptive statistics such as measures of central tendency and dispersion.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778573247319,
+      "channel": "plan_pipe_b07c8a1c4ebc",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 1
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as a comprehensive outline for an introductory course in statistics and probability, spanning chapters 5 through 9. The modules are structured to guide students from foundational probability theory through statistical inference.\n\n**Core Topics Summary:**\n\n1. Probability Foundations (Chapter 5): Covers essential probability calculations, Bayes’ Theorem, and the application of medical screening metrics, specifically Sensitivity, Specificity, and Predictive Values.\n\n2. Probability Distributions (Chapter 6): Introduces both discrete and continuous probability models, with a specific focus on the Binomial, Poisson, and Normal distributions, along with their practical applications.\n\n3. Sampling Distributions (Chapter 7): Explores how sample statistics (means and proportions) behave across various samples, including the distribution of differences between two sample means or proportions.\n\n4. Estimation (Chapter 8): Details the practical steps for constructing confidence intervals for population parameters, including means, proportions, variances, and their respective differences. It also covers the application of the $t$ distribution and methods for determining necessary sample sizes.\n\n5. Hypothesis Testing (Chapter 9): Outlines the framework for statistical testing. This includes tests for single and paired samples, differences between two populations, and variance assessments. It also addresses the complexities of Type II errors, statistical power, and the calculation of sample sizes required to mitigate these errors.\n\n**Learning Approach:**\nEach chapter is supported by a summary of formulas using R programming, facilitating the practical application of these statistical concepts through computational tools. Regular review questions and exercises are integrated into every section to reinforce student comprehension.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778573247320,
+      "channel": "plan_pipe_b07c8a1c4ebc",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This text outlines the structure of a biostatistics textbook, covering advanced statistical methods and their implementation using the R programming language. The content is organized into the following thematic areas:\n\n**Analysis of Variance (ANOVA) and Regression (Sections 10–13)**\nThese sections detail various experimental designs, including Completely Randomized, Randomized Complete Block, and Repeated Measures designs. The text provides a framework for simple linear regression and multiple regression, covering model evaluation, correlation analysis, and advanced topics such as logistic regression and variable selection procedures (p. 3).\n\n**Categorical Data and Nonparametric Statistics (Sections 14–15)**\nThe document covers the Chi-Square distribution and its applications, including tests for goodness-of-fit, independence, and homogeneity. It also discusses specialized measures like the Fisher Exact Test and odds ratios. Additionally, it addresses distribution-free statistics, providing methods for analyzing data without assuming normality, such as the Wilcoxon Signed-Rank test, the Mann–Whitney test, and the Kruskal–Wallis test (p. 3–4).\n\n**Survival Analysis and Vital Statistics (Sections 16–17)**\nThe final portions focus on time-to-event data and censoring using the Kaplan–Meier procedure and Cox proportional hazards models. The text concludes with an overview of public health metrics, specifically detailing the calculations for mortality rates, fertility, and morbidity measures (p. 4).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778573247321,
+      "channel": "plan_pipe_b07c8a1c4ebc",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778573247409,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Which of the following best describes the core philosophy behind the 'Biostatistics with R' wikibook?",
+            "options": [
+              "It aims to replace Daniel's textbook with R-specific statistical theory.",
+              "It serves as a practical implementation guide to translate established biostatistical methodologies into R code.",
+              "It focuses primarily on creating new statistical algorithms unique to the R programming language.",
+              "It prioritizes teaching advanced R programming syntax over the application of biostatistical concepts."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text emphasizes that biostatistics is the field of study and software packages (like R, SAS, or SPSS) are merely tools used to perform those analyses."
+          },
+          {
+            "question": "If a researcher wants to apply the methods taught in the tenth edition of Daniel's 'Biostatistics' using R, what is the structure of this wikibook?",
+            "options": [
+              "It ignores the examples in Daniel's book and provides entirely new clinical datasets.",
+              "It provides theoretical summaries and then demonstrates the corresponding R code for the exercises found in Daniel's book.",
+              "It provides R code only for chapters that were not covered by the original Daniel textbook.",
+              "It summarizes the entire theory of biostatistics without linking to specific exercises or examples from the source text."
+            ],
+            "correctIndex": 1,
+            "explanation": "The wikibook content mirrors the structure of Daniel's book, providing a formula summary followed by specific instructions on how to handle the book's examples and exercises using R."
+          },
+          {
+            "question": "Why does the text mention that the wikibook only discusses certain sections of Daniel's book?",
+            "options": [
+              "Because the editors only had access to selected chapters of the textbook.",
+              "Because not all sections in the original textbook require statistical computing.",
+              "Because chapters without examples or exercises are considered irrelevant to biostatistics.",
+              "Because sections without examples or exercises lack practical utility for a programming-based companion book."
+            ],
+            "correctIndex": 3,
+            "explanation": "The text explicitly states: 'The sections which do not have examples and exercise will not be discussed here,' implying the focus is on the practical computational application."
+          },
+          {
+            "question": "In the context of this wikibook, what is the primary role of R?",
+            "options": [
+              "To act as an open-source platform for expressing statistical concepts presented in traditional biostatistics textbooks.",
+              "To serve as the primary teaching material for learning S language syntax.",
+              "To replace existing statistical software like SPSS and SAS entirely for medical research.",
+              "To provide a framework for gathering raw clinical data before it is processed by other software."
+            ],
+            "correctIndex": 0,
+            "explanation": "The text positions R as an interpreter of the S language that deserves its place as a tool for biostatistics, functioning as a bridge to translate established methods into a computational format."
+          },
+          {
+            "question": "Based on the Table of Contents, how does the book approach 'Hypothesis Testing'?",
+            "options": [
+              "It focuses exclusively on complex theory without mentioning simple population means.",
+              "It organizes concepts by their method of application, such as single population variance vs. comparison of two means.",
+              "It explores hypothesis testing only through the lens of non-parametric statistics.",
+              "It skips individual population parameters to focus strictly on multivariate regression analysis."
+            ],
+            "correctIndex": 1,
+            "explanation": "Chapter 9 is structured to cover various scenarios, including tests for single populations (means and variances) and differences between two populations, reflecting a standard pedagogical progression in biostatistics."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778573247410,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What textbook does the 'Biostatistics with R' wikibook serve as a companion for?",
+            "back": "Wayne W. Daniel's 'Biostatistics' (Tenth Edition)."
+          },
+          {
+            "front": "What is R in the context of statistics?",
+            "back": "A free and open source interpreter of the S language, used as a tool for statistical computing."
+          },
+          {
+            "front": "Which chapter in the wikibook provides instructions for importing data into R?",
+            "back": "Chapter 2."
+          },
+          {
+            "front": "What does each chapter in the wikibook start with concerning the primary textbook?",
+            "back": "A summary of formulas from Wayne W. Daniel's 'Biostatistics' and their expression in R programming."
+          },
+          {
+            "front": "In the context of evaluating screening tests, what three performance metrics are covered in Chapter 5?",
+            "back": "Sensitivity, Specificity, and Predictive Value (Positive and Negative)."
+          },
+          {
+            "front": "Which chapter covers the analysis of Variance (ANOVA) designs, such as the Completely Randomized and Factorial designs?",
+            "back": "Chapter 10."
+          },
+          {
+            "front": "What type of regression is explicitly mentioned as an additional technique in Chapter 13?",
+            "back": "Logistic Regression."
+          },
+          {
+            "front": "Which chapter covers non-parametric tests like the Wilcoxon Signed-Rank, Mann–Whitney, and Kruskal–Wallis tests?",
+            "back": "Chapter 15."
+          },
+          {
+            "front": "What major topic in biostatistics, dealing with Time-to-Event data and censoring, is covered in Chapter 16?",
+            "back": "Survival Analysis."
+          },
+          {
+            "front": "What is the scope of content for the 'Biostatistics with R' wikibook?",
+            "back": "It follows the structure and exercises of Daniel's 'Biostatistics', focusing on implementing statistical concepts using R programming."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-statistics-with-r-jasp_2",
+      "slides": [
+        {
+          "title": "Biostatistics with R: Course Overview",
+          "bullets": [
+            "Companion to Wayne W. Daniel’s Biostatistics textbook.",
+            "Bridging classic statistical methods with R programming scripts."
+          ],
+          "notes": "This course bridges the gap between traditional biostatistics and modern computational tools by demonstrating Daniel's textbook examples in R.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Foundation: Probability and Sampling",
+          "bullets": [
+            "Review of probability concepts and Bayes' Theorem.",
+            "Discrete and continuous probability distributions.",
+            "Understanding sampling distributions of means and proportions.",
+            "Estimation techniques and hypothesis testing logic."
+          ],
+          "notes": "We begin by establishing the mathematical bedrock of biostatistics, covering essential probability theory and the foundational concepts of statistical inference.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Advanced Analysis and Regression",
+          "bullets": [
+            "ANOVA for experimental design evaluation.",
+            "Simple and multiple linear regression models.",
+            "Logistic regression and variable selection techniques.",
+            "Chi-square applications for frequency analysis."
+          ],
+          "notes": "Moving into advanced methods, we explore how to model various data types using regression analysis and comparative statistical tests.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Non-Parametric and Specialized Methods",
+          "bullets": [
+            "Non-parametric tests for distribution-free statistics.",
+            "Survival analysis for time-to-event data.",
+            "Vital statistics in clinical and public health."
+          ],
+          "notes": "We conclude by addressing specialized scenarios, including non-parametric tests for non-normal data and survival analysis methods for longitudinal research.",
+          "page_range": "4",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 3 — Biostatistics with R - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778573247309,
+      "pdfName": "Biostatistics with R"
+    }
+  ],
+  "sourceHash": "87705b0d4e53fbbf"
+}

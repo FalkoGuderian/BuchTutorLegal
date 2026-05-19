@@ -1,0 +1,322 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Neural Networks - Lesson 2 — Artificial Neural Networks",
+    "pdfName": "Artificial Neural Networks",
+    "createdAt": 1778577254056,
+    "exportedAt": "2026-05-12T09:14:14.056Z",
+    "meta": {
+      "courseId": "course-en-gen-neural-networks",
+      "lessonIndex": 1,
+      "courseTitle": "Neural Networks",
+      "lessonObjective": "Selection on \"neural networks\"",
+      "licensing": {
+        "effective_license": "unknown",
+        "sources": [
+          {
+            "content_id": "doab-artificial-neural-networks",
+            "title": "Artificial Neural Networks",
+            "source": "doab",
+            "license": "unknown",
+            "license_url": "",
+            "url": "https://directory.doabooks.org/handle/20.500.12854/66367"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_9d49b699a527",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-10",
+          "chapterTitle": "Front Matter",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "11-12",
+          "chapterTitle": "Preface",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "13-112",
+          "chapterTitle": "Section 1: Architecture and Design (Chapters 1-4)",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "113-270",
+          "chapterTitle": "Section 2: Applications (Chapters 5-12)",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778577254056,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "This summary covers the provided excerpt regarding the **Improved Kohonen Feature Map Probabilistic Associative Memory based on Weights Distribution (IKFMPAM-WD)**.\n\n### **Overview**\nThe document introduces the IKFMPAM-WD, an advancement of the conventional KFMPAM-WD model. It is designed to perform probabilistic association within training sets that contain \"one-to-many\" relations (where one input can lead to multiple possible outputs) for both binary and analog patterns.\n\n### **Key Features and Improvements**\n*   **Neighborhood Learning:** Unlike the conventional model, which updates weights only in the specific area corresponding to an input, the IKFMPAM-WD incorporates learning based on the \"neighborhood\" area. This organizes related pattern pairs closer together in the Map Layer.\n*   **Probabilistic Association:** The model effectively handles one-to-many associations by utilizing weight distributions, allowing for randomized recall of associated output patterns.\n*   **Robustness:** The architecture maintains high robustness against noisy inputs and damaged neurons, ensuring reliable pattern recall under imperfect conditions.\n*   **Storage Capacity:** Experiments confirm that the storage capacity of the IKFMPAM-WD is comparable to previous versions and is contingent upon the number of neurons in the Map Layer rather than the nature of the pattern (binary vs. analog) or the complexity of the one-to-many relations.\n\n### **Technical Structure**\nThe model consists of two primary layers:\n1.  **Input/Output Layer:** Where input patterns are received and output patterns are recalled.\n2.  **Map Layer:** The processing layer where connection weights are learned and fixed. The model uses an ellipse-based area representation to manage training patterns with variable sizes.\n\n### **Experimental Validation**\nThe text highlights several computer experiments demonstrating that:\n*   The model successfully recalls correct outputs when given varied, noisy, or previously learned input patterns (e.g., animal classifications) [S.22, S.25, S.28].\n*   The inclusion of neighborhood functions improves the overall arrangement and logical clustering of data within the network compared to earlier models [S.23].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577254056,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-gen-neural-networks_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 2 — Artificial Neural Networks - Presentation</span><span class=\"pm-chat-count\">2 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Artificial Neural Networks: Fundamentals</div><ul class=\"pm-chat-slide-bullets\"><li>Inspired by biological brain structures and processes.</li><li>Computational models consisting of interconnected artificial neurons.</li><li>Weights adjust during learning to map inputs to outputs.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778577254057,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document is the front matter and table of contents for the book *Artificial Neural Networks – Architectures and Applications*, edited by Kenji Suzuki and published in 2013 by IntechOpen [S.1, S.3, S.4].\n\n### Overview\nThe book is a collection of scholarly contributions focusing on two primary domains of neural network research: architectural design and real-world application [S.9, S.10].\n\n### Key Content Sections\nThe text organizes the chapters into two thematic sections:\n\n*   **Section 1: Architecture and Design:** This segment explores fundamental methodologies, including Kohonen feature maps, biologically plausible models, back-propagation learning mechanisms, and robust network design for complex fields like neutron spectrometry [S.9].\n*   **Section 2: Applications:** This segment illustrates the versatility of artificial neural networks through diverse case studies, such as medical diagnostics, edge detection in imaging, manufacturing process prediction, particle physics (LHC collisions), chemical problem-solving, hydrological modeling, and business analytics [S.9, S.10].\n\n### Editorial and Publication Context\n*   **Editor:** The volume is edited by Dr. Kenji Suzuki, a faculty member at the University of Chicago specializing in computer-aided diagnosis and machine learning [S.7].\n*   **Access and Licensing:** The book is an open-access publication. While the compilation is copyrighted by IntechOpen, individual chapters are distributed under a Creative Commons Attribution 3.0 Unported License, allowing for broad scientific reuse and citation [S.4].\n*   **Academic Impact:** IntechOpen emphasizes its role as a publisher built by scientists for scientists, noting a wide reach in research databases such as the Book Citation Index [S.5].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577254066,
+      "channel": "plan_pipe_9d49b699a527",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 10
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This text provides a foundational overview of artificial neural networks (ANNs), their mechanics, and their applications as described in the preface by Kenji Suzuki [S.11].\n\n**Definition and Mechanism**\nAn ANN is a computational model inspired by the biological structure of the brain. It is composed of nonlinear processing units known as artificial neurons, which are linked by synaptic weights. The network performs tasks by adjusting these weights through a learning process [S.11].\n\n**Learning Paradigms**\n* Supervised learning: Relies on a \"teacher\" or provided target outputs to guide the learning process [S.11].\n* Unsupervised learning: Functions without a teacher, instead utilizing a cost function related to the specific task [S.11].\n\n**Capability and Versatility**\nANNs are highly versatile and theoretically capable of approximating any continuous mapping with arbitrary precision. Due to this power, they are employed across diverse sectors, including medical, industrial, financial, and environmental fields [S.11].\n\n**Book Structure**\nThe work is organized into two primary sections [S.11]:\n* Architectures: Focuses on design, optimization, and theoretical analysis, providing the underlying principles necessary for effective implementation. \n* Applications: Details practical use cases across areas such as biomedicine, chemistry, physics, and finance.\n\nThe text is intended to serve as a comprehensive resource for academics, students, and professionals in industry and research [S.11].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577254067,
+      "channel": "plan_pipe_9d49b699a527",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 11,
+        "end": 12
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section introduces the **Improved Kohonen Feature Map Probabilistic Associative Memory based on Weights Distribution (IKFMPAM-WD)**, an advancement over previous models designed to handle one-to-many associations and analog patterns with enhanced robustness.\n\n### Key Features of IKFMPAM-WD\n*   **Neighborhood Learning:** Unlike the conventional model (KFMPAM-WD), the proposed method incorporates a neighborhood function $H(\\bar{d_{ri}})$ during weight updates. This ensures that weights are adjusted not only in the specific area corresponding to an input pattern but also in adjacent regions, facilitating better spatial organization in the Map Layer ([S.20]).\n*   **Probabilistic Association:** The model continues to leverage weight distributions to perform probabilistic recalls, even for complex one-to-many relationships (e.g., one input pattern being associated with multiple output patterns) ([S.16], [S.20]).\n*   **Robustness:** By refining the internal state calculations of neurons in the Map Layer, the model maintains high resilience against noisy inputs and damaged neurons, a significant improvement over models based on local representation like ART ([S.16]).\n\n### Structural and Procedural Overview\nThe architecture consists of two layers: an **Input/Output Layer** and a **Map Layer**. Learning is governed by calculating the Euclidean distance between input vectors and weight vectors, followed by updating weights within a specified elliptical area defined by long and short radii, $a_i$ and $b_i$ ([S.17], [S.20]).\n\n### Experimental Performance\nExperimental results demonstrate the effectiveness of the IKFMPAM-WD:\n*   **Association Capability:** The model successfully learned both binary and analog patterns, accurately recalling multiple potential outputs for a single input based on the neighborhood-adjusted weight distributions ([S.21], [S.25]).\n*   **Storage Capacity:** Computer simulations indicate that the storage capacity of the proposed model is consistent with the conventional KFMPAM-WD. The capacity is primarily determined by the number of neurons in the Map Layer rather than the nature of the patterns (binary vs. analog) or the degree of one-to-many mapping complexity ([S.28]).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577254068,
+      "channel": "plan_pipe_9d49b699a527",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 13,
+        "end": 112
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The second section of the book, covering pages 113 through 270, focuses on the diverse practical applications of artificial neural networks (ANNs). The key points are summarized below:\n\nMedical and Biological Applications\nSeveral chapters demonstrate the efficacy of ANNs in specialized fields. Giovanni Caocci et al. (p. 115) compare the performance of ANNs against logistic regression for predicting long-term kidney transplant outcomes. In medical imaging, Lucie Gráfová et al. (p. 125) utilize self-organizing maps to perform edge detection in biomedical images.\n\nIndustrial and Engineering Applications\nThe section highlights the utility of neural networks in technical and industrial processes. Thiago M. Geronimo et al. (p. 145) apply Multi-Layer Perceptrons (MLP) and Adaptive Neuro-Fuzzy Inference Systems (ANFIS) to predict hole diameters during drilling procedures. Hazem M. El-Bakry (p. 163) discusses integrating modularity and reconfigurability to enhance the implementation of neural networks for better performance.\n\nPhysics, Chemistry, and Environmental Modeling\nAdvanced scientific applications are well-represented. Amr Radi and Samy K. Hindawi (p. 183) describe the use of neural networks in analyzing hadron-hadron collisions at the LHC. Vinícius Gonçalves Maltarollo et al. (p. 203) explore the role of ANNs in solving chemical problems, while Ivan N. da Silva et al. (p. 225) employ a Recurrent Neural Network (RNN) approach to address complex groundwater hydrology challenges.\n\nBusiness and Economic Analysis\nFinally, the section covers the application of ANNs in business intelligence. Francisco Garcia Fernandez et al. (p. 245) investigate how neural networks can be used to predict the potential success or failure of start-up firms. \n\nOverall, these chapters demonstrate that ANNs serve as versatile, high-capability tools capable of approximating complex mappings in fields ranging from financial forecasting to particle physics.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778577254069,
+      "channel": "plan_pipe_9d49b699a527",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 113,
+        "end": 270
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778577254156,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "According to the preface, what is the primary reason artificial neural networks are considered 'versatile' tools?",
+            "options": [
+              "Because they rely on a 'teacher' to provide desired outputs.",
+              "Because they have high capability and a learning function.",
+              "Because they can simulate the entire human brain.",
+              "Because they are designed specifically for industrial applications."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text states: 'The high versatility of artificial neural networks comes from its high capability and learning function.'"
+          },
+          {
+            "question": "What is the main limitation of traditional models like Back Propagation, KFM, and Hopfield networks mentioned in Chapter 1?",
+            "options": [
+              "They are unable to process analog patterns.",
+              "They are not robust enough for noisy data.",
+              "Their learning and recall processes are divided, requiring all information in advance.",
+              "They cannot be used for hetero-associative tasks."
+            ],
+            "correctIndex": 2,
+            "explanation": "Chapter 1 explains that in these traditional models, 'the learning process and the recall process are divided, and therefore they need all information to learn in advance.'"
+          },
+          {
+            "question": "Why is the proposed 'Improved Kohonen Feature Map Probabilistic Associative Memory based on Weights Distribution' (IKFMPAM-WD) considered an improvement over the conventional KFMPAM-WD?",
+            "options": [
+              "It eliminates the need for a Map Layer.",
+              "It allows for learning that considers the neighborhood.",
+              "It removes the need for weights in the associative memory.",
+              "It is solely designed for supervised learning tasks."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text notes that in the conventional model, weights are updated only in a specific area, and it mentions: 'In this paper, we propose an Improved... (IKFMPAM-WD)... And, the learning considering the neighborhood can be realized.'"
+          },
+          {
+            "question": "In the context of the described neural network models, what defines a 'supervised' model?",
+            "options": [
+              "It uses a cost function instead of a teacher.",
+              "It requires a 'teacher' or desired output to learn a task.",
+              "It requires human intervention during the recall process.",
+              "It is restricted to binary pattern inputs only."
+            ],
+            "correctIndex": 1,
+            "explanation": "The preface defines that a 'supervised model requires a “teacher” or desired (ideal) output to learn a task.'"
+          },
+          {
+            "question": "What provides the 'probabilistic' aspect in the recall process of the KFMPAM-WD model?",
+            "options": [
+              "The random selection of a winner neuron from those with similar weights.",
+              "The use of random initial weight values before learning begins.",
+              "The application of noise to the Input/Output Layer.",
+              "The dynamic adjustment of the learning rate during the recall process."
+            ],
+            "correctIndex": 0,
+            "explanation": "The text explains: 'In the KFMPAM-WD, one of the neurons whose connection weights are similar to the input pattern are selected randomly as the winner neuron. So, the probabilistic association can be realized...'"
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778577254157,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is an artificial neural network?",
+            "back": "A mathematical or computational model inspired by the structure and function of biological neural networks in the brain."
+          },
+          {
+            "front": "How does an artificial neural network 'learn' a task?",
+            "back": "By adjusting the synaptic weights (connection weights) between its artificial neurons."
+          },
+          {
+            "front": "What is the key difference between supervised and unsupervised neural network models?",
+            "back": "A supervised model requires a 'teacher' or desired output to learn, while an unsupervised model learns based on a cost function without a teacher."
+          },
+          {
+            "front": "What is the theoretical capability of an artificial neural network regarding continuous mapping?",
+            "back": "It has been theoretically proved that an artificial neural network can approximate any continuous mapping by arbitrary precision."
+          },
+          {
+            "front": "What are the two layers typically found in the structure of the KFMPAM-WD model?",
+            "back": "The Input/Output Layer and the Map Layer."
+          },
+          {
+            "front": "What is the primary motivation for developing the Improved Kohonen Feature Map Probabilistic Associative Memory based on Weights Distribution (IKFMPAM-WD)?",
+            "back": "To realize probabilistic association for training sets including one-to-many relations while enabling learning that considers the neighborhood."
+          },
+          {
+            "front": "How does the conventional KFMPAM-WD model handle learning differently from the improved IKFMPAM-WD?",
+            "back": "In the conventional model, weights are updated only in the area corresponding to the input pattern, whereas the improved model allows for learning that considers the neighborhood."
+          },
+          {
+            "front": "What defines the 'winner neuron' during the recall process of the KFMPAM-WD?",
+            "back": "One of the neurons whose connection weights are similar to the input pattern is selected randomly from those exceeding a defined activation threshold."
+          },
+          {
+            "front": "In the IKFMPAM-WD model, how is the output of the Input/Output Layer determined for analog patterns?",
+            "back": "The output of the neuron k is given directly by the weight Wrk."
+          },
+          {
+            "front": "What is the significance of the 'Map Layer' in the KFMPAM-WD architecture?",
+            "back": "It contains processing units that undergo weight adjustments to memorize patterns and enable the association of input data to desired outputs."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-gen-neural-networks_1",
+      "slides": [
+        {
+          "title": "Artificial Neural Networks: Fundamentals",
+          "bullets": [
+            "Inspired by biological brain structures and processes.",
+            "Computational models consisting of interconnected artificial neurons.",
+            "Weights adjust during learning to map inputs to outputs.",
+            "Capable of learning any continuous mapping with precision."
+          ],
+          "notes": "Artificial neural networks are versatile tools used widely across many disciplines. They gain their power through their adaptive learning capabilities.",
+          "page_range": "11-12",
+          "image_prompt": ""
+        },
+        {
+          "title": "Architecture: The Kohonen Feature Map",
+          "bullets": [
+            "KFM models information processing inspired by biological neurons.",
+            "Early models often utilized separate learning and recall phases.",
+            "Adaptive models are needed for real-world, dynamic data.",
+            "Recent improvements focus on robustness and probabilistic associations."
+          ],
+          "notes": "Chapter 1 introduces advances in Kohonen-based models, aiming to improve how neural networks handle complex, probabilistic data patterns.",
+          "page_range": "15-17",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 2 — Artificial Neural Networks - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778577254056,
+      "pdfName": "Artificial Neural Networks"
+    }
+  ],
+  "sourceHash": "d85f1d5c49f1eb97"
+}

@@ -1,0 +1,365 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Analysis Applications - Lesson 2: Advances on Tensor Analysis and their Applications",
+    "pdfName": "Advances on Tensor Analysis and their Applications",
+    "createdAt": 1778786986543,
+    "exportedAt": "2026-05-14T19:29:46.544Z",
+    "meta": {
+      "courseId": "course-en-gen-analysis-applications",
+      "lessonIndex": 1,
+      "courseTitle": "Analysis Applications",
+      "lessonObjective": "Selection on \"analysis applications\"",
+      "licensing": {
+        "effective_license": "unknown",
+        "sources": [
+          {
+            "content_id": "doab-advances-on-tensor-analysis-and-their-applications",
+            "title": "Advances on Tensor Analysis and their Applications",
+            "source": "doab",
+            "license": "unknown",
+            "license_url": "",
+            "url": "https://directory.doabooks.org/handle/20.500.12854/67679"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_a71b7899ff57",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-14",
+          "chapterTitle": "Front Matter",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "15-18",
+          "chapterTitle": "Section 1: Fundamentals",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "19-46",
+          "chapterTitle": "Section 2: Tensors in the Exploring of the Space-Time",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "47-84",
+          "chapterTitle": "Section 3: Tensors in Geometry and Continuum Media",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "85-142",
+          "chapterTitle": "Section 4: Advanced Topics of Tensor Analysis",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778786986543,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "This summary covers the fundamentals of tensor analysis and bilinear applications as detailed in the provided document.\n\n### **Summary: Fundamentals of Tensor Analysis and Bilinear Applications**\n\nThe core focus of this section is on the relationship between tensors of order 3, bilinear applications, and their utility in numerical methods, particularly iterative solvers for nonlinear systems.\n\n#### **Key Points:**\n*   **Tensors as Multi-way Arrays:** Tensors are defined as generalizations of matrices (order 2) and vectors (order 1). A tensor of order 3 is mathematically represented as an $I_1 \\times I_2 \\times I_3$ array, identifiable geometrically as a parallelepiped.\n*   **Structural Components:**\n    *   **Fibers:** One-dimensional fragments obtained by fixing two indices (column, row, or tube fibers).\n    *   **Slices:** Two-dimensional sections obtained by fixing one index (horizontal, lateral, or frontal slices).\n*   **Operations and Products:**\n    *   **Mode-n Product:** Facilitates the multiplication of tensors by matrices or vectors to allow for techniques like singular value decomposition.\n    *   **Contracted Product:** Used specifically to compute the interaction between tensor \"fibers\" and vectors, which is essential for determining the second-order derivative information in algorithms.\n*   **Bilinear Applications:**\n    *   A bilinear application $f: U \\times V \\to W$ is a function linear in each of its two variables when the other is held constant.\n    *   There is a formal **isomorphism** between the space of bilinear applications and the space of tensors of order 3. This mathematical bridge allows researchers to represent bilinear functions as matrices or tensors for computational processing.\n*   **Practical Application:**\n    *   The document highlights the use of these concepts in the **Chebyshev-Halley class** of iterative methods. This class requires second-order derivatives to achieve cubic convergence rates; representing these derivatives as bilinear operators/tensors allows for efficient \"tensor-free\" numerical approximations when explicit second-order derivative data is unavailable.\n\n**Source:** [S.17, S.18, S.19, S.20, S.21, S.22, S.23, S.24, S.25, S.26]",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778786986543,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-gen-analysis-applications_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 2: Advances on Tensor Analysis and their Applications - Presentation</span><span class=\"pm-chat-count\">4 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Advances on Tensor Analysis and their Applications</div><ul class=\"pm-chat-slide-bullets\"><li>Explores fundamental tensor theory and its modern applications.</li><li>Covers geometric, kinematic, and numerical analysis perspectives.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778786986544,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "### Summary: Advances on Tensor Analysis and their Applications\n\n**Overview**\nEdited by Dr. Francisco Bulnes, this publication is an open-access peer-reviewed collection of research that explores the mathematical foundations and diverse applications of tensors. It emphasizes the importance of tensors as coordinate-independent entities essential for maintaining the invariance of physical laws.\n\n**Key Mathematical and Scientific Themes**\nThe text highlights tensors as generalizations of scalars, vectors, and matrices. Their utility spans several critical scientific domains:\n* Foundations of Physics: Tensors are fundamental to general and special relativity, utilizing Riemann tensors, torsion fields, and Cartan-Einstein theories to describe universal phenomena.\n* Quantum Mechanics and Communication: The text explores multilinear forms and tensor products within Hilbert spaces, with specific applications in quantum electrodynamics (QED), quantum mechanics, and quantum communication theory.\n* Geometry and Mechanics: The collection covers the application of tensors in differential geometry, fluid motion, and continuum media, as well as kinematic measurements in space-time [S.13].\n\n**Structure of the Volume**\nThe book is organized into four thematic sections:\n1. Fundamentals: Discusses bilinear applications and tensors [S.11].\n2. Tensors in Space-Time: Examines torsion tensor measurements and Brans-Dicke solutions for symmetric spacetimes [S.11].\n3. Tensors in Geometry and Continuum Media: Addresses fluid motion equations and nonequilebrium processes [S.11].\n4. Advanced Topics: Covers derived tensor products and higher-order kinematics within dual Lie algebras [S.12].\n\n**Editor and Publishing Information**\nThe work is published by IntechOpen (2020) and is indexed in the Book Citation Index. The editor, Dr. Francisco Bulnes, is a distinguished mathematician and the director of the International Advanced Research in Mathematics and Engineering Centre (IINAMEI) in Mexico [S.6, S.7, S.9].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778786986553,
+      "channel": "plan_pipe_a71b7899ff57",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 14
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This chapter explores the mathematical intersection between tensors of order 3 and bilinear applications, establishing an isomorphism between these spaces to facilitate calculations involving second derivatives [S.17].\n\n**Key Concepts and Applications**\n\n*   **Nonlinear Systems:** Iterative methods, such as the Chebyshev-Halley class, are employed to solve nonlinear systems defined by $F(x^*) = 0$ [S.17]. These methods require first and second-order derivatives, where the latter is represented as a tensor [S.17].\n*   **Tensor Foundations:** A tensor of order 3 is defined as a three-way array belonging to the vector space $\\mathbb{R}^{I_1 \\times I_2 \\times I_3}$. They generalize matrices (order 2) and vectors (order 1) and are geometrically represented as parallelepipeds [S.18].\n*   **Operational Definitions:** For a function $F(x)$ and vectors $u, v \\in \\mathbb{R}^n$, the document defines the product involving the second derivative tensor $T$:\n    *   The $i$-th row of the matrix $T F(x)v$ is defined by $v^T \\nabla^2 f_i(x)$ [S.18].\n    *   The $i$-th component of the vector $T F(x)vu$ is defined by $v^T \\nabla^2 f_i(x)u$ [S.18].\n*   **Research Context:** The text highlights that tensor analysis is critical in fields like chemometry, signal processing, and numerical multilinear algebra. It also references the development of \"tensor-free\" methods that maintain a cubic convergence rate without explicit second-order derivative information [S.17, S.18].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778786986554,
+      "channel": "plan_pipe_a71b7899ff57",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 15,
+        "end": 18
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Tensor Fundamentals and Bilinear Applications\n\n**Tensor Structure and Operations (p. 5–7)**\nA tensor of order 3 is characterized by fibers (mode-1 column, mode-2 row, and mode-3 tube) and slices (horizontal, lateral, and frontal). Operations between tensors and matrices/vectors are defined via the $mode-n$ product and the contracted $mode-n$ product:\n* The $mode-n$ product (e.g., $Y = T \\times_1 A$) results in a tensor where dimensions transform according to the matrix multiplication logic.\n* The contracted product (e.g., $A = T \\times_1 v$) maps a tensor and a vector to a lower-order structure, such as a matrix.\n* Key properties include the commutativity of different mode products, specifically $T \\times_r A \\times_s B = T \\times_s B \\times_r A$ for $r \\neq s$.\n\n**Space of Bilinear Applications (p. 10–12)**\nBilinear applications $f: U \\times V \\to W$ are linear in each variable independently. For finite-dimensional spaces of dimensions $n, p,$ and $m$, the space of all such applications $B(U \\times V, W)$ is isomorphic to the space of third-order tensors of dimension $mnp$.\n* A bilinear application can be represented by a tensor $T \\in \\mathbb{R}^{p \\times m \\times n}$ relative to chosen bases. \n* Specifically for $f: U \\times V \\to \\mathbb{R}^p$, the application can be written as $f(u, v) = T \\times_2 u(v)$, where $T$ contains components corresponding to the basis elements of the output space.\n\n**Differentiability and Second Derivatives (p. 12)**\nThe second derivative of an application $F$ at a point $a$, denoted $F''(a)$, exists when the first derivative $F'$ is itself differentiable. This second derivative is a linear transformation belonging to $L(\\mathbb{R}^m, L(\\mathbb{R}^m, \\mathbb{R}^n))$, which is isomorphic to the space of bilinear applications $B(\\mathbb{R}^m \\times \\mathbb{R}^m, \\mathbb{R}^n)$. This establishes the theoretical link between multivariable calculus (second-order derivatives) and tensor analysis.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778786986555,
+      "channel": "plan_pipe_a71b7899ff57",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 19,
+        "end": 46
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section, covering pages 47 to 84, focuses on the application of tensors in fluid dynamics and continuum media. The key points are summarized below:\n\nFluid Motion Equations\nTensors are employed to formulate fluid motion equations, providing a framework that is independent of specific coordinate systems. This approach allows for a more general description of fluid dynamics, essential for modeling motion in complex environments.\n\nContinuum Media and Nonequilibrium Processes\nThe discussion extends to differential geometry and macroscopic descriptions of nonequilibrium processes. By utilizing geometric methods and tensor analysis, the authors provide a rigorous way to describe the behavior of continuous media under conditions that are not in thermal equilibrium.\n\nTheoretical Utility\nThe section highlights that tensor analysis serves as a robust mathematical bridge between abstract geometric concepts and physical observations. By applying differential geometry to macroscopic phenomena, researchers can better represent forces and energy exchanges within continuum media, which is critical for complex thermodynamic simulations.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778786986556,
+      "channel": "plan_pipe_a71b7899ff57",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 47,
+        "end": 84
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The section covering pages 85–142, entitled \"Advanced Topics of Tensor Analysis,\" explores specific mathematical frameworks and applications of tensor theory.\n\n**Derived Tensor Products**\nChapter 6 focuses on the theoretical advancements regarding derived tensor products. This area of study bridges complex algebraic structures with practical applications in mathematics and physics, building upon the foundational concepts of multilinear forms introduced earlier in the book.\n\n**Higher-Order Kinematics in Dual Lie Algebra**\nChapter 7 examines higher-order kinematics within the context of dual Lie algebra. This study demonstrates the utility of tensor analysis in modeling sophisticated kinematic systems, providing a mathematical basis for understanding motion and geometric structures that exist beyond traditional Euclidean representations.\n\n**General Contribution**\nThese chapters collectively extend the role of tensors from basic coordinate-independent descriptors to advanced operators used in:\n1. Defining tensors in specialized geometric and algebraic environments, such as Lie algebras.\n2. Providing mechanisms for higher-order derivatives and kinematic measurements.\n3. Enhancing the mathematical rigor required for contemporary physics and engineering research.\n\nBy applying these advanced tensor methods, researchers can better analyze complex systems where standard matrix operations are insufficient to describe the underlying invariants of the motion or field theories being investigated.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778786986557,
+      "channel": "plan_pipe_a71b7899ff57",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 85,
+        "end": 142
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778786986643,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "According to the provided text, why is the concept of a 'tensor' fundamentally important in physics research?",
+            "options": [
+              "It allows researchers to calculate the exact numerical value of gravitational constants.",
+              "It provides a mathematical framework for expressing physical laws that remain invariant under coordinate transformations.",
+              "It eliminates the need for using complex Hilbert spaces in quantum mechanical models.",
+              "It serves as a replacement for all multidimensional matrix operations across engineering disciplines."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text states that a tensor is 'born of the invariance idea' of concepts (like scalar, vector, and matrix) independent of selected coordinate systems, which is crucial for describing the invariance of physical laws."
+          },
+          {
+            "question": "What is the primary motivation for studying the relationship between tensors of order 3 and bilinear applications in Chapter 1?",
+            "options": [
+              "To simplify the calculation of numerical derivatives in iterative methods like the Chebyshev-Halley class.",
+              "To prove that all matrices can be converted into vectors without information loss.",
+              "To replace the need for non-linear equation solvers in computer science.",
+              "To establish a unified theory of quantum communication regardless of geometry."
+            ],
+            "correctIndex": 0,
+            "explanation": "The abstract explicitly states that the isomorphism between tensor spaces and bilinear applications is presented to facilitate calculations used in numerical methods, such as the Chebyshev-Halley class."
+          },
+          {
+            "question": "In the context of the defined tensor operations, what distinguishes a 'tensor slice' from a 'tensor fiber'?",
+            "options": [
+              "A slice is always a tube, while a fiber is always a matrix.",
+              "A slice is a one-dimensional fragment, while a fiber is three-dimensional.",
+              "A fiber is a one-dimensional fragment obtained by fixing two indices, while a slice is a two-dimensional section obtained by fixing one index.",
+              "A fiber represents the scalar product, while a slice represents the vector product."
+            ],
+            "correctIndex": 2,
+            "explanation": "Definition 1.1 and 1.2 specify that fibers are one-dimensional fragments (fixing two indices) and slices are two-dimensional sections (fixing one index)."
+          },
+          {
+            "question": "How does the 'mode-n' product between a tensor and a matrix relate to matrix algebra concepts?",
+            "options": [
+              "It is identical to the standard scalar multiplication, ignoring matrix dimensions.",
+              "It generalizes matrix multiplication by allowing the contraction of the tensor along specific modes matching the matrix dimensions.",
+              "It is restricted only to square matrices to ensure the resulting tensor has the same dimensions as the original.",
+              "It requires that all tensors be reduced to scalars before they can be multiplied by matrices."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text defines mode-n products as a way to perform operations similar to matrix multiplication, where specific dimensions of the tensor are made to agree (contracted) with the dimensions of the matrix."
+          },
+          {
+            "question": "Based on the provided, how is the 'second derivative' of a two-differentiable application characterized conceptually in this work?",
+            "options": [
+              "As a scalar value representing the gradient's slope.",
+              "As a standard vector in the n-dimensional space.",
+              "As an object that can be treated as a tensor of order 3 through its connection to bilinear applications.",
+              "As a coordinate-dependent variable that changes with the rotation of the observer."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text emphasizes that for a two-differentiable application, second-order derivatives can be viewed as tensors, specifically relating them to bilinear operators and tensors of order 3."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778786986644,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary objective of defining an isomorphism between the vector space of order 3 tensors and the vector space of bilinear applications?",
+            "back": "To allow for the calculation of the product between a tensor of second derivatives and a vector, which is useful in numerical methods like the Chebyshev-Halley class."
+          },
+          {
+            "front": "How is a tensor of order 3 defined geometrically?",
+            "back": "It is seen as a parallelepiped with I1 rows, I2 columns, and I3 tubes."
+          },
+          {
+            "front": "What are the three types of fibers in an order 3 tensor?",
+            "back": "1. Column fibers (mode-1), 2. Row fibers (mode-2), and 3. Tube fibers (mode-3)."
+          },
+          {
+            "front": "What are the three types of slices in an order 3 tensor?",
+            "back": "1. Horizontal slice (fixed i1), 2. Lateral slice (fixed i2), and 3. Frontal slice (fixed i3)."
+          },
+          {
+            "front": "What is the result of a mode-n tensor-matrix product?",
+            "back": "A new tensor where elements are calculated by the inner product between the mode-n fibers of the original tensor and the columns of the matrix."
+          },
+          {
+            "front": "What property relates the mode-n product of a tensor with two different matrices A and B (r ≠ s)?",
+            "back": "(T *r A) *s B = (T *s B) *r A = T *r A *s B."
+          },
+          {
+            "front": "In the context of the Chebyshev-Halley class, what does the tensor of second derivatives represent?",
+            "back": "It is an approximation used for solving nonlinear systems of equations where the Hessian of the components of F is evaluated at x."
+          },
+          {
+            "front": "Why is the contracted product mode-n between tensors and vectors used instead of standard matrix-vector multiplication?",
+            "back": "Standard matrix multiplication is not well-defined for 3-way arrays; the contracted product specifically defines operations between tensors and vectors to compute, for example, the i-th row of a Jacobian derivative matrix."
+          },
+          {
+            "front": "What is the main advantage of the 'inexact tensor-free Chebyshev-Halley class'?",
+            "back": "It maintains a cubic convergence rate without requiring explicit second-order derivative information."
+          },
+          {
+            "front": "How is the i-th component of the vector T(F(x))vu defined?",
+            "back": "It is defined by vT * Hessian(fi(x)) * u."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-gen-analysis-applications_1",
+      "slides": [
+        {
+          "title": "Advances on Tensor Analysis and their Applications",
+          "bullets": [
+            "Explores fundamental tensor theory and its modern applications.",
+            "Covers geometric, kinematic, and numerical analysis perspectives."
+          ],
+          "notes": "This lesson introduces the theoretical underpinnings and practical utility of tensors as multidimensional data structures.",
+          "page_range": "1-13",
+          "image_prompt": ""
+        },
+        {
+          "title": "Fundamentals: Bilinear Applications and Tensors",
+          "bullets": [
+            "Tensors generalize scalars, vectors, and matrices effectively (p. 13).",
+            "Order-3 tensors represent multi-way arrays with three dimensions (p. 17).",
+            "Isomorphism links tensor spaces and bilinear applications (p. 17).",
+            "Second derivatives function as tensors in iterative methods (p. 17)."
+          ],
+          "notes": "We begin by establishing tensors as invariant mathematical entities, focusing on order-3 structures and their relationship to calculus.",
+          "page_range": "15-18",
+          "image_prompt": ""
+        },
+        {
+          "title": "Structural Decompositions: Fibers and Slices",
+          "bullets": [
+            "Fibers are 1D fragments formed by fixing two indices (p. 19).",
+            "Slices are 2D sections formed by fixing one index (p. 19).",
+            "Categorized by mode: column, row, and tube fibers (p. 19).",
+            "Horizontal, lateral, and frontal orientations define slices (p. 19)."
+          ],
+          "notes": "Visualizing tensors helps in understanding how we slice and segment multidimensional arrays for computational operations.",
+          "page_range": "19",
+          "image_prompt": ""
+        },
+        {
+          "title": "Computational Tensor Operations",
+          "bullets": [
+            "The mode-n product enables tensor-matrix multiplication (p. 20).",
+            "Contracted products facilitate tensor-vector interactions (p. 21).",
+            "Mode-n properties allow for flexible matrix decomposition patterns (p. 21).",
+            "Operations support numerical methods like the Chebyshev-Halley class (p. 17, 21)."
+          ],
+          "notes": "These algebraic operations allow us to perform complex tensor-based calculations, which are essential for solving nonlinear systems.",
+          "page_range": "20-22",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 2: Advances on Tensor Analysis and their Applications - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778786986543,
+      "pdfName": "Advances on Tensor Analysis and their Applications"
+    }
+  ],
+  "sourceHash": "4971ca8193d3b2b2"
+}

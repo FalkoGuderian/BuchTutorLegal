@@ -1,0 +1,470 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Datenbanken und Netze: Oracle bis IP-Telefonie - Lektion 1: Oracle-Datenbanken",
+    "pdfName": "Oracle-de",
+    "createdAt": 1778790087894,
+    "exportedAt": "2026-05-14T20:21:27.894Z",
+    "meta": {
+      "courseId": "course-de-datenbanken-aufbau",
+      "lessonIndex": 0,
+      "courseTitle": "Datenbanken und Netze: Oracle bis IP-Telefonie",
+      "lessonObjective": "PL/SQL, Tablespaces, Performance-Grundlagen.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-oracle-de",
+            "title": "Oracle-de",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Oracle-de"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_404cf279db15",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-18",
+          "chapterTitle": "Einleitung und SQL*Plus",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "19-21",
+          "chapterTitle": "Entwicklungswerkzeuge: SQL Developer, Toad und Aqua Data Studio",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "22-32",
+          "chapterTitle": "Datenbank-Objekte: Tabellen, Views und Index",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "33-38",
+          "chapterTitle": "Datenbank-Objekte: Tablespaces, Prozeduren, Funktionen und Pakete",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "39-45",
+          "chapterTitle": "Trigger, Sequenzen und sonstige Objekte",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "46-55",
+          "chapterTitle": "Datenbank-Architektur, Anmeldung und Dateistruktur",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "56-66",
+          "chapterTitle": "Administration: Starten, Herunterfahren und Benutzerverwaltung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "67-76",
+          "chapterTitle": "Tablespace-Verwaltung, Backup und Recovery",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "77-82",
+          "chapterTitle": "Internationalisierung, Import/Export und Datenbank-Tuning",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "83-85",
+          "chapterTitle": "CharacterSet und Links",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778790087894,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der grundlegenden Oracle-Konzepte basierend auf den bereitgestellten Unterlagen:\n\n### Zusammenfassung: Oracle-Datenbanken & SQL*Plus\n\n#### 1. Schnittstellen und Werkzeuge (S. 6–7)\n*   **iSQL/iSQL+:** Web-basierte Schnittstellen (verfügbar in 10g), die ohne lokale Softwareinstallation eine Datenbankverwaltung via Browser ermöglichen.\n*   **SQL*Plus:** Das Standard-Kommandozeilenwerkzeug. Es dient sowohl zur interaktiven Arbeit als auch zur Ausführung automatisierter Skripte. Der Zugriff erfolgt meist über `sqlplus <user>/<passwort>@<database>`.\n*   **Session-Management:** Verbindungen werden mit `EXIT` oder `QUIT` beendet, wobei implizit ein `COMMIT` durchgeführt wird (S. 7–8).\n\n#### 2. Interaktives Arbeiten & Konfiguration (S. 8–10)\n*   **Formatierung:** Über `SET`-Befehle (z.B. `LINESIZE`, `PAGESIZE`) werden Ausgaben für den Client optimiert. Spaltenformate lassen sich individuell mit `COLUMN` anpassen.\n*   **Login-Skripte:** Durch eine `glogin.sql` (global) oder `login.sql` (lokal) können Umgebungs- und Formatierungseinstellungen beim Start jeder Session automatisch geladen werden (S. 9).\n*   **Effizienz:** `DESCRIBE` ermöglicht das schnelle Anzeigen von Tabellenstrukturen, während `HISTORIE` (via `rlwrap`) die Befehlseingabe unterstützt (S. 10).\n\n#### 3. Automatisierung mit Variablen & Skripten (S. 11–14)\n*   **Austausch-Variablen:** `&` fordert bei jeder Nutzung zur Eingabe auf, während `&&` den Wert für die Session speichert. `DEFINE` ermöglicht die explizite Deklaration.\n*   **`ACCEPT` & `PROMPT`:** Dienen der nutzerfreundlichen Eingabeaufforderung innerhalb von Skripten.\n*   **Skripting:** Komplexe Abläufe werden in `.sql`-Dateien gespeichert und via `@` oder `START` ausgeführt. Kommentare können mit `REM`, `--` oder `/* */` eingefügt werden (S. 14–15).\n\n#### 4. Datenbankobjekte & Architektur (Ausblick) (S. 2–4)\nDas Dokument deckt zudem fortgeschrittene Themen ab, die für Administratoren relevant sind:\n*   **Struktur:** Verwaltung von Tabellen (Constraints, Partitionierung), Views, Indexen und Packages/Prozeduren.\n*   **Systemarchitektur:** Verwaltung von Instanzen, Tablespaces, Redolog-Dateien, Control-Files und Rollback-Segmenten.\n*   **Administration:** Sicherheit (Benutzer/Rollen), Backup/Recovery-Strategien sowie Tuning-Grundlagen (Lock-Erkennung).\n\n*Hinweis: Dieser Kurs setzt SQL-Grundkenntnisse voraus und fungiert als Nachschlagewerk für Administratoren und Umsteiger.* (S. 5)",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778790087894,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-datenbanken-aufbau_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 1: Oracle-Datenbanken - Präsentation</span><span class=\"pm-chat-count\">4 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Oracle-Datenbanken: Grundlagen</div><ul class=\"pm-chat-slide-bullets\"><li>Einführung in die Architektur von Oracle-Systemen</li><li>Überblick über Management, Entwicklung und Administration</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778790087895,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der Abschnitte S.1 bis S.18:\n\n**Oracle Überblick und Werkzeuge**\nDas Dokument dient als Nachschlagewerk für das Oracle-Datenbanksystem. Es deckt administrative Grundlagen, SQL*Plus-Funktionalitäten und verschiedene Datenbankobjekte ab (S. 5).\n\n**SQL*Plus Schnittstellen**\n- Aufruf-Möglichkeiten: iSQL ermöglichte den Datenbankzugriff über Web-Browser (nur bis Version 10g). SQL*Plus steht als Kommandozeilen-Tool zur Verfügung, das für Skripte und interaktives Arbeiten genutzt werden kann (S. 6, 7).\n- Anmeldung: Verbindung zu Datenbanken erfolgt via `SQLPLUS user/passwort@DB` oder im `/NOLOG`-Modus. Admin-Aufgaben sind via `iSQL/dba` möglich (S. 6, 7).\n- Beenden: Die Session wird mit `EXIT` oder `QUIT` beendet, was implizit einen `COMMIT` auslöst (S. 7, 8).\n\n**Interaktives Arbeiten in SQL*Plus**\n- Formatierung: Systemvariablen wie `LINESIZE` und `PAGESIZE` steuern das Ausgabe-Layout. Mit `COLUMN FORMAT` lässt sich die Anzeige einzelner Spalten präzise definieren (S. 8, 9).\n- Automatisierung: Zur Standardkonfiguration können Login-Skripte (`glogin.sql` oder `login.sql`) verwendet werden (S. 9).\n- Editor-Integration: Der Befehl `EDIT` ermöglicht das Anpassen von SQL-Befehlen im Puffer, wobei der Editor über die Variable `_EDITOR` festgelegt wird (S. 9, 10).\n- Bedienung: Befehle werden meist mit `;` oder `/` ausgeführt. Skripte lassen sich mit `START` oder `@` einbinden (S. 10).\n\n**Datenbankabfragen und -struktur**\n- Tabelleninfos: Die Struktur von Datenbankobjekten wird mit dem Befehl `DESCRIBE` angezeigt (S. 10). Alternativ können zur genaueren Analyse auch Katalog-Tabellen wie `USER_TAB_COLUMNS` abgefragt werden (S. 11).\n\n**Wichtige Hinweise**\n- SQL*Plus-Austausch-Variablen: Nutzen das Symbol `&` zur Interaktion innerhalb von Skripten (S. 11).\n- Performance/Tuning: Das Dokument deckt neben grundlegenden SQL-Operationen auch weiterführende Themen wie Partitionierung (Range, Hash, List, Interval) sowie die Verwaltung von Tablespaces, Indizes, Triggern und Backup-Strategien ab (S. 2, 3, 4).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790087904,
+      "channel": "plan_pipe_404cf279db15",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 18
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Seiten 19 bis 21 behandeln drei verschiedene Entwicklungswerkzeuge (IDEs) für die Arbeit mit Oracle-Datenbanken:\n\nOracle SQL Developer\nDieses grafische Werkzeug, ehemals als Projekt Raptor bekannt, ist vollständig in Java geschrieben und nutzt den JDBC Thin-Driver. Es ist kostenlos und daher besonders bei kleinen Unternehmen verbreitet. Der SQL Developer dient dem Anlegen und Bearbeiten von Tabellen sowie der Entwicklung von PL/SQL-Code. Für den Betrieb ist ein JDK erforderlich, wobei ab der Version 11g eine Java-Umgebung vorinstalliert ist (S. 19).\n\nToad (Tool for Oracle Application Developer)\nDabei handelt es sich um ein von Quest Software entwickeltes Tool, das durch große Vielfältigkeit und einen umfangreichen Funktionsumfang besticht. Es richtet sich sowohl an Entwickler als auch an Administratoren. Wichtige Komponenten sind der SQL Editor zur Skripterstellung, der Schema Browser zur Verwaltung von Datenbankobjekten, der Procedure Editor für PL/SQL-Aufgaben sowie die Möglichkeit zur Erstellung grafischer Servermodelldiagramme (S. 20).\n\nAqua Data Studio\nDieses Programm wird für Abfragen und die Datenbankadministration verwendet und benötigt kein SQL*Plus. Da es auf JDBC basiert, ist die Inbetriebnahme vergleichsweise einfach. Aqua Data Studio ist für nicht-kommerzielle Schulungszwecke kostenlos, und auch die kommerziellen Lizenzen sind kostengünstiger als bei Toad (S. 21).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790087905,
+      "channel": "plan_pipe_404cf279db15",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 19,
+        "end": 21
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der bereitgestellten Inhalte zu Oracle-Datenbankobjekten:\n\n**1. Tabellenarten und Definitionen**\nEs wird unterschieden zwischen relationalen Tabellen (Spalten/Zeilen), Objekttabellen (Nutzung von Objekttypen) und XML-Tabellen (S. 22). Bei der Tabellendefinition können Integritätsregeln wie NOT NULL, DEFAULT-Werte und CHECK-Constraints (boolesche Regeln) festgelegt werden (S. 23). Zur Verknüpfung dienen Primär- und Fremdschlüssel (S. 23).\n\n**2. Analyse von Tabellenbeziehungen**\nMithilfe der Ansicht USER_CONSTRAINTS lassen sich Einfügereihenfolgen sowie Ring-Verkettungen in Datenbanken rekursiv ermitteln (S. 23, 24). Hierbei wird die Oracle-spezifische Syntax CONNECT BY PRIOR verwendet (S. 24). Tabellen ohne Fremdschlüsselbezüge lassen sich ebenfalls über Abfragen im Data-Dictionary identifizieren (S. 24).\n\n**3. Partitionierung von Tabellen**\nZur Performanzoptimierung werden große Tabellen in kleinere Einheiten unterteilt. Es existieren vier Hauptformen (S. 25):\n- Range-Partitionierung: Aufteilung nach Wertebereichen.\n- Hash-Partitionierung: Gleichmäßige Verteilung über Hash-Algorithmen.\n- List-Partitionierung: Zuordnung basierend auf diskreten Listenwerten.\n- Interval-Partitionierung: Erweiterung der Range-Partitionierung für Datentypen vom Typ DATE (S. 26).\n\n**4. Data-Dictionary und Tabellenverwaltung**\nOracle bietet verschiedene Dictionary-Views an: USER_ (eigene Objekte), ALL_ (zugriffsberechtigte Objekte) und DBA_ (alle Objekte, erfordert Administrationsrechte) (S. 27). Funktionen wie das Verkleinern von Tabellen (SHRINK SPACE) dienen der Speicheroptimierung, erfordern jedoch die Aktivierung von ROW MOVEMENT (S. 28).\n\n**5. Views und Materialized Views**\nViews sind virtuelle Tabellen ohne eigene Datenhaltung (S. 30). Ergänzend zu permanenten Views existieren Inline-Views für einzelne SQL-Statements (S. 30). Materialized Views unterscheiden sich davon durch eine physikalische Speicherung der Daten, was den Zugriff bei komplexen Abfragen beschleunigen kann (S. 31).\n\n**Mathematische Notation von Constraints**\nDie Integrität einer Spalte $T3$ kann beispielsweise durch eine Bedingung definiert werden:\n$T3 \\ge 5$ (S. 23).\nDie automatische Erzeugung neuer Partitionen bei der Intervall-Partitionierung kann zeitlich gesteuert werden, etwa für einen Rhythmus von 5 Tagen:\n$\\text{NUMTODSINTERVAL}(5, \\text{'DAY'})$ (S. 26).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790087906,
+      "channel": "plan_pipe_404cf279db15",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 22,
+        "end": 32
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der Abschnitte S.33 bis S.38:\n\n**Tablespaces (S. 33)**\nEin Tablespace dient als logische Speichereinheit für Datenbankobjekte und besteht aus mindestens einem Datafile. Während Tablespaces vergrößert werden können, ist eine nachträgliche Entfernung eines Datafiles nicht möglich; das Löschen des gesamten Tablespaces ist in diesem Fall erforderlich. Es existieren spezielle Standard-Tablespaces (SYSTEM, SYSAUX, TEMP, UNDO, USERS). Zur Strukturierung können individuelle Tablespaces angelegt werden. Die Verfügbarkeit kann zwischen \"Online\" und \"Offline\" sowie einem \"Read-Only\"-Modus für historische Daten variiert werden.\n\n**Prozeduren (S. 34-35)**\nProzeduren sind kompilierte Programme oder PL/SQL-Skripte, die zur Automatisierung wiederkehrender Arbeitsabläufe dienen. Sie werden mittels des Befehls EXECUTE aufgerufen. Bei der Parameterübergabe gibt es drei Modi:\n- IN: Übergabe eines Wertes (Standard, schreibgeschützt).\n- OUT: Rückgabe eines Wertes an die aufrufende Umgebung.\n- IN OUT: Kombinierte Übergabe und Rückgabe eines geänderten Wertes.\n\n**Funktionen (S. 36-37)**\nIm Gegensatz zu Prozeduren liefern Funktionen immer genau einen Ergebniswert zurück. Sie können innerhalb von SQL-Abfragen verwendet werden. Man unterscheidet zwischen:\n- Deterministischen Funktionen: Liefern bei identischen Eingabeparametern immer den gleichen Output.\n- Nicht-deterministischen Funktionen: Das Ergebnis hängt von weiteren Faktoren ab (z. B. Tabelleninhalten, die sich ändern können).\n\n**Packages (S. 38)**\nEin Package fasst logisch zusammengehörige Typen, Prozeduren und Funktionen zusammen. Die Implementierung unterteilt sich in zwei Schritte:\n1. Package Specification: Definition der Schnittstelle (nach außen sichtbar).\n2. Package Body: Definition der internen Abläufe und Logik.\n\nDer Zugriff auf Package-Elemente erfolgt über die Notation: Packagename.Elementname.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790087907,
+      "channel": "plan_pipe_404cf279db15",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 33,
+        "end": 38
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die zusammengefasste Übersicht der Datenbankobjekte basierend auf den Seiten 39 bis 45:\n\n**Trigger (S. 39-40, 42)**\nTrigger sind eventgesteuerte Prozeduren, die bei Ereignissen wie INSERT, UPDATE, DELETE oder Systemereignissen (DDL, Shutdown) automatisch ausgeführt werden. Man unterscheidet zwischen:\n- ROW-Triggern: Ausführung pro betroffener Zeile (Zugriff auf alte/neue Werte via :old und :new).\n- Statement-Triggern: Einmalige Ausführung pro SQL-Anweisung.\nDer Zeitpunkt der Ausführung kann als BEFORE, AFTER oder INSTEAD OF definiert werden. Diese eignen sich besonders für die Protokollierung oder Validierung.\n\n**Sequenzen (S. 41-42)**\nSequenzen dienen zur automatischen Generierung numerischer Werte, typischerweise für Primärschlüssel. \n- Mit $$SEQUENCE\\_NAME.nextval$$ wird der nächste Wert generiert und mit $$SEQUENCE\\_NAME.currval$$ der aktuelle Wert innerhalb der eigenen Session abgerufen (S. 41).\n- Sequenzen garantieren keine lückenlosen Werte, da Datenbank-Caches bei einem Neustart geleert werden (S. 42).\n- Die Kombination aus Sequenz und Trigger stellt sicher, dass Primärschlüssel beim Einfügen ohne manuelle Angabe automatisch befüllt werden (S. 40, 42).\n\n**Synonyme (S. 43-45)**\nEin Synonym fungiert als alternativer Name für Datenbankobjekte wie Tabellen oder Prozeduren und vereinfacht den Zugriff bzw. die Abstraktion (S. 43).\n\n**Database Links (S. 43-45)**\nEin Database Link ermöglicht die Verbindung zu einer Remote-Datenbank. Er wird verwendet, um über eine definierte Benutzerverbindung auf externe Objekte zuzugreifen. Die Auflösung erfolgt über die Datei tnsnames.ora. Der Zugriff auf Daten erfolgt durch Anhängen von @<DB\\_LINK> an das SQL-Statement, zum Beispiel:\nSELECT * FROM abakus@db3; (S. 43).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790087908,
+      "channel": "plan_pipe_404cf279db15",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 39,
+        "end": 45
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Unterlagen (Seiten 46-53):\n\n**DB-Architektur und Instanzen**\nJede Oracle-Datenbank besitzt eine eigene Instanz, die durch den System-Identifier (SID) identifiziert wird (S. 46). Zur Überwachung und Steuerung der Instanz existieren Hintergrundprozesse:\n- DBWR: Schreibt modifizierte Blöcke auf die Festplatte (S. 46).\n- LGWR: Protokolliert Transaktionen in die Redo-Log-Dateien (S. 46).\n- SMON: Zuständig für Systemüberwachung und Wiederherstellung nach Neustarts (S. 46).\n- PMON: Überwacht Benutzerprozesse und gibt Ressourcen frei (S. 46).\n- CKPT: Erzeugt Checkpoints (S. 46).\n\nDer Arbeitsspeicher (SGA) unterteilt sich in den Database Buffer Cache, den Redo Log Buffer und den Shared Pool. Letzterer speichert SQL-Befehle und Ausführungspläne für eine direkte Ausführung (S. 46).\n\n**Administration und Anmeldung**\nDer Zustand der Datenbank kann über Dictionary-Views mit dem Präfix V$ (z. B. V$SESSION, V$INSTANCE) abgefragt werden (S. 46, 47). Die Anmeldung am System erfolgt meist über \"Local Naming\", wobei Verbindungsdaten in der Datei tnsnames.ora hinterlegt sind (S. 48). Administrative Tätigkeiten erfordern spezifische Rechte, wie den Zugriff als \"sysdba\" (S. 48).\n\n**Datenbank-Dateien**\nDie physikalische Struktur basiert auf vier Dateitypen: Parameter-Dateien (Konfiguration), Control-Dateien (Strukturinformationen), Tablespace-Dateien (Daten) und Redolog-Dateien (Änderungslogs) (S. 50). Wichtige Konfigurationsdateien sind init<SID>.ora, listener.ora und sqlnet.ora (S. 50, 51).\n\n**Speicherverwaltung und Row-Fragmentierung**\nTablespace-Dateien werden in Extents und Blöcke unterteilt. Die Blockgröße ($db\\_block\\_size$) wird beim Anlegen festgelegt (S. 51). Die Parameter PCTFREE und PCTUSED steuern die Platzbelegung innerhalb eines Datenblocks:\n- PCTFREE definiert den für Updates reservierten Bereich (S. 51).\n- PCTUSED entscheidet, ab wann ein Block wieder für INSERTS als \"frei\" markiert wird (S. 51).\n\nUm Performanceverluste durch Row-Migration oder Row-Chaining zu minimieren, sind diese Parameter korrekt zu wählen (S. 51, 52).\n\n**Rollback-Segmente und Redo-Logs**\nRollback-Segmente dienen der Sicherung alter Datenzustände für Transaktionen (S. 52). Wird der Parameter UNDO_RETENTION zu kurz gewählt, droht der Fehler \"ORA-01555: Snapshot too old\" (S. 52). Redo-Log-Dateien sind für den Fall eines Systemausfalls essenziell. Sie sollten im ARCHIVELOG-Modus betrieben werden, damit der ARCH-Prozess die Logs zur Wiederherstellung archivieren kann (S. 53).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790087909,
+      "channel": "plan_pipe_404cf279db15",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 46,
+        "end": 55
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Abschnitte:\n\n**Datenbank-Instanz und Statusmodelle (S. 56–60)**\nEine Oracle-Datenbank besteht aus physischen Dateien und einer im Arbeitsspeicher aktiven Instanz. Der Startvorgang durchläuft definierte Phasen, die über den Befehl `startup` oder schrittweise gesteuert werden:\n- NOMOUNT: Die Instanz ist gestartet, aber nicht mit der Datenbank verbunden (für Neuerstellung oder Wartung).\n- MOUNT: Die Instanz liest die Control-Dateien und erkennt die Struktur der physischen Datenbank.\n- OPEN: Die Datenbank ist für Benutzer im regulären Betrieb zugänglich.\n- RESTRICT: Ein spezieller Modus, in dem nur Benutzer mit dem Privileg \"RESTRICTED SESSION\" Zugriff haben.\n\nBeim Herunterfahren stehen verschiedene Modi zur Wahl:\n- NORMAL: Wartet auf das Ende aller aktiven Sessions.\n- TRANSACTIONAL: Wartet auf den Abschluss laufender Transaktionen (Commit).\n- IMMEDIATE: Beendet aktuelle Aktivitäten sofort via Rollback.\n- ABORT: Unterbricht die Verbindung sofort (ähnlich einem Stromausfall), was beim nächsten Start ein Recovery erforderlich macht.\n\n**Benutzerverwaltung (S. 61–64)**\nNach der Installation existieren Standardbenutzer (z. B. SYS, SYSTEM). SYS besitzt höchste Administratorrechte, während SYSTEM primär administrativen Aufgaben dient. Die Anmeldung für administrative Zwecke erfordert den Zusatz `as sysdba`.\n\nNeue Benutzer werden mittels `create user` angelegt, wobei Tablespaces und Speicher-Quotas zugewiesen werden. Die Authentifizierung kann intern (Passwort) oder extern (durch das Betriebssystem) erfolgen. Zur Verwaltung von Berechtigungen und Ressourcen dienen:\n- Systemprivilegien: Rechte zur Administration (unabhängig von Objekten).\n- Objektprivilegien: Rechte an spezifischen Datenbankobjekten.\n- Profile: Festlegung von Ressourcen-Limits und Passwort-Richtlinien.\n\n**Rollenkonzept (S. 65)**\nUm die Rechteverwaltung bei vielen Benutzern zu vereinfachen, werden Berechtigungen in Rollen gebündelt. Eine Rolle (z. B. `create role`) erhält spezifische Privilegien, die dann gemeinsam an Benutzer vergeben werden (`grant role to user`). Benutzer können Rollen individuell aktivieren (`set role`), um ihre Berechtigungen dynamisch zu steuern.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790087910,
+      "channel": "plan_pipe_404cf279db15",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 56,
+        "end": 66
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung zur Verwaltung von Tablespaces und Backup/Recover-Strategien basierend auf den Seiten 67–76:\n\n**1. Tablespace-Verwaltung**\nTablespaces dienen der Organisation von System- und Anwendungsdaten. Oracle stellt standardmäßig SYSTEM- und SYSAUX-Tablespaces bereit (S. 67). \n- Erstellung: Tablespaces können mit fester Größe oder mit der Option $AUTOEXTEND$ zur automatischen Erweiterung angelegt werden (S. 67).\n- Erweiterung: Ein Tablespace wird durch Hinzufügen weiterer Datendateien ($DATAFILE$) oder durch $resize$ vergrößert. Für temporäre Daten sollten spezielle $TEMPORARY$ $TABLESPACES$ genutzt werden, um das System nicht zu belasten (S. 68, 70).\n- Administration: Datendateien können $ONLINE$ oder $OFFLINE$ gesetzt werden. Ein $OFFLINE$ $DROP$ ist in Umgebungen ohne Archivierung möglich, während in $ARCHIVELOG$-Umgebungen diverse Konsistenzmodi ($NORMAL$, $IMMEDIATE$, $TEMPORARY$) existieren (S. 68, 69).\n- Löschen: Mit $DROP$ $TABLESPACE$ inklusive $CONTENTS$ können Tablespaces entfernt werden. Ab Version 9 ist auch das Löschen der zugehörigen Betriebssystemdateien möglich (S. 70).\n\n**2. Backup-Strategien**\nEs wird grundlegend zwischen zwei Ansätzen unterschieden:\n- Offline-Backup: Die Datenbank wird heruntergefahren ($SHUTDOWN$ $IMMEDIATE$), dann werden alle Dateien mittels Betriebssystemmitteln kopiert. Dies ist einfach in der Handhabung, erfordert aber einen Instanz-Stopp (S. 72).\n- Online-Backup: Erfordert den aktivierten $ARCHIVELOG$-Modus. Die Sicherung erfolgt während des Betriebs, indem Tablespaces kurzzeitig in den Status $BEGIN$ $BACKUP$ versetzt werden. Dies ermöglicht ein Recovery bis zu einem bestimmten Zeitpunkt, belastet jedoch die Performance (S. 73).\n\n**3. Recover-Verfahren**\nEin erfolgreiches Recovery setzt eine präzise Fehleranalyse voraus (Unterscheidung zwischen logischen und technischen Fehlern) (S. 74, 75).\n- Offline-Sicherung: Erfordert die Wiederherstellung aller Datenbankdateien als Gesamtheit (S. 75).\n- Online-Sicherung: Erlaubt granulare Wiederherstellungen, etwa einzelner Datendateien. Hierbei werden die archivierten Redolog-Dateien genutzt, um Änderungen seit dem Backup nachzuvollziehen (S. 75).\n- Hilfsmittel: Bei fehlerhaften oder gelöschten Datendateien muss die entsprechende Datei zunächst $OFFLINE$ gesetzt werden, bevor das $RECOVER$-Kommando die Datei anhand der Sicherung und der Logs wiederherstellt (S. 75, 76).\n\n**4. Archivierung**\nDer $ARCH$-Prozess sichert vollgeschriebene Redolog-Dateien in gesonderte Archive-Log-Verzeichnisse. Dies ist eine Grundvoraussetzung für Online-Backups und Point-in-Time-Recoveries (S. 74).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790087911,
+      "channel": "plan_pipe_404cf279db15",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 67,
+        "end": 76
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des bereitgestellten Dokuments (S. 77–82):\n\n**National Language Support (NLS) (S. 77)**\nOracle ermöglicht die Parametrisierung von Client-Sessions für länderspezifische Anforderungen. Über den Befehl `ALTER SESSION` können Sprache (`nls_language`), Region (`nls_territory`), Zeitzonen sowie Datums- und Zahlenformate (z. B. `NLS_NUMERIC_CHARACTERS`) individuell konfiguriert werden. Änderungen wirken sich nur auf die aktuelle Session aus.\n\n**Import und Export (S. 78–79)**\nDie Kommandozeilenwerkzeuge `exp` (Export) und `imp` (Import) dienen zum Datentransfer. Es gibt vier Modi: `full` (vollständig), `user` (benutzerspezifisch), `table` (einzelne Tabellen) und `tablespace`. Während der Export diverse Optionen wie Log-Dateien, Komprimierung (`COMPRESS`) und Filter (`QUERY`) bietet, ermöglicht der Import unter anderem die Zuordnung von Objekten zwischen verschiedenen Benutzern (`FROMUSER`/`TOUSER`) sowie den Umgang mit Fehlern (`IGNORE=Y`).\n\n**Datenbank Tuning und Lock-Management (S. 80–82)**\nEin wesentlicher Teil des Tunings ist die Erkennung und Behebung von Datenbank-Sperren (Locks).\n* Über System-Views (`v$session`, `v$locked_object`) können blockierende Sessions identifiziert werden.\n* Skripte wie `catblock.sql` und `utllockt.sql` (im Verzeichnis `$ORACLE_HOME\\RDBMS\\ADMIN`) unterstützen die Analyse wartender Transaktionen.\n* Blockierende Transaktionen lassen sich durch den Befehl `ALTER SYSTEM KILL SESSION 'sid, serial#';` beenden. Nach dem Kill-Befehl erhält die betroffene Session beim nächsten Zugriff den Fehler `ORA-00028`.\n\n**Mathematische Notation von Formaten**\nDie Formatierung von Zahlenwerten lässt sich via `to_char` steuern. Ein Beispiel für die Tausender- und Dezimaltrennung unter Berücksichtigung der \\text{ü}blichen Einstellungen ist:\n$1.234,560$ (bei `NLS_NUMERIC_CHARACTERS` = ',.') vs. $1,234.560$ (bei `NLS_NUMERIC_CHARACTERS` = '.,').",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790087912,
+      "channel": "plan_pipe_404cf279db15",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 77,
+        "end": 82
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Dokuments (S. 83-85):\n\n**Grundlagen und Bedeutung des Zeichensatzes**\nDer Zeichensatz bestimmt die Codierung von Texten auf der Festplatte. Während standardisierte Zeichensätze wie WE8MSWIN1252 nur begrenzte Sprachunterstützung bieten, ermöglichen Unicode-Zeichensätze (z.B. UTF8) die Speicherung fast aller weltweiten Schriftzeichen. Eine Rückkonvertierung von Unicode zu einem eingeschränkten Zeichensatz ist verlustbehaftet, da letzterer nur eine echte Untermenge darstellt (S. 83).\n\n**Vorbereitung der Umstellung**\nVor der Änderung ist zwingend ein FullBackup der Datenbank zu erstellen, um bei Fehlern den Ursprungszustand wiederherstellen zu können. Der aktuelle Zeichensatz kann über die Abfrage von `nls_database_parameters` überprüft werden (S. 83).\n\n**Prozess der Zeichensatzänderung**\nDer Wechsel erfolgt in mehreren Schritten:\n1. Die Datenbank wird kontrolliert heruntergefahren (`shutdown immediate`) und anschließend im Modus `startup mount` gestartet (S. 83).\n2. Die Session wird für die Operation vorbereitet, indem der eingeschränkte Modus aktiviert und Hintergrundprozesse gestoppt werden (`alter system enable restricted session;`, `alter system set job_queue_processes=0;`).\n3. Die Datenbank wird geöffnet (`alter database open`).\n4. Die eigentliche Änderung erfolgt mit dem Befehl `alter database character set internal_use utf8;`. Der Zusatz `internal_use` ist notwendig, um die ORA-12712-Fehlermeldung zu umgehen, wenn der neue Zeichensatz keine reine Obermenge des alten ist (S. 84).\n\n**Abschluss**\nNach der Änderung muss die Datenbank erneut mit `shutdown immediate` beendet und anschließend regulär mit `startup` gestartet werden. Eine erneute Prüfung der `nls_database_parameters` stellt sicher, dass die Datenbank die gewünschte Konfiguration übernommen hat (S. 84).\n\nDie beschriebene Methode wurde erfolgreich in verschiedenen Oracle-Versionen (8.1.7.3 bis 11.2.0.1.0) auf unterschiedlichen Betriebssystemen (Windows, Linux, AIX) getestet (S. 84).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778790087913,
+      "channel": "plan_pipe_404cf279db15",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 83,
+        "end": 85
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778790087994,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Was passiert bei der Verwendung einer Austausch-Variable mit '&' in einem SQL*Plus-Skript?",
+            "options": [
+              "Der Wert wird einmal definiert und dann im gesamten Skript fest gespeichert.",
+              "Bei jeder Ausführung des Skripts erscheint eine Eingabeaufforderung für den Wert.",
+              "Die Variable wird automatisch durch den zuletzt verwendeten Wert überschrieben.",
+              "Die Variable kann nur numerische Werte zur Laufzeit entgegennehmen."
+            ],
+            "correctIndex": 1,
+            "explanation": "Laut Skript wird bei der ersten Verwendung einer Austausch-Variable mit '&' bei jeder Skriptausführung eine Eingabeaufforderung ausgelöst."
+          },
+          {
+            "question": "Wie kann man sicherstellen, dass SQL*Plus-Einstellungen wie 'LINESIZE' bei jedem Start automatisch geladen werden?",
+            "options": [
+              "Durch das Speichern in der Datei glogin.sql oder einer lokalen login.sql.",
+              "Durch das Setzen der Umgebungsvariable SET_SQL_PLUS.",
+              "Durch die Konfiguration in der TNSNAMES.ORA.",
+              "Es ist nicht möglich, SQL*Plus-Einstellungen permanent zu speichern."
+            ],
+            "correctIndex": 0,
+            "explanation": "Änderungen an Systemvariablen können in ein Login-Skript (glogin.sql oder login.sql) eingetragen werden, das bei jedem Session-Start ausgeführt wird."
+          },
+          {
+            "question": "Welche Konsequenz hat es, wenn bei der Formatierung einer Spalte mit COLUMN FORMAT der Platz für einen numerischen Wert nicht ausreicht?",
+            "options": [
+              "Der Wert wird abgeschnitten.",
+              "Der Wert erscheint in wissenschaftlicher Notation.",
+              "Der Platz wird mit Hash-Zeichen (#) aufgefüllt.",
+              "Die Spalte wird automatisch verbreitert, um den Wert anzuzeigen."
+            ],
+            "correctIndex": 2,
+            "explanation": "Das Skript weist explizit darauf hin, dass bei numerischen Werten der vorhandene Platz bei Platzmangel mit Hash-Zeichen aufgefüllt wird."
+          },
+          {
+            "question": "Was ist der Hauptunterschied zwischen den Befehlen 'RUN' und einem Slash '/' in SQL*Plus?",
+            "options": [
+              "Der Slash führt den Befehl sofort aus, RUN hat keine Funktion in SQL*Plus.",
+              "RUN gibt den Befehl vor der Ausführung erneut aus, der Slash führt ihn nur aus.",
+              "RUN ist für PL/SQL-Blöcke, der Slash nur für einfache SQL-Statements.",
+              "Der Slash benötigt Administratorrechte, RUN kann von jedem Benutzer ausgeführt werden."
+            ],
+            "correctIndex": 1,
+            "explanation": "Beide führen SQL oder PL/SQL aus, aber RUN zeigt den Befehl zusätzlich auf dem Bildschirm an, während der Slash ihn ohne erneute Anzeige ausführt."
+          },
+          {
+            "question": "Welche der folgenden Aussagen zur Beendigung einer SQL*Plus-Session ist korrekt?",
+            "options": [
+              "Das Schließen des Fensters über den X-Button beendet die Session ohne Änderungen zu speichern.",
+              "Nur der Befehl 'QUIT' führt zu einem Rollback der aktuellen Transaktion.",
+              "Sowohl 'EXIT' als auch das Schließen des Fensters (bei Windows) führen implizit ein 'COMMIT' aus.",
+              "Man muss die Verbindung immer explizit mit 'DISCONNECT' beenden, bevor man 'EXIT' aufruft."
+            ],
+            "correctIndex": 2,
+            "explanation": "Laut Text führen sowohl 'EXIT'/'QUIT' als auch das Schließen des Fensters (unter Windows) implizit ein 'COMMIT' auf dem Datenbank-Server aus."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778790087995,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Wie beendet man eine SQL*Plus Session?",
+            "back": "Mit den Befehlen 'EXIT' oder 'QUIT'."
+          },
+          {
+            "front": "Was bewirkt der Befehl 'DESCRIBE table_name'?",
+            "back": "Er zeigt die Struktur (Spaltennamen, Datentypen und Null-Einschränkungen) einer Tabelle, Prozedur oder Funktion an."
+          },
+          {
+            "front": "Was ist der Unterschied zwischen den SQL*Plus Variablen 'LINESIZE' und 'PAGESIZE'?",
+            "back": "LINESIZE legt die Anzahl der Zeichen pro Zeile fest. PAGESIZE definiert, nach wie vielen Zeilen die Überschriften erneut ausgegeben werden."
+          },
+          {
+            "front": "Welches Skript wird bei SQL*Plus automatisch bei jedem Sitzungsstart ausgeführt?",
+            "back": "Die Datei 'glogin.sql' (global) bzw. die lokal im Arbeitsverzeichnis liegende 'login.sql'."
+          },
+          {
+            "front": "Wie führt man ein SQL-Skript in SQL*Plus aus?",
+            "back": "Mit dem Befehl '@dateiname' oder 'START dateiname'."
+          },
+          {
+            "front": "Wie kann man die Formatierung einer Spalte in SQL*Plus ändern?",
+            "back": "Mit dem Befehl 'COLUMN Spaltenname FORMAT Format', z.B. 'COLUMN ename FORMAT a10'."
+          },
+          {
+            "front": "Was passiert bei der Eingabe von '&variable_name' in einem SQL-Statement?",
+            "back": "SQL*Plus fordert den Benutzer interaktiv auf, einen Wert für diese Austausch-Variable einzugeben."
+          },
+          {
+            "front": "Wie editiert man den letzten SQL-Befehl oder PL/SQL-Block in SQL*Plus?",
+            "back": "Mit dem Befehl 'EDIT' (abgekürzt 'ED'). Der Befehl öffnet den in der Umgebungsvariablen _EDITOR definierten Editor."
+          },
+          {
+            "front": "Was bewirkt der Befehl 'SET PAGESIZE 9000'?",
+            "back": "Er erhöht die Anzahl der Zeilen pro Seite auf 9000, was sinnvoll ist, um Seitenumbrüche bei großen Ergebnismengen zu unterdrücken."
+          },
+          {
+            "front": "Wie kann man eine Verbindung zu einer Remote-Datenbank via SQL*Plus herstellen?",
+            "back": "Mit 'SQLPLUS benutzer/passwort@tns_name', wobei der TNS-Name in der Datei 'tnsnames.ora' konfiguriert sein muss."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-datenbanken-aufbau_0",
+      "slides": [
+        {
+          "title": "Oracle-Datenbanken: Grundlagen",
+          "bullets": [
+            "Einführung in die Architektur von Oracle-Systemen",
+            "Überblick über Management, Entwicklung und Administration"
+          ],
+          "notes": "Diese Lektion bietet einen kompakten Einstieg in die Welt der Oracle-Datenbanken, von der Architektur bis zum täglichen Betrieb.",
+          "page_range": "1-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "PL/SQL: Prozedurale Datenbanklogik",
+          "bullets": [
+            "Prozeduren automatisieren wiederkehrende Arbeitsabläufe effizient",
+            "Parameterübergabe via IN, OUT und IN OUT",
+            "Funktionen liefern direkt einen Ergebniswert zurück",
+            "Trigger reagieren automatisch auf DML- oder Systemereignisse"
+          ],
+          "notes": "PL/SQL ermöglicht es, Geschäftslogik direkt in der Datenbank zu kapseln, was die Performance und Datenintegrität deutlich erhöht.",
+          "page_range": "34-36, 39-40",
+          "image_prompt": ""
+        },
+        {
+          "title": "Tablespaces: Struktur und Management",
+          "bullets": [
+            "Logische Einheit zum Speichern von Datenobjekten",
+            "Bestehen aus einem oder mehreren physischen Datafiles",
+            "Beispiele: SYSTEM, SYSAUX, TEMP und UNDO",
+            "Verwaltung via SQL (CREATE, ALTER, DROP)"
+          ],
+          "notes": "Ein durchdachtes Tablespace-Design trennt System- von Anwendungsdaten und bildet das Rückgrat einer performanten Datenbankstruktur.",
+          "page_range": "33, 67-69",
+          "image_prompt": ""
+        },
+        {
+          "title": "Performance und Architektur",
+          "bullets": [
+            "Instanz besteht aus Speicher (SGA) und Hintergrundprozessen",
+            "LRU-Algorithmus steuert den Daten-Puffer-Cache effizient",
+            "V$-Views bieten Einblicke in den Datenbankzustand",
+            "Lock-Erkennung ist essenziell zur Fehlerbehebung"
+          ],
+          "notes": "Das Verständnis der SGA und der Hintergrundprozesse ist der Schlüssel zur erfolgreichen Performance-Optimierung.",
+          "page_range": "46-47, 5, 28",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 1: Oracle-Datenbanken - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778790087894,
+      "pdfName": "Oracle-de"
+    }
+  ],
+  "sourceHash": "8271027fa5e81ca7"
+}

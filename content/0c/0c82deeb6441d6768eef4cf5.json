@@ -1,0 +1,313 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Netzwerktechnik — Einführung - Lektion 3 — SSH und sichere Verbindungen",
+    "pdfName": "SSH-Server einrichten und betreiben",
+    "createdAt": 1778572263159,
+    "exportedAt": "2026-05-12T07:51:03.159Z",
+    "meta": {
+      "courseId": "course-de-cs-netzwerke-einfuehrung",
+      "lessonIndex": 2,
+      "courseTitle": "Netzwerktechnik — Einführung",
+      "lessonObjective": "SSH-Server einrichten und absichern.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-ssh-server-einrichten-und-betreiben",
+            "title": "SSH-Server einrichten und betreiben",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/SSH-Server_einrichten_und_betreiben"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_64d7b0cf6763",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Einleitung und Grundlagen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Funktionsweise und Authentifizierung",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778572263159,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung der Lerneinheit zum Thema „SSH-Server einrichten und betreiben“ basierend auf dem vorliegenden Dokument:\n\n### **Zusammenfassung: SSH-Server Grundlagen**\n\n#### **1. Ziel und Nutzen von SSH**\n*   **Zweck:** SSH (Secure Shell) ermöglicht den sicheren Remote-Zugriff auf eine Textkonsole, um Rechner (wie z. B. Raspberry Pis oder Server) ohne physische Tastatur oder Monitor zu verwalten (S. 2).\n*   **Vorteile gegenüber Remote Desktop:** SSH arbeitet ressourcenschonend, da keine grafische Oberfläche übertragen werden muss, und erlaubt das parallele Arbeiten mehrerer Benutzer am selben Rechner (S. 2).\n*   **Einsatzgebiete:** Systemadministration (Updates), Konfiguration von Diensten, Auslesen von Log-Dateien sowie sichere Dateiübertragung (S. 2, S. 3).\n\n#### **2. Funktionsweise und Sicherheit**\n*   **Client-Server-Modell:** Die Verbindung basiert auf einem Client-Server-Prinzip. Bereits beim Aufbau werden Verschlüsselungsmethoden verhandelt; unsichere Protokoll-Versionen (SSH-1) sollten hierbei explizit ausgeschlossen werden (S. 2).\n*   **Verschlüsselung & Authentifizierung:**\n    *   Nach der Einigung auf eine symmetrische Verschlüsselung findet eine gegenseitige Authentifizierung statt (S. 3).\n    *   Der Server weist sich mittels Zertifikat aus, das der Client in einer lokalen Datenablage speichert und bei künftigen Verbindungen verifiziert (S. 3).\n    *   Die Benutzer-Authentifizierung kann klassisch über Benutzernamen und Passwort oder über Client-Zertifikate erfolgen (S. 3).\n\n#### **3. Betrieb und Rahmenbedingungen**\n*   **Status des Projekts:** Das vorliegende Lehrbuch befindet sich derzeit im Aufbau (0 % bis 40 % Fertigstellungsgrad laut Autoren) und konzentriert sich auf Privatanwender (S. 1, S. 3).\n*   **Sicherheitsaspekt:** Da Sicherheitsanforderungen zeitabhängig sind, ist die Absicherung („Härten“) des Servers ein kontinuierlicher Prozess. Die Anleitung deckt dabei sowohl die Konsolen- als auch die Datenverbindung ab (S. 1, S. 3).\n\n**Hinweis:** Die Konfiguration sollte stets den aktuellen Sicherheitsstandards entsprechen, da die Anforderungen im professionellen Umfeld über die Grundlagen für Privatanwender hinausgehen (S. 1).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778572263159,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-cs-netzwerke-einfuehrung_2\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 3 — SSH und sichere Verbindungen - Präsentation</span><span class=\"pm-chat-count\">5 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">SSH-Server einrichten und absichern</div><ul class=\"pm-chat-slide-bullets\"><li>Grundlagen für den sicheren Fernzugang (S. 1)</li><li>Konfiguration und Härtung von SSH-Servern (S. 1)</li><li>Lehrbuch für Privatanwender und Einsteiger (S. 1)</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778572263160,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine zusammenfassende Übersicht basierend auf den bereitgestellten Dokumenten:\n\n**Projektübersicht und Zielsetzung**\nDas Buch „SSH-Server einrichten und betreiben“ ist ein Lehrbuchprojekt für Privatanwender, das am 01.01.2021 von ademant initiiert wurde (S. 1). Ziel ist es, Konsolenzugänge für Linux-Systeme sicher zu konfigurieren und Möglichkeiten der SSH-Nutzung umfassend darzustellen (S. 1). Es wird ausdrücklich darauf hingewiesen, dass die Sicherheitsanforderungen im geschäftlichen Bereich über den Inhalt dieser Anleitung hinausgehen (S. 1).\n\n**Vorteile von SSH gegenüber Remote Desktop**\nWährend Remote-Desktop-Lösungen oft den kompletten Bildschirm übertragen und damit eine hohe Bandbreite erfordern sowie gleichzeitige Bedienungen erschweren, bietet SSH einen schlanken Zugriff auf die Textkonsole (S. 2). Die Vorteile liegen in der effizienten Systemadministration, der Ermöglichung einer parallelen Nutzung durch mehrere User und der sicheren Dateiübertragung (S. 2).\n\n**Funktionsweise und Sicherheit**\nSSH agiert im Client-Server-Prinzip (S. 2). Beim Verbindungsaufbau verhandeln Client und Server die eingesetzten Verschlüsselungsmethoden (S. 2). Im Sinne der Sicherheit soll die veraltete Protokollversion 1 ausgeschlossen und unsichere Verschlüsselungsmethoden in der Konfiguration deaktiviert werden (S. 2). Finden Client und Server nach dieser Prüfung keine Übereinstimmung, wird der Verbindungsaufbau verweigert (S. 2).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572263169,
+      "channel": "plan_pipe_64d7b0cf6763",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Der vorliegende Text beschreibt den Ablauf und die Sicherheitsmechanismen einer SSH-Verbindung zwischen Client und Server.\n\nDer Aufbau einer SSH-Verbindung umfasst folgende Phasen:\n\n1. Schlüsselaushandlung und Authentifizierung: Zunächst wird ein symmetrischer Schlüssel ausgehandelt, ohne diesen zu übertragen (S. 3). Anschließend erfolgt eine gegenseitige Authentifizierung. Der Client prüft das Serverzertifikat mithilfe einer internen Datenablage. Bei Abweichungen des Zertifikats wird der Verbindungsaufbau verweigert (S. 3).\n\n2. Nutzerberechtigung: Der Server prüft, ob der angeforderte Benutzeraccount existiert und für den Zugriff berechtigt ist. Als Authentifizierungsverfahren können hierbei Benutzername und Passwort oder clientseitige Zertifikate dienen (S. 3).\n\n3. Kommunikation: Nach erfolgreicher Sicherung der Transportschicht und der Authentifizierung wird eine gesicherte Verbindung etabliert. Diese ermöglicht entweder die Arbeit an der Eingabeaufforderung des Servers oder die Übertragung von Dateien mittels Secure Copy oder SSH-FTP (S. 3).\n\nDas Dokument endet mit organisatorischen Hinweisen zum Wikibooks-Projekt zur Einrichtung und zum Betrieb eines SSH-Servers, wobei der aktuelle Bearbeitungsstand als noch sehr gering eingestuft wird (S. 3-4).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572263170,
+      "channel": "plan_pipe_64d7b0cf6763",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778572263259,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Was ist ein wesentlicher praktischer Vorteil von SSH gegenüber Remote-Desktop-Lösungen unter Windows?",
+            "options": [
+              "SSH überträgt das gesamte grafische Interface, was die Bandbreite optimiert.",
+              "SSH ist ein ressourcenschonender Textkonsolen-Zugang, der den lokalen Nutzer nicht stört.",
+              "Die grafische Oberfläche von Windows bietet keine Sicherheit, SSH hingegen schon.",
+              "Bei SSH müssen keine verschlüsselten Verbindungen verhandelt werden, was die Verbindung beschleunigt."
+            ],
+            "correctIndex": 1,
+            "explanation": "SSH bietet eine schlanke Textkonsole. Im Gegensatz zu Remote Desktop muss nicht der gesamte grafische Bildschirm übertragen werden, und man kann unabhängig vom lokalen Nutzer am System arbeiten."
+          },
+          {
+            "question": "Was passiert während der SSH-Verbindungsüberprüfung, wenn sich der 'Fingerprint' oder das Zertifikat des Servers im Vergleich zur gespeicherten Version in der 'known_hosts'-Datei ändert?",
+            "options": [
+              "Die Verbindung wird automatisch mit einem neuen Schlüssel aktualisiert.",
+              "Der Client fragt nach dem Passwort des Administrators, um die Änderung zu bestätigen.",
+              "Der Client lehnt die Verbindung ab, um mögliche Sicherheitsrisiken zu verhindern.",
+              "Der Server erzwingt eine Neuanmeldung des Nutzers."
+            ],
+            "correctIndex": 2,
+            "explanation": "Der Client prüft bei jeder Verbindung, ob das Zertifikat des Servers mit dem gespeicherten übereinstimmt. Weicht es ab, wird die Verbindung abgelehnt, was vor Man-in-the-Middle-Angriffen schützt."
+          },
+          {
+            "question": "Warum ist es wichtig, SSH-Protokollversion 1 in der Server-Konfiguration auszuschließen?",
+            "options": [
+              "Weil sie keine 256-Bit-Verschlüsselung unterstützt.",
+              "Weil sie die maximale Anzahl an gleichzeitigen Verbindungen auf Eins begrenzt.",
+              "Weil diese Version als unsicher gilt.",
+              "Weil sie nur mit älteren Windows-Versionen kompatibel ist."
+            ],
+            "correctIndex": 2,
+            "explanation": "Das Protokoll der Version 1 gilt als veraltet und unsicher. Daher sollte die Konfiguration so angepasst werden, dass nur sicherere Protokollversionen zugelassen werden."
+          },
+          {
+            "question": "Welche Rolle spielt die 'Aushandlungsphase' zu Beginn der SSH-Verbindung?",
+            "options": [
+              "Hier wird geprüft, ob sich Client und Server auf gemeinsame, sichere Verschlüsselungsmethoden einigen können.",
+              "Hier wird die physische Verbindung zwischen Router und Server aufgebaut.",
+              "Es werden die Benutzerrechte direkt auf Betriebssystemebene zugewiesen.",
+              "Es wird der Datendurchsatz der Internetleitung gemessen."
+            ],
+            "correctIndex": 0,
+            "explanation": "In der Aushandlungsphase prüfen Client und Server gemeinsam, welche Verschlüsselungsmethoden und Protokolle sie unterstützen. Finden sie keine Übereinstimmung, kommt keine Verbindung zustande."
+          },
+          {
+            "question": "Was unterscheidet die Authentifizierung bei SSH von einem einfachen Passwort-Login?",
+            "options": [
+              "SSH erfordert zwingend eine Internetverbindung zum Hersteller des SSH-Dienstes.",
+              "Der Server kann zusätzlich zum Passwort ein Zertifikat des Clients anfordern, um die Identität zu verifizieren.",
+              "SSH-Authentifizierung findet ausschließlich lokal auf dem Server statt, ohne Interaktion mit dem Client.",
+              "Bei SSH wird das Passwort in Klartext an den Server gesendet, um Latenzzeiten zu vermeiden."
+            ],
+            "correctIndex": 1,
+            "explanation": "SSH bietet eine flexiblere Authentifizierung. Neben der klassischen Nutzer-Passwort-Kombination kann der Server den Client auffordern, ein kryptografisches Zertifikat vorzuweisen."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778572263260,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist der Hauptvorteil einer SSH-Verbindung gegenüber Remote Desktop?",
+            "back": "SSH ermöglicht einen schlanken Zugang zur Textkonsole, verbraucht weniger Netzwerkbandbreite und erlaubt das parallele Arbeiten mehrerer Nutzer auf dem Server."
+          },
+          {
+            "front": "Warum sollte SSH-Protokoll Version 1 nicht verwendet werden?",
+            "back": "SSH Version 1 gilt als unsicher und sollte daher in der Serverkonfiguration ausgeschlossen werden."
+          },
+          {
+            "front": "Wie funktioniert die Client-Server-Authentifizierung bei SSH?",
+            "back": "Der Server präsentiert dem Client ein Zertifikat, das der Client mit einer lokal gespeicherten Datenablage vergleicht, um die Identität sicherzustellen."
+          },
+          {
+            "front": "Was passiert, wenn sich das Zertifikat eines SSH-Servers ändert?",
+            "back": "Da das präsentierte Zertifikat dann nicht mehr mit dem in der lokalen Ablage des Clients gespeicherten Schlüssel übereinstimmt, lehnt der Client die Verbindung ab."
+          },
+          {
+            "front": "Welche Authentifizierungsmethoden können für den Nutzerzugang konfiguriert werden?",
+            "back": "Neben der klassischen Kombination aus Benutzername und Passwort kann der Server auch ein Zertifikat vom Client anfordern, um dessen Berechtigung zu prüfen."
+          },
+          {
+            "front": "Welche zwei Arten von Verbindungen können nach der Authentifizierung über SSH genutzt werden?",
+            "back": "Es kann eine Eingabeaufforderung (Textkonsole) oder eine Datenverbindung (für Secure_Copy oder SSH-FTP) geöffnet werden."
+          },
+          {
+            "front": "Warum ist ein SSH-Zugang besonders für Raspberry Pi-Systeme wichtig?",
+            "back": "Da diese Geräte in der Regel als headless-Systeme ohne eigenen Monitor, Tastatur und Maus betrieben werden, ist SSH für die Administration unerlässlich."
+          },
+          {
+            "front": "Was geschieht in der Phase der Verschlüsselungsaushandlung?",
+            "back": "Client und Server einigen sich auf die zu verwendenden symmetrischen Verschlüsselungsmethoden. Stimmen keine Methoden überein, wird der Verbindungsaufbau abgelehnt."
+          },
+          {
+            "front": "Welche Aufgaben lassen sich über eine SSH-Konsole ausführen?",
+            "back": "Systemadministration (Updates), Konfiguration von Diensten, Einsehen von Log-Dateien, Neustarts und sicheres Kopieren von Dateien."
+          },
+          {
+            "front": "Warum ist Remote Desktop bei Windows im Vergleich zu SSH oft weniger effizient für die Administration?",
+            "back": "Remote Desktop überträgt den kompletten grafischen Bildschirminhalt, was eine stabile Verbindung mit hoher Kapazität erfordert und oft ein paralleles Arbeiten am selben Desktop stört."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-cs-netzwerke-einfuehrung_2",
+      "slides": [
+        {
+          "title": "SSH-Server einrichten und absichern",
+          "bullets": [
+            "Grundlagen für den sicheren Fernzugang (S. 1)",
+            "Konfiguration und Härtung von SSH-Servern (S. 1)",
+            "Lehrbuch für Privatanwender und Einsteiger (S. 1)"
+          ],
+          "notes": "Willkommen zu unserer Lektion 3. Wir beschäftigen uns heute mit dem Aufbau und der Absicherung von SSH-Servern für eine effiziente Administration.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Warum SSH statt Remote Desktop?",
+          "bullets": [
+            "Schlanker Textkonsolen-Zugang statt Grafik-Streams (S. 2)",
+            "Effiziente Nutzung von Netzwerkbandbreite (S. 2)",
+            "Paralleles Arbeiten mehrerer Nutzer möglich (S. 2)",
+            "Sichere Administration und Dateiverwaltung (S. 2)"
+          ],
+          "notes": "Im Gegensatz zum Remote Desktop überträgt SSH nur Textdaten. Das spart Bandbreite und ermöglicht das gleichzeitige Arbeiten mehrerer Administratoren.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Funktionsweise der SSH-Verbindung",
+          "bullets": [
+            "Client-Server-Prinzip mit symmetrischer Verschlüsselung (S. 2)",
+            "Ausschluss unsicherer Protokolle (Version 1) (S. 2)",
+            "Sicherheitsabfrage schon beim Verbindungsaufbau (S. 2)"
+          ],
+          "notes": "SSH baut auf einem sicheren Handshake auf, bei dem beide Seiten die Verschlüsselungsmethoden aushandeln und unsichere Standards konsequent ablehnen.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Authentifizierung und Sicherheit",
+          "bullets": [
+            "Gegenseitige Authentifizierung über Zertifikate (S. 3)",
+            "Prüfung der Client-Berechtigung durch den Server (S. 3)",
+            "Verwendung von Passwörtern oder Client-Zertifikaten (S. 3)",
+            "Sichere Übertragung via Textkonsole oder Datei-Transfer (S. 3)"
+          ],
+          "notes": "Nach der Etablierung des sicheren Kanals erfolgt die Identitätsprüfung. Hierbei kann neben dem Passwort auch ein Zertifikat verlangt werden.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Weiterführende Ressourcen",
+          "bullets": [
+            "Nutzung des Wikibooks-Lehrbuchs (S. 4)",
+            "Hilfe bei Problemen über die Diskussionsseiten (S. 4)",
+            "Regelmäßige Aktualisierung der Konfiguration (S. 4)"
+          ],
+          "notes": "Für tiefergehende Konfigurationen der Firewall und Nutzerverwaltung finden Sie ergänzende Informationen und Hilfe direkt im verlinkten Wiki.",
+          "page_range": "4",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 3 — SSH und sichere Verbindungen - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778572263159,
+      "pdfName": "SSH-Server einrichten und betreiben"
+    }
+  ],
+  "sourceHash": "8f834b183bd1e321"
+}

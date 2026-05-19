@@ -1,0 +1,354 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Datenbanken — SQL und PostgreSQL - Lektion 2 — PostgreSQL",
+    "pdfName": "PostgreSQL und PostGIS-de",
+    "createdAt": 1778572239234,
+    "exportedAt": "2026-05-12T07:50:39.235Z",
+    "meta": {
+      "courseId": "course-de-cs-datenbanken-praxis",
+      "lessonIndex": 1,
+      "courseTitle": "Datenbanken — SQL und PostgreSQL",
+      "lessonObjective": "Installation, Konfiguration, Performance.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-postgresql-und-postgis-de",
+            "title": "PostgreSQL und PostGIS-de",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/PostgreSQL_und_PostGIS-de"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_35a83930afa0",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-5",
+          "chapterTitle": "Einleitung, Installation von PostgreSQL und pgAdmin",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "6-6",
+          "chapterTitle": "Einrichten der PostGIS-Erweiterung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "7-10",
+          "chapterTitle": "SQL-Syntax und Grundlagen der Datenbankanlage",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "11-13",
+          "chapterTitle": "Sichten, Datensicherheit und Web-Dienste",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778572239234,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung zur Installation und Konfiguration von PostgreSQL basierend auf dem vorliegenden Dokument:\n\n### Lektion 2: PostgreSQL – Installation und Einrichtung\n\n#### 1. Überblick\n*   **PostgreSQL** ist ein leistungsfähiges Datenbankmanagementsystem, das in vielen Bereichen mit kommerziellen Produkten (wie Oracle) vergleichbar ist (S. 2).\n*   **PostGIS** ist eine wichtige Erweiterung, die PostgreSQL um Funktionen für Geografische Informationssysteme (GIS) ergänzt, um Geometriedaten direkt zu speichern und zu verarbeiten (S. 2).\n\n#### 2. Installation\n*   **Windows:** Die Installation erfolgt über das Setup-Programm (z. B. `postgresql-8.4.4-1-windows.exe`). Wichtige Parameter sind die Wahl des Zielordners, das Passwort, der Port (Standard: 5432) und die Einstellung der Locale (S. 3).\n*   **Linux (Ubuntu):** Die Installation erfolgt effizient über den Terminal-Befehl `sudo apt-get install postgresql` (S. 3).\n*   **Wichtiger Hinweis:** Bei Problemen mit einer erneuten Installation unter Windows kann der Befehl `net user postgres /delete` in der Kommandozeile zur Fehlerbehebung genutzt werden (S. 4).\n\n#### 3. PostGIS-Erweiterung einrichten\n*   Nach der Installation des PostGIS-Pakets wird die Datenbank durch ein separates Setup-Programm (`postgis-pg84-setup...`) GIS-fähig gemacht (S. 6).\n*   Hierbei wird normalerweise ein neuer Datenbankname (z. B. \"postgis\") vergeben und die Anbindung an das Verwaltungstool `pgAdmin III` konfiguriert (S. 6).\n\n#### 4. Grundlagen und Best Practices\n*   **Schreibweise:** Bei der Anlage von Schemata, Tabellen und Spalten ist es grundsätzlich Pflicht, Bezeichnungen kleinzuschreiben (S. 8).\n*   **Datenmodellierung:** Die Datenstruktur wird durch Schemata definiert. Beziehungen zwischen Tabellen werden durch Primär- und Fremdschlüssel sichergestellt (S. 8, S. 9). Zur Integrität können Aktionen wie `ON UPDATE RESTRICT` oder `ON DELETE CASCADE` festgelegt werden (S. 9, S. 10).\n*   **Datensicherung:** Die zuverlässigste Methode zur Sicherung ist die Einrichtung von automatisierten Aufgaben, wie beispielsweise *Cronjobs* unter Linux, anstatt nur Kopien der Datenordner zu erstellen (S. 12).\n\n#### 5. Administration\n*   Für die Verwaltung der Datenbank steht das Tool **pgAdmin** zur Verfügung (S. 3, S. 5).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778572239234,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-cs-datenbanken-praxis_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 2 — PostgreSQL - Präsentation</span><span class=\"pm-chat-count\">5 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Einführung in PostgreSQL</div><ul class=\"pm-chat-slide-bullets\"><li>Leistungsfähiges, frei verfügbares Datenbank-Management-System.</li><li>Erweiterbarkeit durch PostGIS für Geodaten-Anwendungen (GIS).</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778572239235,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des bereitgestellten Dokuments (S. 1-5):\n\n**Grundlagen und Nutzen**\nPostgreSQL bietet eine leistungsfähige Datenbanklösung, die in ihrem Funktionsumfang mit kommerziellen Produkten wie Oracle vergleichbar ist (S. 2). Die Erweiterung PostGIS ermöglicht es zudem, Geometrien direkt in der Datenbank zu speichern und Funktionen für Geografische Informationssysteme (GIS) zu nutzen (S. 2).\n\n**Installation**\nDie Installation von PostgreSQL kann sowohl unter Windows als auch unter Linux (Ubuntu) erfolgen (S. 2).\n- Windows: Über eine Setup-Datei (z. B. postgresql-8.4.4-1-windows.exe) werden Zielordner, Passwort und Port (Standard: 5432) definiert (S. 3).\n- Linux: Die Installation erfolgt komfortabel über die APT-Paketverwaltung im Terminal mittels des Befehls sudo apt-get install postgresql (S. 3).\nSollte eine Neuinstallation aufgrund eines falsch eingegebenen Passworts für den \"postgres\"-Benutzeraccount fehlschlagen, kann dieser über den Befehl net user postgres /delete gelöscht werden, um den Prozess erneut zu starten (S. 4).\n\n**Verwaltung und Erweiterung**\nZur Verwaltung der Datenbanken dient das Tool pgAdmin (S. 3, S. 5). Nach der grundlegenden Installation ist die Einrichtung der PostGIS-Erweiterung ein weiterer essenzieller Schritt, um die GIS-Funktionalität vollständig nutzen zu können (S. 2, S. 5). Das Dokument deckt darüber hinaus Themen wie SQL-Syntax, Datensicherung und die Bereitstellung von Web-Diensten ab (S. 2).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572239244,
+      "channel": "plan_pipe_35a83930afa0",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die prägnante Zusammenfassung des Abschnitts zur Installation von PostGIS:\n\n**Ziel der Installation**\nDie Erweiterung PostGIS ermöglicht es, PostgreSQL-Datenbanken um GIS-Funktionalitäten zu ergänzen, sodass diese für die Speicherung und Verarbeitung kartografischer Daten genutzt werden können.\n\n**Wichtige Installationsschritte unter Windows**\nDie Einrichtung erfolgt über die bereitgestellte Setup-Datei (z. B. postgis-pg84-setup-1.5.1-1.exe) und umfasst folgende Phasen:\n\n1. Komponentenauswahl: Hierbei sind PostGIS sowie die Option zur Erstellung einer räumlichen Datenbank (Create Spatial Database) auszuwählen.\n2. Zielpfad: Festlegung des Installationsverzeichnisses.\n3. Datenbankverbindung: Eingabe der erforderlichen Anmeldedaten (Benutzername wie postgres, Passwort, Port 5432) sowie die Namensgebung für die neue Datenbank.\n4. Plugin-Integration: Durch die Auswahl der Option für das shp2pgsql-Plugin wird die Funktionalität in pgAdmin III integriert. Dies führt dazu, dass die Datei plugins.ini überschrieben und gesichert wird.\n\n**Ressourcen**\nWeitere Informationen und aktuelle Dateien für die Installation unter Windows sind über die offizielle PostGIS-Webseite (http://postgis.refractions.net/download/windows/) sowie das entsprechende Wikibooks-Portal verfügbar.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572239245,
+      "channel": "plan_pipe_35a83930afa0",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die vorliegenden Unterlagen (S. 7-10) beschreiben die Einrichtung einer beispielhaften Bank-Datenbank in PostgreSQL. Das Ziel ist die Abbildung eines Buchungsverkehrs für Bankkonten.\n\nStruktur der Datenbank:\nEs wird ein Schema mit dem Namen bankkonto definiert, welches dem Nutzer Martin zugeordnet ist (S. 8).\n\nTabellenaufbau:\nDie Datenbank basiert auf zwei Haupttabellen:\n1. Die Tabelle bankkonto enthält Stammdaten wie Kontonummer, Inhaber, Bankname und Bankleitzahl (S. 8).\n2. Die Tabelle buchungen dient zur Dokumentation von Ein- und Auszahlungen (S. 8).\n\nTechnisches Vorgehen:\nBei der Erstellung der Tabellen ist die strikte Kleinschreibung von Schemata, Tabellen und Spalten zu beachten (S. 8). Zur Sicherstellung der Datenintegrität werden Primär- und Fremdschlüssel definiert (S. 9). Der Primärschlüssel in der Tabelle bankkonto identifiziert die Datensätze eindeutig über das Feld bkid (S. 9). Zur Verknüpfung der beiden Tabellen fungiert das Feld bkid in der Tabelle buchungen als Fremdschlüssel, der auf die Tabelle bankkonto referenziert (S. 9-10). Ergänzend wurden Bedingungen für Aktualisierungen und Löschvorgänge festgelegt, wie etwa $ON \\text{ } DELETE \\text{ } CASCADE$ (S. 9-10).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572239246,
+      "channel": "plan_pipe_35a83930afa0",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 7,
+        "end": 10
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Seiten 11 bis 13 des Dokuments behandeln den Abschluss des Themenkomplexes zu PostgreSQL und PostGIS sowie grundlegende Hinweise zur Datensicherung. Hier sind die zentralen Punkte zusammengefasst:\n\nThemenübersicht und Struktur\nDer Abschnitt schließt die Behandlung von Sichten und Auswertungen ab (S. 11) und führt in das Thema der Datenbank-Datensicherung ein (S. 12). Den Abschluss bildet der Übergang zum Bereich der Bereitstellung von Web-Diensten (S. 13).\n\nDatensicherungskonzepte\nFür die Sicherung von PostgreSQL-Datenbanken werden zwei Ansätze gegenübergestellt. Das bloße Kopieren des Datenordners ist zwar möglich, gilt jedoch als weniger zuverlässig. Empfohlen wird stattdessen die Einrichtung automatisierter Sicherungsroutinen, wie sie beispielsweise über Cronjobs unter Linux realisiert werden (S. 12).\n\nQuellennachweis und Lizenzierung\nDas Dokument verweist auf bestehende Wikibook-Inhalte zur Datensicherung. Die Informationen unterliegen der Lizenz \"Creative Commons Namensnennung – Weitergabe unter gleichen Bedingungen\", wobei der letzte Änderungsstand auf den 20. August 2016 datiert ist (S. 13).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778572239247,
+      "channel": "plan_pipe_35a83930afa0",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 11,
+        "end": 13
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778572239334,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Welches Hauptkriterium ist bei der Benennung von Schemas, Tabellen und Spalten in PostgreSQL zu beachten?",
+            "options": [
+              "Sie müssen zwingend mit einem Großbuchstaben beginnen.",
+              "Es ist Pflicht, alle Bezeichnungen klein zu schreiben.",
+              "Sie dürfen keine Unterstriche enthalten.",
+              "Sie müssen immer den Namen des Datenbankbesitzers enthalten."
+            ],
+            "correctIndex": 1,
+            "explanation": "Laut dem Text besteht die grundsätzliche Pflicht, Bezeichnungen von Schema, Tabellen, Tabellenspalten etc. klein zu schreiben."
+          },
+          {
+            "question": "Was bewirkt die Installation der PostGIS-Erweiterung in einer PostgreSQL-Datenbank?",
+            "options": [
+              "Sie erhöht automatisch die Schreibgeschwindigkeit der SQL-Abfragen.",
+              "Sie ermöglicht die Verwaltung von Geometrien und kartografischen Inhalten.",
+              "Sie ersetzt das standardmäßige Benutzerverwaltungssystem durch ein sichereres.",
+              "Sie optimiert die Konfiguration des Datenbank-Ports auf 8080."
+            ],
+            "correctIndex": 1,
+            "explanation": "PostGIS ermöglicht es, dass Geometrien direkt in der Datenbank abgelegt werden können und Funktionen von Geografischen Informationssystemen (GIS) umgesetzt werden."
+          },
+          {
+            "question": "Warum wird beim Erstellen von Tabellenbeziehungen die ON DELETE CASCADE Konfiguration verwendet?",
+            "options": [
+              "Um das Löschen von Tabellen zu verhindern, solange Daten vorhanden sind.",
+              "Um manuelle Backups der Daten zu erzwingen.",
+              "Um sicherzustellen, dass abhängige Datensätze beim Löschen eines Primärschlüssels automatisch mit entfernt werden.",
+              "Um externe Web-Dienste über das Löschen von Datensätzen zu informieren."
+            ],
+            "correctIndex": 2,
+            "explanation": "CASCADE-Optionen bei Fremdschlüsseln bewirken, dass eine Löschoperation auf dem referenzierten Primärschlüssel automatisch alle abhängigen Datensätze (in diesem Fall die Buchungen zum Konto) entfernt."
+          },
+          {
+            "question": "Was ist der empfohlenste Weg zur Datensicherung in PostgreSQL laut Text?",
+            "options": [
+              "Regelmäßiges manuelles Kopieren des gesamten Datenordners des Betriebssystems.",
+              "Die Nutzung von pgAdmin ausschließlich über die grafische Oberfläche.",
+              "Die Einrichtung automatisierter Aufgaben, wie beispielsweise Cronjobs unter Linux.",
+              "Das manuelle Exportieren der Datenbank in eine Excel-Datei."
+            ],
+            "correctIndex": 2,
+            "explanation": "Obwohl das Kopieren von Ordnern möglich ist, wird im Text darauf hingewiesen, dass die Einrichtung automatisierter Aufgaben (wie Cronjobs) zuverlässiger ist."
+          },
+          {
+            "question": "Was geschieht, wenn bei der PostgreSQL-Installation unter Windows ein Passwortfehler gemeldet wird, obwohl die Installation bereits einmal stattfand?",
+            "options": [
+              "Der Installations-Port muss zwingend auf 5433 geändert werden.",
+              "Der PostgreSQL-Dienst muss neu installiert werden, ohne den Rechner neu zu starten.",
+              "Der Benutzer 'postgres' muss via Kommandozeile gelöscht werden, um einen sauberen Neustart zu ermöglichen.",
+              "Das Passwort muss in der Datei 'plugins.ini' manuell eingetragen werden."
+            ],
+            "correctIndex": 2,
+            "explanation": "Bei einer erneuten Installation nach einem Fehler muss der Benutzer 'postgres' mittels 'net user postgres /delete' über die Windows-Kommandozeile entfernt werden."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778572239335,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist der Zweck der PostGIS-Erweiterung für PostgreSQL?",
+            "back": "PostGIS ermöglicht das Speichern von Geometrien in der Datenbank und stellt Funktionen für Geografische Informationssysteme (GIS) bereit."
+          },
+          {
+            "front": "Über welchen Standard-Port kommuniziert PostgreSQL üblicherweise?",
+            "back": "Der Standard-Port ist 5432."
+          },
+          {
+            "front": "Wie installiert man PostgreSQL unter Ubuntu Linux über das Terminal?",
+            "back": "Mit dem Befehl: sudo apt-get install postgresql"
+          },
+          {
+            "front": "Was ist bei der Benennung von Schemas, Tabellen und Spalten in PostgreSQL zu beachten?",
+            "back": "Es besteht die grundsätzliche Pflicht, diese Bezeichnungen klein zu schreiben."
+          },
+          {
+            "front": "Welches Tool dient zur grafischen Administration einer PostgreSQL-Datenbank?",
+            "back": "Das Admin-Tool pgAdmin."
+          },
+          {
+            "front": "Welche SQL-Anweisung erstellt ein neues Datenbankschema namens 'bankkonto' für den Nutzer 'martin'?",
+            "back": "CREATE SCHEMA bankkonto AUTHORIZATION martin;"
+          },
+          {
+            "front": "Wie lautet der Befehl, um einen Primärschlüssel (Primary Key) zu einer Tabelle hinzuzufügen?",
+            "back": "ALTER TABLE tabellenname ADD CONSTRAINT constraint_name PRIMARY KEY (spaltenname);"
+          },
+          {
+            "front": "Was bewirkt 'ON DELETE CASCADE' bei einem Fremdschlüssel?",
+            "back": "Wenn ein Datensatz in der Haupttabelle gelöscht wird, werden automatisch alle zugehörigen Datensätze in der verknüpften Tabelle ebenfalls gelöscht."
+          },
+          {
+            "front": "Was ist bei einer Neuinstallation von PostgreSQL zu tun, wenn die Passwort-Eingabe fehlschlägt?",
+            "back": "Der Benutzer 'postgres' muss über die Windows-Kommandozeile gelöscht werden mit: net user postgres /delete"
+          },
+          {
+            "front": "Welche Methode wird zur zuverlässigen Datensicherung unter Linux empfohlen?",
+            "back": "Die Einrichtung automatisierter Aufgaben, beispielsweise durch sogenannte Cronjobs."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-cs-datenbanken-praxis_1",
+      "slides": [
+        {
+          "title": "Einführung in PostgreSQL",
+          "bullets": [
+            "Leistungsfähiges, frei verfügbares Datenbank-Management-System.",
+            "Erweiterbarkeit durch PostGIS für Geodaten-Anwendungen (GIS)."
+          ],
+          "notes": "Heute beginnen wir mit PostgreSQL, einer robusten Alternative zu kommerziellen Systemen. Besonderes Highlight ist die PostGIS-Erweiterung für räumliche Daten.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Installation und Konfiguration",
+          "bullets": [
+            "Windows: Setup-Assistent (Port 5432, POSIX-Locale).",
+            "Linux: Installation via Apt-Paketverwaltung (sudo apt-get install).",
+            "Konfliktlösung bei Neuinstallation via Kommandozeile (net user postgres /delete).",
+            "pgAdmin dient als zentrale grafische Verwaltungsoberfläche."
+          ],
+          "notes": "Die Installation geht auf Windows und Linux schnell von der Hand. Bei Problemen mit dem Passwort hilft der Befehl in der Windows-Konsole.",
+          "page_range": "3-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "PostGIS-Erweiterung",
+          "bullets": [
+            "Macht Datenbanken GIS-fähig für kartografische Daten.",
+            "Installation ergänzt PostgreSQL um spezialisierte räumliche Funktionen.",
+            "Konfiguration integriert das Plugin nahtlos in pgAdmin."
+          ],
+          "notes": "Nach der Basisinstallation erweitern wir das System um PostGIS. Einmal eingerichtet, lassen sich komplexe geometrische Daten direkt verarbeiten.",
+          "page_range": "6",
+          "image_prompt": ""
+        },
+        {
+          "title": "Datenbank-Struktur und SQL",
+          "bullets": [
+            "Strenge Namenskonventionen: Kleinschreibung bei Schemata und Tabellen.",
+            "Schema-Anlage bietet saubere logische Datenstruktur.",
+            "Definition von Primärschlüsseln zur Identifikation von Datensätzen.",
+            "Fremdschlüssel sichern referenzielle Integrität zwischen Tabellen."
+          ],
+          "notes": "Bei der Datenbankanlage steht Ordnung an erster Stelle. Durch saubere Tabellendefinitionen und Schlüsselbeziehungen halten wir unsere Daten konsistent.",
+          "page_range": "8-10",
+          "image_prompt": ""
+        },
+        {
+          "title": "Wartung und Datensicherheit",
+          "bullets": [
+            "Sichten dienen der strukturierten Datenauswertung.",
+            "Sicherungskonzepte verhindern Datenverlust bei Systemausfällen.",
+            "Automatisierung von Backups (z. B. via Cronjobs unter Linux)."
+          ],
+          "notes": "Abschließend betrachten wir die Absicherung. Automatisierte Backup-Routinen sind unerlässlich für den professionellen Betrieb Ihrer Datenbanken.",
+          "page_range": "11-12",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 2 — PostgreSQL - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778572239234,
+      "pdfName": "PostgreSQL und PostGIS-de"
+    }
+  ],
+  "sourceHash": "6f118f4643660bf3"
+}

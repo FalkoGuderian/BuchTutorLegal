@@ -1,0 +1,436 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Data Driven - Lesson 3: System- and Data-Driven Methods and Algorithms",
+    "pdfName": "System- and Data-Driven Methods and Algorithms",
+    "createdAt": 1778789165598,
+    "exportedAt": "2026-05-14T20:06:05.598Z",
+    "meta": {
+      "courseId": "course-en-gen-data-driven",
+      "lessonIndex": 2,
+      "courseTitle": "Data Driven",
+      "lessonObjective": "Selection on \"data driven\"",
+      "licensing": {
+        "effective_license": "unknown",
+        "sources": [
+          {
+            "content_id": "doab-system-and-data-driven-methods-and-algorithms",
+            "title": "System- and Data-Driven Methods and Algorithms",
+            "source": "doab",
+            "license": "unknown",
+            "license_url": "",
+            "url": "https://directory.doabooks.org/handle/20.500.12854/77274"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_8130f0969f75",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "12-25",
+          "chapterTitle": "Model order reduction: basic concepts and notation",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "26-67",
+          "chapterTitle": "Balancing-related model reduction methods",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "68-107",
+          "chapterTitle": "Model order reduction based on moment-matching",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "108-149",
+          "chapterTitle": "Modal methods for reduced order modeling",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "150-191",
+          "chapterTitle": "Post-processing methods for passivity enforcement",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "192-239",
+          "chapterTitle": "The Loewner framework for system identification and reduction",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "240-285",
+          "chapterTitle": "Manifold interpolation",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "286-310",
+          "chapterTitle": "Vector fitting",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "311-364",
+          "chapterTitle": "Kernel methods for surrogate modeling",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "366-389",
+          "chapterTitle": "Kriging: methods and applications",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778789165598,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "This summary provides an overview of the role of data-driven methods in Model Order Reduction (MOR), as discussed in **Volume 1: System- and Data-Driven Methods and Algorithms**.\n\n### **Overview of Data-Driven Methods in MOR**\nData-driven MOR focuses on constructing reduced-order models when the underlying physical system is either unknown, too complex to model, or inaccessible. Instead of relying on a derivation from explicit physical equations (like PDEs), these methods infer system behavior from observation and measurement data.\n\n### **Key Approaches & Algorithms**\nThe handbook identifies several prominent data-driven techniques, primarily detailed in the final chapters of Volume 1:\n\n*   **Vector Fitting (Chapter 8):** A prominent algorithm that utilizes system response measurements (samples) to construct an accurate reduced-order representation.\n*   **Kernel Methods (Chapter 9):** These methods treat systems as \"surrogates\" where the model is either unknown or purposefully ignored, relying on information garnered from sampling inputs and outputs to estimate the system’s behavior.\n*   **Kriging (Chapter 10):** A data-driven interpolation technique used for generating reduced models through kernel regression, specifically under the assumption of an underlying Gaussian distribution.\n*   **Loewner Framework (Chapter 6):** Serves as a bridge between interpolation and data-driven system identification, connecting measurement-based approaches to projection and moment-matching techniques.\n\n### **Core Objectives**\n1.  **Non-intrusive Modeling:** These methods are designed to be \"non-intrusive,\" requiring little to no prior knowledge of the physical model, relying instead on tools/software to extract relevant information from system behavior.\n2.  **Bridging Disciplines:** By integrating techniques from machine learning, deep learning, and numerical analysis, data-driven MOR aims to harmonize diverse scientific approaches (e.g., system theory vs. numerical PDEs) into a cohesive workflow.\n3.  **Efficiency:** Like derivative-based MOR techniques, the goal remains the reduction of model complexity to enable faster numerical simulations without sacrificing critical accuracy.\n\n***\n\n**Source Reference:**\n*   *Model Order Reduction, Volume 1: System- and Data-Driven Methods and Algorithms (pp. S.8–S.9, S.14–S.15)*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789165598,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-gen-data-driven_2\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 3: System- and Data-Driven Methods and Algorithms - Presentation</span><span class=\"pm-chat-count\">1 slide</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">System- and Data-Driven Methods</div><ul class=\"pm-chat-slide-bullets\"><li>System-driven methods leverage internal model physics and governing equations.</li><li>Data-driven methods construct models primarily from input/output measurement data.</li><li>Complementary approaches share the objective of model order reduction (MOR).</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778789165599,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as the first chapter of a three-volume series on Model Order Reduction (MOR). It defines MOR as a methodology to simplify complex, large-scale numerical simulations by removing superfluous details while preserving the accuracy of the results.\n\nThe key points are:\n\n**The Purpose of MOR**\nMOR addresses the computational burden of high-fidelity simulations. By extracting the dominant behavior of a system, it reduces the complexity (the number of variables) of the problem, leading to lower energy consumption and faster computation times without sacrificing necessary accuracy (p. 2).\n\n**Two Main Approaches**\nThe field is categorized into two complementary cultural perspectives:\n1. System-theoretic approach: Focuses on state-space models and transfer functions (typically ODEs or DAEs). The goal is to derive a Reduced-Order Model (ROM) that approximates the input-output behavior of the original system (p. 5, p. 7).\n2. Numerical analysis approach: Focuses on partial differential equations (PDEs), utilizing snapshot-based methods and projection techniques (such as Galerkin projection) to manage high-dimensional physical field problems (p. 5, p. 8).\n\n**System-Theoretic Formalism**\nStandard linear time-invariant (LTI) systems are described by:\n$E \\dot{x}(t) = Ax(t) + Bu(t)$\n$y(t) = Cx(t) + Du(t)$\nWhere $n$ is the original system size and $r \\ll n$ is the size of the reduced model. The transfer function $H(s)$ in the Laplace domain is expressed as:\n$H(s) = C(sE - A)^{-1}B + D$ (p. 6).\n\n**Approximation and Error Control**\nMOR techniques aim to minimize errors between the original and reduced systems. Common criteria include:\n- Bounding the output error in $L^2$ norms (p. 7).\n- Controlling the transfer function error using Hardy spaces such as $\\mathcal{H}^2$ and $\\mathcal{H}_\\infty$ (p. 7).\n- Employing data-driven methods, such as moment-matching (interpolation of transfer functions and derivatives) or least-squares-based curve fitting (p. 7, p. 8).\n- Truncation techniques, such as balanced truncation, which discard states that contribute least to the system's input-output dynamics (p. 8).\n\nThe series intends to bridge the gap between these distinct communities by providing a comprehensive overview of theories, algorithmic developments, and diverse applications across fields like mechanical engineering, electronics, and beyond (p. 4, p. 5).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789165608,
+      "channel": "plan_pipe_8130f0969f75",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 12,
+        "end": 25
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document provides an introduction to balancing-related model reduction techniques, which are primarily designed to simplify complex systems by identifying and truncating states that contribute the least to the system's energy (p. 26).\n\nKey concepts and findings include:\n\nTheoretical Basis\nThe method relies on the control-theoretic concepts of controllability and observability. For linear time-invariant systems defined by $\\dot{x}(t) = Ax(t) + Bu(t)$ and $y(t) = Cx(t) + Du(t)$, the input and output energies are captured by the controllability Gramian $X$ and the observability Gramian $Y$ (p. 28, 30). These matrices are solutions to the Lyapunov equations:\n$AX + XA^T + BB^T = 0$\n$A^T Y + YA + C^T C = 0$ (p. 31)\n\nConcept of Balancing\nBalanced truncation involves a state-space transformation into \"balanced coordinates\" where the Gramians are equal and diagonal: $X = Y = \\text{diag}(\\sigma_1, \\dots, \\sigma_n)$. In this form, the Hankel singular values $\\sigma_i$ indicate the importance of each state. States associated with small singular values contribute little to the system's input-output behavior and can be discarded to create a reduced-order model (p. 32, 33).\n\nApplication and Extensions\nHistorically rooted in digital filter design, balanced truncation has evolved to include various modifications, such as:\n- Stochastic, positive real, and bounded real balanced truncation (p. 27).\n- Specialized methods for differential-algebraic equations (DAEs), second-order systems, and parametric systems (p. 27).\n- Computational advancements using low-rank methods, allowing the application of these techniques to large-scale systems derived from partial differential equations (p. 27).\n\nPractical Implementation\nThe process involves constructing a Petrov-Galerkin projection where the reduced system is obtained by projecting the dynamics onto subspaces spanned by basis matrices $V$ and $W$. This ensures the reduced model retains stability and provides an a priori error bound relative to the $\\mathcal{H}_{\\infty}$-norm (p. 27, 29).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789165609,
+      "channel": "plan_pipe_8130f0969f75",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 26,
+        "end": 67
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This text provides an overview of Model Order Reduction (MOR) based on moment-matching techniques. These methods are designed to create low-dimensional models, known as Reduced-Order Models (ROMs), which capture the essential input-output behavior of large-scale systems while significantly reducing computational costs.\n\n### Core Concepts of MOR\nThe objective of MOR is to approximate a state vector $x(t, \\mu) \\in \\mathbb{R}^n$ with a much smaller representation $z(t, \\mu) \\in \\mathbb{R}^r$ (where $r \\ll n$). This is achieved by:\n1. Finding a trial subspace $S_1$ (spanned by matrix $V$) to approximate the state manifold.\n2. Using a test subspace $S_2$ (spanned by matrix $W$) to compute a (Petrov-)Galerkin projection.\n3. The resulting ROM, defined by the matrices $\\hat{E} = W^T E V$, $\\hat{A} = W^T A V$, $\\hat{B} = W^T B$, and $\\hat{C} = C V$, mimics the original system's behavior (p. 69).\n\n### Moment-Matching Methods\nMoment-matching constructs ROMs by matching the moments of the system's transfer function $H(s) = C(sE - A)^{-1} B$ in the frequency domain. Key developments include:\n* Asymptotic Waveform Evaluation (AWE): An early method that directly computes moments, though it is prone to numerical instability (p. 70, 71).\n* Padé via Lanczos (PVL): Improves AWE by using the nonsymmetric Lanczos process to avoid explicit moment calculation (p. 71).\n* PRIMA: Focuses on preserving the passivity and stability of the system by using a Galerkin projection ($W=V$) (p. 71, 74).\n\n### Mathematical Foundations\nThese methods rely on Krylov subspaces to define $W$ and $V$. By choosing these subspaces, the transfer function of the ROM is guaranteed to match the first $2q$ moments of the original system's transfer function (p. 73).\n* Expansion points: The accuracy of the ROM depends on the Taylor expansion around a chosen point $s_0$. Rational interpolation is used to perform multi-point expansions, which significantly improves accuracy over larger frequency ranges (p. 72, 74).\n\n### Key Advantages\n* Independence from system inputs: Unlike snapshot-based methods, moment-matching is independent of input time-series, making it robust for varying inputs (p. 70).\n* Efficiency: Algorithms rely on sparse matrix factorizations and solves, keeping the complexity at $O(nq^2)$ (p. 74).\n* Stability: While not inherently guaranteed in all moment-matching methods, certain structures (as shown in Theorem 3.2) ensure passivity and stability (p. 74).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789165610,
+      "channel": "plan_pipe_8130f0969f75",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 68,
+        "end": 107
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This chapter provides an overview of model order reduction (MOR) techniques for structural dynamics, specifically focusing on linear systems and those with geometric nonlinearities. The methods discussed are termed \"modal methods\" because they build reduction bases from system physics rather than purely from data.\n\nKey concepts include:\n\nLinear System Reduction\nThe motion is expressed as a superposition of eigenmodes using coordinate transformation $u(t) \\approx \\Phi q(t)$. Reduction is achieved through the Modal Displacement Method (MDM), which truncates the basis to include only a few significant modes. To improve accuracy despite truncation, researchers use:\n- Mode Acceleration Correction (MAC): Adds a quasi-static correction term to account for the impact of discarded modes on the displacement response.\n- Modal Truncation Augmentation (MTA): Enhances the reduction basis by appending specific Ritz vectors derived from the residual spatial forces ($KX = P_r$) to capture missing static contributions (p. 108–113).\n\nSubstructuring\nSystem reduction can be effectively managed by decomposing complex structures into smaller components. These components are reduced independently and then assembled. Popular strategies include the Hurty–Craig–Bampton method (primal assembly using interface modes) and techniques using attachment modes (dual assembly) (p. 113–114).\n\nNonlinear Dynamics\nWhen displacements are large, geometric nonlinearities arise, modifying the equilibrium equations to include configuration-dependent internal forces $f(u(t))$. The system becomes:\n$$M \\ddot{u}(t) + C \\dot{u}(t) + f(u(t)) = p(t)$$\nThese models often include quadratic and cubic terms. Reducing these systems requires capturing complex phenomena like internal resonances and bifurcations while addressing the computational expense of projecting nonlinear terms (p. 108, 114–115).\n\nIntrusive vs. Non-Intrusive Techniques\n- Intrusive methods require access to the finite element formulation and internal force definitions. They are generally more systematic.\n- Non-intrusive methods do not require underlying code access, making them suitable when only black-box commercial software providing force/Jacobian outputs is available (p. 109).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789165611,
+      "channel": "plan_pipe_8130f0969f75",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 108,
+        "end": 149
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines the theoretical framework and practical methodologies for ensuring the passivity of Reduced Order Models (ROMs) in Linear Time-Invariant (LTI) systems.\n\n### Motivation and Background\nModern complex electronic systems (e.g., microprocessors) are modeled by partitioning them into subsystems. Many of these subsystems represent interconnect networks that are physically dissipative—they store and dissipate energy but do not generate it. If a reduced-order model fails to maintain this physical property, it can introduce unstable resonances during system-level simulations. Consequently, enforcing passivity is essential for numerical stability.\n\n### Definitions of Passivity and Dissipativity\nA system is dissipative if the increase in its stored energy ($V$) does not exceed the energy supplied to it from the environment. For a state-space system defined by the matrices ($A$, $B$, $C$, $D$), the system is passive if there exists a storage function $V(x) = \\frac{1}{2}x^T Px$ with $P = P^T > 0$ such that the dissipation inequality holds:\n$$\\frac{dV(x(t))}{dt} \\leq u(t)^T y(t)$$\n\n### Passivity Conditions\nThe document summarizes three primary mathematical approaches for verifying passivity:\n\n1. Linear Matrix Inequalities (LMIs): Based on the Kalman-Yakubovich-Popov (KYP) lemma, a system is passive if and only if there exists a matrix $P > 0$ satisfying the LMI:\n$$\\begin{pmatrix} A^T P + PA & PB - C^T \\\\ B^T P - C & -(D + D^T) \\end{pmatrix} \\leq 0$$\n\n2. Frequency-Domain Inequalities: A system is passive if its transfer function $H(s)$ is Positive Real (PR). This is checked by verifying that the Hermitian matrix $\\Psi(j\\omega) = H(j\\omega) + H^H(j\\omega)$ remains positive semi-definite for all frequencies $\\omega$:\n$$\\lambda_i(\\Psi(j\\omega)) \\geq 0$$\n\n3. Hamiltonian Matrices: Passivity can be determined by analyzing the eigenvalues of a Hamiltonian matrix $\\mathcal{M}$ derived from the system matrices. A stable system is strictly passive if and only if $\\mathcal{M}$ has no purely imaginary eigenvalues.\n\n### Enforcement Strategies\nBecause many model order reduction (MOR) algorithms do not automatically preserve dissipativity, practitioners must often apply post-processing. These methods generally involve:\n- Identifying frequency bands where passivity is violated (using Hamiltonian or frequency sweep methods).\n- Applying small perturbations to the system coefficients ($A, B, C, D$) to satisfy the required inequalities.\n- Minimizing the perturbation amount in a specific norm to maintain the accuracy of the original model.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789165612,
+      "channel": "plan_pipe_8130f0969f75",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 150,
+        "end": 191
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text outlines the Loewner framework, a data-driven approach for model order reduction (MOR) and system identification, particularly for linear dynamical systems represented as $ \\Sigma = (C, E, A, B) $.\n\nKey points of the framework include:\n\nCore Objective:\nThe framework constructs low-order models that match the transfer function of the original system at specific interpolation points. This is achieved via rational interpolation, which reduces system complexity while maintaining accuracy.\n\nMethodologies:\nReduction is accomplished through Petrov–Galerkin projections, where the reduced system is defined by matrices $ \\hat{C} = CV, \\hat{E} = W^T EV, \\hat{A} = W^T AV, $ and $ \\hat{B} = W^T B $. The choice of projection matrices $ V $ and $ W $ is critical for ensuring the reduced model captures essential system \"moments\" or derivative values at frequencies of interest. The text identifies three primary computational tools for implementation: Singular Value Decomposition (SVD), CUR factorization, and randomized SVD (r-SVD) (p. 192, 193).\n\nMoment Matching:\nThe process relies on matching the generalized moments of the system, which correspond to the coefficients of the Laurent series expansion of the transfer function $ H(s) $ around chosen points $ s_0 $. By utilizing both generalized controllability and observability matrices, the framework achieves two-sided projection, effectively doubling the number of matched moments for a given model dimension (p. 195, 198).\n\nMIMO Handling:\nFor Multi-Input Multi-Output (MIMO) systems, the framework employs tangential interpolation. By selecting specific input/output directions $ \\ell_j $ and $ r_i $, the method solves for a rational matrix $ \\hat{H}(s) $ that satisfies the interpolation constraints (p. 199).\n\nThe Loewner Matrix:\nA foundational component is the construction of the Loewner matrix $ \\mathbb{L} $. For given data pairs, the entries of this matrix are defined as:\n$ \\mathbb{L}_{ij} = \\frac{v_i - w_j}{\\mu_i - \\lambda_j} $\nThis matrix facilitates the transition from raw frequency-domain data to a reduced-order state-space representation (p. 199).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789165613,
+      "channel": "plan_pipe_8130f0969f75",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 192,
+        "end": 239
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document provides an introduction to the numerical treatment of matrix manifolds in the context of parametric model order reduction (pMOR).\n\n### Core Concept: Manifold Interpolation in pMOR\nIn pMOR, the goal is to emulate high-dimensional dynamical systems by projecting them onto reduced-order subspaces. When these systems depend on parameters $\\mu$, the resulting bases or operators are not static but evolve as functions of $\\mu$. These objects frequently possess geometric constraints, forming matrix manifolds (e.g., orthogonal matrices, symmetric positive definite matrices). Interpolating between these points requires methods that respect the underlying manifold structure rather than treating them as standard Euclidean data.\n\n### Key Objectives\n* Computing trajectories of parameterized subspaces and reduced orthogonal bases.\n* Achieving structure-preserving interpolation to maintain physical or mathematical properties (e.g., stability).\n* Developing \"online\" model reduction strategies that avoid full-order snapshots by using manifold-valued data interpolation.\n\n### Mathematical Framework\n* Projection: The state vector $x(t, \\mu)$ is approximated via $x(t, \\mu) \\approx \\mathbb{V}(\\mu) x_r(t)$. \n* Reduced Systems: Projecting the system dynamics leads to reduced operators, for example:\n$$\\frac{d}{dt} x_r(t) = \\mathbb{V}^T(\\mu) A(\\mu) \\mathbb{V}(\\mu) x_r(t) + \\mathbb{V}^T(\\mu) \\mathbb{U}(\\mu) (P^T \\mathbb{U}(\\mu))^{-1} P^T f(\\mathbb{V}(\\mu) x_r(t); \\mu)$$\n* Geometric Tools: The study relies on concepts from differential geometry, specifically treating matrix sets as embedded submanifolds of Euclidean space. This involves the use of charts, parameterizations, tangent spaces, and Riemannian metrics (logarithmic and exponential maps) to navigate and interpolate between points on these manifolds.\n\n### Organization of the Text\n* Background: The text reviews fundamental differential geometry, including differentiable manifolds and Theorem 7.1 regarding submanifolds defined by level sets of smooth functions.\n* Methodology: It provides generic algorithms for interpolation and Taylor-like extrapolation on manifold-valued data.\n* Reference: The work acts as a reference guide, outlining the necessary tools (pseudo-code) and theoretical foundations for researchers to implement manifold-based reduction techniques [S.240, S.241, S.243, S.244, S.245, S.246].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789165614,
+      "channel": "plan_pipe_8130f0969f75",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 240,
+        "end": 285
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text outlines the Vector Fitting (VF) algorithm, a data-driven method for creating reduced-order models of linear time-invariant (LTI) systems from frequency-domain samples.\n\n### Motivation and Purpose\nData-driven modeling is essential when physical system equations are unavailable, such as in experimental cardiovascular measurements or electromagnetic characterization of third-party electronic components. VF allows these systems to be represented as rational functions, which can then be converted into state-space models, differential equations, or equivalent circuits for time-domain simulation.\n\n### Limitations of Previous Methods\nEarly approaches, such as the Levy and Sanathanan–Koerner (SK) methods, approximated the transfer function $H(s)$ as a ratio of polynomials:\n$$\\tilde{H}(s) = \\frac{\\sum_{n=0}^{\\bar{n}} a_n s^n}{\\sum_{n=0}^{\\bar{n}} b_n s^n}$$\nThese methods often suffer from poor numerical conditioning due to the use of monomial basis functions $(s^n)$, which leads to ill-conditioned Vandermonde matrices as the model order $\\bar{n}$ or frequency range increases (p. 288-290).\n\n### The Vector Fitting Innovation\nVF improves upon these methods by replacing the monomial basis with a partial fraction expansion using fixed initial poles $p_n^{(0)}$:\n$$\\tilde{H}(s) \\simeq \\frac{c_0 + \\sum_{n=1}^{\\bar{n}} \\frac{c_n}{s - p_n^{(0)}}}{1 + \\sum_{n=1}^{\\bar{n}} \\frac{d_n}{s - p_n^{(0)}}}$$\nThis formulation addresses the numerical instability through two key features:\n1. Improved conditioning is achieved by using partial fractions instead of high-power monomials (p. 290).\n2. Implicit weighting is utilized by re-estimating the poles at each iteration. Instead of an explicit, ill-conditioned weighing term in the denominator, the poles $p_n^{(i)}$ are updated as the zeros of the denominator function at each iteration (p. 291-292).\n\n### Algorithm Process\nThe VF procedure is summarized by these primary steps (p. 292):\n1. Choose a model order $\\bar{n}$ and initialize poles $p_n^{(0)}$ (typically distributed linearly over the bandwidth of interest).\n2. Solve the linearized least-squares problem iteratively (Equation 8.17) to find the coefficients $c_n$ and $d_n$.\n3. Compute the new set of poles $p_n^{(i)}$ using an eigenvalue decomposition of the system matrix updated with the current iteration's weights.\n4. Repeat until the poles converge and the weighting function approaches unity, at which point the solution approximates the original non-linear least-squares problem (p. 292).\n\nWhile \"black-box\" in nature—offering less physical insight than equation-driven methods—VF is highly praised for its flexibility, ease of integration into existing simulation software, and robustness across wide frequency ranges (p. 287-290).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789165615,
+      "channel": "plan_pipe_8130f0969f75",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 286,
+        "end": 310
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the extraction of linear reduced-order models from frequency or time-domain data using the Vector Fitting (VF) algorithm.\n\n### Core Principles of Vector Fitting\nVector Fitting (VF) computes a rational model that minimizes the least-squares error between given samples and the model response. By linearizing the nonlinear minimization problem, VF iterates to obtain an efficient model while leveraging established linear algebra solvers (p. 316).\n\n### Stability, Causality, and Passivity\n*   **Stability and Causality:** Enforcing condition (8.70) ensures the stability of the model by fixing poles. In the frequency domain, this condition acts as a constraint for causality, ensuring the system does not anticipate excitations (p. 311).\n*   **Passivity:** This property guarantees the model does not generate energy. If VF produces a non-passive model due to numerical errors, passivity can be enforced through a-posteriori methods (p. 311).\n\n### Numerical Implementation and Efficiency\n*   **Order Estimation:** The model order $n$ is typically determined via an \"adding and skimming\" process. If the error remains high, the order is increased; if partial fractions contribute negligibly, the order is reduced (p. 312).\n*   **Relaxed VF:** To improve convergence when samples are corrupted by noise, the normalization of the weighting function $w^{(i)}(s)$ can be relaxed (p. 312). This involves solving for $w^{(i)}_0$ alongside the partial fractions and applying a constraint to prevent the trivial solution (p. 312).\n\n### Advanced VF Extensions\n*   **Time Domain VF:** This approach directly extracts models from input $u(t)$ and output $y(t)$ samples, avoiding errors associated with discrete Fourier transforms (p. 313).\n*   **Distributed Systems:** To model propagation delays effectively, models incorporate exponential terms $e^{-s\\tau l}$ alongside rational functions (p. 315). Parameters of these models are often identified using time–frequency decompositions (p. 315).\n*   **Parametric VF:** These models capture system behavior relative to frequency $s$ and design parameters $\\mu$. Once generated, these models can be reused for varying conditions, which supports efficient design-space exploration (p. 316).\n\n### Industrial Applications\nVF is the industry standard for modeling power distribution networks, high-speed interconnects in electronics, and electromagnetic Green functions. Its ability to create models compatible with transient simulations has made it vital for computational tools in acoustics, fluid dynamics, and various engineering fields (p. 316, 317).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789165616,
+      "channel": "plan_pipe_8130f0969f75",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 311,
+        "end": 364
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This chapter explores Kriging, also known as Gaussian process (GP) modeling, a method used to create surrogate models (metamodels) for complex simulation systems.\n\n**Core Definition and Purpose**\nKriging is a statistical interpolation method that treats simulation outputs as realizations of a stationary Gaussian process. It is widely used in the Design and Analysis of Computer Experiments (DACE) to approximate expensive, implicit simulation models with explicit, simpler functions. Unlike many other metamodels, Kriging provides both a predictor $\\hat{y}(x)$ and an estimate of the associated uncertainty, $Var(\\hat{y})$.\n\n**Ordinary Kriging (OK) Framework**\nThe OK model is defined as:\n$y(x) = \\mu + M(x)$\nwhere $\\mu$ is a constant mean and $M(x)$ is a zero-mean stationary GP (p. 368). The optimal predictor $\\hat{y}(x_0)$ is the best linear unbiased predictor (BLUP), derived using the covariance between new points and old observations. The correlation function, typically Gaussian as shown below, governs the relationship between input points:\n$\\rho(h, \\theta) = \\exp(-\\sum_{j=1}^{k} \\theta_j h_j^2)$ (p. 370)\nParameters of the model are estimated using the maximum likelihood (ML) criterion via the log-likelihood function (p. 370).\n\n**Key Methodological Components**\n*   **Latin Hypercube Sampling (LHS):** An effective space-filling design used to select input combinations. LHS partitions the input space into $n$ subintervals of equal probability to ensure a representative sample coverage (p. 371).\n*   **Random Simulation:** When simulations are stochastic (incorporating pseudo-random numbers), the analysis must be adjusted. This requires \"Stochastic Kriging\" (SK) to account for the intrinsic noise produced by the random input generators (p. 367).\n*   **Application Areas:** Beyond simple prediction, the chapter highlights the use of Kriging for sensitivity analysis (utilizing Sobol indices/FANOVA to determine input importance) and optimization, including robust optimization of simulated systems (p. 368).\n\n**Considerations**\nKriging assumes that residuals are positively correlated, with correlation increasing as points get closer. When using the plug-in method for estimators, users should be aware that the uncertainty intervals may require correction, as specific plug-in variances often underestimate true variability (p. 370).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789165617,
+      "channel": "plan_pipe_8130f0969f75",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 366,
+        "end": 389
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778789165698,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "What is the defining characteristic of the data-driven model reduction methods discussed in Volume 1 compared to system-theoretical approaches?",
+            "options": [
+              "They rely on an underlying system description based strictly on internal state variable dynamics.",
+              "They construct reduced models directly from sampled system responses or output measurements.",
+              "They require full access to the Maxwell equations governing the physical simulation environment.",
+              "They are exclusively used for post-processing the passivity of pre-existing linear models."
+            ],
+            "correctIndex": 1,
+            "explanation": "According to the introduction, data-driven methods focus on situations where the internal system representation is eschewed, constructing models instead from information gathered by sampling the system or its outputs."
+          },
+          {
+            "question": "Which of the following describes the role of Kriging in the context of the provided text?",
+            "options": [
+              "A technique for enforcing passivity after model order reduction.",
+              "A deterministic approach to identify eigenmodes for modal truncation.",
+              "A data-driven interpolation technique that uses kernel regression.",
+              "A projection method for solving partial differential equations."
+            ],
+            "correctIndex": 2,
+            "explanation": "Chapter 10 defines Kriging as a set of data-driven interpolation techniques that generate a reduced model through kernel regression while assuming an underlying Gaussian distribution."
+          },
+          {
+            "question": "How does Vector Fitting, as described in Chapter 8, contribute to model order reduction?",
+            "options": [
+              "By utilizing measurements of the system response to build a reduced representation.",
+              "By calculating the energy of the system to define balanced coordinates.",
+              "By reducing the size of large-scale systems through rigorous eigenmode analysis.",
+              "By perturbing existing systems to ensure they maintain passive characteristics."
+            ],
+            "correctIndex": 0,
+            "explanation": "Vector Fitting is categorized as a data-driven algorithm that leverages samples or measurements of the system response to construct a reduced representation."
+          },
+          {
+            "question": "What is the fundamental motivation for using Model Order Reduction (MOR) in computational science and engineering according to the preface?",
+            "options": [
+              "To provide a replacement for numerical analysis of partial differential equations.",
+              "To increase the complexity of simulations to ensure higher accuracy.",
+              "To eliminate superfluous detail while maintaining the accuracy of the overall simulation.",
+              "To specifically enable the use of older computer architectures that cannot handle large sets of data."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text emphasizes that MOR is used because there is often 'superfluous detail' in simulations that is not needed for accuracy; MOR extracts dominant behavior to reduce problem size and resource consumption."
+          },
+          {
+            "question": "In the context of the handbook, how do 'Kernel methods' function as surrogate models?",
+            "options": [
+              "They rely on physical laws to derive the differential equations of the system.",
+              "They act as a substitute when the explicit system representation is unknown or avoided.",
+              "They are primarily used to finalize the post-processing of linear system passivity.",
+              "They serve as a tool for mapping balanced coordinates into lower-dimensional manifolds."
+            ],
+            "correctIndex": 1,
+            "explanation": "Chapter 9 explains that kernel methods are used when the full system representation is unknown or eschewed, allowing a reduced representation to be estimated directly from system sampling."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778789165699,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary objective of Model Order Reduction (MOR)?",
+            "back": "To simplify the numerical computation of complex simulations by reducing the size of the system while maintaining accuracy and eliminating unnecessary detail."
+          },
+          {
+            "front": "Which three chapters in the handbook are strictly dedicated to data-driven model reduction techniques?",
+            "back": "Chapters 8 (Vector Fitting), 9 (Kernel methods for surrogate modeling), and 10 (Kriging)."
+          },
+          {
+            "front": "What does the Loewner framework represent in the context of MOR?",
+            "back": "A data-driven interpolation technique that connects system identification and reduction with moment-matching, interpolation, and projection methods."
+          },
+          {
+            "front": "What is the basic assumption of the system-theoretic approach in MOR?",
+            "back": "That there is an underlying system description whose behavior can be determined from the knowledge of the dynamics of a set of state variables."
+          },
+          {
+            "front": "What is Vector Fitting?",
+            "back": "A data-driven algorithm that uses samples or measurements of a system's response to construct a reduced-order representation."
+          },
+          {
+            "front": "What are Kriging techniques?",
+            "back": "A set of data-driven interpolation methods that generate reduced models through kernel regression while assuming an underlying Gaussian distribution."
+          },
+          {
+            "front": "How do kernel methods function in the context of data-driven reduction?",
+            "back": "They are used when the underlying system representation is unknown or eschewed, allowing a reduced representation to be estimated from sampled information of the system or its outputs."
+          },
+          {
+            "front": "What is the significance of EU-MORNET?",
+            "back": "It was a European COST Action network that fostered collaboration among research groups working on MOR, culminating in the publication of this three-volume handbook series."
+          },
+          {
+            "front": "What are the two main cultural approaches to MOR identified in the handbook?",
+            "back": "The system-theoretic approach (Volume 1) and the numerical analysis approach applied to partial differential operators (Volume 2)."
+          },
+          {
+            "front": "Why is MOR considered environmentally and computationally 'wise'?",
+            "back": "It avoids excessive energy consumption and reduces the time required for simulations by eliminating superfluous detail that does not contribute to the accuracy of the results."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-gen-data-driven_2",
+      "slides": [
+        {
+          "title": "System- and Data-Driven Methods",
+          "bullets": [
+            "System-driven methods leverage internal model physics and governing equations.",
+            "Data-driven methods construct models primarily from input/output measurement data.",
+            "Complementary approaches share the objective of model order reduction (MOR).",
+            "Data-driven techniques provide black-box models without explicit system equations."
+          ],
+          "notes": "This lesson examines the two primary paradigms in model order reduction: system-driven, which relies on known equations, and data-driven, which derives models from observations. Both aim to simplify numerical simulations while maintaining accuracy.",
+          "page_range": "12-13, 109, 287",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 3: System- and Data-Driven Methods and Algorithms - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778789165598,
+      "pdfName": "System- and Data-Driven Methods and Algorithms"
+    }
+  ],
+  "sourceHash": "dd27400f68cd2b3d"
+}

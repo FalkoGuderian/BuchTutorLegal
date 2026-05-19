@@ -1,0 +1,452 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Robotics and Embedded Engineering - Lesson 2 — Mindstorms Robotics",
+    "pdfName": "Mindstorms Robotics",
+    "createdAt": 1778576782575,
+    "exportedAt": "2026-05-12T09:06:22.576Z",
+    "meta": {
+      "courseId": "course-en-robotics-embedded",
+      "lessonIndex": 1,
+      "courseTitle": "Robotics and Embedded Engineering",
+      "lessonObjective": "Kinematics, sensors, planning.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-mindstorms-robotics",
+            "title": "Mindstorms Robotics",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Mindstorms_Robotics"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_316de06d286a",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Introduction to Robotics and Telepresence",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-3",
+          "chapterTitle": "Humanoid Robots and Programming Concepts",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Robot Hardware: Lego Mindstorms NXT",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-6",
+          "chapterTitle": "Robot Control and Mathematical Modeling",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "6-8",
+          "chapterTitle": "Programming Languages and Robot Environments",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "8-10",
+          "chapterTitle": "Obstacle Avoidance, Task Planning, and Navigation",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "10-12",
+          "chapterTitle": "Robot Vision Systems",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "12-13",
+          "chapterTitle": "Artificial Intelligence in Robotics",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576782575,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "This summary covers the key principles of Mindstorms robotics, focusing on hardware components, programming methodologies, and the navigation systems required to make a robot autonomous.\n\n### 1. Robot Hardware and Control\n*   **The Controller:** The \"brain\" of the Lego Mindstorms NXT is the **NXT Intelligent Brick**, which processes inputs from up to four sensors and manages up to three motors [S.4].\n*   **Sensors:** Effective interaction with the environment relies on sensors such as ultrasonic (distance), sound, light (intensity), and touch (contact detection). These allow the robot to perceive its surroundings [S.4].\n*   **Reliability Challenges:** Robot control systems often face failure modes, including mechanical jams, loose electrical connections, and noisy or incorrect sensor data [S.4, S.5].\n\n### 2. Programming Methods\n*   **Programming Levels:** Developers use manual programming (text or graphical) or automatic programming (Programming by Demonstration/PBD) to define behaviors [S.3].\n*   **Languages:** Systems range from beginner-friendly tools like NXT-G to more advanced, text-based languages like **NXC** (Not eXactly C), RobotC, and C++ [S.7, S.8].\n*   **Mathematical Tools:** Control algorithms utilize mathematical concepts such as:\n    *   **Averages (Moving Average):** Soften input data and ignore temporary noise [S.5].\n    *   **Interpolation:** Estimate values falling between known data points [S.6].\n    *   **Hysteresis:** Increases system efficiency by reducing the frequency of corrective actions [S.6].\n\n### 3. Kinematics, Navigation, and Task Planning\n*   **Obstacle Avoidance:** This is critical for movement; robots use sensors to detect obstructions and execute programmed avoidance responses, such as reversing or changing direction [S.8, S.9].\n*   **Navigation Components:** True navigation relies on three core competencies:\n    *   **Self-Localization:** Estimating the robot's position relative to landmarks/coordinates [S.10].\n    *   **Path Planning:** Identifying the most efficient route between two points [S.10].\n    *   **Map-Building:** Using sensor data to generate a spatial understanding of the environment [S.10].\n*   **Task Planning:** This organizes the sequence of actions. Without structured task planning, a robot may perform inefficient or random actions rather than following the programmer's intended routine [S.9].\n\n### 4. Robot Vision and AI\n*   **Machine Vision:** Unlike human sight, robot vision relies on pixel processing, thresholding, and pattern recognition (e.g., edge detection, template matching) [S.10, S.11].\n*   **Knowledge-Based Vision:** Modern research aims to link vision systems with Artificial Intelligence, allowing robots to identify objects, make logical assumptions, and operate autonomously in unstructured environments [S.11, S.12].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576782575,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-robotics-embedded_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 2 — Mindstorms Robotics - Presentation</span><span class=\"pm-chat-count\">6 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Mindstorms Robotics: Fundamentals</div><ul class=\"pm-chat-slide-bullets\"><li>Explores robotics via the LEGO Mindstorms NXT platform.</li><li>Addresses challenges in robot movement and adaptability.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778576782576,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "The provided text outlines the current state and future trajectories of robotics, categorized into four primary areas of development [S.1, S.2].\n\n**1. Current Challenges**\nWhile robotics has excelled in repetitive industrial automation, achieving human-like cognitive abilities, smooth movement, and the capacity to adapt to unexpected environments remain significant, unresolved challenges [S.1].\n\n**2. Key Categories of Robotics**\n* Telepresence: Enables remote interaction or manipulation of objects, allowing users to be \"present\" in hostile or distant environments. Applications include military scouting (e.g., iRobot’s PackBots) and remote medical consultations [S.1].\n* Rescue and Lifting: Designed for high-risk situations, such as battlefield casualty extraction. An example is the BEAR robot, which uses infrared to detect and transport wounded individuals to safety [S.2].\n* Navigation: These autonomous systems can map environments and adjust paths in real-time to avoid obstacles. They are currently used in hospitals for logistics, such as delivering supplies via Aethon’s Tug robots [S.2].\n* Humanoid Robots: Aimed at mimicking human physical and mental tasks. While Japan and Korea lead this field, U.S. companies like Hanson Robotics are making progress in developing lifelike, conversational interfaces [S.2].\n\n**3. Autonomy and Programming**\nAutonomous robots are defined by their ability to gather environmental data, operate independently for extended periods, move without human assistance, and avoid harm to people or property [S.2]. Robot behavior is governed by programming systems, which are categorized by their specific objectives and the methodologies used by the developers to define task execution [S.2].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576782585,
+      "channel": "plan_pipe_316de06d286a",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines the capabilities, programming paradigms, and hardware components of various robotic systems.\n\n### Robotic Capabilities and Functions\nModern robots are categorized by their operational roles, primarily in warfare, navigation, and human-like interaction:\n\n1. Battlefield and Safety Logistics: Robots like the Battlefield Extraction-Assist Robot (BEAR) are designed to detect and transport wounded soldiers. Similar technology is increasingly applied in healthcare.\n2. Autonomous Navigation: Systems such as Aethon’s Tug robots use sophisticated mapping and dead reckoning to deliver supplies in hospitals, dynamically adjusting paths to avoid obstacles.\n3. Humanoid Robots: Primarily developed in Japan and Korea, these robots imitate human physical and mental tasks. Innovation in the U.S. currently focuses on lifelike, conversational artificial heads.\n4. Autonomy Criteria: To be fully autonomous, a robot must be able to gain environmental data, operate without human intervention, mobilize independently, and avoid harmful situations [S.2].\n\n### Programming Concepts and Systems\nRobot programming requires complex interaction techniques to model human intent. A robust programming system consists of three conceptual components: the programming component (languages/APIs), underlying infrastructure (architectures for execution), and interactive systems for program development and modification [S.3].\n\nTwo primary programming methods are utilized:\n\nManual Programming: Uses text-based (e.g., C++, Java, Robot C) or graphical systems. This is standard in industrial settings for simpler robots.\n\nAutomatic Programming: Focuses on Programming by Demonstration (PBD), where robots observe tasks and autonomously plan paths or reorder key steps to improve efficiency [S.3].\n\n### Robot Hardware (Lego Mindstorms Example)\nThe document cites the NXT Lego Mindstorms kit as an example of robotics hardware, which includes:\n- Computational unit: NXT Intelligent Brick.\n- Sensors: Ultrasonic (distance), sound, light, and touch sensors.\n- Actuators: Three interactive servo motors with digital ports.\n- Power: Six AA batteries [S.3].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576782586,
+      "channel": "plan_pipe_316de06d286a",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The following summary outlines the conceptual and practical components of robot programming and control as described in the provided text.\n\n**Robot Programming Concepts**\nRobot programming involves sophisticated interaction between humans and systems, requiring robots to model human intentions and plan based on environmental interactions. A robotic programming system consists of three pillars: the programming component (APIs and languages), the underlying execution architecture, and interactive systems for program development. Methods are categorized as manual (text-based languages like C++ or Java) or automatic (Programming by Demonstration, or PBD), the latter of which is increasingly focused on allowing robots to autonomously plan paths and task sequences [S.3].\n\n**NXT Intelligent Brick and Hardware**\nThe NXT Intelligent Brick serves as the \"brain,\" managing data from four input sensor ports and controlling three output motor ports. It features a monochrome LCD, a navigation interface, an 8 kHz speaker, and is powered by AA or Li-ion batteries [S.3, S.4]. Key hardware components include:\n- Sensors: Ultrasonic (distance), Sound (pattern recognition), Light (intensity), Touch (contact), and Compass sensors [S.3, S.4].\n- Actuators: Servo motors that convert electrical energy into mechanical movement for locomotion and manipulation [S.3, S.4].\n\n**System Control and Reliability**\nRobot control faces significant challenges regarding system reliability. Failures are primarily categorized into:\n- Mechanical failures: Jammed movements, wedging, or structural breakdowns.\n- Electrical failures: Typically involving loose connections between the Intelligent Brick and its associated sensors or motors rather than internal computer failure [S.4].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576782587,
+      "channel": "plan_pipe_316de06d286a",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the provided documentation regarding LEGO Technic robotic systems, control logic, and mathematical programming tools.\n\n**Components and Control**\nThe NXT Intelligent Brick serves as the central processing unit, featuring an LCD display, a speaker for audio output, and the capacity to manage four sensors and three motors. Motors function by converting electrical energy into mechanical movement, while various sensors (touch, light, ultrasonic, compass) provide input data for decision-making. System reliability is the primary challenge due to potential mechanical failures, electrical connection issues, or sensor inaccuracy (S.4).\n\n**Robot Behaviors and System Design**\nRobotic tasks can be managed by defining specific behaviors—specifically wandering, avoiding black lines, or pushing objects. These behaviors should function as a servo-mechanism, executing for brief intervals before re-evaluating sensor data. Because dynamic effects are crucial in complex systems like humanoids or transport robots, developers often utilize mathematical models based on Newton’s and Euler’s equations to describe kinematics and system dynamics (S.5).\n\n**Mathematical Tools for Sensor Data**\nTo improve the quality of data acquisition and system efficiency, programmers employ three sequential mathematical methods:\n\n1. Averages: Used to ignore temporary peaks and smooth data flows using moving averages, calculated as:\n$$avg = \\frac{\\sum_{i=1}^{n} v_i}{n}$$\n2. Interpolation: Used to estimate values between two known limits, often via linear connection of points on a graph.\n3. Hysteresis: Used to reduce excessive reactive corrections by creating a \"domain\" of tolerance. For example, if $H$ is the hysteresis value and $GRAY$ is the threshold, the system only triggers a correction when the sensor reading exceeds $GRAY + H$ or falls below $GRAY - H$ (S.5, S.6).\n\n**Programming Languages**\nThe evolution of robot programming began in the mid-1970s with languages like VAL and AML. There is no universal standard language; therefore, the selection of a programming language should be based primarily on the developer's prior experience and comfort with the syntax and data structures provided (S.6).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576782588,
+      "channel": "plan_pipe_316de06d286a",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text outlines essential concepts in robotics, covering mathematical techniques, programming language selection, and navigation strategies.\n\n**Mathematical Techniques for Robot Control**\n- Interpolation: Mathematical tools used to estimate values between known data points. Linear interpolation, specifically, uses a straight line between two points to calculate intermediate values [S.6].\n- Hysteresis: A method to reduce unnecessary robot corrections and increase system efficiency by creating a \"buffer zone\" (domain) where the robot is less reactive to minor sensor changes [S.6].\n- Moving Average: A sliding calculation to smooth sensor data, expressed as:\n$$avg = \\frac{v1+v2+v3}{3}$$\nwhere $v1$, $v2$, and $v3$ represent sequential sensor inputs [S.6].\n\n**Robot Programming Considerations**\n- Language Selection: Choosing a language depends on developer experience, project requirements, and intended complexity. Early languages emerged in the mid-'70s (e.g., VAL, AML), while modern approaches often adapt general-purpose languages like C++, Java, or Haskell [S.6, S.7].\n- NXC (Not eXactly C): A specific language for the LEGO MINDSTORMS NXT. It is a case-sensitive, C-based language that uses an API defined in header files. It relies on a compiler to translate source code into bytecode for the NXT interpreter [S.7].\n- Comparative Overview of Languages:\n    - NXT-G: User-friendly for beginners but lacks floating-point support, has high memory usage, and is slower [S.7].\n    - Robolab: Mirrors LabVIEW but can become visually confusing with complex block connections [S.7, S.8].\n    - RobotC: Offers fast execution and advanced capabilities but is text-based and requires a separate purchase [S.8].\n    - LabVIEW Toolkit: A free, professional-grade environment suitable for data analysis, though it requires intermediate skill [S.8].\n\n**Obstacle Avoidance**\n- Obstacle avoidance is a critical robotics function. Without sensors to detect and navigate around barriers, robots are prone to failure, often attempting to move through obstacles rather than rerouting, which prevents them from reaching their programmed destinations [S.8].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576782589,
+      "channel": "plan_pipe_316de06d286a",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 8
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document covers essential concepts in robotics, ranging from programming environments to advanced navigation and machine vision.\n\n**Programming Environments**\nVarious tools are available for robotics programming, each with distinct benefits and drawbacks. These include graphical interfaces like those similar to LabVIEW, text-based languages like RobotC, the LabVIEW Toolkit, and BricxCC, which supports multiple languages such as C, Java, and Pascal (p. 8).\n\n**Obstacle Avoidance and Task Planning**\nObstacle avoidance is critical for navigation, relying on sensors like light and touch detectors to identify environments and interact with paths (p. 8-9). Task planning organizes these actions into a logical sequence, allowing robots to make decisions, execute loops, and avoid collisions. Efficient planning ensures that a robot performs its intended functions rather than behaving randomly (p. 9).\n\n**Navigation Components**\nNavigation is defined by three core competencies:\n1. Self-Localisation: Estimating the robot's position relative to landmarks or obstacles (p. 10).\n2. Path Planning: Determining the optimal route between coordinates (p. 10).\n3. Map-Building: Generating an environmental layout using sensor data, which is complex due to inherent sensory uncertainties (p. 10).\n\n**Robot Vision**\nUnlike human perception, machine vision systems process images by analyzing individual pixels. Computers utilize knowledge bases and pattern recognition to interpret data. Common processing methods include:\n- Pixel counting: Tallying light or dark pixels (p. 10).\n- Thresholding: Simplifying gray-tone images into black and white (p. 10).\n- Segmentation: Identifying or counting parts within an image (p. 10).\n- Blob discovery: Inspecting connected pixels to serve as landmarks for manufacturing or robotic capture (p. 10).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576782590,
+      "channel": "plan_pipe_316de06d286a",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 8,
+        "end": 10
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text explores the integration of navigation, machine vision, and artificial intelligence in robotics. The key aspects are summarized below:\n\n**Navigation Competences**\nNavigation relies on three core abilities: self-localization, which allows a robot to estimate its position relative to its environment; path planning, which determines the most efficient route between waypoints; and map-building, where the robot uses sensor data to generate a map while simultaneously locating itself within it (S.10).\n\n**Machine Vision Systems**\nRobots do not process visual input like humans; instead, they analyze individual pixels using computational techniques like pixel counting, thresholding, segmentation, and edge detection (S.10-11). Standard vision systems are generally limited to repetitive, single tasks such as quality control, barcode reading, or counting objects (S.11).\n\n**Knowledge-Based Vision and Artificial Intelligence**\nKnowledge-based vision systems expand a robot's capabilities by allowing it to move beyond rote programming to make inferences and assumptions about its surroundings. By accessing large databases (such as the web), robots can create visual models to identify objects they were not explicitly pre-programmed to recognize (S.12). \n\nArtificial Intelligence acts as the \"mind\" of the robot, providing the capacity to learn, reason, and adapt to environmental changes. Without AI, a robot operates in a continuous loop; if its environment is altered—such as moving a target object—the robot lacks the intelligence to perceive the change and will fail to complete its task (S.12).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576782591,
+      "channel": "plan_pipe_316de06d286a",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 10,
+        "end": 12
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This provided text discusses the integration of knowledge-based vision systems and artificial intelligence (AI) in robotics. Key points include:\n\n**Knowledge-Based Vision Systems**\nRobots require both vision sensors and motion controls to identify objects and navigate environments. A sophisticated vision system enables a robot to \"see\" like a human, making inferences about its surroundings. The Semantic Robot Vision Challenge (SRVC) exemplifies this technology, where robots search the web for images to create visual models that assist in identifying objects in the real world. A critical technical step involves converting digital pixel coordinates into real-world coordinates to allow the robot to move effectively.\n\n**Artificial Intelligence (AI)**\nAI serves as the \"mind\" of the robot, enabling it to learn, reason, solve problems, and perceive environmental changes. Without AI, a robot is limited to repetitive, pre-programmed tasks and cannot adapt if its environment shifts (e.g., if an object is moved from its expected location). Future AI development aims to create robots that can think, learn, and communicate like humans.\n\n**Advantages and Disadvantages of AI**\nThe implementation of AI offers several benefits and drawbacks:\n\nAdvantages:\n1. Efficiency in repetitive tasks and decision-making processes.\n2. Capacity to handle massive datasets and reduce human error.\n3. Centralization of decision-making and reduction of training costs.\n\nDisadvantages:\n1. Absence of human-like common sense and creativity.\n2. Difficulty in explaining the logic or reasoning behind specific decisions.\n3. Inability to adapt to complex, dynamic environments or recognize when a solution is impossible.\n\n[S.12], [S.13]",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576782592,
+      "channel": "plan_pipe_316de06d286a",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 12,
+        "end": 13
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576782675,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why is the use of 'hysteresis' in robot programming considered advantageous?",
+            "options": [
+              "It allows the robot to process sensor data instantly without any delay.",
+              "It makes the robot's reactions to sensor changes more precise and less twitchy.",
+              "It enables the robot to calculate complex kinematic equations faster.",
+              "It eliminates the need for sensor calibration for light and touch sensors."
+            ],
+            "correctIndex": 1,
+            "explanation": "Hysteresis reduces the number of corrections a robot makes to keep within a required behavior, making the system more efficient and less reactive to minor, noisy fluctuations in sensor data."
+          },
+          {
+            "question": "According to the text, why is the concept of 'autonomy' challenging for current robot designers?",
+            "options": [
+              "Because robots lack the memory capacity to store maps.",
+              "Because robots struggle to move smoothly and adapt to unexpected situations like humans.",
+              "Because there are no programming languages capable of defining autonomous behaviors.",
+              "Because robots are currently limited only to wired telepresence systems."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text notes that moving smoothly like an animal remains elusive and that robots struggle to learn and adapt to unexpected situations in the way humans can."
+          },
+          {
+            "question": "What is the primary function of the 'moving average' in robot data processing?",
+            "options": [
+              "To increase the processing speed of the NXT Intelligent Brick.",
+              "To differentiate between different types of sensors connected to the input ports.",
+              "To smooth out data flows by ignoring temporary, single-point peaks.",
+              "To calculate the exact coordinates of an object in a 3D environment."
+            ],
+            "correctIndex": 2,
+            "explanation": "Averages, specifically moving averages, are used to soften differences between single readings and ignore temporary peaks, treating a group of readings as a single, more reliable value."
+          },
+          {
+            "question": "In the context of the NXT Mindstorms kit, what is the role of the 'NXT Intelligent Brick'?",
+            "options": [
+              "It acts as the primary brain that processes sensor inputs and controls motor outputs.",
+              "It is responsible solely for mechanical gear reduction to provide torque.",
+              "It functions as a specialized sensor for detecting infrared signals in dark environments.",
+              "It is an optional hardware interface used only for advanced C++ development."
+            ],
+            "correctIndex": 0,
+            "explanation": "The NXT Intelligent Brick is described as the computer that acts as the brain for the robot, managing input from sensors and control of the motors."
+          },
+          {
+            "question": "Which of the following describes a key limitation of the NXC programming language for the NXT kit?",
+            "options": [
+              "It is too similar to high-level industry languages like Java or Haskell.",
+              "It cannot be compiled into bytecode for the NXT device.",
+              "It is restricted by the limitations of the NXT's bytecode interpreter.",
+              "It does not support any form of application programming interface (API)."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text states that NXC is not a general-purpose language and has restrictions stemming from the limitations of the NXT bytecode interpreter."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778576782676,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What are the four main categories of robotics according to the lesson?",
+            "back": "Telepresence, Rescue and lifting, Navigation, and Humanoid robots."
+          },
+          {
+            "front": "Define an autonomous robot.",
+            "back": "A robot that can acquire environmental information, work without human assistance for extended periods, move independently, and avoid harmful situations."
+          },
+          {
+            "front": "What are the three important conceptual components of a robot programming system?",
+            "back": "1. The programming component (languages, libraries/APIs), 2. The underlying infrastructure (architectures for execution), 3. Design of interactive systems (for programmer interaction)."
+          },
+          {
+            "front": "What are the two main methods of robot programming?",
+            "back": "Manual programming (text-based or graphical) and Automatic programming (e.g., programming by demonstration)."
+          },
+          {
+            "front": "What is the function of the NXT Intelligent Brick?",
+            "back": "It acts as the 'brain' of the Lego Mindstorms robot, processing inputs from up to four sensors and controlling up to three motors."
+          },
+          {
+            "front": "What are three common failure modes in robot control systems?",
+            "back": "Mechanical failures (e.g., jammed gears), electrical failures (e.g., loose connections), and sensor unreliability (e.g., noisy or incorrect data)."
+          },
+          {
+            "front": "What is the purpose of 'Hysteresis' in robot programming?",
+            "back": "To reduce the number of corrections the robot makes to maintain a behavior, making it less reactive to minor changes and increasing system efficiency."
+          },
+          {
+            "front": "What is NXC?",
+            "back": "NXC stands for 'Not eXactly C'. It is a C-like programming language used for the Lego Mindstorms NXT kit that is compiled into bytecode for the NXT interpreter."
+          },
+          {
+            "front": "Why is 'Programming by Demonstration' (PBD) significant?",
+            "back": "It is a popular automatic programming method where a robot learns tasks by observing them, rather than being explicitly coded for every step."
+          },
+          {
+            "front": "What is the importance of task planning in robotics?",
+            "back": "It defines the order in which a robot executes assigned tasks to ensure an optimal and desirable end result."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-robotics-embedded_1",
+      "slides": [
+        {
+          "title": "Mindstorms Robotics: Fundamentals",
+          "bullets": [
+            "Explores robotics via the LEGO Mindstorms NXT platform.",
+            "Addresses challenges in robot movement and adaptability."
+          ],
+          "notes": "This lesson introduces robotics concepts, using the NXT kit as a practical framework. We will examine how robots interact with their environments.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Advanced Robot Capabilities",
+          "bullets": [
+            "Telepresence for remote interaction in hostile environments.",
+            "Battlefield robots assist in dangerous extraction tasks.",
+            "Autonomous navigation allows creating routes dynamically.",
+            "Humanoids strive to mimic human physical and mental tasks."
+          ],
+          "notes": "Robots perform roles from remote telepresence to fully autonomous navigation, with humanoids being the most complex category.",
+          "page_range": "2-3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Programming Concepts",
+          "bullets": [
+            "Supports human-robot interaction via languages and tools.",
+            "Components include APIs, infrastructure, and interactive systems.",
+            "Methods: Manual (text/graphical) vs. Automatic (demonstration).",
+            "NXT hardware: brick, various sensors, and servo motors."
+          ],
+          "notes": "Robot programming involves designing languages and interaction methods. The hardware must effectively interface with these software systems.",
+          "page_range": "3-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Control Systems and Mathematics",
+          "bullets": [
+            "Intelligent Bricks act as the central brain.",
+            "Reliability issues arise from mechanical and electrical failures.",
+            "Sensor unreliability requires robust programming strategies.",
+            "Moving averages and Hysteresis refine sensor data inputs."
+          ],
+          "notes": "Robot health depends on system reliability. Mathematical tools like hysteresis help manage noisy sensor data in real-time.",
+          "page_range": "4-6",
+          "image_prompt": ""
+        },
+        {
+          "title": "Programming Languages & Obstacles",
+          "bullets": [
+            "NXC (Not eXactly C) used for the NXT platform.",
+            "Diversity of tools: NXT-G, RobotC, and LabVIEW.",
+            "Obstacle avoidance is essential for successful navigation.",
+            "Sensors enable reactive path planning and collision avoidance."
+          ],
+          "notes": "Selecting a language depends on complexity and experience. Obstacle detection is foundational to effective navigation and task execution.",
+          "page_range": "6-10",
+          "image_prompt": ""
+        },
+        {
+          "title": "Vision and Artificial Intelligence",
+          "bullets": [
+            "Vision uses pixel processing, segmentation, and patterns.",
+            "Knowledge-based vision allows inference and assumption-making.",
+            "AI provides the 'mind' to learn and reason.",
+            "Future goal: Adaptable robots mimicking human intelligence."
+          ],
+          "notes": "By combining vision with AI, robots move beyond repetitive tasks to understand and react to complex, changing environments.",
+          "page_range": "10-13",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 2 — Mindstorms Robotics - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576782575,
+      "pdfName": "Mindstorms Robotics"
+    }
+  ],
+  "sourceHash": "b3da98a5f43ba499"
+}

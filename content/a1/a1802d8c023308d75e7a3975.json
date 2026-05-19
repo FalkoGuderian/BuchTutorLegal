@@ -1,0 +1,484 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Pure Math Specialty — Linear Algebra, Real Analysis, Topology - Lesson 5 — Probability",
+    "pdfName": "Probability",
+    "createdAt": 1778576791900,
+    "exportedAt": "2026-05-12T09:06:31.901Z",
+    "meta": {
+      "courseId": "course-en-math-pure-specialty",
+      "lessonIndex": 4,
+      "courseTitle": "Pure Math Specialty — Linear Algebra, Real Analysis, Topology",
+      "lessonObjective": "Foundations of probability and elementary number theory.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-probability",
+            "title": "Probability",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Probability"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_7e7fe4dd40b3",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "6-11",
+          "chapterTitle": "Introduction to Probability",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "12-18",
+          "chapterTitle": "The Counting Principle",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "19-28",
+          "chapterTitle": "Mathematical Review of Sets",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "29-38",
+          "chapterTitle": "Combinatorics and Counting Techniques",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "39-40",
+          "chapterTitle": "Conditional Probability",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "41-42",
+          "chapterTitle": "Random Variables",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "43-46",
+          "chapterTitle": "Important Distributions",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "47-54",
+          "chapterTitle": "Resources and References",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "55-60",
+          "chapterTitle": "License Agreements",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576791900,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Based on the provided text, here is a concise summary of the foundations of Probability:\n\n### **1. Core Concept of Probability**\nProbability is the mathematical formulation of the likelihood of an occurrence. It is defined as a real number $p \\in [0, 1]$, where 0 indicates an impossible event and 1 indicates a certain event [S.6].\n\n### **2. Conceptual Approaches**\nThe text highlights three primary ways to interpret probability [S.7, S.10]:\n*   **Classical Theory:** The ratio of favorable outcomes to the total number of outcomes (assuming all outcomes are mutually exclusive and equiprobable) [S.8].\n*   **Frequency Theory (Frequentist):** The limit of the relative frequency of an event as the number of independent trials approaches infinity [S.7, S.9].\n*   **Subjective/Evidential (Bayesian):** Measures an individual's \"degree of belief\" in a statement, which is particularly useful for unique events that cannot be repeated [S.8].\n*   **Axiomatic Theory:** The most rigorous approach, defining a **Probability Space** $(\\Omega, S, P)$ using set theory to satisfy specific axioms [S.10, S.16].\n\n### **3. The Counting Principle**\nEssential for computing probabilities, counting determines the number of ways events can occur [S.12].\n*   **Independent Events:** Outcomes do not affect one another. The number of combinations is found via multiplication (e.g., $3 \\times 3 = 9$) [S.12].\n*   **Dependent Events:** Each choice reduces the number of remaining options, often calculated using **factorials** ($n!$) or permutations/combinations [S.13, S.14].\n\n### **4. Axioms of Probability**\nFor any sample space $\\Omega$ and set of events $S$, the probability function $P$ must satisfy [S.10, S.16]:\n1.  **Non-negativity:** $P(E) \\ge 0$.\n2.  **Normalization:** $P(\\Omega) = 1$.\n3.  **Additivity:** For mutually exclusive events, the probability of the union is the sum of their individual probabilities ($P(E \\cup F) = P(E) + P(F)$).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576791900,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-math-pure-specialty_4\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 5 — Probability - Presentation</span><span class=\"pm-chat-count\">7 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lesson 5: Introduction to Probability</div><ul class=\"pm-chat-slide-bullets\"><li>Probability quantifies the likelihood of an occurrence.</li><li>Values range from 0 (impossible) to 1 (certain).</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778576791901,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document introduces probability as a mathematical framework for quantifying the likelihood of events, represented as a real number $p \\in [0, 1]$ (p. 3).\n\n### Key Conceptual Frameworks\n*   **Classical Probability:** Defines the probability of an event as the ratio of favorable outcomes to the total number of outcomes, assuming all outcomes are equally likely (p. 5). This approach faces limitations when outcomes are not equiprobable (p. 6).\n*   **Frequency Theory (Empirical/Statistical):** Defines probability as the limit of the relative frequency of an event over a large number of independent trials ($p(A) = \\lim_{n \\to \\infty} \\frac{n_A}{n}$) (p. 6).\n*   **Subjective Theory:** Represents probability as a \"degree of belief\" (p. 4). This is useful for events that occur only once, such as natural disasters, where frequentist data is unavailable (p. 4).\n*   **Axiomatic Probability:** The most general approach, defining probability space through three fundamental axioms:\n    1. For any event $E$, $P(E) \\ge 0$ (p. 7).\n    2. The probability of the total sample space $S$ is $P(S) = 1$ (p. 7).\n    3. For mutually exclusive events $E$ and $F$, $P(E \\cup F) = P(E) + P(F)$ (p. 7).\n\n### Additional Concepts\n*   **Odds:** Represent the ratio of \"success\" to \"failure\" probabilities, contrasting with the standard 0% to 100% scale used for probabilities (p. 3).\n*   **Bayesian Interpretation:** Views probability as a measure of an individual's degree of belief in a statement, which is updated based on available evidence (p. 4).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576791910,
+      "channel": "plan_pipe_7e7fe4dd40b3",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 11
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers pages [S.12] through [S.18], focusing on the Counting Principle and the foundations of Probability Spaces.\n\n### The Counting Principle\nThe Counting Principle determines the number of ways events can occur.\n\n*   Independent Events: Choices in one category do not affect the options in others. The total combinations are found by multiplying the number of choices for each event: $(K_1)(K_2)...(K_n)$ ([S.12]).\n*   Dependent Events: The selection of an item reduces the options for subsequent selections. This often involves factorials, where $n! = (n)(n-1)...(1)$ ([S.13]).\n*   Counting Rules:\n    *   Sequence of $N$ trials with $K$ outcomes: $K^N$ ([S.14]).\n    *   Permutations (order matters): $P(N, r) = \\frac{N!}{(N-r)!}$ ([S.14]).\n    *   Combinations (order is irrelevant): $C(N, r) = \\frac{N!}{r!(N-r)!}$ ([S.14]).\n\n### Probability Spaces\nA probability space is defined as $(\\Omega, S, P)$, serving as the formal basis for probability theory ([S.16]).\n\n*   Sample Space ($\\Omega$): The set of all possible outcomes.\n*   Events ($S$): Subsets of the sample space.\n*   Probability Function ($P$): A function that assigns a value between 0 and 1 to each event, where $P(\\Omega) = 1$ ([S.16]).\n\n### Core Probability Concepts\n*   Mutually Exclusive Events: Events that cannot occur simultaneously; their intersection is empty, and $P(A \\cap B) = 0$. For these events, $P(A \\text{ or } B) = P(A) + P(B)$ ([S.17]).\n*   Collectively Exhaustive Events: A set of events whose union covers the entire sample space; at least one must occur ([S.17]).\n*   Independence: Events $A$ and $B$ are independent if and only if $P(A \\cap B) = P(A)P(B)$. This signifies the memorylessness property in Bernoulli trials ([S.18]).\n*   Simple Random Sampling: A subset of a population chosen such that every individual (and every subset of size $k$) has an equal probability of being selected ([S.17]- [S.18]).\n*   Bernoulli Trials: A sequence of independent experiments, each with two possible outcomes (success/failure) where the probability $p$ is constant ([S.18]).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576791911,
+      "channel": "plan_pipe_7e7fe4dd40b3",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 12,
+        "end": 18
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers foundational set theory and the mathematical framework of probability spaces.\n\n**Set Theory Basics**\nA set is a collection of objects called elements. Key relations include subsets ($S \\subset T$), where every element of $S$ is in $T$, and logical identity ($S=T$). Special sets include the universal set ($\\Omega$), which encompasses all elements of interest, and the empty set ($\\emptyset$), which contains no elements. Memberships are denoted by $x \\in S$ or $x \\notin S$ (p. 22-23).\n\n**Set Operations**\nOperations allow for the creation of new sets from existing ones:\n* Union: $S \\cup T = \\{x | x \\in S \\text{ or } x \\in T\\}$ (p. 24).\n* Intersection: $S \\cap T = \\{x | x \\in S \\text{ and } x \\in T\\}$ (p. 25).\n* Difference: $S - T = \\{x | x \\in S \\text{ and } x \\notin T\\}$ (p. 27).\n* Complement: $S^c = \\{x \\in \\Omega | x \\notin S\\}$ (p. 23).\n* Cartesian Product: $S \\times T = \\{(x, y) | x \\in S \\text{ and } y \\in T\\}$ (p. 28).\n\n**Structural Laws**\nSets follow distributive laws and De Morgan’s laws, which provide methods for equivalence:\n1. $R \\cap (S \\cup T) = (R \\cap S) \\cup (R \\cap T)$ (p. 28).\n2. $( \\cup_{\\alpha \\in I} S_{\\alpha} )^c = \\cap_{\\alpha \\in I} S_{\\alpha}^c$ (p. 28).\n\n**Probability Foundations**\nThe theory relies on a probability function $P$ assigned to events within a sample space. The three fundamental axioms are:\n1. $P(a) \\geq 0$ (p. 21).\n2. $P(\\Omega) = 1$ (p. 21).\n3. If $a \\cap b = \\emptyset$, then $P(a \\cup b) = P(a) + P(b)$ (p. 21).\n\nImportant consequences of these axioms include the General Addition Rule for events that are not mutually exclusive: $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$ (p. 21). Additionally, if $B \\subset A$, then $P(A) \\geq P(B)$ (p. 21).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576791912,
+      "channel": "plan_pipe_7e7fe4dd40b3",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 19,
+        "end": 28
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the principles of Probability, Set Theory, and Combinatorics based on the provided text.\n\n### Probability and Set Theory\nProbability is defined within the interval $[0, 1]$. Key rules include:\n- Complement: $P(A') = 1 - P(A)$ (p. 26).\n- Union (OR): $P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$. If mutually exclusive, $P(A \\cap B) = 0$ (p. 26).\n- Intersection (AND): $P(A \\cap B) = P(A|B)P(B)$. If independent, $P(A \\cap B) = P(A)P(B)$ (p. 26).\n- Conditional: $P(A|B) = \\frac{P(A \\cap B)}{P(B)}$ (p. 26).\n\nSet operations are governed by commutative, associative, and distributive laws (p. 27). The universal set ($U$) contains all elements, and the empty set ($\\emptyset$) contains none (p. 27).\n\n### Combinatorics\nCombinatorics involves counting techniques for finite sample spaces.\n\n**The Counting Principle**\nIf trials $T_1, T_2, \\dots, T_k$ have $n_1, n_2, \\dots, n_k$ outcomes, the total outcomes equal the product $n_1 \\times n_2 \\times \\dots \\times n_k$ (p. 29). This applies to Cartesian products (p. 29, 30) and sampling with replacement, resulting in $n^k$ sequences (p. 30).\n\n**Permutations**\nAn arrangement where order is important.\n- For $n$ objects: $n! = n \\times (n-1) \\times \\dots \\times 1$ (p. 29, 31).\n- $k$-permutations (selecting $k$ out of $n$): $P(n, k) = \\frac{n!}{(n-k)!}$ (p. 32).\n- Large factorials can be approximated by Stirling’s formula: $n! \\sim n^n e^{-n} \\sqrt{2\\pi n}$ (p. 32).\n\n**Combinations**\nAn arrangement where order is NOT important (subsets).\n- \"n choose r\": $C(n, r) = \\binom{n}{r} = \\frac{n!}{r!(n-k)!}$ (p. 33).\n- Combinations satisfy $C(n, k) = C(n, n-k)$ (p. 31).\n- When sampling without replacement and without ordering, the total possibilities are given by the binomial coefficient $\\binom{n}{k}$ (p. 33).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576791913,
+      "channel": "plan_pipe_7e7fe4dd40b3",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 29,
+        "end": 38
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Based on the provided document, the section regarding conditional probability (pages 39–40) can be summarized as follows:\n\nConditional probability is a fundamental concept in probability theory used to describe the likelihood of an event occurring given that another event has already taken place. \n\nFormal Definition\nThe conditional probability of an event $A$ occurring given the knowledge that event $B$ has occurred is generally denoted as $P(A|B)$. This allows for the refinement of probability estimates based on available information or the outcomes of related experiments. \n\nCore Concepts\nThe document positions conditional probability as a necessary tool for analyzing complex scenarios where events are not independent. By incorporating the occurrence of $B$ into the analysis of $A$, one essentially restricts the sample space to only those outcomes where $B$ is true. This approach is essential for moving beyond simple, isolated experiments to more intricate statistical models. \n\nMathematical Basis\nWhile the formal definition involves the interaction of different events within a probability space, the calculation relies on the relationship between the intersection of two events and the probability of the condition itself, represented by the ratio:\n\n$P(A|B) = \\frac{P(A \\cap B)}{P(B)}$\n\nThis assumes that the probability of the conditioning event $P(B)$ is greater than zero. This framework serves as a bridge between basic probability concepts and more advanced applications like random variables and distinct probability distributions.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576791914,
+      "channel": "plan_pipe_7e7fe4dd40b3",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 39,
+        "end": 40
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Based on the provided document, here is a summary of the section regarding Random Variables (p. 41):\n\n**Definition of Random Variables**\nA random variable is a mathematical tool used to assign numerical values to the outcomes of a random process. By mapping the sample space of a random experiment to real numbers, it allows for the structured analysis of probabilities associated with uncertain events.\n\n**Key Concepts**\n1. Mapping: A random variable functions as a function whose domain is the set of possible outcomes and whose codomain is the real number line.\n2. Quantifying Uncertainty: Instead of dealing directly with qualitative outcomes (like the result of a coin flip), random variables permit the use of algebraic and calculus-based methods to determine likelihoods.\n3. Distribution: The values taken by a random variable are governed by a probability distribution, which characterizes the frequency or probability of specific outcomes or ranges of outcomes occurring.\n\n**Mathematical Representation**\nIf we denote a random variable as $X$, the probability that it takes on a specific value $x$ is often expressed as:\n\n$$P(X = x)$$\n\nThis framework is fundamental for calculating expected values, variances, and defining the various types of probability distributions discussed in subsequent sections of the text.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576791915,
+      "channel": "plan_pipe_7e7fe4dd40b3",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 41,
+        "end": 42
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The section covering important distributions outlines four primary mathematical models used to describe the behavior of random variables (p. 43–45):\n\nUniform Distribution\nThis describes a scenario where all outcomes within a specified range are equally likely. The probability is distributed evenly across the interval.\n\nBinomial Distribution\nThis model is used for experiments that consist of a fixed number of independent trials, each having only two possible outcomes (often termed \"success\" or \"failure\"). The probability of success remains constant across all trials.\n\nPoisson Distribution\nThis distribution is typically used to express the probability of a given number of events occurring in a fixed interval of time or space. It is particularly useful when these events occur with a known constant mean rate and are independent of the time since the last event.\n\nNormal Distribution\nOften referred to as the \"bell curve,\" this is a continuous probability distribution that is symmetric about its mean. It is foundational in statistics because many natural phenomena and random variables tend to cluster around a central average, with values becoming increasingly rare as they move further from the mean. The probability density function can be represented generally as:\n\n$$f(x) = \\frac{1}{\\sigma\\sqrt{2\\pi}} e^{-\\frac{1}{2}(\\frac{x-\\mu}{\\sigma})^2}$$",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576791916,
+      "channel": "plan_pipe_7e7fe4dd40b3",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 43,
+        "end": 46
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text spans pages 1 through 57. Following your request for information from the page range 47–54, here is the summary of the available content:\n\n**Section 9: Links (p. 47)**\nThis section provides external resources and references related to probability theory.\n\n**Section 10: Contributors (p. 49)**\nThis section lists the various individuals and entities who contributed to the development of the Wikibook content.\n\n**List of Figures (p. 51)**\nThis section provides an index of the figures used within the document, including source attributions and the URI for the Creative Commons Attribution-ShareAlike 3.0 Unported license.\n\n**Summary of Scope**\nThe document establishes that mathematical probability $p \\in [0, 1]$ models uncertainty. It defines probability through multiple lenses:\n1. Long-run relative frequency of independent trials.\n2. Subjective belief based on experience or confidence.\n3. Physical probability linked to random systems like dice or roulette.\n\nThe text also clarifies the distinction between probability and odds, where odds are defined as the ratio of success to failure, such that for a probability $P$, the odds are $P : (1 - P)$.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576791917,
+      "channel": "plan_pipe_7e7fe4dd40b3",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 47,
+        "end": 54
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Based on the provided document, the sections covering pages 55 through 60 (which correspond to the \"Licenses\" chapter of the source text) outline the legal frameworks governing the use and distribution of the content.\n\n### Licensing and Legal Provisions\n\nThe text details three primary open-source licenses that apply to the material contained within the book:\n\n1. GNU General Public License (GPL): Included in section 11.1 (p. 55).\n2. GNU Free Documentation License (GFDL): Included in section 11.2 (p. 56).\n3. GNU Lesser General Public License (LGPL): Included in section 11.3 (p. 57).\n\n### Key Takeaways Regarding Licensing\n\nThe document clarifies that this book, or specific parts of it, may be governed by one or more of these licenses. The inclusion of these licenses is a mandatory requirement for the redistribution of the material. Because this work is derived from projects licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported license, it must adhere to the terms specified in section 4b of that license, ensuring that any derivative works are shared under compatible terms.\n\nThe text emphasizes that for any probability $p$ defined as:\n\n$$p \\in [0, 1]$$\n\nThe underlying mathematical and theoretical content remains accessible, while the legal protections ensure that the document remains open-source and freely distributable, provided that the contributors and original licenses are properly attributed as stated throughout the manual.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576791918,
+      "channel": "plan_pipe_7e7fe4dd40b3",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 55,
+        "end": 60
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576792000,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why does the classical approach to probability fail when analyzing the likelihood of being hit by a meteor tomorrow?",
+            "options": [
+              "It incorrectly assumes that all possible outcomes are equally likely.",
+              "It requires an infinite number of trials to reach a conclusion.",
+              "It fails to account for the subjective beliefs of the person involved.",
+              "It cannot express probabilities as a ratio of favorable outcomes."
+            ],
+            "correctIndex": 0,
+            "explanation": "The classical theory implicitly defines all outcomes as equiprobable. In the meteor example, there are two outcomes (hit or not hit), but implying they have a 50% chance each is a misuse of the theory because those outcomes are not equally likely."
+          },
+          {
+            "question": "In the context of the Frequency Theory of Probability, what does it mean to say the probability of a coin landing heads is 50%?",
+            "options": [
+              "That in every two tosses, exactly one must result in heads.",
+              "That the gambler has a 1:1 belief in the outcome before the coin is tossed.",
+              "That the ratio of heads to total tosses converges to 0.5 as the number of tosses increases.",
+              "That the event is theoretically possible, but only if the trials are not independent."
+            ],
+            "correctIndex": 2,
+            "explanation": "Frequentists define probability as the limit of the relative frequency of an outcome in a long run of independent trials under identical conditions."
+          },
+          {
+            "question": "When calculating the probability of drawing a king OR a club from a deck, why must we subtract 1/52?",
+            "options": [
+              "Because the total number of favorable outcomes must be a fraction of the total deck size.",
+              "To avoid double-counting the outcome that satisfies both conditions (the king of clubs).",
+              "Because the classical definition of probability requires mutually exclusive events only.",
+              "To adjust for the fact that kings and clubs are not independent events."
+            ],
+            "correctIndex": 1,
+            "explanation": "Simple addition of outcomes counts the king of clubs twice: once as a king and once as a club. Subtracting the overlap corrects for this over-counting."
+          },
+          {
+            "question": "Which scenario best illustrates the use of 'subjective probability' as defined in the text?",
+            "options": [
+              "Predicting the roll of a fair die based on the number of faces.",
+              "Calculating the risk of an earthquake based on accumulated geological data.",
+              "Assessing the likelihood of an event, such as an earthquake, that may never recur.",
+              "Determining the probability of heads by flipping a coin 10,000 times."
+            ],
+            "correctIndex": 2,
+            "explanation": "Subjective theory is useful for events that may only occur once, where frequentist or classical definitions cannot be applied because there are no repeated trials or uniform outcomes."
+          },
+          {
+            "question": "What is the result of P(φ) (the probability of an empty set) according to the axiomatic definition of probability?",
+            "options": [
+              "0",
+              "1",
+              "An undefined value",
+              "Proportional to the sample space S"
+            ],
+            "correctIndex": 0,
+            "explanation": "Axiomatic theory states that if E and F are mutually exclusive, P(E ∪ F) = P(E) + P(F). By setting F as the empty set, it follows that P(E) = P(E) + P(φ), which forces P(φ) to be 0."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778576792001,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the mathematical definition of a probability?",
+            "back": "A probability is a real number p in the interval [0, 1]."
+          },
+          {
+            "front": "How are 'odds' defined mathematically?",
+            "back": "Odds are the ratio of the probability of success to the probability of failure."
+          },
+          {
+            "front": "What is the Frequency Theory of Probability?",
+            "back": "It defines probability as the limit of the relative frequency of an event's occurrence when an experiment is repeated independently under identical conditions."
+          },
+          {
+            "front": "What is the Subjective Theory of Probability?",
+            "back": "It defines probability as a measure of a speaker's 'degree of belief' that an event will occur, ranging from 0% (complete disbelief) to 100% (certainty)."
+          },
+          {
+            "front": "What is the Classical definition of probability?",
+            "back": "The ratio of the number of favorable outcomes to the total number of assume-to-be equiprobable outcomes: p(E) = N_E / N."
+          },
+          {
+            "front": "What is a major limitation of the Classical theory of probability?",
+            "back": "It implicitly assumes all outcomes are equiprobable, providing no method for dealing with events that have unequal probabilities."
+          },
+          {
+            "front": "What is Evidential (Bayesian) probability?",
+            "back": "A way to represent an individual's degree of belief in a statement, given the available evidence, even when no random process is involved."
+          },
+          {
+            "front": "What is the first axiom of probability in Axiomatic Theory?",
+            "back": "For any event E, P(E) ≥ 0."
+          },
+          {
+            "front": "What is the second axiom of probability in Axiomatic Theory?",
+            "back": "P(S) = 1, where S is the sample space."
+          },
+          {
+            "front": "What is the third axiom of probability in Axiomatic Theory?",
+            "back": "If E and F are mutually exclusive events, then P(E ∪ F) = P(E) + P(F)."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-math-pure-specialty_4",
+      "slides": [
+        {
+          "title": "Lesson 5: Introduction to Probability",
+          "bullets": [
+            "Probability quantifies the likelihood of an occurrence.",
+            "Values range from 0 (impossible) to 1 (certain)."
+          ],
+          "notes": "Probability theory provides a mathematical framework for analyzing uncertainty. We represent likelihoods as real numbers between 0 and 1, often expressed as percentages.",
+          "page_range": "6-11",
+          "image_prompt": ""
+        },
+        {
+          "title": "Approaches to Probability",
+          "bullets": [
+            "Frequency Theory: Probability is a long-run relative frequency.",
+            "Subjective Belief: Probability reflects confidence or personal experience.",
+            "Physical: Associated with random systems like dice or roulette."
+          ],
+          "notes": "Frequentists rely on repeated, independent trials, while subjective approaches measure an individual's degree of belief. Both provide context for understanding probability.",
+          "page_range": "6-11",
+          "image_prompt": ""
+        },
+        {
+          "title": "The Fundamental Counting Principle",
+          "bullets": [
+            "Determines total ways to choose or do events.",
+            "Independent: Choices do not affect subsequent options.",
+            "Dependent: Choices reduce remaining possibilities.",
+            "Multiplication rule: Product of outcomes per trial."
+          ],
+          "notes": "The Counting Principle helps us calculate total sample space size. We differentiate between independent events, which simply multiply, and dependent events, involving selection limits.",
+          "page_range": "12-18",
+          "image_prompt": ""
+        },
+        {
+          "title": "Factorials and Arrangements",
+          "bullets": [
+            "Factorial symbol '!' represents product of descending integers.",
+            "Example: 5! = 5 × 4 × 3 × 2 × 1 = 120 (p. 13).",
+            "Permutations: Ordering objects where sequence matters.",
+            "Combinations: Selection where order does not matter."
+          ],
+          "notes": "Factorials are essential for dependent events. We use permutations for ordered arrangements and combinations when the specific sequence is irrelevant to the outcome.",
+          "page_range": "12-18",
+          "image_prompt": ""
+        },
+        {
+          "title": "Set Theory Foundations",
+          "bullets": [
+            "Union (A ∪ B): Elements in either A or B (OR).",
+            "Intersection (A ∩ B): Elements in both sets (AND).",
+            "Complement (A'): Everything not in set A (NOT).",
+            "Null set (∅): Set containing no elements."
+          ],
+          "notes": "Set theory language maps directly to probability rules. Using unions and intersections allows us to express complex logical relationships between events clearly.",
+          "page_range": "19-28",
+          "image_prompt": ""
+        },
+        {
+          "title": "Probability Axioms and Theorems",
+          "bullets": [
+            "Probability of any event is non-negative (p. 18).",
+            "Total probability of sample space is 1 (p. 18).",
+            "Addition Rule: P(A ∪ B) = P(A) + P(B) - P(A ∩ B).",
+            "Mutually exclusive events have no intersection (p. 18)."
+          ],
+          "notes": "These axioms form the logical bedrock of probability theory. The addition rule balances the total probability by correcting for overlapping intersections.",
+          "page_range": "19-28",
+          "image_prompt": ""
+        },
+        {
+          "title": "Combinatorics in Practice",
+          "bullets": [
+            "Counting techniques are vital for equiprobable finite spaces.",
+            "Fundamental Rule applies to sequences of choices.",
+            "Sampling with replacement leads to n^k outcomes (p. 33).",
+            "Combinatorics solves complex counting without full enumeration."
+          ],
+          "notes": "When outcomes are equiprobable, probability is just the ratio of event outcomes to total outcomes. Combinatorics provides the tools to count those outcomes efficiently.",
+          "page_range": "32-33",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 5 — Probability - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576791900,
+      "pdfName": "Probability"
+    }
+  ],
+  "sourceHash": "b88e1002a994b360"
+}

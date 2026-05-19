@@ -1,0 +1,267 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Time Series Analysis and Classification Methods - Lesson 1 — Time Series Analysis (Aue)",
+    "pdfName": "Time Series Analysis (Aue)",
+    "createdAt": 1778572875527,
+    "exportedAt": "2026-05-12T08:01:15.528Z",
+    "meta": {
+      "courseId": "course-en-time-series-and-classification",
+      "lessonIndex": 0,
+      "courseTitle": "Time Series Analysis and Classification Methods",
+      "lessonObjective": "Time Series Analysis (Aue)",
+      "licensing": {
+        "effective_license": "CC-BY-4.0",
+        "sources": [
+          {
+            "content_id": "local-newbooks-bfd0308a7f7a89ad",
+            "title": "Time Series Analysis (Aue)",
+            "source": "local-newbooks",
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "url": "local://newbooks/2026-05-13/Time Series Analysis and Classification Methods/Lesson 1 Time Series Analysis (Aue).pdf"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_176bb669c457",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Basic Concepts, Estimation, and Advanced Methods in Time Series Analysis",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778572875527,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: Time Series Analysis (Aue)\n\nThis module introduces the foundational concepts of Time Series Analysis, which involves the study of variable values ordered by equally spaced time intervals [S.1]. \n\n**Key Takeaways:**\n*   **Definition:** A time series is a sequence of data points indexed in time order [S.1].\n*   **Analytical Objective:** The primary goal of time series analysis is to identify and account for internal data structures, such as:\n    *   **Autocorrelation:** Statistical relationships between points at different time lags.\n    *   **Trends:** Long-term increases or decreases in the data.\n    *   **Seasonal Variation:** Periodic fluctuations occurring at specific intervals [S.1].\n\n**Course Progression:**\nThe study of this subject is structured into the following key areas [S.1, S.2]:\n1.  **Basic Concepts:** Introduction to the nature of time series data.\n2.  **Estimation:** Methods for calculating means and covariances.\n3.  **ARMA Processes:** The study of AutoRegressive-Moving Average models.\n4.  **Spectral Analysis:** Examining the frequency domain of time series data [S.2].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572875527,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-time-series-and-classification_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 1 — Time Series Analysis (Aue) - Presentation</span><span class=\"pm-chat-count\">3 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Time Series Analysis Overview</div><ul class=\"pm-chat-slide-bullets\"><li>Introduction to time series analysis by Aue.</li><li>Analyzing variables across equal time intervals.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778572875528,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Time Series Analysis\n\nTime series analysis focuses on examining data points collected in an ordered sequence at uniform time intervals. The primary objective is to identify and account for internal data structures, such as trends, seasonal variations, and autocorrelation, which are inherent in time-dependent data [S.1].\n\nThe study of this field is structured into several core areas [S.1, S.2]:\n\n1. **Foundations**: Establishing basic concepts necessary for understanding time series data [S.1].\n2. **Statistical Estimation**: Techniques regarding the estimation of mean and covariance functions [S.2].\n3. **Modeling**: The study of ARMA (Autoregressive-Moving-Average) processes [S.2].\n4. **Frequency Domain**: The application of spectral analysis to decompose time series data [S.2].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778572875537,
+      "channel": "plan_pipe_176bb669c457",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778572875627,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why is time series analysis considered more complex than analyzing simple cross-sectional data?",
+            "options": [
+              "Because time series data points are always constant over time.",
+              "Because time series data often contain internal structures like trends or autocorrelation that require specific accounting.",
+              "Because time series analysis ignores the order of data to simplify calculations.",
+              "Because time series data points are rarely taken at equally spaced intervals."
+            ],
+            "correctIndex": 1,
+            "explanation": "Time series analysis is distinct because it recognizes that data collected over time are not independent; they exhibit internal structures like autocorrelation and trends that must be addressed."
+          },
+          {
+            "question": "Which of the following is a fundamental requirement for a sequence of values to be considered a standard time series?",
+            "options": [
+              "The values must be independent of one another.",
+              "The values must be measured at purely random intervals.",
+              "The values must be ordered by equally spaced time intervals.",
+              "The values must represent only seasonal variations."
+            ],
+            "correctIndex": 2,
+            "explanation": "A time series is defined as an ordered sequence of values recorded at equally spaced time intervals."
+          },
+          {
+            "question": "If a researcher is analyzing how temperature changes over decades, which aspect of time series analysis are they likely investigating when they identify an upward shift in yearly averages?",
+            "options": [
+              "Trend",
+              "Autocorrelation",
+              "Spectral Analysis",
+              "Mean Estimation"
+            ],
+            "correctIndex": 0,
+            "explanation": "A trend represents a long-term movement or direction in the data over time, such as an upward shift in temperature."
+          },
+          {
+            "question": "In the context of the provided lesson topics, what is the significance of 'autocorrelation'?",
+            "options": [
+              "It represents the total variance of the data set.",
+              "It describes the correlation of a signal with a delayed copy of itself, indicating an internal structure.",
+              "It is a method used exclusively for estimating mean values.",
+              "It is a technique used to remove seasonal variation from a dataset."
+            ],
+            "correctIndex": 1,
+            "explanation": "Autocorrelation is a key internal structure in time series analysis where past values influence future values, creating a dependency that must be accounted for."
+          },
+          {
+            "question": "According to the structure of the provided content, what is the primary purpose of accounting for 'seasonal variation' in time series analysis?",
+            "options": [
+              "To ensure the data is randomly distributed.",
+              "To decrease the number of data points being analyzed.",
+              "To isolate predictable fluctuations that repeat at specific time intervals.",
+              "To convert time series data into cross-sectional data."
+            ],
+            "correctIndex": 2,
+            "explanation": "Seasonal variation refers to patterns that repeat over known, fixed periods; identifying these is essential for accurate modeling and forecasting."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778572875628,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Definition of a time series",
+            "back": "An ordered sequence of values of a variable recorded at equally spaced time intervals."
+          },
+          {
+            "front": "What does time series analysis account for?",
+            "back": "It accounts for internal structures in data points taken over time, such as autocorrelation, trends, or seasonal variations."
+          },
+          {
+            "front": "Name three examples of internal structures in time series data.",
+            "back": "Autocorrelation, trend, and seasonal variation."
+          },
+          {
+            "front": "What is the subject of Chapter 1 in the Aue Time Series Analysis text?",
+            "back": "Basic Concepts in Time Series."
+          },
+          {
+            "front": "What is the subject of Chapter 2 in the Aue Time Series Analysis text?",
+            "back": "The Estimation of Mean and Covariances."
+          },
+          {
+            "front": "What is the subject of Chapter 3 in the Aue Time Series Analysis text?",
+            "back": "ARMA Processes."
+          },
+          {
+            "front": "What is the subject of Chapter 4 in the Aue Time Series Analysis text?",
+            "back": "Spectral Analysis."
+          },
+          {
+            "front": "Why is autocorrelation important in time series analysis?",
+            "back": "It represents the correlation of a signal with a delayed copy of itself as a function of delay, which is a critical internal structure."
+          },
+          {
+            "front": "What is a trend in time series analysis?",
+            "back": "A long-term increase or decrease in the level of the time series over time."
+          },
+          {
+            "front": "What is seasonal variation in time series analysis?",
+            "back": "Periodic fluctuations in the data that occur at specific, regular intervals (e.g., daily, weekly, or annually)."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-time-series-and-classification_0",
+      "slides": [
+        {
+          "title": "Time Series Analysis Overview",
+          "bullets": [
+            "Introduction to time series analysis by Aue.",
+            "Analyzing variables across equal time intervals."
+          ],
+          "notes": "Welcome to our overview of time series analysis. We will explore how sequential data structures inform our statistical modeling.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Basic Concepts and Structure",
+          "bullets": [
+            "Data points exhibit internal structures.",
+            "Identify trends, seasonality, and autocorrelation.",
+            "Foundational methods for temporal modeling (p. 1)."
+          ],
+          "notes": "We begin by understanding that time series are not typical random samples, as they possess internal structures like trends or seasons.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Estimation and Advanced Modeling",
+          "bullets": [
+            "Estimating mean and covariance functions (p. 2).",
+            "Analyzing ARMA processes for prediction (p. 2).",
+            "Utilizing spectral analysis for cycles (p. 2)."
+          ],
+          "notes": "Moving beyond basic concepts, we will examine how to estimate parameters, model processes with ARMA, and conduct spectral analysis.",
+          "page_range": "2",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 1 — Time Series Analysis (Aue) - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778572875527,
+      "pdfName": "Time Series Analysis (Aue)"
+    }
+  ],
+  "sourceHash": "a8bb31d23fe49bac"
+}

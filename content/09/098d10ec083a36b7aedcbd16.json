@@ -1,0 +1,383 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Arduino und Maker-Elektronik - Lektion 2 — C-Programmierung für Mikrocontroller",
+    "pdfName": "C-Programmierung mit AVR-GCC",
+    "createdAt": 1778502230828,
+    "exportedAt": "2026-05-11T12:23:50.828Z",
+    "meta": {
+      "courseId": "course-de-cs-maker-arduino-spezial",
+      "lessonIndex": 1,
+      "courseTitle": "Arduino und Maker-Elektronik",
+      "lessonObjective": "AVR-GCC und Low-Level-Programmierung.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-c-programmierung-mit-avr-gcc",
+            "title": "C-Programmierung mit AVR-GCC",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/C-Programmierung_mit_AVR-GCC"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_626de49603fc",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-1",
+          "chapterTitle": "Inhaltsverzeichnis und Einleitung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-2",
+          "chapterTitle": "Zielgruppe und Lernziele",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-3",
+          "chapterTitle": "Struktur des Buches",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-4",
+          "chapterTitle": "Vorbemerkungen und rechtliche Hinweise",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-5",
+          "chapterTitle": "Grundlagen der AVR-Programmierung",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778502230828,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Gerne! Hier ist eine prägnante Zusammenfassung der bereitgestellten Dokumentation zum Thema „C-Programmierung mit AVR-GCC“:\n\n### Zusammenfassung: C-Programmierung für AVR-Mikrocontroller\n\nDas vorliegende Werk ist ein Wikibook, das sich an Einsteiger mit C-Grundkenntnissen richtet, um den systematischen Umgang mit der AVR-Mikrocontroller-Familie unter Verwendung des „AVR-GCC“-Toolsets zu erlernen (S. 2, S. 3).\n\n**Struktur des Lernmaterials:**\n*   **Methodik:** Das Buch ist in einen **Einführungsteil** (sequentiell zu bearbeiten) und einen **Vertiefungsteil** (themenunabhängige Kapitel) unterteilt (S. 3).\n*   **Kerninhalte:** Das Spektrum reicht von den Grundlagen (IO-Register, Datentypen, Warteschleifen) bis hin zu fortgeschrittenen Schnittstellen und Projekten (UART, TWI/I2C, LCD-Ansteuerung, PWM) (S. 1, S. 5).\n*   **Praxisbezug:** Durch den Fokus auf Hardware-nahe Programmierung sollen Anwender befähigt werden, direkt auf Registerebene zu arbeiten, anstatt auf abstrahierende Bibliotheken (wie bei Arduino) angewiesen zu sein (S. 3).\n\n**Hinweise für Lernende und Autoren:**\n*   **Open-Source-Hintergrund:** Große Teile des Inhalts basieren auf dem Tutorial von *Mikrocontroller.net* (S. 4).\n*   **Rechtlicher Status:** Aufgrund ungeklärter Urheberrechtsfragen bei importierten Inhalten existiert eine „Quarantänestation“. Neue Autoren werden ausdrücklich dazu aufgerufen, inhaltlich eigenständige Kapitel zu verfassen, um die Abhängigkeit von (urheberrechtlich kritischen) Importen langfristig zu ersetzen (S. 4).\n*   **Community:** Das Projekt ist für Co-Autoren offen, wobei ein einheitlicher didaktischer Stil (Lernziele zu Beginn, Lernkontrolle am Ende) angestrebt wird (S. 2).\n\nDiese Lerneinheit legt somit das theoretische Fundament, um Mikrocontroller „auf bare metal“-Ebene zu beherrschen, was für tiefergehendes Elektronik-Design eine essentielle Kompetenz darstellt.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778502230828,
+      "channel": "general",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-cs-maker-arduino-spezial_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 2 — C-Programmierung für Mikrocontroller - Präsentation</span><span class=\"pm-chat-count\">5 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Einstieg: C-Programmierung mit AVR-GCC</div><ul class=\"pm-chat-slide-bullets\"><li>Grundlagen der Programmierung für AVR-Mikrocontroller</li><li>Fokus auf das Werkzeug AVR-GCC</li><li>Zielgruppe: Einsteiger mit minimalen C-Kenntnissen</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778502230930,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die prägnante Zusammenfassung der grundlegenden Struktur des Buches zur AVR-GCC Programmierung:\n\nDie vorliegende Publikation dient als strukturierter Leitfaden für die hardwarenahe Programmierung von Mikrocontrollern in C unter der Verwendung des AVR-GCC Toolchains.\n\nDer inhaltliche Aufbau gliedert sich in drei wesentliche Säulen:\n\n1. Methodische Grundlagen und Werkzeuge: Das Buch beginnt mit einem Quickstart für Linux-Anwender und erläutert die essenziellen Arbeitsprozesse. Dies umfasst die Konfiguration des Compilers, den Einsatz der Standardbibliothek sowie die Verwendung von Makefiles zur Projektautomatisierung. Ergänzt wird dies durch hilfreiche Tipps und Tricks für die tägliche Entwicklungspraxis.\n\n2. Hardwarenahe Programmierung: Ein Schwerpunkt liegt auf der direkten Interaktion mit dem Mikrocontroller. Dies beinhaltet die Konfiguration und Steuerung von GPIO-Pins, das Verständnis der I/O-Register sowie die Implementierung von Interrupt-Service-Routinen. Ein weiterer Bereich widmet sich den Timern und Countern, inklusive praktischer Anwendungen wie der Pulsweitenmodulation (PWM) und der Tonerzeugung.\n\n3. Kommunikation und Anwendungsbeispiele: Den Abschluss bilden komplexe Schnittstellenprotokolle und reale Implementierungen. Dazu gehören die asynchrone serielle Schnittstelle (UART) sowie das Two-Wire-Interface (TWI/I2C). Diese werden durch konkrete Projekte untermauert, wie etwa die Ansteuerung von PS/2-Tastaturen, die Realisierung von R/2R-DA-Wandlern, den Zugriff auf externe EEPROMs sowie die Ansteuerung von LCD-Displays.\n\nZusammenfassend bietet das Werk eine systematische Kombination aus theoretischem Hintergrundwissen und praxisorientierten Codebeispielen, die von den Grundlagen der AVR-Architektur bis hin zur komplexen Peripherieansteuerung führen. Das Inhaltsverzeichnis, ein Vorwort sowie ein umfangreicher Anhang dienen dabei als nachschlagbare Orientierungshilfen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778502230838,
+      "channel": "plan_pipe_626de49603fc",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 1
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung des vorliegenden Textes:\n\n**Projektübersicht: C-Programmierung mit AVR-GCC**\n\n*   **Zielgruppe und Voraussetzungen:** Das Buch richtet sich an Einsteiger in die Microcontroller-Programmierung. Vorausgesetzt werden minimale Grundkenntnisse in C oder Erfahrungen in verwandten Sprachen (Java, C++, C#).\n*   **Lernziele:** Ziel ist die Vermittlung der Grundlagen der Programmierung von Atmel-AVR-Microcontrollern. Der aktuelle Projektstatus sieht hier noch einen hohen Optimierungs- und Konkretisierungsbedarf.\n*   **Autorenschaft und Mitarbeit:** Das Projekt ist explizit für Co-Autoren offen („Schreibt, was ihr wollt“). Aktuell betreut Benutzer:Mikyra das Buch, nachdem der ursprüngliche Buchpate (The todd) seit 2013 inaktiv ist.\n*   **Strukturelle Vorgaben:**\n    *   Fortgeschrittene Inhalte sollen als solche gekennzeichnet werden.\n    *   Ein einheitlicher Schreibstil sowie eine konsistente Kapitelstruktur (Lernziele zu Beginn, Lernkontrolle am Ende) werden angestrebt.\n    *   Die technische Umsetzung umfasst zudem spezifische Vorlagen (WTFPL-Lizenzen, Zitat- und Achtungs-Boxen).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778502230839,
+      "channel": "plan_pipe_626de49603fc",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die prägnante Zusammenfassung der konzeptionellen Struktur des Werkes:\n\n**Zielsetzung und Fokus**\nDas Buch vermittelt fundiertes Wissen über die Programmierung von Mikrocontrollern der AVR-Familie unter Verwendung des AVR-GCC-Toolsets. Voraussetzung hierfür sind bereits vorhandene Grundkenntnisse in der C-Programmierung, da der Schwerpunkt dezidiert auf der AVR-spezifischen Anwendung liegt.\n\n**Struktur des Buches**\n\nDer Inhalt gliedert sich in zwei wesentliche Bereiche:\n\n1. Der Einführungsteil\nDieser Abschnitt vermittelt das notwendige Basiswissen für alle weiterführenden Kapitel. Da die Inhalte aufeinander aufbauen, ist eine sequenzielle Bearbeitung der Kapitel zwingend erforderlich, sofern keine abweichenden Hinweise gegeben werden.\n\n2. Der Vertiefungsteil\nDieses Modul enthält spezialisierte Themen, die weitgehend unabhängig voneinander behandelt werden können. Als Voraussetzung für diese Kapitel dient ausschließlich das im Einführungsteil vermittelte Wissen. Die Leser sind hierbei frei, die Themen nach eigenem Interesse und Bedarf zu wählen.\n\n**Zukunftsausblick**\nDerzeit ist das Werk auf die genannten zwei Teile begrenzt. Ob in Zukunft ein dritter Teil mit Inhalten für Fortgeschrittene ergänzt wird, bleibt offen und ist zum aktuellen Zeitpunkt nicht geplant.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778502230840,
+      "channel": "plan_pipe_626de49603fc",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts zum Vorwort und den rechtlichen Rahmenbedingungen:\n\nHerkunft und Lizenzierung\nGroße Teile dieses Buchabschnitts basieren auf dem AVR-GCC-Tutorial von Mikrocontroller.net. Diese Inhalte unterliegen der Creative Commons Lizenz BY-SA, welche eine Namensnennung der Autoren erforderlich macht. Da die rechtliche Klärung der Übernahme einzelner Kapitel bisher nicht zufriedenstellend abgeschlossen werden konnte, sind diese Teile in einer sogenannten Quarantänestation zusammengefasst.\n\nZielsetzung und Strategie\nDas langfristige Ziel ist es, die umstrittenen Inhalte durch vollständig neu verfasste Texte zu ersetzen, um das Werk von potenziellen Urheberrechtsverletzungen zu bereinigen. Bis zur vollständigen Ersetzung müssen die betroffenen Kapitel in der Quarantänestation verbleiben.\n\nStrikte Trennungsregeln\nUm eine Kontamination des restlichen Buchs durch die unklare rechtliche Situation zu vermeiden, gelten strikte Regeln: Es ist unter keinen Umständen gestattet, Inhalte aus der Quarantänestation in den restlichen Teil des Buchs zu übernehmen. Eine umgekehrte Übertragung – von sauberen Kapiteln in die Quarantänestation – ist hingegen zulässig.\n\nStruktur des Buchs\nDie Übersicht gliedert sich in verschiedene Bereiche, darunter das Vorwort, benötigte Werkzeuge, Fehlerbehebung, Hello World, das Makefile sowie die Quarantänestation für kritische Inhalte. Kapitel, die keine relevanten oder korrekten Informationen mehr liefern, werden als ersetzt gekennzeichnet.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778502230841,
+      "channel": "plan_pipe_626de49603fc",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung der Grundlagen zur Programmierung von AVR-Microcontrollern mit C:\n\n### 1. Grundlagen und Datentypen\nEin C-Programm für einen AVR ist strukturiert aufgebaut: Es beginnt mit der Einbindung von Header-Dateien (z. B. für Registerdefinitionen), gefolgt von der Initialisierung und einer Hauptschleife `while(1)`, da Microcontroller im Gegensatz zum PC-Programm nie terminieren, sondern dauerhaft laufen. Die Datentypen in der AVR-Programmierung orientieren sich an der Hardware-Architektur; häufig werden explizit breite Typen aus `<stdint.h>` (wie `uint8_t` oder `uint16_t`) genutzt, um die Speicherbelegung exakt zu steuern.\n\n### 2. Hardwarenahe Programmierung: Register und IO-Ports\nRegister bilden den Grundbaustein eines Microcontrollers, da sie die Schnittstelle zwischen Software und Hardware darstellen. Über den Zugriff auf spezielle Speicheradressen werden Funktionen der CPU und der Peripherie gesteuert. Der Zugriff auf IO-Ports erfolgt durch das Setzen (1) oder Löschen (0) von Bits in den entsprechenden Registern (DDRx für Datenrichtung, PORTx für den Pegel, PINx zum Lesen). Man nutzt dazu logische Verknüpfungen (UND, ODER, XOR, NOT) in C, um einzelne Bit-Positionen nicht zu beeinflussen.\n\n### 3. Zeitsteuerung: Warteschleifen und Timer\nWarteschleifen (mittels `delay.h`) bieten eine einfache Möglichkeit, Programme für eine definierte Zeit anzuhalten. Für präzisere Anforderungen oder nicht blockierende Programmabläufe werden Timer eingesetzt. Timer sind Hardware-Module, die unabhängig vom CPU-Takt hochzählen. Sie können Interrupts auslösen, wenn ein Vergleichswert erreicht ist, was eine effizientere Steuerung ermöglicht als einfache Warteschleifen.\n\n### 4. Schnittstellen und Peripherie\nDie Kommunikation mit der Außenwelt erfolgt über standardisierte Schnittstellen:\n- I2C / TWI (Two-Wire Interface): Ein Bussystem zur seriellen Kommunikation mit mehreren Teilnehmern über nur zwei Leitungen.\n- LCD-Ansteuerung: Hierbei wird der Controller als Master eingesetzt, um über digitale Ports (oft im 4-Bit- oder 8-Bit-Modus) Befehle und Daten an ein Display-Modul zu übertragen, um Texte oder Symbole auszugeben.\n\n### 5. Mathematischer Aspekt\nDie zeitliche Konfiguration von Timern basiert auf der Taktfrequenz $f_{clk}$ des Mikrocontrollers. Die Periodendauer $T$ ergibt sich aus:\n\n$T = \\frac{1}{f_{clk}}$\n\nZudem können für Berechnungen innerhalb der Timerregister bei einem Prescaler $N$ die entsprechenden Werte wie folgt bestimmt werden:\n\n$f_{timer} = \\frac{f_{clk}}{N \\cdot \\text{Z}ähler\\text{wert}}$\n\nDiese Struktur ermöglicht eine präzise Steuerung der Hardware durch eine systemnahe Programmierung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778502230842,
+      "channel": "plan_pipe_626de49603fc",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778502230928,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Welche Eigenschaft zeichnet laut dem Konzept des Buchs den 'Einführungsteil' gegenüber dem 'Vertiefungsteil' aus?",
+            "options": [
+              "Er vermittelt die notwendigen Grundlagen, auf denen die Kapitel des zweiten Teils aufbauen.",
+              "Er besteht aus in sich abgeschlossenen Kapiteln, die in beliebiger Reihenfolge gelesen werden können.",
+              "Er ist für Fortgeschrittene gedacht und setzt tiefgehende Elektronikkenntnisse voraus.",
+              "Er enthält lediglich die Projekte zur praktischen Anwendung ohne theoretische Hintergründe."
+            ],
+            "correctIndex": 0,
+            "explanation": "Die Kapitel im Einführungsteil bauen sequentiell aufeinander auf, um das für den Vertiefungsteil benötigte Wissen systematisch zu vermitteln."
+          },
+          {
+            "question": "Warum ist beim Schreiben an diesem Buchprojekt Vorsicht geboten, wenn man Inhalte aus der sogenannten 'Quarantänestation' verwendet?",
+            "options": [
+              "Inhalte in der Quarantänestation sind fehlerhaft und könnten die Hardware zerstören.",
+              "Die Quarantänestation enthält Texte mit ungeklärter Lizenzsituation, die nicht in den restlichen Teil des Buchs gelangen dürfen.",
+              "Diese Kapitel sind in einer veralteten Programmiersprache geschrieben und nicht mit AVR-GCC kompatibel.",
+              "Die Inhalte der Quarantänestation sind nur für registrierte Administratoren zugänglich."
+            ],
+            "correctIndex": 1,
+            "explanation": "Aufgrund ungeklärter Urheberrechtsfragen dürfen Inhalte aus der Quarantänestation nicht in den restlichen Teil des Buchs übernommen werden, um Löschungen zu vermeiden."
+          },
+          {
+            "question": "Was ist das Hauptziel beim Einsatz von 'IO-Registern' in der Mikrocontroller-Programmierung?",
+            "options": [
+              "Sie sind nötig, um den Programmcode in eine für Menschen lesbare Sprache zu übersetzen.",
+              "Sie stellen die Schnittstelle dar, um Hardware-Pins zu steuern oder deren Status abzufragen.",
+              "Sie dienen ausschließlich als Speicher für komplexe mathematische Berechnungen.",
+              "Sie ermöglichen die Kommunikation zwischen dem Compiler und dem Betriebssystem des Computers."
+            ],
+            "correctIndex": 1,
+            "explanation": "Register sind die Grundbausteine eines Mikrocontrollers, über die die Hardware-IO-Ports gesteuert und ausgelesen werden."
+          },
+          {
+            "question": "Welcher Ansatz wird verfolgt, um die Abhängigkeit von problematischen oder fremden Inhalten im Buch langfristig zu verringern?",
+            "options": [
+              "Das Projekt soll in 'Java-Programmierung' umbenannt werden, um die Lizenzprobleme zu umgehen.",
+              "Die Inhalte sollen schrittweise durch neu selbst verfasste Texte ersetzt werden, bis die alten Kapitel entfernt werden können.",
+              "Man soll nur noch Projekte bearbeiten, die keine Hardware-Programmierung erfordern.",
+              "Alle existierenden Kapitel sollen gelöscht und durch extern verlinkte YouTube-Videos ersetzt werden."
+            ],
+            "correctIndex": 1,
+            "explanation": "Das Ziel ist es, die problematischen Kapitel inhaltlich so weit neu zu verfassen, dass sie durch eigene Texte ersetzt und dann entfernt werden können."
+          },
+          {
+            "question": "Warum ist die Unterscheidung zwischen Einführungsteil und Vertiefungsteil für den Lernerfolg eines Einsteigers wichtig?",
+            "options": [
+              "Weil der Vertiefungsteil nur als Nachschlagewerk für Hardware-Spezialisten dient, die keine Software programmieren wollen.",
+              "Weil der Einführungsteil nur allgemeine C-Syntax behandelt, während der Vertiefungsteil die eigentliche AVR-Architektur erklärt.",
+              "Weil man durch das Springen zwischen den Teilen die Programmiersprache C am effizientesten lernt.",
+              "Weil man ohne das Wissen aus den Grundlagenkapiteln die komplexeren Projekte des Vertiefungsteils nicht verstehen kann."
+            ],
+            "correctIndex": 3,
+            "explanation": "Die Struktur stellt sicher, dass der Anwender zunächst das nötige Rüstzeug erwirbt, bevor er sich an spezifische Projekte wie die Ansteuerung von Displays oder UART-Schnittstellen wagt."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778502230929,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist das primäre Ziel des Buchprojekts 'C-Programmierung mit AVR-GCC'?",
+            "back": "Die Grundlagen der Mikrocontroller-Programmierung auf Basis der Atmel AVR-Familie unter Verwendung des AVR-GCC-Werkzeugs zu erlernen."
+          },
+          {
+            "front": "Wie ist das Buch inhaltlich strukturiert?",
+            "back": "Es ist in einen Einführungsteil (sequentiell zu lesen, baut aufeinander auf) und einen Vertiefungsteil (kapitelweise unabhängig) unterteilt."
+          },
+          {
+            "front": "Nenne drei Hardware-Grundlagen, die im Buch behandelt werden.",
+            "back": "GPIO Pins, IO-Register und Timer/Counter."
+          },
+          {
+            "front": "Welche Schnittstellen werden für die Kommunikation mit externer Peripherie erläutert?",
+            "back": "UART (asynchrone serielle Schnittstelle) und TWI (Two Wire Interface, auch I2C)."
+          },
+          {
+            "front": "Was ist laut Projektrichtlinien in Bezug auf die sogenannte 'Quarantänestation' zu beachten?",
+            "back": "Inhalte aus der Quarantänestation dürfen keinesfalls in den restlichen Teil des Buches übernommen werden, um Urheberrechtskonflikte zu vermeiden."
+          },
+          {
+            "front": "An welche Zielgruppe richtet sich das Buch?",
+            "back": "Einsteiger mit minimalen C-Grundkenntnissen oder Entwickler mit Vorkenntnissen in einer C-Sprachfamilie (Java, C++, C#)."
+          },
+          {
+            "front": "Welches Tool wird für die Kompilierung des C-Codes explizit genannt?",
+            "back": "AVR-GCC."
+          },
+          {
+            "front": "Nenne zwei im Buch beschriebene Praxisprojekte aus dem Bereich 'Timer und Counter'.",
+            "back": "Sound-Erzeugung ('Back to the 80ies sound') und PWM-Erzeugung (sin()-Signal via Wavetable)."
+          },
+          {
+            "front": "Welche Datei ist essentiell für die Automatisierung des Kompilierungsprozesses?",
+            "back": "Das Makefile."
+          },
+          {
+            "front": "Warum ist es wichtig, fortgeschrittene Inhalte im Buch zu markieren?",
+            "back": "Dies war ein expliziter Wunsch des ursprünglichen Buchpaten 'The todd', um die Lesbarkeit für unterschiedliche Wissensstufen zu verbessern."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-cs-maker-arduino-spezial_1",
+      "slides": [
+        {
+          "title": "Einstieg: C-Programmierung mit AVR-GCC",
+          "bullets": [
+            "Grundlagen der Programmierung für AVR-Mikrocontroller",
+            "Fokus auf das Werkzeug AVR-GCC",
+            "Zielgruppe: Einsteiger mit minimalen C-Kenntnissen"
+          ],
+          "notes": "Willkommen zur Lektion 2. Heute betrachten wir den systematischen Aufbau unserer Reise in die Welt der Mikrocontroller.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Lernziele und Zielsetzung",
+          "bullets": [
+            "Vermittlung von Grundlagen der AVR-Programmierung",
+            "Geeignet für C-Einsteiger und Umsteiger",
+            "Offenes Projekt: Neue Autoren sind herzlich willkommen",
+            "Einheitlicher Stil zur Förderung der Lesbarkeit"
+          ],
+          "notes": "Unser Ziel ist es, von den ersten Schritten bis hin zu komplexen Anwendungen eine solide Basis zu schaffen.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Struktur der Lerneinheiten",
+          "bullets": [
+            "Zweiteilung in Einführungsteil und Vertiefung",
+            "Einführung: Sequentieller Aufbau der Grundlagen",
+            "Vertiefung: Modulare Kapitel nach eigenem Interesse",
+            "Fokus auf saubere Code-Strukturierung"
+          ],
+          "notes": "Wir strukturieren das Buch so, dass ihr sowohl die zwingenden Grundlagen als auch individuelle Spezialthemen effizient beackern könnt.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Rechtliche Rahmenbedingungen",
+          "bullets": [
+            "Importe basieren primär auf dem Mikrocontroller.net-Tutorial",
+            "Lizenzierung unter Creative Commons BY-SA",
+            "Strenge Trennung von 'Quarantäne-Kapiteln'",
+            "Ziel: Neuformulierung für rechtliche Sicherheit"
+          ],
+          "notes": "Ein wichtiger Hinweis für angehende Autoren: Bitte achtet strikt darauf, keine externen Inhalte ungeprüft zu übernehmen.",
+          "page_range": "4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Kerninhalte der Programmierung",
+          "bullets": [
+            "Umgang mit Hardware-Registern und IO-Ports",
+            "Zeitsteuerung mittels Warteschleifen und Timern",
+            "Anbindung von Schnittstellen wie I2C/TWI und LCDs",
+            "Datentypen und Programmstruktur für Mikrocontroller"
+          ],
+          "notes": "Zum Abschluss ein Ausblick auf das, was uns inhaltlich erwartet – von der Hardware-Register-Ebene bis zur Kommunikation.",
+          "page_range": "5",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 2 — C-Programmierung für Mikrocontroller - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778502230828,
+      "pdfName": "C-Programmierung mit AVR-GCC"
+    }
+  ],
+  "sourceHash": "1ac60f93ca253596"
+}

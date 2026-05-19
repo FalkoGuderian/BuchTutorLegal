@@ -1,0 +1,490 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Netzwerktechnik — Einführung - Lektion 1 — Netzwerktechnik Grundlagen",
+    "pdfName": "Netzwerktechnik",
+    "createdAt": 1778501977713,
+    "exportedAt": "2026-05-11T12:19:37.713Z",
+    "meta": {
+      "courseId": "course-de-cs-netzwerke-einfuehrung",
+      "lessonIndex": 0,
+      "courseTitle": "Netzwerktechnik — Einführung",
+      "lessonObjective": "OSI-Modell, TCP/IP, Ethernet.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-netzwerktechnik",
+            "title": "Netzwerktechnik",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Netzwerktechnik"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_906da237d25d",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Grundbegriffe und Netzwerkdefinitionen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-4",
+          "chapterTitle": "Client-Server vs. Peer-to-Peer",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-5",
+          "chapterTitle": "Netzwerktypen und Gründe für Netzwerke",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-6",
+          "chapterTitle": "Übertragungsmedien: Kupfer und Glasfaser",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "6-8",
+          "chapterTitle": "Strukturierte Verkabelung und Signalübertragung",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "8-10",
+          "chapterTitle": "Messtechnik und Normen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "10-11",
+          "chapterTitle": "Wichtige IEEE-Standards und ITU",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "11-22",
+          "chapterTitle": "Netzwerkprotokolle von A bis Z",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "23-24",
+          "chapterTitle": "OSI-Schichtenmodell und Netzwerkhardware",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778501977713,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist eine prägnante Zusammenfassung der grundlegenden Aspekte der Netzwerktechnik basierend auf den bereitgestellten Unterlagen:\n\n### 1. Grundbegriffe und Netzwerkarten\n*   **Definition:** Ein Netzwerk ist ein Verbund von Computern (Clients) und Peripheriegeräten zum Datenaustausch und zur Ressourcenfreigabe (S. 1, S. 2).\n*   **Netzwerkgrößen:** Netzwerke werden nach ihrer räumlichen Ausdehnung klassifiziert:\n    *   **PAN (Personal) / WPAN:** Kleinstnetzwerke für mobile Geräte (z. B. Bluetooth) (S. 4).\n    *   **LAN (Local) / WLAN:** Lokal begrenzte Netzwerke (z. B. im Haus oder Büro). WLAN nutzt Funkstandards (IEEE 802.11) (S. 3).\n    *   **MAN (Metropolitan):** Stadtbereichsnetzwerke (bis zu 50 km Reichweite) (S. 4).\n    *   **WAN (Wide) / GAN (Global):** Weitverkehrsnetze (z. B. Internet) zur Verbindung über Ländergrenzen hinweg (S. 4).\n    *   **Intranet:** Firmeneigenes Netz, oft über Standleitungen verbunden (S. 1).\n\n### 2. Netzwerk-Architekturen\n*   **Peer-to-Peer (P2P):** Alle Rechner sind gleichberechtigt; jeder kann Server und Client sein. Vorteil: Geringer Verwaltungsaufwand bei kleinen Netzen. Nachteil: Sicherheitsrisiken und mangelnde Skalierbarkeit (S. 2).\n*   **Client-Server:** Server verwalten zentrale Ressourcen (Speicher, Drucker, Anmeldung). Vorteil: Hohe Sicherheit, zentrale Wartung und Skalierbarkeit. Nachteil: Höhere Komplexität und Ausfallrisiko des Servers (S. 2, S. 3).\n\n### 3. Übertragungsmedien\n*   **Kupfer:** Häufig verwendet (Twisted Pair). Anfällig für Störungen (Nebensprechen/Crosstalk) (S. 5, S. 8).\n*   **Glasfaser:** Hohe Bandbreite, keine elektromagnetische Beeinflussung, ideal für den Primärbereich (Backbone) (S. 5, S. 7).\n*   **WLAN:** Kabellose Übertragung via Funk. Erfordert Verschlüsselung (WPA2 empfohlen) (S. 3).\n\n### 4. Strukturierte Verkabelung\nNetzwerke werden in drei funktionale Bereiche unterteilt:\n*   **Primärbereich (Campus):** Standorte/Gebäude werden miteinander verbunden (Glasfaser) (S. 7).\n*   **Sekundärbereich (Gebäude):** Verbindungen zwischen den Stockwerken (Steigleitungen) (S. 7).\n*   **Tertiärbereich (Etage):** Verkabelung vom Stockwerkverteiler bis zur Anschlussdose (Twisted Pair) (S. 7).\n\n### 5. Standards und Protokolle\n*   **IEEE 802:** Das wohl wichtigste Projekt für LAN/MAN-Standards. Beinhaltet u. a. Ethernet (802.3) und WLAN (802.11) (S. 10).\n*   **ITU-T:** Organisation für internationale Fernmelde-Standards (S. 10, S. 11).\n*   **Wichtige Protokolle:**\n    *   **ARP:** Wandelt IP-Adressen in MAC-Adressen um (S. 11).\n    *   **CSMA/CD:** Zugriffsprotokoll zur Vermeidung von Kollisionen auf Busleitungen (S. 13).\n    *   **CHAP:** Sicherheitsprotokoll zur Authentifizierung (3-Wege-Handshake) (S. 12, S. 13).\n    *   **DHCP/APIPA:** Verfahren zur IP-Adressvergabe (S. 12).\n\nDiese Grundlagen bilden das Fundament für das Verständnis tiefergehender Themen wie TCP/IP oder das OSI-Modell, die in den weiteren Lektionen behandelt werden.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1778501977713,
+      "channel": "general",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 24
+      }
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-cs-netzwerke-einfuehrung_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 1 — Netzwerktechnik Grundlagen - Präsentation</span><span class=\"pm-chat-count\">7 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Lektion 1: Netzwerktechnik Grundlagen</div><ul class=\"pm-chat-slide-bullets\"><li>Einführung in Computernetze und Datenübertragung</li><li>Übersicht zu OSI-Modell, Protokollen und Hardware</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1778501977815,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung der bereitgestellten Unterlagen zum Thema Netzwerktechnik:\n\n**Grundlagen der Netzwerktechnik**\n\nEin Computernetz (Network) besteht aus miteinander verbundenen Computern und Peripheriegeräten (z. B. Drucker), um Daten und Ressourcen auszutauschen. Die physische Verbindung erfolgt über Kupferdraht, Glasfaser, Funk oder andere Medien. Zentrale Komponenten sind dabei:\n\n*   Hubs und Switches: Verteilerknoten, an denen die Kabel sternförmig zusammenlaufen.\n*   Server: Zentrale Computer, die Ressourcen (Speicherplatz, Dienste) verwalten und bereitstellen.\n*   Clients: Endgeräte, die Dienste der Server in Anspruch nehmen.\n*   Router: Spezielle Server, die Datenströme zwischen unterschiedlichen Netzwerken leiten.\n\nAls Intranet bezeichnet man ein Firmennetz, bei dem mehrere Standorte über dedizierte Standleitungen dauerhaft miteinander verbunden sind. Das World Wide Web (WWW) hingegen zeichnet sich durch seine weltweite Ausdehnung, öffentlichen Zugang und die Verwendung der TCP/IP-Protokollfamilie aus.\n\n**Netzwerkarchitekturen**\n\nEs werden primär zwei Architekturformen unterschieden:\n\n1. Peer-to-Peer (P2P): Alle Rechner sind gleichberechtigt und fungieren gleichzeitig als Client und Server. Frühe Systeme nutzten direkte Verbindungen über serielle oder parallele Schnittstellen. P2P ist für kleine Netze geeignet, da es wenig Verwaltungsaufwand erfordert, bei wachsender Größe jedoch sehr ineffizient und unsicher wird. Ein kritischer Aspekt historischer P2P-Systeme war die Abhängigkeit von der Verfügbarkeit aller Knoten.\n\n2. Client-Server-Architektur: Hierbei greifen Clients auf zentrale Dienste (z. B. Netzwerkanmeldung) eines Servers zu. Diese Struktur ist für professionelle Umgebungen Standard, da sie die Verwaltung zentralisiert. Ein Ausfall des zentralen Servers hat jedoch gravierende Auswirkungen auf das gesamte Netz, da abhängige Dienste dann nicht mehr verfügbar sind.\n\n**Projektstatus**\n\nDas Buchprojekt befindet sich aktuell zu 20 Prozent im Fertigstellungsstatus. Ansprechpartner ist Wolfgang Biegemann; das Projekt ist offen für die Mitarbeit weiterer Co-Autoren.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501977723,
+      "channel": "plan_pipe_906da237d25d",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die zusammengefasste Übersicht der Netzwerkarchitekturen und -typen basierend auf den bereitgestellten Inhalten:\n\n### Netzwerkarchitekturen\n\n**Peer-to-Peer (P2P)**\nIn einem P2P-Netz sind alle Rechner direkt miteinander verbunden und besitzen die gleichen Rechte (Server und Client gleichzeitig). Ursprünglich basierte dies auf Direktverbindungen über Schnittstellen oder einfache Hubs/Switches.\n- Vorteile: Geringer Verwaltungsaufwand bei kleinen Netzen, gleiche Rechte für alle.\n- Nachteile: Sicherheitsrisiken, eingeschränkte Skalierbarkeit (meist max. 10 Clients), hoher Verwaltungsaufwand bei großen Netzen, Abhängigkeit von der Verfügbarkeit jedes einzelnen Rechners.\n\n**Client-Server-Architektur**\nHier greifen Clients auf zentrale Dienste eines Servers zu (z. B. zentrale Anmeldung). \n- Vorteile: Zentrale Verwaltung/Wartung, hohe Sicherheit durch hierarchische Rechtevergabe, hohe Verlässlichkeit und Skalierbarkeit für mehr als 10 PC.\n- Nachteile: Komplexität in der Einrichtung, höhere Anschaffungskosten, Ausfallrisiko bei zentralen Serverkomponenten.\n\n### Netzwerkgrenzen und -typen (nach Reichweite)\n\nDie Einteilung erfolgt primär nach dem geografischen Wirkungsbereich:\n\n1. PAN (Personal Area Network): Kleinstnetzwerke für mobile Geräte (z. B. per USB). WPAN ist das kabellose Pendant dazu (Bluetooth/Infrarot).\n2. BAN (Body Area Network): Netzwerke von Sensoren/Aktoren am oder im menschlichen Körper.\n3. LAN (Local Area Network): Räumlich begrenztes, meist kabelgebundenes Netzwerk (z. B. im Büro oder Haushalt).\n4. WLAN (Wireless LAN): Kabellose Variante mittels Funktechnik (IEEE 802.11). Übertragungsfrequenzen liegen bei 2,4 GHz oder 5 GHz. Die Reichweite beträgt ca. 30–100 Meter. Sicherheit ist hier kritisch (Empfehlung: WPA2 und VPN).\n5. MAN (Metropolitan Area Network): Stadtnetzwerk mit bis zu 50 km Ausdehnung und hohen Geschwindigkeiten (ca. 200 MBit/s).\n6. WAN (Wide Area Network): Verbindet lokale Netzwerke über große Distanzen mittels Routern und Gateways.\n7. GAN (Global Area Network): Weltweites System, meist realisiert durch Satellitenverbindungen.\n\n### Nutzen und Risiken\n\nZusammenfassend dienen Netzwerke der gemeinsamen Ressourcen- und Datennutzung sowie der zentralen Kommunikation. Als Hauptnachteile gelten die Anfälligkeit für Schadsoftware (Würmer) sowie die Abhängigkeit von zentralen Diensten, deren Ausfall ganze Arbeitsbereiche blockieren kann.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501977724,
+      "channel": "plan_pipe_906da237d25d",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der Netzwerkgrundlagen:\n\n### Einteilung von Netzwerken nach Größe\nNetzwerke werden primär nach ihrer geografischen Ausdehnung klassifiziert:\n\n- PAN (Personal Area Network): Kleinste Einheit für Kleingeräte (z.B. USB). WPAN nutzt Funkverbindungen wie Bluetooth oder Infrarot.\n- BAN (Body Area Network): Vernetzung von Sensoren und Aktoren direkt am oder im menschlichen Körper.\n- MAN (Metropolitan Area Network): Stadtnetzwerk mit bis zu 50 km Reichweite und ca. 200 MBit/s. Basiert auf DQDB-Technologie (Standards IEEE 802.6).\n- WAN (Wide Area Network): Große Distanzen durch Kopplung lokaler Netze mittels Bridges, Routern und Gateways (z.B. WWW).\n- GAN (Global Area Network): Weltweites System, meist durch Satellitenverbindungen realisiert.\n\n### Vorteile und Nachteile von Netzwerken\nDie Vorteile liegen in der gemeinsamen Ressourcennutzung, effizienterer Kommunikation und zentraler Administration. Als Nachteile gelten die Anfälligkeit für Schadsoftware (Würmer) sowie Abhängigkeiten von zentralen Komponenten (z.B. Ausfall von Anmelde- oder Printservern).\n\n### Übertragungsmedien\n\n1. Kupferkabel\n- Vielfältige Varianten wie Koaxialkabel oder Twisted-Pair (TP).\n- Differenzierung nach Schirmung: UTP (ungeschirmt), STP (geschirmt) oder S/STP (kombiniert geschirmt).\n- Reichweitenbegrenzung auf ca. 100 Meter.\n\n2. Glasfaser (Lichtwellenleiter/LWL)\n- Bestehen aus Quarzsand oder Kunststoff (POF).\n- Einsatz von Single-Mode oder Multi-Mode Fasern zur Übertragung hoher Datenraten.\n- Vorteile: Hohe Performance, große Reichweiten und Upgrade-Fähigkeit der Transceiver.\n- Nachteile: Empfindliche Verlegung (einhalten von Biegeradien zwingend erforderlich, da Reflexion an 90-Grad-Winkeln die Übertragung stört).\n\n3. Funkwellen (Wireless)\n- Kabellose Übertragung für flexible Netzwerkanbindungen.\n\n### Wesentliche technische Aspekte\nDie Effizienz und Zuverlässigkeit der Infrastruktur wird entscheidend durch die gewählte Topologie, die Qualität der Verkabelung (Kategorien) sowie die eingesetzte Hardware (Router, Gateways) bestimmt.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501977725,
+      "channel": "plan_pipe_906da237d25d",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der bereitgestellten Inhalte zur Netzwerktechnik:\n\n**1. Übertragungsmedien**\nDie Kommunikation in Netzwerken erfolgt über verschiedene Medien, die sich in ihrer Leistungsfähigkeit und Anwendung unterscheiden:\n\n*   **Kupferkabel**: Einsatz von 2-adrigen Leitungen, Koaxialkabeln oder verdrillten Paaren (Twisted Pair, TP). Bei TP-Kabeln erfolgt eine Abschirmung gegen Störungen, unterschieden in UTP (ungeschirmt), STP (geschirmt) sowie S/STP und S/UTP (Kombinationen). Die Eignung wird über Kategorien und Linkklassen definiert. Kupfer ist auf eine Reichweite von ca. 100 m begrenzt.\n*   **Lichtwellenleiter (LWL/Glasfaser)**: Bestehen aus Glas oder Kunststoff (POF). Man unterscheidet Single-Mode und Multi-Mode Fasern. Sie ermöglichen sehr hohe Datenraten und große Reichweiten. Die Verlegung erfordert aufgrund notwendiger Biegeradien und Empfindlichkeit gegenüber Reflexionen hohe Sorgfalt. Verbindungen erfolgen oft über Spleißboxen, da direktes Spleißen technisch aufwendig ist.\n*   **Funkwellen**: Dienen der drahtlosen (wireless) Übertragung.\n\n**2. Signalübertragung und Bandbreite**\n*   **Basisband**: Der gesamte verfügbare Frequenzbereich wird für ein einzelnes Signal genutzt. Eine Mehrfachnutzung findet nicht statt.\n*   **Bandbreite**: Definiert als der Frequenzbereich zwischen zwei Grenzfrequenzen: $B = f_2 - f_1$. Die Mittenfrequenz $f_0$ ergibt sich aus dem geometrischen Mittel der Grenzwerte.\n*   **Kapazität**: Die Bandbreite fungiert wie die Anzahl der Spuren auf einer Autobahn; je breiter das Band, desto höher ist die Datenübertragungsrate (gemessen in kbit/s oder Mbit/s). Breitbandanwendungen (z. B. DSL) erlauben die Übertragung mehrerer Signale.\n\n**3. Strukturierte Verkabelung**\nDies ist das standardisierte Konzept für die technische Infrastruktur von Gebäuden. Sie dient der einheitlichen Versorgung mit Diensten wie Sprache und Daten und gliedert sich in drei Bereiche:\n*   Primärbereich (Geländeverkabelung/Campus)\n*   Sekundärbereich (Etagenverkabelung/Steigleitungen)\n*   Tertiärbereich (Etagenverteilung bis zum Arbeitsplatz)",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501977726,
+      "channel": "plan_pipe_906da237d25d",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist eine strukturierte Zusammenfassung der bereitgestellten Informationen zu den Themen Glasfaser, Übertragungstechnik und strukturierte Verkabelung:\n\n**Glasfasertechnik**\nGlasfaserleitungen erfordern eine Mindestlänge für die Signalstärke, um Komponentenschäden zu vermeiden. Aufgrund hoher Kosten, empfindlicher Handhabung und komplexen Spleißprozessen (Signalverluste durch Spleißboxen) wird Glasfaser primär für große Distanzen mit hohem Datenaufkommen eingesetzt. Sie bietet Vorteile wie geringe Dämpfung, große Bandbreite und Unempfindlichkeit gegen elektromagnetische Störungen.\n\n**Grundlagen der Übertragungstechnik**\nDie Basisbandübertragung nutzt den gesamten Frequenzbereich für ein einziges Nutzsignal ohne Mehrfachnutzung. Die Bandbreite definiert sich als Differenz zweier Frequenzen: $B = f_2 - f_1$. Die Mittenfrequenz $f_0$ ergibt sich dabei als geometrisches Mittel: $f_0 = \\sqrt{f_1 \\cdot f_2}$. Die anschauliche Analogie dazu ist eine Autobahn, bei der die Spuren für die Bandbreite und die Autos für den Datenverkehr stehen; mehr Bandbreite ermöglicht somit eine höhere Übertragungsrate (Einheiten: bit/s).\n\n**Strukturierte Verkabelung**\nDies ist der einheitliche Aufbauplan der technischen Infrastruktur einer Liegenschaft, unterteilt in drei Bereiche:\n1. Primärbereich (Campusverkabelung): Verbindung von Gebäuden untereinander. Nutzung von Glasfaser, um Störungen durch Blitzeinschläge und galvanische Kopplungen zu vermeiden.\n2. Sekundärbereich (Steigbereich): Vertikale Verbindung zwischen Stockwerkverteilern innerhalb eines Gebäudes.\n3. Tertiärbereich (Etagenverkabelung): Horizontale Verkabelung vom Etagenverteiler bis hin zur Anschlussdose.\n\n**Messtechnik und Störgrößen**\nDie Dämpfung beschreibt den Energieverlust und die Abschwächung einer Schwingung über die Strecke. Ein weiteres technisches Problem ist das Nebensprechen (Crosstalk), bei dem sich elektromagnetische Signale benachbarter Adernpaare durch Induktion gegenseitig stören:\n- Nahnebensprechen (NEXT): Störung am nahen Leitungsende (Senderseite).\n- Fernnebensprechen (FEXT): Schwächere Störung am fernen Leitungsende.\n\nZur Qualitätssicherung werden Messmethoden unterschieden: Während die veraltete Methode die gesamte Messstrecke inklusive Patchkabel einbezog, fokussiert sich der moderne \"Permanent Link\" ausschließlich auf die fest verlegten, unveränderlichen Komponenten zwischen den Anschlussdosen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501977727,
+      "channel": "plan_pipe_906da237d25d",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 8
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung der bereitgestellten Inhalte zu den Themen Nebensprechen, Messverfahren und Standardisierungsgremien:\n\n**Nebensprechen (Crosstalk / XT)**\nNebensprechen bezeichnet die störende Einkopplung elektrischer Signale von einer Leitung auf eine andere durch Induktion. \n- Nahnebensprechen (NEXT): Beeinflussung am nahen Ende, nahe am Sender.\n- Fernnebensprechen (FEXT): Beeinflussung am fernen Ende, meist schwächer als NEXT.\n\n**Messverfahren für Netzwerkleitungen**\n- Basic Link: Ursprüngliche Methode inklusive Messleitungen; wird aufgrund verfälschter Längenmessungen nicht mehr genutzt.\n- Permanent Link: Misst ausschließlich die fest installierten Komponenten (Dosen und Kabelstrecke dazwischen). Dies ist der Standard für die Abnahme von Verkabelungsstrecken.\n- Channel Link: Umfasst die gesamte Strecke inklusive der Patchleitungen vom Endgerät bis zum Patchpanel.\n\n**Normung und Standardisierung**\nInternationale Organisationen definieren technische Standards, um Kompatibilität und Qualität sicherzustellen:\n- ISO: Internationale Organisation für Normung (technische, klassifikatorische und Verfahrensstandards).\n- IEEE: Berufsverband, der insbesondere im Bereich Elektrotechnik und Informatik weltweit Standards setzt.\n- IEEE 802: Bedeutendes Projekt zur Standardisierung lokaler Netzwerke (LAN), unterteilt in spezifische Arbeitsgruppen (z.B. 802.3 für Ethernet, 802.11 für WLAN).\n- ITU: UN-Teilorganisation mit Fokus auf globale Telekommunikation und internationale Zusammenarbeit im Nachrichtenwesen.\n\nPhysikalisch betrachtet lässt sich die Stärke der Interferenz durch die Kopplung zwischen zwei Leitern beschreiben, wobei der Effekt der Störung oft in Abhängigkeit der Signalrichtung auftritt. Die physikalische Kopplung der Induktionsspannung kann vereinfacht als $\\text{U}_{\\text{eind}} \\approx \\text{M} \\cdot \\frac{d\\text{I}}{dt}$ betrachtet werden, wobei $\\text{M}$ die Gegeninduktivität darstellt.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501977728,
+      "channel": "plan_pipe_906da237d25d",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 8,
+        "end": 10
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die zusammenfassende Übersicht zu den Inhalten der Seiten 10-11:\n\n**IEEE 802 Projekt**\nDas IEEE 802 ist ein seit den späten 70er Jahren bestehendes Projekt zur Standardisierung lokaler Netzwerke (LAN). Es fokussiert sich auf die ersten zwei Schichten des OSI-Modells, wobei die Sicherungsschicht in LLC (Logical Link Control) und MAC (Media Access Control) gegliedert wird. In zahlreichen Arbeitsgruppen werden spezifische Standards definiert, wie etwa 802.3 für Ethernet, 802.11 für WLAN oder 802.15 für WPAN. Zudem werden Aspekte wie Netzwerkmanagement und Internetworking adressiert.\n\n**Internationale Fernmeldeunion (ITU)**\nDie ITU ist eine Sonderorganisation der UNO und die älteste internationale Organisation für Telekommunikation mit Sitz in Genf. Sie dient der globalen Abstimmung und Förderung der Zusammenarbeit im Nachrichtenwesen. Ihre technischen Standards werden als Empfehlungen (Recommendations) durch den Sektor ITU-T (vormals CCITT) veröffentlicht. Die ITU-T bildet heute das zentrale Gremium für die Erarbeitung telekommunikationstechnischer Normen.\n\n**Netzwerkprotokolle**\nProtokolle lassen sich in Kommunikations-, Zugriffs-, Anmelde-, Hilfs- und Verschlüsselungsprotokolle unterteilen. Zu den Hilfsprotokollen gehört das ARP (Address Resolution Protocol), das IP-Adressen in MAC-Adressen übersetzt und umgekehrt. ATM (Asynchronous Transfer Mode) hingegen ist ein Kommunikationsprotokoll (KP), welches als verbindungsloses Verfahren fungiert. Hierbei dient das ATMARP dazu, ATM-Adressen und IP-Adressen wechselseitig zuzuordnen.\n\n**Wichtige Begriffe und Zusammenhänge**\nDer Fokus der Standardisierung liegt sowohl auf der physikalischen Ebene als auch auf Management- und Sicherheitsaspekten. Während IEEE 802 die technologische Basis für lokale Netze liefert, fungiert die ITU-T als übergeordnete internationale Instanz für die allgemeine Telekommunikationsnormung. Die ständige Weiterentwicklung durch Arbeitsgruppen (IEEE) bzw. Studiengruppen (ITU) sichert die Anpassung an technologische Neuerungen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501977729,
+      "channel": "plan_pipe_906da237d25d",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 10,
+        "end": 11
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der Protokolle und Netzwerkaspekte (Punkt 11 bis 22):\n\n**Datei- und Übertragungsprotokolle**\nFTP (File Transfer Protocol) dient der Dateiübertragung via TCP. Es nutzt Port 21 zur Steuerung und Port 20 zur Datenübertragung. Die Übertragung erfolgt über verschiedene Modi (Strom, Block, Komprimiert). HTTP (HyperText Transport Protocol) bildet die Basis für Webserveranfragen; HTTPS ist die verschlüsselte Variante für sensible Daten. Beide nutzen DNS zur Adressauflösung (URL, URI, URN).\n\n**E-Mail-Protokolle**\nIMAP (Internet Mail Access Protocol) und POP (Post Office Protocol) werden zur Verwaltung und zum Abruf von E-Mails aus Postfächern genutzt, wobei POP primär für den lokalen Download der Nachrichten zuständig ist.\n\n**Netzwerkdiagnose und Routing**\nICMP (Internet Control Message Protocol) ist ein Hilfsprotokoll zur Fehlerdiagnose (z.B. PING-Meldungen wie Destination Host unreachable). OSPF (Open Shortest Path First) und dessen IPv6-Variante OSPFng sind zustandsorientierte Link-State-Routing-Protokolle, bei denen jeder Router seine Routingtabelle eigenständig berechnet.\n\n**Authentifizierung und Sicherheit**\nEAP (Extensible Authentication Protocol) erweitert PPP um vielfältige Authentifizierungsmöglichkeiten. NAS (Network Access Service) agiert als Server für die Authentifizierung, Autorisierung und das Accounting (AAA) bei Einwahlverbindungen.\n\n**Tunneling und Netzwerkarchitektur**\nL2TP (Layer 2 Tunneling Protocol) dient dem Aufbau von VPN-Tunneln zur Absicherung von Verbindungen. Als Schnittstelle in der Netzwerkarchitektur von Microsoft fungiert NDIS (Network Driver Interface Specification) als Grenze zwischen den oberen Protokollschichten und den Treibern der Netzwerkkarten.\n\n**Veraltete Protokolle**\nIPX/SPX war verbreitet bei Novell Netware und frühen LAN-Spielen, ist jedoch für moderne Anwendungen kaum noch relevant. Ebenso werden NetBEUI und NetBIOS nur noch aus Kompatibilitätsgründen für ältere Betriebssysteme unterstützt, da sie kein Routing beherrschen.\n\n**Besonderheiten der Adressierung**\nDie Berechnung von Hash-Werten bei kryptographischen Verfahren, wie sie bei CHAP eingesetzt werden, basiert auf der Formel: $MD5(\\text{Zufallszahl} + \\text{Benutzername} + \\text{Passwort}) = \\text{Hashwert}$.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501977730,
+      "channel": "plan_pipe_906da237d25d",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 11,
+        "end": 22
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung der Netzwerkkomponenten im OSI-Schichtenmodell:\n\n**Schicht 1: Bitübertragungsschicht (Physical Layer)**\n* **Repeater:** Dienen der Signalauffrischung bei langen Übertragungswegen und verbinden Netzwerksegmente. Sie arbeiten transparent und verändern die Dateninhalte in der Regel nicht.\n* **Hubs:** Fungieren als einfache Verteiler. Sie leiten empfangene Datenpakete an alle angeschlossenen Teilnehmer weiter (Broadcast), was die Netzwerkauslastung unnötig erhöht, da jeder Teilnehmer die Pakete prüfen muss.\n\n**Schicht 2: Sicherungsschicht (Data Link Layer)**\n* **Switches:** Werden als \"intelligente Hubs\" bezeichnet. Sie erstellen eine Source Address Table (SAT) mit MAC-Adressen, um Daten gezielt nur an den Empfänger weiterzuleiten, anstatt sie zu fluten.\n* **Bridges:** Verbinden Teilnetze miteinander mit dem Ziel, Kollisionsdomänen zu verkleinern, indem sie nur Pakete weiterleiten, deren Ziel sich in einem anderen Teilnetz befindet.\n\n**Schicht 3: Vermittlungsschicht (Network Layer)**\n* **Router:** Verbinden unterschiedliche Netzwerke und ermitteln den besten Übertragungsweg mittels Routingtabellen und Protokollen wie OSPF, BGP oder RIP. Sie blockieren Broadcasts zwischen Netzwerken.\n\n**Weitere Kopplungselemente**\n* **Gateways:** Ermöglichen die Kommunikation zwischen Netzwerken, die auf grundlegend unterschiedlichen Protokollen basieren (z. B. Konvertierung von E-Mail zu Fax oder Sprache).\n\n**Zusammenfassung der Logik**\nDie Intelligenz nimmt mit steigender OSI-Schicht zu: Während Schicht-1-Geräte lediglich das Signal verarbeiten, nutzen Schicht-2-Geräte physische Adressen (MAC) zur gezielten Zielsteuerung und Schicht-3-Geräte logische Adressierung (IP) für das Routing zwischen unterschiedlichen Netzwerken. Die Protokollübersetzung findet erst bei Gateways statt.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1778501977731,
+      "channel": "plan_pipe_906da237d25d",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 23,
+        "end": 24
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778501977813,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Welches Risiko besteht bei der Nutzung einer Client-Server-Architektur im Vergleich zu einem idealisierten P2P-System, bei dem Dienste redundant verteilt sind?",
+            "options": [
+              "In einer Client-Server-Architektur findet keine zentrale Datenhaltung statt, was den Schutz vor Datenverlust erschwert.",
+              "Die Client-Server-Architektur ist weniger skalierbar, da immer nur maximal 10 Clients auf einen Server zugreifen können.",
+              "Die Wartung und Verwaltung der Clients ist in einem Server-Netzwerk deutlich komplexer als in einem P2P-Netz.",
+              "Der Ausfall eines einzelnen, zentralen Dienstes (z. B. Anmeldeserver) kann den Betrieb für alle abhängigen Clients sofort stoppen."
+            ],
+            "correctIndex": 3,
+            "explanation": "Ein zentraler Nachteil der Client-Server-Struktur ist die Abhängigkeit von den Servern; bei einem Ausfall des Anmeldeservers können sich abhängige Clients nicht mehr am Netzwerk anmelden."
+          },
+          {
+            "question": "Warum wird im Primärbereich (Campusverkabelung) eines Netzwerks bevorzugt Glasfaser statt Kupferkabels verwendet?",
+            "options": [
+              "Kupferkabel sind bei großen Entfernungen anfälliger für elektromagnetische Störungen und Blitzeinschläge, die hohe Spannungen induzieren können.",
+              "Kupferkabel sind für hohe Bandbreiten über mehrere Kilometer physikalisch nicht in der Lage, während Glasfaser dies ohne Signalverstärker schafft.",
+              "Glasfaserkabel bieten eine bessere galvanische Verbindung zwischen Gebäuden als Kupfer.",
+              "Glasfaserkabel lassen sich einfacher in 90-Grad-Winkeln innerhalb der Gebäudestruktur verlegen."
+            ],
+            "correctIndex": 0,
+            "explanation": "Glasfaser ist aufgrund der geringen Dämpfung, hohen Bandbreite und vor allem der elektromagnetischen Unempfindlichkeit und galvanischen Trennung sicherer gegen Blitzeinschläge als Kupferleitungen."
+          },
+          {
+            "question": "Wie lässt sich die Bandbreite in einem Netzwerk am besten veranschaulichen?",
+            "options": [
+              "Als Breite einer Autobahn, wobei mehr Spuren gleichzeitig mehr Datenverkehr ermöglichen.",
+              "Als die physikalische Länge eines Kabels, wobei längere Kabel immer eine höhere Kapazität haben.",
+              "Als die Gesamtmenge der gespeicherten Daten auf einem Server.",
+              "Als die Anzahl der angeschlossenen Endgeräte in einem Subnetz."
+            ],
+            "correctIndex": 0,
+            "explanation": "Die Analogie mit der Autobahn verdeutlicht, dass die Bandbreite die Kapazität (Frequenzbereich/Spuren) beschreibt, durch die Daten (Autos) gleichzeitig fließen können."
+          },
+          {
+            "question": "Was unterscheidet das 'Permanent Link' von einem 'Channel Link' bei der Messung von Netzwerkkabeln?",
+            "options": [
+              "Der Channel Link ist weniger fehleranfällig, da er die Patchkabel explizit von der Messung ausschließt.",
+              "Der Permanent Link misst ausschließlich die fest installierten, unveränderlichen Komponenten wie Leitung, Dose und Patchpanel.",
+              "Der Permanent Link umfasst als Messstrecke auch die flexiblen Patchleitungen vom Messgerät zur Dose.",
+              "Das Permanent Link bezeichnet die Messung über einen Router hinweg, während Channel Link nur innerhalb eines Raumes misst."
+            ],
+            "correctIndex": 1,
+            "explanation": "Der Permanent Link definiert die fest verlegte Strecke (Dose bis Patchpanel) ohne die variablen Anschlusskabel. Der Channel Link beinhaltet zusätzlich die Patchleitungen."
+          },
+          {
+            "question": "Warum ist 'Nahnebensprechen' (NEXT) bei der Datenübertragung kritischer als 'Fernnebensprechen' (FEXT)?",
+            "options": [
+              "Weil NEXT eine andere Frequenz verwendet als das ursprüngliche Datensignal.",
+              "Weil NEXT das Signal am fernen Ende abschwächt, während FEXT das Signal verstärkt.",
+              "Weil die Einkopplung durch die Nähe zum Sender des Originalsignals am nahen Ende wesentlich stärker ist.",
+              "Weil FEXT nur bei Glasfaserkabeln auftritt und dort durch Lichtbrechung korrigiert werden kann."
+            ],
+            "correctIndex": 2,
+            "explanation": "NEXT ist deshalb stärker, weil die Induktion direkt an dem Leitungsende stattfindet, das sich in unmittelbarer Nähe zum Sender des störenden Signals befindet."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1778501977814,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Was ist die grundlegende Definition eines Computernetzes?",
+            "back": "Ein System aus mehreren miteinander verbundenen Computern, Terminals oder Peripheriegeräten, das dazu dient, Daten auszutauschen und gemeinsame Ressourcen wie Drucker oder Datenbanken zu nutzen."
+          },
+          {
+            "front": "Was ist der Hauptunterschied zwischen Client-Server und Peer-to-Peer (P2P) Netzwerken?",
+            "back": "In Peer-to-Peer-Netzwerken haben alle Rechner die gleichen Rechte und fungieren sowohl als Server als auch als Client. In Client-Server-Architekturen greifen verschiedene Clients auf zentrale, dedizierte Server zu, die Dienste (z. B. Authentifizierung) bereitstellen."
+          },
+          {
+            "front": "Nenne drei Vorteile der Client-Server-Architektur.",
+            "back": "1. Zentralisierte Verwaltung und Wartung, 2. Erhöhte Sicherheit durch hierarchische Strukturierung, 3. Hohe Verfügbarkeit von Diensten und einfache Backup-Möglichkeiten."
+          },
+          {
+            "front": "Was unterscheidet LAN von WLAN?",
+            "back": "Ein LAN (Local Area Network) ist ein räumlich begrenztes, kabelgebundenes Netzwerk. Ein WLAN (Wireless Local Area Network) ist ein kabelloses Funknetzwerk basierend auf dem Standard IEEE 802.11."
+          },
+          {
+            "front": "Was ist ein MAN (Metropolitan Area Network)?",
+            "back": "Ein Hochgeschwindigkeitsnetz, das Stadtbereiche abdeckt (Knotenabstand bis 50 km) mit Übertragungsgeschwindigkeiten um 200 MBit/s."
+          },
+          {
+            "front": "Nenne die drei Bereiche der strukturierten Verkabelung.",
+            "back": "1. Primärbereich (Campusverkabelung zwischen Gebäuden), 2. Sekundärbereich (Steigbereichverkabelung zwischen Stockwerken), 3. Tertiärbereich (Etagenverkabelung innerhalb der Stockwerke)."
+          },
+          {
+            "front": "Welches Übertragungsmedium wird im Primärbereich meist verwendet und warum?",
+            "back": "Glasfaserkabel, da sie große Entfernungen überbrücken können, eine hohe Bandbreite bieten und unempfindlich gegenüber elektromagnetischen Störungen sind."
+          },
+          {
+            "front": "Was beschreibt der Begriff 'Dämpfung' im Kontext der Netzwerktechnik?",
+            "back": "Die Verringerung des Ausschlags (Energieverlust) eines Signals während der Übertragung über ein Medium."
+          },
+          {
+            "front": "Was ist der Unterschied zwischen NEXT und FEXT beim Nebensprechen?",
+            "back": "NEXT (Near End Crosstalk) ist die Einstörung am nahen Leitungsende (Senderseite), FEXT (Far End Crosstalk) tritt am fernen Ende auf und ist wesentlich schwächer."
+          },
+          {
+            "front": "Was ist der Unterschied zwischen Basic Link und Channel Link bei der Messung?",
+            "back": "Der Basic Link umfasst die feste Strecke zwischen Dose und Patchpanel (ohne Patchleitungen). Der Channel umfasst die gesamte Strecke inklusive der Patchleitungen vom Endgerät zum Messgerät."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-cs-netzwerke-einfuehrung_0",
+      "slides": [
+        {
+          "title": "Lektion 1: Netzwerktechnik Grundlagen",
+          "bullets": [
+            "Einführung in Computernetze und Datenübertragung",
+            "Übersicht zu OSI-Modell, Protokollen und Hardware"
+          ],
+          "notes": "Willkommen zur ersten Einheit der Netzwerktechnik. Wir betrachten heute die Grundbausteine, die unsere moderne digitale Kommunikation überhaupt erst ermöglichen.",
+          "page_range": "1-24",
+          "image_prompt": ""
+        },
+        {
+          "title": "Grundlagen vernetzter Systeme",
+          "bullets": [
+            "Vernetzung erlaubt geteilte Ressourcen wie Drucker oder Daten",
+            "Client-Server: Zentrale Dienste für effiziente Verwaltung",
+            "P2P-Netzwerke: Direkte Verbindung zwischen Gleichgestellten",
+            "Skalierbarkeit: Server bieten Stabilität bei hoher Last"
+          ],
+          "notes": "Ein Netzwerk verbindet Endgeräte zum Datenaustausch. Ob Client-Server-Modell oder Peer-to-Peer, die Wahl hängt stark von Größe und Sicherheitsbedarf ab.",
+          "page_range": "1-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Netzwerktypen und räumliche Ausdehnung",
+          "bullets": [
+            "PAN/BAN: Persönliche Netze und Sensoren am Körper",
+            "LAN/WLAN: Lokale Funk- oder Kabelnetze",
+            "MAN/WAN: Stadt- oder weitreichende Netzarchitekturen",
+            "GAN: Globale, satellitengestützte Systemverbindungen"
+          ],
+          "notes": "Von der privaten Bluetooth-Verbindung bis zum globalen Internet unterscheiden wir Netztypen maßgeblich nach ihrer geografischen Reichweite.",
+          "page_range": "4-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Übertragungsmedien im Vergleich",
+          "bullets": [
+            "Kupfer: Kosteneffizient, aber begrenzte Reichweite (ca. 100m)",
+            "Glasfaser: Hohe Bandbreite, störungsfrei, ideal für Backbones",
+            "Bandbreite beschreibt die Übertragungskapazität des Mediums",
+            "Strukturierte Verkabelung gliedert Primär-, Sekundär- und Tertiärbereich"
+          ],
+          "notes": "Die Wahl des Mediums ist kritisch. Während Kupfer für den Schreibtisch reicht, ist Glasfaser das Rückgrat für hohe Geschwindigkeiten über weite Distanzen.",
+          "page_range": "5-8",
+          "image_prompt": ""
+        },
+        {
+          "title": "Messtechnik und Normung",
+          "bullets": [
+            "Dämpfung: Signalverlust über die Distanz",
+            "NEXT/FEXT: Interferenzen durch Übersprechen in Kabeln",
+            "ISO und IEEE: Globale Standards für Interoperabilität",
+            "IEEE 802-Projekt definiert LAN-Standards (z.B. Ethernet)"
+          ],
+          "notes": "Damit Hardware verschiedener Hersteller harmoniert, folgen wir strengen Normen. Messtechnische Prüfungen wie Channel Link sichern die Qualität der Verkabelung.",
+          "page_range": "8-10",
+          "image_prompt": ""
+        },
+        {
+          "title": "Protokolle: Die Sprache des Netzes",
+          "bullets": [
+            "ARP: Verknüpft IP-Adressen mit physischen MAC-Adressen",
+            "DHCP/APIPA: Automatisierte IP-Adresszuweisung",
+            "CHAP: Sicheres Authentifizierungsverfahren mittels Hashwerten",
+            "CSMA/CD: Zugriffsprotokoll zur Kollisionsvermeidung auf Bussen"
+          ],
+          "notes": "Protokolle sind Regelwerke. Von der Adressauflösung bis zur Anmeldung stellen sie sicher, dass Informationen korrekt verpackt und verstanden werden.",
+          "page_range": "11-22",
+          "image_prompt": ""
+        },
+        {
+          "title": "Netzwerkhardware und OSI-Modell",
+          "bullets": [
+            "Repeater/Hubs: Arbeiten auf Schicht 1 (Signalauffrischung)",
+            "Switches: Intelligent, arbeitet auf Schicht 2 (MAC-basiert)",
+            "Router: Verbindet Netzwerke auf Schicht 3 (Routing)",
+            "Gateways: Übersetzt zwischen verschiedenen Protokollwelten"
+          ],
+          "notes": "Die Herzstücke der Infrastruktur: Während einfache Hubs alles verteilen, leiten Switches und Router Daten gezielt an das richtige Ziel weiter.",
+          "page_range": "23-24",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 1 — Netzwerktechnik Grundlagen - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778501977713,
+      "pdfName": "Netzwerktechnik"
+    }
+  ],
+  "sourceHash": "8603cc3776218d78"
+}

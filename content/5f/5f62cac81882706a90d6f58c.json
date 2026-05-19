@@ -1,0 +1,512 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Tour of Programming Languages: From C to Haskell - Lesson 13: Ada Programming",
+    "pdfName": "Ada Programming",
+    "createdAt": 1778789230871,
+    "exportedAt": "2026-05-14T20:07:10.872Z",
+    "meta": {
+      "courseId": "course-en-programming-languages-tour",
+      "lessonIndex": 12,
+      "courseTitle": "Tour of Programming Languages: From C to Haskell",
+      "lessonObjective": "Ada, D, Eiffel, Fortran 2003.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-ada-programming",
+            "title": "Ada Programming",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Ada_Programming"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_d75a4a2c1e45",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-17",
+          "chapterTitle": "Basic Ada",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "18-37",
+          "chapterTitle": "Installing",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "38-45",
+          "chapterTitle": "Building",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "46-53",
+          "chapterTitle": "Control Statements",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "54-77",
+          "chapterTitle": "Type System",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "78-81",
+          "chapterTitle": "Integer and Unsigned types",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "82-87",
+          "chapterTitle": "Enumerations and Floating point types",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "88-107",
+          "chapterTitle": "Fixed point types, Arrays, and Records",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "108-127",
+          "chapterTitle": "Access types and Limited types",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "128-410",
+          "chapterTitle": "Strings, Subprograms, and Packages",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778789230871,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "This summary covers the core information regarding the **Ada Programming** language as presented in the provided source materials.\n\n### **Overview of Ada**\n*   **Purpose:** Ada is a statically-typed, imperative programming language designed to be robust and suitable for a variety of system-level and application tasks.\n*   **Documentation:** The provided document is an open-source guide licensed under Creative Commons Attribution-ShareAlike 3.0.\n\n### **Core Programming Concepts**\n*   **Program Structure:** Ada programs use a package system. The `with` statement makes external packages (like `Ada.Text_IO`) available for use (p. 12).\n*   **Visibility Control:**\n    *   **Selection:** Accessing packages by their full name (e.g., `Ada.Text_IO.Put_Line`).\n    *   **Renaming:** Creating aliases for packages, procedures, or variables to improve brevity (e.g., `package IO renames Ada.Text_IO`) (p. 13).\n    *   **Use:** The `use` clause allows direct visibility of a package's contents, though it may reduce readability (p. 14).\n*   **Main Subprograms:** In Ada, the \"main\" entry point can be any top-level, parameterless library procedure; it does not explicitly need to be named \"main\" (p. 13).\n\n### **Key Language Features**\n*   **Strong Typing:** The language provides an extensive type system (p. 4-5) including integers, enumerations, floating/fixed point types, arrays, records, and access types (pointers).\n*   **Concurrency:** Ada natively supports tasking and protected types (p. 6).\n*   **Modularization:** Packages support separate compilation and provide a mechanism for organizing code (p. 5).\n*   **Safety & Robustness:** Includes built-in support for exceptions and their propagation (p. 6).\n*   **Flexibility:** Supports generics (parametric polymorphism) (p. 6) and object-oriented programming features (p. 6).\n\n### **Development Considerations**\n*   **Compilation:** The size of \"Hello, world!\" executables is often a result of default compiler settings rather than the language itself. Compilers frequently prioritize ease of use over binary optimization by default (p. 14).\n*   **Resource Management:** Ada compilers often utilize specific project files (e.g., GNAT) to manage build configurations (p. 14).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789230871,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-programming-languages-tour_12\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 13: Ada Programming - Presentation</span><span class=\"pm-chat-count\">8 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Ada Programming Fundamentals</div><ul class=\"pm-chat-slide-bullets\"><li>Ada prioritizes safety, readability, and maintainability.</li><li>Designed for reliable, long-lifecycle software systems.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778789230872,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document is a Wikibooks guide on Ada programming, last updated on March 22, 2013. It includes the following key areas:\n\nGetting Started (p. 2-5): Provides introductory material including \"Hello, World!\" programs, instructions for compiling, help resources, and a comprehensive list of available Ada compilers such as GNAT, ObjectAda, and others.\n\nControl Statements and Types (p. 5-6): Outlines the syntax for control flow, including conditionals and loops, and details the robust Ada type system. This covers predefined types, integer and floating-point types, enumerations, arrays, records, and access types (pointers).\n\nProgramming Structures (p. 6): Explains how to organize code using subprograms (procedures and functions) and packages, which facilitate separate compilation.\n\nAdvanced Topics and Modernization (p. 6-7): Covers error handling through exceptions, generic programming for parametric polymorphism, and tasking for concurrent programming. It also details the object-oriented features of the language and highlights specific enhancements introduced in Ada 2005.\n\nPractical Development and Standards (p. 7): Addresses interfacing with other languages or hardware, provides coding quality standards, and lists common errors to avoid (such as misleading usage of pragma Atomic or pragma Pack).\n\nLexical Elements (p. 7-8): Defines the fundamental lexical elements of the language, including character sets, keywords, and delimiters.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789230881,
+      "channel": "plan_pipe_d75a4a2c1e45",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 17
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section provides an overview of various Ada compilers, focusing primarily on GNAT and its numerous distributions, as well as alternative products.\n\nThe primary Ada compiler mentioned is GNAT, which is part of the GNU Compiler Collection (GCC). It is unique in supporting all optional annexes of the Ada language standard. GNAT is available through various channels:\n\n1. AdaCore Distributions: AdaCore offers several versions, including the professional GNAT Pro subscription for commercial, mission-critical support; the GNAT GPL Edition for Free Software developers; and the historical GNAT 3.15p release. Licensing varies between pure GPL and the GNAT Modified GPL (GMGPL) or the GCC Runtime Library Exception, which affects the ability to distribute proprietary software.\n\n2. GCC and Distributions: The Free Software Foundation provides GCC source code, which includes Ada support. Many operating system distributions, such as Debian, incorporate GNAT and provide pre-packaged libraries. Debian is specifically noted for its strict Ada policy, aiming to make it a premier development and deployment platform.\n\n3. Specialized Ports: Other community versions exist for specific environments, such as GNAT for AVR microcontrollers, LEON processors, and historical support for the .NET platform via A#.\n\nBeyond GNAT, other available compilers include:\n\n- AdaMagic (SofCheck): An Ada 95 front-end that translates Ada to C or Java bytecode.\n- AdaMULTI (Green Hills Software): A commercial development environment primarily for embedded systems, supporting multiple languages including Ada 83 and 95.\n- HP Ada: A commercial compiler specifically for OpenVMS (historically known as DEC Ada).\n\nKey considerations for choosing a compiler include the required language standard support (e.g., Ada 83 through Ada 2012), the necessity of commercial support versus volunteer-based support, target platform requirements (e.g., bare-board vs. hosted), and the licensing restrictions regarding the run-time library.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789230882,
+      "channel": "plan_pipe_d75a4a2c1e45",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 18,
+        "end": 37
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Building Ada programs depends primarily on the chosen compiler, as the language standard does not define the build process. Unlike languages such as C++, Ada source files already contain dependency information via the *with* keyword, which simplifies compilation (p. 38).\n\nKey compiler workflows include:\n\nGNAT: Uses the command *gnatmake* to compile units and automatically generate executables from main procedures. Developers can use the GNAT Programming Studio (GPS) or various IDE plugins (p. 38, 39). Project files allow for multi-target builds with defined variables for style, OS, and CPU architecture (p. 43).\n\nRational APEX: Operates in a complex development environment built for large-scale projects. It organizes code into subsystems and views. Developers must import source files into this structure and define export sets to control visibility between subsystems (p. 40, 44).\n\nObjectAda: Requires the creation of a project to manage source files and settings like library paths. Tools can be run from an IDE or via command line, provided the path is set. Building requires registering sources with *adareg*, compiling with *adacomp*, and linking with *adabuild* (p. 41, 45).\n\nDEC Ada (HP Ada) for VMS: Utilizes a dedicated library management system. Users must create and activate a library, load source files to establish a dependency tree using *ACS Load*, compile with *ACS Compile*, and link using *ACS Link*. For large systems, libraries may be merged into a hierarchy (p. 41, 42).\n\nSummary for Demo Source: For the provided demo applications, the text suggests using pre-configured project files or specialized build tools, depending on the compiler chosen, to handle the extraction and compilation of source code (p. 43).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789230883,
+      "channel": "plan_pipe_d75a4a2c1e45",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 38,
+        "end": 45
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers control statements in Ada based on pages [S.46-S.53].\n\n**Conditionals**\nConditionals execute code blocks only if a specific expression is true.\n* The $if-else$ structure allows branching logic. It can be extended with $elsif$ for multiple conditions. The program executes the first true branch encountered.\n* To optimize, place conditions with the highest probability first.\n* The $case$ statement compares a discrete variable against multiple constants. It requires coverage of all possible values or a $when\\ others$ branch.\n\n**Unconditionals**\nThese statements alter program flow without checking a condition:\n* $return$: Exits a function or procedure.\n* $goto$: Transfers control to a labeled statement. While often discouraged, $goto$ can occasionally improve readability over multiple $return$ statements when implemented correctly. The preferred approach is structured programming to avoid both where possible.\n\n**Loops**\nLoops repeat sets of statements:\n* Endless Loop: Executes until manually stopped or the program ends.\n* While Loop: Checks the condition at the start; the loop may never execute if the condition is false.\n* Loop with condition at the end: Executes at least once because the check occurs after the body.\n* Loop with condition in the middle: Allows for intermediate calculations before checking an exit condition.\n* For Loop: Iterates over a specific range or array elements. The loop counter is automatically managed, cannot be modified manually, and ceases to exist after the loop completes.\n* Named Loops: Loops can be assigned names to improve readability and facilitate exits from nested structures.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789230884,
+      "channel": "plan_pipe_d75a4a2c1e45",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 46,
+        "end": 53
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The Ada type system is the foundation of the language, designed to enable robust abstractions and facilitate early error detection through four core principles: strong typing (incompatible types cannot be mixed), static typing (checks occur at compile-time), abstraction (focusing on the problem, not bit-level representation), and name equivalence (types are compatible only if they share the same name) (p. 54).\n\nKey classifications and components of the type system include:\n\nType Classification\nTypes are organized into a hierarchy, inheriting properties like operators and indexing capabilities (p. 56). They can be categorized as:\n- Specific vs. Class-wide: Specific types support non-dispatching operations, while class-wide types (e.g., $T'Class$) support dispatching (p. 58).\n- Constrained vs. Unconstrained: Constrained types (e.g., $1 .. 10$) have fixed bounds, whereas unconstrained types (e.g., array ranges defined by $<>$) allow for dynamic sizing (p. 58).\n- Definite vs. Indefinite: Definite subtypes have sizes known at compile-time, while indefinite subtypes require an initial constraint, usually derived from an assignment expression (p. 58-59, 64).\n\nConcurrency and Limited Types\nAda integrates concurrency directly into the type system via task and protected types (p. 59). Limited types are a special category where assignment is prohibited; this is mandatory for all concurrency types but can also be applied to user-defined types (p. 59).\n\nSubtypes and Derived Types\n- Subtypes: A subtype is compatible with its base type and other subtypes of the same base. Defining a subtype does not create a new type, but rather limits the range or constraints of existing data (p. 60-61).\n- Derived Types: Using the keyword `new` creates an entirely new, incompatible type. While the derived type is distinct from its parent, it inherits the primitive operations of its parent type (p. 61).\n\nPredefined Types\nThe language provides standard types including $Integer$, $Float$, $Duration$ (for timing), $Character$ variants (including $Wide\\_Character$), $String$, and $Boolean$. Furthermore, the $System$ package provides specialized types for low-level memory operations, such as $System.Address$ and $System.Storage\\_Elements$ (p. 54-55).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789230885,
+      "channel": "plan_pipe_d75a4a2c1e45",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 54,
+        "end": 77
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines the definition and usage of integer types in Ada.\n\n### Signed Integer Types\nA signed integer type, defined with the syntax `type Name is range First .. Last;`, constrains values to a specific range (p. 69). Key aspects include:\n- Validity Checking: Assigning a value outside the defined range raises a `Constraint_Error` exception (p. 69).\n- Automatic Operators: Mathematical operators are implicitly declared for the new type (p. 69).\n- Implementation: The compiler selects an appropriate underlying hardware representation for the user-defined type (p. 69).\n\n### Unsigned (Modular) Integer Types\nUnsigned integers are defined using the `mod` keyword and implement modular (wrap-around) arithmetic (p. 71).\n- Range and Logic: The range spans from $0$ to $Modulus - 1$. Arithmetic follows the rules $Last + 1 = 0$ (which is $First$) and $First - 1 = Last$ (p. 71).\n- Operators: In addition to standard arithmetic, bitwise operators (`and`, `or`, `xor`) are supported (p. 71).\n- Specialized Types: The `Interfaces` package provides types based on powers of 2 (e.g., $2^{n}$), which include additional shift and rotate operations (p. 71).\n- Subtyping: While a modular type can be restricted using `range`, the underlying modulus remains unchanged, which can result in complex arithmetic behavior (p. 71).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789230886,
+      "channel": "plan_pipe_d75a4a2c1e45",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 78,
+        "end": 81
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Enumeration and Floating Point Types in Ada (pg. 82-87)\n\n**Enumeration Types**\nAn enumeration type defines a custom set of discrete values (literals). Variables of these types can only be assigned these defined literals.\n* **Operators and Attributes:** Equality ($=$) and relational operators ($<, <=, >, >=$) are supported based on the order of the literals. Each literal has an implicit position starting at 0.\n  * $Attribute 'Pos$ returns the position of a literal.\n  * $Attribute 'Val$ returns the literal at a specific position.\n  * $Attribute 'Image$ converts a literal to a string, and $Attribute 'Value$ performs the reverse.\n* **Overloading:** Literals can be overloaded across different types. If ambiguity arises, qualified expressions (e.g., $Type'(Literal)$) must be used.\n* **Characters and Booleans:** Characters can be used as enumeration literals. Boolean is a predefined enumeration type $(False, True)$; to create a custom Boolean usable in conditional statements, one must derive from the original type using $new$.\n* **Subtypes:** Enumerations can be constrained using $range$ declarations to create subsets of existing types.\n\n**Floating Point Types**\nAda allows developers to define floating point types based on required precision rather than hardware-specific sizes.\n* **Precision Declaration:** By specifying the $digits$ keyword followed by the desired number of significant decimal digits, the compiler guarantees that the chosen type meets or exceeds the required accuracy.\n* **Range Constraints:** Users may optionally specify a range $(Low .. High)$ alongside the precision to define the valid interval for the type.\n* **Portability:** This approach ensures that numerical requirements are explicitly documented and enforced by the compiler, removing reliance on platform-specific \"float\" or \"double\" definitions.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789230887,
+      "channel": "plan_pipe_d75a4a2c1e45",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 82,
+        "end": 87
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Fixed Point Types, Arrays, and Records\n\n#### Fixed Point Types (pp. 79–82)\nFixed point types provide values with absolute precision, defined by a constant delta.\n*   **Ordinary Fixed Point:** The compiler chooses a \"small\" value (the internal representation) as a power of two by default, though it can be specified via the 'Small attribute clause.\n*   **Decimal Fixed Point:** The delta must be a power of ten. It is intended for COBOL-like usage, such as financial applications, where deterministic decimal semantics and truncation are required. It includes special attributes like 'Digits, 'Scale, and 'Round, and utilizes the Decimal package for specific arithmetic operations.\n\n#### Arrays (pp. 83–89)\nArrays are indexed collections of elements of the same type.\n*   **Declaration:** Arrays can be indexed by any discrete type. Basic syntax is `array (Index_Range) of Element_Type`.\n*   **Flexibility:** Indefinite arrays use the box notation `<>` (e.g., `array (Index_Type range <>) of Element_Type`), allowing bounds to be defined at object creation. Multidimensional arrays are created by specifying multiple index ranges.\n*   **Operations:** Arrays support assignment, slicing (e.g., `Vector_A (1 .. 3) := Vector_B (3 .. 5)`), and concatenation using the `&` operator. \n*   **Attributes:** Key attributes for array analysis include 'First, 'Last, 'Length, and 'Range.\n*   **Storage:** The `aliased` keyword may be used when specific elements require distinct memory addresses, preventing the compiler from packing multiple boolean or small values into a single storage unit.\n\n#### Records (pp. 91, 101)\nRecords are composite types that group one or more heterogeneous fields.\n*   **Basic and Null Records:** Records can contain any type, including other records. A null record, defined as `record null; end record` or `null record`, is used when an empty type is required (often as a base for object-oriented programming).\n*   **Aggregates:** Record values are assigned using aggregates. Using named components (e.g., `(Field_Name => Value)`) is preferred over positional notation because it allows for component reordering and improves code clarity and compiler diagnostics.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789230888,
+      "channel": "plan_pipe_d75a4a2c1e45",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 88,
+        "end": 107
+      }
+    },
+    {
+      "role": "bot",
+      "content": "In Ada, access types function similarly to pointers in other languages, designating or granting access to objects. Because Ada aims for safety, access types should be used sparingly; the language provides alternative structures such as the Ada Container library or Indefinite_Holders (p. 108).\n\nThere are four primary categories of access types:\n\nPool Access Types\nThese handle objects created on a specific heap via the `new` allocator. Data in a pool is accessed using `.all` or through implicit dereferencing (p. 109). Memory deallocation must be managed manually using `Ada.Unchecked_Deallocation` to avoid dangling pointers, as most Ada compilers (with exceptions for virtual machines) do not feature automatic garbage collection (p. 110). Reference counting patterns (\"smart pointers\") can be implemented for automatic memory management but require careful design to ensure safety (p. 111).\n\nGeneral Access Types\nThese are more flexible than pool access types, as they can reference objects on the stack, at the library level, or within a heap. They require the target object to be declared `aliased`. They are defined using `access all` (for read-write access) or `access constant` (for read-only access) (p. 111-112).\n\nAnonymous Access Types\nThese are used primarily for subprogram parameters or discriminants and do not require a named type declaration. They are available in Ada 2005 and later (p. 112). \n\nAccess to Subprogram Types\nThese allow for callback patterns by referencing subprograms instead of data. The `Access` attribute is used to obtain a reference to a specific subprogram (p. 115).\n\nImportant Considerations:\n- Implicit Dereference: Ada 2012 introduces the `Implicit_Dereference` aspect, which allows safe access to elements inside containers by essentially omitting the `.all` dereference syntax (p. 113-114).\n- Null Exclusions: Using `not null` in an access type ensures that an object cannot point to nothing, making initialization mandatory (p. 114).\n- Interfacing with C: When interfacing with C, `pragma Convention` should be used to ensure memory layout compatibility (p. 116-117).\n- Thin vs. Fat Pointers: Thin pointers are simple memory addresses used for constrained types. Fat pointers are used for unconstrained types (like arrays with variable ranges) and must carry additional information such as array bounds alongside the address (p. 118-119).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789230889,
+      "channel": "plan_pipe_d75a4a2c1e45",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 108,
+        "end": 127
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers Ada subprograms and related programming constructs as discussed in the provided text.\n\n### Subprogram Categories\nAda classifies subprograms into two types:\n- Procedures: Executed as standalone statements; they do not return a value. \n- Functions: Invoked as part of an expression and must return a value. Starting with Ada 2012, functions may also have $out$ parameters (p. 136).\n\n### Parameter Modes\nParameters act as identifiers for data flow. Their modes are:\n- $in$: The default; the formal parameter acts as a constant (read-only).\n- $in out$: The formal parameter can be both read and written.\n- $out$: The formal parameter is treated as an uninitialized variable that must be assigned a value during the subprogram's execution (p. 134-135).\n\n### Advanced Subprogram Features\n- Named Parameters: Allows passing arguments using the syntax $Name => Value$, enabling parameter reordering and improving code readability, especially for subprograms with many parameters (p. 138).\n- Default Parameters: Parameters can be assigned default values in the declaration, allowing callers to omit them. The default expression is evaluated only if the actual parameter is missing (p. 138-139).\n- Renaming: Subprograms can be renamed using the $renames$ keyword, which can be useful for simplifying calls or adapting interfaces (p. 139).\n\n### Function Specifics\nFunctions must end with a $return$ statement. If control reaches the end of a function without encountering a $return$, the language raises a $Program\\_Error$ exception. Functions can be recursive, and they can return types with flexible bounds, such as arrays whose size is determined at runtime (p. 136-137).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778789230890,
+      "channel": "plan_pipe_d75a4a2c1e45",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 128,
+        "end": 410
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778789230971,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "In the context of the provided text, why are licenses such as GPL, LGPL, and GFDL mentioned in the book?",
+            "options": [
+              "Because they regulate the hardware specific compilers used for Ada.",
+              "Because parts of the book may be licensed under these agreements, requiring them to be included.",
+              "Because the Ada language specification itself is owned by the Free Software Foundation.",
+              "Because they are the only licenses compatible with Creative Commons Attribution-ShareAlike 3.0."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text explicitly states that those licenses are included because the book and/or parts of it may be licensed under one or more of them, necessitating their inclusion."
+          },
+          {
+            "question": "What is the primary function of the 'Limited Types' concept mentioned in Chapter 14 of the content?",
+            "options": [
+              "To restrict the mathematical precision of integer types.",
+              "To prevent the default copying or assignment of variables of that type.",
+              "To limit the number of times a subprogram can be called.",
+              "To restrict types to only exist within a specific package scope."
+            ],
+            "correctIndex": 1,
+            "explanation": "Limited types in Ada are a classification of types where default assignment or copying operations are restricted, which is often used for types that represent resources that cannot be copied."
+          },
+          {
+            "question": "Based on the section about Records (Chapter 12), what role does a 'discriminant' play?",
+            "options": [
+              "It marks a record as immutable and prevents further changes to its fields.",
+              "It allows a record type to have components whose size or attributes depend on specific values.",
+              "It acts as a primary key to identify unique records within an array.",
+              "It specifies the alignment of the record in physical memory."
+            ],
+            "correctIndex": 1,
+            "explanation": "In Ada, a discriminated record allows the structure or component constraints of the record to be determined by a value (the discriminant), enabling more flexible data structures."
+          },
+          {
+            "question": "Why might a developer choose 'Unbounded-length' strings over 'Fixed-length' strings in Ada?",
+            "options": [
+              "Because unbounded strings are always significantly faster in execution speed.",
+              "Because fixed-length strings are deprecated and no longer supported in Ada 2005.",
+              "Because unbounded strings automatically manage memory to accommodate changing string lengths.",
+              "Because unbounded strings do not require any input/output libraries to be used."
+            ],
+            "correctIndex": 2,
+            "explanation": "Unbounded-length strings (and the corresponding Ada containers) allow for dynamic resizing of string storage during runtime, whereas fixed-length strings have a size determined at declaration."
+          },
+          {
+            "question": "What is the significance of the distinction between 'Ordinary' and 'Decimal' Fixed Point types?",
+            "options": [
+              "Ordinary fixed point types are only for hardware devices, while decimal are for financial calculations.",
+              "They differ in their underlying implementation and intended use cases, such as precision requirements or decimal scaling.",
+              "Decimal fixed point types allow for infinite precision, while ordinary types are constrained by the CPU.",
+              "Ordinary fixed point is a feature of Ada 83, while decimal fixed point was introduced in Ada 2005."
+            ],
+            "correctIndex": 1,
+            "explanation": "Chapter 10 discusses that while both are fixed-point types, they are distinct, with Decimal Fixed Point types being specifically tailored for decimal-based arithmetic frequently used in financial or business applications."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778789230972,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary role of GNAT in the context of Ada?",
+            "back": "GNAT is the GNU Ada Compiler, maintained by AdaCore and the Free Software Foundation."
+          },
+          {
+            "front": "In Ada, what are the two main kinds of subprograms?",
+            "back": "Procedures and Functions."
+          },
+          {
+            "front": "What does a package represent in Ada?",
+            "back": "A package is a construct used for separate compilation and modular organization of code."
+          },
+          {
+            "front": "What is the purpose of 'Access Types' in Ada?",
+            "back": "Access types allow for the definition of pointers or references to objects, facilitating dynamic memory management and linking."
+          },
+          {
+            "front": "What characterizes 'Limited Types' in Ada?",
+            "back": "Limited types are types where assignment and equality operators are prohibited by default, often used to enforce specific design patterns."
+          },
+          {
+            "front": "How are concurrent processes implemented in Ada?",
+            "back": "Concurrency is handled through Tasks and Protected types, which allow for controlled access to shared data and task synchronization."
+          },
+          {
+            "front": "What is the difference between Ordinary Fixed Point and Decimal Fixed Point in Ada?",
+            "back": "Ordinary fixed point types have a power-of-two delta, whereas decimal fixed point types have a decimal-based delta, typically used for financial applications."
+          },
+          {
+            "front": "What is the purpose of generics (Parametric Polymorphism) in Ada?",
+            "back": "Generics allow for the creation of reusable software components (units) that can be instantiated with different types or parameters."
+          },
+          {
+            "front": "What are 'Tagged Records' used for in Ada?",
+            "back": "Tagged records are the primary mechanism for implementing object-oriented programming, allowing for type extension and dynamic dispatch."
+          },
+          {
+            "front": "What are three common mechanisms for String handling in Ada?",
+            "back": "Fixed-length string handling, Bounded-length string handling, and Unbounded-length string handling."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-programming-languages-tour_12",
+      "slides": [
+        {
+          "title": "Ada Programming Fundamentals",
+          "bullets": [
+            "Ada prioritizes safety, readability, and maintainability.",
+            "Designed for reliable, long-lifecycle software systems."
+          ],
+          "notes": "Ada is a powerful language built for high-integrity systems where compile-time error detection is critical.",
+          "page_range": "1-5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Installing and Tooling",
+          "bullets": [
+            "GNAT (GNU Ada Compiler) is the standard free compiler.",
+            "Supports Ada 83, 95, 2005, and 2012 versions.",
+            "IDEs like GPS and GNATbench integrate development tools."
+          ],
+          "notes": "GNAT is highly recommended for its robustness and support across multiple platforms including Linux, Windows, and macOS.",
+          "page_range": "18-20",
+          "image_prompt": ""
+        },
+        {
+          "title": "Building Ada Programs",
+          "bullets": [
+            "Source files specify their own dependencies.",
+            "Compiler includes tools to build and link executables.",
+            "Use 'gnatmake' to compile units and link projects."
+          ],
+          "notes": "Ada's build process is simplified by built-in dependency management, reducing the reliance on external makefiles.",
+          "page_range": "38-40",
+          "image_prompt": ""
+        },
+        {
+          "title": "Control Statements",
+          "bullets": [
+            "Standard structures: 'if-else', 'elsif', and 'case'.",
+            "Case statements require coverage of all possible values.",
+            "'goto' is available but generally discouraged for clarity."
+          ],
+          "notes": "Ada's control structures are designed to be explicit and safe, with 'case' statements forcing complete coverage to reduce bugs.",
+          "page_range": "46-49",
+          "image_prompt": ""
+        },
+        {
+          "title": "Type System Principles",
+          "bullets": [
+            "Strong typing: prevents mixing incompatible data types.",
+            "Static checking: resolves type errors during compilation.",
+            "Name equivalence: types are distinct based on unique names."
+          ],
+          "notes": "Ada's strict type system is its defining feature, preventing errors by treating even structurally identical types as incompatible.",
+          "page_range": "54-57",
+          "image_prompt": ""
+        },
+        {
+          "title": "Numeric Types",
+          "bullets": [
+            "Integer types: defined by explicit range constraints.",
+            "Modular types: implement wrap-around arithmetic using 'mod'.",
+            "Floating point: defined by required precision digits.",
+            "Fixed point: offers absolute precision for financial/control tasks."
+          ],
+          "notes": "Ada allows developers to define numeric types that match the problem domain directly, rather than relying on generic 'float' or 'int'.",
+          "page_range": "78-81",
+          "image_prompt": ""
+        },
+        {
+          "title": "Enumerations and Access",
+          "bullets": [
+            "Enumerations define lists of specific named values.",
+            "'Access' types serve like pointers but with safety.",
+            "Objects handle 'null' initialization to prevent errors."
+          ],
+          "notes": "Access types in Ada are safer than traditional pointers, focusing on controlled memory management rather than manual manipulation.",
+          "page_range": "82-83, 108",
+          "image_prompt": ""
+        },
+        {
+          "title": "String Handling",
+          "bullets": [
+            "Fixed-length: simple arrays with constant size.",
+            "Bounded-length: safe versions with predefined maximums.",
+            "Unbounded-length: dynamic memory for high flexibility."
+          ],
+          "notes": "Ada provides three string types to ensure memory safety and performance suitable for different application needs.",
+          "page_range": "128-132",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 13: Ada Programming - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778789230871,
+      "pdfName": "Ada Programming"
+    }
+  ],
+  "sourceHash": "7e893f40c7728f81"
+}

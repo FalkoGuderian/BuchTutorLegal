@@ -1,0 +1,484 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Bioinformatics and Genomic Statistics - Lesson 1 — Statistical Population Genomics",
+    "pdfName": "Statistical Population Genomics",
+    "createdAt": 1778608742576,
+    "exportedAt": "2026-05-12T17:59:02.577Z",
+    "meta": {
+      "courseId": "course-en-bioinformatics-genomics",
+      "lessonIndex": 0,
+      "courseTitle": "Bioinformatics and Genomic Statistics",
+      "lessonObjective": "Foundation methods.",
+      "licensing": {
+        "effective_license": "unknown",
+        "sources": [
+          {
+            "content_id": "doab-statistical-population-genomics",
+            "title": "Statistical Population Genomics",
+            "source": "doab",
+            "license": "unknown",
+            "license_url": "",
+            "url": "https://directory.doabooks.org/handle/20.500.12854/29509"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_d3d3f155e0ed",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-7",
+          "chapterTitle": "Front Matter",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "8-12",
+          "chapterTitle": "Part I: Essential Concepts",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "13-27",
+          "chapterTitle": "Chapter 1: A Population Genomics Lexicon",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "28-190",
+          "chapterTitle": "Part II: Statistical Methods",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "191-267",
+          "chapterTitle": "Part III: Advances in Population Genomics",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "269-288",
+          "chapterTitle": "Chapter 11: Transitions to Selﬁng in Brassicaceae",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "289-356",
+          "chapterTitle": "Chapter 12-14: Maize, Neurospora, and Fungal Pathogens",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "357-434",
+          "chapterTitle": "Chapter 15-17: Drosophila, Fishes, and Birds",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "435-464",
+          "chapterTitle": "Chapter 18-19: Mouse, Rat, and Great Apes",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "465-466",
+          "chapterTitle": "Index",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778608742576,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: Statistical Population Genomics (Essential Concepts)\n\nThis section provides the foundational lexicon for understanding population genomics, bridging classical population genetics with modern genomic analysis.\n\n#### 1. Core Definitions\n*   **Loci and Alleles:** A **locus** is a specific genomic location; an **allele** is a specific variant at that location. Polymorphism refers to the presence of multiple alleles at a locus; those with single-nucleotide variations are **SNPs**.\n*   **Mutation and the Infinite Site Model:** Mutations create new alleles. The \"infinite site model\" assumes each locus undergoes at most one mutation, allowing for simplified modeling where loci are biallelic.\n*   **The Wright–Fisher Model:** A baseline theoretical model of **neutral evolution** (equal fitness, random mating, constant size). It explains how **genetic drift** (stochastic sampling) results in allele loss or fixation over time.\n\n#### 2. Advanced Evolutionary Models\n*   **Effective Population Size ($N_e$):** Replaces the census population size ($N$) in models, representing the size of an idealized Wright–Fisher population that would exhibit the same genetic diversity as the actual population.\n*   **Demography and Structure:** Deviations from Wright–Fisher include fluctuating population sizes (**bottlenecks**) and **population structure** (non-random mating). **Gene flow** (migration) reduces structure, while **speciation** leads to isolation.\n*   **Lineage Sorting and Introgression:** \n    *   **Incomplete Lineage Sorting (ILS):** Persistence of ancestral variation across speciation events.\n    *   **Introgression:** Post-speciation exchange of material between populations (secondary contact).\n\n#### 3. Quantitative Statistics\n*   **Site Frequency Spectrum (SFS):** The distribution of allele frequencies across segregating sites. It is a primary input for inferring demographic history and selective pressures.\n*   **Estimators of $\\theta$ ($\\theta = 4N_e\\mu$):**\n    *   **Watterson’s Theta ($\\hat{\\theta}_S$):** Based on the number of segregating sites.\n    *   **Tajima’s $\\pi$:** Based on average pairwise differences (nucleotide diversity).\n*   **Molecular Clock:** Under neutrality, the substitution rate equals the mutation rate ($\\mu$), making the number of substitutions a function of time rather than population size.\n\n***\n\n*Source: [S.13–S.18]*",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778608742576,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-bioinformatics-genomics_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 1 — Statistical Population Genomics - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Statistical Population Genomics</div><ul class=\"pm-chat-slide-bullets\"><li>Overview of methods in molecular evolution.</li><li>Integrates genomic data with statistical modeling.</li><li>Focuses on inferring evolutionary processes.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778608742577,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as an introduction to the book *Statistical Population Genomics*, edited by Julien Y. Dutheil and published as part of the *Methods in Molecular Biology* series [S.1, S.4, S.5]. \n\nThe followings are the key points regarding the volume:\n\nPurpose and Scope\nThe volume aims to provide state-of-the-art statistical inference methods specifically designed for population genomics. It emphasizes that population genomics is a distinct field from traditional population genetics, as it requires specialized statistical models to analyze entire genomes rather than individual genes [S.6].\n\nStructure of the Content\nThe book is organized into three primary sections:\nPart I: Explores fundamental concepts of genome biology and evolution [S.6].\nPart II: Details computational methods for analyzing population structure, selective processes, and demographic history. It also covers evolutionary simulation and sample history reconstruction, featuring practical examples and companion materials [S.6].\nPart III: Examines the application of these methods across diverse eukaryotic organisms, including plants, fungi, insects, fishes, birds, rodents, and primates, to illustrate the breadth of current evolutionary research [S.6].\n\nEditorial Standards\nThe series is known for its \"step-by-step\" protocol approach, which includes introductory overviews, lists of necessary materials, detailed procedures, and troubleshooting guidance [S.3]. This volume is an open-access publication under the Creative Commons Attribution 4.0 International License, facilitating the sharing and adaptation of the content [S.5].\n\nContext and Exclusions\nThe editor notes that this volume focuses on statistical inference. Readers looking for information on data preprocessing or general background in evolutionary genomics are directed to companion volumes, such as *Statistical Genomics* or *Evolutionary Genomics* [S.6].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778608742586,
+      "channel": "plan_pipe_d3d3f155e0ed",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 7
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document provides an overview of the organization and contents of a volume focused on population genomics. The book is structured into three distinct parts, spanning from foundational theory to empirical applications in various species.\n\nPart I: Essential Concepts\nThe beginning of the volume establishes the theoretical vocabulary necessary for the field. Chapter 1 serves as a lexicon for population genomics, providing core terminology for those beginning their study of the subject (p. 8).\n\nPart II: Statistical Methods for Analyzing Genomes in Populations\nThis section details the analytical tools and computational frameworks essential for processing genomic data. Key methodological areas covered include:\n- Data processing: Utilizing tools like MafFilter for multiple genome alignments (p. 8) and PLINK for data management and summary statistics (p. 8).\n- Structure and Selection: Techniques for exploring population structure via Admixture models and Principal Component Analysis (p. 8), as well as methods for identifying positive selection (p. 8).\n- Evolutionary Inference: Approaches for modeling fitness effects using polyDFE (p. 8), coalescent modeling (e.g., MSMC, MSMC2, and the Jocx HMM) (p. 8), and simulations using tools like msprime (p. 8).\n- Recombination: The inference of Ancestral Recombination Graphs (ARGs) using ARGweaver (p. 8).\n\nPart III: Advances in Population Genomics\nThis section transitions to empirical case studies, illustrating how population genomics is applied across diverse biological domains:\n- Plants and Fungi: Investigations into selfing transitions in Brassicaceae, adaptation in maize and teosintes, the life history of Neurospora, and the evolution of plant pathogen genomes (p. 8-9).\n- Animals: Recent population genomics breakthroughs in Drosophila, fish, birds, rodents (house mouse and brown rat), and great apes (p. 9).\n\nThe contributors represent an international group of experts from prominent research institutions, providing a comprehensive professional perspective on the current state of the field (p. 10-12).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778608742587,
+      "channel": "plan_pipe_d3d3f155e0ed",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 8,
+        "end": 12
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This text provides a foundational lexicon for population genomics, covering the mechanisms of genetic variation, evolutionary models, and statistical inferential techniques.\n\nKey Concepts and Terminology\n\n1. Genomic Variation\nGenetic variation arises through mutations—molecular events that create new alleles. The infinite site model provides a simplified framework, assuming each locus undergoes at most one mutation and no backward mutations. The Wright-Fisher model serves as the simplest process for allele evolution, assuming constant population size, panmixia (random mating), and neutral evolution where changes in allele frequencies are driven solely by genetic drift.\n\n2. Evolutionary Models and Demography\nThe standard coalescent (Kingman’s coalescent) models the ancestry of a sample backward in time to the most recent common ancestor. Real-world populations rarely conform perfectly to Wright-Fisher assumptions, leading to the use of effective population size ($N_e$) to quantify genetic diversity. Factors such as demographic history (e.g., bottlenecks or growth cycles) and population structure (e.g., geographic isolation or assortative mating) significantly influence gene flow and speciation. Phenomena such as incomplete lineage sorting (ILS) and introgression can lead to genealogical histories that deviate from simple species phylogenies.\n\n3. Statistical Analysis of Diversity\nPopulation genetics parameters are inferred using the site frequency spectrum (SFS), which categorizes allele frequencies across a sample. Common estimators include:\nWatterson’s theta ($\\theta_S$): An estimator of the population mutation rate based on the number of segregating sites, where $E[S_n] = \\theta a_n$.\nTajima’s pi ($\\pi$): A measure of nucleotide diversity based on the average pairwise differences between sequences, estimating $\\theta = 4N_e u$.\n\n4. Selective Processes\nSelection acts on protein-coding sequences based on fitness effects. Mutations are classified as synonymous or non-synonymous, with the latter potentially being conservative or radical. \nThe selection coefficient ($s$) and the dominance coefficient ($h$) define the fitness of genotypes (1 for homozygote AA, $1+s$ for homozygote aa, and $1+hs$ for heterozygote Aa). \nSelection is categorized as:\nPositive Selection: Increases the frequency of favorable alleles.\nNegative (Purifying) Selection: Decreases the frequency of deleterious alleles.\nBalancing Selection: Maintains multiple alleles due to mechanisms like heterozygous advantage or frequency-dependent selection.\nThe intensity of selection is often assessed via the $dN/dS$ ratio for inter-species comparisons or the $pN/pS$ ratio for population-level polymorphism, helping to distinguish between neutral, adaptive, and constrained evolution.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778608742588,
+      "channel": "plan_pipe_d3d3f155e0ed",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 13,
+        "end": 27
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This chapter introduces **MafFilter**, a command-line tool designed for processing and analyzing Multiple Genome Alignments (MGAs) provided in the Multiple Alignment Format (MAF). The text covers the integration of phylogenomics and population genomics, emphasizing how MGA data facilitates the study of structural variations and nucleotide diversity.\n\n### Core Concepts and Methodology\n* **Evolutionary Context:** Multiple Genome Alignments (MGAs) capture structural events—such as chromosome rearrangements, fusions, and fissions—that disrupt colinearity. While population genomics traditionally focuses on micro-variation (SNPs) via Variant Call Format (VCF) files, MGAs provide a more comprehensive, albeit computationally demanding, record of both variable and invariable genome positions.\n* **Format Specifics:** The MAF format stores homology relationships between genomes across various alignment blocks. These blocks maintain synteny, allowing for the alignment of sequences at the chromosome or scaffold level.\n* **MafFilter Functionality:** The program provides a framework for quality assurance and reproducible data processing. It bridges the gap between raw alignment outputs (from tools like Mauve, Last, or TBA) and specialized downstream evolutionary and population genomic analyses.\n* **Key Advantages:** By using MGAs, researchers can account for missing data and structural evolution directly. MafFilter also supports the conversion of these datasets into formats suitable for broader population genomic applications. \n\nIn summary, the chapter positions MafFilter as an essential tool for managing the computational requirements of whole-genome data while ensuring high-quality input for inferring genomic diversity patterns.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778608742589,
+      "channel": "plan_pipe_d3d3f155e0ed",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 28,
+        "end": 190
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers the practical application of coalescent simulations and the inference of ancestral recombination graphs, serving as a core component of statistical methods in population genomics.\n\nThe contents of this section are as follows:\n\nChapter 9: Coalescent Simulation with msprime (p. 191)\nThis chapter focuses on the use of msprime for simulating evolutionary scenarios. The tool allows researchers to generate genealogical histories and genetic variation under varying demographic and selective conditions. It serves as a powerful instrument for testing hypotheses and evaluating the performance of statistical models.\n\nChapter 10: Inference of Ancestral Recombination Graphs Using ARGweaver (p. 231)\nThis chapter discusses the methodology behind ARGweaver, a tool designed for the inference of Ancestral Recombination Graphs (ARG). An ARG provides a comprehensive view of the ancestral history of a sample by mapping both coalescence events and recombination events across the genome. This approach is highly effective for capturing complex localized histories that simple phylogenetic or demographic models might overlook.\n\nKey Takeaways\nThe primary purpose of these chapters is to bridge the gap between theoretical population genetics and actionable data analysis. By utilizing these tools, scientists can move beyond basic summary statistics to address sophisticated questions regarding:\n1. The historical demographic processes that shaped observed genetic diversity.\n2. The impact of recombination on linked selection.\n3. The generation of synthetic data to validate other analytical pipelines.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778608742590,
+      "channel": "plan_pipe_d3d3f155e0ed",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 191,
+        "end": 267
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The section spanning pages 269–288 corresponds to Chapter 11, titled \"Population Genomics of Transitions to Selfing in Brassicaceae Model Systems,\" authored by Tiina M. Mattila, Benjamin Laenen, and Tanja Slotte.\n\nKey points include:\n\nThe chapter focuses on applying population genomics to understand the evolutionary transition from outcrossing to self-fertilization, specifically using the Brassicaceae family as a model system. This transition is a common evolutionary occurrence in plants and significantly impacts the genomic landscape.\n\nSelf-fertilization leads to a reduction in the effective population size ($N_{e}$) and an increase in linkage disequilibrium across the genome. This phenomenon, often referred to as background selection or selective sweeps, reduces the efficacy of natural selection, allowing deleterious mutations to accumulate more easily compared to outcrossing populations.\n\nThe authors detail how genomic data can be utilized to infer the demographic history of these populations and identify the timing and genomic signatures associated with the evolution of self-compatibility. By comparing selfing species with their outcrossing relatives, researchers can quantify the loss of genetic diversity and the signatures of hitchhiking effects.\n\nThe chapter emphasizes statistical approaches to detect these evolutionary changes, such as scanning for reduced nucleotide diversity and shifts in the site frequency spectrum. It serves as a practical demonstration of how modern population genomics methods help researchers decipher how changes in mating systems alter the fundamental evolutionary processes of adaptation and genome evolution.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778608742591,
+      "channel": "plan_pipe_d3d3f155e0ed",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 269,
+        "end": 288
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The range from page 289 to 356 (Chapters 12, 13, and 14) focuses on applying population genomic methods to understand the adaptation and life history of plant and fungal species.\n\nAnalysis of Maize and Teosinte Adaptation\nChapter 12 examines both long-term and short-term adaptation in maize and its wild progenitor, teosinte. The authors discuss how genomic data allows researchers to identify signatures of selection that have occurred during domestication and subsequent spread into diverse environments. By utilizing polymorphism data, they quantify evolutionary shifts to understand the genomic consequences of human-mediated selection versus natural environmental adaptation.\n\nInsights from Neurospora Populations\nChapter 13 explores the life history of the microbial eukaryote Neurospora using population genomics. This study highlights how genomic analysis provides insights into the colonization history, effective population size, and reproductive strategies of natural fungal populations. It demonstrates that genomic data can reveal complex biological histories that are otherwise inaccessible, such as tracking gene flow and identifying ecological niche adaptations.\n\nGenomics of Fungal Plant Pathogens\nChapter 14 addresses the population genomics of fungal plant pathogens, specifically focusing on how these organisms evolve rapidly to infect their hosts. The authors investigate genome compartmentalization, where certain parts of the genome evolve faster than others. This section explains how comparative population genomics helps identify the molecular mechanisms underpinning host-pathogen interactions and the genomic architecture that facilitates rapid adaptation in changing environments.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778608742592,
+      "channel": "plan_pipe_d3d3f155e0ed",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 289,
+        "end": 356
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Part III of the volume, covering pages 357–434, provides an overview of current knowledge in population genomics across a diverse range of eukaryotic organisms. The chapters illustrate how statistical inference methods are applied to study genome evolution in various species:\n\nDrosophila (pp. 357–396): Authors Haudry, Laurent, and Kapun discuss recent advances in the population genomics of fruit flies, highlighting the model's utility in evolutionary studies.\n\nFishes (pp. 397–412): Arne W. Nolte examines genomic approaches to understanding the vast diversity of fish populations.\n\nBirds (pp. 413–434): Kira E. Delmore and Miriam Liedvogel detail the rapid development and recent findings in avian population genomics, setting the stage for future research prospects.\n\nThese contributions underscore the applicability of the methods introduced in earlier parts of the book to broad biological questions, ranging from local adaptation to species history. The section demonstrates that the study of genome evolution at the population level serves as a powerful lens for uncovering the mechanisms governing diverse life histories and evolutionary trajectories across the tree of life.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778608742593,
+      "channel": "plan_pipe_d3d3f155e0ed",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 357,
+        "end": 434
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary: Population Genomics of the House Mouse and the Brown Rat\n\nThe final section of the provided text, spanning pages 435 through 464, centers on the population genomics of two primary mammalian models: the house mouse (*Mus musculus*) and the brown rat (*Rattus norvegicus*).\n\n**Key Themes and Objectives:**\n\n*   **Model Significance:** Both species are essential for biomedical research and evolutionary studies. The section highlights how genomic analysis explains their rapid global expansion and adaptation to human-altered environments (synanthropy).\n*   **Methodological Applications:** These chapters demonstrate the application of the statistical techniques introduced in earlier sections of the book, such as demographic inference, identifying signatures of selection, and understanding structural variations within the genome.\n*   **Evolutionary Insights:** The contributors examine the demographic histories of these rodents, focusing on how dispersal events and geographic isolation have shaped their current genetic diversity.\n*   **Integration of Resources:** The text emphasizes the utility of connecting high-throughput sequencing data with established laboratory strain resources to gain a better understanding of traits related to physiology, behavior, and disease resistance.\n*   **Broadening Perspectives:** By investigating these model organisms, researchers seek to provide a foundation for applying similar genomic approaches to other rodent species, thereby enhancing cross-species comparative genomic studies.\n\nOverall, this section illustrates how applying rigorous statistical genomics to mouse and rat populations enables scientists to bridge the gap between small-scale genetic mechanisms and large-scale evolutionary processes.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778608742594,
+      "channel": "plan_pipe_d3d3f155e0ed",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 435,
+        "end": 464
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided document does not contain pages 465 or 466. Based on the provided text, the table of contents concludes on page [S.9] (corresponding to the document's internal \"Contents\" page), and the final indexed author listed in the contents is on page [S.9].\n\nSince the requested page range is outside the scope of the provided document, I cannot summarize those specific pages. However, based on the provided material, here is a summary of the book's purpose and structure:\n\n**Overview of Statistical Population Genomics**\n\n*   **Core Objective:** The volume focuses on state-of-the-art statistical inference methods in population genomics, moving beyond \"big data\" management to address specific biological questions through rigorous modeling.\n*   **Book Architecture:** The content is divided into three distinct sections:\n    *   Part I offers a lexical foundation for readers to understand essential concepts in genome biology and evolution (p. [S.9]).\n    *   Part II provides practical, step-by-step methodologies for data analysis, including genome alignment processing, population structure analysis (via Admixture and PCA), detection of selective processes, and demographic history inference through coalescent models (p. [S.9]).\n    *   Part III demonstrates the application of these statistical tools across a diverse range of taxa, including plants, fungi, insects, birds, and mammals, highlighting how population genomics addresses specific evolutionary questions in model systems (p. [S.9]).\n*   **Methodological Standards:** Consistent with the Methods in Molecular Biology series, each chapter is designed to be reproducible, providing necessary materials, procedural steps, and troubleshooting advice to facilitate rigorous scientific inquiry (p. [S.1]).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778608742595,
+      "channel": "plan_pipe_d3d3f155e0ed",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 465,
+        "end": 466
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778608742676,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why does the text argue that population genomics is more than just 'big data' population genetics?",
+            "options": [
+              "Because the focus shifted from studying individual genes to studying entire genomes.",
+              "Because it requires different sequencing hardware than previous genetic studies.",
+              "Because it ignores the Wright–Fisher model in favor of modern machine learning.",
+              "Because the data sets are exclusively derived from primate DNA."
+            ],
+            "correctIndex": 0,
+            "explanation": "The preface states that population genomics is more than 'big data' population genetics because the objects of study are 'genomes' and not only 'multiple genes,' bringing along specific biological questions and statistical models."
+          },
+          {
+            "question": "What is the primary implication of the 'infinite site model' in population genomics?",
+            "options": [
+              "That mutation rates are infinitely high across all loci.",
+              "That each locus has undergone at most one mutation during the modeled timeframe.",
+              "That there is no limit to the number of alleles that can exist at a single locus.",
+              "That recombination occurs at every single site in the genome."
+            ],
+            "correctIndex": 1,
+            "explanation": "The infinite site model assumes that each locus has undergone at most one mutation and that every mutation creates a new allele, which is a reasonable assumption given that mutation rates are low and genomes are large."
+          },
+          {
+            "question": "Within the context of the Wright–Fisher model, what does it mean for a population to be 'panmictic'?",
+            "options": [
+              "The population size fluctuates significantly over time.",
+              "The population is composed of distinct, isolated sub-groups.",
+              "Individuals in the population are mating randomly.",
+              "Natural selection is the primary driver of allele frequencies."
+            ],
+            "correctIndex": 2,
+            "explanation": "In the Wright–Fisher model, panmixia refers to a state where individuals are randomly mating, which is a key assumption alongside constant population size and neutral selection."
+          },
+          {
+            "question": "Based on the structure of the book, which of the following tasks would typically be addressed using the methods described in Part II?",
+            "options": [
+              "Reviewing the history of population genetics research over the last 100 years.",
+              "Understanding the conceptual biology and definitions used in genomics.",
+              "Investigating specific evolutionary findings in diverse systems like fungi or birds.",
+              "Performing statistical analyses to study demographic history and selective processes."
+            ],
+            "correctIndex": 3,
+            "explanation": "Part II is explicitly dedicated to 'Statistical Methods for Analyzing Genomes in Populations,' covering population structure, selective processes, and demographic history, while Part I covers concepts and Part III covers specific applications to diverse organisms."
+          },
+          {
+            "question": "How does the text define a 'singleton' in the context of a sampled diallelic locus?",
+            "options": [
+              "A locus where only one allele is present in the entire population.",
+              "A locus where one of the two alleles is present in only one haploid genome.",
+              "A locus that has undergone exactly one mutation in its history.",
+              "A sample where only one individual was sequenced from the population."
+            ],
+            "correctIndex": 1,
+            "explanation": "Under the infinite site model, a sampled diallelic locus is called a singleton if one of the two alleles is observed in only one haploid genome."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778608742677,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary difference between population genetics and population genomics?",
+            "back": "Population genomics studies 'genomes' (entire sequences) rather than only 'multiple genes,' incorporating specific biological questions and statistical models beyond simple big-data population genetics."
+          },
+          {
+            "front": "What is a 'locus' in population genomics?",
+            "back": "A locus (plural: loci) refers to a specific, given location in the genome."
+          },
+          {
+            "front": "In terms of allele frequency, what is the difference between a polymorphic and a monomorphic locus?",
+            "back": "A polymorphic locus has at least two alleles present, while a monomorphic locus has only one allele."
+          },
+          {
+            "front": "What is a Single Nucleotide Polymorphism (SNP)?",
+            "back": "A variable locus of length one that can have up to four distinct alleles (A, C, G, or T)."
+          },
+          {
+            "front": "What does the 'infinite site model' assume?",
+            "back": "It assumes that within the modeled evolutionary timeframe, each locus has undergone at most one mutation, creating a new allele with no backward or reverse mutations."
+          },
+          {
+            "front": "Define a 'singleton' and a 'doubleton' in a population genomic dataset.",
+            "back": "A singleton is a biallelic locus where one allele is present in only one haploid genome; a doubleton is where one allele is present in exactly two haploid genomes."
+          },
+          {
+            "front": "What is the Wright–Fisher model?",
+            "back": "The simplest model of allele evolution describing a panmictic population of fixed, constant size where all alleles have equal fitness (neutral evolution)."
+          },
+          {
+            "front": "What is meant by 'panmictic' in population genetics?",
+            "back": "It refers to a population where individuals are randomly mating."
+          },
+          {
+            "front": "What are 'indels'?",
+            "back": "Nucleotide insertions or deletions that cause alleles to differ in length."
+          },
+          {
+            "front": "Why is the infinite site model considered a 'reasonable assumption' for most population genomic studies?",
+            "back": "Because mutation rates are typically low and genomes are very large, making the probability of multiple mutations at the same site within a specific timeframe low."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-bioinformatics-genomics_0",
+      "slides": [
+        {
+          "title": "Statistical Population Genomics",
+          "bullets": [
+            "Overview of methods in molecular evolution.",
+            "Integrates genomic data with statistical modeling.",
+            "Focuses on inferring evolutionary processes.",
+            "Essential foundation for modern genomics."
+          ],
+          "notes": "This volume provides a comprehensive toolkit for analyzing population genomic variation using state-of-the-art statistical methodologies. It serves as a guide for researchers transitioning from descriptive genetics to rigorous genomic inference.",
+          "page_range": "1-7",
+          "image_prompt": ""
+        },
+        {
+          "title": "Essential Concepts",
+          "bullets": [
+            "Defines core lexicon: loci, alleles, and SNPs.",
+            "Explains neutral evolution via Wright-Fisher models.",
+            "Describes mutation-drift equilibrium (p. 14).",
+            "Introduces fixation and genetic diversity metrics (p. 15)."
+          ],
+          "notes": "The foundation of population genomics lies in understanding how mutation and drift shape genetic variation within theoretical populations.",
+          "page_range": "8-27",
+          "image_prompt": ""
+        },
+        {
+          "title": "Statistical Methods for Genomes",
+          "bullets": [
+            "Focuses on analyzing population-level genome data.",
+            "Covers diversity, structure, selection, and demography.",
+            "Includes practical implementations like MafFilter (p. 29).",
+            "Provides tools for simulation and ancestral history."
+          ],
+          "notes": "Part II translates biological theory into computational practice, offering tools for diverse applications ranging from alignment processing to inferring demographic history.",
+          "page_range": "28-190",
+          "image_prompt": ""
+        },
+        {
+          "title": "Processing Alignments with MafFilter",
+          "bullets": [
+            "Uses Multiple Alignment Format (MAF) data.",
+            "Handles synteny breaks and evolutionary events.",
+            "Enables high-quality, reproducible analysis pipelines.",
+            "Computes nucleotide diversity along genome sequences."
+          ],
+          "notes": "MafFilter is a command-line tool designed to bridge phylogenomic alignments and population genomics, ensuring rigorous quality control in data analysis.",
+          "page_range": "29-31",
+          "image_prompt": ""
+        },
+        {
+          "title": "Advances in Population Genomics",
+          "bullets": [
+            "Applies statistical methods to diverse taxa.",
+            "Studies reproductive transitions in plants.",
+            "Explores long-term adaptation in model systems.",
+            "Analyzes rapidly evolving genomic compartments."
+          ],
+          "notes": "The final section demonstrates the power of these statistical methods when applied to real-world biological systems, spanning from fungi and plants to mammals.",
+          "page_range": "191-464",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 1 — Statistical Population Genomics - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778608742576,
+      "pdfName": "Statistical Population Genomics"
+    }
+  ],
+  "sourceHash": "e39bf5e0c54dc191"
+}

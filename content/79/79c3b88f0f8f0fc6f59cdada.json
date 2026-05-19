@@ -1,0 +1,433 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Tour of Programming Languages — From C to Haskell - Lesson 1 — Introduction to Programming",
+    "pdfName": "Introduction to Programming",
+    "createdAt": 1778576715289,
+    "exportedAt": "2026-05-12T09:05:15.289Z",
+    "meta": {
+      "courseId": "course-en-programming-languages-tour",
+      "lessonIndex": 0,
+      "courseTitle": "Tour of Programming Languages — From C to Haskell",
+      "lessonObjective": "Paradigms, type systems, runtime models.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-introduction-to-programming",
+            "title": "Introduction to Programming",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Introduction_to_Programming"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_788cc653a345",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Introduction to Programming and Statements",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-4",
+          "chapterTitle": "Syntax and Semantics",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-6",
+          "chapterTitle": "Variables",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "7-9",
+          "chapterTitle": "Math",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "10-12",
+          "chapterTitle": "Conditionals",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "13-13",
+          "chapterTitle": "Input",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "14-18",
+          "chapterTitle": "Loops",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576715289,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Lesson 1: Introduction to Programming Summary\n\nThis module introduces the fundamental concepts of computer programming, focusing on how humans communicate instructions to machines.\n\n#### 1. Programming Fundamentals\n*   **Precision and Ambiguity:** Computers require absolute precision. Unlike human communication, where context helps resolve ambiguity, programming errors due to vague instructions can lead to subtle, catastrophic system failures.\n*   **Statements:** The basic unit of execution. A statement is a command (e.g., `print`) that a computer performs sequentially.\n*   **Syntax vs. Semantics:** \n    *   **Syntax:** The grammatical rules of a language (e.g., using semicolons in C or indentation in Python).\n    *   **Semantics:** The logic and meaning behind the code. A program can be syntactically correct but semantically nonsensical (e.g., causing runtime errors).\n\n#### 2. Variables and Mathematical Operations\n*   **Variables:** Labels stored in memory used to represent data (strings or numbers). They enhance code maintainability by allowing data to be referenced and updated dynamically without needing to modify every instance of the data throughout a program.\n*   **Assignment:** The act of associating a value with a variable (e.g., `dog = \"Bort\"`).\n*   **Arithmetic:** Languages use operators to perform calculations. \n    *   **Integers vs. Reals:** Many languages distinguish between round numbers and decimals, which can lead to unexpected results (e.g., integer division `1 / 2` equaling `0`).\n\n#### 3. Flow Control: Conditionals and Input\n*   **Conditionals (`if/else`):** Structures that allow programs to execute specific blocks of code only if certain criteria are met. \n*   **Nested Logic:** Placing conditionals inside other conditionals to handle complex decision trees.\n*   **Input/Output:** Interaction with the user is handled through `input()` functions, which capture external data and store it in variables, and `print` statements, which display results to the screen.\n\n#### 4. Language Paradigms (Conceptual)\n*   **High-Level vs. Low-Level:** \n    *   **High-Level (e.g., Python):** Prioritize programmer efficiency and readability by making underlying assumptions.\n    *   **Low-Level (e.g., C/C++):** Provide granular, hardware-level control at the cost of increased code volume and complexity.\n*   **\"Playing Computer\":** The essential skill of manually tracing code line-by-line to verify that the instructions (including the order of execution) match the desired logic.\n\n***\n\n**References:** [S.1], [S.2], [S.3], [S.4], [S.5], [S.6], [S.7], [S.8], [S.9], [S.10], [S.11], [S.12], [S.13], [S.14]",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576715289,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-programming-languages-tour_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 1 — Introduction to Programming - Presentation</span><span class=\"pm-chat-count\">6 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Introduction to Programming</div><ul class=\"pm-chat-slide-bullets\"><li>Programming is precise communication, not ambiguous requests.</li><li>The goal is telling the computer exactly what to do.</li><li>High-level languages prioritize ease; low-level offer more control.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778576715290,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Introduction to Programming\n\n**The Nature of Programming**\nProgramming is the process of providing instructions to a computer. Unlike interacting with a human, where ambiguity is often acceptable, computers require absolute precision and clarity. Vagueness in instructions can lead to subtle, difficult-to-detect errors [S.1].\n\n**Language Levels**\nProgramming languages are categorized by their level of abstraction [S.1]:\n*   **Low-Level Languages (e.g., C, C++):** Require extensive detail and provide the programmer with high levels of control and speed.\n*   **High-Level Languages (e.g., Python, Basic):** Make more assumptions for the programmer, reducing the required complexity and detail, though they offer less granular control.\n\n**Statements and Execution**\n*   **Statements:** These are the fundamental commands provided to a computer. A statement typically consists of a verb (the action) and specific parameters (the details) [S.1, S.2].\n*   **Sequencing:** Computers execute statements in order, from the top of the file to the bottom. It is essential for programmers to \"play computer\" by mentally tracing this logical execution to ensure the code behaves as expected [S.2].\n*   **Syntax Variations:** The structure of statements varies by language. For example, Python uses simple commands, while C uses specific syntax elements, such as parentheses to enclose parameters and semicolons to terminate statements [S.2].\n*   **Terminology:** In programming, text is referred to as a \"string\" (a sequence of letters). Quotation marks are used to define the boundaries of these strings for the computer [S.2].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576715299,
+      "channel": "plan_pipe_788cc653a345",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This text outlines the fundamental concepts of computer programming, comparing them to natural language structures.\n\n**Key Definitions**\n\n* **Syntax:** The set of rules governing how statements must be written for a computer to understand them, similar to grammar in natural languages [S.3].\n* **Library:** The collection of verbs or commands available for use within a language [S.3].\n* **Concatenation:** The process of joining two or more strings together to form a single string. Different languages use different operators for this, such as $+$ in Python or Java, $.$ in Perl or PHP, and $\\&$ in Visual Basic [S.3].\n* **Semantics:** The logic and meaning behind the code. While syntax refers to the structure of the statements, semantics ensures the instructions make sense in context [S.3].\n\n**Programming Errors and Processes**\n\n* **Compilation:** Programs are checked for syntax errors by a parser. If the syntax is correct, the compiler then checks for semantical (logical) errors [S.3].\n* **Error Types:** Errors can occur at \"compile-time\" (caught by the compiler) or at \"run-time\" (surfacing when the program is executed) [S.3].\n* **Flexibility vs. Precision:** Unlike humans, who can infer meaning from context even if grammar is flawed, computers require strict adherence to syntax and logical semantics to function correctly [S.4].\n\n**Variables and Efficiency**\n\n* **Assignment Statements:** To avoid the tedium and potential errors of manually updating repetitive information (like a name), programmers use variables [S.4].\n* **Functionality:** By using an assignment statement—such as $dog = \"Bort\"$—the programmer labels a specific string. This allows the programmer to refer to \"Bort\" using the label \"dog,\" which can be easily updated in one location to change the entire program [S.4].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576715300,
+      "channel": "plan_pipe_788cc653a345",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers the function and application of programming variables, specifically how they store and retrieve data during execution.\n\n**Key Concepts**\n\n*   **Definition and Usage:** A variable acts as a symbol that points to a specific value stored in the computer's memory. When using a variable, you omit quotation marks, whereas you use them for literal text.\n*   **Concatenation:** When combining variables with text, you must use string concatenation (the $+$ operator) to bridge literal strings and the values associated with variables.\n*   **Sequential Execution:** Programs must be read line-by-line from top to bottom. A variable must be defined in memory before it can be referenced in a print statement; otherwise, the program will likely trigger an error.\n*   **Memory Management:** A variable's value is stored in memory, not associated permanently with the line of code that defined it. You cannot \"go back\" to the definition line to find a value; instead, the program checks the current state of memory at the exact moment the variable is accessed (p. 5, 6).\n*   **Mutability:** The name \"variable\" implies the capacity to change. Reassigning a new value to a variable replaces the prior association in memory. Subsequent lines of code will reflect this updated value, allowing the same variable to hold different data throughout the program's lifecycle (p. 6).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576715301,
+      "channel": "plan_pipe_788cc653a345",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text introduces fundamental concepts regarding arithmetic, data types, and variable assignment in programming.\n\n**Arithmetic and Data Types**\nComputers evaluate mathematical expressions automatically. When using integers (whole numbers), division may result in the truncation of decimal values, as $1 / 2$ often results in $0$ rather than $0.5$ (S.8). To perform calculations that preserve decimal precision, one must use \"reals\" (e.g., $5.0 + 12.0$). It is important to distinguish between strings (text in quotation marks) and numbers, as standard operators like $+$ behave differently depending on the data type (S.7, S.8, S.9).\n\n**Variables and Assignment**\nVariables act as memory locations for data. Assignment (using the $=$ sign) is not an algebraic equation; it is a command to store a value. A line such as $x = x + 5$ instructs the computer to take the current value of $x$, add $5$, and store that new result back into $x$ (S.8). \n\n**Program Flow**\nComputers process code line-by-line. Because variable assignments update the stored value at a specific point in time, later changes to a variable do not retroactively affect calculations already performed using its previous value (S.9). Understanding this sequential \"state\" of memory is essential for debugging and predicting program behavior.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576715302,
+      "channel": "plan_pipe_788cc653a345",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 7,
+        "end": 9
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text details the core concepts of logical flow control in programming through the use of conditionals.\n\n**Key Concepts in Conditionals**\n\n1. The \"if\" statement: This construct allows a program to execute specific code sections only when a predefined condition is met. If the condition is false, the indented code block is skipped [S.10].\n2. Comparison Operators: Programs use symbols to compare values, such as:\n   - $age > 29$: Greater than.\n   - $age >= 40$: Greater than or equal to.\n   - $age == 1$: Exactly equal (doubled to distinguish from assignment).\n   - $age != 1$: Not equal to.\n   - $age < 25$: Less than.\n3. Logical Connectives: Complex conditions can be formed using logic, such as using \"and\" or \"$&&$\" to check if a value falls within a specific range, for example, $age >= 50$ and $age < 60$ [S.10, S.12].\n4. The \"else\" statement: This provides a shortcut for handling cases where the original \"if\" condition is false, avoiding the need for redundant code [S.11].\n5. Nested Conditionals: An \"if\" statement can be placed inside another \"if\" or \"else\" block, allowing for multi-layered decision-making logic [S.12].\n\n**Implementation Approaches**\n\n- Indentation vs. Braces: In Python-like languages, indentation specifies which statements belong to a conditional block. In C-style languages, braces $\\{ \\}$ are required to group multiple statements under a single condition, as indentation is ignored by the compiler [S.12].\n- Hard-coding vs. Input: The text distinguishes between \"hard-coding\" values directly into the source code—which requires users to edit the file to change parameters—and retrieving values via user input, which allows programs to remain functional and responsive without modifying the underlying code [S.12].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576715303,
+      "channel": "plan_pipe_788cc653a345",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 10,
+        "end": 12
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Section S.13: User Input in Programming\n\nThis section introduces methods for capturing user input to create interactive programs.\n\n**Core Concepts:**\n\n*   **Input vs. Output:** The `input()` command allows a program to receive data from the user, whereas the `print` statement is used to display information (output).\n*   **The `input()` Function:** \n    *   The parentheses `()` are essential; they indicate that `input` is a command (function) rather than a variable name. \n    *   When executed, the program pauses, waits for the user to type a value and press Enter, and then assigns that value to a variable (e.g., `age = input()`).\n*   **Execution Flow:** The computer processes the function first, captures the user's input, and replaces the `input()` call with that specific value, which is then stored in memory under the assigned variable name.\n*   **Integration with Logic:** User input can be used in conditional statements (like `if/else`) to dictate how the program responds to different data entered by the user.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576715304,
+      "channel": "plan_pipe_788cc653a345",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 13,
+        "end": 13
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This text discusses the evolution of repeating code segments in programming, transitioning from inefficient manual repetition to automated loops.\n\n**From Conditional Statements to Loops**\nEarly attempts to repeat a task often relied on multiple `if` statements or manually copying lines of code. This approach is problematic because it is tedious to maintain and limits the program's capacity to handle input values larger than the predefined number of statements (p. 14, 15).\n\n**The While Loop**\nA `while` loop overcomes these limitations by combining a condition with an iterative process. Using the syntax `while count >= 1`, the program checks a condition, executes the block of code, and updates a variable (typically through $count = count - 1$). The process repeats until the condition is no longer met. Each execution of the loop is called an iteration (p. 16).\n\n**The For Loop and For-each Loop**\nThe `for` loop is designed to iterate over a specific range of numbers. It is often more concise than a `while` loop when the number of iterations is known in advance. The computer automatically manages the incrementing of the index variable (often denoted as $i$). While `for` loops are ideal for numerical ranges, `while` loops remain more flexible for complex logic, such as doubling a value in each step ($i = i * 2$) (p. 17). \n\nFinally, the `foreach` (or `for`-in) loop allows iteration over a specific set of elements (like a list) rather than a numerical range, making it highly readable and efficient for processing collections of data (p. 18).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576715305,
+      "channel": "plan_pipe_788cc653a345",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 14,
+        "end": 18
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576715389,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Why is precision so critical when writing computer programs?",
+            "options": [
+              "Because computers are prone to making random, creative errors.",
+              "Because computer programs cannot handle simple, high-level instructions.",
+              "Because computers lack the ability to interpret ambiguous commands, which can lead to hard-to-find bugs.",
+              "Because programming languages have extremely limited vocabularies for describing processes."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text emphasizes that computers cannot guess meaning like a human can. Because programs are complex, any ambiguity in a request can lead to subtle, problematic errors."
+          },
+          {
+            "question": "What happens in memory when executing the line 'x = x + 5'?",
+            "options": [
+              "The computer treats this as a logical contradiction and stops execution immediately.",
+              "The computer calculates the new value of x based on the old value before updating the association in memory.",
+              "The computer sets x to 5 and ignores the existing value of x.",
+              "The computer creates a new variable instead of updating the existing one."
+            ],
+            "correctIndex": 1,
+            "explanation": "The computer first resolves the expression on the right (the old value of x plus 5) and then assigns that result back to the variable x, overwriting the previous association."
+          },
+          {
+            "question": "What is the primary distinction between a variable being set as 'dog = \"Bort\"' versus just 'Bort'?",
+            "options": [
+              "A variable is a symbolic label that maps to a value, whereas a literal string is just the data itself.",
+              "Variables are used for math, while strings are used solely for output.",
+              "Variables cannot hold text, only numbers, unless defined in a low-level language.",
+              "Variables make the program run faster by reducing the amount of memory needed."
+            ],
+            "correctIndex": 0,
+            "explanation": "Variables are identifiers that act as placeholders or pronouns, allowing the programmer to refer to data stored in memory without hardcoding the literal value everywhere."
+          },
+          {
+            "question": "In the context of programming, what is a 'semantic error'?",
+            "options": [
+              "A mistake in the spelling of a command or a missing semicolon.",
+              "A failure of the computer hardware to understand the code.",
+              "The use of grammatically correct statements that do not make logical sense in the requested order.",
+              "The use of an incorrect mathematical operator in a calculation."
+            ],
+            "correctIndex": 2,
+            "explanation": "Syntax errors concern the 'grammar' of the language, while semantics refer to the 'meaning' or logic. You can have code that is syntactically perfect but logically flawed."
+          },
+          {
+            "question": "When performing division with integers (e.g., 1 / 2) in many languages, why might the result be '0' instead of '0.5'?",
+            "options": [
+              "Because the computer interprets the slash as an instruction to round down to the nearest whole number.",
+              "Because the language automatically converts all numbers to complex reals, which causes a display error.",
+              "Because the language forces integer math when only integers are provided, discarding the remainder.",
+              "Because division is not supported with integers in most high-level languages."
+            ],
+            "correctIndex": 2,
+            "explanation": "When dealing with integers, many languages perform integer arithmetic, which does not include fractional parts, leading to results like '0' for '1/2'."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778576715390,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary difference between high-level and low-level programming languages?",
+            "back": "Low-level languages require total detail and provide more control, while high-level languages make more assumptions, requiring less detail from the programmer."
+          },
+          {
+            "front": "What is a 'statement' in the context of programming?",
+            "back": "A statement is a single command given to the computer to perform a specific action."
+          },
+          {
+            "front": "What is 'syntax'?",
+            "back": "The set of rules for creating proper statements in a programming language."
+          },
+          {
+            "front": "What is 'string concatenation'?",
+            "back": "The concept of attaching two strings (text) together to create a single string."
+          },
+          {
+            "front": "What is the difference between 'syntax errors' and 'semantical errors'?",
+            "back": "Syntax errors involve incorrect rules/grammar, while semantical errors involve flaws in the meaning or logic of the program."
+          },
+          {
+            "front": "What is an 'assignment statement'?",
+            "back": "A command that associates a value with a label (variable) in memory."
+          },
+          {
+            "front": "Why is it important not to treat programming assignment statements as mathematical algebraic equations?",
+            "back": "An assignment statement like 'x = x + 5' means 'take the current value of x, add 5, and store the result back into x', whereas in algebra 'x = x + 5' would be impossible."
+          },
+          {
+            "front": "What is a 'variable'?",
+            "back": "A label or symbol that the computer associates with a piece of data stored in memory, allowing for easy updates and references."
+          },
+          {
+            "front": "What is the difference between 'integer' and 'real' numbers in programming?",
+            "back": "Integers are round numbers, while reals are numbers containing a decimal point."
+          },
+          {
+            "front": "Why is it important to 'play computer' when reading code?",
+            "back": "Playing computer helps you understand the logic by manually executing statements in order, from top to bottom, exactly as the computer would."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-programming-languages-tour_0",
+      "slides": [
+        {
+          "title": "Introduction to Programming",
+          "bullets": [
+            "Programming is precise communication, not ambiguous requests.",
+            "The goal is telling the computer exactly what to do.",
+            "High-level languages prioritize ease; low-level offer more control.",
+            "Programming requires perfect accuracy; computers do not guess."
+          ],
+          "notes": "Think of programming as giving precise instructions to a chef. Computers follow commands exactly, so ambiguity leads to subtle, hard-to-find errors.",
+          "page_range": "1-2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Statements and Syntax",
+          "bullets": [
+            "A statement is a specific command for the computer.",
+            "Programs execute statements sequentially, top to bottom.",
+            "Syntax is the set of rules for writing proper statements.",
+            "Use 'play computer' to trace program execution logic."
+          ],
+          "notes": "Syntax rules like semicolons vary by language, but the underlying concepts, like string concatenation, remain consistent across different platforms.",
+          "page_range": "3-4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Variables and Assignment",
+          "bullets": [
+            "Variables act as labels for data stored in memory.",
+            "Assignment (e.g., dog = 'Bort') associates a value to a label.",
+            "Variables must be defined before use (p. 6).",
+            "Values in memory can be updated during execution."
+          ],
+          "notes": "Variables prevent tedious manual updates to code. Remember, assignment isn't algebra; it updates the computer's memory state sequentially.",
+          "page_range": "5-6",
+          "image_prompt": ""
+        },
+        {
+          "title": "Mathematical Expressions",
+          "bullets": [
+            "Operators perform arithmetic on values and variables.",
+            "Distinguish between integers and reals to avoid calculation errors (p. 8).",
+            "Math expressions are evaluated based on standard precedence.",
+            "Assignment can update a variable using its current value (p. 8)."
+          ],
+          "notes": "Computers handle math strictly. Be aware that integer division can lead to unexpected truncation, and always track variable states as they change.",
+          "page_range": "7-9",
+          "image_prompt": ""
+        },
+        {
+          "title": "Conditionals and Logic",
+          "bullets": [
+            "Conditionals control whether code blocks execute based on logic.",
+            "Use 'if', 'else', and strict comparisons (e.g., ==, !=, >=).",
+            "Nested 'if' statements handle complex, layered scenarios (p. 12).",
+            "Conditions ensure programs function adaptively without human edits."
+          ],
+          "notes": "Conditionals turn static code into flexible programs. A nested 'if' allows for branching pathways, but trace them carefully to avoid logic bugs.",
+          "page_range": "10-12",
+          "image_prompt": ""
+        },
+        {
+          "title": "Input and Loops",
+          "bullets": [
+            "Functions like input() capture user data for dynamic programs.",
+            "Loops, like the 'while' loop, automate repetitive tasks (p. 16).",
+            "Loops continue execution as long as a condition is true.",
+            "Effective loops prevent hard-coded limits on data processing."
+          ],
+          "notes": "The 'while' loop is a powerful tool to repeat actions efficiently. It replaces long, manual code blocks with a single, elegant instruction structure.",
+          "page_range": "13-16",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 1 — Introduction to Programming - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576715289,
+      "pdfName": "Introduction to Programming"
+    }
+  ],
+  "sourceHash": "787ac8d9135e0356"
+}

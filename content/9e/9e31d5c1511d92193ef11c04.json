@@ -1,0 +1,375 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Tour of Programming Languages — From C to Haskell - Lesson 10 — Ruby Programming",
+    "pdfName": "Ruby Programming",
+    "createdAt": 1778576732037,
+    "exportedAt": "2026-05-12T09:05:32.038Z",
+    "meta": {
+      "courseId": "course-en-programming-languages-tour",
+      "lessonIndex": 9,
+      "courseTitle": "Tour of Programming Languages — From C to Haskell",
+      "lessonObjective": "Ruby, Lua, Julia.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-en-ruby-programming",
+            "title": "Ruby Programming",
+            "source": "wikibooks-en",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://en.wikibooks.org/wiki/Ruby_Programming"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_da230822e2c2",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-1",
+          "chapterTitle": "Introduction to Ruby Programming",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "2-3",
+          "chapterTitle": "Syntax and Semantic Reference",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-4",
+          "chapterTitle": "Classes and Built-in Functions",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-6",
+          "chapterTitle": "Standard Library Modules",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "7-7",
+          "chapterTitle": "Learning Resources and Documentation",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1778576732037,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: Ruby Programming\n\nRuby is a powerful, interpreted, and object-oriented programming language created by Yukihiro Matsumoto (\"Matz\") in 1995 [S.1]. It is designed with a syntax that balances accessibility with extensive functionality [S.1].\n\n#### Key Components\n*   **Core Syntax & Semantics:** Ruby features a comprehensive set of language structures including variables (local, instance, class, global), control flow (if/unless, loops, exception handling), and object-oriented foundations such as methods, inheritance, and mixin modules [S.2, S.3, S.4].\n*   **Built-in Objects:** The language provides a robust \"core\" library consisting of pre-defined classes and functions, such as `Array`, `Hash`, `Numeric`, `String`, and `Thread` [S.4, S.5].\n*   **Standard Library & Extensibility:** Ruby includes a vast standard library for tasks like network connectivity (`Net::HTTP`), XML parsing (`REXML`), debugging, and file manipulation. Developers can further extend the language using \"gems\" (external packages) or by building C extensions [S.5, S.6].\n*   **Documentation & Resources:** Extensive documentation is available through the official Ruby website and various reputable guidebooks, such as the \"Pickaxe\" series (*Programming Ruby*) and *Why’s (Poignant) Guide To Ruby* [S.6, S.7].\n\n#### Learning Perspective\nIn the context of learning multiple programming paradigms, Ruby serves as a primary example of a dynamic, object-oriented scripting language. It emphasizes developer productivity and offers a rich ecosystem for both web development (e.g., Rails) and general-purpose scripting [S.6, S.7].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576732037,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-programming-languages-tour_9\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 10 — Ruby Programming - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Introduction to Ruby Programming</div><ul class=\"pm-chat-slide-bullets\"><li>Created by Yukihiro &quot;Matz&quot; Matsumoto in 1995.</li><li>Interpreted, object-oriented programming language.</li><li>Designed for readability and developer productivity.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1778576732038,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Ruby Programming Overview\n\nThe provided text serves as an introduction to the Ruby programming language and a structured learning resource. Key points include:\n\n**Language Background**\n* Ruby is an interpreted, object-oriented programming language.\n* It was created by Yukihiro Matsumoto (\"Matz\") and publicly released in 1995.\n\n**Educational Structure**\nThe content is designed to be read sequentially or by individual self-contained sections:\n* **Getting started:** Guidance on installation and environment setup.\n* **Basic Ruby:** Coverage of fundamental syntax and language features.\n* **Ruby language:** A detailed reference guide for the language.\n* **Available modules:** An introduction to the standard library.\n* **Intermediate Ruby:** Explanations of more advanced programming topics.\n\n**Learning Path**\nThe curriculum progresses from introductory concepts such as \"Hello world,\" basic data types (numbers, strings, hashes, and arrays), and notation conventions, to more complex topics including classes, objects, method definitions, and exception handling.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576732047,
+      "channel": "plan_pipe_da230822e2c2",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 1
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document provides a concise reference for Ruby syntax and core programming structures divided into two primary sections:\n\n**Section [S.2]: Syntax and Data Structures**\nThis section covers the foundational elements of the Ruby language:\n- **Lexical Elements:** Includes identifiers, comments, embedded documentation, and reserved words.\n- **Variables and Scoping:** Defines the hierarchy of variables, ranging from local, instance ($@$), and class ($@@$) variables to global ($$) and constants. It also notes the presence of pseudo-variables and pre-defined variables.\n- **Literals and Collections:** Details syntax for numerics, strings (including interpolation and backslash notation), the $\\%$ notation, command expansion, and regular expressions. It further outlines complex structures like arrays, hashes, ranges, and symbols.\n- **Operators:** Discusses assignment, self-assignment, multiple assignment, conditional assignment, and the logical operators (and, or, not).\n\n**Section [S.3]: Control Flow, Methods, and Classes**\nThis section focuses on the imperative and object-oriented capabilities of Ruby:\n- **Control Structures:** Enumerates branching logic (if, unless, case) and various looping mechanisms (while, until, for, break, next, redo, retry).\n- **Control Modifiers:** Highlights the use of modifiers for if, unless, while, and until statements.\n- **Exception Handling:** Describes the mechanisms for managing errors using raise, begin, and rescue modifiers.\n- **Methods and Iterators:** Explains the usage of return, super, and the yield keyword for implementing iterators.\n- **Object-Oriented Programming:** Outlines class definitions, including the declaration of instance and class variables, class methods, instantiation, and visibility controls using private, public, and protected access modifiers.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576732048,
+      "channel": "plan_pipe_da230822e2c2",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 2,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Ruby Core and Meta-Programming Features\n\nThis section outlines advanced Ruby language features and the structure of its built-in environment:\n\n**1. Meta-programming and Inheritance**\nRuby provides sophisticated meta-programming capabilities, including the ability to manage instance variables within inheritance chains and handle method mixing through modules. The Ruby Class Meta-Model allows for deep introspection, while built-in \"hooks\" enable developers to track and respond to events, such as when new methods are defined at runtime.\n\n**2. Built-in Environment**\nRuby includes a robust set of \"core\" definitions available by default. This infrastructure comprises:\n* **Built-in Functions and Global Variables:** Predefined constants and functions accessible throughout the application.\n* **Core Classes:** A comprehensive library of essential classes, including foundational types such as $Object$, $Array$, $Class$, $Module$, $Numeric$ (and its subclasses $Integer$), $IO$, and $Exception$.\n* **Modules:** Specialized modules like $Enumerable$ and $Comparable$ that provide mixin functionality to enhance class behavior.\n\nFor further technical detail and syntax definitions, referencing the official Ruby documentation for keywords and core APIs is recommended.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576732049,
+      "channel": "plan_pipe_da230822e2c2",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text outlines the structure and resources available for Ruby development, including the standard library, core modules, and external documentation.\n\nKey points include:\n\nThe Ruby Standard Library and Extensions\nRuby includes a vast range of built-in functionality available via the core language or the standard library. Some modules, such as BigDecimal for arbitrary precision, Debugger for stepping through code, and Mutex for thread concurrency, are essential for advanced programming (p. 5). Networking and system interaction are supported by modules like Net::HTTP, Open3, Socket, and Pathname (p. 5). Parsing and code analysis are handled by tools like REXML and Ripper (p. 5).\n\nSpecialized and Platform-Specific Modules\nRuby provides specific support for the Windows environment, including Win32::Registry, Win32API, and WIN32OLE for direct integration with Windows system components (p. 6).\n\nDevelopment and GUI Resources\nDevelopers have access to various GUI toolkits, including Tk, GTK2, and Qt4, to build graphical interfaces (p. 6). Furthermore, the text identifies several auxiliary tools for the Ruby ecosystem, such as Rake for task automation, RubyGems for package management, and frameworks like Rails (p. 6).\n\nDocumentation and Community\nUsers are encouraged to consult the official Ruby homepage, documentation portals, and community mailing lists. There are also resources for learning advanced topics, such as building C extensions, unit testing, and running multiple processes (p. 6).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576732050,
+      "channel": "plan_pipe_da230822e2c2",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as a comprehensive resource collection for learning and mastering the Ruby programming language. The materials are categorized into the following key areas:\n\n**Official and Introductory Tutorials**\n*   **Ruby in Twenty Minutes:** An official quick-start guide for beginners.\n*   **CK-12:** Provides structured online tutorials and interactive practice exercises.\n*   **Why’s (Poignant) Guide to Ruby:** A unique, narrative-driven approach to learning the language.\n\n**Core Reference Books**\n*   **Programming Ruby (The \"Pickaxe\"):** Available in multiple editions covering versions from 1.9 through 3.2, authored by experts including Dave Thomas and Ruby creator Yukihiro Matsumoto.\n*   **The Ruby Programming Language:** An authoritative guide by David Flanagan and Yukihiro Matsumoto.\n*   **Ruby by Example & Humble Little Ruby Book:** Supplementary texts for practical, application-based learning.\n\n**Practical Tools and Quick References**\n*   **Ruby Toolbox:** A directory for identifying actively maintained and popular open-source libraries.\n*   **Flashcards:** Learning aids provided by Yoyobrain for memorizing core concepts.\n*   **Cheat Sheets and Quick References:** Concise collections of syntax and obscure expressions, useful for rapid lookup while coding.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1778576732051,
+      "channel": "plan_pipe_da230822e2c2",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 7,
+        "end": 7
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1778576732137,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "If a developer needs to perform precise decimal calculations to avoid standard floating-point rounding errors, which Ruby standard library module should they utilize?",
+            "options": [
+              "BigDecimal",
+              "Numeric",
+              "Float",
+              "Math"
+            ],
+            "correctIndex": 0,
+            "explanation": "The text explicitly states that BigDecimal provides a way to have arbitrary precision Decimal style numbers so that users never succumb to rounding errors."
+          },
+          {
+            "question": "What is the primary mechanism for accessing functionality within Ruby's standard library modules that are not loaded by default?",
+            "options": [
+              "gem install",
+              "require",
+              "import",
+              "include"
+            ],
+            "correctIndex": 1,
+            "explanation": "The text states that to use parts of the standard library, 'you typically have to require some filename, for example require 'tracer'.'"
+          },
+          {
+            "question": "Which of the following best describes the structural design of the 'Ruby Programming' book outlined in the lesson?",
+            "options": [
+              "It is a singular, non-linear reference manual.",
+              "It is exclusively composed of advanced C-based extensions.",
+              "It is divided into self-contained sections intended to be read sequentially.",
+              "It is a collection of unlinked tutorials aimed only at experts."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text specifies that 'The book is currently broken down into several sections and is intended to be read sequentially' and that 'Each section is designed to be self contained.'"
+          },
+          {
+            "question": "In the context of Ruby's meta-programming features, what capability do 'Ruby Hooks' provide?",
+            "options": [
+              "They allow for the automated downloading of remote gems.",
+              "They allow the program to know when new methods are defined.",
+              "They enable the manual compilation of C extensions.",
+              "They provide a way to bypass the standard class visibility modifiers."
+            ],
+            "correctIndex": 1,
+            "explanation": "The content mentions that 'Ruby Hooks add the ability to know when new methods are defined et al.'"
+          },
+          {
+            "question": "Which module allows a developer to run a sub-process while maintaining easy access to its Input/Output streams?",
+            "options": [
+              "Mutex",
+              "Open3",
+              "Socket",
+              "Profiler"
+            ],
+            "correctIndex": 1,
+            "explanation": "According to the description of available standard library modules, 'Open3 gives you a way to run a sub-process and have easy access to its I/O.'"
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1778576732138,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Who created the Ruby programming language and in what year was it released?",
+            "back": "Yukihiro Matsumoto, also known as 'Matz', released Ruby in 1995."
+          },
+          {
+            "front": "How is the Ruby language defined in terms of programming paradigms?",
+            "back": "Ruby is an interpreted, object-oriented programming language."
+          },
+          {
+            "front": "What does the 'BigDecimal' module in the Ruby standard library provide?",
+            "back": "It provides a way to have arbitrary-precision decimal-style numbers to avoid rounding errors."
+          },
+          {
+            "front": "What is the role of the 'Net::HTTP' module in Ruby?",
+            "back": "It provides a way to download web pages."
+          },
+          {
+            "front": "Which Ruby module is used to parse pure Ruby code into an Abstract Syntax Tree (AST)?",
+            "back": "The 'Ripper' module."
+          },
+          {
+            "front": "What is the purpose of the 'Mutex' module in Ruby?",
+            "back": "It allows developers to control thread concurrency."
+          },
+          {
+            "front": "How do you access built-in modules from the standard library in Ruby?",
+            "back": "By using the 'require' keyword followed by the filename (e.g., require 'tracer')."
+          },
+          {
+            "front": "What is the common nickname for the book 'Programming Ruby' by Dave Thomas?",
+            "back": "The 'Pickaxe' book."
+          },
+          {
+            "front": "What is the primary function of the 'REXML' module?",
+            "back": "It is used to parse XML in pure Ruby."
+          },
+          {
+            "front": "What does 'DRb' (Distributed Ruby) allow an application to do?",
+            "back": "It allows an application to perform remote procedure calls against objects in a different VM."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-programming-languages-tour_9",
+      "slides": [
+        {
+          "title": "Introduction to Ruby Programming",
+          "bullets": [
+            "Created by Yukihiro \"Matz\" Matsumoto in 1995.",
+            "Interpreted, object-oriented programming language.",
+            "Designed for readability and developer productivity."
+          ],
+          "notes": "Ruby is a powerful, flexible language created to make programming fun and efficient. It emphasizes a clean, intuitive syntax for developers.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Syntax and Semantic Foundations",
+          "bullets": [
+            "Comprehensive syntax covers identifiers and variables.",
+            "Includes control structures like loops and conditionals.",
+            "Supports exception handling (p. 3) and method definitions.",
+            "Offers powerful iterators and class definition tools."
+          ],
+          "notes": "The core of Ruby lies in its expressive syntax, handling everything from basic variables to complex class architectures and flow control.",
+          "page_range": "2-3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Classes and Built-in Functions",
+          "bullets": [
+            "Pre-defined built-in classes like Array and IO.",
+            "Supports inheritance and mixing in modules.",
+            "Includes meta-model hooks for advanced behavior monitoring."
+          ],
+          "notes": "Ruby provides a robust core library with predefined classes and functions that support advanced object-oriented features like inheritance and mixins.",
+          "page_range": "4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Standard Library Modules",
+          "bullets": [
+            "Includes utilities for concurrency, XML, and networking.",
+            "BigDecimal ensures precision for sensitive calculations.",
+            "Easily extend functionality using the 'require' method."
+          ],
+          "notes": "The standard library expands Ruby's core capabilities, allowing developers to handle complex tasks like thread management and web interactions effortlessly.",
+          "page_range": "5-6",
+          "image_prompt": ""
+        },
+        {
+          "title": "Learning and Documentation",
+          "bullets": [
+            "Access community-driven tools and cheat sheets.",
+            "Utilize classic texts like the 'Pickaxe' book.",
+            "Find active libraries via the Ruby Toolbox."
+          ],
+          "notes": "A vast ecosystem of tutorials, comprehensive books, and online resources exists to support Ruby developers from beginner to advanced levels.",
+          "page_range": "7",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 10 — Ruby Programming - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1778576732037,
+      "pdfName": "Ruby Programming"
+    }
+  ],
+  "sourceHash": "78f8d12971018412"
+}
