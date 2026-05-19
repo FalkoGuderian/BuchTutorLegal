@@ -1,0 +1,325 @@
+{
+  "version": 1,
+  "schema": "customer-course-index v1",
+  "generated_at": "2026-05-19T20:00:00Z",
+  "description": "Generischer Live-Veranstaltungs-Index fuer kuratierte Anbieter (VHS, Hochschulen, Bildungstraeger, etc.). Phase 1: Demo-Eintraege mit fiktiven Veranstaltungen, thematisch an typischem VHS-Programmangebot orientiert. KEINE echten Kurse — nicht buchbar. Phase 2 integriert echte Programmhefte nach formellem OK des jeweiligen Anbieters.",
+  "is_demo": true,
+  "anbieter_default": "VHS Dresden",
+  "courses": [
+    {
+      "id": "vhs-demo-italienisch-a1",
+      "title": "Italienisch A1 · Kompakter Einstiegskurs",
+      "category": "cat_languages",
+      "category_label_vhs": "Sprachen",
+      "language": "de",
+      "format": "praesenz",
+      "termine": [
+        { "datum": "2026-09-14", "zeit_start": "18:30", "zeit_ende": "20:00", "ort": "Annenstr. 10, Raum 201" }
+      ],
+      "termin_count": 10,
+      "duration_minutes": 90,
+      "duration_total_hours": 15,
+      "dozent": "Lucia Romano",
+      "preis_eur": 145.00,
+      "preis_label": "145,00 €, Ermäßigung möglich",
+      "ermaessigung_moeglich": true,
+      "beschreibung": "Sie lernen die ersten Schritte auf Italienisch: sich vorstellen, im Café bestellen, Wegbeschreibungen verstehen. 10 Termine, Lehrwerk wird in der ersten Stunde empfohlen.",
+      "anmelde_url": "https://www.vhs-dresden.de/",
+      "is_demo": true
+    },
+    {
+      "id": "vhs-demo-spanisch-konversation-b1",
+      "title": "Spanisch Konversation B1 · Reisen und Alltag",
+      "category": "cat_languages",
+      "category_label_vhs": "Sprachen",
+      "language": "de",
+      "format": "online",
+      "termine": [
+        { "datum": "2026-09-23", "zeit_start": "19:00", "zeit_ende": "20:30", "ort": "online" }
+      ],
+      "termin_count": 8,
+      "duration_minutes": 90,
+      "duration_total_hours": 12,
+      "dozent": "Carlos Vega",
+      "preis_eur": 98.00,
+      "preis_label": "98,00 €",
+      "ermaessigung_moeglich": false,
+      "beschreibung": "Konversationskurs für B1-Niveau. Themen: Reisen, Essen, Familie, Beruf. Wir reden viel, korrigieren wenig, ueben in Tandems.",
+      "anmelde_url": "https://www.vhs-dresden.de/",
+      "is_demo": true
+    },
+    {
+      "id": "vhs-demo-english-business-c1",
+      "title": "English Business C1 · Meetings, Mails, Verhandeln",
+      "category": "cat_languages",
+      "category_label_vhs": "Sprachen",
+      "language": "de",
+      "format": "online",
+      "termine": [
+        { "datum": "2026-10-07", "zeit_start": "17:30", "zeit_ende": "19:30", "ort": "online" }
+      ],
+      "termin_count": 6,
+      "duration_minutes": 120,
+      "duration_total_hours": 12,
+      "dozent": "Emma Watson",
+      "preis_eur": 165.00,
+      "preis_label": "165,00 €",
+      "ermaessigung_moeglich": false,
+      "beschreibung": "Praxiskurs fuer Fortgeschrittene mit Berufsbezug. Wir trainieren englische Meeting-Phrasen, professionelle E-Mails und Verhandlungs-Vokabular. Rollenspiele inklusive.",
+      "anmelde_url": "https://www.vhs-dresden.de/",
+      "is_demo": true
+    },
+    {
+      "id": "vhs-demo-yoga-anfaenger",
+      "title": "Yoga für Anfänger · Sanft in die Praxis",
+      "category": "cat_health",
+      "category_label_vhs": "Gesundheit",
+      "language": "de",
+      "format": "praesenz",
+      "termine": [
+        { "datum": "2026-09-10", "zeit_start": "18:00", "zeit_ende": "19:15", "ort": "VHS im O.D.C., Reicker Str. 60" }
+      ],
+      "termin_count": 12,
+      "duration_minutes": 75,
+      "duration_total_hours": 15,
+      "dozent": "Maja Pirsch",
+      "preis_eur": 132.00,
+      "preis_label": "132,00 €, Ermäßigung möglich",
+      "ermaessigung_moeglich": true,
+      "beschreibung": "Einfuehrungskurs ohne Vorkenntnisse. Wir lernen Grundhaltungen, Atemtechnik und Entspannung. Yogamatte und bequeme Kleidung mitbringen.",
+      "anmelde_url": "https://www.vhs-dresden.de/",
+      "is_demo": true
+    },
+    {
+      "id": "vhs-demo-stress-berufsleben",
+      "title": "Stressbewältigung im Berufsleben · Praxis-Workshop",
+      "category": "cat_health",
+      "category_label_vhs": "Gesundheit",
+      "language": "de",
+      "format": "online",
+      "termine": [
+        { "datum": "2026-06-13", "zeit_start": "09:00", "zeit_ende": "16:00", "ort": "online" }
+      ],
+      "termin_count": 1,
+      "duration_minutes": 360,
+      "duration_total_hours": 6,
+      "dozent": "Dr. Annika Bauer",
+      "preis_eur": 89.00,
+      "preis_label": "89,00 €",
+      "ermaessigung_moeglich": false,
+      "beschreibung": "Tagesworkshop. Wir analysieren Stressmuster im Arbeitsalltag, lernen Mini-Pausen-Techniken und uebersetzen das in einen 30-Tage-Plan.",
+      "anmelde_url": "https://www.vhs-dresden.de/",
+      "is_demo": true
+    },
+    {
+      "id": "vhs-demo-excel-crashkurs",
+      "title": "Excel-Crashkurs an einem Tag · (nicht nur) für den Beruf",
+      "category": "cat_cs_tech",
+      "category_label_vhs": "Arbeit – IT – Organisation / Management",
+      "language": "de",
+      "format": "online",
+      "termine": [
+        { "datum": "2026-07-05", "zeit_start": "09:00", "zeit_ende": "16:30", "ort": "online" }
+      ],
+      "termin_count": 1,
+      "duration_minutes": 390,
+      "duration_total_hours": 6.5,
+      "dozent": "Markus Stein",
+      "preis_eur": 79.00,
+      "preis_label": "79,00 €",
+      "ermaessigung_moeglich": false,
+      "beschreibung": "Sie haben einen neuen Job und müssen schnell mit Excel zurechtkommen? Dieser kompakte Tageskurs bringt Sie von Null auf Solide: Formeln, SVERWEIS, Pivot-Tabellen, Diagramme.",
+      "anmelde_url": "https://www.vhs-dresden.de/",
+      "is_demo": true
+    },
+    {
+      "id": "vhs-demo-ki-berufsalltag",
+      "title": "KI im Berufsalltag · Werkzeug-Workshop mit Hands-On",
+      "category": "cat_cs_tech",
+      "category_label_vhs": "Arbeit – IT – Organisation / Management",
+      "language": "de",
+      "format": "praesenz",
+      "termine": [
+        { "datum": "2026-09-25", "zeit_start": "09:00", "zeit_ende": "17:00", "ort": "Annenstr. 10, Raum 305" }
+      ],
+      "termin_count": 1,
+      "duration_minutes": 420,
+      "duration_total_hours": 7,
+      "dozent": "Janine Petermann",
+      "preis_eur": 119.00,
+      "preis_label": "119,00 €",
+      "ermaessigung_moeglich": false,
+      "beschreibung": "Praxis-Workshop fuer Berufstaetige. Wir testen ChatGPT, Claude und perplexity an realen Arbeitsaufgaben: E-Mails formulieren, Recherchen verdichten, Praesentationen vorbereiten. Bring dein Notebook mit.",
+      "anmelde_url": "https://www.vhs-dresden.de/",
+      "is_demo": true
+    },
+    {
+      "id": "vhs-demo-bewerbungstraining-50plus",
+      "title": "Bewerbungstraining 50+ · Wieder in den Arbeitsmarkt",
+      "category": "cat_business",
+      "category_label_vhs": "Arbeit – IT – Organisation / Management",
+      "language": "de",
+      "format": "praesenz",
+      "termine": [
+        { "datum": "2026-06-23", "zeit_start": "10:00", "zeit_ende": "16:00", "ort": "VHS im O.D.C., Reicker Str. 60" }
+      ],
+      "termin_count": 3,
+      "duration_minutes": 360,
+      "duration_total_hours": 18,
+      "dozent": "Thomas Wünsche",
+      "preis_eur": 145.00,
+      "preis_label": "145,00 €, Ermäßigung möglich",
+      "ermaessigung_moeglich": true,
+      "beschreibung": "Drei Tage gezieltes Bewerbungstraining fuer Menschen jenseits der 50. Schwerpunkte: Lebenslauf modernisieren, Vorstellungsgespraech ueben, mit Altersbias konstruktiv umgehen.",
+      "anmelde_url": "https://www.vhs-dresden.de/",
+      "is_demo": true
+    },
+    {
+      "id": "vhs-demo-aquarell-einstieg",
+      "title": "Aquarell für Einsteiger · Landschaft und Stadt",
+      "category": "cat_arts",
+      "category_label_vhs": "Kultur – Gestalten",
+      "language": "de",
+      "format": "praesenz",
+      "termine": [
+        { "datum": "2026-09-17", "zeit_start": "18:30", "zeit_ende": "21:00", "ort": "Annenstr. 10, Atelier 4" }
+      ],
+      "termin_count": 8,
+      "duration_minutes": 150,
+      "duration_total_hours": 20,
+      "dozent": "Helene Schubert",
+      "preis_eur": 168.00,
+      "preis_label": "168,00 €, Ermäßigung möglich",
+      "ermaessigung_moeglich": true,
+      "beschreibung": "Wir tauchen ein in die Aquarellmalerei: Farbverlauefe, Nass-in-Nass, einfache Komposition. Schwerpunkt im Kurs: Dresdner Stadtansichten und Heideland.",
+      "anmelde_url": "https://www.vhs-dresden.de/",
+      "is_demo": true
+    },
+    {
+      "id": "vhs-demo-fotografie-grundlagen",
+      "title": "Fotografie-Grundlagen · Vom Knipsen zum bewussten Bild",
+      "category": "cat_arts",
+      "category_label_vhs": "Kultur – Gestalten",
+      "language": "de",
+      "format": "hybrid",
+      "termine": [
+        { "datum": "2026-06-08", "zeit_start": "18:00", "zeit_ende": "20:30", "ort": "Annenstr. 10 · Raum 102 + online" }
+      ],
+      "termin_count": 6,
+      "duration_minutes": 150,
+      "duration_total_hours": 15,
+      "dozent": "Felix Haase",
+      "preis_eur": 142.00,
+      "preis_label": "142,00 €",
+      "ermaessigung_moeglich": false,
+      "beschreibung": "Sechs Abende, drei davon online (Bildbesprechung), drei in Praesenz (Stadtspaziergang mit Kamera). Grundlagen Belichtung, Komposition, Licht.",
+      "anmelde_url": "https://www.vhs-dresden.de/",
+      "is_demo": true
+    },
+    {
+      "id": "vhs-demo-ki-demokratie",
+      "title": "KI und Demokratie · Was bedeutet das fuer unsere Gesellschaft?",
+      "category": "cat_humanities",
+      "category_label_vhs": "Politik – Gesellschaft – Umwelt",
+      "language": "de",
+      "format": "online",
+      "termine": [
+        { "datum": "2026-05-28", "zeit_start": "19:00", "zeit_ende": "20:30", "ort": "online" }
+      ],
+      "termin_count": 1,
+      "duration_minutes": 90,
+      "duration_total_hours": 1.5,
+      "dozent": "Prof. Dr. Lena Riemer",
+      "preis_eur": 0.00,
+      "preis_label": "gebührenfrei",
+      "ermaessigung_moeglich": false,
+      "beschreibung": "Vortrag mit anschliessender Diskussion. Wer kontrolliert die KI-Modelle, die unsere Informationen filtern? Was bedeutet das fuer Wahlen, Journalismus, oeffentliche Debatte?",
+      "anmelde_url": "https://www.vhs-dresden.de/",
+      "is_demo": true
+    },
+    {
+      "id": "vhs-demo-mediation-alltag",
+      "title": "Mediation im Alltag · Konflikte konstruktiv loesen",
+      "category": "cat_humanities",
+      "category_label_vhs": "Politik – Gesellschaft – Umwelt",
+      "language": "de",
+      "format": "praesenz",
+      "termine": [
+        { "datum": "2026-10-11", "zeit_start": "10:00", "zeit_ende": "17:00", "ort": "Annenstr. 10, Raum 201" }
+      ],
+      "termin_count": 2,
+      "duration_minutes": 420,
+      "duration_total_hours": 14,
+      "dozent": "Anne Harbig",
+      "preis_eur": 195.00,
+      "preis_label": "195,00 €, Ermäßigung möglich",
+      "ermaessigung_moeglich": true,
+      "beschreibung": "Zwei-Tages-Workshop. Wir ueben aktives Zuhoeren, Reframing, gewaltfreie Kommunikation an realen Fallbeispielen. Fuer Mitarbeitende im sozialen Bereich, Eltern, Fuehrungskraefte.",
+      "anmelde_url": "https://www.vhs-dresden.de/",
+      "is_demo": true
+    },
+    {
+      "id": "vhs-demo-vegetarisch-kochen",
+      "title": "Vegetarisch kochen für Anfänger · Asiatische Aromen",
+      "category": "cat_health",
+      "category_label_vhs": "Gesundheit",
+      "language": "de",
+      "format": "praesenz",
+      "termine": [
+        { "datum": "2026-06-19", "zeit_start": "18:00", "zeit_ende": "21:30", "ort": "Lehrkueche, VHS im O.D.C." }
+      ],
+      "termin_count": 1,
+      "duration_minutes": 210,
+      "duration_total_hours": 3.5,
+      "dozent": "Min-Joo Kim",
+      "preis_eur": 49.00,
+      "preis_label": "49,00 € zzgl. 12 € Lebensmittelumlage",
+      "ermaessigung_moeglich": false,
+      "beschreibung": "Wir kochen gemeinsam vier Gerichte aus Korea, Vietnam und Thailand — alles vegetarisch. Anschliessend essen wir gemeinsam. Lebensmittelumlage 12 € bar vor Ort.",
+      "anmelde_url": "https://www.vhs-dresden.de/",
+      "is_demo": true
+    },
+    {
+      "id": "vhs-demo-eltern-kind-yoga",
+      "title": "Eltern-Kind-Yoga · Bewegung fuer 4-7-Jaehrige mit Begleitperson",
+      "category": "cat_health",
+      "category_label_vhs": "Gesundheit",
+      "language": "de",
+      "format": "praesenz",
+      "termine": [
+        { "datum": "2026-09-12", "zeit_start": "10:00", "zeit_ende": "11:00", "ort": "VHS im O.D.C., Reicker Str. 60" }
+      ],
+      "termin_count": 6,
+      "duration_minutes": 60,
+      "duration_total_hours": 6,
+      "dozent": "Susanne Bachmann",
+      "preis_eur": 78.00,
+      "preis_label": "78,00 € pro Eltern-Kind-Paar",
+      "ermaessigung_moeglich": false,
+      "beschreibung": "Sechs Samstagvormittage. Kind und Bezugsperson erleben gemeinsam Bewegung, Atemspiele und kleine Entspannungs-Geschichten. Decke und bequeme Kleidung mitbringen.",
+      "anmelde_url": "https://www.vhs-dresden.de/",
+      "is_demo": true
+    },
+    {
+      "id": "vhs-demo-smartphone-senioren",
+      "title": "Smartphone für Senioren · Schritt für Schritt sicher unterwegs",
+      "category": "cat_education",
+      "category_label_vhs": "Grundbildung",
+      "language": "de",
+      "format": "praesenz",
+      "termine": [
+        { "datum": "2026-06-04", "zeit_start": "14:00", "zeit_ende": "16:30", "ort": "Annenstr. 10, Raum 102" }
+      ],
+      "termin_count": 4,
+      "duration_minutes": 150,
+      "duration_total_hours": 10,
+      "dozent": "Petra Lehmann",
+      "preis_eur": 56.00,
+      "preis_label": "56,00 €, Ermäßigung möglich",
+      "ermaessigung_moeglich": true,
+      "beschreibung": "Vier Nachmittage in entspanntem Tempo. Wir lernen Telefonieren, WhatsApp, Foto-App, Apotheken-App und sicheres Verhalten gegen Betrugsversuche. Eigenes Smartphone mitbringen.",
+      "anmelde_url": "https://www.vhs-dresden.de/",
+      "is_demo": true
+    }
+  ]
+}
