@@ -3,28 +3,15 @@
   "version": 1,
   "pipelineVersion": 3,
   "lesson": {
-    "name": "Time Series Analysis and Classification Methods - Lesson 2 — RTG Classification Methods",
-    "pdfName": "RTG: Classification Methods",
-    "createdAt": 1778512773039,
-    "exportedAt": "2026-05-11T15:19:33.040Z",
+    "name": "Time Series Analysis and Classification Methods - Lesson 3: Linear Regression Using R (Lilja)",
+    "pdfName": "Linear Regression Using R (Lilja)",
+    "createdAt": 1779384936738,
+    "exportedAt": "2026-05-21T17:35:36.738Z",
     "meta": {
       "courseId": "course-en-time-series-and-classification",
       "lessonIndex": 1,
       "courseTitle": "Time Series Analysis and Classification Methods",
-      "lessonObjective": "RTG Classification Methods",
-      "licensing": {
-        "effective_license": "CC-BY-4.0",
-        "sources": [
-          {
-            "content_id": "local-newbooks-8d90f61dcaaa071f",
-            "title": "RTG Classification Methods",
-            "source": "local-newbooks",
-            "license": "CC-BY-4.0",
-            "license_url": "https://creativecommons.org/licenses/by/4.0/",
-            "url": "local://newbooks/2026-05-13/Time Series Analysis and Classification Methods/Lesson 2 RTG Classification Methods.pdf"
-          }
-        ]
-      }
+      "lessonObjective": "Linear Regression Using R (Lilja)"
     }
   },
   "plans": [
@@ -39,31 +26,49 @@
       "tasks": [
         {
           "action": "zusammenfassung",
-          "pages": "1-2",
-          "chapterTitle": "Basic Background of SVM",
+          "pages": "1-12",
+          "chapterTitle": "Introduction to Linear Regression Modeling",
           "status": "done"
         },
         {
           "action": "zusammenfassung",
-          "pages": "2-3",
-          "chapterTitle": "Hard Margin Optimization",
+          "pages": "13-20",
+          "chapterTitle": "Understanding and Organizing Data",
           "status": "done"
         },
         {
           "action": "zusammenfassung",
-          "pages": "3-4",
-          "chapterTitle": "Soft Margin",
+          "pages": "21-29",
+          "chapterTitle": "One-Factor Regression Analysis",
           "status": "done"
         },
         {
           "action": "zusammenfassung",
-          "pages": "4-5",
-          "chapterTitle": "Kernel Method",
+          "pages": "30-50",
+          "chapterTitle": "Multi-factor Regression Modeling",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "51-60",
+          "chapterTitle": "Predicting System Responses",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "61-64",
+          "chapterTitle": "Reading Data into R",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "65-68",
+          "chapterTitle": "Summary and Future Exercises",
           "status": "done"
         }
       ],
       "status": "done",
-      "created": 1778512773039,
+      "created": 1779384936738,
       "pinned": false,
       "completedSteps": [],
       "statusDismissed": true
@@ -72,78 +77,123 @@
   "messages": [
     {
       "role": "bot",
-      "content": "This summary covers the fundamentals of Support Vector Machines (SVM) as detailed in the provided document.\n\n### **1. Hard Margin SVM**\nThe objective of SVM is to find a hyperplane ($w^Tx + b = 0$) that separates two classes ($y \\in \\{-1, 1\\}$) while maximizing the margin (the distance from the hyperplane to the nearest observations).\n*   **Optimization:** The problem is formulated to maximize the margin, equivalent to minimizing $\\frac{1}{2}w^Tw$ subject to $y_i(w^Tx_i + b) \\geq 1$ (p. 1-2).\n*   **Dual Solution:** By using Lagrange multipliers ($\\alpha$), the problem is transformed into a dual objective function dependent only on the inner products of the input vectors (p. 2).\n\n### **2. Soft Margin SVM**\nTo handle real-world data that is not perfectly separable, the \"Soft Margin\" approach introduces slack variables ($\\varepsilon_i$) and a tuning parameter ($C$) (p. 3).\n*   **Trade-off:** The parameter $C$ controls the trade-off between maximizing the margin and minimizing misclassification (p. 3).\n*   **Dual Constraints:** The dual optimization remains similar to the hard margin case, but with an added upper-bound constraint on the Lagrange multipliers: $0 \\leq \\alpha_i \\leq C$ (p. 4).\n\n### **3. The Kernel Method**\nWhen data is not linearly separable, SVM projects data into a higher-dimensional space using a feature mapping function $\\phi(x)$ (p. 4).\n*   **Kernel Trick:** Because calculating the inner product in high-dimensional space is computationally expensive, a Kernel function $K(x_i, x_j) = \\langle\\phi(x_i), \\phi(x_j)\\rangle$ is used to compute the inner product directly in the original space (p. 4-5).\n*   **Common Kernels:**\n    *   **Polynomial Kernel:** $K(x_i, x_j) = (x_i^Tx_j)^d$ (p. 5)\n    *   **Gaussian (RBF) Kernel:** $K(x_i, x_j) = \\exp(-\\frac{||x_i - x_j||^2}{2\\sigma^2})$ (p. 5)\n\n### **Key Takeaway**\nSVM models provide a powerful framework for classification by focusing on the \"support vectors\"—those observations that define the boundary. By utilizing dual variables and kernel functions, SVMs can efficiently find optimal decision boundaries even in complex, non-linear feature spaces (p. 2-5).",
+      "content": "Based on the provided text from \"Linear Regression Using R\" by David Lilja, here is a concise summary of the introductory materials and the foundational approach to data modeling.\n\n### **Summary: Introduction to Linear Regression & Data Preparation**\n\n#### **1. Regression Modeling Fundamentals**\n*   **Definition:** Regression modeling is the process of creating a mathematical function from measured data to explain an output value based on a set of input values ([S.7], [S.8]).\n*   **Linear Regression:** A specific subset of regression that assumes the output can be expressed as a linear combination of input parameters ([S.7], [S.9]).\n*   **Goals:** Primarily used to understand the relationship between inputs and outputs (e.g., assessing which variables most impact performance) and to perform predictions for systems with unmeasured input values ([S.9], [S.10]).\n\n#### **2. The Role of R**\n*   **Environment:** R is an open-source, object-oriented language and environment specifically built for statistical computing and data analysis ([S.11]).\n*   **Strengths:** It handles vectors and matrices efficiently, provides excellent graphical capabilities, and allows for interactive analysis without requiring a full program structure ([S.11]).\n*   **Usage:** The book focuses on utilizing R as an investigative tool, where the user explores data and models interactively rather than exclusively through rigid programming ([S.11]).\n\n#### **3. Data Integrity and Management**\n*   **Quality Control:** Data quality is paramount; flawed data leads to flawed models (\"garbage in, garbage out\"). Practitioners should perform sanity checks on input variables to identify potential errors ([S.13], [S.15]).\n*   **Handling Missing Values:** Large datasets often contain incomplete entries represented by `NA` in R. Functions—such as `mean()`—must be explicitly directed to handle these (e.g., `na.rm=TRUE`) ([S.14]).\n*   **Data Frames:** The primary storage mechanism for tables in R is the **data frame**. It allows for heterogeneous data types (numeric and textual) within the same structure, making it ideal for managing complex measurement data like the CPU DB examples used in the text ([S.17]).\n\n#### **4. Modeling Workflow**\n1.  **Understand the Data:** Verify provenance and perform cleaning/sanity checks ([S.13]).\n2.  **Model Development:** Begin with simple one-factor models (Chapter 3) before progressing to multi-factor regression (Chapter 4) ([S.12]).\n3.  **Validation & Tuning:** Use residual analysis to evaluate fit and refine inputs (e.g., identifying irrelevant predictors to exclude) ([S.12]).\n4.  **Prediction:** Apply the validated model to predict responses for new, unseen data ([S.12]).",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Summary",
-      "timestamp": 1778512773039,
+      "timestamp": 1779384936738,
       "channel": "general"
     },
     {
       "role": "bot",
-      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-time-series-and-classification_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 2 — RTG Classification Methods - Presentation</span><span class=\"pm-chat-count\">4 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">RTG Classification Methods</div><ul class=\"pm-chat-slide-bullets\"><li>Introduction to Support Vector Machines (SVM).</li><li>Core principles of geometric data separation.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-time-series-and-classification_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 3: Linear Regression Using R (Lilja) - Presentation</span><span class=\"pm-chat-count\">8 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Linear Regression Using R</div><ul class=\"pm-chat-slide-bullets\"><li>Introduction to data modeling with R</li><li>Focus on linear regression techniques</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Presentation",
-      "timestamp": 1778512773040,
+      "timestamp": 1779384936739,
       "channel": "general"
     },
     {
       "role": "bot",
-      "content": "The Support Vector Machine (SVM) aims to find a hyperplane $w^Tx+b=0$ that separates two classes ($y_i \\in \\{-1, 1\\}$) while maximizing the distance (margin) between the hyperplane and the nearest observations ([S.1]).\n\n**Key Optimization Steps:**\n\n1. **Primal Formulation:** The goal is to maximize the margin, which leads to the equivalent constrained optimization problem: \nMinimize $\\frac{1}{2}w^Tw$ subject to $y_i(w^Tx_i+b) \\geq 1$ for all $i$ ([S.1], [S.2]).\n\n2. **Dual Formulation:** To solve this efficiently, the method of Lagrange multipliers is used to convert the primal problem into a dual problem. By introducing multipliers $\\alpha_i \\geq 0$, we formulate the Lagrangian $L(w,b,\\alpha) = \\frac{1}{2}w^Tw - \\sum \\alpha_i[y_i(w^Tx_i+b) - 1]$ ([S.2]).\n\n3. **Solving the Dual:** By setting the partial derivatives of $L$ with respect to $w$ and $b$ to zero, we derive:\n$w = \\sum_{i=1}^{n} \\alpha_i y_i x_i$ and $\\sum_{i=1}^{n} \\alpha_i y_i = 0$ ([S.2]).\n\n4. **Simplified Dual Problem:** Substituting these back yields the final dual objective function to maximize:\nMaximize $W(\\alpha) = \\sum_{i=1}^{n} \\alpha_i - \\frac{1}{2} \\sum_{i,j=1}^{n} y_i y_j \\alpha_i \\alpha_j \\langle x_i, x_j \\rangle$ subject to $\\sum \\alpha_i y_i = 0$ and $\\alpha_i \\geq 0$ ([S.2]).\n\nThis convex optimization problem is typically solved using the SMO algorithm to determine the values for $\\alpha$, which subsequently allow for the calculation of the optimal $w$ and $b$ ([S.2]).",
+      "content": "This document provides an introduction to regression modeling using the R statistical environment, based on the text by David Lilja.\n\n**Overview of Regression Modeling**\nRegression modeling is a mathematical technique used to explain an output value based on a set of input values derived from measured data [S.7, S.8]. Linear regression specifically assumes that the output can be expressed as a linear combination of these inputs [S.7]. The primary goal of this modeling is to predict outputs for new, unseen input configurations, helping to understand the relationship between variables [S.8, S.9].\n\n**Core Concepts and Terminology**\nThe data structure typically consists of $n$ rows of observations. Each row contains:\nIndependent variables (Inputs): Parameters controlled or measured during an experiment [S.9].\nDependent variable (Output/Response): The measured result or performance metric [S.9].\n\nThe model is defined by a function:\n$performance = f(Clock, Cache, Transistors)$ [S.9]\n\n**The R Computing Environment**\nR is an open-source, object-oriented language designed for statistical computing and data analysis [S.11]. It utilizes vectors and matrices as its basic operands, making it highly efficient for handling large datasets [S.11]. The environment supports interactive data exploration, allowing users to perform statistical functions without needing to write complex programs from scratch [S.11].\n\n**Workflow Roadmap**\nThe text outlines a systematic approach to data modeling [S.12]:\n1. Understanding and cleaning data (Chapters 2, 6).\n2. Developing one-factor regression models (Chapter 3).\n3. Utilizing multi-factor regression for complex systems (Chapter 4).\n4. Applying models to predict outcomes for new data sets (Chapter 5).\n5. Refining the process through analysis of residuals and diagnostic testing (Chapters 4, 7, 8) [S.4, S.12].",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Summary",
-      "timestamp": 1778512773049,
+      "timestamp": 1779384936748,
       "channel": "plan_pipe_5365f97dd46c",
       "planStep": 1,
       "planAction": "zusammenfassung",
       "contextRef": {
         "type": "range",
         "start": 1,
-        "end": 2
+        "end": 12
       }
     },
     {
       "role": "bot",
-      "content": "The provided text details the derivation of Support Vector Machines (SVM), covering both Hard Margin and Soft Margin formulations [S.2, S.3].\n\nHard Margin SVM\nThe goal is to find an optimal hyperplane that maximizes the margin between binary classes, which is equivalent to solving the following optimization problem [S.2]:\nMinimize: $\\frac{1}{2}w^Tw$\nSubject to: $y_i(w^Tx_i+b) \\geq 1, i = 1, \\ldots, n$\n\nBy using Lagrange multipliers, this primal problem is converted into a dual problem to simplify computation [S.2]:\nMaximize: $W(\\alpha) = \\sum_{i = 1}^{n}\\alpha_i - \\frac{1}{2}\\sum_{i,j=1}^{n}y_iy_j\\alpha_i\\alpha_j\\langle x_i,x_j \\rangle$\nSubject to: $\\sum_{i = 1}^{n}\\alpha_iy_i = 0$ and $\\alpha_i \\geq 0$\n\nSoft Margin SVM\nTo handle data that cannot be perfectly separated, slack variables $\\varepsilon_i$ and a cost parameter $C$ are introduced to allow for misclassifications [S.3]. The primal optimization problem becomes:\nMinimize: $\\frac{1}{2}w^Tw + C\\sum_{i = 1}^{n}\\varepsilon_i$\nSubject to: $y_i(w^Tx_i+b) \\geq 1 - \\varepsilon_i$ and $\\varepsilon_i \\geq 0$\n\nIn this formulation, $C$ serves as a tuning parameter to balance the maximization of the margin against the penalty incurred by misclassified points [S.3]. Similar to the hard margin case, this is solved via the dual space using the Karush-Kuhn-Tucker (KKT) conditions, where the gradient is set to zero to derive optimal parameters [S.3].",
+      "content": "This section covers the essential preliminary steps for regression modeling, focusing on data quality and management within the R environment.\n\n### Data Reliability and Cleaning\nHigh-quality data is foundational to accurate modeling, adhering to the \"garbage in, garbage out\" principle. Because data is often incomplete, R represents missing entries as $NA$. Functions usually handle these values gracefully, but you may need to specify $na.rm=TRUE$ in functions like $mean()$ to avoid errors (p. 14). \n\nData cleaning involves sanity checks, such as identifying unreasonable values or transcription errors. While one should remove clear errors, you must be cautious not to discard data that represents genuine, albeit unexpected, phenomena (p. 15).\n\n### Data Frames in R\nR uses data frames to store data as tables where rows represent observations and columns represent variables. Because data frames are heterogeneous, they can store different data types simultaneously (p. 17).\n\n### Accessing and Manipulating Data\nYou can access specific data points or entire columns in several ways:\n1. Square Bracket Notation: Using `df[row, column]` or `df[,\"col_name\"]` (p. 19).\n2. The $ Operator: Using `df$column_name` is a more concise alternative for accessing specific data columns (p. 20).\n3. The attach Function: Using `attach(df)` makes columns available by name directly, though you must `detach(df)` before switching focus to a different data frame (p. 20).\n\nThese methods allow for efficient computation of statistical metrics such as the mean, standard deviation, minimum, and maximum of your variables (p. 19-20).",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Summary",
-      "timestamp": 1778512773050,
+      "timestamp": 1779384936749,
       "channel": "plan_pipe_5365f97dd46c",
       "planStep": 2,
       "planAction": "zusammenfassung",
       "contextRef": {
         "type": "range",
-        "start": 2,
-        "end": 3
+        "start": 13,
+        "end": 20
       }
     },
     {
       "role": "bot",
-      "content": "This text covers the mathematical formulation of Soft Margin Support Vector Classifiers and the introduction of the Kernel Method.\n\n**Soft Margin Optimization**\nWhen data is not perfectly linearly separable, slack variables $\\varepsilon_i$ are introduced to allow for some misclassifications. The model minimizes a cost function consisting of the norm of the weights and a penalty term for misclassification, controlled by the tuning parameter $C$:\n\n$$\\text{minimize } \\frac{1}{2}w^Tw + C\\sum_{i=1}^{n}\\varepsilon_i$$\n\nSubject to the constraints $y_i(w^Tx_i+b) \\geq 1 - \\varepsilon_i$ and $\\varepsilon_i \\geq 0$ (p. 3). By converting this to the dual problem using Lagrange multipliers, the optimization simplifies to solving for $\\alpha_i$ (p. 3-4):\n\n$$\\text{maximize } \\sum\\limits_{i=1}^{n} \\alpha_{i} - \\frac{1}{2}\\sum\\limits_{i=1}^{n}\\sum\\limits_{j=1}^{n} \\alpha_{i}\\alpha_{j}y_{i}y_{j}{x}_{i}^T{x}_{j}$$\n\nSubject to $\\sum y_i \\alpha_i = 0$ and $0 \\leq \\alpha_i \\leq C$ (p. 4).\n\n**Kernel Method**\nWhen data is not linearly separable even with a soft margin, a feature mapping $\\phi: \\mathbb{R}^p \\to \\mathbb{R}^m$ is used to project the data into a higher-dimensional space where a linear hyperplane can separate the classes (p. 4). Because the optimization depends only on the pairwise inner products of the data, the computation can be simplified by replacing the standard inner product with a kernel function that calculates the inner product in the mapped space without needing to explicitly compute $\\phi(x)$ (p. 4).",
+      "content": "This section outlines the process of building and evaluating a one-factor linear regression model, which identifies the relationship between one predictor variable and an output response [S.21].\n\n**Modeling Process**\nThe process begins by visualizing the data via a scatter plot to confirm a roughly linear relationship between the input and output [S.22]. Researchers then use the R function $lm()$ to calculate the model using the method of least squares, which minimizes the distance between data points and the regression line [S.23]. The resulting model follows the mathematical form:\n$y = a_0 + a_1 x$\nIn the provided example, this is expressed as $perf = 51.7871 + 0.5863 * clock$ [S.24].\n\n**Evaluating Model Quality**\nAfter constructing the model, the $summary()$ function is used to assess its quality through several key metrics [S.25]:\n1. Residuals: These represent the differences between observed and predicted values. A well-fit model should have residuals distributed normally around a mean of zero [S.25].\n2. Coefficients: The standard error of the coefficients should be significantly smaller than the coefficient value itself to indicate reliability. The p-value, or $Pr(>|t|)$, indicates whether a predictor is statistically relevant [S.26].\n3. Multiple R-squared: This value, ranging from 0 to 1, indicates the percentage of data variation explained by the model [S.26].\n\n**Residual Analysis**\nTo further validate the model, analysts perform residual analysis to check for patterns that might suggest the model is insufficient [S.28]:\n1. Residual Plot: By plotting residuals against fitted values, one can check for uniform scattering around zero. Clear trends or patterns in this plot indicate that the model needs improvement [S.28].\n2. Q-Q Plot: Using $qqnorm()$ and $qqline()$, researchers determine if residuals are normally distributed. Significant divergence from the straight line in a Q-Q plot suggests that the residuals are not Gaussian, implying that additional predictors may be required to improve model accuracy [S.29].",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Summary",
-      "timestamp": 1778512773051,
+      "timestamp": 1779384936750,
       "channel": "plan_pipe_5365f97dd46c",
       "planStep": 3,
       "planAction": "zusammenfassung",
       "contextRef": {
         "type": "range",
-        "start": 3,
-        "end": 4
+        "start": 21,
+        "end": 29
       }
     },
     {
       "role": "bot",
-      "content": "This document explains the transition from linear Support Vector Machines (SVM) to the Kernel Method for classifying non-linearly separable data.\n\n**The Dual Optimization Problem**\nWhen solving for the optimal hyperplane, the problem is expressed in its dual Lagrangian form. The goal is to maximize the objective function involving pairwise inner products of data points $x_i$ and $x_j$, subject to constraints on the Lagrange multipliers $\\alpha_i$ (p. 4).\n\n**The Kernel Trick**\nWhen data is not linearly separable, it can be projected into a higher-dimensional feature space using a mapping function $\\phi(x)$. Mapping data allows for linear separation in the new space. However, explicitly computing $\\phi(x)$ for high-dimensional spaces is computationally expensive. The Kernel Method avoids this by substituting the inner product of mapped features with a Kernel function $K(x_i, x_j) = \\langle\\phi(x_i), \\phi(x_j)\\rangle$ (p. 4, 5).\n\n**Hyperplane and Decision Rules**\nUsing the kernel function, the hyperplane weight vector is represented as $w = \\sum_{i=1}^{n}\\alpha_iy_i\\phi(x_i)$. The decision rule for classifying a new observation $x$ is determined by the sign of the result: \n$g(x) = \\sum_{i=1}^{n}\\alpha_iy_i K(x_i, x) + b$ (p. 5).\n\n**Common Kernels**\nTwo widely used kernel functions for mapping data into different spaces are:\n1. Polynomial Kernel: $K(x_i, x_j) = (x_i^Tx_j)^d$\n2. Gaussian Kernel: $K(x_i, x_j) = \\exp{-\\frac{||x_i- x_j||^2}{2\\sigma^2}}$ (p. 5)",
+      "content": "This chapter introduces multi-factor regression, a generalization of simple one-factor regression used to model systems with multiple input variables (p. [S.30]).\n\n### Key Concepts in Multi-factor Regression\n\n1. Data Visualization and Preprocessing: Before building a model, it is helpful to use tools like $pairs()$ to identify potential relationships between variables. Rescaling target variables (such as transforming $perf$ to $nperf$) can improve consistency without altering the underlying model structure (p. [S.31]).\n\n2. Predictor Selection: Selecting the right predictors is a balance between model complexity and accuracy. Including too many predictors leads to over-fitting, where the model captures random noise rather than the system's true behavior. Conversely, too few predictors can result in bias (p. [S.32]).\n\n3. Evaluating Model Quality: While $R^2$ measures how well a model fits the data, $adjusted R^2$ is preferred because it compensates for the number of predictors in the model, providing a better indicator of which variables truly improve model fit (p. [S.32]).\n\n4. Domain Expertise: Statistical methods should be supplemented by physical intuition. For example, identifying that $TDP$ is a cooling specification rather than a performance driver, or acknowledging that cache miss rates are proportional to the square root of cache size, allows developers to ignore irrelevant data and include non-linear terms where physically appropriate (p. [S.32], [S.33]).\n\n5. The Backward Elimination Process: This systematic approach starts by including all potential predictors and iteratively removing the variable with the highest non-significant p-value (typically above a threshold like 0.05). The $update()$ function in R allows for the efficient removal of these predictors and re-computation of the model (p. [S.34], [S.36]).\n\n6. Practical Implementation: When executing regression in R, missing data (NA values) is automatically handled by excluding those specific rows, which affects the model's degrees of freedom. Monitoring residuals and $adjusted R^2$ throughout the elimination process helps ensure the final model remains both statistically sound and physically meaningful (p. [S.36]).",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Summary",
-      "timestamp": 1778512773052,
+      "timestamp": 1779384936751,
       "channel": "plan_pipe_5365f97dd46c",
       "planStep": 4,
       "planAction": "zusammenfassung",
       "contextRef": {
         "type": "range",
-        "start": 4,
-        "end": 5
+        "start": 30,
+        "end": 50
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines the principles of using regression modeling for prediction and evaluating model performance through training and testing processes.\n\n**Key Components of Predictive Modeling**\n\n*   **Goal of Prediction:** The primary objective is to estimate system responses for input values not present in the original training data (p. 51).\n*   **Coefficient Estimation:** Because models are built on measured data, the resulting coefficients and subsequent predictions are inherently estimates rather than exact values (p. 51).\n\n**Model Evaluation Techniques**\n\n*   **Data Splitting:** To avoid biased evaluation (like \"copying exam answers\"), data should be divided into a training set and a testing set. The model is built using the training set, and its predictive accuracy is assessed using the testing set (p. 52).\n*   **Quantifying Accuracy:** Accuracy is assessed by calculating the difference ($\\Delta$) between predicted and measured values, defined as:\n$$\\Delta = \\text{Predicted}_i - \\text{Measured}_i$$\nA t-test on the $\\Delta$ values is used to compute a confidence interval. A model is considered reasonably good if this interval is tight and includes zero (p. 53, 54).\n*   **Visualizing Performance:** Scatter plots of $\\Delta$ values provide a visual check; good models exhibit a tight distribution of points uniformly scattered around zero (p. 54).\n\n**Practical Considerations**\n\n*   **Reproducibility:** Since random sampling is used to partition data, results can change between runs. Repeated testing is necessary to ensure findings are consistent rather than accidental (p. 54).\n*   **Cross-Data Testing:** Using a model to predict results in different, related contexts (e.g., predicting Fp2000 performance using an Int2000 model) helps determine the model's robustness (p. 56).\n*   **Model Limitations:** Even if a model performs well on one data set, it may fail on another if the underlying factors influencing the system change, such as when comparing different generations of benchmarks (e.g., Int2000 vs. Int2006) (p. 57, 58).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779384936752,
+      "channel": "plan_pipe_5365f97dd46c",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 51,
+        "end": 60
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section outlines how to import and structure data in the R environment for regression modeling, emphasizing the following key points:\n\nData Import and Cleaning\nReading data into R is often the most challenging aspect of model development due to \"messy\" data. Before modeling, users must perform data cleaning to address inconsistent formats and missing values. The primary function for reading comma-separated values is $read.csv()$, which converts file records into a structured R data frame (p. 61, 62).\n\nData Inspection\nAfter importing data, users can use the $head()$ function to view the column headings and the first few rows of the data frame to determine which variables are relevant for their specific model (p. 62).\n\nCustom Function Development\nR allows for the creation of user-defined functions to automate repetitive tasks. A function is defined using the syntax: \n$function-name <- function(a1, a2, ...) \\{ R expressions return(object) \\}$ (p. 62).\n\nData Extraction Logic\nThe text introduces two helper functions to manage complex datasets:\n1. $extract_data()$: Assembles a new data frame consisting of specific predictor variables and normalized performance metrics ($nperf = 100 * (perf - min\\_perf) / range$). It uses $paste()$ for string manipulation to identify column names and calls $get_column()$ to retrieve necessary data (p. 63).\n2. $get_column()$: Uses the $is.na()$ function combined with the logical NOT operator (!) to filter out missing entries from the dataset, ensuring only rows with valid performance records are extracted (p. 64).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779384936753,
+      "channel": "plan_pipe_5365f97dd46c",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 61,
+        "end": 64
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This text outlines the fundamental stages for developing a linear regression model using the R programming environment and provides practical exercises for application.\n\n**Key Steps in Linear Regression Modeling**\n\n1. Data Preparation: Import raw data into an R data frame. This may require writing custom functions to parse files and ensure proper formatting [S.65].\n\n2. Data Validation: Perform sanity checks to ensure data integrity. This includes calculating descriptive statistics (mean, min, max, standard deviation), identifying suspicious outliers, verifying the frequency of categorical variables, and checking for missing values ($NA$) [S.65].\n\n3. Visualization: Plot data to identify patterns and ensure the assumption of a linear relationship is valid. The $pairs()$ function is recommended for initial inspections [S.65].\n\n4. Predictor Identification and Selection: Determine potential predictors based on system knowledge, excluding variables with insufficient data. Use backward elimination to refine the model based on specific significance thresholds [S.65].\n\n5. Validation: Assess model quality using $R^2$, adjusted-$R^2$, and residual analysis. Models should also be validated by splitting data into separate training and testing sets [S.65].\n\n6. Prediction: Once validated, the model can be applied to estimate unknown output values, treating the result as a useful approximation rather than an absolute representation of reality [S.66].\n\n**Practical Exercises**\n\nThe document suggests applying these methods to benchmark datasets (such as Int1992 or Fp2000). Recommended tasks include:\n- Cleaning and verifying data (e.g., assessing variance and outliers) [S.67].\n- Constructing one-factor and multi-factor models and evaluating their quality through $p$-values, $F$-statistics, and residual analysis [S.67].\n- Quantifying predictive capability by calculating the mean of $\\delta$ values and the width of 95 percent confidence intervals when predicting across different benchmark generations [S.67, S.68].\n- Testing the impact of data-splitting fractions ($f$) on model performance to determine the optimal training set size [S.68].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779384936754,
+      "channel": "plan_pipe_5365f97dd46c",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 65,
+        "end": 68
       }
     },
     {
@@ -151,64 +201,64 @@
       "content": "Here is a quiz for this lesson.",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Quiz",
-      "timestamp": 1778512773139,
+      "timestamp": 1779384936838,
       "channel": "general",
       "quizData": {
         "questions": [
           {
-            "question": "In the context of the Hard Margin SVM, what is the primary geometric motivation behind the optimization problem?",
+            "question": "According to the text, what is the primary purpose of constructing a linear regression model?",
             "options": [
-              "To ensure that the hyperplane passes through as many data points as possible.",
-              "To minimize the total number of dimensions in the input space.",
-              "To find a hyperplane that maximizes the minimum distance of observations to that plane.",
-              "To minimize the sum of squared errors between predictions and actual labels."
-            ],
-            "correctIndex": 2,
-            "explanation": "The Hard Margin SVM aims to define an optimal hyperplane that maximizes the margin (the minimum distance) between the hyperplane and the closest data points from either class."
-          },
-          {
-            "question": "What is the role of the tuning parameter 'C' in the Soft Margin SVM optimization, and how does it affect the final model?",
-            "options": [
-              "It is a Lagrange multiplier used to calculate the bias term 'b'.",
-              "It is a penalty term that balances the trade-off between maximizing the margin and minimizing the sum of misclassifications.",
-              "It represents the number of support vectors; a higher C forces the model to have more support vectors.",
-              "It determines the degree of the kernel function used for non-linear mapping."
+              "To identify every single factor that influences a system's behavior.",
+              "To predict the output value of a system given a new set of input values.",
+              "To prove that the real system and the model perform identically.",
+              "To convert raw data into a non-linear mathematical format."
             ],
             "correctIndex": 1,
-            "explanation": "The parameter C acts as a cost on misclassifications (slack variables). A large C places a higher penalty on errors, seeking to minimize misclassifications at the expense of a potentially smaller margin."
+            "explanation": "The text states that a common goal for developing a regression model is to predict what the output value of a system should be for a new set of input values based on historical data."
           },
           {
-            "question": "Why are kernel functions used in SVMs?",
+            "question": "Why does the author suggest that the units of measurement for inputs and outputs are arbitrary in linear regression?",
             "options": [
-              "They transform the binary target labels from {-1, 1} to a continuous range for regression.",
-              "They are mandatory for all support vector calculations to ensure the bias 'b' is always zero.",
-              "They allow SVMs to perform linear classification in low-dimensional spaces.",
-              "They provide a way to compute the inner product of observations in high-dimensional feature spaces without explicitly mapping the data points."
-            ],
-            "correctIndex": 3,
-            "explanation": "Kernel functions efficiently compute inner products in a high-dimensional feature space using the original input data, avoiding the computational expense of explicitly calculating high-dimensional mapped features."
-          },
-          {
-            "question": "When solving the Soft Margin SVM, what condition distinguishes a 'support vector' that is on the boundary from one that may be misclassified?",
-            "options": [
-              "The value of the slack variable epsilon_i indicates whether a support vector is correctly classified (epsilon_i < 1) or misclassified (epsilon_i > 1).",
-              "If the bias term 'b' is equal to zero.",
-              "If alpha_i equals zero, the point is guaranteed to be a support vector.",
-              "Support vectors are only those points where the inner product of the mapped features is negative."
+              "Because the model parameters scale automatically during the development process.",
+              "Because R automatically converts all units to base SI units.",
+              "Because the output is always normalized to a value between 0 and 1.",
+              "Because the model only cares about the relative order of the data points."
             ],
             "correctIndex": 0,
-            "explanation": "In the Soft Margin SVM, the slack variable epsilon_i measures the degree of violation. For support vectors, if 0 < alpha_i < C, the point is within the margin (epsilon_i=0), but if epsilon_i > 1, the point falls on the wrong side of the hyperplane."
+            "explanation": "The text explains that because the regression model is a linear combination of input values, the values of the model parameters will automatically scale, making the choice of units arbitrary."
           },
           {
-            "question": "In the dual formulation of the SVM optimization, what does the constraint sum_{i=1}^{n} alpha_i y_i = 0 imply?",
+            "question": "What is the primary advantage mentioned regarding R's data handling capabilities?",
             "options": [
-              "It forces all observations to be classified correctly.",
-              "It is an artifact of the Lagrangian that must be ignored during final classification.",
-              "It indicates that the margin distance is fixed at a constant value of zero.",
-              "It ensures that the weighted sum of the labels of the support vectors is balanced."
+              "It allows you to perform statistical analysis without ever needing to write code.",
+              "It forces the user to clean all missing data before calculations can begin.",
+              "It uses vectors and matrices as basic operands, making it efficient for large data sets.",
+              "It automatically corrects errors in data when calculating the mean or variance."
             ],
-            "correctIndex": 3,
-            "explanation": "This constraint arises from the derivative of the Lagrangian with respect to the bias term 'b', ensuring that the resulting hyperplane respects the balance of the two classes represented by the support vectors."
+            "correctIndex": 2,
+            "explanation": "The text notes that R is an object-oriented language that uses vectors and matrices as basic operands, which makes it particularly useful for working on large sets of data."
+          },
+          {
+            "question": "If an R function returns 'NA' because of missing data, what is the correct practice according to the text?",
+            "options": [
+              "Delete the entire dataset and re-collect the measurements.",
+              "Manually replace the 'NA' values with the average of the column.",
+              "Use an argument like na.rm=TRUE to instruct the function to ignore missing values.",
+              "The model cannot be used until every 'NA' value is accounted for manually."
+            ],
+            "correctIndex": 2,
+            "explanation": "The text explains that some R functions require you to explicitly tell them to remove or ignore NA values, such as using the na.rm=TRUE argument when calculating a mean."
+          },
+          {
+            "question": "Why is 'sanity checking' essential before proceeding with regression modeling?",
+            "options": [
+              "To choose the most statistically significant independent variables automatically.",
+              "To ensure the quality and reliability of the data, as flawed data leads to flawed models.",
+              "To convert categorical variables into numerical ones for the calculation.",
+              "To determine which computer system is the fastest in the dataset."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text emphasizes the 'garbage in, garbage out' maxim, noting that the first step in regression is ensuring data is reliable because the model's quality depends entirely on the input data's quality."
           }
         ],
         "answers": [
@@ -228,49 +278,49 @@
       "content": "Flashcards for review.",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Flashcards",
-      "timestamp": 1778512773140,
+      "timestamp": 1779384936839,
       "channel": "general",
       "flashcardData": {
         "cards": [
           {
-            "front": "What is the primary objective of a Support Vector Machine (SVM) when separating two classes?",
-            "back": "To find a hyperplane that separates observations based on their classes while maximizing the minimum distance (margin) from the observations to that hyperplane."
+            "front": "What is the primary definition of regression modeling?",
+            "back": "Generating a mathematical model from measured data to explain an output value based on a set of input values."
           },
           {
-            "front": "In the SVM optimization problem, why do we minimize (1/2)||w||² instead of maximizing the margin directly?",
-            "back": "Maximizing the margin M is mathematically equivalent to minimizing the inverse of the norm ||w|| scaled by M. Solving for (1/2)||w||² is a standard, convex quadratic programming problem."
+            "front": "In regression modeling, what is the 'independent variable'?",
+            "back": "The input parameter(s) used to predict the value of the output."
           },
           {
-            "front": "What role does the Lagrange multiplier α play in SVM optimization?",
-            "back": "α is used to convert the constrained primal optimization problem into its dual form, allowing the solution for the hyperplane to depend only on the inner products of support vectors."
+            "front": "What characterizes a linear regression model?",
+            "back": "It assumes that the output can be explained using a linear combination of the input variables."
           },
           {
-            "front": "What is the KKT (Karush-Kuhn-Tucker) condition in the context of SVM?",
-            "back": "The KKT conditions are optimality conditions that ensure the primal and dual problems are solved consistently, specifically relating the weights w to the support vectors and multipliers α."
+            "front": "What is the function of the 'dependent variable' in a regression model?",
+            "back": "It is the output or response that the model aims to predict based on input values."
           },
           {
-            "front": "What is the purpose of the 'Soft Margin' SVM approach?",
-            "back": "To allow for some misclassifications in non-linearly separable data by introducing slack variables (εi) and a penalty tuning parameter (C) to balance margin maximization and classification error."
+            "front": "Why is R considered a suitable tool for statistical computing?",
+            "back": "It is an object-oriented language that uses vectors/matrices as basic operands, provides excellent graphical tools, and is free/open-source."
           },
           {
-            "front": "What does the tuning parameter C represent in Soft Margin SVM?",
-            "back": "C controls the trade-off between maximizing the margin and minimizing the penalty term for misclassified observations."
+            "front": "What does the symbol 'NA' represent in R?",
+            "back": "It indicates a missing or not available value in a dataset."
           },
           {
-            "front": "Why is the Kernel Method used in SVM?",
-            "back": "It allows the SVM to find a hyperplane in a high-dimensional feature space (mapped by φ) without explicitly computing the coordinate transformations, by using a kernel function K(xi, xj) = <φ(xi), φ(xj)>."
+            "front": "How do you calculate the mean of a vector in R if it contains missing (NA) values?",
+            "back": "Use the command mean(x, na.rm=TRUE)."
           },
           {
-            "front": "What is the benefit of using a kernel function versus actual feature mapping?",
-            "back": "Computing inner products in very high-dimensional space can be computationally expensive or impossible; the kernel function computes these inner products efficiently using the original feature space."
+            "front": "What is the first step in regression modeling according to the text?",
+            "back": "Ensuring the data is reliable (sanity checking and data cleaning)."
           },
           {
-            "front": "Define the Polynomial and Gaussian kernels.",
-            "back": "Polynomial Kernel: K(xi, xj) = (xiᵀxj)^d. Gaussian Kernel: K(xi, xj) = exp(-||xi - xj||² / 2σ²)."
+            "front": "What is the purpose of backward elimination in regression?",
+            "back": "A process used in multi-factor regression to identify and remove predictors that have little to no impact on the output."
           },
           {
-            "front": "In Soft Margin SVM, what does the condition 0 < αi < C signify?",
-            "back": "It indicates that the corresponding observation xi is a support vector and is correctly classified on the margin (εi = 0)."
+            "front": "What is the fundamental difference between a model and a real system?",
+            "back": "A model is an approximation; the real system will always produce the correct results regardless of what the model predicts."
           }
         ],
         "currentIndex": 0,
@@ -283,62 +333,110 @@
       "id": "pres_pipe_course-en-time-series-and-classification_1",
       "slides": [
         {
-          "title": "RTG Classification Methods",
+          "title": "Linear Regression Using R",
           "bullets": [
-            "Introduction to Support Vector Machines (SVM).",
-            "Core principles of geometric data separation."
+            "Introduction to data modeling with R",
+            "Focus on linear regression techniques"
           ],
-          "notes": "In this lesson, we explore SVMs, a fundamental method for binary classification. We will examine how to define, optimize, and extend these models to handle complex data.",
-          "page_range": "1",
+          "notes": "This lesson introduces regression modeling for predicting output variables from input data using the R language.",
+          "page_range": "1-12",
           "image_prompt": ""
         },
         {
-          "title": "Hard Margin Optimization",
+          "title": "1: Introduction to Modeling",
           "bullets": [
-            "Aims to maximize the minimum distance (margin) to the hyperplane.",
-            "Requires y_i(w^Tx_i + b) ≥ 1 for accurate separation.",
-            "Solved efficiently through the Dual Lagrangian formulation.",
-            "Final hyperplane parameters found via KKT conditions (p. 2)."
+            "Data mining extracts useful info from large collections",
+            "Regression models output values from input variables",
+            "Linear regression assumes a linear combination of inputs",
+            "Goal: Predict outputs for new systems"
           ],
-          "notes": "The hard margin approach seeks the optimal hyperplane that perfectly separates classes. By transforming this into a dual problem, we can solve for Lagrange multipliers using the SMO algorithm.",
-          "page_range": "2-3",
+          "notes": "Regression is a fundamental data mining technique used to create mathematical models from experimental data.",
+          "page_range": "7-8",
           "image_prompt": ""
         },
         {
-          "title": "Soft Margin Classifier",
+          "title": "2: Understand Your Data",
           "bullets": [
-            "Introduces slack variables ζ_i for non-linearly separable data.",
-            "Tuning parameter C controls the trade-off between margin and errors.",
-            "Dual optimization adds constraints: 0 ≤ α_i ≤ C.",
-            "Support vectors are defined where 0 < α_i < C."
+            "Model quality depends on high-quality input data",
+            "R handles missing values (NA) effectively",
+            "Perform sanity checks to ensure reliability",
+            "Process raw data into clean, formatted structures"
           ],
-          "notes": "Real-world data is rarely perfectly separable. Soft margin classifiers allow for some misclassifications, balancing margin maximization with training error.",
-          "page_range": "3-4",
+          "notes": "Garbage in, garbage out: ensuring clean, reliable data is the essential first step in any regression project.",
+          "page_range": "13-16",
           "image_prompt": ""
         },
         {
-          "title": "Kernel Method for Non-Linearity",
+          "title": "3: One-Factor Regression",
           "bullets": [
-            "Maps input vectors to higher-dimensional feature spaces via φ(x).",
-            "Uses Kernel functions K(x_i, x_j) to compute inner products efficiently.",
-            "Eliminates the need to explicitly calculate high-dimensional coordinates.",
-            "Common kernels: Polynomial and Gaussian (RBF) functions."
+            "One-factor models explain output using a single predictor",
+            "Visualize relationships using scatter plots",
+            "Use the lm() function for linear models",
+            "Evaluate quality using residual analysis"
           ],
-          "notes": "When data isn't linearly separable, we map it into a higher-dimensional space. Kernel functions allow this without the computational burden of explicitly mapping every point.",
-          "page_range": "4-5",
+          "notes": "We model the relationship between one predictor and an output, using R's least squares functionality.",
+          "page_range": "21-25",
+          "image_prompt": ""
+        },
+        {
+          "title": "4: Multi-factor Regression",
+          "bullets": [
+            "Generalizes models to multiple input factors",
+            "Pairs() function reveals potential correlations",
+            "Selecting predictors avoids over-fitting",
+            "Use adjusted R-squared to evaluate complexity"
+          ],
+          "notes": "Multi-factor models require careful predictor selection to avoid over-fitting and capture systemic relationships.",
+          "page_range": "30-32",
+          "image_prompt": ""
+        },
+        {
+          "title": "5: Predicting Responses",
+          "bullets": [
+            "Primary goal is estimating unknown system responses",
+            "Split data into training and testing sets",
+            "Train models on one set, test on another",
+            "Avoid using training data for final validation"
+          ],
+          "notes": "Splitting data prevents 'cheating' and allows us to test how well the model predicts new, unseen scenarios.",
+          "page_range": "51-53",
+          "image_prompt": ""
+        },
+        {
+          "title": "6: Reading Data into R",
+          "bullets": [
+            "Reading CSV files is common in R",
+            "Data often requires cleaning before use",
+            "Use read.csv() to import data frames",
+            "Define custom functions to automate parsing"
+          ],
+          "notes": "Getting messy, real-world data into a functional format in R is a critical practical skill.",
+          "page_range": "61-63",
+          "image_prompt": ""
+        },
+        {
+          "title": "7: Summary and Next Steps",
+          "bullets": [
+            "Six steps: Read, clean, visualize, identify, select, validate",
+            "Models are useful approximations, not perfect truths",
+            "Practice by testing outliers and validation",
+            "Explore further literature for advanced stats"
+          ],
+          "notes": "Regression is an iterative process; always treat derived models as a guiding approximation of the real system.",
+          "page_range": "65-67",
           "image_prompt": ""
         }
       ],
       "config": {
-        "title": "Lesson 2 — RTG Classification Methods - Presentation",
+        "title": "Lesson 3: Linear Regression Using R (Lilja) - Presentation",
         "lang": "en",
         "format": "lecture",
         "length": "short"
       },
       "chapters": [],
-      "createdAt": 1778512773039,
-      "pdfName": "RTG: Classification Methods"
+      "createdAt": 1779384936738,
+      "pdfName": "Linear Regression Using R (Lilja)"
     }
   ],
-  "sourceHash": "8de030d27bdbf42f"
+  "sourceHash": "ead1688dffccbf79"
 }

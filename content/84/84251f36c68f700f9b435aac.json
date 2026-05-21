@@ -3,28 +3,15 @@
   "version": 1,
   "pipelineVersion": 3,
   "lesson": {
-    "name": "Astronomy Deep — Cosmology, Astrobiology, Stellar Atmospheres - Lesson 5 — Celestial Mechanics",
-    "pdfName": "Celestial Mechanics (Tatum)",
-    "createdAt": 1778572591524,
-    "exportedAt": "2026-05-12T07:56:31.524Z",
+    "name": "Astronomy Deep: Cosmology, Astrobiology, Stellar Atmospheres - Lesson 5: Celestial Mechanics",
+    "pdfName": "Celestial Mechanics",
+    "createdAt": 1779384845879,
+    "exportedAt": "2026-05-21T17:34:05.879Z",
     "meta": {
       "courseId": "course-en-astronomy-deep-cosmology",
       "lessonIndex": 4,
-      "courseTitle": "Astronomy Deep — Cosmology, Astrobiology, Stellar Atmospheres",
-      "lessonObjective": "Orbital dynamics.",
-      "licensing": {
-        "effective_license": "CC-BY-4.0",
-        "sources": [
-          {
-            "content_id": "local-newbooks-5084a44efa92b88c",
-            "title": "Celestial Mechanics",
-            "source": "local-newbooks",
-            "license": "CC-BY-4.0",
-            "license_url": "https://creativecommons.org/licenses/by/4.0/",
-            "url": "local://newbooks/2026-05-13/Astronomy Deep — Cosmology, Astrobiology, Stellar Atmospheres/Lesson 5  Celestial Mechanics.pdf"
-          }
-        ]
-      }
+      "courseTitle": "Astronomy Deep: Cosmology, Astrobiology, Stellar Atmospheres",
+      "lessonObjective": "Celestial Mechanics"
     }
   },
   "plans": [
@@ -39,37 +26,67 @@
       "tasks": [
         {
           "action": "zusammenfassung",
-          "pages": "1-2",
-          "chapterTitle": "Foundations: Numerical Methods, Geometry, and Trigonometry",
+          "pages": "4-61",
+          "chapterTitle": "Numerical Methods",
           "status": "done"
         },
         {
           "action": "zusammenfassung",
-          "pages": "3-3",
-          "chapterTitle": "Gravity, Celestial Sphere, Time, and Planetary Motion",
+          "pages": "62-101",
+          "chapterTitle": "Conic Sections",
           "status": "done"
         },
         {
           "action": "zusammenfassung",
-          "pages": "4-4",
-          "chapterTitle": "Two-Body Problem, Ephemeris, and Astrometry",
+          "pages": "102-131",
+          "chapterTitle": "Plane and Spherical Trigonometry",
           "status": "done"
         },
         {
           "action": "zusammenfassung",
-          "pages": "5-5",
-          "chapterTitle": "Orbital Elements and Perturbation Theory",
+          "pages": "132-153",
+          "chapterTitle": "Coordinate Geometry in Three Dimensions",
           "status": "done"
         },
         {
           "action": "zusammenfassung",
-          "pages": "6-6",
-          "chapterTitle": "The Three-Body Problem and Binary Stars",
+          "pages": "154-199",
+          "chapterTitle": "Gravitational Field and Potential",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "200-221",
+          "chapterTitle": "The Celestial Sphere",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "222-238",
+          "chapterTitle": "Time and Planetary Motions",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "239-276",
+          "chapterTitle": "Two Body Problem, Orbital Elements, and Computation",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "277-328",
+          "chapterTitle": "Astrometry and Orbital Calculation",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "329-395",
+          "chapterTitle": "Perturbation Theory, Binaries, and Advanced Dynamics",
           "status": "done"
         }
       ],
       "status": "done",
-      "created": 1778572591524,
+      "created": 1779384845879,
       "pinned": false,
       "completedSteps": [],
       "statusDismissed": true
@@ -78,93 +95,168 @@
   "messages": [
     {
       "role": "bot",
-      "content": "This summary covers the core curriculum of the *Celestial Mechanics* text, which transitions from foundational mathematics to advanced orbital dynamics and observational research.\n\n### **Overview of Celestial Mechanics**\nThe course provides a mathematically rigorous approach to understanding gravitational systems, moving from basic numerical methods to complex orbit determination and perturbation theory.\n\n### **Structured Course Progression**\n\n**1. Mathematical & Geometric Foundations**\n*   **Fundamental Tools:** The curriculum begins with numerical analysis, conic sections, plane and spherical trigonometry, and three-dimensional coordinate geometry (p. 2).\n*   **Physical Principles:** Application of Newtonian gravity to mass distributions, followed by an exploration of gravitational fields and potentials (p. 3).\n\n**2. Core Celestial Dynamics**\n*   **The Celestial Sphere & Time:** Essential concepts for mapping positions and tracking objects over time (p. 3).\n*   **Orbital Mechanics:** Focused study of planetary motion and the two-body problem in two dimensions (p. 3, p. 4).\n*   **Computation:** Practical training in calculating ephemerides and deriving orbital elements (p. 4, p. 5).\n\n**3. Advanced Analysis & Perturbations**\n*   **Systems beyond the Two-Body Ideal:** Introduction to the restricted three-body problem, equivalent potential, and Lagrangian points (p. 5).\n*   **Perturbation Theory:** Theoretical and specialized approaches to calculating gravitational disturbances (p. 5).\n\n**4. Research-Adjacent Applications (Astrophysics)**\n*   **Astrometry:** Utilizing photographic and CCD data to perform precise measurements (p. 4).\n*   **Binary Star Systems:** Applying mechanics to visualize, measure, and analyze both visual and spectroscopic binary stars to determine masses and velocities (p. 6).",
+      "content": "This summary covers the foundations of **Celestial Mechanics**, specifically focusing on the critical mathematical tools used to solve complex problems in astrophysics as presented in the provided text.\n\n### **Overview: The Role of Numerical Methods**\nIn modern astrophysics, many problems cannot be solved with a single \"closed-form\" algebraic expression. Consequently, numerical analysis has become the standard approach for solving equations, performing integrations, and modeling orbital dynamics.\n\n### **Key Methodologies**\n\n#### **1. Numerical Integration**\n*   **Simpson’s Rule:** A robust method that estimates the area under a curve by fitting parabolas to subsections of the data. It is efficient, easily programmable, and accurate.\n*   **Advanced Techniques (Seven-Point Integration):** Provides higher precision and faster computational speeds for specialized tasks, particularly when paired with variable interval sizing (finer intervals where the function slope is steep; coarser intervals where it is flat).\n*   **Problem Solving:** For integrals with infinite limits or singularities, a **change of variable** is essential (e.g., transforming the integrand into a form that is finite across the interval).\n\n#### **2. Solving Equations (Root-Finding)**\n*   **Newton-Raphson Method:** An iterative technique for solving equations of the form $f(x) = 0$. By utilizing the derivative and tangent lines, this method is typically \"extraordinarily fast,\" even when starting from an inaccurate initial guess.\n*   **Iterative Refinement:** When direct algebraic solutions are unavailable, iterative processes (like those applied to quadratic or transcendental equations) provide a reliable route to precision.\n\n#### **3. Computational Efficiency**\n*   **Optimization:** The text emphasizes that computing time can be reduced by factors of several hundred through proper interval selection, algorithm choice, and algebraic simplification (e.g., variable substitution) before computation.\n*   **Practical Application:** While analytical solutions are elegant, they are sometimes slower or less convenient to compute than direct numerical approximations.\n\n### **Research-Adjacent Applications**\nThe text highlights that these numerical skills transition seamlessly into higher-level research, including:\n*   **Orbital Mechanics:** Calculating ephemerides and determining orbital elements (e.g., elliptical, parabolic, and hyperbolic orbits).\n*   **Perturbation Theory:** Analyzing the deviations in planetary orbits caused by other massive bodies.\n*   **Astrometry:** Refining positional data from photographic and CCD observations by accounting for parallax, proper motion, light aberration, and atmospheric refraction.\n*   **Binary Star Systems:** Determining the physical orbits and masses within visual and spectroscopic binary systems.\n\n***\n\n**Reference:** \n*   *Numerical Methods & Foundations:* [S.10], [S.11], [S.12], [S.13], [S.14], [S.15], [S.16], [S.17]\n*   *Applications (Orbits, Astrometry, Perturbations):* [S.6], [S.7], [S.8]",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Summary",
-      "timestamp": 1778572591524,
+      "timestamp": 1779384845879,
       "channel": "general"
     },
     {
       "role": "bot",
-      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-astronomy-deep-cosmology_4\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 5 — Celestial Mechanics - Presentation</span><span class=\"pm-chat-count\">6 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Celestial Mechanics</div><ul class=\"pm-chat-slide-bullets\"><li>Rigorous study of orbital dynamics and gravitation.</li><li>Bridging theoretical mathematics with observational astronomy.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-astronomy-deep-cosmology_4\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 5: Celestial Mechanics - Presentation</span><span class=\"pm-chat-count\">5 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Celestial Mechanics</div><ul class=\"pm-chat-slide-bullets\"><li>Study of motion under universal gravitation</li><li>Analysis of orbits and gravitational potentials</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Presentation",
-      "timestamp": 1778572591525,
+      "timestamp": 1779384845880,
       "channel": "general"
     },
     {
       "role": "bot",
-      "content": "This text introduces the book \"Celestial Mechanics\" by Tatum, which serves as a mathematically rigorous and computation-oriented guide to understanding orbital motion and gravitation [S.1]. The document is structured into foundational chapters and core physical applications [S.1, S.2].\n\n**Key Components and Content**\n\nFoundations: The text begins by establishing the necessary mathematical and geometric framework, covering numerical methods, conic sections, plane and spherical trigonometry, and three-dimensional coordinate geometry [S.1, S.2].\n\nPhysical Theory: It builds upon Newtonian gravity to analyze various mass distributions, culminating in the study of the two-body problem and the mechanics of the celestial sphere [S.1].\n\nPractical and Advanced Applications: The book connects theory to observation through ephemeris computation and orbit determination. It further explores complex scenarios, such as perturbation theory, the restricted three-body problem, and Lagrangian points [S.1].\n\nObservational Utility: The text demonstrates how to utilize data from photographic and CCD astrometry, as well as visual and spectroscopic binary systems, to calculate critical parameters like orbital elements, masses, and velocities [S.1].",
+      "content": "This section provides an overview of essential numerical methods used in astronomical calculations, emphasizing that numerical approaches are often more efficient or necessary when analytical solutions are unavailable, overly complex, or inconvenient.\n\nKey points include:\n\nNumerical Integration:\nThe text highlights Simpson's Rule as a robust, easy-to-program method for numerical integration. This involves approximating the area under a curve by fitting a parabola to three points (the endpoints and the midpoint) of a given interval. The basic formula for an interval of width $2h$ is:\n$$\\text{Area} \\approx \\frac{h}{3}(y_1 + 4y_2 + y_3)$$\n\nConvergence and Efficiency:\nFor higher accuracy, an interval should be subdivided into numerous small sub-intervals. The text notes that convergence of the result should be verified by successively increasing the number of subdivisions. Furthermore, computational efficiency can often be improved by orders of magnitude through clever changes of variables, particularly when dealing with infinite limits or singularities, as demonstrated by the pendulum period and blackbody radiation integrals.\n\nScope of Numerical Methods:\nWhile the provided text focuses on integration, it establishes that numerical techniques provide a practical foundation for solving algebraic, polynomial, and nonlinear simultaneous equations. The author suggests that for many modern applications, numerical solutions are the standard, as they bypass the need to master obscure special functions.\n\nPractical Application:\nThe document serves as a guide for those who may need to derive data rather than relying solely on pre-existing tables or complex analytical forms. It encourages practitioners to develop their own routines for common computational tasks, reinforcing the importance of understanding the underlying algorithms rather than relying on black-box software tools.",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Summary",
-      "timestamp": 1778572591534,
+      "timestamp": 1779384845889,
       "channel": "plan_pipe_1302d3073115",
       "planStep": 1,
       "planAction": "zusammenfassung",
       "contextRef": {
         "type": "range",
-        "start": 1,
-        "end": 2
+        "start": 4,
+        "end": 61
       }
     },
     {
       "role": "bot",
-      "content": "This section outlines foundational topics in celestial mechanics and observational astronomy. The key points are summarized as follows:\n\n1. Gravitational Field and Potential: This topic covers the fundamental physical principles governing the attractive forces between celestial bodies, typically described by Newton’s law of universal gravitation, defined by the formula $F = G \\frac{m_1 m_2}{r^2}$, and the corresponding gravitational potential energy.\n\n2. The Celestial Sphere: This introduces the conceptual model of an imaginary sphere of infinite radius centered on Earth, used to map the positions of stars and planets regardless of their actual distances.\n\n3. Time: This area explores the methods of measuring temporal progression, including the sidereal and solar time systems, which are essential for coordinating astronomical observations.\n\n4. Planetary Motions: This covers the kinematics and dynamics of planets orbiting the Sun, primarily focusing on Kepler’s laws, such as the relationship describing orbital periods: $T^2 \\propto a^3$, where $T$ is the period and $a$ is the semi-major axis.",
+      "content": "This chapter provides a foundational study of conic sections, which are the paths taken by particles under inverse square forces. The coverage encompasses the geometry of straight lines, ellipses, parabolas, and hyperbolas.\n\n### 1. The Straight Line\n*   **Equations:** Standard linear relationships are represented by forms such as $y = mx + c$, $ax + by + c = 0$, and standard intercept forms (p. 63). \n*   **Geometric Properties:** The perpendicular distance from a point $(x_1, y_1)$ to the line $ax + by + c = 0$ is calculated as:\n$$d = \\frac{|ax_1 + by_1 + c|}{\\sqrt{a^2 + b^2}}$$\n*   **Area and Concurrency:** The area of a triangle formed by three points can be determined using determinants. Three lines are concurrent at a single point if the determinant formed by their coefficients is zero (p. 67).\n\n### 2. The Ellipse\n*   **Definition:** An ellipse is the locus of a point where the sum of distances to two fixed points (foci) is a constant $2a$. Its eccentricity $e$ is defined by the ratio of the distance between foci to the length of the string $2a$ (p. 68).\n*   **Standard Form:** The equation of an ellipse centered at the origin is:\n$$\\frac{x^2}{a^2} + \\frac{y^2}{b^2} = 1$$\nwhere $b^2 = a^2(1 - e^2)$ (p. 69).\n*   **Parametric Representation:** The ellipse can be expressed using the eccentric anomaly $\\phi$ as $x = a \\cos \\phi$ and $y = b \\sin \\phi$ (p. 71).\n*   **Tangents and Geometry:** \n    *   A line $y = mx + c$ is tangent to the ellipse if $c^2 = a^2 m^2 + b^2$ (p. 72).\n    *   The locus of the intersection of two perpendicular tangents is a circle known as the **director circle** with radius $\\sqrt{a^2 + b^2}$ (p. 73).\n    *   Directrices relate to the constant distance ratio property of the ellipse (p. 75).\n    *   Conjugate diameters represent a transformation of perpendicular diameters of a circle, possessing specific slope properties and chord-bisection characteristics (p. 75, 76).",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Summary",
-      "timestamp": 1778572591535,
+      "timestamp": 1779384845890,
       "channel": "plan_pipe_1302d3073115",
       "planStep": 2,
       "planAction": "zusammenfassung",
       "contextRef": {
         "type": "range",
-        "start": 3,
-        "end": 3
+        "start": 62,
+        "end": 101
       }
     },
     {
       "role": "bot",
-      "content": "This section outlines essential topics in astrometry and celestial mechanics. The key areas covered are:\n\nOrbital Mechanics\nThe text introduces the two-body problem in two dimensions, which serves as the fundamental basis for understanding the motion of celestial objects under mutual gravitational influence.\n\nEphemeris Calculation\nIt covers the computational methods required to generate an ephemeris, which provides the predicted positions of astronomical bodies at specific points in time.\n\nAstrometric Techniques\nThe document discusses observational methodology, specifically focusing on photographic astrometry and the use of CCD (Charge-Coupled Device) technology to precisely measure the positions, motions, and luminosities of celestial objects.\n\nLicensing\nAll course material provided in this context is distributed under the Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License.",
+      "content": "This document provides a comprehensive overview of trigonometric principles applied to geometry, kinematics, and spherical navigation. Key points are summarized below:\n\n**Plane Trigonometry**\nPlane triangles are defined by three angles ($A, B, C$) and three opposite sides ($a, b, c$). Solving these requires applying the sine and cosine rules, with careful attention to \"quadrant problems\" where inverse functions may yield multiple valid solutions ([S.104], [S.105]). The area of a triangle can be calculated using the formula $Area = \\frac{1}{2}ab \\sin C$ or Heron’s formula, $Area = \\sqrt{s(s-a)(s-b)(s-c)}$, where $s$ is the semi-perimeter ([S.106]).\n\n**Coordinate Systems**\nThe text details the transformation between cylindrical/spherical coordinates and rectangular coordinates ($x, y, z$). Key insights include the necessity of using both coordinates to uniquely determine angles, and the utility of programming functions like `atan2` to handle quadrant ambiguity ([S.107]). Direction cosines, defined as the cosines of angles between a vector and the principal axes, are presented as a method to describe orientation ([S.107], [S.108]). The document also distinguishes between geographic and geocentric latitude, noting that the Earth is an oblate spheroid with a specific geometric ellipticity ([S.108], [S.109]).\n\n**Kinematics**\nExpressions for velocity and acceleration are derived for two-dimensional polar and three-dimensional spherical coordinate systems. These derivations track the time-dependent changes of unit vectors in radial, meridional, and azimuthal directions. The resulting components of acceleration are identified to account for complex curvilinear motion ([S.110], [S.111], [S.112]).\n\n**Spherical Trigonometry**\nSpherical triangles consist of arcs of great circles, and their angles sum to more than $180^\\circ$. Four primary formulas are used for solutions: the sine formula, the cosine formula, the polar cosine formula, and the cotangent formula ([S.113], [S.114]). A critical warning is provided regarding solving trigonometric equations: operations such as squaring sides can introduce extraneous solutions. Practitioners are advised to verify all results against original equations and to avoid premature rounding to maintain significant figure accuracy ([S.114], [S.115]).",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Summary",
-      "timestamp": 1778572591536,
+      "timestamp": 1779384845891,
       "channel": "plan_pipe_1302d3073115",
       "planStep": 3,
       "planAction": "zusammenfassung",
       "contextRef": {
         "type": "range",
-        "start": 4,
-        "end": 4
+        "start": 102,
+        "end": 131
       }
     },
     {
       "role": "bot",
-      "content": "### Summary of Orbital Mechanics and Perturbation Theory\n\nThis section outlines fundamental principles in celestial mechanics, focusing on the mathematical description and analysis of orbiting bodies.\n\n**1. Orbital Elements (Section 13)**\nThis topic covers the mathematical parameters required to uniquely define the size, shape, and orientation of an object's orbit in space. These elements are essential for predicting the future position of celestial bodies.\n\n**2. Perturbation Theory (Sections 14-15)**\nThese sections distinguish between two analytical methods for calculating deviations from simple Keplerian motion:\n* General Perturbation Theory (14): Uses analytical series expansions to predict the long-term effects of gravitational disturbances.\n* Special Perturbations (15): Utilizes numerical integration techniques to model the exact trajectory of a specific body under the influence of various gravitational forces.\n\n**3. Multi-Body Dynamics (Section 16)**\nThis section introduces the Restricted Three-Body Problem, which studies the motion of an infinitesimal mass influenced by two larger, orbiting primary masses. It utilizes the concept of an equivalent potential (often incorporating centrifugal and gravitational potentials) to map the regions where stable or unstable orbits can exist.",
+      "content": "This chapter covers the foundations of coordinate geometry in three dimensions, focusing on rectangular coordinate systems and the analytical representation of basic geometric shapes.\n\n### Coordinate Systems and Surfaces\nPoints in three-dimensional space are represented by rectangular, cylindrical, or spherical coordinates (p. [S.133]). A single equation, such as $f(x, y, z) = 0$, defines a surface, while two such equations define a line or curve (p. [S.133]). Parametric equations can also be used to describe curves.\n\n### Planes and Straight Lines\nA plane is represented by $ax + by + cz + d = 0$. Key concepts include:\n- The plane's intercepts on the axes are found by setting the other variables to zero (p. [S.134]).\n- The perpendicular distance $p$ from a point $(x_1, y_1, z_1)$ to the plane is given by $p = |ax_1 + by_1 + cz_1 + d| / \\sqrt{a^2 + b^2 + c^2}$ (p. [S.135]).\n- The coefficients $(a, b, c)$ represent the direction ratios of the normal to the plane (p. [S.135]).\n- Three points define a plane if the determinant of the augmented coordinates is zero (p. [S.136]).\n- A straight line is the intersection of two non-parallel planes (p. [S.138]). Three planes typically meet at a single point, but may form a prism or meet in a single line depending on their coefficients (p. [S.140]).\n\n### The Ellipsoid\nThe ellipsoid is defined by the equation:\n$$\\frac{x^2}{a^2} + \\frac{y^2}{b^2} + \\frac{z^2}{c^2} = 1$$\n- If $a = b = c$, it is a sphere.\n- Spheroids (prolate or oblate) occur when two axes are equal (p. [S.141]).\n- A tri-axial ellipsoid ($a \\neq b \\neq c$) can be intersected by planes to form circular cross-sections (p. [S.142]).\n- Calculating the area of an elliptical cross-section from a specific viewing direction is useful for analyzing phenomena such as the brightness variations of rotating asteroids (p. [S.142-S.143]).\n\nThe text concludes by introducing the paraboloid, which serves as a foundation for further study of second-degree equations in three dimensions (p. [S.132, S.145]).",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Summary",
-      "timestamp": 1778572591537,
+      "timestamp": 1779384845892,
       "channel": "plan_pipe_1302d3073115",
       "planStep": 4,
       "planAction": "zusammenfassung",
       "contextRef": {
         "type": "range",
-        "start": 5,
-        "end": 5
+        "start": 132,
+        "end": 153
       }
     },
     {
       "role": "bot",
-      "content": "### Summary of Section 6: Binary Star Systems\n\nThis section discusses two primary methods for identifying and characterizing binary star systems:\n\n**1. Visual Binary Stars**\nVisual binaries are systems in which the two component stars can be resolved as individual points of light using a telescope. By observing the orbital motion of these stars over time, astronomers can apply Kepler’s laws to determine the mass of the system.\n\n**2. Spectroscopic Binary Stars**\nWhen star systems are too far away or the stars are too close together to be resolved visually, they are identified through spectroscopy.\n*   These systems are detected by periodically shifting spectral lines caused by the Doppler effect as the stars revolve around a common center of mass.\n*   If both stars' spectra are visible, the system is a double-lined spectroscopic binary; if only one is visible, it is a single-lined spectroscopic binary.\n\nThese techniques are fundamental to stellar astrophysics, as they provide the most direct method for measuring the masses of stars based on the principles of orbital mechanics.",
+      "content": "This chapter explores the gravitational field and potential generated by various mass distributions. The study of gravitation is closely analogous to electrostatics; however, unlike electric charges, mass is always positive, precluding the existence of gravitational dipoles.\n\n**Foundational Concepts**\n*   **Gravitational Field ($g$):** Defined as the force experienced by a unit mass placed at a point in space. It is equivalent to the acceleration a mass would experience in that field [S.156].\n*   **Newton’s Law of Gravitation:** The magnitude of the force ($F$) between two point masses ($M$ and $m$) at distance $r$ is given by $F = \\frac{GMm}{r^2}$, with $G$ representing the universal gravitational constant [S.157].\n*   **Field of a Point Mass:** The field strength at distance $r$ from a point mass $M$ is $g = \\frac{GM}{r^2}$ [S.159].\n\n**Calculations for Various Geometries**\nThe chapter provides derivations for field strengths near different shapes:\n*   **Ring:** The field on the axis is zero at the center and reaches a maximum at a specific distance along the axis [S.160].\n*   **Plane Discs and Laminas:** For a uniform disc, the field on the axis depends on the solid angle subtended. An infinite plane lamina generates a uniform field of $g = 2\\pi G\\sigma$, where $\\sigma$ is surface density [S.162, S.164].\n*   **Rods:** The field is calculated by integrating contributions from mass elements. For an infinite rod, the field is directed towards the rod [S.166].\n*   **Solid Cylinder:** The internal field is nearly linear and equals zero at the center of the cylinder [S.168].\n*   **General Behavior:** At very large distances from any finite object, the field strength always approaches the inverse-square law behavior of a point mass ($g \\propto \\frac{1}{r^2}$) [S.163].\n\n**Key Analytical Methods**\nThe text highlights that gravitational problems often mirror electrostatic problems if one replaces charge with mass. Advanced topics covered include Gauss’s Theorem, Legendre polynomials, potential calculations, and the pressure at the center of a uniform sphere [S.154, S.155].",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Summary",
-      "timestamp": 1778572591538,
+      "timestamp": 1779384845893,
       "channel": "plan_pipe_1302d3073115",
       "planStep": 5,
       "planAction": "zusammenfassung",
       "contextRef": {
         "type": "range",
-        "start": 6,
-        "end": 6
+        "start": 154,
+        "end": 199
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document introduces the concept of the celestial sphere and the coordinate systems used to map the positions of stars and other celestial bodies.\n\n### The Celestial Sphere\nThe celestial sphere is an imaginary surface of infinite radius surrounding the Earth, with stars appearing fixed upon it. Because only half is visible at any time due to the horizon, astronomers use angles to record positions. The relation between these positions varies over time due to phenomena like the precession of the equinoxes and nutation (p. S.200-S.201).\n\n### Coordinate Systems\n1. Altazimuth Coordinates: This system is observer-dependent. Positions are defined by:\n* Altitude (elevation above the horizon) or Zenith Distance (the complement of altitude).\n* Azimuth (bearing, typically measured eastwards from the north point) (p. S.202).\n\n2. Equatorial Coordinates: This system is fixed to the Earth's rotation (the North and South Celestial Poles).\n* Declination ($\\delta$): The angle north or south of the celestial equator.\n* Right Ascension ($\\alpha$): The angle measured eastward from the First Point of Aries.\n* Hour Angle: The time elapsed since a star’s upper meridian transit.\n* Local Sidereal Time (LST): Calculated as the sum of a star's right ascension and its hour angle ($LST = \\alpha + H$) (p. S.203-S.205).\n\n3. Ecliptic Coordinates: Used primarily to track the annual motion of the Sun relative to the stars (p. S.208).\n\n### Coordinate Conversion and Epochs\nConverting between systems involves solving a spherical triangle defined by the observer's latitude, the star's coordinates, and the sidereal time. Because the First Point of Aries moves due to precession, the right ascension and declination of objects change over time. Consequently, it is essential to specify the epoch (reference date) when providing these coordinates (p. S.204-S.206).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779384845894,
+      "channel": "plan_pipe_1302d3073115",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 200,
+        "end": 221
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the provided text on timekeeping and planetary motions.\n\n### Time Scales and Definitions (pp. S.222-S.225)\n\n*   **Solar Time:** Local Apparent Solar Time is measured by a sundial. Because the Sun's right ascension does not increase uniformly, this time does not flow at a uniform rate. Local Mean Solar Time is a uniform approximation based on the Mean Sun. The difference between these two is known as the Equation of Time.\n*   **Zone Time:** To simplify civil timekeeping, the globe is divided into longitudinal zones, each approximately 15 degrees wide. These zones use a standard mean solar time, with some regions adjusting by one hour for Daylight-saving time during summer months.\n*   **Sidereal Time:** This is based on the Earth's rotation relative to the stars (the First Point of Aries). A mean sidereal day is shorter than a mean solar day.\n*   **Years:** A sidereal year is the period of Earth’s revolution relative to fixed stars. A mean tropical year, which dictates the seasons, is slightly shorter due to the precession of the equinoxes. An anomalistic year measures the interval between passes through perihelion.\n*   **Atomic vs. Universal Time:** \n    *   Universal Time (UT) is linked to the Earth's rotation, which is not perfectly uniform. \n    *   International Atomic Time (TAI) provides a uniform measure based on the hyperfine transition of the caesium-133 atom.\n    *   Coordinated Universal Time (UTC) is kept within one second of UT by inserting \"leap seconds.\"\n*   **Ephemeris and Terrestrial Time:** To calculate celestial mechanics, astronomers use Terrestrial Time (TT), formerly Ephemeris Time (ET). While observations are reported in UTC, precise dynamic calculations require TT. The difference between these scales, denoted as $\\Delta T$, arises from Earth's irregular rotation and must be accounted for in precise calculations.\n\n### Planetary Motions (pp. S.226-S.227)\n\n*   **Definition:** The word \"planet\" stems from the Greek for \"wanderer,\" describing their motion relative to the \"fixed\" stars. \n*   **Modeling Assumptions:** For qualitative analysis, planetary orbits are treated as coplanar circles. While precise ephemerides require more complex calculations, this idealistic model is sufficient to explain retrograde motion, stationary points, and opposition.\n*   **Angular Speed:** The angular speed of a body is denoted by $n$. The astronomical unit ($au$) is defined by the orbital radius of a massless particle moving at a specific angular speed around the Sun. Earth's motion is used as a reliable approximation for these orbital calculations.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779384845895,
+      "channel": "plan_pipe_1302d3073115",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 222,
+        "end": 238
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This chapter explores the principles of the two-body problem in two dimensions, deriving planetary motion from Newton's laws of gravitation and the conservation of angular momentum.\n\n### Kepler's Laws and Newton's Derivation\nThe text defines Kepler's three laws of planetary motion:\n1. Planets orbit the Sun in ellipses with the Sun at one focus (p. S.240).\n2. The radius vector sweeps out equal areas in equal times (p. S.240).\n3. The square of the orbital period is proportional to the cube of the semi-major axis (p. S.240).\n\nThe second law is a direct result of the conservation of angular momentum, which holds true for any purely radial force (p. S.241). The first and third laws are derived from the inverse square law of gravitation. Newton demonstrated that these laws correspond to a path defined by a conic section: an ellipse (closed orbit), parabola, or hyperbola (p. S.240).\n\n### Orbital Mechanics and Energy\nThe text provides the derivation for the path of a mass relative to a common center of mass, leading to the polar equation for a conic section:\n$$r = \\frac{a(1-e^2)}{1+e \\cos \\theta}$$\nWhere $$e$$ is the eccentricity and $$a$$ is the semi-major axis. The type of orbit is determined by the total energy $$E$$ of the system:\n- Ellipse: $$E < 0$$\n- Parabola: $$E = 0$$\n- Hyperbola: $$E > 0$$\n\nThe chapter includes functions to calculate the semi-latus rectum and specifies the speeds of objects at different points in their orbits (p. S.244–S.246).\n\n### Calculating Position Over Time\nTo determine a planet's position as a function of time, one must solve Kepler’s Equation, which relates the mean anomaly $$M$$ to the eccentric anomaly $$E$$:\n$$M = E - e \\sin E$$\nSince this is a transcendental equation, it is typically solved using iterative numerical methods like the Newton-Raphson process (p. S.250). Once the eccentric anomaly is found, the true anomaly can be determined via geometric relationships defined by the ellipse (p. S.250).\n\n### Key Concepts\n- The motion of two bodies is analyzed relative to their mutual center of mass (the barycenter) (p. S.243).\n- The \"mass function\" and \"reduced mass\" are used to simplify equations describing the dynamics of the two-body system (p. S.242).\n- A geometric construction by Dr. Rimmer illustrates that circular motion, when mapped by a specific point offset from the center, describes an ellipse, aligning with Newton’s insights in the Principia (p. S.247).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779384845896,
+      "channel": "plan_pipe_1302d3073115",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 239,
+        "end": 276
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines the transition of astrometry from 20th-century photographic methods to modern CCD-based techniques.\n\n### Overview of Astrometry\nAstrometry is the science of measuring celestial object positions, essential for determining the orbits of asteroids and comets. Historically, this involved long photographic exposures, physical film development, and the manual identification of comparison stars using blink comparators and measuring engines.\n\n### Standard Coordinates and Plate Constants\nThe transformation from celestial coordinates (right ascension and declination) to measured plate coordinates involves defining a tangent plane at the telescope's pointing center. Standard coordinates $(\\xi, \\eta)$ are defined in terms of the telescope's focal length $f$ and celestial coordinates. \n\nThe measured coordinates $(x, y)$ are linear transformations of the standard coordinates, represented by:\n$$\\xi = a + bx + cy$$\n$$\\eta = d + ex + fy$$\nWhere $a, b, c, d, e, f$ are known as the plate constants. These are determined using three or more known comparison stars via a least squares approach. The resulting position reported to the Minor Planet Center must be the topocentric position.\n\n### Modern Advancements\nThe introduction of Charge-Coupled Devices (CCDs) in the 1990s revolutionized the field:\n* Efficiency: CCDs feature superior quantum efficiency, allowing shorter exposures for fainter objects.\n* Automation: Thousands of comparison stars are now matched automatically against archival catalogs.\n* Speed: Tasks that previously took hours are now completed in seconds with higher precision.\n\n### Refinements and Corrections\nFor precise results, several physical corrections are considered:\n* Proper Motion: While older catalogs often lacked proper motion data or provided them for limited subsets, modern catalogs like the USNO provide data for over a billion objects, making corrections standard practice.\n* Parallax: Usually negligible for most comparison stars.\n* Environmental/Optical: Factors such as atmospheric refraction, light aberration, and optical distortion must be accounted for in high-precision work.\n\nWhile modern software often automates these processes, practitioners should remain aware of whether these specific corrections are implemented in their chosen reduction pipelines (p. 277-286).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779384845897,
+      "channel": "plan_pipe_1302d3073115",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 277,
+        "end": 328
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This document outlines the theoretical and practical frameworks used to account for departures from perfect Keplerian motion in orbital mechanics.\n\n**General Perturbation Theory (Chapter 14)**\nGeneral perturbation theory is applied when the perturbing potential can be expressed as an explicit algebraic formula. This approach focuses on how orbital elements vary over time due to external influences, such as the oblateness of a planet.\n\n*   **Mechanical Framework:** The theory utilizes contact transformations to relate perturbed motion to the undisturbed Hamiltonian, leading to the use of Poisson brackets to analyze the time-evolution of orbital elements [S.331].\n*   **Lagrange’s Planetary Equations:** These are the primary mathematical tools used to calculate the rates of change for orbital elements (e.g., $a, e, i, \\Omega, \\omega, T$) given a specific perturbing function [S.334].\n*   **Case Study: Oblate Symmetric Bodies:** For a satellite orbiting an oblate spheroid, the potential is approximated to derive secular changes. Notably, the longitude of the nodes regresses at a rate dependent on the body's mass and the orbit's geometry [S.335]. Similarly, the line of apsides exhibits precession determined by the orbital inclination relative to the equator [S.336].\n\n**Special Perturbations (Chapter 15)**\nSpecial perturbation theory is required when the perturbing forces—such as the gravitational influence of multiple planets in the solar system—cannot be reduced to simple algebraic expressions.\n\n*   **Numerical Requirement:** Because the perturbations from other planets vary in ways that defy simple formulas, these calculations must be performed numerically through computer-based integration [S.338].\n*   **Osculation:** In this context, orbital elements are valid only for a specific \"epoch of osculation.\" This is the instant when a theoretical, unperturbed Keplerian orbit \"kisses\" (coincides in position and velocity with) the actual, perturbed path of the object [S.339]. \n*   **Practical Application:** Because elements change over time due to perturbations, they must be periodically recalculated to maintain accuracy when predicting the position of asteroids or comets. An orbital state can be defined interchangeably by its set of six classical elements or by its position and velocity vector components $(x, y, z, \\dot{x}, \\dot{y}, \\dot{z})$ at a given epoch [S.339].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779384845898,
+      "channel": "plan_pipe_1302d3073115",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 329,
+        "end": 395
       }
     },
     {
@@ -172,64 +264,64 @@
       "content": "Here is a quiz for this lesson.",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Quiz",
-      "timestamp": 1778572591624,
+      "timestamp": 1779384845979,
       "channel": "general",
       "quizData": {
         "questions": [
           {
-            "question": "If an astronomer aims to refine orbital calculations by accounting for the influences of multiple bodies beyond a simple two-body model, which concept from the text would be most relevant?",
+            "question": "According to the text, why might a scientist choose a numerical solution over an analytical one for a differential equation?",
             "options": [
-              "Spherical trigonometry",
-              "The restricted three-body problem",
-              "Conic section geometry",
-              "Photographic astrometry"
+              "Numerical solutions are always more accurate than analytical solutions.",
+              "Numerical methods are often faster and easier to implement, even when an analytical solution exists.",
+              "Analytical formulas for differential equations are considered obsolete by the scientific community.",
+              "Numerical methods are the only way to solve equations that have no known variables."
             ],
             "correctIndex": 1,
-            "explanation": "The text explicitly links advanced topics like perturbation theory and the restricted three-body problem to the analysis of systems that extend beyond idealized two-body interactions."
+            "explanation": "The text explains that numerical solutions are often quicker and more convenient than analytical solutions, even in cases where an analytical solution is known."
           },
           {
-            "question": "Why does the text emphasize both numerical methods and coordinate geometry early on?",
+            "question": "What is the fundamental principle behind Simpson's Rule for numerical integration?",
             "options": [
-              "To provide the fundamental tools required to compute trajectories and describe physical orbital motion.",
-              "Because Newtonian gravity only applies to three-dimensional systems.",
-              "To distinguish between theoretical planetary motion and observational photographic astrometry.",
-              "To simplify the calculation of binary star masses by eliminating the need for trigonometry."
-            ],
-            "correctIndex": 0,
-            "explanation": "The text states that these areas provide the 'geometric foundations' and 'tools needed to describe and compute celestial trajectories'."
-          },
-          {
-            "question": "How do observational data sets from instruments like CCDs primarily serve the study of celestial mechanics according to this curriculum?",
-            "options": [
-              "They allow researchers to ignore the effects of general perturbations.",
-              "They replace the need for Newtonian physical theory.",
-              "They are used to derive orbital elements and velocities for real astronomical systems.",
-              "They help calculate the gravitational potential of mass distributions."
+              "It approximates the area under a curve by assuming the function is a straight line between points.",
+              "It calculates the exact area by using an infinite number of sub-intervals.",
+              "It approximates the area under a curve by fitting a parabola to three specific points on that curve.",
+              "It uses only the endpoint values of an interval to determine the integral."
             ],
             "correctIndex": 2,
-            "explanation": "The text notes that applications like CCD astrometry demonstrate how observational data are used to 'derive orbital elements, masses, and velocities in real astronomical systems'."
+            "explanation": "The text states that Simpson’s Rule works by calculating the function at two limits and the point halfway between them, then fitting a parabola to those three points to find the area."
           },
           {
-            "question": "In the context of the two-body problem described in the text, what is the primary purpose of bridging theory and observation?",
+            "question": "What is the recommended practice mentioned in the text to ensure the accuracy of a numerical integration result?",
             "options": [
-              "To prove that only spherical bodies follow Newtonian orbits.",
-              "To enable the practical computation of an ephemeris and orbit determination.",
-              "To limit the scope of study to visual binary stars only.",
-              "To standardize the use of photographic astrometry over all other observational methods."
+              "Use the largest possible interval to minimize the total number of computer calculations.",
+              "Subdivide the interval into successively smaller sub-intervals to check for convergence of the result.",
+              "Rely solely on the built-in integration routines provided by computer operating systems.",
+              "Avoid all changes of variables to ensure the integrity of the original function remains intact."
             ],
             "correctIndex": 1,
-            "explanation": "The text indicates that bridging theory and observation is a vital step leading to 'practical methods for ephemeris computation and orbit determination'."
+            "explanation": "The author notes that their practice is to subdivide the interval into successively more sub-intervals to see whether the result converges, which helps determine the accuracy."
           },
           {
-            "question": "What distinguishes the analysis of 'perturbation theory' from the 'two-body problem' in this curriculum?",
+            "question": "How can a change of variable influence numerical integration according to the passage?",
             "options": [
-              "Perturbation theory is used for theoretical models, while the two-body problem is only for spectroscopic binaries.",
-              "The two-body problem is a numerical method, whereas perturbation theory is a branch of trigonometry.",
-              "Perturbation theory moves the analysis beyond idealized systems to account for more complex gravitational influences.",
-              "There is no difference; both are solely restricted to two-dimensional geometric solutions."
+              "It increases the complexity, requiring a much larger number of sub-intervals.",
+              "It is only useful if the function does not have an analytical solution.",
+              "It can significantly improve computational efficiency and speed up the calculation.",
+              "It creates an error in the final calculation that must be corrected by further iterations."
             ],
             "correctIndex": 2,
-            "explanation": "The text frames perturbation theory and the restricted three-body problem as methods to 'extend the analysis beyond idealized systems'."
+            "explanation": "The author demonstrates that a change of variable can make calculations significantly faster, sometimes by a factor of several hundred, allowing for quicker results."
+          },
+          {
+            "question": "What is mentioned as a major benefit of using programming and numerical methods in celestial mechanics research?",
+            "options": [
+              "It eliminates the need for any mathematical understanding beyond simple arithmetic.",
+              "It allows for the integration of data directly from observational tables and numerical procedures.",
+              "It guarantees that all physical phenomena can be solved without any approximation errors.",
+              "It prevents the need for ever consulting reference tables like The Astronomical Almanac."
+            ],
+            "correctIndex": 1,
+            "explanation": "The text highlights that numerical methods allow researchers to handle observational data and integrate functions where analytical methods might be too slow, computationally expensive, or non-existent."
           }
         ],
         "answers": [
@@ -249,49 +341,49 @@
       "content": "Flashcards for review.",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Flashcards",
-      "timestamp": 1778572591625,
+      "timestamp": 1779384845980,
       "channel": "general",
       "flashcardData": {
         "cards": [
           {
-            "front": "What is the primary focus of Tatum's 'Celestial Mechanics'?",
-            "back": "A mathematically rigorous and computation-focused introduction to orbital dynamics and celestial mechanics."
+            "front": "What is the primary mission of the LibreTexts project regarding educational resources?",
+            "back": "To provide an accessible, comprehensive, and collabarative platform for openly licensed resources to reduce the financial burden of traditional educational materials."
           },
           {
-            "front": "What are the four mathematical-geometric foundations listed at the start of the text?",
-            "back": "Numerical methods, conic sections, plane/spherical trigonometry, and 3D coordinate geometry."
+            "front": "Why are numerical methods often preferred over analytical solutions in celestial mechanics?",
+            "back": "Many problems lack an explicit algebraic formula, or numerical approaches are simply faster, easier, or more convenient to implement than complex analytical solutions."
           },
           {
-            "front": "What physical law provides the foundation for the text's analysis of orbital motion?",
-            "back": "Newtonian gravity."
+            "front": "What is Simpson's Rule in the context of numerical integration?",
+            "back": "A numerical integration technique that approximates the area under a curve by fitting a parabola to three points (the endpoints and the midpoint) within an interval."
           },
           {
-            "front": "What is an ephemeris in the context of celestial mechanics?",
-            "back": "A table of values that gives the trajectories of astronomical objects in the sky at given times."
+            "front": "What is the formula for Simpson's Rule, where h is the interval width?",
+            "back": "(h/3) * (f(x1) + 4*f(x2) + f(x3)), where x1 and x3 are endpoints and x2 is the midpoint."
           },
           {
-            "front": "What does the 'restricted three-body problem' involve?",
-            "back": "An analysis of the motion of a third body of negligible mass under the gravitational influence of two larger bodies, often including the study of Lagrangian points."
+            "front": "How can one assess the accuracy of a numerical integration result?",
+            "back": "By subdividing the interval successively into more and smaller subintervals to observe if the result converges to a stable value."
           },
           {
-            "front": "Which two types of astronomical observation does the text explicitly connect to the derivation of orbital elements?",
-            "back": "Photographic and CCD astrometry."
+            "front": "What strategy can significantly improve the efficiency of a numerical integration calculation?",
+            "back": "Using a change of variables (substitution) to simplify the integrand, which can make calculation faster by a factor of hundreds."
           },
           {
-            "front": "What distinguishes visual binary stars from spectroscopic binary stars in orbital analysis?",
-            "back": "Visual binaries are resolved as separate entities through imaging, while spectroscopic binaries are identified by periodic Doppler shifts in their spectra."
+            "front": "What does the text suggest concerning the use of existing library routines for integration?",
+            "back": "While convenient, the text encourages learning to carry out numerical integration independently rather than relying blindly on pre-written routines."
           },
           {
-            "front": "What is the purpose of general and special perturbation theory?",
-            "back": "To account for deviations from idealized two-body motion caused by additional forces or complex mass distributions."
+            "front": "True/False: Analytical solutions are always more efficient than numerical solutions.",
+            "back": "False. There are many cases, such as certain differential equations, where numerical methods are faster and more efficient than analytical solutions."
           },
           {
-            "front": "What two fundamental measurement concepts are essential for the chapter 'The Celestial Sphere'?",
-            "back": "Time and position (coordinate geometry)."
+            "front": "What is the main advantage of the web-based nature of LibreTexts?",
+            "back": "It allows for the integration of advanced features, interactive textbooks, adaptive homework, and easy customization/remixing by educators."
           },
           {
-            "front": "What is the final practical goal of the 'Computation of an Ephemeris' and 'Calculation of Orbital Elements' chapters?",
-            "back": "To bridge theory and observation, enabling the prediction of planetary positions and the derivation of physical properties like mass and velocity."
+            "front": "What does the text identify as a primary constraint when initial programming is being considered?",
+            "back": "Speed and efficiency of the algorithm, as even small improvements in programming efficiency can reduce massive computational runtimes significantly."
           }
         ],
         "currentIndex": 0,
@@ -306,83 +398,72 @@
         {
           "title": "Celestial Mechanics",
           "bullets": [
-            "Rigorous study of orbital dynamics and gravitation.",
-            "Bridging theoretical mathematics with observational astronomy."
+            "Study of motion under universal gravitation",
+            "Analysis of orbits and gravitational potentials"
           ],
-          "notes": "Welcome to our exploration of celestial mechanics. We will examine the physical laws governing motion in space.",
-          "page_range": "1",
+          "notes": "This lecture explores the fundamental principles of celestial mechanics, covering how objects move under gravitational influence. We will examine both the theoretical foundations and practical applications.",
+          "page_range": "190-334",
           "image_prompt": ""
         },
         {
-          "title": "Mathematical Foundations",
+          "title": "Gravitational Fields",
           "bullets": [
-            "Numerical methods for celestial trajectory calculation.",
-            "Geometric essentials including conic sections.",
-            "Plane and spherical trigonometry applications.",
-            "Three-dimensional coordinate geometry analysis."
+            "Gravitational field strength is force per unit mass",
+            "Field exists around all massive bodies to infinity",
+            "Analogous to electrostatic field equations",
+            "Independent of particle mass or charge"
           ],
-          "notes": "Before we calculate orbits, we must master the numerical and geometric tools required for precision.",
-          "page_range": "2",
+          "notes": "Gravitational fields define the acceleration bodies experience in space. While similar to electrostatics, gravitation only features attractive forces and lacks dipole phenomena.",
+          "page_range": "154-156",
           "image_prompt": ""
         },
         {
-          "title": "Gravity and Time",
+          "title": "The Celestial Sphere",
           "bullets": [
-            "Understanding gravitational fields and potential.",
-            "Mapping motion on the celestial sphere.",
-            "Defining the measurement of time.",
-            "Principles governing general planetary motions."
+            "Model representing stars on a fixed sphere",
+            "Uses angular coordinates to define positions",
+            "Altazimuth system: altitude and azimuth relative to horizon",
+            "Equatorial and ecliptic systems also commonly used"
           ],
-          "notes": "With our tools ready, we move to the fundamental physics of gravity and the temporal systems defining planetary movement.",
-          "page_range": "3",
+          "notes": "The celestial sphere is a coordinate tool for mapping the sky. Understanding coordinate systems like Altazimuth is essential for basic observational astronomy.",
+          "page_range": "200-202",
           "image_prompt": ""
         },
         {
-          "title": "The Two-Body Problem",
+          "title": "Two-Body Orbital Motions",
           "bullets": [
-            "Solving two-body dynamics in two dimensions.",
-            "Practicing ephemeris computation.",
-            "Techniques for photographic astrometry.",
-            "Implementing CCD-based astronomical data analysis."
+            "Kepler's laws describe elliptical, parabolic, or hyperbolic paths",
+            "Area swept by vector is constant (conservation of momentum)",
+            "Orbital period relates to the semi-major axis",
+            "Derivable from Newton's law of gravitation"
           ],
-          "notes": "The two-body problem is our gateway to understanding binary systems and computing precise spacecraft or planetary positions.",
-          "page_range": "4",
+          "notes": "Kepler's laws are foundational to orbital motion. They demonstrate how objects naturally follow conic sections under gravity while conserving angular momentum.",
+          "page_range": "239-241",
           "image_prompt": ""
         },
         {
-          "title": "Orbits and Perturbations",
+          "title": "General Perturbation Theory",
           "bullets": [
-            "Calculating precise orbital elements.",
-            "General theory of orbital perturbations.",
-            "Special perturbation methods for specific paths.",
-            "Restricted three-body problems and potentials."
+            "Non-Keplerian orbits caused by complex potentials",
+            "Periodic perturbations vs. secular variations",
+            "Lagrange's planetary equations quantify orbital element changes",
+            "Poisson brackets utilized for analytical derivation"
           ],
-          "notes": "Real-world orbits are rarely perfect; we must therefore account for perturbations and complex interactions between three bodies.",
-          "page_range": "5",
-          "image_prompt": ""
-        },
-        {
-          "title": "Observational Astronomy",
-          "bullets": [
-            "Analyzing visual binary star systems.",
-            "Interpreting spectroscopic binary star data.",
-            "Deriving masses and velocities from observations."
-          ],
-          "notes": "Finally, we apply these theories to real-world stellar observations to determine the properties of binary stars.",
-          "page_range": "6",
+          "notes": "When multiple masses influence an orbit, the path deviates from a perfect ellipse. We use perturbation theory to model these subtle, long-term changes.",
+          "page_range": "330-334",
           "image_prompt": ""
         }
       ],
       "config": {
-        "title": "Lesson 5 — Celestial Mechanics - Presentation",
+        "title": "Lesson 5: Celestial Mechanics - Presentation",
         "lang": "en",
         "format": "lecture",
         "length": "short"
       },
       "chapters": [],
-      "createdAt": 1778572591524,
-      "pdfName": "Celestial Mechanics (Tatum)"
+      "createdAt": 1779384845879,
+      "pdfName": "Celestial Mechanics"
     }
   ],
-  "sourceHash": "6ecee12fa47220aa"
+  "sourceHash": "06b9e1b2ba74cd45"
 }

@@ -3,28 +3,15 @@
   "version": 1,
   "pipelineVersion": 3,
   "lesson": {
-    "name": "Electric Circuits - Lesson 2 — Electric Circuits II - Alternating Current (Kuphaldt)",
-    "pdfName": "Electric Circuits II - Alternating Current (Kuphaldt)",
-    "createdAt": 1778577302783,
-    "exportedAt": "2026-05-12T09:15:02.784Z",
+    "name": "Electric Circuits - Lesson 2: Electric Circuits II: Alternating Current (Kuphaldt)",
+    "pdfName": "Electric Circuits II: Alternating Current (Kuphaldt)",
+    "createdAt": 1779385460122,
+    "exportedAt": "2026-05-21T17:44:20.123Z",
     "meta": {
       "courseId": "course-en-gen-electric-circuits",
       "lessonIndex": 1,
       "courseTitle": "Electric Circuits",
-      "lessonObjective": "Selection on \"electric circuits\"",
-      "licensing": {
-        "effective_license": "CC-BY-4.0",
-        "sources": [
-          {
-            "content_id": "local-newbooks-5a5a715eb4957284",
-            "title": "Electric Circuits II: Alternating Current (Kuphaldt)",
-            "source": "local-newbooks",
-            "license": "CC-BY-4.0",
-            "license_url": "https://creativecommons.org/licenses/by/4.0/",
-            "url": "local://newbooks/2026-05-13/Electric Circuits/Lesson 2 Electric Circuits II - Alternating Current (Kuphaldt).pdf"
-          }
-        ]
-      }
+      "lessonObjective": "Electric Circuits II: Alternating Current (Kuphaldt)"
     }
   },
   "plans": [
@@ -39,13 +26,67 @@
       "tasks": [
         {
           "action": "zusammenfassung",
-          "pages": "1-2",
-          "chapterTitle": "Electric Circuits II: Basic Theory through Transmission Lines",
+          "pages": "1-25",
+          "chapterTitle": "Basic AC Theory",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "26-65",
+          "chapterTitle": "Complex Numbers",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "66-89",
+          "chapterTitle": "Reactance and Impedance – Inductive",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "90-98",
+          "chapterTitle": "Reactance and Impedance – Capacitive",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "99-129",
+          "chapterTitle": "Reactance and Impedance – R, L, and C",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "130-152",
+          "chapterTitle": "Resonance",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "153-189",
+          "chapterTitle": "Mixed-Frequency AC Signals",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "190-218",
+          "chapterTitle": "Filters",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "219-287",
+          "chapterTitle": "Transformers",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "288-574",
+          "chapterTitle": "Polyphase AC Circuits, Power Factor, Metering, Motors, and Transmission Lines",
           "status": "done"
         }
       ],
       "status": "done",
-      "created": 1778577302783,
+      "created": 1779385460122,
       "pinned": false,
       "completedSteps": [],
       "statusDismissed": true
@@ -54,33 +95,168 @@
   "messages": [
     {
       "role": "bot",
-      "content": "This section outlines the curriculum for \"Electric Circuits II - Alternating Current,\" authored by Kuphaldt. The course provides a comprehensive study of AC electrical theory and its practical applications.\n\n### **Key Topics Covered**\nThe curriculum is organized into 14 chapters, spanning foundational theory to complex system applications:\n\n*   **Fundamentals & Mathematical Tools:** Covers Basic AC Theory (p. 1) and the use of Complex Numbers (p. 1) for circuit analysis.\n*   **Impedance & Reactance:** Detailed exploration of Inductive (p. 1), Capacitive (p. 1), and combined RLC (p. 1) circuits.\n*   **Advanced Circuit Behavior:** Analysis of Resonance (p. 1), Polyphase AC Circuits (p. 1), Mixed-Frequency Signals (p. 1), and Filter design (p. 1).\n*   **Components & Power:** Study of Transformers (p. 1) and Power Factor (p. 1).\n*   **Practical Systems & Instrumentation:** AC Metering (p. 2), AC Motors (p. 2), and Transmission Lines (p. 2).",
+      "content": "Based on the provided document from *Lessons In Electric Circuits, Volume II – AC* (Kuphaldt), here is a concise summary of the key concepts regarding Alternating Current (AC):\n\n### **Overview of Alternating Current (AC)**\n*   **Definition:** Unlike Direct Current (DC), which flows in one constant direction with steady polarity, AC refers to electrical charge that periodically reverses direction and switches polarity over time.\n*   **Generation:** AC is typically produced by rotating electro-mechanical generators known as **alternators**. As magnetic poles pass by stationary coils, they induce a voltage that reverses polarity, resulting in an alternating flow of current.\n\n### **Advantages of AC**\n*   **Simplicity and Reliability:** AC generators and motors generally do not require the complex mechanical systems (brushes and commutators) that DC designs use to maintain constant polarity, leading to lower manufacturing costs and increased durability.\n*   **Voltage Transformation:** The most significant advantage of AC is the use of **transformers**. Through mutual induction, transformers can easily step up or step down voltage levels. This makes the long-distance transmission of electrical power efficient, as high voltage and low current minimize resistive power losses.\n\n### **AC Waveforms and Measurements**\n*   **Sine Waves:** Natural AC voltage from an alternator follows the trigonometric sine function, resulting in a distinct \"sine wave\" pattern when graphed over time.\n*   **Cycles and Period:** A **cycle** is the completion of one full pattern of change. The **period** is the time it takes to complete one cycle.\n*   **Frequency:** The rate of oscillation is measured in **Hertz (Hz)**, representing the number of cycles completed per second. Frequency and period are mathematical reciprocals of one another (Frequency = 1 / Period).\n*   **Visualization:** An **oscilloscope** is the standard tool used to display and measure these time-varying voltage waveforms.",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Summary",
-      "timestamp": 1778577302783,
+      "timestamp": 1779385460122,
       "channel": "general"
     },
     {
       "role": "bot",
-      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-gen-electric-circuits_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 2 — Electric Circuits II - Alternating Current (Kuphaldt) - Presentation</span><span class=\"pm-chat-count\">4 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Electric Circuits II: AC Theory</div><ul class=\"pm-chat-slide-bullets\"><li>Foundational study of alternating current systems.</li><li>Explores principles beyond simple DC circuits.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-gen-electric-circuits_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 2: Electric Circuits II: Alternating Current (Kuphaldt) - Presentation</span><span class=\"pm-chat-count\">6 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Electric Circuits II: AC Theory</div><ul class=\"pm-chat-slide-bullets\"><li>Introduction to Alternating Current (AC) principles</li><li>Analysis of waveforms, resonance, and reactive components</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Presentation",
-      "timestamp": 1778577302784,
+      "timestamp": 1779385460123,
       "channel": "general"
     },
     {
       "role": "bot",
-      "content": "This document serves as an outline for the textbook *Electric Circuits II - Alternating Current* by Tony Kuphaldt, covering fundamental and advanced principles of AC circuit analysis. Based on the provided sections, the content is structured into the following key areas:\n\n**Foundational AC Theory and Mathematics**\nThe text begins with the essential basics of AC theory and introduces complex numbers, which are critical for analyzing AC circuits. This section serves as the prerequisite mathematical toolkit for subsequent chapters (p. 1).\n\n**Reactance and Impedance**\nA significant portion of the material focuses on how components resist alternating current. This includes dedicated studies on inductive reactance, capacitive reactance, and the combined behavior of resistors, inductors, and capacitors ($R$, $L$, and $C$ circuits). This analysis extends into resonance within these circuits (p. 1).\n\n**Advanced AC Systems and Applications**\nThe text covers complex configurations and practical applications, including:\n* Polyphase AC circuits.\n* Mixed-frequency AC signals.\n* The design and function of filters.\n* The operation of transformers and the concept of power factor (p. 1).\n\n**System Integration and Infrastructure**\nThe final modules address the practical instrumentation and large-scale application of AC power, specifically covering AC metering circuits, the operation of AC motors, and the principles of transmission lines (p. 2).",
+      "content": "This summary covers the fundamental concepts of alternating current (AC) as presented in the provided text (S.1–S.12):\n\n**Core Definitions**\nDirect current (DC) refers to electricity flowing in a constant direction with steady voltage polarity, such as that provided by a battery. Alternating current (AC) is defined by voltage that periodically reverses polarity and current that switches direction over time.\n\n**AC Generation**\nAC is generated using alternators, which operate based on Faraday’s Law of electromagnetic induction. By rotating a magnetic field around stationary wire coils, the system produces a voltage that reverses as the magnetic poles pass the coils. \n\n**Advantages of AC**\nThe text highlights several practical advantages of AC over DC:\n* Mechanical Simplicity: AC generators and motors do not require brushes or commutators. This design eliminates the sparking, heat, and physical wear associated with the mechanical contacts needed in DC machines. \n* Safety and Reliability: Because AC equipment avoids the use of brushes, these machines are more reliable and safer for use in environments with flammable or explosive vapors.\n* Efficiency: AC systems are generally more efficient for high-power applications and electrical distribution compared to DC counterparts.\n\n**Operational Principles**\nThe frequency of current oscillation is directly related to the speed of the generator shaft; as the shaft rotation increases, the frequency of the alternating voltage and current also increases. While DC generators attempt to maintain a constant polarity through complex mechanical construction, the inherent design of the AC alternator naturally produces a reversing waveform without such components.",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Summary",
-      "timestamp": 1778577302793,
+      "timestamp": 1779385460132,
       "channel": "plan_pipe_2693d6325124",
       "planStep": 1,
       "planAction": "zusammenfassung",
       "contextRef": {
         "type": "range",
         "start": 1,
-        "end": 2
+        "end": 25
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of AC Theory and Electromagnetism\n\n#### AC Magnitude Measurements\nAC waveforms are measured using several conventions: Peak, Peak-to-Peak (P-P), Average, and Root Mean Square (RMS). RMS represents the \"DC equivalent\" value regarding heat dissipation. For a pure sine wave, the relationship is $RMS \\approx 0.707 \\times Peak$. Analog D'Arsonval meters typically respond to the average value and are calibrated for pure sine waves using a form factor of $1.1107$. Deviations from pure sine waves cause measurement inaccuracies unless \"True-RMS\" technology is utilized (p. 17-18).\n\n#### AC Circuit Calculations\nIn purely resistive AC circuits, established DC laws—Ohm's Law, Kirchhoff's Laws, and series/parallel resistance rules—remain fully applicable. When performing calculations, all values must be in the same unit type (e.g., all RMS or all Peak). Typically, AC values are assumed to be RMS unless otherwise specified (p. 18-19).\n\n#### AC Phase\nPhase shift describes the synchronization between two waveforms of the same frequency. It is expressed in degrees based on the $0^\\circ$ to $360^\\circ$ cycle. A \"leading\" waveform precedes another, while a \"lagging\" waveform follows. Because there is no absolute reference for phase, measurements are relative, usually referencing the power supply (p. 19-21). Representing phase and amplitude accurately in circuits with inductance or capacitance requires the use of complex numbers (p. 22).\n\n#### Principles of Radio\nJames Clerk Maxwell unified electricity and magnetism, demonstrating that a changing electric field produces a perpendicular magnetic field, and vice versa. This propagation through open space constitutes an electromagnetic wave moving at the speed of light. Antennas function as transducers for these waves:\n- Dipole antennas primarily radiate electric fields (p. 23).\n- Loop antennas primarily radiate magnetic fields (p. 23).\nThese devices allow for the transmission and reception of high-frequency AC signals (p. 24).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779385460133,
+      "channel": "plan_pipe_2693d6325124",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 26,
+        "end": 65
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This summary covers the provided content regarding reactance and impedance in inductive AC circuits.\n\n**AC Resistor Circuits**\nIn a purely resistive AC circuit, the voltage and current are perfectly in phase, meaning they reach their peaks and zero-crossings simultaneously (p. 57, 58). Because power is the product of voltage and current ($p=ie$), the power dissipated by a resistor is always positive. The resistor converts electrical energy into heat at all times throughout the AC cycle (p. 58).\n\n**AC Inductor Circuits**\nInductors oppose changes in current, creating a voltage drop proportional to the rate of change of that current ($e = L \\frac{di}{dt}$). This property is known as inductive reactance ($X_L$). Consequently, in a pure inductor, the current lags the voltage by $90^\\circ$ (p. 59). Because of this phase shift, the inductor absorbs energy during parts of the cycle and returns it during others, resulting in a net power dissipation of zero (p. 61).\n\n**Mathematical Foundations**\nInductive reactance is directly proportional to frequency and inductance, expressed as:\n$$X_L = 2\\pi fL$$\nThe term $2\\pi f$ represents angular velocity ($\\omega$), measured in radians per second, leading to the alternative formula $X_L = \\omega L$ (p. 61). As frequency increases, $X_L$ increases, providing greater impedance to current flow (p. 62). Mathematically, an inductor’s opposition is represented as a positive imaginary quantity ($jX_L$) (p. 63).\n\n**Series Resistor-Inductor (R-L) Circuits**\nWhen a resistor and inductor are connected in series, the total opposition to current is called impedance ($Z$), measured in ohms (p. 64). Impedance combines resistance (real) and reactance (imaginary) into a single vector quantity:\n$$Z_{total} = R + jX_L$$\nOhm's Law for AC circuits expands to $E = IZ$, where $E$ and $I$ are treated as complex numbers to account for phase shifts (p. 65). In a series R-L circuit, the total current lags the source voltage by an angle between $0^\\circ$ and $90^\\circ$, determined by the ratio of reactance to resistance (p. 64, 65). Kirchhoff's Voltage Law holds true when using complex representations for the voltage drops across the components (p. 66).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779385460134,
+      "channel": "plan_pipe_2693d6325124",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 66,
+        "end": 89
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This chapter covers how resistors, capacitors, and their combinations behave in AC circuits.\n\n**Resistive AC Circuits**\nIn a purely resistive circuit, voltage and current are in phase. Because the polarity of the voltage and current waveforms tracks identically, the power dissipated is always positive, representing a constant conversion of energy into heat [S.90, S.91].\n\n**Capacitive AC Circuits**\nCapacitors oppose changes in voltage. Consequently, the current in a pure capacitor leads the voltage by $90^\\circ$. Because of this phase shift, the power in a pure capacitor alternates equally between positive and negative, meaning the capacitor stores and releases energy rather than dissipating it as heat [S.92, S.93].\n\n**Capacitive Reactance**\nCapacitors provide opposition to AC current known as capacitive reactance ($X_C$), measured in ohms. Unlike resistance, reactance is frequency-dependent. It is calculated as:\n$$X_C = \\frac{1}{2 \\pi fC}$$\nReactance decreases as frequency increases; thus, capacitors pass higher frequency signals more easily than lower frequency ones [S.94, S.96]. Mathematically, capacitive reactance is treated as a negative imaginary quantity ($-90^\\circ$ phase shift) [S.95].\n\n**Series Resistor-Capacitor (RC) Circuits**\nWhen a resistor and capacitor are in series, the total opposition to current is called impedance ($Z$). Since resistance is a real number and reactance is an imaginary number, impedance is the complex sum:\n$$Z = R + jX_C$$\nThese components are analyzed using complex numbers to account for phase shifts. In a series circuit, total impedance is used in the AC version of Ohm’s Law:\n$$I = \\frac{E}{Z}$$\nIn these circuits, the current leads the voltage by an angle between $0^\\circ$ and $90^\\circ$, depending on the ratio of resistance to reactance [S.96, S.97, S.98].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779385460135,
+      "channel": "plan_pipe_2693d6325124",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 90,
+        "end": 98
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Reactance and Impedance (R, L, and C)\n\nThe material covers the fundamental concepts of managing AC circuits containing resistors, inductors, and capacitors.\n\n**Core Definitions**\n* Resistance ($R$): Represents opposition to electron flow (friction), resulting in voltage and current that are in-phase. Measured in Ohms ($\\Omega$) (p. 108).\n* Reactance ($X$): Represents inertia against electron flow, associated with electric or magnetic fields. It causes a $90^\\circ$ phase shift between voltage and current. Measured in Ohms ($\\Omega$) (p. 108).\n* Impedance ($Z$): The total opposition to current, defined as the complex sum of resistance and reactance ($Z = R + jX$). It is expressed in complex form and measured in Ohms ($\\Omega$) (p. 109).\n\n**Circuit Analysis Principles**\n* Impedance Phase Angles: Perfect resistors are at $0^\\circ$, inductors at $+90^\\circ$, and capacitors at $-90^\\circ$ (p. 109).\n* AC Ohm’s Law: Relationships are formulated as $E = IZ$, $I = E/Z$, and $Z = E/I$ (p. 109).\n* Series Circuits: Impedances are summed directly in complex form: $Z_{Total} = Z_1 + Z_2 + ... + Z_n$ (p. 101).\n* Parallel Circuits: Total impedance is determined using the reciprocal formula: $Z_{Total} = 1 / (1/Z_1 + 1/Z_2 + ... + 1/Z_n)$ (p. 104).\n* These rules mirror DC circuit analysis, provided all values are handled as complex numbers rather than scalar values (p. 109).\n\n**Capacitor Realities**\n* Real-world capacitors are not ideal and exhibit stray series and parallel resistances, making them slightly \"lossy.\" This loss is often due to the dielectric material's response to changing electric fields, which generates heat (p. 105).\n* Dielectric materials vary in lossiness; for example, vacuum and air have low loss, while high-K ceramics and aluminum oxide exhibit higher loss (p. 105).\n* Electrolytic capacitors are particularly known for being lossy and should generally not be used in purely AC applications without a DC bias (p. 105).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779385460136,
+      "channel": "plan_pipe_2693d6325124",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 99,
+        "end": 129
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers the principles of resonance in electric circuits containing inductors ($L$) and capacitors ($C$).\n\n**The Tank Circuit (Electric Pendulum)**\nA capacitor and inductor connected in parallel form a \"tank circuit.\" Energy oscillates between the two components in the form of an electric field (voltage) and a magnetic field (current). This process is analogous to a mechanical pendulum, where energy shifts between potential and kinetic forms. The oscillation frequency is determined solely by the values of $L$ and $C$, not by the magnitude of energy stored (p. 134-135).\n\n**Resonant Frequency**\nResonance occurs when the inductive reactance ($X_L$) equals the capacitive reactance ($X_C$) (p. 135). The resonant frequency for both series and parallel LC circuits is calculated as:\n$$f = \\frac{1}{2\\pi\\sqrt{LC}}$$\n(p. 136-137, 141)\n\n**Comparison of Circuit Types**\nParallel (Tank) Resonance: At the resonant frequency, the total impedance of the circuit approaches infinity. This means that a parallel LC circuit acts as an open circuit, drawing no current from the power supply at that frequency (p. 137).\n\nSeries Resonance: At the resonant frequency, the inductive and capacitive reactances cancel each other out, resulting in a total impedance of $0\\Omega$. This creates a short circuit condition, which can lead to localized, dangerously high voltage drops across the individual components despite a low input voltage (p. 141-142).\n\n**Key Concepts**\nBode Plots: These are used to visualize the frequency response of a circuit by plotting amplitude or phase versus frequency (p. 139).\nDamping: In practice, oscillations gradually decrease in amplitude due to power losses from stray resistances within the circuit components (p. 133).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779385460137,
+      "channel": "plan_pipe_2693d6325124",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 130,
+        "end": 152
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text discusses two major aspects of electrical circuit theory: resonance and mixed-frequency signals.\n\n### Resonance and Antiresonance\nResonance occurs in circuits containing inductance and capacitance when reactive components cancel each other out. \n\n* **Practical Resistance:** Real-world circuits contain resistance that limits resonance and broadens the response curve, reducing \"selectivity\" (p. 153). \n* **Antiresonance:** Adding resistance to an LC circuit can induce antiresonance, which dissipates energy and dampens unwanted oscillations caused by stray capacitance or inductance (p. 155). This principle is analogous to automotive shock absorbers.\n* **Quality Factor (Q):** The Q factor is a measure of a circuit's \"goodness,\" defined as the ratio of stored power to dissipated power ($Q = X/R$). High Q circuits are characterized by narrow bandwidths (p. 156-157).\n* **Bandwidth Calculations:** Bandwidth ($BW$) is measured between the half-power points, where current or voltage is 70.7% of its peak value. It is calculated as $BW = f_{c}/Q$ (p. 157-158).\n* **Series vs. Parallel:** In series resonant circuits, impedance is minimum at resonance. In parallel circuits, impedance reaches a maximum at resonance (p. 156, 159).\n\n### Mixed-Frequency AC Signals\nMany electronic applications involve signals containing multiple simultaneous frequencies or non-sinusoidal waveforms.\n\n* **Signal Coupling:** Mixed frequencies often occur accidentally due to \"coupling,\" where stray capacitance ($C_{stray}$) or mutual inductance ($M_{stray}$) allows AC noise to bleed into DC signal paths (p. 153-154).\n* **Mitigation:** Using shielded twisted-pair cables helps cancel out induced noise by ensuring equal and opposite phasing in the conductors (p. 154-155).\n* **Intentional Mixing:** Circuits can be designed to mix frequencies, such as superimposing data on power lines or combining voltage sources in series (p. 156).\n* **Harmonics:** Complex signals, such as those from musical instruments, are often composed of a fundamental frequency and its integer multiples, known as harmonics. The relationship is expressed as:\n$$1st\\ Harmonic = Fundamental$$\n$$nth\\ Harmonic = n \\times Fundamental$$\nSome systems may exclude specific harmonics (e.g., even-numbered harmonics) based on their physical construction (p. 156-157).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779385460138,
+      "channel": "plan_pipe_2693d6325124",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 153,
+        "end": 189
+      }
+    },
+    {
+      "role": "bot",
+      "content": "The provided text covers spectrum analysis, the effects of non-sinusoidal waveforms on circuits, and the introduction of filter circuits.\n\n### Spectrum Analysis and Harmonics (pp. 190–195)\n* Deviations from a pure sine wave result in a mixture of multiple sine waves at different frequencies and amplitudes.\n* Waveform symmetry is the primary indicator of harmonic content:\n    * Waveforms that are symmetrical above and below their horizontal centerline contain only odd-numbered harmonics (e.g., square and triangle waves).\n    * Unsymmetrical waveforms contain both even and odd harmonics (e.g., sawtooth waves).\n* The presence of a DC component (shifting the waveform above or below zero volts) does not affect the harmonic content.\n\n### Circuit Effects of Non-Sinusoidal Waveforms (pp. 195–198)\n* Non-sinusoidal signals react with reactive components (capacitors and inductors) as if multiple, individual sine-wave sources were present simultaneously.\n* The Superposition Theorem is used to analyze these signals by solving for one frequency component at a time. Total circuit response is found by summing these individual results; however, sums must be performed keeping frequency distinctions in mind, as complex numbers cannot represent frequency.\n* Harmonics can cause issues like electromagnetic interference, inductive/capacitive coupling, and component overheating due to eddy currents.\n\n### Introduction to Filters (pp. 200–218)\n* A filter is a circuit designed to selectively allow or block specific frequency ranges. \n* Common applications include audio equalizers, which adjust gain across specific frequency bands, and crossover networks, which route frequency ranges to appropriate speakers (e.g., sending high frequencies to a tweeter).\n* Low-pass filters block high-frequency signals and pass low-frequency ones. Two primary configurations exist:\n    * Inductive low-pass filters: Use the fact that an inductor's impedance ($X_L$) increases with frequency, blocking signals in series.\n    * Capacitive low-pass filters: Use a parallel capacitor whose impedance ($X_C$) decreases with frequency, effectively shorting high-frequency signals to ground.\n* Performance is often visualized using a Bode plot, which graphs amplitude or phase shift against frequency.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779385460139,
+      "channel": "plan_pipe_2693d6325124",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 190,
+        "end": 218
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section covers the theory and application of resonant filters and the fundamental operation of transformers.\n\n**Resonant Filters (pp. 219–227)**\nResonant LC circuits can be designed as band-stop filters by using either series or parallel configurations:\n* Series resonant band-stop: At resonance, low impedance shorts the signal to ground, blocking specific frequencies.\n* Parallel resonant band-stop: At resonance, high impedance blocks the signal from the load.\n* Selectivity: Proper filter performance depends on the \"purity\" of the components. Stray resistance in inductors can skew notch frequencies and reduce selectivity.\n* Impedance Matching: Unmatched LC filters can produce unintended resonant peaks where output voltage exceeds input voltage. Designing for a flat response requires matching source and load impedances according to $Z = \\sqrt{L/C}$ (p. 223).\n* Power Supplies: Inductors and capacitors are used to filter AC ripple in DC power supplies. Because ripple frequencies are significantly higher than the circuit's resonant frequency, these filters operate effectively without interference from resonant effects.\n\n**Transformer Fundamentals (pp. 229–232)**\nTransformers rely on mutual inductance and magnetic flux behavior within a ferromagnetic core:\n* Induction: A changing AC current induces a changing magnetic flux ($\\Phi$), which generates a counter electromotive force (EMF) in the coil to balance the source voltage, following Faraday's law: $e = N \\frac{d\\Phi}{dt}$ (p. 230).\n* Phase Relationships: In a perfect inductor, magnetic flux lags behind the applied voltage by 90 degrees. Consequently, the magnetizing current required to create this flux also lags the voltage by 90 degrees.\n* Magnetic Ohm’s Law: The relationship between magnetomotive force (mmf), flux ($\\Phi$), and reluctance ($\\Re$) is expressed as $mmf = \\Phi \\Re$ (p. 231).\n* Saturation Issues: If iron-core inductors approach magnetic saturation, the magnetizing current becomes non-sinusoidal. This nonlinearity can lead to harmonic distortion in the circuit.\n\nComputer simulation using SPICE is highly recommended as a tool for analyzing these complex circuit behaviors, as it allows students to visualize frequency responses and component interactions beyond manual mathematical calculation (p. 227).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779385460140,
+      "channel": "plan_pipe_2693d6325124",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 219,
+        "end": 287
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Transformer Practical Considerations and Power Systems\n\nThis summary covers the operational phenomena and design constraints of transformers, as well as the fundamentals of single-phase power distribution as discussed in the provided text.\n\n#### Transformer Practical Considerations (pp. 288-295)\n\n**1. Flux and Saturation**\n*   **Voltage-Flux Relationship:** The voltage waveform is the derivative of the magnetic flux waveform ($v = d\\Phi/dt$). Conversely, flux is the integral of the voltage; when a transformer operates at lower frequencies (e.g., 50 Hz vs 60 Hz), it requires a higher peak magnetic flux to support the same voltage, which can drive the core closer to saturation (p. 288).\n*   **DC Offset:** The presence of DC current in the primary winding creates a \"bias\" that shifts the flux waveform toward the saturation limit for one half-cycle, leading to increased distortion and potential saturation (p. 288, 289).\n*   **Design Goals:** Engineers aim to keep flux densities well below saturation limits to ensure linearity and to provide a safety margin for frequency variations or DC offsets (p. 288).\n\n**2. Inrush Current**\n*   **Cause:** Inrush current occurs during the initial connection to an AC source. It is most severe if the transformer is switched on when the instantaneous voltage is zero. \n*   **Mechanism:** In a \"cold start,\" the flux begins from zero rather than from a previously magnetized state. This causes the peak flux to reach approximately twice its normal magnitude. The core typically saturates, resulting in a disproportionately large surge of magnetizing current (pp. 290-292).\n\n**3. Heat and Noise**\n*   **Thermal Management:** Heat is minimized by avoiding core saturation, reducing eddy currents, and ensuring loads remain within ampacity. Large transformers use oil baths and radiator tubes for cooling (pp. 292-293).\n*   **Noise Sources:** \n    *   **Magnetostriction:** The physical expansion and contraction of the iron core at twice the system frequency (e.g., 120 Hz) due to magnetization (p. 294).\n    *   **Winding Vibration:** Repulsive electromagnetic forces between primary and secondary windings under heavy load cause mechanical vibration and audible noise (p. 294).\n\n#### Single-Phase Power Systems (pp. 298-300)\n\n*   **Wiring Costs:** A primary concern in power system design is the cost of copper conductors. High current levels necessitate larger, heavier, and more expensive wiring (p. 299).\n*   **Efficiency of Voltage Scaling:** To deliver the same load power ($P = IE$) while minimizing the total current ($I$), designers increase the source voltage ($E$). Doubling the voltage reduces the required current by half, significantly lowering the weight and cost of the necessary wiring or allowing for longer conductor runs (p. 299, 300).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779385460141,
+      "channel": "plan_pipe_2693d6325124",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 288,
+        "end": 574
       }
     },
     {
@@ -88,64 +264,64 @@
       "content": "Here is a quiz for this lesson.",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Quiz",
-      "timestamp": 1778577302883,
+      "timestamp": 1779385460222,
       "channel": "general",
       "quizData": {
         "questions": [
           {
-            "question": "If a circuit consists only of a pure inductor, how does the voltage waveform relate to the current waveform in terms of timing?",
+            "question": "Why is the alternator (AC generator) design generally considered superior to a DC generator design for high-power applications?",
             "options": [
-              "The voltage leads the current by 90 degrees.",
-              "The current leads the voltage by 90 degrees.",
-              "The voltage and current are perfectly in phase.",
-              "The voltage lags the current by 180 degrees."
+              "AC generators do not require brushes and commutators to function.",
+              "AC generators produce constant voltage without the need for multiple sets of coils.",
+              "DC generators cannot produce electricity if they rotate at high speeds.",
+              "AC electricity dissipates heat more efficiently than DC electricity."
             ],
             "correctIndex": 0,
-            "explanation": "In a pure inductor, the back-EMF generated by the changing magnetic field opposes the change in current, causing the voltage to reach its peak before the current."
+            "explanation": "The text states that DC generators require brushes and commutators to maintain constant polarity, which leads to issues like sparking, heat, and complex construction. AC generators (alternators) do not require these components, making them simpler and more reliable."
           },
           {
-            "question": "What is the primary effect of adding a capacitor in series with a resistor in an AC circuit?",
+            "question": "What is the primary operational principle of an AC generator according to Faraday’s Law?",
             "options": [
-              "It increases the total resistance of the circuit.",
-              "It makes the circuit purely inductive.",
-              "It introduces capacitive reactance, causing the voltage to lag behind the current.",
-              "It introduces capacitive reactance, causing the current to lead the voltage."
+              "The conversion of chemical energy into mechanical rotation.",
+              "The steady flow of electrons through a fixed magnetic field.",
+              "Developing voltage by rotating a magnetic field around stationary wire coils.",
+              "The use of carbon brushes to physically reverse the polarity of the output."
             ],
-            "correctIndex": 3,
-            "explanation": "Capacitors store energy in an electric field and allow current to lead voltage because current must flow to charge the plates before the voltage across them can rise."
+            "correctIndex": 2,
+            "explanation": "The content explains that rotating a magnetic field around stationary wire coils produces AC voltage, which is the basic operating principle of an AC generator based on Faraday’s Law of electromagnetic induction."
           },
           {
-            "question": "What is the physical implication of reaching the resonant frequency in an RLC circuit?",
+            "question": "In a DC generator, why are multiple sets of coils used rather than just one?",
             "options": [
-              "The total impedance of the circuit is at its maximum.",
-              "The inductive reactance and capacitive reactance cancel each other out.",
-              "The power factor of the circuit drops to zero.",
-              "The circuit current drops to zero."
+              "To increase the speed of the rotating shaft.",
+              "To convert the AC generated into a higher frequency.",
+              "To ensure the output voltage is constant rather than a series of pulses.",
+              "To reduce the magnetic field interference between coils."
             ],
-            "correctIndex": 1,
-            "explanation": "At resonance, the inductive reactance (which is positive) and the capacitive reactance (which is negative) are equal in magnitude, resulting in a net reactive impedance of zero."
+            "correctIndex": 2,
+            "explanation": "A single-coil DC generator produces brief pulses of voltage. To achieve the 'constant' voltage required by DC applications, multiple sets of coils are needed to maintain contact with the brushes."
           },
           {
-            "question": "How does power factor relate to the efficiency of energy transfer in an AC system?",
+            "question": "If you are designing a motor to operate in an environment with flammable vapors, why would an AC motor be preferred over a DC motor?",
             "options": [
-              "A power factor of 0 indicates maximum efficiency.",
-              "A power factor closer to 1 indicates that current and voltage are in phase, minimizing wasted energy in transmission.",
-              "Increasing the power factor always requires increasing the voltage.",
-              "The power factor is irrelevant to the amount of current required to deliver a specific amount of real power."
-            ],
-            "correctIndex": 1,
-            "explanation": "A high power factor (close to 1) means the current and voltage are mostly in phase, reducing the amount of 'apparent power' or reactive energy oscillating back and forth without doing useful work."
-          },
-          {
-            "question": "Why are complex numbers (such as polar and rectangular forms) essential for analyzing AC circuits?",
-            "options": [
-              "To calculate the total voltage of the power grid.",
-              "Because AC components have both magnitude and phase shift.",
-              "Because resistors only work with real numbers, while inductors only work with imaginary numbers.",
-              "To convert AC signals into DC signals for measurement tools."
+              "AC motors produce more heat, which helps burn off flammable vapors.",
+              "AC motors do not use brushes, eliminating the risk of sparking.",
+              "AC motors are naturally immune to the conductivity of explosive gases.",
+              "AC motors require more voltage, which prevents the build-up of explosive gases."
             ],
             "correctIndex": 1,
-            "explanation": "AC components (capacitors and inductors) create phase shifts between voltage and current; complex numbers provide a coordinate system that incorporates both the magnitude (amplitude) and the phase (timing) simultaneously."
+            "explanation": "The text highlights that brush contacts in DC machines can produce sparks, which are dangerous in environments with flammable or explosive vapors. AC motors avoid this because they do not rely on brushes."
+          },
+          {
+            "question": "Which of the following statements best describes the relationship between the speed of an alternator's shaft and its output?",
+            "options": [
+              "The faster the shaft turns, the higher the DC voltage produced.",
+              "The speed of the shaft has no effect on the AC frequency.",
+              "Faster rotation leads to an AC output that switches direction more frequently.",
+              "Faster rotation results in a larger physical magnet size."
+            ],
+            "correctIndex": 2,
+            "explanation": "The lesson notes that 'the faster the alternator’s shaft is turned, the faster the magnet will spin, resulting in an alternating voltage and current that switches directions more often in a given amount of time.'"
           }
         ],
         "answers": [
@@ -165,49 +341,49 @@
       "content": "Flashcards for review.",
       "model": "google/gemini-3.1-flash-lite-preview",
       "actionLabel": "Flashcards",
-      "timestamp": 1778577302884,
+      "timestamp": 1779385460223,
       "channel": "general",
       "flashcardData": {
         "cards": [
           {
-            "front": "What mathematical tool is used to simplify AC circuit analysis involving phase shifts?",
-            "back": "Complex numbers."
+            "front": "What is the primary difference between Direct Current (DC) and Alternating Current (AC)?",
+            "back": "DC flows in a constant direction with constant polarity, whereas AC periodically reverses its direction and switches polarity over time."
           },
           {
-            "front": "How does an inductor react to AC current?",
-            "back": "It exhibits inductive reactance, which opposes changes in current."
+            "front": "What is the generic circuit symbol for an AC voltage source?",
+            "back": "A circle with a wavy line (sine wave) inside it."
           },
           {
-            "front": "What is the primary effect of a capacitor in an AC circuit?",
-            "back": "It exhibits capacitive reactance, which opposes changes in voltage."
+            "front": "What is an 'alternator'?",
+            "back": "An AC generator that produces voltage by rotating a magnetic field around stationary wire coils, based on the principle of Faraday’s Law of electromagnetic induction."
           },
           {
-            "front": "What state occurs in an AC circuit when inductive reactance equals capacitive reactance?",
-            "back": "Resonance."
+            "front": "Why are AC generators often preferred over DC generators in high-power applications?",
+            "back": "AC generators are simpler in construction, more reliable, and less expensive because they do not require the brush and commutator assemblies needed by DC generators."
           },
           {
-            "front": "What term describes the combined effect of resistance, inductive reactance, and capacitive reactance?",
-            "back": "Impedance."
+            "front": "What is a major practical disadvantage of DC generators compared to AC generators?",
+            "back": "The use of 'brushes' and commutators causes sparking and heat, which is problematic at high speeds and dangerous in environments with flammable or explosive vapors."
           },
           {
-            "front": "What is a polyphase AC circuit?",
-            "back": "A circuit that utilizes multiple AC voltages with specific phase differences, commonly used for power distribution."
+            "front": "What determines the frequency of the AC voltage produced by an alternator?",
+            "back": "The speed at which the alternator’s shaft (and the internal magnet) is turned; faster rotation results in higher frequency AC."
           },
           {
-            "front": "What is the function of an electrical filter?",
-            "back": "To allow certain frequencies to pass while attenuating others."
+            "front": "What does the 'skin effect' describe in AC circuits?",
+            "back": "A phenomenon defined in section 3.6 where AC current tends to flow primarily near the surface (skin) of a conductor rather than throughout its cross-section."
           },
           {
-            "front": "What role does a transformer play in an AC system?",
-            "back": "It changes voltage and current levels via electromagnetic induction while maintaining the same frequency."
+            "front": "How is a 'tank circuit' defined in the context of AC resonance?",
+            "back": "It is a resonant circuit consisting of a parallel combination of an inductor and a capacitor."
           },
           {
-            "front": "What is 'power factor' in an AC circuit?",
-            "back": "The ratio of real power (watts) to apparent power (volt-amps), indicating the efficiency of power usage."
+            "front": "What are the three types of power in AC circuits?",
+            "back": "True power, reactive power, and apparent power."
           },
           {
-            "front": "What are transmission lines in the context of AC circuits?",
-            "back": "Conductors designed to carry AC power or signals over long distances, accounting for distributed impedance effects."
+            "front": "What is the primary purpose of an AC transformer?",
+            "back": "To change the voltage levels (step-up or step-down) and provide electrical isolation between circuits using mutual inductance."
           }
         ],
         "currentIndex": 0,
@@ -222,60 +398,84 @@
         {
           "title": "Electric Circuits II: AC Theory",
           "bullets": [
-            "Foundational study of alternating current systems.",
-            "Explores principles beyond simple DC circuits."
+            "Introduction to Alternating Current (AC) principles",
+            "Analysis of waveforms, resonance, and reactive components"
           ],
-          "notes": "Welcome to our overview of AC circuit theory, where we build upon basic electrical principles to understand complex waveforms.",
-          "page_range": "1",
+          "notes": "This presentation covers the fundamentals of AC circuits. It explores how inductors and capacitors behave differently than resistors.",
+          "page_range": "1-280",
           "image_prompt": ""
         },
         {
-          "title": "Fundamentals of AC Analysis",
+          "title": "AC Magnitude Measurements",
           "bullets": [
-            "Basic AC theory and behaviors.",
-            "Application of complex numbers.",
-            "Inductive and capacitive reactance.",
-            "Combined R, L, and C impedance."
+            "AC magnitude can be measured as peak, peak-to-peak, or RMS",
+            "RMS is the 'DC equivalent' for power dissipation (p. 27)",
+            "Analog meters often respond to average values, not true RMS",
+            "True-RMS meters use thermal effects for accurate waveform measurement (p. 17)"
           ],
-          "notes": "We begin by establishing the math and physics required to analyze how resistance, inductance, and capacitance interact in AC circuits.",
-          "page_range": "1",
+          "notes": "Understanding how we measure AC is critical. Most analog meters read average values, which can lead to errors with non-sinusoidal waves.",
+          "page_range": "17-18",
           "image_prompt": ""
         },
         {
-          "title": "Advanced Circuit Phenomena",
+          "title": "AC Inductor Circuits",
           "bullets": [
-            "Resonance and its circuit effects.",
-            "Polyphase systems and configurations.",
-            "Analysis of mixed-frequency signals.",
-            "Signal processing using filters."
+            "Inductors oppose changes in current, creating reactance",
+            "Induced voltage is proportional to the rate of current change (p. 59)",
+            "In pure inductors, current lags voltage by 90 degrees",
+            "Instantaneous power alternates between positive and negative"
           ],
-          "notes": "Once we understand the basics, we move to resonance, polyphase power, and how to filter or analyze complex frequency signals.",
-          "page_range": "1",
+          "notes": "Inductors act as energy storage devices, leading to a unique phase relationship where current lags behind the voltage.",
+          "page_range": "59-60",
           "image_prompt": ""
         },
         {
-          "title": "Power, Transformers, and Beyond",
+          "title": "AC Capacitor Circuits",
           "bullets": [
-            "Principles of transformers.",
-            "Understanding power factor.",
-            "AC metering and measurement.",
-            "AC motor theory and transmission lines."
+            "Capacitors oppose changes in voltage",
+            "Current flow is proportional to rate of voltage change (p. 83)",
+            "In pure capacitors, current leads voltage by 90 degrees",
+            "Reactive energy storage creates oscillation potential"
           ],
-          "notes": "Finally, we conclude by looking at real-world applications including power management, transformers, AC motors, and electricity transmission.",
-          "page_range": "2",
+          "notes": "Capacitors are the inverse of inductors, causing the current to lead the voltage by 90 degrees.",
+          "page_range": "83-84",
+          "image_prompt": ""
+        },
+        {
+          "title": "Resonance: The Electric Pendulum",
+          "bullets": [
+            "Resonance occurs when capacitive and inductive reactances cancel",
+            "LC circuits exchange energy like a physical pendulum (p. 121)",
+            "Series RLC circuits show minimum impedance at resonance",
+            "Antiresonance can dampen unwanted circuit oscillations"
+          ],
+          "notes": "When inductors and capacitors are paired, they naturally oscillate, creating the phenomenon of resonance.",
+          "page_range": "121-146",
+          "image_prompt": ""
+        },
+        {
+          "title": "Mixed-Frequency AC Signals",
+          "bullets": [
+            "Non-sine waves contain multiple harmonic frequencies",
+            "Even harmonics exist only in unsymmetrical waveforms (p. 183)",
+            "Symmetrical waves (square, triangle) contain only odd harmonics",
+            "Spectrum analysis identifies the specific harmonic content"
+          ],
+          "notes": "Real-world signals are rarely perfect sine waves. Harmonic analysis helps us understand distortion and symmetry in these waveforms.",
+          "page_range": "181-186",
           "image_prompt": ""
         }
       ],
       "config": {
-        "title": "Lesson 2 — Electric Circuits II - Alternating Current (Kuphaldt) - Presentation",
+        "title": "Lesson 2: Electric Circuits II: Alternating Current (Kuphaldt) - Presentation",
         "lang": "en",
         "format": "lecture",
         "length": "short"
       },
       "chapters": [],
-      "createdAt": 1778577302783,
-      "pdfName": "Electric Circuits II - Alternating Current (Kuphaldt)"
+      "createdAt": 1779385460122,
+      "pdfName": "Electric Circuits II: Alternating Current (Kuphaldt)"
     }
   ],
-  "sourceHash": "db931960d205034e"
+  "sourceHash": "cc2b7ce2d856224f"
 }
