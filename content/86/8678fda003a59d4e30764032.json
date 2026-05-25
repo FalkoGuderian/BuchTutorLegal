@@ -1,0 +1,387 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Statistics for Psychology and Social Science - Lesson 2 — Learning Statistics with R",
+    "pdfName": "Learning Statistics with R - A tutorial for Psychology Students and other Beginners (Navarro)",
+    "createdAt": 1779735168578,
+    "exportedAt": "2026-05-25T18:52:48.578Z",
+    "meta": {
+      "courseId": "course-en-stats-psychology-social",
+      "lessonIndex": 1,
+      "courseTitle": "Statistics for Psychology and Social Science",
+      "lessonObjective": "Hands-on analysis for psychology students.",
+      "licensing": {
+        "effective_license": "CC-BY-4.0",
+        "sources": [
+          {
+            "content_id": "libretexts-stats-learning-statistics-with-r-a-tutorial-for-psychology-students-and-other-beginner",
+            "title": "Learning Statistics with R - A tutorial for Psychology Students and other Beginners (Navarro)",
+            "source": "libretexts",
+            "license": "CC-BY-4.0",
+            "license_url": "https://creativecommons.org/licenses/by/4.0/",
+            "url": "https://stats.libretexts.org/Bookshelves/Applied_Statistics/Learning_Statistics_with_R_-_A_tutorial_for_Psychology_Students_and_other_Beginners_(Navarro)"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_6d5d57d28fab",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-2",
+          "chapterTitle": "Introduction and Research Design Basics",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "3-3",
+          "chapterTitle": "Descriptive Statistics and R Programming",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "4-4",
+          "chapterTitle": "Probability and Hypothesis Testing",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "5-5",
+          "chapterTitle": "Statistical Methods and Regression",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "6-6",
+          "chapterTitle": "Bayesian Statistics and Epilogue",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1779735168578,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "### Summary: Learning Statistics with R (Navarro)\n\nThis resource provides a comprehensive guide to introductory statistics tailored for psychology students, utilizing the R programming language. The course is structured to move from foundational programming to advanced statistical modeling.\n\n#### **Key Learning Areas**\n*   **Foundations of R & Research:**\n    *   Getting started with R, including data manipulation and scriptwriting [S.1, S.2].\n    *   An overview of research design and the purpose of learning statistics [S.2].\n*   **Core Statistical Concepts:**\n    *   **Descriptive Statistics & Data Visualization:** Methods for summarizing and graphing data [S.1, S.3].\n    *   **Theory & Inference:** Basic probability theory, sampling/estimation, and null hypothesis testing [S.1, S.4].\n*   **Analytical Methods:**\n    *   Analysis of categorical data (contingency tables) [S.1, S.4].\n    *   Testing mean differences (t-tests and one-way/factorial ANOVAs) [S.1, S.5].\n    *   Modeling relationships through linear regression [S.1, S.5].\n*   **Advanced Topics:**\n    *   An introduction to Bayesian statistics [S.1, S.6].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779735168578,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-en-stats-psychology-social_1\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lesson 2 — Learning Statistics with R - Presentation</span><span class=\"pm-chat-count\">6 slides</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Edit</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Regenerate</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Delete</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Learning Statistics with R</div><ul class=\"pm-chat-slide-bullets\"><li>Introductory statistics for psychology students.</li><li>Practical focus on R statistical software.</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Open</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Presentation",
+      "timestamp": 1779735168579,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "This document serves as an introductory guide for students—specifically those in psychology—seeking to learn statistical analysis using the R programming language [S.1]. \n\nThe core contents and structure of the resource include:\n\nFundamental Statistical Concepts \nThe text begins with descriptive statistics and graphing techniques before progressing to more advanced theoretical topics, including probability theory, sampling and estimation, and null hypothesis testing [S.1].\n\nPractical Analytical Methods \nOnce the theoretical foundation is established, the book guides readers through the application of specific statistical tests, such as contingency tables, $t$-tests, ANOVAs, and regression analysis [S.1].\n\nR Programming Proficiency \nThe material provides a structured path for technical skill development:\nGetting Started: An introduction to the R environment and basic setup [S.1, S.2].\nData Handling: Training in data manipulation and writing scripts within R [S.1].\nRefinement: Exploration of additional R concepts to ensure comprehensive proficiency [S.2].\n\nAdvanced Topics \nThe curriculum concludes with an introduction to Bayesian statistics, providing a broad overview of modern analytical approaches [S.1].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779735168588,
+      "channel": "plan_pipe_6d5d57d28fab",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 2
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Section S.3: Foundations of Statistical Learning\n\nThis section serves as a foundational guide for students utilizing the R programming language to conduct statistical analysis. The key areas covered are:\n\n**1. Descriptive Statistics**\nThis topic focuses on summarizing data sets. It covers methods for identifying the central tendency (such as the mean, median, and mode) and measuring the spread or variability of data (such as range, variance, and standard deviation).\n\n**2. Drawing Graphs**\nThis section emphasizes the importance of visual data representation. It covers the creation of various plots to effectively communicate patterns, distributions, and relationships within a data set, ensuring that findings are interpretable and clear.\n\n**3. Pragmatic Matters**\nThis addresses the practical, \"real-world\" challenges encountered during statistical research. It typically covers data cleaning, handling missing values, organizing data files, and ensuring the reproducibility of analytical workflows.\n\n**4. Basic Programming**\nThis section introduces the fundamentals of coding within R. It focuses on essential programming concepts such as variables, functions, data structures, and logical operators, providing the technical foundation required to manipulate data and execute statistical tests.\n\n***\n\n**Key Analytical Concepts**\nStatistical analysis relies on the interplay between these domains to move from raw data to actionable insights. For example, the variance formula is represented as:\n\n$$s^2 = \\frac{\\sum (x_i - \\bar{x})^2}{n-1}$$\n\nBy integrating programming skills with descriptive and graphical techniques, students are prepared to handle complex psychological data sets systematically.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779735168589,
+      "channel": "plan_pipe_6d5d57d28fab",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 3,
+        "end": 3
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section outlines foundational concepts in applied statistics, specifically focusing on how researchers make inferences and analyze data. The key topics are summarized below:\n\nIntroduction to Probability\nThis segment establishes the mathematical framework for uncertainty. It covers the rules governing random events, which serve as the basis for all statistical inference.\n\nEstimating Unknown Quantities from a Sample\nThis topic focuses on inferential statistics, specifically how to use data from a subset (sample) to estimate parameters of a larger population. This involves understanding point estimates and confidence intervals to determine a likely range for population values.\n\nHypothesis Testing\nThis framework provides a methodical approach to evaluating claims about a population. It involves setting up a null hypothesis and using statistical tests to determine if observed data provides sufficient evidence to reject that hypothesis or conclude that an effect is statistically significant.\n\nCategorical Data Analysis\nThis section addresses the statistical techniques used when data is grouped into distinct categories rather than numerical values. It focuses on identifying relationships and patterns within frequency counts and contingency tables.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779735168590,
+      "channel": "plan_pipe_6d5d57d28fab",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 4,
+        "end": 4
+      }
+    },
+    {
+      "role": "bot",
+      "content": "This section outlines core statistical methods for analyzing relationships between variables, categorized by the number and type of groups involved.\n\n**Core Statistical Topics**\n\n1. Comparing Two Means: Focuses on determining if there is a statistically significant difference between the averages of two distinct groups.\n\n2. Comparing Several Means (One-way ANOVA): Extends the comparison to three or more independent groups to see if at least one group mean differs from the others.\n\n3. Linear Regression: Models the relationship between a dependent variable and one or more independent variables by fitting a linear equation to observed data. The general form of a simple linear regression is:\n$$Y = \\beta_0 + \\beta_1X + \\epsilon$$\n\n4. Factorial ANOVA: Analyzes the effects of two or more independent categorical variables (factors) on a single continuous dependent variable, allowing for the study of interaction effects between those factors.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779735168591,
+      "channel": "plan_pipe_6d5d57d28fab",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 5,
+        "end": 5
+      }
+    },
+    {
+      "role": "bot",
+      "content": "### Summary of Section S.6: Learning Statistics with R\n\nThis document represents the concluding portion of the textbook *Learning Statistics with R*, a resource directed toward Psychology students. Below are the key points:\n\n**Scope of the Final Chapters**\n* Chapter 17 focuses on Bayesian Statistics, representing a shift from frequentist methods to an alternative inferential framework.\n* Chapter 18 serves as the Epilogue, providing a reflective conclusion to the material covered throughout the text.\n\n**Structural Context**\n* The document comprises the final sections of the book, categorized under \"Back Matter.\"\n* The resource is part of the LibreTexts library, specifically within the Applied Statistics bookshelf.\n\n**Technical Specifications**\n* The material was last updated on May 11, 2026.\n* The content is designed as an educational tutorial for students in the field of Psychology.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Summary",
+      "timestamp": 1779735168592,
+      "channel": "plan_pipe_6d5d57d28fab",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 6,
+        "end": 6
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Here is a quiz for this lesson.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1779735168678,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "If a research project requires analyzing the consistency of results across several different experimental groups, which statistical approach introduced in the text would be most appropriate?",
+            "options": [
+              "One-way or Factorial ANOVA",
+              "Descriptive statistics only",
+              "Contingency table analysis",
+              "Basic programming script execution"
+            ],
+            "correctIndex": 0,
+            "explanation": "ANOVA (Analysis of Variance) is the standard statistical test used for comparing means across multiple groups, whereas descriptive statistics only summarize data and contingency tables analyze categorical relationships."
+          },
+          {
+            "question": "A student wants to determine if a change in an independent variable causes a change in a dependent variable. Based on the sequence of the book, what is the logical progression to arrive at this conclusion?",
+            "options": [
+              "Start with Bayesian analysis, then move to Descriptive statistics",
+              "Master Null Hypothesis Testing before applying it to tests like t-tests or ANOVA",
+              "Focus exclusively on R scripting without understanding probability theory",
+              "Perform linear regression before collecting any sample data"
+            ],
+            "correctIndex": 1,
+            "explanation": "The text structures learning by first establishing the theory of null hypothesis testing, which provides the mathematical foundation necessary to interpret the results of specific tests like t-tests and ANOVAs."
+          },
+          {
+            "question": "Why does the book introduce 'Descriptive Statistics and Graphing' before 'Probability Theory and Sampling'?",
+            "options": [
+              "Because R scripts only work with graphs",
+              "To ensure students can summarize and visualize their raw data before making inferential claims",
+              "Because probability theory is considered too difficult for psychology students",
+              "Because the software cannot perform sampling without a pre-existing graph"
+            ],
+            "correctIndex": 1,
+            "explanation": "In statistical workflows, descriptive analysis allows the researcher to understand the nature of the data collected before applying inferential techniques like sampling and hypothesis testing."
+          },
+          {
+            "question": "If a psychology student is studying the relationship between categorical variables, which chapter in the text provides the relevant methods?",
+            "options": [
+              "Chapter 15: Linear Regression",
+              "Chapter 13: Comparing Two Means",
+              "Chapter 12: Categorical Data Analysis",
+              "Chapter 10: Estimating Unknown Quantities"
+            ],
+            "correctIndex": 2,
+            "explanation": "Chapter 12 specifically addresses categorical data analysis, which is the appropriate toolset for contingency tables, unlike regression (which is for continuous variables) or t-tests (which compare means)."
+          },
+          {
+            "question": "How does the inclusion of 'Basic Programming' and 'Pragmatic Matters' chapters benefit a psychology student's workflow?",
+            "options": [
+              "They allow students to automate data manipulation and maintain organized R scripts",
+              "They replace the need to understand statistical theory",
+              "They explain how to calculate complex Bayesian probabilities by hand",
+              "They are strictly required to define the research design"
+            ],
+            "correctIndex": 0,
+            "explanation": "Learning R programming and pragmatic aspects of scripting enables students to handle data manipulation efficiently, which is a practical prerequisite for running the sophisticated statistical tests covered later in the book."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Flashcards for review.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Flashcards",
+      "timestamp": 1779735168679,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "What is the primary goal of the book 'Learning Statistics with R'?",
+            "back": "To teach introductory statistics to undergraduate psychology students using the R statistical software."
+          },
+          {
+            "front": "In 'Learning Statistics with R', what is the first statistical topic covered after the R setup?",
+            "back": "Descriptive statistics and graphing."
+          },
+          {
+            "front": "Which three advanced analysis methods are explicitly covered following the theory sections?",
+            "back": "Contingency tables, t-tests, and ANOVAs."
+          },
+          {
+            "front": "What statistical approach is introduced at the very end of the textbook?",
+            "back": "Bayesian statistics."
+          },
+          {
+            "front": "Which chapter in the text follows basic probability theory to help generalize findings?",
+            "back": "Sampling and estimation."
+          },
+          {
+            "front": "Besides statistical theory, what software-specific skills are emphasized for beginners?",
+            "back": "Data manipulation and writing R scripts."
+          },
+          {
+            "front": "What kind of data analysis is used in the text to compare several means?",
+            "back": "One-way ANOVA."
+          },
+          {
+            "front": "What statistical model is used to analyze relationships between variables in chapter 15?",
+            "back": "Linear regression."
+          },
+          {
+            "front": "How are contingency tables categorized in the scope of this textbook?",
+            "back": "Categorical data analysis."
+          },
+          {
+            "front": "What is the focus of Chapter 16 in 'Learning Statistics with R'?",
+            "back": "Factorial ANOVA."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-en-stats-psychology-social_1",
+      "slides": [
+        {
+          "title": "Learning Statistics with R",
+          "bullets": [
+            "Introductory statistics for psychology students.",
+            "Practical focus on R statistical software."
+          ],
+          "notes": "This course provides a foundational approach to statistics, specifically designed for those in the psychological sciences using R.",
+          "page_range": "1",
+          "image_prompt": ""
+        },
+        {
+          "title": "Research Foundations",
+          "bullets": [
+            "Understanding the purpose of statistics.",
+            "Principles of research design (p. 2).",
+            "Getting started and setup in R (p. 2).",
+            "Core R programming concepts."
+          ],
+          "notes": "We begin by establishing why we need statistics and how to navigate the R environment to support our research designs.",
+          "page_range": "2",
+          "image_prompt": ""
+        },
+        {
+          "title": "Descriptive Statistics and Graphs",
+          "bullets": [
+            "Summarizing data through descriptive statistics.",
+            "Visualizing data with R plotting tools.",
+            "Mastering pragmatic data management.",
+            "Developing basic programming skills."
+          ],
+          "notes": "Before diving into complex models, we will learn how to describe datasets and create meaningful visualizations.",
+          "page_range": "3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Probability and Inference",
+          "bullets": [
+            "Foundations of probability theory.",
+            "Sampling and estimating from populations.",
+            "Conducting formal hypothesis tests.",
+            "Analyzing categorical data tables."
+          ],
+          "notes": "This section moves from simple descriptions to inferential statistics, covering how we test hypotheses and handle categorical outcomes.",
+          "page_range": "4",
+          "image_prompt": ""
+        },
+        {
+          "title": "Statistical Modeling",
+          "bullets": [
+            "T-tests for comparing two means.",
+            "ANOVA for comparing several groups.",
+            "Linear regression analysis.",
+            "Complex factorial designs."
+          ],
+          "notes": "We expand our toolkit to compare means and analyze relationships between variables using both simple and factorial models.",
+          "page_range": "5",
+          "image_prompt": ""
+        },
+        {
+          "title": "Bayesian Methods and Beyond",
+          "bullets": [
+            "Introduction to Bayesian statistics.",
+            "Concluding remarks and course epilogue."
+          ],
+          "notes": "We conclude the course by exploring Bayesian alternatives to frequentist statistics and summarizing our journey through psychological data analysis.",
+          "page_range": "6",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lesson 2 — Learning Statistics with R - Presentation",
+        "lang": "en",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1779735168578,
+      "pdfName": "Learning Statistics with R - A tutorial for Psychology Students and other Beginners (Navarro)"
+    }
+  ],
+  "sourceHash": "5c2f0fc7c631bdca"
+}
