@@ -88,6 +88,9 @@
     </header>
 
     <main class="container mx-auto px-4 py-8 max-w-3xl">
+        <nav class="mb-6">
+            <a href="./index.html" id="back-link" class="prose-legal" style="font-weight:600">← Datenschutz, Nutzungsbedingungen &amp; Impressum</a>
+        </nav>
         <div class="card p-6 md:p-8 prose-legal">
 
             <!-- ===================== DEUTSCH ===================== -->
@@ -222,13 +225,14 @@
         (function () {
             document.getElementById('year').textContent = new Date().getFullYear();
             const tr = {
-                de: { sub: 'Account- & Datenlöschung', html: 'de' },
-                en: { sub: 'Account & Data Deletion', html: 'en' }
+                de: { sub: 'Account- & Datenlöschung', back: '← Datenschutz, Nutzungsbedingungen & Impressum' },
+                en: { sub: 'Account & Data Deletion', back: '← Privacy, Terms of Use & Legal Notice' }
             };
             function setLang(lang) {
                 document.getElementById('content-de').style.display = lang === 'de' ? '' : 'none';
                 document.getElementById('content-en').style.display = lang === 'en' ? '' : 'none';
                 document.getElementById('subheader').textContent = tr[lang].sub;
+                document.getElementById('back-link').textContent = tr[lang].back;
                 document.documentElement.lang = lang;
                 document.getElementById('lang-de').classList.toggle('active', lang === 'de');
                 document.getElementById('lang-en').classList.toggle('active', lang === 'en');
