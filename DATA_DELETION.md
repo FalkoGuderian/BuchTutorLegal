@@ -26,7 +26,7 @@ DocWorm operates **no user accounts of its own** and stores **no personal data o
 1. Revoke the authorization / API key granted to DocWorm at [openrouter.ai/settings/keys](https://openrouter.ai/settings/keys).
 2. Delete your OpenRouter account entirely at [openrouter.ai/settings](https://openrouter.ai/settings).
 
-**Deletion by request:** Email mail.to.falko@gmx.de (Falko Guderian, Ludwig-Renn-Allee 17, 01217 Dresden, Germany). Requests are processed within 30 days. No personal data is retained by us after deletion.
+**Questions about deletion:** DocWorm stores no personal data on its own servers, so there is nothing for us to delete on our side. Deletion happens locally on your device or at OpenRouter (see above). For questions or help, email mail.to.falko@gmx.de (Falko Guderian, Ludwig-Renn-Allee 17, 01217 Dresden, Germany).
 
 ---
 
@@ -51,4 +51,4 @@ DocWorm betreibt **keine eigenen Nutzerkonten** und speichert **keine personenbe
 1. Widerrufen Sie die für DocWorm erteilte Autorisierung / den API-Schlüssel unter [openrouter.ai/settings/keys](https://openrouter.ai/settings/keys).
 2. Löschen Sie Ihr OpenRouter-Konto vollständig unter [openrouter.ai/settings](https://openrouter.ai/settings).
 
-**Löschung per Anfrage:** E-Mail an mail.to.falko@gmx.de (Falko Guderian, Ludwig-Renn-Allee 17, 01217 Dresden, Deutschland). Anfragen werden innerhalb von 30 Tagen bearbeitet. Nach dem Löschen werden keine personenbezogenen Daten von uns aufbewahrt.
+**Fragen zur Löschung:** DocWorm speichert keine personenbezogenen Daten auf eigenen Servern, es gibt auf unserer Seite also nichts zu löschen. Die Löschung erfolgt lokal auf Ihrem Gerät bzw. bei OpenRouter (siehe oben). Bei Fragen oder Hilfe: E-Mail an mail.to.falko@gmx.de (Falko Guderian, Ludwig-Renn-Allee 17, 01217 Dresden, Deutschland).
