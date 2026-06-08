@@ -1,0 +1,482 @@
+{
+  "type": "lesson",
+  "version": 1,
+  "pipelineVersion": 3,
+  "lesson": {
+    "name": "Datenanalyse mit SQL und Statistik - Lektion 1 — Einführung in SQL",
+    "pdfName": "Einführung in SQL",
+    "createdAt": 1780925011540,
+    "exportedAt": "2026-06-08T13:23:31.541Z",
+    "meta": {
+      "courseId": "course-de-cs-datenanalyse-sql",
+      "lessonIndex": 0,
+      "courseTitle": "Datenanalyse mit SQL und Statistik",
+      "lessonObjective": "Daten abfragen mit SELECT, JOIN, Aggregation.",
+      "licensing": {
+        "effective_license": "CC-BY-SA-3.0",
+        "sources": [
+          {
+            "content_id": "wikibooks-de-einf-hrung-in-sql",
+            "title": "Einführung in SQL",
+            "source": "wikibooks-de",
+            "license": "CC-BY-SA-3.0",
+            "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+            "url": "https://de.wikibooks.org/wiki/Einf%C3%BChrung_in_SQL"
+          }
+        ]
+      }
+    }
+  },
+  "plans": [
+    {
+      "id": "plan_pipe_f4b59eaca256",
+      "name": "#1",
+      "wizard": {
+        "goal": "book_digest",
+        "level": "beginner",
+        "scope": "general"
+      },
+      "tasks": [
+        {
+          "action": "zusammenfassung",
+          "pages": "1-44",
+          "chapterTitle": "Einführung in SQL: Einleitung und Grundlagen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "45-88",
+          "chapterTitle": "Datenbank-Grundlagen: DML und SQL-Befehle",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "89-126",
+          "chapterTitle": "Transaktionssteuerung (TCL) und Datentypen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "127-166",
+          "chapterTitle": "Fortgeschrittene SELECT-Strukturen und Funktionen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "167-214",
+          "chapterTitle": "WHERE-Klausel und Tabellenverknüpfungen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "215-270",
+          "chapterTitle": "Erweitere Joins und Tabellenoperationen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "271-322",
+          "chapterTitle": "Views und Data Definition Language (DDL)",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "323-388",
+          "chapterTitle": "SQL-Programmierung: Prozeduren und Trigger",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "389-416",
+          "chapterTitle": "Tipps, Tricks und Tabellenänderungen",
+          "status": "done"
+        },
+        {
+          "action": "zusammenfassung",
+          "pages": "417-466",
+          "chapterTitle": "Anhang: Tabellenstrukturen, Skripte und Indizes",
+          "status": "done"
+        }
+      ],
+      "status": "done",
+      "created": 1780925011540,
+      "pinned": false,
+      "completedSteps": [],
+      "statusDismissed": true
+    }
+  ],
+  "messages": [
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der Grundlagen zu SQL-Abfragen basierend auf dem vorliegenden Dokument:\n\n### Zusammenfassung: Einführung in SQL-Datenabfragen\n\nSQL (*Structured Query Language*) ist eine standardisierte Sprache zur Manipulation und Abfrage relationaler Datenbanken. Der zentrale Befehl für Abfragen ist `SELECT`.\n\n#### 1. Grundlegende Abfragen (`SELECT`, `FROM`, `ORDER BY`, `WHERE`)\n*   **Basissyntax:** Mit `SELECT [Spalten] FROM [Tabelle]` werden Daten abgerufen (S. 6).\n*   **Filterung (`WHERE`):** Die `WHERE`-Klausel schränkt die Ergebnismenge basierend auf Bedingungen ein (S. 6, S. 8).\n*   **Sortierung (`ORDER BY`):** Ergebnisse können gezielt sortiert ausgegeben werden (S. 6).\n*   **Duplikatvermeidung (`DISTINCT`):** Der Zusatz `DISTINCT` verhindert die mehrfache Auflistung identischer Zeilen (S. 6).\n\n#### 2. Arbeiten mit mehreren Tabellen (`JOIN`)\nUm Daten aus verschiedenen, verknüpften Tabellen gemeinsam abzufragen, kommen `JOIN`-Operatoren zum Einsatz:\n*   **INNER JOIN:** Gibt nur Datensätze zurück, die in beiden Tabellen Übereinstimmungen aufweisen (S. 8).\n*   **OUTER JOIN:** Erlaubt umfassendere Verknüpfungen, bei denen auch Datensätze ohne Entsprechung in der jeweils anderen Tabelle (je nach `LEFT`, `RIGHT` oder `FULL` Variante) berücksichtigt werden (S. 8-9).\n*   **Alternative:** Traditionell können Tabellen auch über `WHERE`-Bedingungen verknüpft werden (S. 8).\n\n#### 3. Gruppierung und Aggregation\n*   Für statistische Auswertungen werden Spaltenfunktionen (Aggregatfunktionen) verwendet.\n*   **Gruppierung:** Mit `GROUP BY` können Datensätze nach Kriterien in Gruppen zusammengefasst werden, um Berechnungen pro Gruppe durchzuführen (S. 9).\n*   **Bedingte Aggregation:** Die `HAVING`-Klausel dient dazu, gruppierte Ergebnisse analog zu `WHERE` weiter einzuschränken (S. 7).\n\n---\n*Hinweis zum Kursziel:* Während das Dokument die technischen Grundlagen der Datenabfrage (einschließlich Berechnungen und Gruppierungen) umfassend behandelt, enthält das vorliegende Buchkapitel keine Informationen zur Erstellung oder Interpretation von Regressionsmodellen (vgl. Vorwort, S. 13).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Zusammenfassung",
+      "timestamp": 1780925011540,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "<div class=\"pm-chat-card\" data-pm-pres=\"pres_pipe_course-de-cs-datenanalyse-sql_0\"><div class=\"pm-chat-head\"><i data-lucide=\"presentation\"></i><span class=\"pm-chat-title\">Lektion 1 — Einführung in SQL - Präsentation</span><span class=\"pm-chat-count\">5 Folien</span><button class=\"pm-chat-kebab\" data-pm-card-action=\"menu\" aria-label=\"Menu\"><i data-lucide=\"more-vertical\"></i></button></div><div class=\"pm-chat-menu\" data-pm-menu><button class=\"pm-chat-menu-item\" data-pm-card-action=\"edit\"><i data-lucide=\"edit-3\"></i><span>Bearbeiten</span></button><button class=\"pm-chat-menu-item\" data-pm-card-action=\"regenerate\"><i data-lucide=\"refresh-cw\"></i><span>Neu generieren</span></button><button class=\"pm-chat-menu-item danger\" data-pm-card-action=\"delete\"><i data-lucide=\"trash-2\"></i><span>Löschen</span></button></div><div class=\"pm-chat-preview\"><div class=\"pm-chat-slide-title\">Einführung in SQL</div><ul class=\"pm-chat-slide-bullets\"><li>Grundlagen der Datenbankmanipulation und -abfrage</li><li>Strukturierter Einstieg in SQL-Befehle und Konzepte (S. 1, 3)</li></ul></div><div class=\"pm-chat-actions\"><button class=\"pm-chat-btn primary\" data-pm-card-action=\"view\"><i data-lucide=\"play\"></i><span>Öffnen</span></button><button class=\"pm-chat-btn\" data-pm-card-action=\"export\"><i data-lucide=\"download\"></i><span>Export</span></button></div></div>",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Präsentation",
+      "timestamp": 1780925011541,
+      "channel": "general"
+    },
+    {
+      "role": "bot",
+      "content": "Das Dokument „Einführung in SQL“ von Jürgen Thomas bietet einen strukturierten Leitfaden für den Umgang mit relationalen Datenbanken. Die Abschnitte auf den Seiten 1 bis 44 lassen sich wie folgt zusammenfassen:\n\n**Grundlagen und Konzepte**\nDie Publikation führt in die Rolle von Datenbanken ein, die der Speicherung und strukturierten Verwaltung von Informationen dienen (S. 3-5). Ein zentraler Bestandteil ist die Einführung in das relationale Datenbankmodell. Hierbei bilden Tabellen die Basis, deren Spalten und Daten über Schlüssel miteinander verknüpft werden (S. 5-6).\n\n**Normalisierung als Qualitätsmerkmal**\nEin wesentlicher Teil des Einstiegs ist die Normalisierung, die darauf abzielt, Redundanzen zu minimieren und die Datenintegrität zu sichern. Das Buch erläutert hierzu die ersten drei Normalformen sowie zusätzliche Maßnahmen zur Optimierung der Datenbankstruktur (S. 5).\n\n**Praxisorientierter Aufbau**\nZur Veranschaulichung der theoretischen Inhalte enthält das Buch eine Beispieldatenbank. Diese umfasst den zugrunde liegenden Sachverhalt, eine schematische Darstellung sowie die konkrete Tabellenstruktur, um den Anwendern ein praxisnahes Lernen zu ermöglichen (S. 5-6).\n\n**Struktur des Fachbuchs**\nDas Werk ist methodisch in mehrere Hauptbereiche unterteilt:\n1. Grundlagen (Einführung, Datenbankmodelle, Normalisierung).\n2. SQL-Befehlskategorien: Unterteilt in DML (Datenmanipulation), DDL (Strukturdefinition), TCL (Ablaufsteuerung/Transaktionen) und DCL (Zugriffsrechte) (S. 3, S. 6).\n3. Vertiefende Themen und Erweiterungen wie Abfragen, Programmierung, Trigger und Prozeduren (S. 3-4).\n\nZusammenfassend dient der Bereich bis Seite 44 dazu, das theoretische Fundament zu legen und die notwendigen Werkzeuge und Begrifflichkeiten einzuführen, bevor in den darauffolgenden Kapiteln die eigentliche Syntax und SQL-Programmierung detailliert behandelt werden.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1780925011550,
+      "channel": "plan_pipe_f4b59eaca256",
+      "planStep": 1,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 1,
+        "end": 44
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die Normalisierung einer Datenbankstruktur dient dazu, Daten effizient zu verwalten und Redundanzen zu minimieren. Hier ist die Zusammenfassung der Kernaussagen basierend auf den bereitgestellten Seiten [S.45] bis [S.56]:\n\nDie 3. Normalform\nDas Ziel besteht darin, Zusatzinformationen in eigene Tabellen auszulagern, wenn diese nicht zwingend an den ursprünglichen Datensatz gebunden sind. Ein Beispiel ist die Auslagerung von Mitarbeiterdaten aus Vertrags- oder Schadensfalltabellen, wobei ein Fremdschlüssel die Verknüpfung sicherstellt (S. 45).\n\nZusätzliche Maßnahmen zur Optimierung\nPraktisch gesehen ist die 3. Normalform meist ausreichend, da weitere Normalisierungsschritte die Übersichtlichkeit und Geschwindigkeit beeinträchtigen können (S. 46).\n- Adressdaten: Ortsnamen können in einer separaten Tabelle via Postleitzahl verwaltet werden, um Konsistenz bei Umzügen oder Eingemeindungen zu gewährleisten (S. 46).\n- Primärschlüssel: Diese sollten als unveränderliche IDs fungieren, da eine Änderung des Identifikators (z. B. ein Kfz-Kennzeichen) in einer verknüpften Datenbank einen extremen Wartungsaufwand verursacht (S. 47).\n- Historisierung: Um Verläufe (z. B. Kennzeichenwechsel oder Adressänderungen) abzubilden, ist die Nutzung von Gültigkeitsspalten (gültig von/bis) sinnvoll, anstatt bestehende Datensätze zu überschreiben (S. 47).\n- Strukturprinzipien: Die Reihenfolge von Zeilen und Spalten darf für die Datenbankfunktionalität keine Rolle spielen (S. 48).\n\nAllgemeine Regeln für den Datenbankentwurf\n- Orientierung an realen Objekten: Tabellen sollten klar benannt und in einzelne, unteilbare Informationen zerlegt werden (S. 48).\n- Vermeidung von Redundanz: Sowohl doppelte Datensätze als auch mehrfach gespeicherte gleiche Werte sollten durch Trennung in Tabellen vermieden werden (S. 48).\n- Keine berechneten Werte: Informationen, die sich aus vorhandenen Daten ableiten lassen, sollten nicht als eigene Spalte gespeichert werden (S. 48).\n\nStruktur der Beispieldatenbank\nDie beispielhafte Kfz-Versicherungsdatenbank veranschaulicht die Verknüpfung von Versicherungsverträgen, Fahrzeugen, Mitarbeitern und Schadensfällen. Dabei werden explizite Zuordnungstabellen genutzt, um komplexe Beziehungen abzubilden (S. 51-53).\n\nEmpfehlungen für die Benennung\n- Tabellen sollten vorzugsweise im Singular benannt werden (S. 55).\n- Spaltennamen sollten beschreibend sein und keinen Tabellenbezug enthalten, da sie immer im Kontext der Tabelle stehen (S. 55).\n- Sprachkonstanz: Es wird empfohlen, entweder durchgängig deutsche oder englische Begriffe zu verwenden, um einen inkonsequenten Mischstil zu vermeiden (S. 55).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1780925011551,
+      "channel": "plan_pipe_f4b59eaca256",
+      "planStep": 2,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 45,
+        "end": 88
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Inhalts basierend auf den von Ihnen bereitgestellten Seiten:\n\n**Datenänderung und DML (S. 89)**\nDatenänderungen in einer Datenbank erfolgen über die Befehle INSERT, UPDATE und DELETE. Beim Einfügen von Daten (INSERT) ist darauf zu achten, dass Primärschlüssel entweder automatisch zugewiesen werden oder eindeutig sein müssen. Zudem müssen Pflichtfelder beachtet und Datentyp-Beschränkungen (z. B. maximale Länge einer Zeichenkette) eingehalten werden. Bei Änderungen (UPDATE) oder Löschungen ist eine präzise WHERE-Bedingung essenziell, um nicht ungewollt den gesamten Datenbestand zu manipulieren.\n\n**DDL – Struktur der Datenbank (S. 91–97)**\nDie Data Definition Language (DDL) steuert die Struktur der Datenbank. Zu den wichtigsten Befehlen gehören CREATE (Erzeugen), ALTER (Ändern) und DROP (Löschen).\n- Datenbanken und Tabellen: Mit CREATE DATABASE und CREATE TABLE werden die Grundstrukturen angelegt. Bei Tabellen werden Spalten, Datentypen und Constraints (wie PRIMARY KEY) definiert. Ein automatischer Zähler (z. B. AUTO_INCREMENT oder IDENTITY) erleichtert die Verwaltung von Primärschlüsseln.\n- Erweiterungen: Views dienen als gespeicherte Abfragen, die wie Tabellen wirken, ohne die Daten physisch zu duplizieren. Indizes (CREATE INDEX) beschleunigen den Datenzugriff erheblich.\n- Programmierung: Fortgeschrittene Funktionen wie Trigger (automatische Aktionen bei Insert/Update/Delete), gespeicherte Prozeduren und benutzerdefinierte Funktionen erweitern die Funktionalität der Datenbank über Standard-SQL hinaus.\n\n**TCL – Ablaufsteuerung (S. 101–103)**\nDie Transaction Control Language (TCL) gewährleistet die Datensicherheit durch das Zusammenfassen mehrerer SQL-Befehle zu einer Transaktion. \n- Das Prinzip: Transaktionen stellen sicher, dass entweder alle beteiligten Befehle erfolgreich ausgeführt werden oder bei einem Fehler das gesamte Paket rückgängig gemacht wird (Atomarität). \n- Steuerbefehle: Eine Transaktion beginnt explizit (z. B. START TRANSACTION) oder implizit und wird durch COMMIT (Bestätigung der Änderungen) oder ROLLBACK (Verwerfen der Änderungen) beendet. Dies verhindert inkonsistente Zustände, etwa bei Banküberweisungen oder komplexen Vertragsabschlüssen.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1780925011552,
+      "channel": "plan_pipe_f4b59eaca256",
+      "planStep": 3,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 89,
+        "end": 126
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Dieses Kapitel befasst sich mit den grundlegenden SQL-Funktionen zur Verarbeitung von Daten sowie deren Konvertierung. Die Kernaussagen lassen sich wie folgt strukturieren:\n\nDatums- und Zeitfunktionen\nSQL-Standardfunktionen wie CURRENT_DATE, CURRENT_TIME und CURRENT_TIMESTAMP liefern aktuelle Systemwerte (S. 127). Mittels EXTRACT können spezifische Bestandteile eines Zeitwertes (z. B. YEAR, MONTH, HOUR) isoliert werden. Da die Implementierung je nach DBMS variiert, wird ein Blick in die jeweilige Dokumentation empfohlen (S. 127, 128).\n\nLogische und NULL-Werte\nWerte werden mittels operativer Prüfungen (z. B. BETWEEN, LIKE, IS NULL, IN) verglichen und liefern logische Ergebnisse (TRUE, FALSE oder NULL). NULL-Werte führen bei Berechnungen oder Verknüpfungen regelmäßig zu einem unbekannten Ergebnis (NULL) (S. 128, 129).\n\nKonvertierungen\nDa Datentypen für Operationen entscheidend sind, unterscheidet SQL zwischen impliziter Konvertierung (automatische Anpassung durch das DBMS) und expliziter Konvertierung (S. 129, 130). Der SQL-Standard sieht für die explizite Umwandlung die Funktion CAST vor:\n$CAST(\\text{expression} \\text{ AS } \\text{type})$ (S. 130).\nZusätzlich bieten manche Systeme die Funktion CONVERT an, deren Syntax jedoch stark variiert (S. 131).\n\nSpaltenfunktionen (Aggregatfunktionen)\nDiese Funktionen fassen Zeilenwerte zu einem Gesamtergebnis zusammen:\n- COUNT: Zählt Zeilen, die einen Wert ungleich NULL enthalten oder mittels $COUNT(*)$ die Gesamtzeilenanzahl (S. 132, 133).\n- SUM: Berechnet die Summe numerischer Werte (S. 133).\n- MAX und MIN: Ermitteln Extremwerte (S. 134).\n- AVG: Bildet den Durchschnitt numerischer Werte, wobei NULL-Werte ignoriert werden (S. 134).\n- STDDEV: Berechnet die Standardabweichung numerischer Werte (S. 134).\n\nDas Dokument endet mit Übungen zur Anwendung dieser Funktionen auf Zahlen, Zeichenketten und Zeitwerte (S. 135–138).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1780925011553,
+      "channel": "plan_pipe_f4b59eaca256",
+      "planStep": 4,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 127,
+        "end": 166
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die folgenden Punkte fassen die wesentlichen Inhalte der Seiten 167 bis 180 zusammen:\n\nKern der WHERE-Klausel (S. 167)\nDie WHERE-Klausel dient zur präzisen Datenauswahl bei SELECT-, UPDATE- und DELETE-Befehlen. Neben direkten Vergleichen erlauben DBMS erweiterte Suchfunktionen wie BETWEEN, LIKE, IN und EXISTS.\n\nBedingungsarten (S. 168-172)\nVergleiche erfolgen mit Standardoperatoren (=, <>, <, >, <=, >=). Für Bereiche ist der Operator BETWEEN AND geeignet. Unscharfe Suchen mit Platzhaltern (_ für ein Zeichen, % für beliebige Zeichenfolgen) werden mittels LIKE durchgeführt; bei Sonderzeichen in Suchbegriffen hilft der ESCAPE-Parameter. Datensätze ohne Wert werden explizit über IS NULL oder IS NOT NULL identifiziert. Für Vergleiche mit Wertelisten ist der IN-Operator vorgesehen, während EXISTS zur Überprüfung von Ergebnissen aus Unterabfragen dient, was bei sehr großen Datenmengen oft performanter ist.\n\nLogische Verknüpfungen (S. 172-174)\nMehrere Bedingungen lassen sich mit den booleschen Operatoren AND, OR und NOT kombinieren. Vereinzelt existiert auch XOR (Kontravalenz). Bei der Auswertung gilt die Hierarchie: NOT vor AND vor OR, wobei Klammern zur Steuerung der Priorität und zur Erhöhung der Lesbarkeit zwingend empfohlen werden.\n\nAbfragen über mehrere Tabellen (S. 179-180)\nWerden Daten aus verschiedenen Tabellen kombiniert, müssen Spaltennamen bei Mehrdeutigkeiten durch den vorangestellten Tabellennamen (oder einen Alias) qualifiziert werden (Syntax: Tabellenname.Spaltenname). Die Verwendung von Aliasen in der FROM-Klausel trägt wesentlich zur Übersichtlichkeit bei. Eine Beispielstruktur für diese Qualifizierung ist:\n$SELECT \\text{ } mi.Name, \\text{ } dw.Kennzeichen \\text{ } FROM \\text{ } Mitarbeiter \\text{ } mi, \\text{ } Dienstwagen \\text{ } dw;$",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1780925011554,
+      "channel": "plan_pipe_f4b59eaca256",
+      "planStep": 5,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 167,
+        "end": 214
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die strukturierte Zusammenfassung der Abschnitte 22 und 23 (Seiten 215–226):\n\n**Kapitel 22: Vertiefung von JOIN-Operationen**\n\nDie Wahl des richtigen JOIN-Typs hängt von der gewünschten Schnittmenge zwischen zwei Tabellen ab (S. 215). Während INNER JOINs nur Datensätze mit Übereinstimmungen verknüpfen, ermöglichen OUTER JOINs (LEFT, RIGHT, FULL) den Einschluss von Datensätzen ohne Gegenstück aus der jeweils anderen Tabelle (S. 215–216). Ergänzend dazu können durch die Klausel WHERE ... IS NULL gezielt Unterschiede oder fehlende Verknüpfungen (z. B. kinderlose Paare oder Waisenkinder) herausgefiltert werden (S. 215–216).\n\nDer SELF JOIN ist entscheidend, wenn Verknüpfungen innerhalb einer einzigen Tabelle benötigt werden. Hierbei muss die Tabelle durch Aliasnamen als zwei Instanzen behandelt werden, um Vergleiche zwischen Datensätzen zu ermöglichen (S. 216). Typische Anwendungsfälle sind die Bestimmung zeitlicher Abstände zwischen Ereignissen oder das Finden hierarchischer Strukturen (S. 217–221).\n\nEin CROSS JOIN erzeugt das kartesische Produkt zweier Tabellen (jeder Datensatz wird mit jedem anderen kombiniert) (S. 221). Die WITH-Klausel hingegen erlaubt die Definition temporärer, benannter Abfragen (Inline-Views), was komplexe Joins deutlich übersichtlicher gestaltet, da Unterabfragen als eigenständige Blöcke vor der Hauptabfrage definiert werden (S. 222).\n\n**Kapitel 23: Nützliche Erweiterungen**\n\nHäufig ist die Einschränkung der Ergebniszeilen sinnvoll, um die Performance bei großen Datenmengen zu verbessern. Da der SQL-Standard hierfür kein einheitliches Vorgehen vorsieht, unterscheiden sich die Implementierungen je nach Datenbanksystem (S. 225). So bietet beispielsweise Firebird die Möglichkeiten FIRST (Anzahl der Zeilen) und SKIP (Anzahl der zu überspringenden Zeilen), um kontrolliert auf Teilmengen zuzugreifen (S. 225–226).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1780925011555,
+      "channel": "plan_pipe_f4b59eaca256",
+      "planStep": 6,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 215,
+        "end": 270
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts (S. 271–276):\n\nDie Verwendung von Unterabfragen bei Befehlen zum Speichern (INSERT, UPDATE, DELETE) erweitert die Möglichkeiten innerhalb von SQL erheblich.\n\nINSERT INTO mit Unterabfragen\nDaten können mittels einer SELECT-Abfrage aus einer oder mehreren Tabellen in eine Zieltabelle eingefügt werden (S. 271). Hierbei müssen die Datentypen der Spaltenlisten exakt übereinstimmen. Da beim Einfügen von Daten aus der eigenen Tabelle eine Endlosschleife droht, ist der Einsatz einer WHERE-Bedingung zwingend erforderlich (S. 271). Es ist ebenfalls möglich, berechnete Werte oder Konstanten mit Tabellendaten zu kombinieren (S. 272).\n\nUPDATE und Unterabfragen\nUnterabfragen in einem UPDATE-Befehl dienen entweder dazu, Vergleichswerte für die Auswahl der zu ändernden Datensätze in der WHERE-Klausel zu liefern oder neue Werte in der SET-Anweisung festzulegen (S. 273). Wenn eine Unterabfrage mit einem Bezug zu dem zu ändernden Datensatz arbeitet, ist sicherzustellen, dass die Abfrage eindeutige Werte zurückgibt; andernfalls müssen Funktionen wie $MAX()$ oder $MIN()$ verwendet werden (S. 275). Bei komplexen Updates kann ein Datensatz auch über mehrere Unterabfragen oder koordinierte Spaltenzuweisungen aktualisiert werden (S. 275–276).\n\nDELETE und Unterabfragen\nDer DELETE-Befehl nutzt Unterabfragen primär innerhalb der WHERE-Klausel, um die Kriterien für die zu löschenden Datensätze zu definieren (S. 276).\n\nZentrale Erkenntnisse\nUnterabfragen erlauben eine flexible Datenmanipulation, indem sie die Logik der Datenauswahl direkt in die Speicherbefehle integrieren. Dennoch ist bei der Ausführung zu beachten, dass Abhängigkeiten zwischen der zu ändernden Tabelle und der Unterabfrage die Systemleistung negativ beeinflussen können, da die Unterabfrage für jeden betroffenen Datensatz erneut berechnet werden muss (S. 275).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1780925011556,
+      "channel": "plan_pipe_f4b59eaca256",
+      "planStep": 7,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 271,
+        "end": 322
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Die vorliegenden Abschnitte (S. 323–333) behandeln die grundlegende Funktionsweise und Gestaltung von Fremdschlüssel-Beziehungen (Foreign Keys) in relationalen Datenbanken. Hier ist eine strukturierte Zusammenfassung der Kernaussagen:\n\nGrundlagen und Zweck von Fremdschlüsseln\nFremdschlüssel dienen der Datensicherheit und Integrität. Sie legen fest, dass Werte in einer Spalte einer Detailtabelle nur dann zulässig sind, wenn sie als Primärschlüssel in der zugehörigen Primärtabelle existieren (S. 323). Eine Ausnahme bilden optionale Spalten, die NULL-Werte enthalten dürfen, auch wenn diese nicht in der Primärtabelle vorkommen (S. 323).\n\nSteuerung durch Optionen\nDurch die Optionen ON UPDATE und ON DELETE wird definiert, wie das Datenbankmanagementsystem auf Änderungen in der Primärtabelle reagiert.\n- RESTRICT verhindert Änderungen oder Löschungen in der Primärtabelle, sofern abhängige Datensätze in der Detailtabelle existieren (S. 324).\n- CASCADE propagiert Änderungen (Updates) oder Löschungen automatisch in die Detailtabelle (S. 324).\n- Es ist nicht zulässig, widersprüchliche Optionen bei mehrfachen Verknüpfungen (Master-Detail-Ketten) zu kombinieren (S. 325).\n\nRekursive Fremdschlüssel\nTabellen können rekursive Bezüge aufweisen, etwa bei hierarchischen Strukturen wie Abteilungen (S. 326). Diese sind in der Handhabung anspruchsvoll, da beim Einfügen und Löschen eine strikte Reihenfolge eingehalten werden muss. Löschoperationen mit ON DELETE CASCADE können dabei unbeabsichtigt umfangreiche Datenbestände entfernen (S. 326). Einige Systeme bieten daher Mechanismen zur verzögerten Prüfung (z. B. DEFERRABLE) oder spezielle Optionen wie NO ACTION an (S. 327).\n\nArbeitsabläufe bei der Tabellenbearbeitung\nBei der Arbeit mit verknüpften Tabellen sind feste Sequenzen zu beachten:\n- Einfügen (INSERT): Die Befüllung muss von der Master-Tabelle hin zur Detailtabelle erfolgen (S. 328).\n- Löschen (DELETE): Es gilt die umgekehrte Reihenfolge, sofern keine automatische Weitergabe (CASCADE) definiert ist (S. 328).\n- Ändern (UPDATE): Die Änderung eines Primärschlüsselwertes ist nur möglich, wenn der alte Wert nicht referenziert wird. Oft ist ein Prozess aus Einfügen, Update der Detaildatensätze und Löschen des alten Primärsatzes erforderlich (S. 329).\n\nFazit\nDie Definition von Fremdschlüsseln ist ein Bestandteil der Data Definition Language (DDL). Eine korrekte Modellierung der Abhängigkeiten ist essenziell, um Datenkonsistenz zu gewährleisten und bei komplexen Datenstrukturen durch eine kluge Wahl von Einschränkungen (Constraints) Fehlfunktionen bei Transaktionen zu vermeiden (S. 329).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1780925011557,
+      "channel": "plan_pipe_f4b59eaca256",
+      "planStep": 8,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 323,
+        "end": 388
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die zusammenfassende Übersicht basierend auf den bereitgestellten Seiten (S. 389 bis S. 403):\n\nDefinition und Zweck von Triggern (S. 389)\nEin Trigger ist eine automatisch ausgeführte Routine, die auf bestimmte Ereignisse (INSERT, UPDATE, DELETE) in einer Datenbank reagiert. Er wird nicht manuell vom Nutzer aufgerufen, sondern vom Datenbankmanagementsystem (DBMS) gesteuert. Trigger dienen der Plausibilitätsprüfung, der automatischen Protokollierung, der Sicherung referenzieller Integrität sowie der Wertzuweisung (z. B. IDs).\n\nStruktur und Erstellung (S. 390-391)\nDie Definition erfolgt über das Kommando CREATE TRIGGER. Notwendige Angaben sind der Name, die zugehörige Tabelle sowie der Auslösezeitpunkt (BEFORE oder AFTER) und das Ereignis. Innerhalb eines Triggers stehen spezielle Variablen zur Verfügung: OLD repräsentiert den Datensatz vor der Änderung, NEW den Datensatz danach. Trigger können bei Bedarf mit ALTER TRIGGER (INACTIVE) deaktiviert oder mit DROP TRIGGER gelöscht werden (S. 391).\n\nAnwendungsbeispiele (S. 391-393)\n- Automatisierung von IDs: Falls kein AUTO_INCREMENT verfügbar ist, können Trigger in Verbindung mit einer SEQUENCE den nächsten Wert festlegen (S. 391).\n- Protokollierung: Automatisches Speichern von Benutzerdaten (CURRENT_USER) und Zeitstempeln (CURRENT_TIMESTAMP) bei Änderungen (S. 392).\n- Verwaltung abhängiger Daten: Trigger können Löschvorgänge in verknüpften Tabellen steuern, etwa um Referenzen vor dem Löschen eines Datensatzes auf NULL zu setzen (S. 393).\n\nAbfrage von Identifikatoren (S. 401-403)\nNach einem INSERT-Vorgang besteht häufig die Notwendigkeit, den neu vergebenen ID-Wert abzufragen:\n- Firebird nutzt dafür die RETURNING-Klausel direkt im INSERT-Befehl (S. 401).\n- MS-SQL bietet Funktionen wie $SELECT \\text{ } @@IDENTITY$, $SELECT \\text{ } SCOPE\\_IDENTITY()$ oder $SELECT \\text{ } IDENT\\_CURRENT('Tabelle')$ (S. 402).\n- MySQL verwendet hierfür die Funktion $SELECT \\text{ } LAST\\_INSERT\\_ID()$ (S. 402).",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1780925011558,
+      "channel": "plan_pipe_f4b59eaca256",
+      "planStep": 9,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 389,
+        "end": 416
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist die Zusammenfassung des Abschnitts [S. 417-428]:\n\n**Änderungen an der Datenbankstruktur**\nDer Prämiensatz für 2006 wird neu berechnet, wobei die Berechnungslogik vom Abschlussdatum abhängt. Neuere Verträge erhalten eine Anpassung von 20 Punkten pro Jahr (Minimum 80), andere Verträge 10 Punkte pro Jahr (Minimum 30). Abweichende Anfangssätze bleiben erhalten [S. 417]. Zur effizienten Verwaltung dieser Änderungen bietet das Kapitel Skripte für Spalten, Constraints, Indizes, Fremdschlüssel und Datenanpassungen an [S. 417]. Ein Skript wird als eine Liste von Befehlen definiert, die automatisch nacheinander ausgeführt werden [S. 418].\n\n**Erzeugung von Testdaten**\nUm umfangreiche und realistische Tests zu ermöglichen, ist das Erzeugen von Testdaten notwendig [S. 419]. Dabei sind wichtige Prinzipien zu beachten:\n- Verwendung zufällig erzeugter Werte.\n- Fachliche Plausibilität der Daten (z. B. korrekte Zuordnung von PLZ und Ort).\n- Realistische Verteilung der Datensätze [S. 419].\n\nFür das Registrieren neuer Versicherungsverträge werden temporäre Hilfstabellen eingesetzt, da direkte Prozeduraufrufe oft ineffizient sind [S. 420-421]. Ein Kerninstrument ist das kartesische Produkt, welches durch die Kombination von Hilfstabellen eine große Menge an Datensätzen erzeugt [S. 421-422]. Da diese Art der Verknüpfung das Datenbanksystem stark belastet, müssen Einschränkungen mittels WHERE-Klauseln vorgenommen werden [S. 422].\n\n**Herausforderungen bei der Datenzuordnung**\nDie korrekte Verknüpfung von Versicherungsnehmern und Fahrzeugen erfordert komplexe Bedingungen (z. B. regionale Zuordnung, Führerscheinbesitz) [S. 423]. Anstatt ineffizienter geschachtelter Unterabfragen empfiehlt sich die Nutzung einer Hilfstabelle (TempVertrag), in der Daten schrittweise verarbeitet und verknüpft werden [S. 423-424]. Ein EXECUTE BLOCK dient dazu, die Zuweisungen durchzuführen und notwendige Zufallswerte für Vertragsdaten zu generieren [S. 424-425].\n\n**Abschließende Hinweise**\n- Vor jeder größeren Änderung an der Datenbank muss zwingend eine Datensicherung erfolgen [S. 426].\n- Die automatisierte Erzeugung von Schadensfällen gestaltet sich komplexer, da hier die Plausibilität von Schadenssummen und beteiligten Parteien gewahrt bleiben muss [S. 426-427].\n- Für viele Standardtabellen ist eine manuelle Pflege oder einfache Prozeduren sinnvoller als eine automatisierte Zufallserzeugung [S. 427].",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Kurzfassung",
+      "timestamp": 1780925011559,
+      "channel": "plan_pipe_f4b59eaca256",
+      "planStep": 10,
+      "planAction": "zusammenfassung",
+      "contextRef": {
+        "type": "range",
+        "start": 417,
+        "end": 466
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Hier ist ein Quiz zur Lerneinheit.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Quiz",
+      "timestamp": 1780925011640,
+      "channel": "general",
+      "quizData": {
+        "questions": [
+          {
+            "question": "Welche Funktion erfüllt die GROUP BY-Klausel in einer SQL-Abfrage?",
+            "options": [
+              "Sie sortiert die Ergebnisse alphabetisch oder numerisch.",
+              "Sie fasst Zeilen mit gleichen Werten in einer oder mehreren Spalten zusammen, um Aggregationen durchzuführen.",
+              "Sie schränkt die Ergebnismenge basierend auf einer logischen Bedingung ein.",
+              "Sie verknüpft zwei Tabellen miteinander, die ein gemeinsames Attribut haben."
+            ],
+            "correctIndex": 1,
+            "explanation": "GROUP BY ermöglicht es, Daten zu gruppieren, um auf die Gruppen Funktionen wie SUM, COUNT oder AVG anzuwenden."
+          },
+          {
+            "question": "Warum wird in einer SELECT-Abfrage häufig ein JOIN verwendet?",
+            "options": [
+              "Um Tabellen zu löschen, die nicht mehr benötigt werden.",
+              "Um die Struktur der Datenbank (DDL) permanent zu verändern.",
+              "Um Daten aus mehreren, miteinander in Beziehung stehenden Tabellen in einem einzigen Ergebnis zusammenzuführen.",
+              "Um doppelte Einträge in der Ergebnismenge zu entfernen."
+            ],
+            "correctIndex": 2,
+            "explanation": "JOINs werden genutzt, um Zeilen aus zwei oder mehr Tabellen basierend auf einer verknüpfenden Spalte (z. B. Fremdschlüssel) zu verbinden."
+          },
+          {
+            "question": "Was ist der Hauptunterschied zwischen INNER JOIN und OUTER JOIN?",
+            "options": [
+              "INNER JOIN ist schneller als OUTER JOIN.",
+              "INNER JOIN gibt nur übereinstimmende Datensätze aus beiden Tabellen zurück, während OUTER JOIN auch Datensätze enthält, für die kein Partner gefunden wurde.",
+              "OUTER JOIN funktioniert nur, wenn die Tabellen keine Primärschlüssel haben.",
+              "Der Einsatz von INNER JOIN erfordert eine WHERE-Klausel, während OUTER JOIN ohne auskommt."
+            ],
+            "correctIndex": 1,
+            "explanation": "Ein INNER JOIN liefert nur Datensätze, bei denen die Verknüpfungsbedingung für beide Tabellen erfüllt ist. OUTER JOINs (LEFT, RIGHT, FULL) behalten auch nicht-treffende Datensätze bei."
+          },
+          {
+            "question": "Welche Rolle spielt die HAVING-Klausel beim Gruppieren von Daten?",
+            "options": [
+              "Sie berechnet den Durchschnittswert einer Spalte.",
+              "Sie entfernt NULL-Werte aus der Berechnung.",
+              "Sie dient als Filterbedingung für die nach der Gruppierung entstandenen Gruppen (ähnlich wie WHERE für einzelne Zeilen).",
+              "Sie definiert die Spalten, die in das Ergebnis der Abfrage aufgenommen werden."
+            ],
+            "correctIndex": 2,
+            "explanation": "Während WHERE vor der Gruppierung filtert, erlaubt HAVING eine Einschränkung basierend auf den aggregierten Ergebnissen einer Gruppe."
+          },
+          {
+            "question": "Was versteht man in SQL unter einer 'berechneten Spalte' (im Kontext einer SELECT-Abfrage)?",
+            "options": [
+              "Eine Spalte, die physikalisch in der Datenbanktabelle gespeichert wurde.",
+              "Eine Spalte, deren Inhalt erst zur Laufzeit der Abfrage durch Ausdrücke oder Operationen mit bestehenden Werten erstellt wird.",
+              "Eine Spalte, die nur mit Hilfe eines Triggers verändert werden kann.",
+              "Eine Spalte, die zur Formatierung von Datumswerten dient."
+            ],
+            "correctIndex": 1,
+            "explanation": "Berechnete Spalten existieren nicht physisch in der Tabelle, sondern werden dynamisch als Ergebnis einer mathematischen oder String-Operation berechnet."
+          }
+        ],
+        "answers": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "currentIndex": 0,
+        "finished": false,
+        "xpEarned": 0
+      }
+    },
+    {
+      "role": "bot",
+      "content": "Karteikarten zur Vertiefung.",
+      "model": "google/gemini-3.1-flash-lite-preview",
+      "actionLabel": "Karteikarten",
+      "timestamp": 1780925011641,
+      "channel": "general",
+      "flashcardData": {
+        "cards": [
+          {
+            "front": "Wofür steht die Abkürzung SQL?",
+            "back": "SQL steht für Structured Query Language. Es ist eine standardisierte Sprache zur Abfrage, Bearbeitung und Verwaltung von relationalen Datenbanken."
+          },
+          {
+            "front": "Was ist der Hauptzweck eines SELECT-Befehls?",
+            "back": "Der SELECT-Befehl dient dazu, Daten aus einer oder mehreren Datenbanktabellen abzurufen und in einer Ergebnismenge anzuzeigen."
+          },
+          {
+            "front": "Was bewirkt die Klausel DISTINCT in einer SELECT-Abfrage?",
+            "back": "DISTINCT verhindert die Anzeige von doppelten Datensätzen in der Ergebnismenge, sodass jeder Wert nur einmal aufgeführt wird."
+          },
+          {
+            "front": "Erläutere kurz den INNER JOIN.",
+            "back": "Ein INNER JOIN verknüpft Datensätze aus zwei Tabellen nur dann, wenn in beiden Tabellen die Verknüpfungsbedingung (z. B. Match eines Schlüssels) erfüllt ist."
+          },
+          {
+            "front": "Was ist der Unterschied zwischen LEFT OUTER JOIN und INNER JOIN?",
+            "back": "Der LEFT OUTER JOIN gibt alle Datensätze der linken Tabelle zurück, auch wenn keine passende Entsprechung in der rechten Tabelle existiert. Der INNER JOIN zeigt nur passende Datensätze beider Tabellen."
+          },
+          {
+            "front": "Wozu dient die GROUP BY-Klausel?",
+            "back": "GROUP BY gruppiert Zeilen mit gleichen Werten in bestimmten Spalten, um auf diesen Gruppen anschließend Aggregationsfunktionen (wie SUM, AVG, COUNT) anzuwenden."
+          },
+          {
+            "front": "Was versteht man unter DML im Kontext von SQL?",
+            "back": "DML steht für Data Manipulation Language. Dazu gehören Befehle zur Datenbearbeitung wie SELECT, INSERT, UPDATE und DELETE."
+          },
+          {
+            "front": "Was macht der Befehl TRUNCATE?",
+            "back": "TRUNCATE löscht alle Datensätze aus einer Tabelle, wobei die Tabellenstruktur (das Schema) vollständig erhalten bleibt."
+          },
+          {
+            "front": "Was ist der Zweck der WHERE-Klausel?",
+            "back": "Die WHERE-Klausel dient dazu, Datensätze anhand bestimmter logischer Bedingungen zu filtern, die auf die Zeilen angewendet werden sollen."
+          },
+          {
+            "front": "Was versteht man unter einer 'View' (Sicht) in SQL?",
+            "back": "Eine View ist eine gespeicherte virtuelle Tabelle, die auf einer komplexen SELECT-Abfrage basiert und wie eine echte Tabelle abgefragt werden kann."
+          }
+        ],
+        "currentIndex": 0,
+        "finished": false
+      }
+    }
+  ],
+  "presentations": [
+    {
+      "id": "pres_pipe_course-de-cs-datenanalyse-sql_0",
+      "slides": [
+        {
+          "title": "Einführung in SQL",
+          "bullets": [
+            "Grundlagen der Datenbankmanipulation und -abfrage",
+            "Strukturierter Einstieg in SQL-Befehle und Konzepte (S. 1, 3)"
+          ],
+          "notes": "Willkommen zur Einführung in SQL. Wir betrachten heute die Grundlagen von relationalen Datenbanken und wie wir Daten effizient abfragen und verwalten.",
+          "page_range": "1,3",
+          "image_prompt": ""
+        },
+        {
+          "title": "Daten abfragen mit SELECT",
+          "bullets": [
+            "Grundlegender SELECT-Befehl zur Datenselektion (S. 57)",
+            "Verfeinerung von Abfragen durch die WHERE-Klausel (S. 155)",
+            "Verwendung von Vergleichsoperatoren und logischen Verknüpfungen (S. 167-168)",
+            "Suche nach Mustern mit LIKE und Wildcards (S. 169)"
+          ],
+          "notes": "Der SELECT-Befehl ist das Herzstück von SQL. Mit der WHERE-Klausel filtern wir Datensätze präzise nach unseren Anforderungen.",
+          "page_range": "57,155-169",
+          "image_prompt": ""
+        },
+        {
+          "title": "Tabellen verknüpfen mit JOIN",
+          "bullets": [
+            "Zusammenführung von Daten aus mehreren Tabellen",
+            "INNER JOIN für exklusive Übereinstimmungen (S. 203)",
+            "LEFT/RIGHT/FULL JOIN für breitere Datenmengen (S. 203, 215-216)",
+            "SELF JOIN zur Verknüpfung der Tabelle mit sich selbst (S. 216)"
+          ],
+          "notes": "Wenn Informationen in verschiedenen Tabellen liegen, nutzen wir JOINs, um diese sinnvoll miteinander zu verknüpfen.",
+          "page_range": "203,215-218",
+          "image_prompt": ""
+        },
+        {
+          "title": "Aggregation und Funktionen",
+          "bullets": [
+            "Einzelwerte bestimmen mit EXTRACT (S. 128)",
+            "Umgang mit NULL-Werten bei Berechnungen (S. 129)",
+            "Daten gruppieren für aussagekräftige Statistiken (S. 241)",
+            "Berechnete Spalten für erweiterte Ergebnisdarstellungen (S. 235)"
+          ],
+          "notes": "Aggregationen helfen uns, aus Einzeldaten wertvolle Informationen zu gewinnen, etwa durch Gruppierungen.",
+          "page_range": "128-129,235,241",
+          "image_prompt": ""
+        },
+        {
+          "title": "Datenbank-Struktur und DDL",
+          "bullets": [
+            "Definition der Tabellenstruktur via CREATE TABLE (S. 93)",
+            "Sicherung der Integrität durch Primär- und Fremdschlüssel (S. 93, 311)",
+            "Änderungen der Struktur mit ALTER TABLE (S. 91)",
+            "Löschen von Objekten mit DROP (S. 92)"
+          ],
+          "notes": "Die Data Definition Language erlaubt es uns, eine stabile Datenbank-Struktur zu entwerfen und sie bei Bedarf anzupassen.",
+          "page_range": "91-93,311",
+          "image_prompt": ""
+        }
+      ],
+      "config": {
+        "title": "Lektion 1 — Einführung in SQL - Präsentation",
+        "lang": "de",
+        "format": "lecture",
+        "length": "short"
+      },
+      "chapters": [],
+      "createdAt": 1780925011540,
+      "pdfName": "Einführung in SQL"
+    }
+  ],
+  "sourceHash": "8882fb560f3f188e"
+}
