@@ -291,6 +291,9 @@
                     <p id="privacy-settings-link">Sie sind selbst dafür verantwortlich, Ihre Datenschutzeinstellungen bei OpenRouter korrekt zu konfigurieren. Besuchen Sie dazu: <a href="https://openrouter.ai/settings/privacy" target="_blank" rel="noopener noreferrer">openrouter.ai/settings/privacy</a></p>
                     <p id="privacy-zdr-check">Prüfen Sie insbesondere, ob Training auf Ihre Eingaben (bezahlt/kostenlos), Veröffentlichung Ihrer Prompts und Ein-/Ausgabe-Logging aktiviert sind. Für maximalen Schutz aktivieren Sie <strong>„Nur ZDR-Endpunkte" (Zero Data Retention)</strong> und deaktivieren Sie alle Trainings- und Logging-Optionen.</p>
 
+                    <h2 id="privacy-hosting-h">6. Hosting dieser Web-Inhalte</h2>
+                    <p id="privacy-hosting">Die interaktiven Lektionen und Web-Inhalte werden über <strong>Cloudflare Pages</strong> (Cloudflare, Inc., USA) ausgeliefert; einzelne Rechts- und Hilfeseiten über <strong>GitHub Pages</strong> (GitHub, Inc., USA). Beim Aufruf einer Seite verarbeiten diese Anbieter technisch notwendige Server-Logdaten, insbesondere Ihre <strong>IP-Adresse</strong>, Datum und Uhrzeit des Zugriffs sowie die abgerufene Datei, um die Inhalte auszuliefern und die Sicherheit zu gewährleisten (Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse an einer stabilen und sicheren Bereitstellung). Dabei kann eine Übermittlung in die USA stattfinden. Es gelten die Datenschutzbestimmungen von <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare</a> bzw. <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub</a>. Es werden keine Tracking-Cookies gesetzt; der Lernfortschritt der interaktiven Lektionen verbleibt ausschließlich lokal in Ihrem Browser.</p>
+
                     <div class="highlight-box">
                         <p class="font-semibold mb-2">💡 Wichtiger Hinweis:</p>
                         <p>Diese App ist ausschließlich für rechtmäßig erlangte Materialien bestimmt. KI-generierte Inhalte können fehlerhaft sein — bitte stets manuell überprüfen.</p>
@@ -396,6 +399,8 @@
                 privacySection3: "3. Datenflüsse über OpenRouter",
                 privacySection4: "4. Ihre Rechte",
                 privacySection5: "5. Ihre OpenRouter-Datenschutzeinstellungen",
+                privacyHostingTitle: "6. Hosting dieser Web-Inhalte",
+                privacyHostingText: "Die interaktiven Lektionen und Web-Inhalte werden über <strong>Cloudflare Pages</strong> (Cloudflare, Inc., USA) ausgeliefert; einzelne Rechts- und Hilfeseiten über <strong>GitHub Pages</strong> (GitHub, Inc., USA). Beim Aufruf einer Seite verarbeiten diese Anbieter technisch notwendige Server-Logdaten, insbesondere Ihre <strong>IP-Adresse</strong>, Datum und Uhrzeit des Zugriffs sowie die abgerufene Datei, um die Inhalte auszuliefern und die Sicherheit zu gewährleisten (Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse an einer stabilen und sicheren Bereitstellung). Dabei kann eine Übermittlung in die USA stattfinden. Es gelten die Datenschutzbestimmungen von <a href=\"https://www.cloudflare.com/privacypolicy/\" target=\"_blank\" rel=\"noopener noreferrer\">Cloudflare</a> bzw. <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a>. Es werden keine Tracking-Cookies gesetzt; der Lernfortschritt der interaktiven Lektionen verbleibt ausschließlich lokal in Ihrem Browser.",
                 privacyDesignText: "Diese App wurde nach dem Grundsatz <strong>Privacy by Design</strong> entwickelt:",
                 privacyOpenRouterText: "Wenn Sie KI-Funktionen nutzen, werden Textauszüge aus Ihrem PDF sowie Ihre Fragen über die <strong>OpenRouter API</strong> (openrouter.ai) an KI-Modelle weitergeleitet. Dabei gilt:",
                 privacyRightsText: "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Da alle Daten lokal gespeichert werden, können Sie diese jederzeit durch Löschen der Browser-Daten vollständig entfernen.",
@@ -494,6 +499,8 @@
                 privacySection3: "3. Data Flows via OpenRouter",
                 privacySection4: "4. Your Rights",
                 privacySection5: "5. Your OpenRouter Privacy Settings",
+                privacyHostingTitle: "6. Hosting of these web contents",
+                privacyHostingText: "The interactive lessons and web content are delivered via <strong>Cloudflare Pages</strong> (Cloudflare, Inc., USA); individual legal and help pages via <strong>GitHub Pages</strong> (GitHub, Inc., USA). When you open a page, these providers process technically necessary server log data, in particular your <strong>IP address</strong>, the date and time of access and the requested file, in order to deliver the content and ensure security (Art. 6(1)(f) GDPR, legitimate interest in stable and secure delivery). This may involve a transfer to the USA. The privacy policies of <a href=\"https://www.cloudflare.com/privacypolicy/\" target=\"_blank\" rel=\"noopener noreferrer\">Cloudflare</a> and <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\" target=\"_blank\" rel=\"noopener noreferrer\">GitHub</a> apply. No tracking cookies are set; the learning progress of the interactive lessons remains exclusively local in your browser.",
                 privacyDesignText: "This app was developed according to the <strong>Privacy by Design</strong> principle:",
                 privacyOpenRouterText: "When you use AI functions, text excerpts from your PDF and your questions are forwarded via the <strong>OpenRouter API</strong> (openrouter.ai) to AI models. This means:",
                 privacyRightsText: "You have the right to information, correction, deletion, restriction of processing, data portability and objection. Since all data is stored locally, you can completely remove it at any time by deleting your browser data.",
@@ -643,6 +650,8 @@
                     { selector: '#privacy-rights', text: t.privacyP3 },
                     { selector: '#privacy-settings-link', html: t.privacySettingsText },
                     { selector: '#privacy-zdr-check', html: t.privacyCheckText },
+                    { selector: '#privacy-hosting-h', text: t.privacyHostingTitle },
+                    { selector: '#privacy-hosting', html: t.privacyHostingText },
                 ]);
                 
                 // Update terms of use content
