@@ -102,8 +102,9 @@
 
                 <div class="highlight-box">
                     <p style="margin-bottom:0"><strong>Kurz gesagt:</strong> DocWorm betreibt
-                    <strong>keine eigenen Nutzerkonten</strong> und speichert <strong>keine personenbezogenen
-                    Daten auf eigenen Servern</strong>. Alle Lerndaten liegen lokal auf Ihrem Gerät. Die
+                    <strong>keine eigenen Nutzerkonten</strong>. Alle Lerndaten liegen lokal auf Ihrem Gerät.
+                    Auf eigenen Servern speichert DocWorm nur dann etwas, wenn Sie selbst eine
+                    <strong>interaktive Lektion erstellen</strong> lassen (Abschnitt 1). Die
                     Anmeldung erfolgt optional über Ihr <strong>OpenRouter-Konto</strong> (ein Drittanbieter,
                     der die KI-Verarbeitung übernimmt).</p>
                 </div>
@@ -120,6 +121,16 @@
                 <p>Wenn Sie sich mit OpenRouter anmelden, besteht dort ein Konto, das DocWorm lediglich zur
                 KI-Verarbeitung nutzt. DocWorm hat keinen Zugriff auf Ihr OpenRouter-Passwort oder Ihre
                 Kontodaten.</p>
+
+                <h3>Auf unserem Server (nur bei selbst erstellten interaktiven Lektionen)</h3>
+                <p>Wenn Sie eine interaktive Lektion aus einem Buch der kuratierten Bibliothek erstellen
+                lassen und dessen Lizenz eine Bearbeitung erlaubt, wird die Lektion bei uns abgelegt und ist
+                unter einem nicht gelisteten Link abrufbar. Gespeichert werden dabei der Name und die
+                Aufgaben der Lektion, Kennung und Lizenz des Buchs, die Sprache, ein Suchvektor, ein
+                <strong>Hash (SHA-256) Ihres OpenRouter-Keys</strong> sowie ein Zähler der Aufrufe. Ihr Key
+                selbst wird nicht gespeichert, ebenso wenig Ihr Name oder Ihre Kontaktdaten. In allen anderen
+                Fällen, insbesondere bei selbst hochgeladenem Material oder ungeklärter Lizenz, wird nichts
+                abgelegt.</p>
 
                 <h2>2. So löschen Sie alle lokalen DocWorm-Daten</h2>
                 <ol>
@@ -143,18 +154,22 @@
                     <a href="https://openrouter.ai/settings" target="_blank" rel="noopener">openrouter.ai/settings</a>.</li>
                 </ol>
 
-                <h2>4. Fragen zur Löschung</h2>
-                <p>DocWorm speichert <strong>keine personenbezogenen Daten auf eigenen Servern</strong> –
-                es gibt auf unserer Seite also nichts, das wir für Sie löschen müssten. Die Löschung erfolgt
-                lokal auf Ihrem Gerät (Abschnitt 2) bzw. bei OpenRouter (Abschnitt 3). Bei Fragen oder Hilfe
-                zur Löschung erreichen Sie uns unter:</p>
+                <h2>4. Löschung einer erstellten interaktiven Lektion</h2>
+                <p>Ihre <strong>lokalen Daten</strong> löschen Sie selbst auf Ihrem Gerät (Abschnitt 2), Ihre
+                Anmeldung bei OpenRouter (Abschnitt 3). Dafür müssen wir nichts tun.</p>
+                <p>Haben Sie eine <strong>interaktive Lektion</strong> erstellt, die bei uns abgelegt wurde
+                (Abschnitt 1), können Sie deren Löschung jederzeit und ohne Angabe von Gründen verlangen.
+                Schicken Sie uns dazu den <strong>Link der Lektion</strong>. Wir entfernen sie in der Regel
+                innerhalb weniger Tage. Bei Fragen oder Hilfe zur Löschung erreichen Sie uns unter:</p>
                 <p>📧 <a href="mailto:mail.to.falko@gmx.de?subject=DocWorm%20Datenl%C3%B6schung">mail.to.falko@gmx.de</a><br>
                 <strong>Falko Guderian</strong>, Ludwig-Renn-Allee 17, 01217 Dresden, Deutschland</p>
 
                 <h2>5. Welche Daten verbleiben?</h2>
                 <p>Nach der lokalen Löschung bzw. Deinstallation behält DocWorm
-                <strong>keine personenbezogenen Daten</strong> über Sie. Es existiert keine serverseitige
-                Kopie. Daten beim Drittanbieter OpenRouter unterliegen dessen
+                <strong>keine personenbezogenen Daten</strong> über Sie, sofern Sie keine interaktive Lektion
+                erstellt haben. Von Ihnen erstellte und bei uns abgelegte Lektionen bleiben bestehen, bis Sie
+                deren Löschung verlangen (Abschnitt 4). Sie enthalten weder Ihren Namen noch Kontaktdaten,
+                sondern nur den Hash Ihres OpenRouter-Keys. Daten beim Drittanbieter OpenRouter unterliegen dessen
                 <a href="https://openrouter.ai/privacy" target="_blank" rel="noopener">Datenschutzrichtlinie</a>.</p>
 
                 <p style="margin-top:2rem"><a href="./index.html">← Datenschutz, Nutzungsbedingungen &amp; Impressum</a></p>
@@ -169,8 +184,9 @@
 
                 <div class="highlight-box">
                     <p style="margin-bottom:0"><strong>In short:</strong> DocWorm operates
-                    <strong>no user accounts of its own</strong> and stores <strong>no personal data on its
-                    own servers</strong>. All learning data lives locally on your device. Sign-in is optional
+                    <strong>no user accounts of its own</strong>. All learning data lives locally on your
+                    device. DocWorm stores something on its own servers only if you create an
+                    <strong>interactive lesson</strong> yourself (section 1). Sign-in is optional
                     and uses your <strong>OpenRouter account</strong> (a third party that performs the AI
                     processing).</p>
                 </div>
@@ -186,6 +202,15 @@
                 <h3>At the third party OpenRouter (sign-in / "account")</h3>
                 <p>If you sign in with OpenRouter, an account exists there which DocWorm only uses for AI
                 processing. DocWorm has no access to your OpenRouter password or account data.</p>
+
+                <h3>On our server (only for interactive lessons you create yourself)</h3>
+                <p>If you create an interactive lesson from a book in the curated library and that book's
+                license permits adaptation, the lesson is stored by us and is retrievable under an unlisted
+                link. What is stored: the lesson's name and exercises, the book's identifier and license, the
+                language, a search vector, a <strong>hash (SHA-256) of your OpenRouter key</strong>, and a
+                view counter. Your key itself is not stored, nor is your name or contact data. In all other
+                cases, in particular for self-uploaded material or an unresolved license, nothing is
+                stored.</p>
 
                 <h2>2. How to delete all local DocWorm data</h2>
                 <ol>
@@ -209,16 +234,22 @@
                     <a href="https://openrouter.ai/settings" target="_blank" rel="noopener">openrouter.ai/settings</a>.</li>
                 </ol>
 
-                <h2>4. Questions about deletion</h2>
-                <p>DocWorm stores <strong>no personal data on its own servers</strong> – so there is nothing
-                for us to delete on our side. Deletion happens locally on your device (section 2) or at
-                OpenRouter (section 3). If you have questions or need help with deletion, contact us:</p>
+                <h2>4. Deleting an interactive lesson you created</h2>
+                <p>You delete your <strong>local data</strong> yourself on your device (section 2), and your
+                sign-in at OpenRouter (section 3). Nothing is required from us for that.</p>
+                <p>If you created an <strong>interactive lesson</strong> that was stored by us (section 1),
+                you can request its deletion at any time and without giving reasons. Just send us the
+                <strong>link to the lesson</strong>. We usually remove it within a few days. If you have
+                questions or need help with deletion, contact us:</p>
                 <p>📧 <a href="mailto:mail.to.falko@gmx.de?subject=DocWorm%20Data%20Deletion">mail.to.falko@gmx.de</a><br>
                 <strong>Falko Guderian</strong>, Ludwig-Renn-Allee 17, 01217 Dresden, Germany</p>
 
                 <h2>5. What data is retained?</h2>
                 <p>After local deletion or uninstallation, DocWorm retains <strong>no personal data</strong>
-                about you. There is no server-side copy. Data held by the third party OpenRouter is subject to
+                about you, provided you have not created an interactive lesson. Lessons you created and that
+                were stored by us remain until you request their deletion (section 4). They contain neither
+                your name nor contact data, only the hash of your OpenRouter key. Data held by the third party
+                OpenRouter is subject to
                 its <a href="https://openrouter.ai/privacy" target="_blank" rel="noopener">privacy policy</a>.</p>
 
                 <p style="margin-top:2rem"><a href="./index.html">← Privacy, Terms of Use &amp; Legal Notice</a></p>

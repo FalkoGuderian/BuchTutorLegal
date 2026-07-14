@@ -268,8 +268,8 @@
                     <h2>2. Privacy by Design — Lokale Datenverarbeitung</h2>
                     <p>Diese App wurde nach dem Grundsatz <strong>Privacy by Design</strong> entwickelt:</p>
                     <ul id="privacy-design-list">
-                        <li>Es werden <strong>keine personenbezogenen Daten</strong> auf Entwickler-Servern gespeichert.</li>
-                        <li>Ihr <strong>API-Key</strong> wird ausschließlich verschlüsselt im Local Storage Ihres Geräts gespeichert und niemals an Dritte übermittelt.</li>
+                        <li>Es werden <strong>keine personenbezogenen Daten</strong> auf Entwickler-Servern gespeichert. Ausgenommen ist allein die von Ihnen selbst ausgelöste Funktion „Interaktive Lektion erstellen" (Abschnitt 7).</li>
+                        <li>Ihr <strong>API-Key</strong> wird ausschließlich verschlüsselt im Local Storage Ihres Geräts gespeichert. Übermittelt wird er an OpenRouter selbst und, wenn Sie eine interaktive Lektion erstellen, für die Dauer dieser Anfrage an unseren Erstellungsdienst (Abschnitt 7).</li>
                         <li>Hochgeladene <strong>PDF-Dokumente</strong> verbleiben lokal in Ihrem Browser (IndexedDB) und werden nicht an Server übertragen.</li>
                         <li>Über <strong>Kamera</strong> oder aus der <strong>Galerie</strong> hinzugefügte Bilder verbleiben lokal auf Ihrem Gerät und werden nur dann an OpenRouter übermittelt, wenn Sie sie aktiv an die KI senden.</li>
                         <li><strong>Chat-Verläufe</strong> und Einstellungen werden nur lokal auf Ihrem Gerät gespeichert.</li>
@@ -278,11 +278,11 @@
                     <h2>3. Datenflüsse über OpenRouter</h2>
                     <p id="privacy-openrouter-intro">Wenn Sie KI-Funktionen nutzen, werden Textauszüge aus Ihrem PDF sowie Ihre Fragen über die <strong>OpenRouter API</strong> (openrouter.ai) an KI-Modelle weitergeleitet. Dabei gilt:</p>
                     <ul id="privacy-openrouter-list">
-                        <li>Die Übermittlung erfolgt direkt von Ihrem Browser an OpenRouter — ohne Umweg über unsere Server.</li>
+                        <li>Die Übermittlung erfolgt direkt von Ihrem Browser an OpenRouter, ohne Umweg über unsere Server. Ausgenommen ist die Funktion „Interaktive Lektion erstellen" (Abschnitt 7), bei der unser Dienst den Aufruf in Ihrem Namen ausführt.</li>
                         <li>OpenRouter fungiert als Auftragsverarbeiter. Es gelten die <a href="https://openrouter.ai/privacy" target="_blank" rel="noopener noreferrer">Datenschutzrichtlinien von OpenRouter</a>.</li>
                         <li>Ihr API-Key authentifiziert Sie direkt bei OpenRouter.</li>
                     </ul>
-                    <p id="privacy-from-url-text">Wenn Sie die Funktion <strong>„Aus URL"</strong> nutzen, lädt Ihr Browser den Inhalt direkt vom angegebenen Server. Der jeweilige Server sieht dabei Ihre IP-Adresse und ggf. Cookies. Es gelten die Datenschutzrichtlinien des aufgerufenen Drittanbieters. DocWorm hat darauf keinen Einfluss.</p>
+                    <p id="privacy-from-url-text">Wenn Sie die Funktion <strong>„URL / YouTube"</strong> nutzen, lädt die App den Inhalt direkt vom angegebenen Server. Der jeweilige Server sieht dabei Ihre IP-Adresse und ggf. Cookies. Das gilt auch für <strong>YouTube-Links</strong>: Das Transkript wird direkt bei YouTube abgerufen, Google sieht dabei die IP-Adresse Ihres Geräts. Der abgerufene Text bleibt lokal auf Ihrem Gerät. Es gelten die Datenschutzrichtlinien des jeweiligen Drittanbieters. DocWorm hat darauf keinen Einfluss und erhält davon keine Daten.</p>
 
                     <h2>4. Ihre Rechte</h2>
                     <p id="privacy-rights">Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Da alle Daten lokal gespeichert werden, können Sie diese jederzeit durch Löschen der Browser-Daten vollständig entfernen.</p>
@@ -293,6 +293,16 @@
 
                     <h2 id="privacy-hosting-h">6. Hosting dieser Web-Inhalte</h2>
                     <p id="privacy-hosting">Die interaktiven Lektionen und Web-Inhalte werden über <strong>Cloudflare Pages</strong> (Cloudflare, Inc., USA) ausgeliefert; einzelne Rechts- und Hilfeseiten über <strong>GitHub Pages</strong> (GitHub, Inc., USA). Beim Aufruf einer Seite verarbeiten diese Anbieter technisch notwendige Server-Logdaten, insbesondere Ihre <strong>IP-Adresse</strong>, Datum und Uhrzeit des Zugriffs sowie die abgerufene Datei, um die Inhalte auszuliefern und die Sicherheit zu gewährleisten (Art. 6 Abs. 1 lit. f DSGVO, berechtigtes Interesse an einer stabilen und sicheren Bereitstellung). Dabei kann eine Übermittlung in die USA stattfinden. Es gelten die Datenschutzbestimmungen von <a href="https://www.cloudflare.com/privacypolicy/" target="_blank" rel="noopener noreferrer">Cloudflare</a> bzw. <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" target="_blank" rel="noopener noreferrer">GitHub</a>. Es werden keine Tracking-Cookies gesetzt; der Lernfortschritt der interaktiven Lektionen verbleibt ausschließlich lokal in Ihrem Browser.</p>
+
+                    <h2 id="privacy-lessons-h">7. Interaktive Lektionen erstellen</h2>
+                    <p id="privacy-lessons-intro">Wenn Sie über <strong>„Interaktive Lektionen" → „+"</strong> selbst eine Lektion erzeugen lassen, verlässt die Verarbeitung Ihr Gerät. Dies ist die einzige Funktion, bei der ein eigener Dienst von DocWorm (Cloudflare Worker) Daten verarbeitet:</p>
+                    <ul id="privacy-lessons-list">
+                        <li>Übermittelt werden der <strong>Text der von Ihnen gewählten Kapitel</strong>, Titel und Kennung des Buchs sowie der von Ihnen vergebene Name der Lektion.</li>
+                        <li>Ihr <strong>OpenRouter-Key</strong> wird mitgesendet und ausschließlich für die Dauer dieser Anfrage verwendet, um die KI-Modelle in Ihrem Namen aufzurufen. Er wird <strong>nicht gespeichert und nicht protokolliert</strong> und aus Fehlermeldungen entfernt.</li>
+                        <li>Zum Schutz vor Missbrauch (höchstens 20 Erstellungen pro Stunde) wird ein <strong>kryptografischer Hash (SHA-256)</strong> Ihres Keys gespeichert. Aus ihm lässt sich der Key nicht zurückrechnen.</li>
+                    </ul>
+                    <p id="privacy-lessons-store"><strong>Gespeichert wird nur im Ausnahmefall.</strong> Eine erzeugte Lektion wird nur dann bei uns abgelegt und unter einem Link abrufbar gemacht, wenn sie aus einer kuratierten Quelle unserer Bibliothek stammt und deren Lizenz eine Bearbeitung erlaubt. Gespeichert werden dann der Name der Lektion, die generierten Aufgaben, Kennung und Lizenz des Buchs, die Sprache, ein Suchvektor, der Hash des Keys sowie ein Zähler der Aufrufe. In allen anderen Fällen, insbesondere bei selbst hochgeladenem Material oder ungeklärter Lizenz, <strong>wird nichts gespeichert</strong>: Die Lektion geht als Antwort auf Ihre Anfrage an Ihr Gerät zurück, es entsteht kein Eintrag und kein Link.</p>
+                    <p id="privacy-lessons-legal">Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Durchführung der von Ihnen angeforderten Funktion), für den Missbrauchsschutz Art. 6 Abs. 1 lit. f DSGVO. Dienst und Speicher (D1, KV) laufen bei <strong>Cloudflare, Inc.</strong> (USA), dabei ist eine Übermittlung in die USA möglich. Abgelegte Lektionen bleiben gespeichert, bis Sie oder wir sie entfernen. Wie Sie eine Löschung veranlassen, steht unter <a href="./account-deletion.html">Account- &amp; Datenlöschung</a>.</p>
 
                     <div class="highlight-box">
                         <p class="font-semibold mb-2">💡 Wichtiger Hinweis:</p>
@@ -322,6 +332,7 @@
                         <li>Die App ist <strong>ausschließlich für rechtmäßig erlangte Vorlagen</strong> bestimmt.</li>
                         <li>Beim Scannen von Büchern kann in Deutschland <strong>§ 53 UrhG (Privatkopie)</strong> greifen, sofern keine kommerziellen Zwecke verfolgt werden.</li>
                         <li>Der Nutzer ist allein verantwortlich für die Einhaltung des Urheberrechts.</li>
+                        <li><strong>Transkripte von Videoplattformen</strong> (z. B. YouTube) werden nur lokal auf Ihrem Gerät abgelegt und sind dem Eigengebrauch vorbehalten. Eine Weitergabe oder kommerzielle Nutzung ist nicht zulässig; zusätzlich gelten die Bedingungen der jeweiligen Plattform.</li>
                     </ul>
 
                     <h2>4. Störerhaftung</h2>
@@ -332,13 +343,23 @@
                     <ul id="terms-share-list">
                         <li>Keine urheberrechtlich geschützten Originalpassagen ohne Einwilligung oder Berufung auf das <strong>Zitatrecht (§ 51 UrhG)</strong> teilen.</li>
                         <li>Eigenständig erstellte Inhalte (z. B. Zusammenfassungen, Notizen, Übungen, Quizzes, Analysen, Kritiken, Verknüpfungen, Infografiken oder sonstige abgeleitete Werke) dürfen geteilt werden, sofern sie keine geschützten Originalformulierungen übernehmen und eine hinreichende eigene Schöpfungshöhe aufweisen.</li>
-                        <li>DocWorm hostet keine Nutzer-Inhalte. Der Discord-Server und der daraus gespeiste Community-Feed unterliegen den Discord-AGB. Wir moderieren nach dem <strong>Notice-and-Take-Down-Prinzip</strong>.</li>
+                        <li>DocWorm hostet Ihre Inhalte grundsätzlich nicht. Einzige Ausnahme sind selbst erstellte interaktive Lektionen (Abschnitt 7), die nur bei kuratierter Quelle mit bearbeitungsfähiger Lizenz abgelegt werden. Der Discord-Server und der daraus gespeiste Community-Feed unterliegen den Discord-AGB. Wir moderieren nach dem <strong>Notice-and-Take-Down-Prinzip</strong>.</li>
                         <li>Rechtsverstöße bitte per E-Mail an <strong>mail.to.falko@gmx.de</strong> melden; betreffende Beiträge werden in angemessener Frist entfernt.</li>
                     </ul>
 
                     <h2>6. Format-Konvertierung & DRM</h2>
                     <p id="terms-converter-text">Die im Menü „Freie Konverter und Quellen" verlinkten Drittanbieter (CleverPDF, CloudConvert, online2pdf, PDF24) sind nicht Teil von DocWorm. Deren Nutzung erfolgt auf eigene Verantwortung; es gelten deren Datenschutzrichtlinien.</p>
                     <p id="terms-drm-text"><strong>Wichtiger Hinweis zu DRM-geschützten eBooks (z. B. Kindle, Adobe DE):</strong> Das Umgehen technischer Schutzmaßnahmen ist in Deutschland nach <strong>§ 95a UrhG</strong> auch für den privaten Gebrauch nicht erlaubt. Die Konvertierung solcher eBooks ist unzulässig. Nur DRM-freie Formate verwenden.</p>
+
+                    <h2 id="terms-lessons-h">7. Interaktive Lektionen erstellen</h2>
+                    <p id="terms-lessons-intro">Mit <strong>„Interaktive Lektion erstellen"</strong> erzeugen Sie aus einem Buch eine eigene, KI-generierte Lektion. Dafür gilt:</p>
+                    <ul id="terms-lessons-list">
+                        <li>Erzeugt wird nur aus Material, dessen Lizenz das zulässt: aus der kuratierten Bibliothek oder aus eigenem Material, für das Sie eine <strong>Lizenz-Erklärung</strong> abgeben. Für die Richtigkeit dieser Erklärung sind Sie verantwortlich.</li>
+                        <li>Unter einem Link abrufbar gemacht wird eine Lektion <strong>nur bei kuratierter Quelle mit bearbeitungsfähiger Lizenz</strong>. Lektionen aus selbst hochgeladenem Material sowie aus Quellen mit ungeklärter oder ND-Lizenz (keine Bearbeitung erlaubt) werden nicht abgelegt, sondern nur an Sie zurückgegeben.</li>
+                        <li>Der Link ist <strong>nicht gelistet, aber öffentlich</strong>: Wer ihn kennt, kann die Lektion aufrufen. Behandeln Sie ihn entsprechend.</li>
+                        <li>Die Lektion ist KI-generiert. Der KI-Warnhinweis aus Abschnitt 1 gilt unverändert.</li>
+                        <li>Lektionen, die Rechte verletzen, entfernen wir nach dem <strong>Notice-and-Take-Down-Prinzip</strong>. Meldung an <a href="mailto:mail.to.falko@gmx.de">mail.to.falko@gmx.de</a>.</li>
+                    </ul>
                 </div>
             </section>
 
@@ -408,19 +429,28 @@
                 privacyCheckText: "Prüfen Sie insbesondere, ob Training auf Ihre Eingaben (bezahlt/kostenlos), Veröffentlichung Ihrer Prompts und Ein-/Ausgabe-Logging aktiviert sind. Für maximalen Schutz aktivieren Sie <strong>„Nur ZDR-Endpunkte\" (Zero Data Retention)</strong> und deaktivieren Sie alle Trainings- und Logging-Optionen.",
                 privacyP1: "Verantwortlicher im Sinne der DSGVO ist der Betreiber dieser App (siehe Impressum). Der Entwickler legt die Zwecke und Mittel der Verarbeitung personenbezogener Daten fest und ist somit „Verantwortlicher\" (Controller).",
                 privacyUl: [
-                    "Es werden <strong>keine personenbezogenen Daten</strong> auf Entwickler-Servern gespeichert.",
-                    "Ihr <strong>API-Key</strong> wird ausschließlich verschlüsselt im Local Storage Ihres Geräts gespeichert und niemals an Dritte übermittelt.",
+                    "Es werden <strong>keine personenbezogenen Daten</strong> auf Entwickler-Servern gespeichert. Ausgenommen ist allein die von Ihnen selbst ausgelöste Funktion „Interaktive Lektion erstellen\" (Abschnitt 7).",
+                    "Ihr <strong>API-Key</strong> wird ausschließlich verschlüsselt im Local Storage Ihres Geräts gespeichert. Übermittelt wird er an OpenRouter selbst und, wenn Sie eine interaktive Lektion erstellen, für die Dauer dieser Anfrage an unseren Erstellungsdienst (Abschnitt 7).",
                     "Hochgeladene <strong>PDF-Dokumente</strong> verbleiben lokal in Ihrem Browser (IndexedDB) und werden nicht an Server übertragen.",
                     "Über <strong>Kamera</strong> oder aus der <strong>Galerie</strong> hinzugefügte Bilder verbleiben lokal auf Ihrem Gerät und werden nur dann an OpenRouter übermittelt, wenn Sie sie aktiv an die KI senden.",
                     "<strong>Chat-Verläufe</strong> und Einstellungen werden nur lokal auf Ihrem Gerät gespeichert."
                 ],
-                privacyFromUrlText: "Wenn Sie die Funktion <strong>„Aus URL\"</strong> nutzen, lädt Ihr Browser den Inhalt direkt vom angegebenen Server. Der jeweilige Server sieht dabei Ihre IP-Adresse und ggf. Cookies. Es gelten die Datenschutzrichtlinien des aufgerufenen Drittanbieters. DocWorm hat darauf keinen Einfluss.",
+                privacyFromUrlText: "Wenn Sie die Funktion <strong>„URL / YouTube\"</strong> nutzen, lädt die App den Inhalt direkt vom angegebenen Server. Der jeweilige Server sieht dabei Ihre IP-Adresse und ggf. Cookies. Das gilt auch für <strong>YouTube-Links</strong>: Das Transkript wird direkt bei YouTube abgerufen, Google sieht dabei die IP-Adresse Ihres Geräts. Der abgerufene Text bleibt lokal auf Ihrem Gerät. Es gelten die Datenschutzrichtlinien des jeweiligen Drittanbieters. DocWorm hat darauf keinen Einfluss und erhält davon keine Daten.",
+                privacyLessonsTitle: "7. Interaktive Lektionen erstellen",
+                privacyLessonsIntro: "Wenn Sie über <strong>„Interaktive Lektionen\" → „+\"</strong> selbst eine Lektion erzeugen lassen, verlässt die Verarbeitung Ihr Gerät. Dies ist die einzige Funktion, bei der ein eigener Dienst von DocWorm (Cloudflare Worker) Daten verarbeitet:",
+                privacyLessonsUl: [
+                    "Übermittelt werden der <strong>Text der von Ihnen gewählten Kapitel</strong>, Titel und Kennung des Buchs sowie der von Ihnen vergebene Name der Lektion.",
+                    "Ihr <strong>OpenRouter-Key</strong> wird mitgesendet und ausschließlich für die Dauer dieser Anfrage verwendet, um die KI-Modelle in Ihrem Namen aufzurufen. Er wird <strong>nicht gespeichert und nicht protokolliert</strong> und aus Fehlermeldungen entfernt.",
+                    "Zum Schutz vor Missbrauch (höchstens 20 Erstellungen pro Stunde) wird ein <strong>kryptografischer Hash (SHA-256)</strong> Ihres Keys gespeichert. Aus ihm lässt sich der Key nicht zurückrechnen."
+                ],
+                privacyLessonsStore: "<strong>Gespeichert wird nur im Ausnahmefall.</strong> Eine erzeugte Lektion wird nur dann bei uns abgelegt und unter einem Link abrufbar gemacht, wenn sie aus einer kuratierten Quelle unserer Bibliothek stammt und deren Lizenz eine Bearbeitung erlaubt. Gespeichert werden dann der Name der Lektion, die generierten Aufgaben, Kennung und Lizenz des Buchs, die Sprache, ein Suchvektor, der Hash des Keys sowie ein Zähler der Aufrufe. In allen anderen Fällen, insbesondere bei selbst hochgeladenem Material oder ungeklärter Lizenz, <strong>wird nichts gespeichert</strong>: Die Lektion geht als Antwort auf Ihre Anfrage an Ihr Gerät zurück, es entsteht kein Eintrag und kein Link.",
+                privacyLessonsLegal: "Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Durchführung der von Ihnen angeforderten Funktion), für den Missbrauchsschutz Art. 6 Abs. 1 lit. f DSGVO. Dienst und Speicher (D1, KV) laufen bei <strong>Cloudflare, Inc.</strong> (USA), dabei ist eine Übermittlung in die USA möglich. Abgelegte Lektionen bleiben gespeichert, bis Sie oder wir sie entfernen. Wie Sie eine Löschung veranlassen, steht unter <a href=\"./account-deletion.html\">Account- &amp; Datenlöschung</a>.",
                 privacyP2: "Wenn Sie KI-Funktionen nutzen, werden Textauszüge aus Ihrem PDF sowie Ihre Fragen über die OpenRouter API (openrouter.ai) an KI-Modelle weitergeleitet. Dabei gilt:",
                 privacyP3: "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch. Da alle Daten lokal gespeichert werden, können Sie diese jederzeit durch Löschen der Browser-Daten vollständig entfernen.",
                 privacyP4: "Sie sind selbst dafür verantwortlich, Ihre Datenschutzeinstellungen bei OpenRouter korrekt zu konfigurieren. Besuchen Sie dazu: openrouter.ai/settings/privacy",
                 privacyP5: "Prüfen Sie insbesondere, ob Training auf Ihre Eingaben (bezahlt/kostenlos), Veröffentlichung Ihrer Prompts und Ein-/Ausgabe-Logging aktiviert sind. Für maximalen Schutz aktivieren Sie „Nur ZDR-Endpunkte\" (Zero Data Retention) und deaktivieren Sie alle Trainings- und Logging-Optionen.",
                 privacyOpenRouterList: [
-                    "Die Übermittlung erfolgt direkt von Ihrem Browser an OpenRouter — ohne Umweg über unsere Server.",
+                    "Die Übermittlung erfolgt direkt von Ihrem Browser an OpenRouter, ohne Umweg über unsere Server. Ausgenommen ist die Funktion „Interaktive Lektion erstellen\" (Abschnitt 7), bei der unser Dienst den Aufruf in Ihrem Namen ausführt.",
                     "OpenRouter fungiert als Auftragsverarbeiter. Es gelten die <a href=\"https://openrouter.ai/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">Datenschutzrichtlinien von OpenRouter</a>.",
                     "Ihr API-Key authentifiziert Sie direkt bei OpenRouter."
                 ],
@@ -437,8 +467,23 @@
                 termsShareUl: [
                     "Keine urheberrechtlich geschützten Originalpassagen ohne Einwilligung oder Berufung auf das <strong>Zitatrecht (§ 51 UrhG)</strong> teilen.",
                     "Eigenständig erstellte Inhalte (z. B. Zusammenfassungen, Notizen, Übungen, Quizzes, Analysen, Kritiken, Verknüpfungen, Infografiken oder sonstige abgeleitete Werke) dürfen geteilt werden, sofern sie keine geschützten Originalformulierungen übernehmen und eine hinreichende eigene Schöpfungshöhe aufweisen.",
-                    "DocWorm hostet keine Nutzer-Inhalte. Der Discord-Server und der daraus gespeiste Community-Feed unterliegen den Discord-AGB. Wir moderieren nach dem <strong>Notice-and-Take-Down-Prinzip</strong>.",
+                    "DocWorm hostet Ihre Inhalte grundsätzlich nicht. Einzige Ausnahme sind selbst erstellte interaktive Lektionen (Abschnitt 7), die nur bei kuratierter Quelle mit bearbeitungsfähiger Lizenz abgelegt werden. Der Discord-Server und der daraus gespeiste Community-Feed unterliegen den Discord-AGB. Wir moderieren nach dem <strong>Notice-and-Take-Down-Prinzip</strong>.",
                     "Rechtsverstöße bitte per E-Mail an <strong>mail.to.falko@gmx.de</strong> melden; betreffende Beiträge werden in angemessener Frist entfernt."
+                ],
+                termsCopyrightUl: [
+                    "Die App ist <strong>ausschließlich für rechtmäßig erlangte Vorlagen</strong> bestimmt.",
+                    "Beim Scannen von Büchern kann in Deutschland <strong>§ 53 UrhG (Privatkopie)</strong> greifen, sofern keine kommerziellen Zwecke verfolgt werden.",
+                    "Der Nutzer ist allein verantwortlich für die Einhaltung des Urheberrechts.",
+                    "<strong>Transkripte von Videoplattformen</strong> (z. B. YouTube) werden nur lokal auf Ihrem Gerät abgelegt und sind dem Eigengebrauch vorbehalten. Eine Weitergabe oder kommerzielle Nutzung ist nicht zulässig; zusätzlich gelten die Bedingungen der jeweiligen Plattform."
+                ],
+                termsLessonsTitle: "7. Interaktive Lektionen erstellen",
+                termsLessonsIntro: "Mit <strong>„Interaktive Lektion erstellen\"</strong> erzeugen Sie aus einem Buch eine eigene, KI-generierte Lektion. Dafür gilt:",
+                termsLessonsUl: [
+                    "Erzeugt wird nur aus Material, dessen Lizenz das zulässt: aus der kuratierten Bibliothek oder aus eigenem Material, für das Sie eine <strong>Lizenz-Erklärung</strong> abgeben. Für die Richtigkeit dieser Erklärung sind Sie verantwortlich.",
+                    "Unter einem Link abrufbar gemacht wird eine Lektion <strong>nur bei kuratierter Quelle mit bearbeitungsfähiger Lizenz</strong>. Lektionen aus selbst hochgeladenem Material sowie aus Quellen mit ungeklärter oder ND-Lizenz (keine Bearbeitung erlaubt) werden nicht abgelegt, sondern nur an Sie zurückgegeben.",
+                    "Der Link ist <strong>nicht gelistet, aber öffentlich</strong>: Wer ihn kennt, kann die Lektion aufrufen. Behandeln Sie ihn entsprechend.",
+                    "Die Lektion ist KI-generiert. Der KI-Warnhinweis aus Abschnitt 1 gilt unverändert.",
+                    "Lektionen, die Rechte verletzen, entfernen wir nach dem <strong>Notice-and-Take-Down-Prinzip</strong>. Meldung an <a href=\"mailto:mail.to.falko@gmx.de\">mail.to.falko@gmx.de</a>."
                 ],
                 termsConverterText: "Die im Menü „Freie Konverter und Quellen\" verlinkten Drittanbieter (CleverPDF, CloudConvert, online2pdf, PDF24) sind nicht Teil von DocWorm. Deren Nutzung erfolgt auf eigene Verantwortung; es gelten deren Datenschutzrichtlinien.",
                 termsDrmText: "<strong>Wichtiger Hinweis zu DRM-geschützten eBooks (z. B. Kindle, Adobe DE):</strong> Das Umgehen technischer Schutzmaßnahmen ist in Deutschland nach <strong>§ 95a UrhG</strong> auch für den privaten Gebrauch nicht erlaubt. Die Konvertierung solcher eBooks ist unzulässig. Nur DRM-freie Formate verwenden.",
@@ -508,13 +553,27 @@
                 privacyCheckText: "In particular, check whether training on your inputs (paid/free), publication of your prompts, and input/output logging are enabled. For maximum protection, activate <strong>\"Only ZDR Endpoints\" (Zero Data Retention)</strong> and disable all training and logging options.",
                 privacyP1: "The data controller according to GDPR is the operator of this app (see Legal Notice). The developer determines the purposes and means of processing personal data and is therefore the \"Controller\".",
                 privacyUl: [
-                    "<strong>No personal data</strong> is stored on developer servers.",
-                    "Your <strong>API key</strong> is stored exclusively encrypted in your device's Local Storage and never transmitted to third parties.",
+                    "<strong>No personal data</strong> is stored on developer servers. The only exception is the \"Create interactive lesson\" feature, which you trigger yourself (section 7).",
+                    "Your <strong>API key</strong> is stored exclusively encrypted in your device's Local Storage. It is transmitted to OpenRouter itself and, when you create an interactive lesson, to our creation service for the duration of that request (section 7).",
                     "Uploaded <strong>PDF documents</strong> remain locally in your browser (IndexedDB) and are not transmitted to servers.",
                     "Images added via <strong>camera</strong> or from the <strong>gallery</strong> remain locally on your device and are only transmitted to OpenRouter if you actively send them to the AI.",
                     "<strong>Chat history</strong> and settings are only stored locally on your device."
                 ],
-                privacyFromUrlText: "When you use the <strong>\"From URL\"</strong> feature, your browser loads the content directly from the specified server. That server sees your IP address and any cookies. The privacy policy of the third party applies. DocWorm has no control over this.",
+                privacyFromUrlText: "When you use the <strong>\"URL / YouTube\"</strong> feature, the app loads the content directly from the specified server. That server sees your IP address and any cookies. This also applies to <strong>YouTube links</strong>: the transcript is fetched directly from YouTube, and Google sees your device's IP address. The retrieved text stays local on your device. The privacy policy of the respective third party applies. DocWorm has no control over this and receives no data from it.",
+                privacyOpenRouterList: [
+                    "The transmission takes place directly from your browser to OpenRouter, without detour via our servers. The exception is the \"Create interactive lesson\" feature (section 7), where our service performs the call on your behalf.",
+                    "OpenRouter acts as a processor. The <a href=\"https://openrouter.ai/privacy\" target=\"_blank\" rel=\"noopener noreferrer\">OpenRouter privacy policy</a> applies.",
+                    "Your API key authenticates you directly with OpenRouter."
+                ],
+                privacyLessonsTitle: "7. Creating interactive lessons",
+                privacyLessonsIntro: "When you create a lesson yourself via <strong>\"Interactive lessons\" → \"+\"</strong>, processing leaves your device. This is the only feature where a DocWorm service of our own (Cloudflare Worker) processes data:",
+                privacyLessonsUl: [
+                    "Transmitted are the <strong>text of the chapters you selected</strong>, the title and identifier of the book, and the lesson name you chose.",
+                    "Your <strong>OpenRouter key</strong> is sent along and used exclusively for the duration of that request, in order to call the AI models on your behalf. It is <strong>not stored and not logged</strong>, and it is stripped from error messages.",
+                    "To prevent abuse (at most 20 creations per hour), a <strong>cryptographic hash (SHA-256)</strong> of your key is stored. The key cannot be reconstructed from it."
+                ],
+                privacyLessonsStore: "<strong>Storage happens only in the exceptional case.</strong> A generated lesson is stored by us and made retrievable under a link only if it originates from a curated source in our library whose license permits adaptation. What is stored then: the lesson name, the generated exercises, the book's identifier and license, the language, a search vector, the hash of the key, and a view counter. In all other cases, in particular for self-uploaded material or an unresolved license, <strong>nothing is stored</strong>: the lesson is returned to your device as the response to your request, with no record and no link.",
+                privacyLessonsLegal: "The legal basis is Art. 6(1)(b) GDPR (performing the feature you requested), and Art. 6(1)(f) GDPR for abuse prevention. The service and its storage (D1, KV) run at <strong>Cloudflare, Inc.</strong> (USA); a transfer to the USA may occur. Stored lessons remain until you or we remove them. How to request deletion is described under <a href=\"./account-deletion.html\">Account &amp; Data Deletion</a>.",
                 privacyP2: "When you use AI functions, text excerpts from your PDF and your questions are forwarded via the OpenRouter API (openrouter.ai) to AI models. This means:",
                 privacyP3: "You have the right to information, correction, deletion, restriction of processing, data portability and objection. Since all data is stored locally, you can completely remove it at any time by deleting your browser data.",
                 privacyP4: "You are responsible for correctly configuring your privacy settings at OpenRouter. Visit: openrouter.ai/settings/privacy",
@@ -532,8 +591,23 @@
                 termsShareUl: [
                     "Do not share copyright-protected original passages without permission or reliance on the <strong>right to quote (§ 51 UrhG)</strong>.",
                     "Self-created content (e.g. summaries, notes, exercises, quizzes, analyses, critiques, concept maps, infographics, or other derivative works) may be shared, provided it does not reproduce protected original wording and meets a sufficient threshold of originality.",
-                    "DocWorm does not host user content. The Discord server and the community feed sourced from it are subject to Discord's Terms of Service. We moderate on a <strong>notice-and-take-down basis</strong>.",
+                    "DocWorm generally does not host your content. The only exception is interactive lessons you create yourself (section 7), which are stored only when they come from a curated source whose license permits adaptation. The Discord server and the community feed sourced from it are subject to Discord's Terms of Service. We moderate on a <strong>notice-and-take-down basis</strong>.",
                     "Please report legal violations via email to <strong>mail.to.falko@gmx.de</strong>; affected posts will be removed within a reasonable time."
+                ],
+                termsCopyrightUl: [
+                    "The app is intended <strong>exclusively for lawfully obtained materials</strong>.",
+                    "When scanning books, <strong>private copy provisions</strong> (e.g. § 53 UrhG in Germany) may apply, provided no commercial purposes are pursued.",
+                    "The user is solely responsible for compliance with copyright law.",
+                    "<strong>Transcripts from video platforms</strong> (e.g. YouTube) are stored locally on your device only and are reserved for personal use. Sharing or commercial use is not permitted; the terms of the respective platform apply in addition."
+                ],
+                termsLessonsTitle: "7. Creating interactive lessons",
+                termsLessonsIntro: "With <strong>\"Create interactive lesson\"</strong> you generate your own AI-generated lesson from a book. The following applies:",
+                termsLessonsUl: [
+                    "Generation happens only from material whose license permits it: from the curated library, or from your own material for which you submit a <strong>license declaration</strong>. You are responsible for the accuracy of that declaration.",
+                    "A lesson is made retrievable under a link <strong>only for a curated source with a license permitting adaptation</strong>. Lessons from self-uploaded material, or from sources with an unresolved or ND license (no adaptation allowed), are not stored but only returned to you.",
+                    "The link is <strong>unlisted but public</strong>: anyone who knows it can open the lesson. Treat it accordingly.",
+                    "The lesson is AI-generated. The AI disclaimer in section 1 applies unchanged.",
+                    "Lessons that infringe rights are removed on a <strong>notice-and-take-down basis</strong>. Report to <a href=\"mailto:mail.to.falko@gmx.de\">mail.to.falko@gmx.de</a>."
                 ],
                 termsConverterText: "The third-party services linked in the \"Free Converters & Sources\" menu (CleverPDF, CloudConvert, online2pdf, PDF24) are not part of DocWorm. Use them at your own risk; their own privacy policies apply.",
                 termsDrmText: "<strong>Important note on DRM-protected eBooks (e.g. Kindle, Adobe DE):</strong> Circumventing technical protection measures is prohibited in Germany under <strong>§ 95a UrhG</strong>, even for private use. Conversion of such eBooks is not permitted. Only use DRM-free formats.",
@@ -652,6 +726,11 @@
                     { selector: '#privacy-zdr-check', html: t.privacyCheckText },
                     { selector: '#privacy-hosting-h', text: t.privacyHostingTitle },
                     { selector: '#privacy-hosting', html: t.privacyHostingText },
+                    { selector: '#privacy-lessons-h', text: t.privacyLessonsTitle },
+                    { selector: '#privacy-lessons-intro', html: t.privacyLessonsIntro },
+                    { selector: '#privacy-lessons-list', html: this.createList(t.privacyLessonsUl) },
+                    { selector: '#privacy-lessons-store', html: t.privacyLessonsStore },
+                    { selector: '#privacy-lessons-legal', html: t.privacyLessonsLegal },
                 ]);
                 
                 // Update terms of use content
@@ -664,7 +743,7 @@
                     { selector: 'ul', html: this.createList(t.termsUl) },
                     { selector: 'p:nth-of-type(2)', html: t.termsProductText },
                     { selector: 'p:nth-of-type(3)', html: t.termsCopyrightText },
-                    { selector: '#terms-copyright-list', html: this.createList(t.termsUl) },
+                    { selector: '#terms-copyright-list', html: this.createList(t.termsCopyrightUl) },
                     { selector: 'p:nth-of-type(4)', html: t.termsIntermediaryText },
                     { selector: 'h2:nth-of-type(4)', text: t.termsSection5 },
                     { selector: 'h2:nth-of-type(5)', text: t.termsSection6 },
@@ -672,6 +751,9 @@
                     { selector: '#terms-share-list', html: this.createList(t.termsShareUl) },
                     { selector: '#terms-converter-text', html: t.termsConverterText },
                     { selector: '#terms-drm-text', html: t.termsDrmText },
+                    { selector: '#terms-lessons-h', text: t.termsLessonsTitle },
+                    { selector: '#terms-lessons-intro', html: t.termsLessonsIntro },
+                    { selector: '#terms-lessons-list', html: this.createList(t.termsLessonsUl) },
                 ]);
                 
                 // Update impressum content
